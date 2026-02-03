@@ -91,11 +91,63 @@ python main.py
 
 This will generate the `{set-name}.json` file in the same folder.
 
-### Step 5: Verify the Output
+### Step 5: Verify the JSON Output
 
 1. Check that the JSON file was created
 2. Verify the JSON structure matches other sets (array of card objects)
 3. Spot-check a few cards to ensure data was parsed correctly
+
+### Step 6: Update Database Seed Script
+
+Update `prisma/seed.ts` to include the new set:
+
+1. **Add the import** at the top of the file:
+   ```typescript
+   import newSetName from "../scripts/{set-name}/{set-name}.json";
+   ```
+
+2. **Add the set upsert** (after the existing set upserts):
+   ```typescript
+   const newSetNameSet = await prisma.set.upsert({
+     where: { setName: "Set Name" }, // Use exact set name from Serebii
+     update: {},
+     create: {
+       setName: "Set Name",
+       image: "/tcgpocket/sets/{set-name}.png",
+     },
+   });
+   ```
+
+3. **Add to the cards array**:
+   ```typescript
+   const cards = [
+     // ... existing sets
+     newSetName,
+   ];
+   ```
+
+4. **Add the switch case** (in the switch statement for set IDs):
+   ```typescript
+   case "Set Name":
+     setId = newSetNameSet.id;
+     break;
+   ```
+
+**Important:** The `setName` in the switch case must match exactly what appears in the JSON file's `card.set.setName` field.
+
+### Step 7: Run Database Seed
+
+After updating the seed script, run it to populate the database:
+
+```bash
+npx prisma db seed
+```
+
+Or if using pnpm:
+
+```bash
+pnpm prisma db seed
+```
 
 ## Set URL Patterns on Serebii
 

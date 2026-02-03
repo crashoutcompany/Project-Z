@@ -1,2522 +1,2522 @@
 [
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs1 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/1.jpg",
-        "name": "Hoppip",
-        "url": "/tcgpocket/secludedsprings/001.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs2 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/2.jpg",
-        "name": "Skiploom",
-        "url": "/tcgpocket/secludedsprings/002.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond4.png",
-            "pokedex": "Secluded Springs3 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/3.jpg",
-        "name": "Jumpluff ex",
-        "url": "/tcgpocket/secludedsprings/003.shtml",
-        "details": {
-            "hp": "160HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond4.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs4 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/4.jpg",
-        "name": "Sunkern",
-        "url": "/tcgpocket/secludedsprings/004.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs5 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/5.jpg",
-        "name": "Sunflora",
-        "url": "/tcgpocket/secludedsprings/005.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs6 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/6.jpg",
-        "name": "Celebi",
-        "url": "/tcgpocket/secludedsprings/006.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs7 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/7.jpg",
-        "name": "Durant",
-        "url": "/tcgpocket/secludedsprings/007.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs8 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/8.jpg",
-        "name": "Slugma",
-        "url": "/tcgpocket/secludedsprings/008.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs9 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/9.jpg",
-        "name": "Magcargo",
-        "url": "/tcgpocket/secludedsprings/009.shtml",
-        "details": {
-            "hp": "120HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond4.png",
-            "pokedex": "Secluded Springs10 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/10.jpg",
-        "name": "Entei ex",
-        "url": "/tcgpocket/secludedsprings/010.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond4.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs11 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/11.jpg",
-        "name": "Fletchinder",
-        "url": "/tcgpocket/secludedsprings/011.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs12 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/12.jpg",
-        "name": "Talonflame",
-        "url": "/tcgpocket/secludedsprings/012.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs13 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/13.jpg",
-        "name": "Poliwag",
-        "url": "/tcgpocket/secludedsprings/013.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs14 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/14.jpg",
-        "name": "Poliwhirl",
-        "url": "/tcgpocket/secludedsprings/014.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs15 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/15.jpg",
-        "name": "Tentacool",
-        "url": "/tcgpocket/secludedsprings/015.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs16 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/16.jpg",
-        "name": "Tentacruel",
-        "url": "/tcgpocket/secludedsprings/016.shtml",
-        "details": {
-            "hp": "110HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs17 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/17.jpg",
-        "name": "Slowpoke",
-        "url": "/tcgpocket/secludedsprings/017.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs18 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/18.jpg",
-        "name": "Slowking",
-        "url": "/tcgpocket/secludedsprings/018.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs19 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/19.jpg",
-        "name": "Jynx",
-        "url": "/tcgpocket/secludedsprings/019.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/metal.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond4.png",
-            "pokedex": "Secluded Springs20 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/20.jpg",
-        "name": "Suicune ex",
-        "url": "/tcgpocket/secludedsprings/020.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond4.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs21 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/21.jpg",
-        "name": "Feebas",
-        "url": "/tcgpocket/secludedsprings/021.shtml",
-        "details": {
-            "hp": "30HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs22 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/22.jpg",
-        "name": "Milotic",
-        "url": "/tcgpocket/secludedsprings/022.shtml",
-        "details": {
-            "hp": "120HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs23 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/23.jpg",
-        "name": "Mantyke",
-        "url": "/tcgpocket/secludedsprings/023.shtml",
-        "details": {
-            "hp": "30HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs24 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/24.jpg",
-        "name": "Cryogonal",
-        "url": "/tcgpocket/secludedsprings/024.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/metal.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond4.png",
-            "pokedex": "Secluded Springs25 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/25.jpg",
-        "name": "Raikou ex",
-        "url": "/tcgpocket/secludedsprings/025.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond4.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs26 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/26.jpg",
-        "name": "Tynamo",
-        "url": "/tcgpocket/secludedsprings/026.shtml",
-        "details": {
-            "hp": "40HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs27 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/27.jpg",
-        "name": "Eelektrik",
-        "url": "/tcgpocket/secludedsprings/027.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs28 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/28.jpg",
-        "name": "Eelektross",
-        "url": "/tcgpocket/secludedsprings/028.shtml",
-        "details": {
-            "hp": "150HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs29 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/29.jpg",
-        "name": "Stunfisk",
-        "url": "/tcgpocket/secludedsprings/029.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs30 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/30.jpg",
-        "name": "Yamper",
-        "url": "/tcgpocket/secludedsprings/030.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs31 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/31.jpg",
-        "name": "Boltund",
-        "url": "/tcgpocket/secludedsprings/031.shtml",
-        "details": {
-            "hp": "120HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs32 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/32.jpg",
-        "name": "Misdreavus",
-        "url": "/tcgpocket/secludedsprings/032.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs33 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/33.jpg",
-        "name": "Mismagius",
-        "url": "/tcgpocket/secludedsprings/033.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs34 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/34.jpg",
-        "name": "Corsola",
-        "url": "/tcgpocket/secludedsprings/034.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs35 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/35.jpg",
-        "name": "Cursola",
-        "url": "/tcgpocket/secludedsprings/035.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs36 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/36.jpg",
-        "name": "Latias",
-        "url": "/tcgpocket/secludedsprings/036.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs37 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/37.jpg",
-        "name": "Latios",
-        "url": "/tcgpocket/secludedsprings/037.shtml",
-        "details": {
-            "hp": "110HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs38 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/38.jpg",
-        "name": "Frillish",
-        "url": "/tcgpocket/secludedsprings/038.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs39 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/39.jpg",
-        "name": "Jellicent",
-        "url": "/tcgpocket/secludedsprings/039.shtml",
-        "details": {
-            "hp": "110HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs40 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/40.jpg",
-        "name": "Diglett",
-        "url": "/tcgpocket/secludedsprings/040.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs41 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/41.jpg",
-        "name": "Dugtrio",
-        "url": "/tcgpocket/secludedsprings/041.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond4.png",
-            "pokedex": "Secluded Springs42 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/42.jpg",
-        "name": "Poliwrath ex",
-        "url": "/tcgpocket/secludedsprings/042.shtml",
-        "details": {
-            "hp": "180HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/psychic.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond4.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs43 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/43.jpg",
-        "name": "Phanpy",
-        "url": "/tcgpocket/secludedsprings/043.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs44 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/44.jpg",
-        "name": "Donphan",
-        "url": "/tcgpocket/secludedsprings/044.shtml",
-        "details": {
-            "hp": "120HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs45 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/45.jpg",
-        "name": "Relicanth",
-        "url": "/tcgpocket/secludedsprings/045.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs46 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/46.jpg",
-        "name": "Dwebble",
-        "url": "/tcgpocket/secludedsprings/046.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs47 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/47.jpg",
-        "name": "Crustle",
-        "url": "/tcgpocket/secludedsprings/047.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs48 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/48.jpg",
-        "name": "Seviper",
-        "url": "/tcgpocket/secludedsprings/048.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs49 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/49.jpg",
-        "name": "Zorua",
-        "url": "/tcgpocket/secludedsprings/049.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs50 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/50.jpg",
-        "name": "Zoroark",
-        "url": "/tcgpocket/secludedsprings/050.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs51 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/51.jpg",
-        "name": "Inkay",
-        "url": "/tcgpocket/secludedsprings/051.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs52 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/52.jpg",
-        "name": "Malamar",
-        "url": "/tcgpocket/secludedsprings/052.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs53 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/53.jpg",
-        "name": "Skrelp",
-        "url": "/tcgpocket/secludedsprings/053.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs54 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/54.jpg",
-        "name": "Dragalge",
-        "url": "/tcgpocket/secludedsprings/054.shtml",
-        "details": {
-            "hp": "110HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs55 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/55.jpg",
-        "name": "Altaria",
-        "url": "/tcgpocket/secludedsprings/055.shtml",
-        "details": {
-            "hp": "120HP",
-            "type": "/tcgpocket/image/dragon.png",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs56 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/56.jpg",
-        "name": "Farfetch'd",
-        "url": "/tcgpocket/secludedsprings/056.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs57 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/57.jpg",
-        "name": "Lickitung",
-        "url": "/tcgpocket/secludedsprings/057.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs58 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/58.jpg",
-        "name": "Lickilicky",
-        "url": "/tcgpocket/secludedsprings/058.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs59 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/59.jpg",
-        "name": "Igglybuff",
-        "url": "/tcgpocket/secludedsprings/059.shtml",
-        "details": {
-            "hp": "30HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs60 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/60.jpg",
-        "name": "Teddiursa",
-        "url": "/tcgpocket/secludedsprings/060.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs61 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/61.jpg",
-        "name": "Ursaring",
-        "url": "/tcgpocket/secludedsprings/061.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs62 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/62.jpg",
-        "name": "Miltank",
-        "url": "/tcgpocket/secludedsprings/062.shtml",
-        "details": {
-            "hp": "110HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Secluded Springs63 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/63.jpg",
-        "name": "Azurill",
-        "url": "/tcgpocket/secludedsprings/063.shtml",
-        "details": {
-            "hp": "30HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs64 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/64.jpg",
-        "name": "Swablu",
-        "url": "/tcgpocket/secludedsprings/064.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs65 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/65.jpg",
-        "name": "Zangoose",
-        "url": "/tcgpocket/secludedsprings/065.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Secluded Springs66 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/66.jpg",
-        "name": "Fletchling",
-        "url": "/tcgpocket/secludedsprings/066.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs67 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/67.jpg",
-        "name": "Inflatable Boat",
-        "url": "/tcgpocket/secludedsprings/067.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs68 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/68.jpg",
-        "name": "Memory Light",
-        "url": "/tcgpocket/secludedsprings/068.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs69 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/69.jpg",
-        "name": "Whitney",
-        "url": "/tcgpocket/secludedsprings/069.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs70 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/70.jpg",
-        "name": "Traveling Merchant",
-        "url": "/tcgpocket/secludedsprings/070.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Secluded Springs71 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/71.jpg",
-        "name": "Morty",
-        "url": "/tcgpocket/secludedsprings/071.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Secluded Springs72 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/72.jpg",
-        "name": "Milotic",
-        "url": "/tcgpocket/secludedsprings/072.shtml",
-        "details": {
-            "hp": "120HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Secluded Springs73 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/73.jpg",
-        "name": "Stunfisk",
-        "url": "/tcgpocket/secludedsprings/073.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Secluded Springs74 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/74.jpg",
-        "name": "Yamper",
-        "url": "/tcgpocket/secludedsprings/074.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Secluded Springs75 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/75.jpg",
-        "name": "Latios",
-        "url": "/tcgpocket/secludedsprings/075.shtml",
-        "details": {
-            "hp": "110HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Secluded Springs76 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/76.jpg",
-        "name": "Phanpy",
-        "url": "/tcgpocket/secludedsprings/076.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Secluded Springs77 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/77.jpg",
-        "name": "Azurill",
-        "url": "/tcgpocket/secludedsprings/077.shtml",
-        "details": {
-            "hp": "30HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs78 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/78.jpg",
-        "name": "Jumpluff ex",
-        "url": "/tcgpocket/secludedsprings/078.shtml",
-        "details": {
-            "hp": "160HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs79 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/79.jpg",
-        "name": "Entei ex",
-        "url": "/tcgpocket/secludedsprings/079.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs80 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/80.jpg",
-        "name": "Suicune ex",
-        "url": "/tcgpocket/secludedsprings/080.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs81 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/81.jpg",
-        "name": "Raikou ex",
-        "url": "/tcgpocket/secludedsprings/081.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs82 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/82.jpg",
-        "name": "Poliwrath ex",
-        "url": "/tcgpocket/secludedsprings/082.shtml",
-        "details": {
-            "hp": "180HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/psychic.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs83 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/83.jpg",
-        "name": "Whitney",
-        "url": "/tcgpocket/secludedsprings/083.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs84 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/84.jpg",
-        "name": "Traveling Merchant",
-        "url": "/tcgpocket/secludedsprings/084.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs85 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/85.jpg",
-        "name": "Morty",
-        "url": "/tcgpocket/secludedsprings/085.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs86 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/86.jpg",
-        "name": "Jumpluff ex",
-        "url": "/tcgpocket/secludedsprings/086.shtml",
-        "details": {
-            "hp": "160HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs87 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/87.jpg",
-        "name": "Entei ex",
-        "url": "/tcgpocket/secludedsprings/087.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs88 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/88.jpg",
-        "name": "Raikou ex",
-        "url": "/tcgpocket/secludedsprings/088.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Secluded Springs89 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/89.jpg",
-        "name": "Poliwrath ex",
-        "url": "/tcgpocket/secludedsprings/089.shtml",
-        "details": {
-            "hp": "180HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/psychic.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/star3.png",
-            "pokedex": "Secluded Springs90 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/90.jpg",
-        "name": "Suicune ex",
-        "url": "/tcgpocket/secludedsprings/090.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star3.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Secluded Springs91 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/91.jpg",
-        "name": "Chimchar",
-        "url": "/tcgpocket/secludedsprings/091.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Secluded Springs92 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/92.jpg",
-        "name": "Monferno",
-        "url": "/tcgpocket/secludedsprings/092.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Secluded Springs93 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/93.jpg",
-        "name": "Psyduck",
-        "url": "/tcgpocket/secludedsprings/093.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Secluded Springs94 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/94.jpg",
-        "name": "Golduck",
-        "url": "/tcgpocket/secludedsprings/094.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Secluded Springs95 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/95.jpg",
-        "name": "Krabby",
-        "url": "/tcgpocket/secludedsprings/095.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Secluded Springs96 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/96.jpg",
-        "name": "Kingler",
-        "url": "/tcgpocket/secludedsprings/096.shtml",
-        "details": {
-            "hp": "120HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Secluded Springs97 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/97.jpg",
-        "name": "Pyukumuku",
-        "url": "/tcgpocket/secludedsprings/097.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Secluded Springs98 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/98.jpg",
-        "name": "Gible",
-        "url": "/tcgpocket/secludedsprings/098.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Secluded Springs99 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/99.jpg",
-        "name": "Gabite",
-        "url": "/tcgpocket/secludedsprings/099.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Secluded Springs100 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/100.jpg",
-        "name": "Wooper",
-        "url": "/tcgpocket/secludedsprings/100.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny2.png",
-            "pokedex": "Secluded Springs101 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/101.jpg",
-        "name": "Infernape ex",
-        "url": "/tcgpocket/secludedsprings/101.shtml",
-        "details": {
-            "hp": "170HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny2.png",
-            "pokedex": "Secluded Springs102 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/102.jpg",
-        "name": "Mew ex",
-        "url": "/tcgpocket/secludedsprings/102.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny2.png",
-            "pokedex": "Secluded Springs103 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/103.jpg",
-        "name": "Garchomp ex",
-        "url": "/tcgpocket/secludedsprings/103.shtml",
-        "details": {
-            "hp": "170HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/shiny2.png",
-            "pokedex": "Secluded Springs104 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/104.jpg",
-        "name": "Clodsire ex",
-        "url": "/tcgpocket/secludedsprings/104.shtml",
-        "details": {
-            "hp": "160HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny2.png"
-    },
-    {
-        "set": {
-            "setName": "Secluded Springs",
-            "image": "/tcgpocket/image/crown.png",
-            "pokedex": "Secluded Springs105 / 71"
-        },
-        "thumbnail": "/tcgpocket/th/secludedsprings/105.jpg",
-        "name": "Mantyke",
-        "url": "/tcgpocket/secludedsprings/105.shtml",
-        "details": {
-            "hp": "30HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/crown.png"
-    }
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs1 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/1.jpg",
+    "name": "Hoppip",
+    "url": "/tcgpocket/secludedsprings/001.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs2 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/2.jpg",
+    "name": "Skiploom",
+    "url": "/tcgpocket/secludedsprings/002.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Secluded Springs3 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/3.jpg",
+    "name": "Jumpluff ex",
+    "url": "/tcgpocket/secludedsprings/003.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs4 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/4.jpg",
+    "name": "Sunkern",
+    "url": "/tcgpocket/secludedsprings/004.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs5 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/5.jpg",
+    "name": "Sunflora",
+    "url": "/tcgpocket/secludedsprings/005.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs6 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/6.jpg",
+    "name": "Celebi",
+    "url": "/tcgpocket/secludedsprings/006.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs7 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/7.jpg",
+    "name": "Durant",
+    "url": "/tcgpocket/secludedsprings/007.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs8 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/8.jpg",
+    "name": "Slugma",
+    "url": "/tcgpocket/secludedsprings/008.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs9 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/9.jpg",
+    "name": "Magcargo",
+    "url": "/tcgpocket/secludedsprings/009.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Secluded Springs10 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/10.jpg",
+    "name": "Entei ex",
+    "url": "/tcgpocket/secludedsprings/010.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs11 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/11.jpg",
+    "name": "Fletchinder",
+    "url": "/tcgpocket/secludedsprings/011.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs12 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/12.jpg",
+    "name": "Talonflame",
+    "url": "/tcgpocket/secludedsprings/012.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs13 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/13.jpg",
+    "name": "Poliwag",
+    "url": "/tcgpocket/secludedsprings/013.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs14 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/14.jpg",
+    "name": "Poliwhirl",
+    "url": "/tcgpocket/secludedsprings/014.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs15 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/15.jpg",
+    "name": "Tentacool",
+    "url": "/tcgpocket/secludedsprings/015.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs16 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/16.jpg",
+    "name": "Tentacruel",
+    "url": "/tcgpocket/secludedsprings/016.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs17 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/17.jpg",
+    "name": "Slowpoke",
+    "url": "/tcgpocket/secludedsprings/017.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs18 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/18.jpg",
+    "name": "Slowking",
+    "url": "/tcgpocket/secludedsprings/018.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs19 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/19.jpg",
+    "name": "Jynx",
+    "url": "/tcgpocket/secludedsprings/019.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Secluded Springs20 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/20.jpg",
+    "name": "Suicune ex",
+    "url": "/tcgpocket/secludedsprings/020.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs21 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/21.jpg",
+    "name": "Feebas",
+    "url": "/tcgpocket/secludedsprings/021.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs22 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/22.jpg",
+    "name": "Milotic",
+    "url": "/tcgpocket/secludedsprings/022.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs23 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/23.jpg",
+    "name": "Mantyke",
+    "url": "/tcgpocket/secludedsprings/023.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs24 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/24.jpg",
+    "name": "Cryogonal",
+    "url": "/tcgpocket/secludedsprings/024.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Secluded Springs25 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/25.jpg",
+    "name": "Raikou ex",
+    "url": "/tcgpocket/secludedsprings/025.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs26 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/26.jpg",
+    "name": "Tynamo",
+    "url": "/tcgpocket/secludedsprings/026.shtml",
+    "details": {
+      "hp": "40HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs27 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/27.jpg",
+    "name": "Eelektrik",
+    "url": "/tcgpocket/secludedsprings/027.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs28 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/28.jpg",
+    "name": "Eelektross",
+    "url": "/tcgpocket/secludedsprings/028.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs29 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/29.jpg",
+    "name": "Stunfisk",
+    "url": "/tcgpocket/secludedsprings/029.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs30 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/30.jpg",
+    "name": "Yamper",
+    "url": "/tcgpocket/secludedsprings/030.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs31 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/31.jpg",
+    "name": "Boltund",
+    "url": "/tcgpocket/secludedsprings/031.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs32 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/32.jpg",
+    "name": "Misdreavus",
+    "url": "/tcgpocket/secludedsprings/032.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs33 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/33.jpg",
+    "name": "Mismagius",
+    "url": "/tcgpocket/secludedsprings/033.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs34 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/34.jpg",
+    "name": "Corsola",
+    "url": "/tcgpocket/secludedsprings/034.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs35 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/35.jpg",
+    "name": "Cursola",
+    "url": "/tcgpocket/secludedsprings/035.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs36 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/36.jpg",
+    "name": "Latias",
+    "url": "/tcgpocket/secludedsprings/036.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs37 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/37.jpg",
+    "name": "Latios",
+    "url": "/tcgpocket/secludedsprings/037.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs38 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/38.jpg",
+    "name": "Frillish",
+    "url": "/tcgpocket/secludedsprings/038.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs39 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/39.jpg",
+    "name": "Jellicent",
+    "url": "/tcgpocket/secludedsprings/039.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs40 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/40.jpg",
+    "name": "Diglett",
+    "url": "/tcgpocket/secludedsprings/040.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs41 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/41.jpg",
+    "name": "Dugtrio",
+    "url": "/tcgpocket/secludedsprings/041.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Secluded Springs42 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/42.jpg",
+    "name": "Poliwrath ex",
+    "url": "/tcgpocket/secludedsprings/042.shtml",
+    "details": {
+      "hp": "180HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs43 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/43.jpg",
+    "name": "Phanpy",
+    "url": "/tcgpocket/secludedsprings/043.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs44 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/44.jpg",
+    "name": "Donphan",
+    "url": "/tcgpocket/secludedsprings/044.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs45 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/45.jpg",
+    "name": "Relicanth",
+    "url": "/tcgpocket/secludedsprings/045.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs46 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/46.jpg",
+    "name": "Dwebble",
+    "url": "/tcgpocket/secludedsprings/046.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs47 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/47.jpg",
+    "name": "Crustle",
+    "url": "/tcgpocket/secludedsprings/047.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs48 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/48.jpg",
+    "name": "Seviper",
+    "url": "/tcgpocket/secludedsprings/048.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs49 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/49.jpg",
+    "name": "Zorua",
+    "url": "/tcgpocket/secludedsprings/049.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs50 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/50.jpg",
+    "name": "Zoroark",
+    "url": "/tcgpocket/secludedsprings/050.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs51 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/51.jpg",
+    "name": "Inkay",
+    "url": "/tcgpocket/secludedsprings/051.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs52 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/52.jpg",
+    "name": "Malamar",
+    "url": "/tcgpocket/secludedsprings/052.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs53 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/53.jpg",
+    "name": "Skrelp",
+    "url": "/tcgpocket/secludedsprings/053.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs54 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/54.jpg",
+    "name": "Dragalge",
+    "url": "/tcgpocket/secludedsprings/054.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs55 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/55.jpg",
+    "name": "Altaria",
+    "url": "/tcgpocket/secludedsprings/055.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/dragon.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs56 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/56.jpg",
+    "name": "Farfetch'd",
+    "url": "/tcgpocket/secludedsprings/056.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs57 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/57.jpg",
+    "name": "Lickitung",
+    "url": "/tcgpocket/secludedsprings/057.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs58 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/58.jpg",
+    "name": "Lickilicky",
+    "url": "/tcgpocket/secludedsprings/058.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs59 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/59.jpg",
+    "name": "Igglybuff",
+    "url": "/tcgpocket/secludedsprings/059.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs60 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/60.jpg",
+    "name": "Teddiursa",
+    "url": "/tcgpocket/secludedsprings/060.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs61 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/61.jpg",
+    "name": "Ursaring",
+    "url": "/tcgpocket/secludedsprings/061.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs62 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/62.jpg",
+    "name": "Miltank",
+    "url": "/tcgpocket/secludedsprings/062.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Secluded Springs63 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/63.jpg",
+    "name": "Azurill",
+    "url": "/tcgpocket/secludedsprings/063.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs64 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/64.jpg",
+    "name": "Swablu",
+    "url": "/tcgpocket/secludedsprings/064.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs65 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/65.jpg",
+    "name": "Zangoose",
+    "url": "/tcgpocket/secludedsprings/065.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Secluded Springs66 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/66.jpg",
+    "name": "Fletchling",
+    "url": "/tcgpocket/secludedsprings/066.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs67 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/67.jpg",
+    "name": "Inflatable Boat",
+    "url": "/tcgpocket/secludedsprings/067.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs68 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/68.jpg",
+    "name": "Memory Light",
+    "url": "/tcgpocket/secludedsprings/068.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs69 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/69.jpg",
+    "name": "Whitney",
+    "url": "/tcgpocket/secludedsprings/069.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs70 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/70.jpg",
+    "name": "Traveling Merchant",
+    "url": "/tcgpocket/secludedsprings/070.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Secluded Springs71 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/71.jpg",
+    "name": "Morty",
+    "url": "/tcgpocket/secludedsprings/071.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Secluded Springs72 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/72.jpg",
+    "name": "Milotic",
+    "url": "/tcgpocket/secludedsprings/072.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Secluded Springs73 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/73.jpg",
+    "name": "Stunfisk",
+    "url": "/tcgpocket/secludedsprings/073.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Secluded Springs74 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/74.jpg",
+    "name": "Yamper",
+    "url": "/tcgpocket/secludedsprings/074.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Secluded Springs75 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/75.jpg",
+    "name": "Latios",
+    "url": "/tcgpocket/secludedsprings/075.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Secluded Springs76 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/76.jpg",
+    "name": "Phanpy",
+    "url": "/tcgpocket/secludedsprings/076.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Secluded Springs77 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/77.jpg",
+    "name": "Azurill",
+    "url": "/tcgpocket/secludedsprings/077.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs78 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/78.jpg",
+    "name": "Jumpluff ex",
+    "url": "/tcgpocket/secludedsprings/078.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs79 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/79.jpg",
+    "name": "Entei ex",
+    "url": "/tcgpocket/secludedsprings/079.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs80 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/80.jpg",
+    "name": "Suicune ex",
+    "url": "/tcgpocket/secludedsprings/080.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs81 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/81.jpg",
+    "name": "Raikou ex",
+    "url": "/tcgpocket/secludedsprings/081.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs82 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/82.jpg",
+    "name": "Poliwrath ex",
+    "url": "/tcgpocket/secludedsprings/082.shtml",
+    "details": {
+      "hp": "180HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs83 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/83.jpg",
+    "name": "Whitney",
+    "url": "/tcgpocket/secludedsprings/083.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs84 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/84.jpg",
+    "name": "Traveling Merchant",
+    "url": "/tcgpocket/secludedsprings/084.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs85 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/85.jpg",
+    "name": "Morty",
+    "url": "/tcgpocket/secludedsprings/085.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs86 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/86.jpg",
+    "name": "Jumpluff ex",
+    "url": "/tcgpocket/secludedsprings/086.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs87 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/87.jpg",
+    "name": "Entei ex",
+    "url": "/tcgpocket/secludedsprings/087.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs88 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/88.jpg",
+    "name": "Raikou ex",
+    "url": "/tcgpocket/secludedsprings/088.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Secluded Springs89 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/89.jpg",
+    "name": "Poliwrath ex",
+    "url": "/tcgpocket/secludedsprings/089.shtml",
+    "details": {
+      "hp": "180HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/star3.png",
+      "pokedex": "Secluded Springs90 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/90.jpg",
+    "name": "Suicune ex",
+    "url": "/tcgpocket/secludedsprings/090.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star3.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Secluded Springs91 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/91.jpg",
+    "name": "Chimchar",
+    "url": "/tcgpocket/secludedsprings/091.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Secluded Springs92 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/92.jpg",
+    "name": "Monferno",
+    "url": "/tcgpocket/secludedsprings/092.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Secluded Springs93 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/93.jpg",
+    "name": "Psyduck",
+    "url": "/tcgpocket/secludedsprings/093.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Secluded Springs94 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/94.jpg",
+    "name": "Golduck",
+    "url": "/tcgpocket/secludedsprings/094.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Secluded Springs95 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/95.jpg",
+    "name": "Krabby",
+    "url": "/tcgpocket/secludedsprings/095.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Secluded Springs96 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/96.jpg",
+    "name": "Kingler",
+    "url": "/tcgpocket/secludedsprings/096.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Secluded Springs97 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/97.jpg",
+    "name": "Pyukumuku",
+    "url": "/tcgpocket/secludedsprings/097.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Secluded Springs98 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/98.jpg",
+    "name": "Gible",
+    "url": "/tcgpocket/secludedsprings/098.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Secluded Springs99 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/99.jpg",
+    "name": "Gabite",
+    "url": "/tcgpocket/secludedsprings/099.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Secluded Springs100 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/100.jpg",
+    "name": "Wooper",
+    "url": "/tcgpocket/secludedsprings/100.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Secluded Springs101 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/101.jpg",
+    "name": "Infernape ex",
+    "url": "/tcgpocket/secludedsprings/101.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Secluded Springs102 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/102.jpg",
+    "name": "Mew ex",
+    "url": "/tcgpocket/secludedsprings/102.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Secluded Springs103 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/103.jpg",
+    "name": "Garchomp ex",
+    "url": "/tcgpocket/secludedsprings/103.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Secluded Springs104 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/104.jpg",
+    "name": "Clodsire ex",
+    "url": "/tcgpocket/secludedsprings/104.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Secluded Springs",
+      "image": "/tcgpocket/image/crown.png",
+      "pokedex": "Secluded Springs105 / 71"
+    },
+    "thumbnail": "/tcgpocket/th/secludedsprings/105.jpg",
+    "name": "Mantyke",
+    "url": "/tcgpocket/secludedsprings/105.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/crown.png"
+  }
 ]

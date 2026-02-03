@@ -1,21 +1,15 @@
 import prisma from "@/prisma/db";
-import { TradingCreateClient } from "./TradingCreateClient";
-import { CardWithSet } from "@/components/CardBrowser/types";
-import { auth } from "@/lib/auth";
-import { redirect } from "next/navigation";
-import { headers } from "next/headers";
+import { CardBrowserClient } from "./CardBrowserClient";
+import { CardBrowserProps, CardWithSet } from "./types";
 
 const INITIAL_LIMIT = 20;
 
-export default async function Page() {
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
-
-  if (!session) {
-    redirect("/signin");
-  }
-
+export async function CardBrowser({
+  mode,
+  tradeableOnly = false,
+  onSelectionChange,
+  initialSelected,
+}: CardBrowserProps) {
   // Fetch all sets
   const sets = await prisma.set.findMany({
     orderBy: { id: "asc" },
@@ -24,18 +18,18 @@ export default async function Page() {
   if (sets.length === 0) {
     return (
       <div className="py-12 text-center">
-        <p className="text-muted-foreground">No card sets available.</p>
+        <p className="text-muted-foreground">No card sets found.</p>
       </div>
     );
   }
 
-  // Fetch initial tradeable cards for the first set
+  // Fetch initial cards for the first set
   const initialSetId = sets[0].id;
   const initialCards = await prisma.card.findMany({
     take: INITIAL_LIMIT + 1,
     where: {
       setId: initialSetId,
-      isTradeable: true,
+      ...(tradeableOnly && { isTradeable: true }),
     },
     orderBy: { id: "asc" },
     include: {
@@ -50,11 +44,23 @@ export default async function Page() {
   }
 
   return (
-    <TradingCreateClient
+    <CardBrowserClient
       sets={sets}
       initialSetId={initialSetId}
       initialCards={initialCards as CardWithSet[]}
       initialCursor={initialCursor}
+      mode={mode}
+      tradeableOnly={tradeableOnly}
+      onSelectionChange={onSelectionChange}
+      initialSelected={initialSelected}
     />
   );
 }
+
+export { CardBrowserClient } from "./CardBrowserClient";
+export type {
+  CardBrowserProps,
+  CardWithSet,
+  SelectedCards,
+  SelectionMode,
+} from "./types";

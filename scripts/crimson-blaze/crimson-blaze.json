@@ -1,2474 +1,2474 @@
 [
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze1 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/1.jpg",
-        "name": "Bulbasaur",
-        "url": "/tcgpocket/crimsonblaze/001.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze2 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/2.jpg",
-        "name": "Ivysaur",
-        "url": "/tcgpocket/crimsonblaze/002.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Crimson Blaze3 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/3.jpg",
-        "name": "Venusaur",
-        "url": "/tcgpocket/crimsonblaze/003.shtml",
-        "details": {
-            "hp": "160HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond4.png",
-            "pokedex": "Crimson Blaze4 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/4.jpg",
-        "name": "Venusaur ex",
-        "url": "/tcgpocket/crimsonblaze/004.shtml",
-        "details": {
-            "hp": "240HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond4.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze5 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/5.jpg",
-        "name": "Spinarak",
-        "url": "/tcgpocket/crimsonblaze/005.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze6 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/6.jpg",
-        "name": "Ariados",
-        "url": "/tcgpocket/crimsonblaze/006.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze7 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/7.jpg",
-        "name": "Sunkern",
-        "url": "/tcgpocket/crimsonblaze/007.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze8 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/8.jpg",
-        "name": "Sunflora",
-        "url": "/tcgpocket/crimsonblaze/008.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze9 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/9.jpg",
-        "name": "Burmy",
-        "url": "/tcgpocket/crimsonblaze/009.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze10 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/10.jpg",
-        "name": "Mothim",
-        "url": "/tcgpocket/crimsonblaze/010.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze11 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/11.jpg",
-        "name": "Charmander",
-        "url": "/tcgpocket/crimsonblaze/011.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze12 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/12.jpg",
-        "name": "Charmeleon",
-        "url": "/tcgpocket/crimsonblaze/012.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Crimson Blaze13 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/13.jpg",
-        "name": "Charizard",
-        "url": "/tcgpocket/crimsonblaze/013.shtml",
-        "details": {
-            "hp": "150HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond4.png",
-            "pokedex": "Crimson Blaze14 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/14.jpg",
-        "name": "Charizard ex",
-        "url": "/tcgpocket/crimsonblaze/014.shtml",
-        "details": {
-            "hp": "220HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond4.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze15 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/15.jpg",
-        "name": "Houndour",
-        "url": "/tcgpocket/crimsonblaze/015.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze16 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/16.jpg",
-        "name": "Houndoom",
-        "url": "/tcgpocket/crimsonblaze/016.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze17 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/17.jpg",
-        "name": "Squirtle",
-        "url": "/tcgpocket/crimsonblaze/017.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze18 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/18.jpg",
-        "name": "Wartortle",
-        "url": "/tcgpocket/crimsonblaze/018.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Crimson Blaze19 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/19.jpg",
-        "name": "Blastoise",
-        "url": "/tcgpocket/crimsonblaze/019.shtml",
-        "details": {
-            "hp": "150HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond4.png",
-            "pokedex": "Crimson Blaze20 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/20.jpg",
-        "name": "Blastoise ex",
-        "url": "/tcgpocket/crimsonblaze/020.shtml",
-        "details": {
-            "hp": "230HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond4.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze21 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/21.jpg",
-        "name": "Basculin",
-        "url": "/tcgpocket/crimsonblaze/021.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze22 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/22.jpg",
-        "name": "Clauncher",
-        "url": "/tcgpocket/crimsonblaze/022.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze23 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/23.jpg",
-        "name": "Clawitzer",
-        "url": "/tcgpocket/crimsonblaze/023.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze24 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/24.jpg",
-        "name": "Magnemite",
-        "url": "/tcgpocket/crimsonblaze/024.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze25 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/25.jpg",
-        "name": "Magneton",
-        "url": "/tcgpocket/crimsonblaze/025.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Crimson Blaze26 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/26.jpg",
-        "name": "Magnezone",
-        "url": "/tcgpocket/crimsonblaze/026.shtml",
-        "details": {
-            "hp": "150HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze27 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/27.jpg",
-        "name": "Emolga",
-        "url": "/tcgpocket/crimsonblaze/027.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze28 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/28.jpg",
-        "name": "Helioptile",
-        "url": "/tcgpocket/crimsonblaze/028.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze29 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/29.jpg",
-        "name": "Heliolisk",
-        "url": "/tcgpocket/crimsonblaze/029.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/electric.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze30 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/30.jpg",
-        "name": "Misdreavus",
-        "url": "/tcgpocket/crimsonblaze/030.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze31 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/31.jpg",
-        "name": "Mismagius",
-        "url": "/tcgpocket/crimsonblaze/031.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze32 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/32.jpg",
-        "name": "Solosis",
-        "url": "/tcgpocket/crimsonblaze/032.shtml",
-        "details": {
-            "hp": "40HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze33 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/33.jpg",
-        "name": "Duosion",
-        "url": "/tcgpocket/crimsonblaze/033.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Crimson Blaze34 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/34.jpg",
-        "name": "Reuniclus",
-        "url": "/tcgpocket/crimsonblaze/034.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze35 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/35.jpg",
-        "name": "Spritzee",
-        "url": "/tcgpocket/crimsonblaze/035.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/metal.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze36 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/36.jpg",
-        "name": "Aromatisse",
-        "url": "/tcgpocket/crimsonblaze/036.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/metal.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Crimson Blaze37 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/37.jpg",
-        "name": "Xerneas",
-        "url": "/tcgpocket/crimsonblaze/037.shtml",
-        "details": {
-            "hp": "120HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/metal.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze38 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/38.jpg",
-        "name": "Onix",
-        "url": "/tcgpocket/crimsonblaze/038.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze39 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/39.jpg",
-        "name": "Makuhita",
-        "url": "/tcgpocket/crimsonblaze/039.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/psychic.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze40 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/40.jpg",
-        "name": "Hariyama",
-        "url": "/tcgpocket/crimsonblaze/040.shtml",
-        "details": {
-            "hp": "120HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/psychic.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze41 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/41.jpg",
-        "name": "Nosepass",
-        "url": "/tcgpocket/crimsonblaze/041.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond4.png",
-            "pokedex": "Crimson Blaze42 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/42.jpg",
-        "name": "Lopunny ex",
-        "url": "/tcgpocket/crimsonblaze/042.shtml",
-        "details": {
-            "hp": "190HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/psychic.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond4.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze43 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/43.jpg",
-        "name": "Mienfoo",
-        "url": "/tcgpocket/crimsonblaze/043.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/psychic.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze44 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/44.jpg",
-        "name": "Mienshao",
-        "url": "/tcgpocket/crimsonblaze/044.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/psychic.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze45 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/45.jpg",
-        "name": "Grimer",
-        "url": "/tcgpocket/crimsonblaze/045.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze46 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/46.jpg",
-        "name": "Muk",
-        "url": "/tcgpocket/crimsonblaze/046.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze47 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/47.jpg",
-        "name": "Purrloin",
-        "url": "/tcgpocket/crimsonblaze/047.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze48 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/48.jpg",
-        "name": "Liepard",
-        "url": "/tcgpocket/crimsonblaze/048.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze49 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/49.jpg",
-        "name": "Trubbish",
-        "url": "/tcgpocket/crimsonblaze/049.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze50 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/50.jpg",
-        "name": "Garbodor",
-        "url": "/tcgpocket/crimsonblaze/050.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze51 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/51.jpg",
-        "name": "Steelix",
-        "url": "/tcgpocket/crimsonblaze/051.shtml",
-        "details": {
-            "hp": "150HP",
-            "type": "/tcgpocket/image/metal.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond4.png",
-            "pokedex": "Crimson Blaze52 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/52.jpg",
-        "name": "Steelix ex",
-        "url": "/tcgpocket/crimsonblaze/052.shtml",
-        "details": {
-            "hp": "220HP",
-            "type": "/tcgpocket/image/metal.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond4.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze53 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/53.jpg",
-        "name": "Probopass",
-        "url": "/tcgpocket/crimsonblaze/053.shtml",
-        "details": {
-            "hp": "130HP",
-            "type": "/tcgpocket/image/metal.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Crimson Blaze54 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/54.jpg",
-        "name": "Genesect",
-        "url": "/tcgpocket/crimsonblaze/054.shtml",
-        "details": {
-            "hp": "110HP",
-            "type": "/tcgpocket/image/metal.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze55 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/55.jpg",
-        "name": "Ditto",
-        "url": "/tcgpocket/crimsonblaze/055.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze56 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/56.jpg",
-        "name": "Porygon",
-        "url": "/tcgpocket/crimsonblaze/056.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze57 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/57.jpg",
-        "name": "Porygon2",
-        "url": "/tcgpocket/crimsonblaze/057.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond3.png",
-            "pokedex": "Crimson Blaze58 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/58.jpg",
-        "name": "Porygon-Z",
-        "url": "/tcgpocket/crimsonblaze/058.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond3.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze59 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/59.jpg",
-        "name": "Starly",
-        "url": "/tcgpocket/crimsonblaze/059.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze60 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/60.jpg",
-        "name": "Staravia",
-        "url": "/tcgpocket/crimsonblaze/060.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze61 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/61.jpg",
-        "name": "Staraptor",
-        "url": "/tcgpocket/crimsonblaze/061.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond1.png",
-            "pokedex": "Crimson Blaze62 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/62.jpg",
-        "name": "Buneary",
-        "url": "/tcgpocket/crimsonblaze/062.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze63 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/63.jpg",
-        "name": "Lopunny",
-        "url": "/tcgpocket/crimsonblaze/063.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze64 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/64.jpg",
-        "name": "Bouffalant",
-        "url": "/tcgpocket/crimsonblaze/064.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze65 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/65.jpg",
-        "name": "Furfrou",
-        "url": "/tcgpocket/crimsonblaze/065.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze66 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/66.jpg",
-        "name": "Clemont's Backpack",
-        "url": "/tcgpocket/crimsonblaze/066.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze67 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/67.jpg",
-        "name": "Quick-Grow Extract",
-        "url": "/tcgpocket/crimsonblaze/067.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze68 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/68.jpg",
-        "name": "Clemont",
-        "url": "/tcgpocket/crimsonblaze/068.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/diamond2.png",
-            "pokedex": "Crimson Blaze69 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/69.jpg",
-        "name": "Serena",
-        "url": "/tcgpocket/crimsonblaze/069.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/diamond2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Crimson Blaze70 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/70.jpg",
-        "name": "Ariados",
-        "url": "/tcgpocket/crimsonblaze/070.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Crimson Blaze71 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/71.jpg",
-        "name": "Sunflora",
-        "url": "/tcgpocket/crimsonblaze/071.shtml",
-        "details": {
-            "hp": "100HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Crimson Blaze72 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/72.jpg",
-        "name": "Reuniclus",
-        "url": "/tcgpocket/crimsonblaze/072.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/darkness.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Crimson Blaze73 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/73.jpg",
-        "name": "Xerneas",
-        "url": "/tcgpocket/crimsonblaze/073.shtml",
-        "details": {
-            "hp": "120HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/metal.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Crimson Blaze74 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/74.jpg",
-        "name": "Trubbish",
-        "url": "/tcgpocket/crimsonblaze/074.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star1.png",
-            "pokedex": "Crimson Blaze75 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/75.jpg",
-        "name": "Buneary",
-        "url": "/tcgpocket/crimsonblaze/075.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze76 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/76.jpg",
-        "name": "Venusaur ex",
-        "url": "/tcgpocket/crimsonblaze/076.shtml",
-        "details": {
-            "hp": "240HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze77 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/77.jpg",
-        "name": "Charizard ex",
-        "url": "/tcgpocket/crimsonblaze/077.shtml",
-        "details": {
-            "hp": "220HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze78 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/78.jpg",
-        "name": "Blastoise ex",
-        "url": "/tcgpocket/crimsonblaze/078.shtml",
-        "details": {
-            "hp": "230HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze79 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/79.jpg",
-        "name": "Lopunny ex",
-        "url": "/tcgpocket/crimsonblaze/079.shtml",
-        "details": {
-            "hp": "190HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/psychic.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze80 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/80.jpg",
-        "name": "Steelix ex",
-        "url": "/tcgpocket/crimsonblaze/080.shtml",
-        "details": {
-            "hp": "220HP",
-            "type": "/tcgpocket/image/metal.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze81 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/81.jpg",
-        "name": "Clemont",
-        "url": "/tcgpocket/crimsonblaze/081.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze82 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/82.jpg",
-        "name": "Serena",
-        "url": "/tcgpocket/crimsonblaze/082.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze83 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/83.jpg",
-        "name": "Venusaur ex",
-        "url": "/tcgpocket/crimsonblaze/083.shtml",
-        "details": {
-            "hp": "240HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze84 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/84.jpg",
-        "name": "Blastoise ex",
-        "url": "/tcgpocket/crimsonblaze/084.shtml",
-        "details": {
-            "hp": "230HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze85 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/85.jpg",
-        "name": "Lopunny ex",
-        "url": "/tcgpocket/crimsonblaze/085.shtml",
-        "details": {
-            "hp": "190HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/psychic.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star2.png",
-            "pokedex": "Crimson Blaze86 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/86.jpg",
-        "name": "Steelix ex",
-        "url": "/tcgpocket/crimsonblaze/086.shtml",
-        "details": {
-            "hp": "220HP",
-            "type": "/tcgpocket/image/metal.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/star3.png",
-            "pokedex": "Crimson Blaze87 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/87.jpg",
-        "name": "Charizard ex",
-        "url": "/tcgpocket/crimsonblaze/087.shtml",
-        "details": {
-            "hp": "220HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/star3.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Crimson Blaze88 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/88.jpg",
-        "name": "Oddish",
-        "url": "/tcgpocket/crimsonblaze/088.shtml",
-        "details": {
-            "hp": "50HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Crimson Blaze89 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/89.jpg",
-        "name": "Gloom",
-        "url": "/tcgpocket/crimsonblaze/089.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Crimson Blaze90 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/90.jpg",
-        "name": "Vileplume",
-        "url": "/tcgpocket/crimsonblaze/090.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Crimson Blaze91 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/91.jpg",
-        "name": "Charizard",
-        "url": "/tcgpocket/crimsonblaze/091.shtml",
-        "details": {
-            "hp": "150HP",
-            "type": "/tcgpocket/image/fire.png",
-            "weakness": {
-                "image": "/tcgpocket/image/water.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Crimson Blaze92 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/92.jpg",
-        "name": "Shellder",
-        "url": "/tcgpocket/crimsonblaze/092.shtml",
-        "details": {
-            "hp": "70HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Crimson Blaze93 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/93.jpg",
-        "name": "Cloyster",
-        "url": "/tcgpocket/crimsonblaze/093.shtml",
-        "details": {
-            "hp": "110HP",
-            "type": "/tcgpocket/image/water.png",
-            "weakness": {
-                "image": "/tcgpocket/image/electric.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "3"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Crimson Blaze94 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/94.jpg",
-        "name": "Sandshrew",
-        "url": "/tcgpocket/crimsonblaze/094.shtml",
-        "details": {
-            "hp": "60HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Crimson Blaze95 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/95.jpg",
-        "name": "Sandslash",
-        "url": "/tcgpocket/crimsonblaze/095.shtml",
-        "details": {
-            "hp": "90HP",
-            "type": "/tcgpocket/image/fighting.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Crimson Blaze96 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/96.jpg",
-        "name": "Type: Null",
-        "url": "/tcgpocket/crimsonblaze/096.shtml",
-        "details": {
-            "hp": "80HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny1.png",
-            "pokedex": "Crimson Blaze97 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/97.jpg",
-        "name": "Silvally",
-        "url": "/tcgpocket/crimsonblaze/097.shtml",
-        "details": {
-            "hp": "110HP",
-            "type": "/tcgpocket/image/colorless.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fighting.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny1.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny2.png",
-            "pokedex": "Crimson Blaze98 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/98.jpg",
-        "name": "Buzzwole ex",
-        "url": "/tcgpocket/crimsonblaze/098.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/grass.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny2.png",
-            "pokedex": "Crimson Blaze99 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/99.jpg",
-        "name": "Lunala ex",
-        "url": "/tcgpocket/crimsonblaze/099.shtml",
-        "details": {
-            "hp": "180HP",
-            "type": "/tcgpocket/image/psychic.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "1"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny2.png",
-            "pokedex": "Crimson Blaze100 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/100.jpg",
-        "name": "Guzzlord ex",
-        "url": "/tcgpocket/crimsonblaze/100.shtml",
-        "details": {
-            "hp": "170HP",
-            "type": "/tcgpocket/image/darkness.png",
-            "weakness": {
-                "image": "/tcgpocket/image/grass.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "4"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/shiny2.png",
-            "pokedex": "Crimson Blaze101 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/101.jpg",
-        "name": "Solgaleo ex",
-        "url": "/tcgpocket/crimsonblaze/101.shtml",
-        "details": {
-            "hp": "180HP",
-            "type": "/tcgpocket/image/metal.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/shiny2.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/crown.png",
-            "pokedex": "Crimson Blaze102 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/102.jpg",
-        "name": "Aegislash",
-        "url": "/tcgpocket/crimsonblaze/102.shtml",
-        "details": {
-            "hp": "140HP",
-            "type": "/tcgpocket/image/metal.png",
-            "weakness": {
-                "image": "/tcgpocket/image/fire.png",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "/tcgpocket/image/colorless.png",
-                "count": "2"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/crown.png"
-    },
-    {
-        "set": {
-            "setName": "Crimson Blaze",
-            "image": "/tcgpocket/image/crown.png",
-            "pokedex": "Crimson Blaze103 / 69"
-        },
-        "thumbnail": "/tcgpocket/th/crimsonblaze/103.jpg",
-        "name": "Quick-Grow Extract",
-        "url": "/tcgpocket/crimsonblaze/103.shtml",
-        "details": {
-            "hp": "",
-            "type": "",
-            "weakness": {
-                "image": "",
-                "value": "20"
-            },
-            "retreat": {
-                "image": "",
-                "count": "0"
-            }
-        },
-        "expansion": "booster.png",
-        "rarity": "/tcgpocket/image/crown.png"
-    }
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze1 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/1.jpg",
+    "name": "Bulbasaur",
+    "url": "/tcgpocket/crimsonblaze/001.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze2 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/2.jpg",
+    "name": "Ivysaur",
+    "url": "/tcgpocket/crimsonblaze/002.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Crimson Blaze3 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/3.jpg",
+    "name": "Venusaur",
+    "url": "/tcgpocket/crimsonblaze/003.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Crimson Blaze4 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/4.jpg",
+    "name": "Venusaur ex",
+    "url": "/tcgpocket/crimsonblaze/004.shtml",
+    "details": {
+      "hp": "240HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze5 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/5.jpg",
+    "name": "Spinarak",
+    "url": "/tcgpocket/crimsonblaze/005.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze6 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/6.jpg",
+    "name": "Ariados",
+    "url": "/tcgpocket/crimsonblaze/006.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze7 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/7.jpg",
+    "name": "Sunkern",
+    "url": "/tcgpocket/crimsonblaze/007.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze8 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/8.jpg",
+    "name": "Sunflora",
+    "url": "/tcgpocket/crimsonblaze/008.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze9 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/9.jpg",
+    "name": "Burmy",
+    "url": "/tcgpocket/crimsonblaze/009.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze10 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/10.jpg",
+    "name": "Mothim",
+    "url": "/tcgpocket/crimsonblaze/010.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze11 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/11.jpg",
+    "name": "Charmander",
+    "url": "/tcgpocket/crimsonblaze/011.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze12 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/12.jpg",
+    "name": "Charmeleon",
+    "url": "/tcgpocket/crimsonblaze/012.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Crimson Blaze13 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/13.jpg",
+    "name": "Charizard",
+    "url": "/tcgpocket/crimsonblaze/013.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Crimson Blaze14 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/14.jpg",
+    "name": "Charizard ex",
+    "url": "/tcgpocket/crimsonblaze/014.shtml",
+    "details": {
+      "hp": "220HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze15 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/15.jpg",
+    "name": "Houndour",
+    "url": "/tcgpocket/crimsonblaze/015.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze16 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/16.jpg",
+    "name": "Houndoom",
+    "url": "/tcgpocket/crimsonblaze/016.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze17 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/17.jpg",
+    "name": "Squirtle",
+    "url": "/tcgpocket/crimsonblaze/017.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze18 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/18.jpg",
+    "name": "Wartortle",
+    "url": "/tcgpocket/crimsonblaze/018.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Crimson Blaze19 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/19.jpg",
+    "name": "Blastoise",
+    "url": "/tcgpocket/crimsonblaze/019.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Crimson Blaze20 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/20.jpg",
+    "name": "Blastoise ex",
+    "url": "/tcgpocket/crimsonblaze/020.shtml",
+    "details": {
+      "hp": "230HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze21 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/21.jpg",
+    "name": "Basculin",
+    "url": "/tcgpocket/crimsonblaze/021.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze22 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/22.jpg",
+    "name": "Clauncher",
+    "url": "/tcgpocket/crimsonblaze/022.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze23 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/23.jpg",
+    "name": "Clawitzer",
+    "url": "/tcgpocket/crimsonblaze/023.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze24 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/24.jpg",
+    "name": "Magnemite",
+    "url": "/tcgpocket/crimsonblaze/024.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze25 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/25.jpg",
+    "name": "Magneton",
+    "url": "/tcgpocket/crimsonblaze/025.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Crimson Blaze26 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/26.jpg",
+    "name": "Magnezone",
+    "url": "/tcgpocket/crimsonblaze/026.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze27 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/27.jpg",
+    "name": "Emolga",
+    "url": "/tcgpocket/crimsonblaze/027.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze28 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/28.jpg",
+    "name": "Helioptile",
+    "url": "/tcgpocket/crimsonblaze/028.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze29 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/29.jpg",
+    "name": "Heliolisk",
+    "url": "/tcgpocket/crimsonblaze/029.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze30 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/30.jpg",
+    "name": "Misdreavus",
+    "url": "/tcgpocket/crimsonblaze/030.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze31 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/31.jpg",
+    "name": "Mismagius",
+    "url": "/tcgpocket/crimsonblaze/031.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze32 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/32.jpg",
+    "name": "Solosis",
+    "url": "/tcgpocket/crimsonblaze/032.shtml",
+    "details": {
+      "hp": "40HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze33 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/33.jpg",
+    "name": "Duosion",
+    "url": "/tcgpocket/crimsonblaze/033.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Crimson Blaze34 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/34.jpg",
+    "name": "Reuniclus",
+    "url": "/tcgpocket/crimsonblaze/034.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze35 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/35.jpg",
+    "name": "Spritzee",
+    "url": "/tcgpocket/crimsonblaze/035.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze36 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/36.jpg",
+    "name": "Aromatisse",
+    "url": "/tcgpocket/crimsonblaze/036.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Crimson Blaze37 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/37.jpg",
+    "name": "Xerneas",
+    "url": "/tcgpocket/crimsonblaze/037.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze38 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/38.jpg",
+    "name": "Onix",
+    "url": "/tcgpocket/crimsonblaze/038.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze39 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/39.jpg",
+    "name": "Makuhita",
+    "url": "/tcgpocket/crimsonblaze/039.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze40 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/40.jpg",
+    "name": "Hariyama",
+    "url": "/tcgpocket/crimsonblaze/040.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze41 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/41.jpg",
+    "name": "Nosepass",
+    "url": "/tcgpocket/crimsonblaze/041.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Crimson Blaze42 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/42.jpg",
+    "name": "Lopunny ex",
+    "url": "/tcgpocket/crimsonblaze/042.shtml",
+    "details": {
+      "hp": "190HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze43 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/43.jpg",
+    "name": "Mienfoo",
+    "url": "/tcgpocket/crimsonblaze/043.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze44 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/44.jpg",
+    "name": "Mienshao",
+    "url": "/tcgpocket/crimsonblaze/044.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze45 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/45.jpg",
+    "name": "Grimer",
+    "url": "/tcgpocket/crimsonblaze/045.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze46 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/46.jpg",
+    "name": "Muk",
+    "url": "/tcgpocket/crimsonblaze/046.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze47 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/47.jpg",
+    "name": "Purrloin",
+    "url": "/tcgpocket/crimsonblaze/047.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze48 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/48.jpg",
+    "name": "Liepard",
+    "url": "/tcgpocket/crimsonblaze/048.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze49 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/49.jpg",
+    "name": "Trubbish",
+    "url": "/tcgpocket/crimsonblaze/049.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze50 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/50.jpg",
+    "name": "Garbodor",
+    "url": "/tcgpocket/crimsonblaze/050.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze51 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/51.jpg",
+    "name": "Steelix",
+    "url": "/tcgpocket/crimsonblaze/051.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Crimson Blaze52 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/52.jpg",
+    "name": "Steelix ex",
+    "url": "/tcgpocket/crimsonblaze/052.shtml",
+    "details": {
+      "hp": "220HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze53 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/53.jpg",
+    "name": "Probopass",
+    "url": "/tcgpocket/crimsonblaze/053.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Crimson Blaze54 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/54.jpg",
+    "name": "Genesect",
+    "url": "/tcgpocket/crimsonblaze/054.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze55 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/55.jpg",
+    "name": "Ditto",
+    "url": "/tcgpocket/crimsonblaze/055.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze56 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/56.jpg",
+    "name": "Porygon",
+    "url": "/tcgpocket/crimsonblaze/056.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze57 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/57.jpg",
+    "name": "Porygon2",
+    "url": "/tcgpocket/crimsonblaze/057.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Crimson Blaze58 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/58.jpg",
+    "name": "Porygon-Z",
+    "url": "/tcgpocket/crimsonblaze/058.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze59 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/59.jpg",
+    "name": "Starly",
+    "url": "/tcgpocket/crimsonblaze/059.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze60 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/60.jpg",
+    "name": "Staravia",
+    "url": "/tcgpocket/crimsonblaze/060.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze61 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/61.jpg",
+    "name": "Staraptor",
+    "url": "/tcgpocket/crimsonblaze/061.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Crimson Blaze62 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/62.jpg",
+    "name": "Buneary",
+    "url": "/tcgpocket/crimsonblaze/062.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze63 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/63.jpg",
+    "name": "Lopunny",
+    "url": "/tcgpocket/crimsonblaze/063.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze64 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/64.jpg",
+    "name": "Bouffalant",
+    "url": "/tcgpocket/crimsonblaze/064.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze65 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/65.jpg",
+    "name": "Furfrou",
+    "url": "/tcgpocket/crimsonblaze/065.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze66 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/66.jpg",
+    "name": "Clemont's Backpack",
+    "url": "/tcgpocket/crimsonblaze/066.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze67 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/67.jpg",
+    "name": "Quick-Grow Extract",
+    "url": "/tcgpocket/crimsonblaze/067.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze68 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/68.jpg",
+    "name": "Clemont",
+    "url": "/tcgpocket/crimsonblaze/068.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Crimson Blaze69 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/69.jpg",
+    "name": "Serena",
+    "url": "/tcgpocket/crimsonblaze/069.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Crimson Blaze70 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/70.jpg",
+    "name": "Ariados",
+    "url": "/tcgpocket/crimsonblaze/070.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Crimson Blaze71 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/71.jpg",
+    "name": "Sunflora",
+    "url": "/tcgpocket/crimsonblaze/071.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Crimson Blaze72 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/72.jpg",
+    "name": "Reuniclus",
+    "url": "/tcgpocket/crimsonblaze/072.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Crimson Blaze73 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/73.jpg",
+    "name": "Xerneas",
+    "url": "/tcgpocket/crimsonblaze/073.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Crimson Blaze74 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/74.jpg",
+    "name": "Trubbish",
+    "url": "/tcgpocket/crimsonblaze/074.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Crimson Blaze75 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/75.jpg",
+    "name": "Buneary",
+    "url": "/tcgpocket/crimsonblaze/075.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze76 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/76.jpg",
+    "name": "Venusaur ex",
+    "url": "/tcgpocket/crimsonblaze/076.shtml",
+    "details": {
+      "hp": "240HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze77 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/77.jpg",
+    "name": "Charizard ex",
+    "url": "/tcgpocket/crimsonblaze/077.shtml",
+    "details": {
+      "hp": "220HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze78 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/78.jpg",
+    "name": "Blastoise ex",
+    "url": "/tcgpocket/crimsonblaze/078.shtml",
+    "details": {
+      "hp": "230HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze79 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/79.jpg",
+    "name": "Lopunny ex",
+    "url": "/tcgpocket/crimsonblaze/079.shtml",
+    "details": {
+      "hp": "190HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze80 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/80.jpg",
+    "name": "Steelix ex",
+    "url": "/tcgpocket/crimsonblaze/080.shtml",
+    "details": {
+      "hp": "220HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze81 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/81.jpg",
+    "name": "Clemont",
+    "url": "/tcgpocket/crimsonblaze/081.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze82 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/82.jpg",
+    "name": "Serena",
+    "url": "/tcgpocket/crimsonblaze/082.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze83 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/83.jpg",
+    "name": "Venusaur ex",
+    "url": "/tcgpocket/crimsonblaze/083.shtml",
+    "details": {
+      "hp": "240HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze84 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/84.jpg",
+    "name": "Blastoise ex",
+    "url": "/tcgpocket/crimsonblaze/084.shtml",
+    "details": {
+      "hp": "230HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze85 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/85.jpg",
+    "name": "Lopunny ex",
+    "url": "/tcgpocket/crimsonblaze/085.shtml",
+    "details": {
+      "hp": "190HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Crimson Blaze86 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/86.jpg",
+    "name": "Steelix ex",
+    "url": "/tcgpocket/crimsonblaze/086.shtml",
+    "details": {
+      "hp": "220HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/star3.png",
+      "pokedex": "Crimson Blaze87 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/87.jpg",
+    "name": "Charizard ex",
+    "url": "/tcgpocket/crimsonblaze/087.shtml",
+    "details": {
+      "hp": "220HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star3.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Crimson Blaze88 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/88.jpg",
+    "name": "Oddish",
+    "url": "/tcgpocket/crimsonblaze/088.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Crimson Blaze89 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/89.jpg",
+    "name": "Gloom",
+    "url": "/tcgpocket/crimsonblaze/089.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Crimson Blaze90 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/90.jpg",
+    "name": "Vileplume",
+    "url": "/tcgpocket/crimsonblaze/090.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Crimson Blaze91 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/91.jpg",
+    "name": "Charizard",
+    "url": "/tcgpocket/crimsonblaze/091.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Crimson Blaze92 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/92.jpg",
+    "name": "Shellder",
+    "url": "/tcgpocket/crimsonblaze/092.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Crimson Blaze93 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/93.jpg",
+    "name": "Cloyster",
+    "url": "/tcgpocket/crimsonblaze/093.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Crimson Blaze94 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/94.jpg",
+    "name": "Sandshrew",
+    "url": "/tcgpocket/crimsonblaze/094.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Crimson Blaze95 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/95.jpg",
+    "name": "Sandslash",
+    "url": "/tcgpocket/crimsonblaze/095.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Crimson Blaze96 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/96.jpg",
+    "name": "Type: Null",
+    "url": "/tcgpocket/crimsonblaze/096.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Crimson Blaze97 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/97.jpg",
+    "name": "Silvally",
+    "url": "/tcgpocket/crimsonblaze/097.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Crimson Blaze98 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/98.jpg",
+    "name": "Buzzwole ex",
+    "url": "/tcgpocket/crimsonblaze/098.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Crimson Blaze99 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/99.jpg",
+    "name": "Lunala ex",
+    "url": "/tcgpocket/crimsonblaze/099.shtml",
+    "details": {
+      "hp": "180HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Crimson Blaze100 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/100.jpg",
+    "name": "Guzzlord ex",
+    "url": "/tcgpocket/crimsonblaze/100.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Crimson Blaze101 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/101.jpg",
+    "name": "Solgaleo ex",
+    "url": "/tcgpocket/crimsonblaze/101.shtml",
+    "details": {
+      "hp": "180HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/crown.png",
+      "pokedex": "Crimson Blaze102 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/102.jpg",
+    "name": "Aegislash",
+    "url": "/tcgpocket/crimsonblaze/102.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/crown.png"
+  },
+  {
+    "set": {
+      "setName": "Crimson Blaze",
+      "image": "/tcgpocket/image/crown.png",
+      "pokedex": "Crimson Blaze103 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/crimsonblaze/103.jpg",
+    "name": "Quick-Grow Extract",
+    "url": "/tcgpocket/crimsonblaze/103.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/crown.png"
+  }
 ]

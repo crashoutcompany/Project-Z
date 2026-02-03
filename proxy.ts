@@ -1,11 +1,14 @@
-import { auth } from "@/app/auth";
+import { auth } from "@/lib/auth";
 import { NextRequest, NextResponse } from "next/server";
+import { headers } from "next/headers";
 
 // Next.js 16: proxy.ts replaces middleware.ts
 // The proxy function runs on the Node.js runtime and handles request interception
 export default async function proxy(request: NextRequest) {
-  // Use NextAuth's auth() to check session and handle authentication
-  const session = await auth();
+  // Use Better Auth's api.getSession() to check session and handle authentication
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
 
   // If no session and not on public routes, redirect to sign in
   const isPublicRoute =

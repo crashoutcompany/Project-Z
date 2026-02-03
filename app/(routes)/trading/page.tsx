@@ -1,17 +1,25 @@
-import { auth } from "@/app/auth";
+import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import prisma from "@/prisma/db";
-import { sleep } from "@/lib/utils";
 import { H2 } from "@/components/typography/headings";
 import { Trade } from "@/prisma/generated/client/client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { headers } from "next/headers";
 
 export default async function TradingPage() {
-  const session = await auth();
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
   if (!session) redirect("/signin");
 
-  const identifier = `${session.user?.email}.${session.user?.["provider" as keyof typeof session.user]}`;
+  // Get provider from the account linked to this user
+  const account = await prisma.account.findFirst({
+    where: { userId: session.user.id },
+    select: { providerId: true },
+  });
+
+  const identifier = `${session.user?.email}.${account?.providerId?.toUpperCase() ?? "UNKNOWN"}`;
   console.log({ identifier });
 
   // Maybe make each one fetch it's own data, so we're not waiting for all of them to load

@@ -1,6 +1,6 @@
 "use client";
 
-import { Session } from "next-auth";
+import { Session } from "@/lib/auth";
 import { useTransition } from "react";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
