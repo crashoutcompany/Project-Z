@@ -15,11 +15,11 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       '@prisma/adapter-neon':
-        specifier: 6.5.0
-        version: 6.5.0(@neondatabase/serverless@1.0.0)
+        specifier: 7.3.0
+        version: 7.3.0
       '@prisma/client':
-        specifier: 6.5.0
-        version: 6.5.0(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(typescript@5.8.3)
+        specifier: 7.3.0
+        version: 7.3.0(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(typescript@5.8.3)
       '@tailwindcss/postcss':
         specifier: ^4.0.7
         version: 4.1.5
@@ -28,7 +28,7 @@ importers:
         version: 1.0.0
       better-auth:
         specifier: ^1.4.18
-        version: 1.4.18(@prisma/client@6.5.0(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(typescript@5.8.3))(mysql2@3.15.3)(next@16.1.6(@babel/core@7.27.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 1.4.18(@prisma/client@7.3.0(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(typescript@5.8.3))(mysql2@3.15.3)(next@16.1.6(@babel/core@7.27.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -942,17 +942,18 @@ packages:
     peerDependencies:
       preact: 10.x
 
-  '@prisma/adapter-neon@6.5.0':
-    resolution: {integrity: sha512-TaqnR0HBVgZZg10F/QXExtu/yft9JbpHOYFj9dHFHvqob/xgtgpzhUhYGC9iwuUpuGp6mSVy40JU87x/Na/lIQ==}
-    peerDependencies:
-      '@neondatabase/serverless': '>0.6.0 <2'
+  '@prisma/adapter-neon@7.3.0':
+    resolution: {integrity: sha512-kwsMG9uweNwBiVuAzO5251dtVY2FB/PM2Rwovq+uzQHsscgI3I3X+qL9IKizMxmQRVjASY2nCNhwIL4KNM7KrQ==}
 
-  '@prisma/client@6.5.0':
-    resolution: {integrity: sha512-M6w1Ql/BeiGoZmhMdAZUXHu5sz5HubyVcKukbLs3l0ELcQb8hTUJxtGEChhv4SVJ0QJlwtLnwOLgIRQhpsm9dw==}
-    engines: {node: '>=18.18'}
+  '@prisma/client-runtime-utils@7.3.0':
+    resolution: {integrity: sha512-dG/ceD9c+tnXATPk8G+USxxYM9E6UdMTnQeQ+1SZUDxTz7SgQcfxEqafqIQHcjdlcNK/pvmmLfSwAs3s2gYwUw==}
+
+  '@prisma/client@7.3.0':
+    resolution: {integrity: sha512-FXBIxirqQfdC6b6HnNgxGmU7ydCPEPk7maHMOduJJfnTP+MuOGa15X4omjR/zpPUUpm8ef/mEFQjJudOGkXFcQ==}
+    engines: {node: ^20.19 || ^22.12 || >=24.0}
     peerDependencies:
       prisma: '*'
-      typescript: '>=5.1.0'
+      typescript: '>=5.4.0'
     peerDependenciesMeta:
       prisma:
         optional: true
@@ -961,9 +962,6 @@ packages:
 
   '@prisma/config@7.3.0':
     resolution: {integrity: sha512-QyMV67+eXF7uMtKxTEeQqNu/Be7iH+3iDZOQZW5ttfbSwBamCSdwPszA0dum+Wx27I7anYTPLmRmMORKViSW1A==}
-
-  '@prisma/debug@6.5.0':
-    resolution: {integrity: sha512-fc/nusYBlJMzDmDepdUtH9aBsJrda2JNErP9AzuHbgUEQY0/9zQYZdNlXmKoIWENtio+qarPNe/+DQtrX5kMcQ==}
 
   '@prisma/debug@7.2.0':
     resolution: {integrity: sha512-YSGTiSlBAVJPzX4ONZmMotL+ozJwQjRmZweQNIq/ER0tQJKJynNkRB3kyvt37eOfsbMCXk3gnLF6J9OJ4QWftw==}
@@ -974,8 +972,8 @@ packages:
   '@prisma/dev@0.20.0':
     resolution: {integrity: sha512-ovlBYwWor0OzG+yH4J3Ot+AneD818BttLA+Ii7wjbcLHUrnC4tbUPVGyNd3c/+71KETPKZfjhkTSpdS15dmXNQ==}
 
-  '@prisma/driver-adapter-utils@6.5.0':
-    resolution: {integrity: sha512-/1gSkHSflDF+50JRZUGuhjtHu7EGhkiCh7lRcBI7S9lYyyl81TdPgCtxyeId+pDBxE2B4NtG6I4DlTqZH3f8pw==}
+  '@prisma/driver-adapter-utils@7.3.0':
+    resolution: {integrity: sha512-Wdlezh1ck0Rq2dDINkfSkwbR53q53//Eo1vVqVLwtiZ0I6fuWDGNPxwq+SNAIHnsU+FD/m3aIJKevH3vF13U3w==}
 
   '@prisma/engines-version@7.3.0-16.9d6ad21cbbceab97458517b147a6a09ff43aa735':
     resolution: {integrity: sha512-IH2va2ouUHihyiTTRW889LjKAl1CusZOvFfZxCDNpjSENt7g2ndFsK0vdIw/72v7+jCN6YgkHmdAP/BI7SDgyg==}
@@ -2751,10 +2749,6 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postgres-array@3.0.3:
-    resolution: {integrity: sha512-u8CaN44IzisrzULVvqoJ2968j6XDsFGdc+Kw/6vHNhD6bfu2FHDOHNhgBYgsl6t7ib9KwUi8vKjTR5gowTIMbg==}
-    engines: {node: '>=12'}
-
   postgres-array@3.0.4:
     resolution: {integrity: sha512-nAUSGfSDGOaOAEGwqsRY27GPOea7CNipJPOA7lPbdEpx5Kg3qzdP0AaWC5MlhTWV9s4hFX39nomVZ+C4tnGOJQ==}
     engines: {node: '>=12'}
@@ -4056,13 +4050,17 @@ snapshots:
       '@preact/signals-core': 1.8.0
       preact: 10.26.5
 
-  '@prisma/adapter-neon@6.5.0(@neondatabase/serverless@1.0.0)':
+  '@prisma/adapter-neon@7.3.0':
     dependencies:
       '@neondatabase/serverless': 1.0.0
-      '@prisma/driver-adapter-utils': 6.5.0
-      postgres-array: 3.0.3
+      '@prisma/driver-adapter-utils': 7.3.0
+      postgres-array: 3.0.4
 
-  '@prisma/client@6.5.0(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(typescript@5.8.3)':
+  '@prisma/client-runtime-utils@7.3.0': {}
+
+  '@prisma/client@7.3.0(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(typescript@5.8.3)':
+    dependencies:
+      '@prisma/client-runtime-utils': 7.3.0
     optionalDependencies:
       prisma: 7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3)
       typescript: 5.8.3
@@ -4075,8 +4073,6 @@ snapshots:
       empathic: 2.0.0
     transitivePeerDependencies:
       - magicast
-
-  '@prisma/debug@6.5.0': {}
 
   '@prisma/debug@7.2.0': {}
 
@@ -4104,9 +4100,9 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@prisma/driver-adapter-utils@6.5.0':
+  '@prisma/driver-adapter-utils@7.3.0':
     dependencies:
-      '@prisma/debug': 6.5.0
+      '@prisma/debug': 7.3.0
 
   '@prisma/engines-version@7.3.0-16.9d6ad21cbbceab97458517b147a6a09ff43aa735': {}
 
@@ -4542,7 +4538,7 @@ snapshots:
 
   baseline-browser-mapping@2.9.19: {}
 
-  better-auth@1.4.18(@prisma/client@6.5.0(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(typescript@5.8.3))(mysql2@3.15.3)(next@16.1.6(@babel/core@7.27.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  better-auth@1.4.18(@prisma/client@7.3.0(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(typescript@5.8.3))(mysql2@3.15.3)(next@16.1.6(@babel/core@7.27.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
       '@better-auth/core': 1.4.18(@better-auth/utils@0.3.0)(@better-fetch/fetch@1.1.21)(better-call@1.1.8(zod@4.3.6))(jose@6.1.3)(kysely@0.28.11)(nanostores@1.1.0)
       '@better-auth/telemetry': 1.4.18(@better-auth/core@1.4.18(@better-auth/utils@0.3.0)(@better-fetch/fetch@1.1.21)(better-call@1.1.8(zod@4.3.6))(jose@6.1.3)(kysely@0.28.11)(nanostores@1.1.0))
@@ -4557,7 +4553,7 @@ snapshots:
       nanostores: 1.1.0
       zod: 4.3.6
     optionalDependencies:
-      '@prisma/client': 6.5.0(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(typescript@5.8.3)
+      '@prisma/client': 7.3.0(prisma@7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3))(typescript@5.8.3)
       mysql2: 3.15.3
       next: 16.1.6(@babel/core@7.27.1)(babel-plugin-react-compiler@1.0.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       prisma: 7.3.0(@types/react@19.1.2)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@5.8.3)
@@ -6051,8 +6047,6 @@ snapshots:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
-
-  postgres-array@3.0.3: {}
 
   postgres-array@3.0.4: {}
 

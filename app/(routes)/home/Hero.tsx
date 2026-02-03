@@ -63,20 +63,22 @@ export default function HeroSection() {
                 dream Pokémon card collection.
               </p>
               <div className="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
-                <Button size="lg" className="rounded-full" asChild>
-                  <Link href="/trading">
-                    Start Trading
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Link>
-                </Button>
+                <Button
+                  size="lg"
+                  className="rounded-full"
+                  render={
+                    <Link href="/trading">
+                      Start Trading
+                      <ChevronRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  }
+                ></Button>
                 <Button
                   size="lg"
                   variant="outline"
                   className="rounded-full"
-                  asChild
-                >
-                  <Link href="/collections">Browse Collections</Link>
-                </Button>
+                  render={<Link href="/collections">Browse Collections</Link>}
+                ></Button>
               </div>
             </div>
 
