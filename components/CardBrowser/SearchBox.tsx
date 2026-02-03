@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { SearchBoxProps } from "./types";
 import { debounce } from "@/lib/utils";
@@ -9,6 +9,13 @@ import { Button } from "@/components/ui/button";
 
 export function SearchBox({ value, onChange, placeholder = "Search cards..." }: SearchBoxProps) {
   const inputRef = useRef<HTMLInputElement>(null);
+  // Local state for instant typing; parent gets debounced updates
+  const [localValue, setLocalValue] = useState(value);
+
+  // Sync from parent only when cleared externally so we don't overwrite while typing
+  useEffect(() => {
+    if (value === "") setLocalValue("");
+  }, [value]);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const debouncedOnChange = useCallback(
@@ -19,13 +26,13 @@ export function SearchBox({ value, onChange, placeholder = "Search cards..." }: 
   );
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    debouncedOnChange(e.target.value);
+    const next = e.target.value;
+    setLocalValue(next);
+    debouncedOnChange(next);
   };
 
   const handleClear = () => {
-    if (inputRef.current) {
-      inputRef.current.value = "";
-    }
+    setLocalValue("");
     onChange("");
   };
 
@@ -36,13 +43,13 @@ export function SearchBox({ value, onChange, placeholder = "Search cards..." }: 
         ref={inputRef}
         type="search"
         placeholder={placeholder}
-        defaultValue={value}
+        value={localValue}
         onChange={handleChange}
         className="pl-9 pr-9"
         autoCorrect="off"
         autoComplete="off"
       />
-      {value && (
+      {localValue && (
         <Button
           type="button"
           variant="ghost"
