@@ -92,10 +92,10 @@ export function TradingCreateClient({
                 <ArrowRight className="h-4 w-4" />
               </Link>
             ) : (
-              <>
+              <span>
                 Continue
                 <ArrowRight className="h-4 w-4" />
-              </>
+              </span>
             )
           }
         ></Button>
