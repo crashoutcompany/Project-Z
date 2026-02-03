@@ -1,28 +1,31 @@
 "use client";
 
 import Image, { ImageProps } from "next/image";
-import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
 const LazyImage = ({
   src,
-  alt,
-  defaultUrl: placeholder,
-  externalUrl,
   ...props
 }: {
   src: string;
-  alt: string;
-  defaultUrl: string;
-  externalUrl: string;
 } & ImageProps) => {
   const imgRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     let observer: IntersectionObserver;
+    let image: HTMLImageElement;
+
     if (imgRef.current) {
-      // Create an observer that sets isVisible to true when the image enters the viewport.
+      image = imgRef.current;
+
+      const handleLoadError = (event: ErrorEvent) => {
+        console.error("Image failed to load:", event);
+        setIsVisible(false);
+      };
+
+      image.addEventListener("error", handleLoadError);
+
       observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -32,30 +35,24 @@ const LazyImage = ({
             }
           });
         },
-        {
-          threshold: 0.1, // Trigger when 10% of the image is visible.
-          rootMargin: "100px", // Preload a bit before it fully appears.
-        },
+        { threshold: 0.1, rootMargin: "100px" },
       );
-      observer.observe(imgRef.current);
+      observer.observe(image);
+
+      return () => {
+        // Cleanup event listener
+        image.removeEventListener("error", handleLoadError);
+
+        // Cleanup observer
+        if (observer && image) {
+          observer.unobserve(image);
+          observer.disconnect();
+        }
+      };
     }
-    return () => {
-      if (observer && observer.unobserve && imgRef.current) {
-        observer.unobserve(imgRef.current);
-      }
-    };
   }, []);
 
-  return (
-    <Link target="_blank" href={`https://serebii.net/${externalUrl}`}>
-      <Image
-        ref={imgRef}
-        src={isVisible ? src : placeholder || ""}
-        alt={alt}
-        {...props}
-      />
-    </Link>
-  );
+  return <Image ref={imgRef} src={isVisible ? src : "/back.png"} {...props} />;
 };
 
 export default LazyImage;

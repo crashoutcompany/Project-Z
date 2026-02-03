@@ -1,0 +1,5618 @@
+[
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade1 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/1.jpg",
+    "name": "Ledyba",
+    "url": "/tcgpocket/fantasticalparade/001.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade2 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/2.jpg",
+    "name": "Ledian",
+    "url": "/tcgpocket/fantasticalparade/002.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade3 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/3.jpg",
+    "name": "Shuckle",
+    "url": "/tcgpocket/fantasticalparade/003.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade4 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/4.jpg",
+    "name": "Roselia",
+    "url": "/tcgpocket/fantasticalparade/004.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade5 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/5.jpg",
+    "name": "Roserade",
+    "url": "/tcgpocket/fantasticalparade/005.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade6 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/6.jpg",
+    "name": "Cacnea",
+    "url": "/tcgpocket/fantasticalparade/006.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade7 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/7.jpg",
+    "name": "Cacturne",
+    "url": "/tcgpocket/fantasticalparade/007.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade8 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/8.jpg",
+    "name": "Chespin",
+    "url": "/tcgpocket/fantasticalparade/008.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade9 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/9.jpg",
+    "name": "Quilladin",
+    "url": "/tcgpocket/fantasticalparade/009.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade10 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/10.jpg",
+    "name": "Chesnaught",
+    "url": "/tcgpocket/fantasticalparade/010.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade11 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/11.jpg",
+    "name": "Scatterbug",
+    "url": "/tcgpocket/fantasticalparade/011.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade12 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/12.jpg",
+    "name": "Spewpa",
+    "url": "/tcgpocket/fantasticalparade/012.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade13 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/13.jpg",
+    "name": "Vivillon",
+    "url": "/tcgpocket/fantasticalparade/013.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade14 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/14.jpg",
+    "name": "Buzzwole",
+    "url": "/tcgpocket/fantasticalparade/014.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade15 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/15.jpg",
+    "name": "Gossifleur",
+    "url": "/tcgpocket/fantasticalparade/015.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade16 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/16.jpg",
+    "name": "Eldegoss",
+    "url": "/tcgpocket/fantasticalparade/016.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Fantastical Parade17 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/17.jpg",
+    "name": "Ogerpon ex",
+    "url": "/tcgpocket/fantasticalparade/017.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade18 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/18.jpg",
+    "name": "Marowak",
+    "url": "/tcgpocket/fantasticalparade/018.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade19 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/19.jpg",
+    "name": "Reshiram",
+    "url": "/tcgpocket/fantasticalparade/019.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade20 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/20.jpg",
+    "name": "Litleo",
+    "url": "/tcgpocket/fantasticalparade/020.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade21 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/21.jpg",
+    "name": "Pyroar",
+    "url": "/tcgpocket/fantasticalparade/021.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade22 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/22.jpg",
+    "name": "Oricorio",
+    "url": "/tcgpocket/fantasticalparade/022.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Fantastical Parade23 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/23.jpg",
+    "name": "Blacephalon ex",
+    "url": "/tcgpocket/fantasticalparade/023.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade24 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/24.jpg",
+    "name": "Scorbunny",
+    "url": "/tcgpocket/fantasticalparade/024.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade25 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/25.jpg",
+    "name": "Raboot",
+    "url": "/tcgpocket/fantasticalparade/025.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade26 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/26.jpg",
+    "name": "Cinderace",
+    "url": "/tcgpocket/fantasticalparade/026.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade27 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/27.jpg",
+    "name": "Ogerpon",
+    "url": "/tcgpocket/fantasticalparade/027.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade28 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/28.jpg",
+    "name": "Vulpix",
+    "url": "/tcgpocket/fantasticalparade/028.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Fantastical Parade29 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/29.jpg",
+    "name": "Ninetales ex",
+    "url": "/tcgpocket/fantasticalparade/029.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade30 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/30.jpg",
+    "name": "Mr. Mime",
+    "url": "/tcgpocket/fantasticalparade/030.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade31 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/31.jpg",
+    "name": "Mr. Rime",
+    "url": "/tcgpocket/fantasticalparade/031.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade32 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/32.jpg",
+    "name": "Delibird",
+    "url": "/tcgpocket/fantasticalparade/032.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade33 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/33.jpg",
+    "name": "Mudkip",
+    "url": "/tcgpocket/fantasticalparade/033.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade34 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/34.jpg",
+    "name": "Marshtomp",
+    "url": "/tcgpocket/fantasticalparade/034.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade35 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/35.jpg",
+    "name": "Swampert",
+    "url": "/tcgpocket/fantasticalparade/035.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Fantastical Parade36 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/36.jpg",
+    "name": "Swampert ex",
+    "url": "/tcgpocket/fantasticalparade/036.shtml",
+    "details": {
+      "hp": "230HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade37 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/37.jpg",
+    "name": "Vanillite",
+    "url": "/tcgpocket/fantasticalparade/037.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade38 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/38.jpg",
+    "name": "Vanillish",
+    "url": "/tcgpocket/fantasticalparade/038.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade39 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/39.jpg",
+    "name": "Vanilluxe",
+    "url": "/tcgpocket/fantasticalparade/039.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade40 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/40.jpg",
+    "name": "Cryogonal",
+    "url": "/tcgpocket/fantasticalparade/040.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade41 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/41.jpg",
+    "name": "Amaura",
+    "url": "/tcgpocket/fantasticalparade/041.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade42 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/42.jpg",
+    "name": "Aurorus",
+    "url": "/tcgpocket/fantasticalparade/042.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade43 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/43.jpg",
+    "name": "Chewtle",
+    "url": "/tcgpocket/fantasticalparade/043.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade44 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/44.jpg",
+    "name": "Drednaw",
+    "url": "/tcgpocket/fantasticalparade/044.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade45 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/45.jpg",
+    "name": "Cramorant",
+    "url": "/tcgpocket/fantasticalparade/045.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade46 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/46.jpg",
+    "name": "Arrokuda",
+    "url": "/tcgpocket/fantasticalparade/046.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade47 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/47.jpg",
+    "name": "Barraskewda",
+    "url": "/tcgpocket/fantasticalparade/047.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade48 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/48.jpg",
+    "name": "Ogerpon",
+    "url": "/tcgpocket/fantasticalparade/048.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade49 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/49.jpg",
+    "name": "Pikachu",
+    "url": "/tcgpocket/fantasticalparade/049.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade50 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/50.jpg",
+    "name": "Raichu",
+    "url": "/tcgpocket/fantasticalparade/050.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade51 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/51.jpg",
+    "name": "Zapdos",
+    "url": "/tcgpocket/fantasticalparade/051.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade52 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/52.jpg",
+    "name": "Plusle",
+    "url": "/tcgpocket/fantasticalparade/052.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade53 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/53.jpg",
+    "name": "Minun",
+    "url": "/tcgpocket/fantasticalparade/053.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade54 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/54.jpg",
+    "name": "Toxel",
+    "url": "/tcgpocket/fantasticalparade/054.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Fantastical Parade55 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/55.jpg",
+    "name": "Toxtricity ex",
+    "url": "/tcgpocket/fantasticalparade/055.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade56 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/56.jpg",
+    "name": "Tadbulb",
+    "url": "/tcgpocket/fantasticalparade/056.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade57 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/57.jpg",
+    "name": "Bellibolt",
+    "url": "/tcgpocket/fantasticalparade/057.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade58 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/58.jpg",
+    "name": "Ponyta",
+    "url": "/tcgpocket/fantasticalparade/058.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade59 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/59.jpg",
+    "name": "Rapidash",
+    "url": "/tcgpocket/fantasticalparade/059.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade60 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/60.jpg",
+    "name": "Wobbuffet",
+    "url": "/tcgpocket/fantasticalparade/060.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade61 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/61.jpg",
+    "name": "Snubbull",
+    "url": "/tcgpocket/fantasticalparade/061.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade62 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/62.jpg",
+    "name": "Granbull",
+    "url": "/tcgpocket/fantasticalparade/062.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade63 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/63.jpg",
+    "name": "Ralts",
+    "url": "/tcgpocket/fantasticalparade/063.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade64 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/64.jpg",
+    "name": "Kirlia",
+    "url": "/tcgpocket/fantasticalparade/064.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade65 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/65.jpg",
+    "name": "Gardevoir",
+    "url": "/tcgpocket/fantasticalparade/065.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Fantastical Parade66 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/66.jpg",
+    "name": "Gardevoir ex",
+    "url": "/tcgpocket/fantasticalparade/066.shtml",
+    "details": {
+      "hp": "210HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade67 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/67.jpg",
+    "name": "Litwick",
+    "url": "/tcgpocket/fantasticalparade/067.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade68 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/68.jpg",
+    "name": "Lampent",
+    "url": "/tcgpocket/fantasticalparade/068.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade69 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/69.jpg",
+    "name": "Chandelure",
+    "url": "/tcgpocket/fantasticalparade/069.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade70 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/70.jpg",
+    "name": "Meloetta",
+    "url": "/tcgpocket/fantasticalparade/070.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade71 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/71.jpg",
+    "name": "Pumpkaboo",
+    "url": "/tcgpocket/fantasticalparade/071.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade72 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/72.jpg",
+    "name": "Gourgeist",
+    "url": "/tcgpocket/fantasticalparade/072.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Fantastical Parade73 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/73.jpg",
+    "name": "Mimikyu ex",
+    "url": "/tcgpocket/fantasticalparade/073.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade74 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/74.jpg",
+    "name": "Sinistea",
+    "url": "/tcgpocket/fantasticalparade/074.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade75 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/75.jpg",
+    "name": "Polteageist",
+    "url": "/tcgpocket/fantasticalparade/075.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade76 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/76.jpg",
+    "name": "Indeedee",
+    "url": "/tcgpocket/fantasticalparade/076.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade77 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/77.jpg",
+    "name": "Sandshrew",
+    "url": "/tcgpocket/fantasticalparade/077.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade78 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/78.jpg",
+    "name": "Sandslash",
+    "url": "/tcgpocket/fantasticalparade/078.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade79 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/79.jpg",
+    "name": "Machop",
+    "url": "/tcgpocket/fantasticalparade/079.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade80 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/80.jpg",
+    "name": "Machoke",
+    "url": "/tcgpocket/fantasticalparade/080.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade81 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/81.jpg",
+    "name": "Machamp",
+    "url": "/tcgpocket/fantasticalparade/081.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade82 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/82.jpg",
+    "name": "Cubone",
+    "url": "/tcgpocket/fantasticalparade/082.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade83 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/83.jpg",
+    "name": "Meditite",
+    "url": "/tcgpocket/fantasticalparade/083.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade84 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/84.jpg",
+    "name": "Medicham",
+    "url": "/tcgpocket/fantasticalparade/084.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade85 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/85.jpg",
+    "name": "Roggenrola",
+    "url": "/tcgpocket/fantasticalparade/085.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade86 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/86.jpg",
+    "name": "Boldore",
+    "url": "/tcgpocket/fantasticalparade/086.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Fantastical Parade87 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/87.jpg",
+    "name": "Gigalith ex",
+    "url": "/tcgpocket/fantasticalparade/087.shtml",
+    "details": {
+      "hp": "190HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade88 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/88.jpg",
+    "name": "Drilbur",
+    "url": "/tcgpocket/fantasticalparade/088.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade89 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/89.jpg",
+    "name": "Tyrunt",
+    "url": "/tcgpocket/fantasticalparade/089.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade90 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/90.jpg",
+    "name": "Tyrantrum",
+    "url": "/tcgpocket/fantasticalparade/090.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade91 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/91.jpg",
+    "name": "Passimian",
+    "url": "/tcgpocket/fantasticalparade/091.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade92 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/92.jpg",
+    "name": "Falinks",
+    "url": "/tcgpocket/fantasticalparade/092.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade93 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/93.jpg",
+    "name": "Ogerpon",
+    "url": "/tcgpocket/fantasticalparade/093.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade94 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/94.jpg",
+    "name": "Meowth",
+    "url": "/tcgpocket/fantasticalparade/094.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade95 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/95.jpg",
+    "name": "Persian",
+    "url": "/tcgpocket/fantasticalparade/095.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade96 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/96.jpg",
+    "name": "Grimer",
+    "url": "/tcgpocket/fantasticalparade/096.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade97 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/97.jpg",
+    "name": "Muk",
+    "url": "/tcgpocket/fantasticalparade/097.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade98 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/98.jpg",
+    "name": "Zigzagoon",
+    "url": "/tcgpocket/fantasticalparade/098.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade99 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/99.jpg",
+    "name": "Linoone",
+    "url": "/tcgpocket/fantasticalparade/099.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade100 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/100.jpg",
+    "name": "Obstagoon",
+    "url": "/tcgpocket/fantasticalparade/100.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade101 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/101.jpg",
+    "name": "Stunky",
+    "url": "/tcgpocket/fantasticalparade/101.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade102 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/102.jpg",
+    "name": "Skuntank",
+    "url": "/tcgpocket/fantasticalparade/102.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade103 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/103.jpg",
+    "name": "Spiritomb",
+    "url": "/tcgpocket/fantasticalparade/103.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade104 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/104.jpg",
+    "name": "Purrloin",
+    "url": "/tcgpocket/fantasticalparade/104.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade105 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/105.jpg",
+    "name": "Liepard",
+    "url": "/tcgpocket/fantasticalparade/105.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade106 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/106.jpg",
+    "name": "Scraggy",
+    "url": "/tcgpocket/fantasticalparade/106.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade107 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/107.jpg",
+    "name": "Scrafty",
+    "url": "/tcgpocket/fantasticalparade/107.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade108 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/108.jpg",
+    "name": "Yveltal",
+    "url": "/tcgpocket/fantasticalparade/108.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade109 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/109.jpg",
+    "name": "Guzzlord",
+    "url": "/tcgpocket/fantasticalparade/109.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade110 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/110.jpg",
+    "name": "Meowth",
+    "url": "/tcgpocket/fantasticalparade/110.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade111 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/111.jpg",
+    "name": "Perrserker",
+    "url": "/tcgpocket/fantasticalparade/111.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade112 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/112.jpg",
+    "name": "Mawile",
+    "url": "/tcgpocket/fantasticalparade/112.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Fantastical Parade113 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/113.jpg",
+    "name": "Mawile ex",
+    "url": "/tcgpocket/fantasticalparade/113.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade114 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/114.jpg",
+    "name": "Excadrill",
+    "url": "/tcgpocket/fantasticalparade/114.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade115 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/115.jpg",
+    "name": "Ferroseed",
+    "url": "/tcgpocket/fantasticalparade/115.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade116 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/116.jpg",
+    "name": "Ferrothorn",
+    "url": "/tcgpocket/fantasticalparade/116.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade117 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/117.jpg",
+    "name": "Stunfisk",
+    "url": "/tcgpocket/fantasticalparade/117.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade118 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/118.jpg",
+    "name": "Honedge",
+    "url": "/tcgpocket/fantasticalparade/118.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade119 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/119.jpg",
+    "name": "Doublade",
+    "url": "/tcgpocket/fantasticalparade/119.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade120 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/120.jpg",
+    "name": "Aegislash",
+    "url": "/tcgpocket/fantasticalparade/120.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade121 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/121.jpg",
+    "name": "Bagon",
+    "url": "/tcgpocket/fantasticalparade/121.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/dragon.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade122 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/122.jpg",
+    "name": "Shelgon",
+    "url": "/tcgpocket/fantasticalparade/122.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/dragon.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade123 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/123.jpg",
+    "name": "Salamence",
+    "url": "/tcgpocket/fantasticalparade/123.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/dragon.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade124 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/124.jpg",
+    "name": "Meowth",
+    "url": "/tcgpocket/fantasticalparade/124.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade125 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/125.jpg",
+    "name": "Persian",
+    "url": "/tcgpocket/fantasticalparade/125.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade126 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/126.jpg",
+    "name": "Kangaskhan",
+    "url": "/tcgpocket/fantasticalparade/126.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Fantastical Parade127 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/127.jpg",
+    "name": "Kangaskhan ex",
+    "url": "/tcgpocket/fantasticalparade/127.shtml",
+    "details": {
+      "hp": "180HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade128 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/128.jpg",
+    "name": "Sentret",
+    "url": "/tcgpocket/fantasticalparade/128.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade129 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/129.jpg",
+    "name": "Furret",
+    "url": "/tcgpocket/fantasticalparade/129.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade130 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/130.jpg",
+    "name": "Smeargle",
+    "url": "/tcgpocket/fantasticalparade/130.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade131 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/131.jpg",
+    "name": "Lugia",
+    "url": "/tcgpocket/fantasticalparade/131.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade132 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/132.jpg",
+    "name": "Taillow",
+    "url": "/tcgpocket/fantasticalparade/132.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade133 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/133.jpg",
+    "name": "Swellow",
+    "url": "/tcgpocket/fantasticalparade/133.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade134 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/134.jpg",
+    "name": "Slakoth",
+    "url": "/tcgpocket/fantasticalparade/134.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade135 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/135.jpg",
+    "name": "Vigoroth",
+    "url": "/tcgpocket/fantasticalparade/135.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/.png",
+      "pokedex": "Fantastical Parade136 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/136.jpg",
+    "name": "Slaking",
+    "url": "/tcgpocket/fantasticalparade/136.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade137 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/137.jpg",
+    "name": "Spinda",
+    "url": "/tcgpocket/fantasticalparade/137.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Fantastical Parade138 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/138.jpg",
+    "name": "Tornadus",
+    "url": "/tcgpocket/fantasticalparade/138.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade139 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/139.jpg",
+    "name": "Bunnelby",
+    "url": "/tcgpocket/fantasticalparade/139.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade140 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/140.jpg",
+    "name": "Diggersby",
+    "url": "/tcgpocket/fantasticalparade/140.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade141 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/141.jpg",
+    "name": "Furfrou",
+    "url": "/tcgpocket/fantasticalparade/141.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Fantastical Parade142 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/142.jpg",
+    "name": "Tandemaus",
+    "url": "/tcgpocket/fantasticalparade/142.shtml",
+    "details": {
+      "hp": "40HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade143 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/143.jpg",
+    "name": "Maushold",
+    "url": "/tcgpocket/fantasticalparade/143.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade144 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/144.jpg",
+    "name": "Jaw Fossil",
+    "url": "/tcgpocket/fantasticalparade/144.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade145 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/145.jpg",
+    "name": "Lucky Ice Pop",
+    "url": "/tcgpocket/fantasticalparade/145.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade146 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/146.jpg",
+    "name": "Sail Fossil",
+    "url": "/tcgpocket/fantasticalparade/146.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade147 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/147.jpg",
+    "name": "Protective Poncho",
+    "url": "/tcgpocket/fantasticalparade/147.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade148 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/148.jpg",
+    "name": "Metal Core Barrier",
+    "url": "/tcgpocket/fantasticalparade/148.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade149 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/149.jpg",
+    "name": "Diantha",
+    "url": "/tcgpocket/fantasticalparade/149.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade150 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/150.jpg",
+    "name": "Sightseer",
+    "url": "/tcgpocket/fantasticalparade/150.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade151 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/151.jpg",
+    "name": "Juggler",
+    "url": "/tcgpocket/fantasticalparade/151.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade152 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/152.jpg",
+    "name": "Piers",
+    "url": "/tcgpocket/fantasticalparade/152.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade153 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/153.jpg",
+    "name": "Training Area",
+    "url": "/tcgpocket/fantasticalparade/153.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade154 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/154.jpg",
+    "name": "Starting Plains",
+    "url": "/tcgpocket/fantasticalparade/154.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Fantastical Parade155 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/155.jpg",
+    "name": "Peculiar Plaza",
+    "url": "/tcgpocket/fantasticalparade/155.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade156 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/156.jpg",
+    "name": "Cacnea",
+    "url": "/tcgpocket/fantasticalparade/156.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade157 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/157.jpg",
+    "name": "Roserade",
+    "url": "/tcgpocket/fantasticalparade/157.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade158 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/158.jpg",
+    "name": "Vivillon",
+    "url": "/tcgpocket/fantasticalparade/158.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade159 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/159.jpg",
+    "name": "Buzzwole",
+    "url": "/tcgpocket/fantasticalparade/159.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade160 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/160.jpg",
+    "name": "Reshiram",
+    "url": "/tcgpocket/fantasticalparade/160.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade161 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/161.jpg",
+    "name": "Oricorio",
+    "url": "/tcgpocket/fantasticalparade/161.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade162 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/162.jpg",
+    "name": "Scorbunny",
+    "url": "/tcgpocket/fantasticalparade/162.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade163 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/163.jpg",
+    "name": "Aurorus",
+    "url": "/tcgpocket/fantasticalparade/163.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade164 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/164.jpg",
+    "name": "Cramorant",
+    "url": "/tcgpocket/fantasticalparade/164.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade165 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/165.jpg",
+    "name": "Minun",
+    "url": "/tcgpocket/fantasticalparade/165.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade166 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/166.jpg",
+    "name": "Toxel",
+    "url": "/tcgpocket/fantasticalparade/166.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade167 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/167.jpg",
+    "name": "Ponyta",
+    "url": "/tcgpocket/fantasticalparade/167.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade168 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/168.jpg",
+    "name": "Snubbull",
+    "url": "/tcgpocket/fantasticalparade/168.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade169 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/169.jpg",
+    "name": "Indeedee",
+    "url": "/tcgpocket/fantasticalparade/169.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade170 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/170.jpg",
+    "name": "Sandshrew",
+    "url": "/tcgpocket/fantasticalparade/170.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade171 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/171.jpg",
+    "name": "Tyrantrum",
+    "url": "/tcgpocket/fantasticalparade/171.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade172 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/172.jpg",
+    "name": "Falinks",
+    "url": "/tcgpocket/fantasticalparade/172.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade173 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/173.jpg",
+    "name": "Muk",
+    "url": "/tcgpocket/fantasticalparade/173.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade174 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/174.jpg",
+    "name": "Purrloin",
+    "url": "/tcgpocket/fantasticalparade/174.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade175 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/175.jpg",
+    "name": "Yveltal",
+    "url": "/tcgpocket/fantasticalparade/175.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade176 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/176.jpg",
+    "name": "Obstagoon",
+    "url": "/tcgpocket/fantasticalparade/176.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade177 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/177.jpg",
+    "name": "Perrserker",
+    "url": "/tcgpocket/fantasticalparade/177.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade178 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/178.jpg",
+    "name": "Salamence",
+    "url": "/tcgpocket/fantasticalparade/178.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/dragon.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Fantastical Parade179 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/179.jpg",
+    "name": "Slakoth",
+    "url": "/tcgpocket/fantasticalparade/179.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade180 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/180.jpg",
+    "name": "Ogerpon ex",
+    "url": "/tcgpocket/fantasticalparade/180.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade181 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/181.jpg",
+    "name": "Blacephalon ex",
+    "url": "/tcgpocket/fantasticalparade/181.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade182 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/182.jpg",
+    "name": "Ninetales ex",
+    "url": "/tcgpocket/fantasticalparade/182.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade183 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/183.jpg",
+    "name": "Swampert ex",
+    "url": "/tcgpocket/fantasticalparade/183.shtml",
+    "details": {
+      "hp": "230HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade184 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/184.jpg",
+    "name": "Toxtricity ex",
+    "url": "/tcgpocket/fantasticalparade/184.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade185 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/185.jpg",
+    "name": "Gardevoir ex",
+    "url": "/tcgpocket/fantasticalparade/185.shtml",
+    "details": {
+      "hp": "210HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade186 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/186.jpg",
+    "name": "Mimikyu ex",
+    "url": "/tcgpocket/fantasticalparade/186.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade187 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/187.jpg",
+    "name": "Gigalith ex",
+    "url": "/tcgpocket/fantasticalparade/187.shtml",
+    "details": {
+      "hp": "190HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade188 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/188.jpg",
+    "name": "Mawile ex",
+    "url": "/tcgpocket/fantasticalparade/188.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade189 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/189.jpg",
+    "name": "Kangaskhan ex",
+    "url": "/tcgpocket/fantasticalparade/189.shtml",
+    "details": {
+      "hp": "180HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade190 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/190.jpg",
+    "name": "Diantha",
+    "url": "/tcgpocket/fantasticalparade/190.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade191 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/191.jpg",
+    "name": "Sightseer",
+    "url": "/tcgpocket/fantasticalparade/191.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade192 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/192.jpg",
+    "name": "Juggler",
+    "url": "/tcgpocket/fantasticalparade/192.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade193 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/193.jpg",
+    "name": "Piers",
+    "url": "/tcgpocket/fantasticalparade/193.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade194 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/194.jpg",
+    "name": "Ogerpon ex",
+    "url": "/tcgpocket/fantasticalparade/194.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade195 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/195.jpg",
+    "name": "Blacephalon ex",
+    "url": "/tcgpocket/fantasticalparade/195.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade196 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/196.jpg",
+    "name": "Ninetales ex",
+    "url": "/tcgpocket/fantasticalparade/196.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade197 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/197.jpg",
+    "name": "Swampert ex",
+    "url": "/tcgpocket/fantasticalparade/197.shtml",
+    "details": {
+      "hp": "230HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade198 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/198.jpg",
+    "name": "Toxtricity ex",
+    "url": "/tcgpocket/fantasticalparade/198.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade199 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/199.jpg",
+    "name": "Mimikyu ex",
+    "url": "/tcgpocket/fantasticalparade/199.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade200 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/200.jpg",
+    "name": "Gigalith ex",
+    "url": "/tcgpocket/fantasticalparade/200.shtml",
+    "details": {
+      "hp": "190HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade201 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/201.jpg",
+    "name": "Mawile ex",
+    "url": "/tcgpocket/fantasticalparade/201.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Fantastical Parade202 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/202.jpg",
+    "name": "Kangaskhan ex",
+    "url": "/tcgpocket/fantasticalparade/202.shtml",
+    "details": {
+      "hp": "180HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star3.png",
+      "pokedex": "Fantastical Parade203 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/203.jpg",
+    "name": "Gardevoir ex",
+    "url": "/tcgpocket/fantasticalparade/203.shtml",
+    "details": {
+      "hp": "210HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/star3.png",
+      "pokedex": "Fantastical Parade204 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/204.jpg",
+    "name": "Meowth",
+    "url": "/tcgpocket/fantasticalparade/204.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star3.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade205 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/205.jpg",
+    "name": "Tangela",
+    "url": "/tcgpocket/fantasticalparade/205.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade206 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/206.jpg",
+    "name": "Magby",
+    "url": "/tcgpocket/fantasticalparade/206.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade207 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/207.jpg",
+    "name": "Magmar",
+    "url": "/tcgpocket/fantasticalparade/207.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade208 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/208.jpg",
+    "name": "Horsea",
+    "url": "/tcgpocket/fantasticalparade/208.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade209 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/209.jpg",
+    "name": "Seadra",
+    "url": "/tcgpocket/fantasticalparade/209.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade210 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/210.jpg",
+    "name": "Mantyke",
+    "url": "/tcgpocket/fantasticalparade/210.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade211 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/211.jpg",
+    "name": "Omanyte",
+    "url": "/tcgpocket/fantasticalparade/211.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade212 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/212.jpg",
+    "name": "Omastar",
+    "url": "/tcgpocket/fantasticalparade/212.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade213 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/213.jpg",
+    "name": "Pichu",
+    "url": "/tcgpocket/fantasticalparade/213.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade214 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/214.jpg",
+    "name": "Clefairy",
+    "url": "/tcgpocket/fantasticalparade/214.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade215 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/215.jpg",
+    "name": "Clefable",
+    "url": "/tcgpocket/fantasticalparade/215.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade216 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/216.jpg",
+    "name": "Latias",
+    "url": "/tcgpocket/fantasticalparade/216.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade217 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/217.jpg",
+    "name": "Latios",
+    "url": "/tcgpocket/fantasticalparade/217.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade218 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/218.jpg",
+    "name": "Hitmonlee",
+    "url": "/tcgpocket/fantasticalparade/218.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade219 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/219.jpg",
+    "name": "Hitmonchan",
+    "url": "/tcgpocket/fantasticalparade/219.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade220 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/220.jpg",
+    "name": "Kabuto",
+    "url": "/tcgpocket/fantasticalparade/220.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade221 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/221.jpg",
+    "name": "Kabutops",
+    "url": "/tcgpocket/fantasticalparade/221.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade222 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/222.jpg",
+    "name": "Phanpy",
+    "url": "/tcgpocket/fantasticalparade/222.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade223 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/223.jpg",
+    "name": "Tyrogue",
+    "url": "/tcgpocket/fantasticalparade/223.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Fantastical Parade224 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/224.jpg",
+    "name": "Tauros",
+    "url": "/tcgpocket/fantasticalparade/224.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Fantastical Parade225 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/225.jpg",
+    "name": "Flareon ex",
+    "url": "/tcgpocket/fantasticalparade/225.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Fantastical Parade226 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/226.jpg",
+    "name": "Ho-Oh ex",
+    "url": "/tcgpocket/fantasticalparade/226.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Fantastical Parade227 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/227.jpg",
+    "name": "Kingdra ex",
+    "url": "/tcgpocket/fantasticalparade/227.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Fantastical Parade228 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/228.jpg",
+    "name": "Espeon ex",
+    "url": "/tcgpocket/fantasticalparade/228.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Fantastical Parade229 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/229.jpg",
+    "name": "Sylveon ex",
+    "url": "/tcgpocket/fantasticalparade/229.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Fantastical Parade230 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/230.jpg",
+    "name": "Donphan ex",
+    "url": "/tcgpocket/fantasticalparade/230.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Fantastical Parade231 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/231.jpg",
+    "name": "Umbreon ex",
+    "url": "/tcgpocket/fantasticalparade/231.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Fantastical Parade232 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/232.jpg",
+    "name": "Lugia ex",
+    "url": "/tcgpocket/fantasticalparade/232.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/crown.png",
+      "pokedex": "Fantastical Parade233 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/233.jpg",
+    "name": "Meloetta",
+    "url": "/tcgpocket/fantasticalparade/233.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/crown.png"
+  },
+  {
+    "set": {
+      "setName": "Fantastical Parade",
+      "image": "/tcgpocket/image/crown.png",
+      "pokedex": "Fantastical Parade234 / 155"
+    },
+    "thumbnail": "/tcgpocket/th/fantasticalparade/234.jpg",
+    "name": "Protective Poncho",
+    "url": "/tcgpocket/fantasticalparade/234.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/crown.png"
+  }
+]

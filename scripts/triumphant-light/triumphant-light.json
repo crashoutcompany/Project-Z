@@ -1,2210 +1,2306 @@
 [
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light1 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/1.jpg",
-    "name": "Heracross",
-    "url": "/tcgpocket/triumphantlight/001.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light2 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/2.jpg",
-    "name": "Burmy",
-    "url": "/tcgpocket/triumphantlight/002.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light3 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/3.jpg",
-    "name": "Mothim",
-    "url": "/tcgpocket/triumphantlight/003.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light4 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/4.jpg",
-    "name": "Combee",
-    "url": "/tcgpocket/triumphantlight/004.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light5 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/5.jpg",
-    "name": "Vespiquen",
-    "url": "/tcgpocket/triumphantlight/005.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light6 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/6.jpg",
-    "name": "Cherubi",
-    "url": "/tcgpocket/triumphantlight/006.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light7 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/7.jpg",
-    "name": "Cherrim",
-    "url": "/tcgpocket/triumphantlight/007.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light8 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/8.jpg",
-    "name": "Cherrim",
-    "url": "/tcgpocket/triumphantlight/008.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light9 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/9.jpg",
-    "name": "Carnivine",
-    "url": "/tcgpocket/triumphantlight/009.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Triumphant Light10 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/10.jpg",
-    "name": "Leafeon ex",
-    "url": "/tcgpocket/triumphantlight/010.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light11 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/11.jpg",
-    "name": "Houndour",
-    "url": "/tcgpocket/triumphantlight/011.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light12 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/12.jpg",
-    "name": "Houndoom",
-    "url": "/tcgpocket/triumphantlight/012.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light13 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/13.jpg",
-    "name": "Heatran",
-    "url": "/tcgpocket/triumphantlight/013.shtml",
-    "details": {
-      "hp": "110HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light14 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/14.jpg",
-    "name": "Marill",
-    "url": "/tcgpocket/triumphantlight/014.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light15 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/15.jpg",
-    "name": "Azumarill",
-    "url": "/tcgpocket/triumphantlight/015.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light16 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/16.jpg",
-    "name": "Barboach",
-    "url": "/tcgpocket/triumphantlight/016.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light17 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/17.jpg",
-    "name": "Whiscash",
-    "url": "/tcgpocket/triumphantlight/017.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light18 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/18.jpg",
-    "name": "Snorunt",
-    "url": "/tcgpocket/triumphantlight/018.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/metal.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light19 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/19.jpg",
-    "name": "Froslass",
-    "url": "/tcgpocket/triumphantlight/019.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/metal.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light20 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/20.jpg",
-    "name": "Snover",
-    "url": "/tcgpocket/triumphantlight/020.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/metal.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light21 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/21.jpg",
-    "name": "Abomasnow",
-    "url": "/tcgpocket/triumphantlight/021.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/metal.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Triumphant Light22 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/22.jpg",
-    "name": "Glaceon ex",
-    "url": "/tcgpocket/triumphantlight/022.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/metal.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light23 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/23.jpg",
-    "name": "Palkia",
-    "url": "/tcgpocket/triumphantlight/023.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light24 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/24.jpg",
-    "name": "Phione",
-    "url": "/tcgpocket/triumphantlight/024.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light25 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/25.jpg",
-    "name": "Pikachu",
-    "url": "/tcgpocket/triumphantlight/025.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light26 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/26.jpg",
-    "name": "Raichu",
-    "url": "/tcgpocket/triumphantlight/026.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light27 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/27.jpg",
-    "name": "Electrike",
-    "url": "/tcgpocket/triumphantlight/027.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light28 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/28.jpg",
-    "name": "Manectric",
-    "url": "/tcgpocket/triumphantlight/028.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light29 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/29.jpg",
-    "name": "Clefairy",
-    "url": "/tcgpocket/triumphantlight/029.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/metal.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light30 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/30.jpg",
-    "name": "Clefable",
-    "url": "/tcgpocket/triumphantlight/030.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/metal.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light31 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/31.jpg",
-    "name": "Gastly",
-    "url": "/tcgpocket/triumphantlight/031.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light32 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/32.jpg",
-    "name": "Haunter",
-    "url": "/tcgpocket/triumphantlight/032.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light33 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/33.jpg",
-    "name": "Gengar",
-    "url": "/tcgpocket/triumphantlight/033.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light34 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/34.jpg",
-    "name": "Unown",
-    "url": "/tcgpocket/triumphantlight/034.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light35 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/35.jpg",
-    "name": "Rotom",
-    "url": "/tcgpocket/triumphantlight/035.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light36 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/36.jpg",
-    "name": "Sudowoodo",
-    "url": "/tcgpocket/triumphantlight/036.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light37 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/37.jpg",
-    "name": "Phanpy",
-    "url": "/tcgpocket/triumphantlight/037.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light38 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/38.jpg",
-    "name": "Donphan",
-    "url": "/tcgpocket/triumphantlight/038.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light39 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/39.jpg",
-    "name": "Larvitar",
-    "url": "/tcgpocket/triumphantlight/039.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light40 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/40.jpg",
-    "name": "Pupitar",
-    "url": "/tcgpocket/triumphantlight/040.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light41 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/41.jpg",
-    "name": "Tyranitar",
-    "url": "/tcgpocket/triumphantlight/041.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "4"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light42 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/42.jpg",
-    "name": "Nosepass",
-    "url": "/tcgpocket/triumphantlight/042.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light43 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/43.jpg",
-    "name": "Meditite",
-    "url": "/tcgpocket/triumphantlight/043.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light44 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/44.jpg",
-    "name": "Medicham",
-    "url": "/tcgpocket/triumphantlight/044.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light45 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/45.jpg",
-    "name": "Gible",
-    "url": "/tcgpocket/triumphantlight/045.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light46 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/46.jpg",
-    "name": "Gabite",
-    "url": "/tcgpocket/triumphantlight/046.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Triumphant Light47 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/47.jpg",
-    "name": "Garchomp ex",
-    "url": "/tcgpocket/triumphantlight/047.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light48 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/48.jpg",
-    "name": "Zubat",
-    "url": "/tcgpocket/triumphantlight/048.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light49 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/49.jpg",
-    "name": "Golbat",
-    "url": "/tcgpocket/triumphantlight/049.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light50 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/50.jpg",
-    "name": "Crobat",
-    "url": "/tcgpocket/triumphantlight/050.shtml",
-    "details": {
-      "hp": "110HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light51 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/51.jpg",
-    "name": "Croagunk",
-    "url": "/tcgpocket/triumphantlight/051.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light52 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/52.jpg",
-    "name": "Toxicroak",
-    "url": "/tcgpocket/triumphantlight/052.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light53 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/53.jpg",
-    "name": "Magnemite",
-    "url": "/tcgpocket/triumphantlight/053.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light54 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/54.jpg",
-    "name": "Magneton",
-    "url": "/tcgpocket/triumphantlight/054.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light55 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/55.jpg",
-    "name": "Magnezone",
-    "url": "/tcgpocket/triumphantlight/055.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light56 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/56.jpg",
-    "name": "Mawile",
-    "url": "/tcgpocket/triumphantlight/056.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Triumphant Light57 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/57.jpg",
-    "name": "Probopass ex",
-    "url": "/tcgpocket/triumphantlight/057.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light58 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/58.jpg",
-    "name": "Bronzor",
-    "url": "/tcgpocket/triumphantlight/058.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light59 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/59.jpg",
-    "name": "Bronzong",
-    "url": "/tcgpocket/triumphantlight/059.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light60 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/60.jpg",
-    "name": "Dialga",
-    "url": "/tcgpocket/triumphantlight/060.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light61 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/61.jpg",
-    "name": "Giratina",
-    "url": "/tcgpocket/triumphantlight/061.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/dragon.png",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light62 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/62.jpg",
-    "name": "Eevee",
-    "url": "/tcgpocket/triumphantlight/062.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light63 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/63.jpg",
-    "name": "Snorlax",
-    "url": "/tcgpocket/triumphantlight/063.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "4"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light64 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/64.jpg",
-    "name": "Hoothoot",
-    "url": "/tcgpocket/triumphantlight/064.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light65 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/65.jpg",
-    "name": "Noctowl",
-    "url": "/tcgpocket/triumphantlight/065.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light66 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/66.jpg",
-    "name": "Starly",
-    "url": "/tcgpocket/triumphantlight/066.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Triumphant Light67 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/67.jpg",
-    "name": "Staravia",
-    "url": "/tcgpocket/triumphantlight/067.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light68 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/68.jpg",
-    "name": "Staraptor",
-    "url": "/tcgpocket/triumphantlight/068.shtml",
-    "details": {
-      "hp": "150HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light69 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/69.jpg",
-    "name": "Shaymin",
-    "url": "/tcgpocket/triumphantlight/069.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Triumphant Light70 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/70.jpg",
-    "name": "Arceus",
-    "url": "/tcgpocket/triumphantlight/070.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Triumphant Light71 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/71.jpg",
-    "name": "Arceus ex",
-    "url": "/tcgpocket/triumphantlight/071.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light72 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/72.jpg",
-    "name": "Irida",
-    "url": "/tcgpocket/triumphantlight/072.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light73 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/73.jpg",
-    "name": "Celestic Town Elder",
-    "url": "/tcgpocket/triumphantlight/073.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light74 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/74.jpg",
-    "name": "Barry",
-    "url": "/tcgpocket/triumphantlight/074.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Triumphant Light75 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/75.jpg",
-    "name": "Adaman",
-    "url": "/tcgpocket/triumphantlight/075.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Triumphant Light76 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/76.jpg",
-    "name": "Houndoom",
-    "url": "/tcgpocket/triumphantlight/076.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Triumphant Light77 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/77.jpg",
-    "name": "Marill",
-    "url": "/tcgpocket/triumphantlight/077.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Triumphant Light78 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/78.jpg",
-    "name": "Unown",
-    "url": "/tcgpocket/triumphantlight/078.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Triumphant Light79 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/79.jpg",
-    "name": "Sudowoodo",
-    "url": "/tcgpocket/triumphantlight/079.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Triumphant Light80 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/80.jpg",
-    "name": "Magnemite",
-    "url": "/tcgpocket/triumphantlight/080.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Triumphant Light81 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/81.jpg",
-    "name": "Shaymin",
-    "url": "/tcgpocket/triumphantlight/081.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light82 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/82.jpg",
-    "name": "Leafeon ex",
-    "url": "/tcgpocket/triumphantlight/082.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light83 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/83.jpg",
-    "name": "Glaceon ex",
-    "url": "/tcgpocket/triumphantlight/083.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/metal.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light84 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/84.jpg",
-    "name": "Garchomp ex",
-    "url": "/tcgpocket/triumphantlight/084.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light85 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/85.jpg",
-    "name": "Probopass ex",
-    "url": "/tcgpocket/triumphantlight/085.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light86 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/86.jpg",
-    "name": "Arceus ex",
-    "url": "/tcgpocket/triumphantlight/086.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light87 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/87.jpg",
-    "name": "Irida",
-    "url": "/tcgpocket/triumphantlight/087.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light88 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/88.jpg",
-    "name": "Celestic Town Elder",
-    "url": "/tcgpocket/triumphantlight/088.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light89 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/89.jpg",
-    "name": "Barry",
-    "url": "/tcgpocket/triumphantlight/089.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light90 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/90.jpg",
-    "name": "Adaman",
-    "url": "/tcgpocket/triumphantlight/090.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light91 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/91.jpg",
-    "name": "Leafeon ex",
-    "url": "/tcgpocket/triumphantlight/091.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light92 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/92.jpg",
-    "name": "Glaceon ex",
-    "url": "/tcgpocket/triumphantlight/092.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/metal.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light93 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/93.jpg",
-    "name": "Garchomp ex",
-    "url": "/tcgpocket/triumphantlight/093.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Triumphant Light94 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/94.jpg",
-    "name": "Probopass ex",
-    "url": "/tcgpocket/triumphantlight/094.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/star3.png",
-      "pokedex": "Triumphant Light95 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/95.jpg",
-    "name": "Arceus ex",
-    "url": "/tcgpocket/triumphantlight/095.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  },
-  {
-    "set": {
-      "setName": "Triumphant Light",
-      "image": "/tcgpocket/image/crown.png",
-      "pokedex": "Triumphant Light96 / 75"
-    },
-    "thumbnail": "/tcgpocket/th/triumphantlight/96.jpg",
-    "name": "Arceus ex",
-    "url": "/tcgpocket/triumphantlight/096.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "arceus.png"
-  }
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light1 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/1.jpg",
+        "name": "Heracross",
+        "url": "/tcgpocket/triumphantlight/001.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light2 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/2.jpg",
+        "name": "Burmy",
+        "url": "/tcgpocket/triumphantlight/002.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light3 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/3.jpg",
+        "name": "Mothim",
+        "url": "/tcgpocket/triumphantlight/003.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light4 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/4.jpg",
+        "name": "Combee",
+        "url": "/tcgpocket/triumphantlight/004.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light5 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/5.jpg",
+        "name": "Vespiquen",
+        "url": "/tcgpocket/triumphantlight/005.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light6 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/6.jpg",
+        "name": "Cherubi",
+        "url": "/tcgpocket/triumphantlight/006.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light7 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/7.jpg",
+        "name": "Cherrim",
+        "url": "/tcgpocket/triumphantlight/007.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light8 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/8.jpg",
+        "name": "Cherrim",
+        "url": "/tcgpocket/triumphantlight/008.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light9 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/9.jpg",
+        "name": "Carnivine",
+        "url": "/tcgpocket/triumphantlight/009.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Triumphant Light10 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/10.jpg",
+        "name": "Leafeon ex",
+        "url": "/tcgpocket/triumphantlight/010.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light11 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/11.jpg",
+        "name": "Houndour",
+        "url": "/tcgpocket/triumphantlight/011.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light12 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/12.jpg",
+        "name": "Houndoom",
+        "url": "/tcgpocket/triumphantlight/012.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light13 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/13.jpg",
+        "name": "Heatran",
+        "url": "/tcgpocket/triumphantlight/013.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light14 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/14.jpg",
+        "name": "Marill",
+        "url": "/tcgpocket/triumphantlight/014.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light15 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/15.jpg",
+        "name": "Azumarill",
+        "url": "/tcgpocket/triumphantlight/015.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light16 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/16.jpg",
+        "name": "Barboach",
+        "url": "/tcgpocket/triumphantlight/016.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light17 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/17.jpg",
+        "name": "Whiscash",
+        "url": "/tcgpocket/triumphantlight/017.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light18 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/18.jpg",
+        "name": "Snorunt",
+        "url": "/tcgpocket/triumphantlight/018.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light19 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/19.jpg",
+        "name": "Froslass",
+        "url": "/tcgpocket/triumphantlight/019.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light20 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/20.jpg",
+        "name": "Snover",
+        "url": "/tcgpocket/triumphantlight/020.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light21 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/21.jpg",
+        "name": "Abomasnow",
+        "url": "/tcgpocket/triumphantlight/021.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Triumphant Light22 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/22.jpg",
+        "name": "Glaceon ex",
+        "url": "/tcgpocket/triumphantlight/022.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light23 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/23.jpg",
+        "name": "Palkia",
+        "url": "/tcgpocket/triumphantlight/023.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light24 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/24.jpg",
+        "name": "Phione",
+        "url": "/tcgpocket/triumphantlight/024.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light25 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/25.jpg",
+        "name": "Pikachu",
+        "url": "/tcgpocket/triumphantlight/025.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light26 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/26.jpg",
+        "name": "Raichu",
+        "url": "/tcgpocket/triumphantlight/026.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light27 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/27.jpg",
+        "name": "Electrike",
+        "url": "/tcgpocket/triumphantlight/027.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light28 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/28.jpg",
+        "name": "Manectric",
+        "url": "/tcgpocket/triumphantlight/028.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light29 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/29.jpg",
+        "name": "Clefairy",
+        "url": "/tcgpocket/triumphantlight/029.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light30 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/30.jpg",
+        "name": "Clefable",
+        "url": "/tcgpocket/triumphantlight/030.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light31 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/31.jpg",
+        "name": "Gastly",
+        "url": "/tcgpocket/triumphantlight/031.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light32 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/32.jpg",
+        "name": "Haunter",
+        "url": "/tcgpocket/triumphantlight/032.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light33 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/33.jpg",
+        "name": "Gengar",
+        "url": "/tcgpocket/triumphantlight/033.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light34 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/34.jpg",
+        "name": "Unown",
+        "url": "/tcgpocket/triumphantlight/034.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light35 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/35.jpg",
+        "name": "Rotom",
+        "url": "/tcgpocket/triumphantlight/035.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light36 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/36.jpg",
+        "name": "Sudowoodo",
+        "url": "/tcgpocket/triumphantlight/036.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light37 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/37.jpg",
+        "name": "Phanpy",
+        "url": "/tcgpocket/triumphantlight/037.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light38 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/38.jpg",
+        "name": "Donphan",
+        "url": "/tcgpocket/triumphantlight/038.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light39 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/39.jpg",
+        "name": "Larvitar",
+        "url": "/tcgpocket/triumphantlight/039.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light40 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/40.jpg",
+        "name": "Pupitar",
+        "url": "/tcgpocket/triumphantlight/040.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light41 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/41.jpg",
+        "name": "Tyranitar",
+        "url": "/tcgpocket/triumphantlight/041.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light42 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/42.jpg",
+        "name": "Nosepass",
+        "url": "/tcgpocket/triumphantlight/042.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light43 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/43.jpg",
+        "name": "Meditite",
+        "url": "/tcgpocket/triumphantlight/043.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light44 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/44.jpg",
+        "name": "Medicham",
+        "url": "/tcgpocket/triumphantlight/044.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light45 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/45.jpg",
+        "name": "Gible",
+        "url": "/tcgpocket/triumphantlight/045.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light46 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/46.jpg",
+        "name": "Gabite",
+        "url": "/tcgpocket/triumphantlight/046.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Triumphant Light47 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/47.jpg",
+        "name": "Garchomp ex",
+        "url": "/tcgpocket/triumphantlight/047.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light48 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/48.jpg",
+        "name": "Zubat",
+        "url": "/tcgpocket/triumphantlight/048.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light49 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/49.jpg",
+        "name": "Golbat",
+        "url": "/tcgpocket/triumphantlight/049.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light50 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/50.jpg",
+        "name": "Crobat",
+        "url": "/tcgpocket/triumphantlight/050.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light51 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/51.jpg",
+        "name": "Croagunk",
+        "url": "/tcgpocket/triumphantlight/051.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light52 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/52.jpg",
+        "name": "Toxicroak",
+        "url": "/tcgpocket/triumphantlight/052.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light53 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/53.jpg",
+        "name": "Magnemite",
+        "url": "/tcgpocket/triumphantlight/053.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light54 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/54.jpg",
+        "name": "Magneton",
+        "url": "/tcgpocket/triumphantlight/054.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light55 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/55.jpg",
+        "name": "Magnezone",
+        "url": "/tcgpocket/triumphantlight/055.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light56 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/56.jpg",
+        "name": "Mawile",
+        "url": "/tcgpocket/triumphantlight/056.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Triumphant Light57 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/57.jpg",
+        "name": "Probopass ex",
+        "url": "/tcgpocket/triumphantlight/057.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light58 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/58.jpg",
+        "name": "Bronzor",
+        "url": "/tcgpocket/triumphantlight/058.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light59 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/59.jpg",
+        "name": "Bronzong",
+        "url": "/tcgpocket/triumphantlight/059.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light60 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/60.jpg",
+        "name": "Dialga",
+        "url": "/tcgpocket/triumphantlight/060.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light61 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/61.jpg",
+        "name": "Giratina",
+        "url": "/tcgpocket/triumphantlight/061.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light62 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/62.jpg",
+        "name": "Eevee",
+        "url": "/tcgpocket/triumphantlight/062.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light63 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/63.jpg",
+        "name": "Snorlax",
+        "url": "/tcgpocket/triumphantlight/063.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light64 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/64.jpg",
+        "name": "Hoothoot",
+        "url": "/tcgpocket/triumphantlight/064.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light65 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/65.jpg",
+        "name": "Noctowl",
+        "url": "/tcgpocket/triumphantlight/065.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light66 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/66.jpg",
+        "name": "Starly",
+        "url": "/tcgpocket/triumphantlight/066.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Triumphant Light67 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/67.jpg",
+        "name": "Staravia",
+        "url": "/tcgpocket/triumphantlight/067.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light68 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/68.jpg",
+        "name": "Staraptor",
+        "url": "/tcgpocket/triumphantlight/068.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light69 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/69.jpg",
+        "name": "Shaymin",
+        "url": "/tcgpocket/triumphantlight/069.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Triumphant Light70 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/70.jpg",
+        "name": "Arceus",
+        "url": "/tcgpocket/triumphantlight/070.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Triumphant Light71 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/71.jpg",
+        "name": "Arceus ex",
+        "url": "/tcgpocket/triumphantlight/071.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light72 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/72.jpg",
+        "name": "Irida",
+        "url": "/tcgpocket/triumphantlight/072.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light73 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/73.jpg",
+        "name": "Celestic Town Elder",
+        "url": "/tcgpocket/triumphantlight/073.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light74 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/74.jpg",
+        "name": "Barry",
+        "url": "/tcgpocket/triumphantlight/074.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Triumphant Light75 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/75.jpg",
+        "name": "Adaman",
+        "url": "/tcgpocket/triumphantlight/075.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Triumphant Light76 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/76.jpg",
+        "name": "Houndoom",
+        "url": "/tcgpocket/triumphantlight/076.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Triumphant Light77 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/77.jpg",
+        "name": "Marill",
+        "url": "/tcgpocket/triumphantlight/077.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Triumphant Light78 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/78.jpg",
+        "name": "Unown",
+        "url": "/tcgpocket/triumphantlight/078.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Triumphant Light79 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/79.jpg",
+        "name": "Sudowoodo",
+        "url": "/tcgpocket/triumphantlight/079.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Triumphant Light80 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/80.jpg",
+        "name": "Magnemite",
+        "url": "/tcgpocket/triumphantlight/080.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Triumphant Light81 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/81.jpg",
+        "name": "Shaymin",
+        "url": "/tcgpocket/triumphantlight/081.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light82 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/82.jpg",
+        "name": "Leafeon ex",
+        "url": "/tcgpocket/triumphantlight/082.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light83 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/83.jpg",
+        "name": "Glaceon ex",
+        "url": "/tcgpocket/triumphantlight/083.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light84 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/84.jpg",
+        "name": "Garchomp ex",
+        "url": "/tcgpocket/triumphantlight/084.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light85 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/85.jpg",
+        "name": "Probopass ex",
+        "url": "/tcgpocket/triumphantlight/085.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light86 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/86.jpg",
+        "name": "Arceus ex",
+        "url": "/tcgpocket/triumphantlight/086.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light87 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/87.jpg",
+        "name": "Irida",
+        "url": "/tcgpocket/triumphantlight/087.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light88 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/88.jpg",
+        "name": "Celestic Town Elder",
+        "url": "/tcgpocket/triumphantlight/088.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light89 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/89.jpg",
+        "name": "Barry",
+        "url": "/tcgpocket/triumphantlight/089.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light90 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/90.jpg",
+        "name": "Adaman",
+        "url": "/tcgpocket/triumphantlight/090.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light91 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/91.jpg",
+        "name": "Leafeon ex",
+        "url": "/tcgpocket/triumphantlight/091.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light92 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/92.jpg",
+        "name": "Glaceon ex",
+        "url": "/tcgpocket/triumphantlight/092.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light93 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/93.jpg",
+        "name": "Garchomp ex",
+        "url": "/tcgpocket/triumphantlight/093.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Triumphant Light94 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/94.jpg",
+        "name": "Probopass ex",
+        "url": "/tcgpocket/triumphantlight/094.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Triumphant Light95 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/95.jpg",
+        "name": "Arceus ex",
+        "url": "/tcgpocket/triumphantlight/095.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Triumphant Light",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Triumphant Light96 /"
+        },
+        "thumbnail": "/tcgpocket/th/triumphantlight/96.jpg",
+        "name": "Arceus ex",
+        "url": "/tcgpocket/triumphantlight/096.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "arceus.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    }
 ]

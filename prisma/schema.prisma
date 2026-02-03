@@ -1,40 +1,93 @@
-// TODO Need model for user and trades.
-// Trades can be posted and will stay online for up to 8 hours.
-
 generator client {
-  provider        = "prisma-client-js"
-  previewFeatures = ["driverAdapters"]
+  provider = "prisma-client"
+  output   = "./generated/client"
 }
+
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+}
+
+// Better Auth Models
+model User {
+  id            String    @id
+  name          String
+  email         String    @unique
+  emailVerified Boolean   @default(false)
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  sessions      Session[]
+  accounts      Account[]
+}
+
+model Session {
+  id        String   @id
+  expiresAt DateTime
+  token     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+}
+
+model Verification {
+  id         String   @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 }
 
 model Card {
-  id          Int       @id @default(autoincrement()) @map("card_id")
+  id          Int      @id @default(autoincrement()) @map("card_id")
   name        String
   type        String
   image       String
-  set         Set       @relation(fields: [setId], references: [id])
-  setId       Int       @map("set_id")
+  set         Set      @relation(fields: [setId], references: [id])
+  setId       Int      @map("set_id")
   details     Details?
   expansion   String
   pokedex     String
   url         String
   thumbnail   String
+  rarity      String
+  isTradeable Boolean  @default(false) @map("is_tradeable")
+  trades      Trade[]
 
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([name, setId, pokedex])
 }
 
 model Set {
-  id          Int      @id @default(autoincrement()) @map("set_id")
-  setName     String   @unique
-  image       String
-  cards       Card[]
+  id      Int    @id @default(autoincrement()) @map("set_id")
+  setName String @unique
+  image   String
+  cards   Card[]
 
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Details {
@@ -52,20 +105,72 @@ model Details {
 }
 
 model WeaknessType {
-  image       String
-  value       String
-  details     Details[]
+  image   String
+  value   String
+  details Details[]
 
   @@id(name: "imageValue", [image, value])
 }
 
 model RetreatCost {
-  // id          Int           @id @default(autoincrement()) @map("retreat_cost_id")
-  image       String
-  count       Int
-  details     Details[]
+  image   String
+  count   Int
+  details Details[]
 
   @@id(name: "imageCount", [image, count])
 }
 
+// The receiver is the one who will accept the trade
+model Trade {
+  id              Int         @id @default(autoincrement()) @map("trade_id")
+  tradeCreationId String      @unique @map("trade_creation_id")
+  playerId        String      @map("player_id")
+  cards           Card[]
+  status          TradeStatus @default(ACTIVE)
+  identifier      String // most likely email
+  provider        Providers
+  requestedTrades TradeLink[] @relation("RequestingTrade") // trades made by this user. thisUser -> otherUser 
+  receivedTrades  TradeLink[] @relation("ReceivingTrade") // trades made by other user. otherUser -> thisUser
+  isSeeking       Boolean     @map("is_seeking") // true if the user is looking for cards. false if user is offering cards
 
+  isPrivate Boolean  @default(false) @map("is_private") // true if the user wants the trade to be accepted
+  expiresAt DateTime @map("expires_at")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// 
+model TradeLink {
+  id                  Int         @id @default(autoincrement()) @map("trade_link_id")
+  tradeLinkCreationId String      @unique @map("trade_link_creation_id") // the url id
+  requestingTrade     Trade       @relation("RequestingTrade", fields: [requestingTradeId], references: [id])
+  requestingTradeId   Int         @map("requesting_trade_id")
+  receivingTrade      Trade       @relation("ReceivingTrade", fields: [receivingTradeId], references: [id])
+  receivingTradeId    Int         @map("receiving_trade_id")
+  status              TradeStatus @default(ACTIVE)
+
+  requestingStatus TradeStatus @default(PENDING) @map("requesting_status")
+  receivingStatus  TradeStatus @default(PENDING) @map("receiving_status")
+
+  acceptedAt DateTime? @map("accepted_at")
+  expiresAt  DateTime  @map("expires_at")
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  @@unique([requestingTradeId, receivingTradeId])
+}
+
+enum TradeStatus {
+  ACTIVE
+  PENDING
+  ACCEPTED
+  REJECTED
+  COMPLETED
+  CANCELLED
+  EXPIRED
+}
+
+enum Providers {
+  GOOGLE
+  GITHUB
+}
