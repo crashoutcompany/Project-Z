@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 import { ReactScan } from "@/components/ReactScan";
 import { Navbar } from "@/components/Navbar";
 import { Toaster } from "@/components/ui/sonner";
+import { Suspense } from "react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,6 +21,21 @@ export const metadata: Metadata = {
   title: "Pocket Trading",
   description: "Generate trades and share.",
 };
+
+// Navbar skeleton for Suspense fallback
+function NavbarSkeleton() {
+  return (
+    <header className="bg-background/80 sticky top-0 z-50 w-full border-b backdrop-blur-sm">
+      <div className="mx-5 flex h-16 items-center">
+        <div className="flex items-center gap-6 md:gap-10">
+          <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-xl font-bold text-transparent">
+            Pocket Trading
+          </span>
+        </div>
+      </div>
+    </header>
+  );
+}
 
 export default function RootLayout({
   children,
@@ -39,7 +55,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Toaster />
-          <Navbar />
+          <Suspense fallback={<NavbarSkeleton />}>
+            <Navbar />
+          </Suspense>
           {children}
         </ThemeProvider>
       </body>

@@ -1,6 +1,9 @@
 // use relative imports
 
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "./generated/client/client";
+import { PrismaNeon } from "@prisma/adapter-neon";
+import { neonConfig } from "@neondatabase/serverless";
+import ws from "ws";
 import mythicalIslands from "../scripts/mythical-islands/mythical-islands.json";
 import geneticApex from "../scripts/genetic-apex/genetic-apex.json";
 import spaceTimeSmackDown from "../scripts/space-time-smackdown/space-time-smackdown.json";
@@ -9,7 +12,12 @@ import shiningRevelry from "../scripts/shining-revelry/shining-revelry.json";
 import celestialGuardians from "../scripts/celestial-guardians/celestial-guardians.json";
 import extraDimensionalCrisis from "../scripts/extradimensional-crisis/extradimensional-crisis.json";
 
-const prisma = new PrismaClient();
+// Configure Neon for WebSocket connections
+neonConfig.webSocketConstructor = ws;
+
+const connectionString = process.env.DATABASE_URL!;
+const adapter = new PrismaNeon({ connectionString });
+const prisma = new PrismaClient({ adapter });
 
 // ! When adding new sets make sure to update the setName in the upsert calls below
 // ! and the import paths to the JSON files in the imports section above.

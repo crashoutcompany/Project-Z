@@ -3,11 +3,15 @@ import { CardDex } from "@/components/Dex";
 // import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ScrollArea } from "@/components/ui/scroll-area";
 // import Link from "next/link";
+import { connection } from "next/server";
 
 import prisma from "@/prisma/db";
 
 // Look at the meta for the page on serebii
 export default async function Page() {
+  // Next.js 16: Signal that this component uses dynamic data
+  await connection();
+
   const cards = await prisma.card.findMany({
     include: { details: true, set: true },
   });

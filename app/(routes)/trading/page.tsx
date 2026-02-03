@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import prisma from "@/prisma/db";
 import { sleep } from "@/lib/utils";
 import { H2 } from "@/components/typography/headings";
-import { Trade } from "@prisma/client";
+import { Trade } from "@/prisma/generated/client/client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 

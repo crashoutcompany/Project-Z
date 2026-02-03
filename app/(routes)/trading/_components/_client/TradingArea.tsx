@@ -4,7 +4,7 @@ import LazyImage from "@/components/LazyImage";
 import { H2 } from "@/components/typography/headings";
 import { Card as ShadCard, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn, sleep } from "@/lib/utils";
-import { Card } from "@prisma/client";
+import { Card } from "@/prisma/generated/client/client";
 import {
   Dispatch,
   memo,

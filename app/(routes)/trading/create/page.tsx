@@ -2,7 +2,7 @@ import { H2, H3 } from "@/components/typography/headings";
 import { Search } from "../_components/_client/Search";
 import prisma from "@/prisma/db";
 import { CardPagination } from "../_components/_client/PaginationButtons";
-import { Card } from "@prisma/client";
+import { Card } from "@/prisma/generated/client/client";
 import { toast } from "sonner";
 import { TradingArea } from "../_components/_client/TradingArea";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";

@@ -1,0 +1,2570 @@
+[
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove1 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/1.jpg",
+        "name": "Tropius",
+        "url": "/tcgpocket/eeveegrove/001.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Eevee Grove2 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/2.jpg",
+        "name": "Leafeon",
+        "url": "/tcgpocket/eeveegrove/002.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove3 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/3.jpg",
+        "name": "Bounsweet",
+        "url": "/tcgpocket/eeveegrove/003.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove4 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/4.jpg",
+        "name": "Steenee",
+        "url": "/tcgpocket/eeveegrove/004.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove5 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/5.jpg",
+        "name": "Tsareena",
+        "url": "/tcgpocket/eeveegrove/005.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove6 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/6.jpg",
+        "name": "Applin",
+        "url": "/tcgpocket/eeveegrove/006.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove7 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/7.jpg",
+        "name": "Appletun",
+        "url": "/tcgpocket/eeveegrove/007.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Eevee Grove8 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/8.jpg",
+        "name": "Flareon",
+        "url": "/tcgpocket/eeveegrove/008.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Eevee Grove9 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/9.jpg",
+        "name": "Flareon ex",
+        "url": "/tcgpocket/eeveegrove/009.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove10 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/10.jpg",
+        "name": "Torkoal",
+        "url": "/tcgpocket/eeveegrove/010.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove11 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/11.jpg",
+        "name": "Litten",
+        "url": "/tcgpocket/eeveegrove/011.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove12 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/12.jpg",
+        "name": "Torracat",
+        "url": "/tcgpocket/eeveegrove/012.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove13 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/13.jpg",
+        "name": "Incineroar",
+        "url": "/tcgpocket/eeveegrove/013.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove14 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/14.jpg",
+        "name": "Salandit",
+        "url": "/tcgpocket/eeveegrove/014.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove15 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/15.jpg",
+        "name": "Salazzle",
+        "url": "/tcgpocket/eeveegrove/015.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Eevee Grove16 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/16.jpg",
+        "name": "Vaporeon",
+        "url": "/tcgpocket/eeveegrove/016.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Eevee Grove17 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/17.jpg",
+        "name": "Glaceon",
+        "url": "/tcgpocket/eeveegrove/017.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove18 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/18.jpg",
+        "name": "Vanillite",
+        "url": "/tcgpocket/eeveegrove/018.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove19 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/19.jpg",
+        "name": "Vanillish",
+        "url": "/tcgpocket/eeveegrove/019.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove20 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/20.jpg",
+        "name": "Vanilluxe",
+        "url": "/tcgpocket/eeveegrove/020.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove21 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/21.jpg",
+        "name": "Alomomola",
+        "url": "/tcgpocket/eeveegrove/021.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove22 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/22.jpg",
+        "name": "Popplio",
+        "url": "/tcgpocket/eeveegrove/022.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove23 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/23.jpg",
+        "name": "Brionne",
+        "url": "/tcgpocket/eeveegrove/023.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Eevee Grove24 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/24.jpg",
+        "name": "Primarina ex",
+        "url": "/tcgpocket/eeveegrove/024.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Eevee Grove25 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/25.jpg",
+        "name": "Jolteon",
+        "url": "/tcgpocket/eeveegrove/025.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove26 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/26.jpg",
+        "name": "Joltik",
+        "url": "/tcgpocket/eeveegrove/026.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove27 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/27.jpg",
+        "name": "Galvantula",
+        "url": "/tcgpocket/eeveegrove/027.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Eevee Grove28 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/28.jpg",
+        "name": "Espeon",
+        "url": "/tcgpocket/eeveegrove/028.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove29 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/29.jpg",
+        "name": "Woobat",
+        "url": "/tcgpocket/eeveegrove/029.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove30 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/30.jpg",
+        "name": "Swoobat",
+        "url": "/tcgpocket/eeveegrove/030.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove31 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/31.jpg",
+        "name": "Swirlix",
+        "url": "/tcgpocket/eeveegrove/031.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove32 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/32.jpg",
+        "name": "Slurpuff",
+        "url": "/tcgpocket/eeveegrove/032.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Eevee Grove33 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/33.jpg",
+        "name": "Sylveon",
+        "url": "/tcgpocket/eeveegrove/033.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Eevee Grove34 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/34.jpg",
+        "name": "Sylveon ex",
+        "url": "/tcgpocket/eeveegrove/034.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove35 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/35.jpg",
+        "name": "Mimikyu",
+        "url": "/tcgpocket/eeveegrove/035.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove36 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/36.jpg",
+        "name": "Milcery",
+        "url": "/tcgpocket/eeveegrove/036.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove37 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/37.jpg",
+        "name": "Alcremie",
+        "url": "/tcgpocket/eeveegrove/037.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove38 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/38.jpg",
+        "name": "Barboach",
+        "url": "/tcgpocket/eeveegrove/038.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove39 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/39.jpg",
+        "name": "Whiscash",
+        "url": "/tcgpocket/eeveegrove/039.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove40 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/40.jpg",
+        "name": "Mienfoo",
+        "url": "/tcgpocket/eeveegrove/040.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove41 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/41.jpg",
+        "name": "Mienshao",
+        "url": "/tcgpocket/eeveegrove/041.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove42 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/42.jpg",
+        "name": "Carbink",
+        "url": "/tcgpocket/eeveegrove/042.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Eevee Grove43 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/43.jpg",
+        "name": "Umbreon",
+        "url": "/tcgpocket/eeveegrove/043.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove44 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/44.jpg",
+        "name": "Sableye",
+        "url": "/tcgpocket/eeveegrove/044.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove45 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/45.jpg",
+        "name": "Purrloin",
+        "url": "/tcgpocket/eeveegrove/045.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove46 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/46.jpg",
+        "name": "Liepard",
+        "url": "/tcgpocket/eeveegrove/046.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove47 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/47.jpg",
+        "name": "Mawile",
+        "url": "/tcgpocket/eeveegrove/047.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove48 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/48.jpg",
+        "name": "Togedemaru",
+        "url": "/tcgpocket/eeveegrove/048.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove49 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/49.jpg",
+        "name": "Meltan",
+        "url": "/tcgpocket/eeveegrove/049.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove50 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/50.jpg",
+        "name": "Melmetal",
+        "url": "/tcgpocket/eeveegrove/050.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove51 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/51.jpg",
+        "name": "Dratini",
+        "url": "/tcgpocket/eeveegrove/051.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove52 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/52.jpg",
+        "name": "Dragonair",
+        "url": "/tcgpocket/eeveegrove/052.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Eevee Grove53 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/53.jpg",
+        "name": "Dragonite ex",
+        "url": "/tcgpocket/eeveegrove/053.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove54 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/54.jpg",
+        "name": "Drampa",
+        "url": "/tcgpocket/eeveegrove/054.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove55 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/55.jpg",
+        "name": "Eevee",
+        "url": "/tcgpocket/eeveegrove/055.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Eevee Grove56 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/56.jpg",
+        "name": "Eevee ex",
+        "url": "/tcgpocket/eeveegrove/056.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Eevee Grove57 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/57.jpg",
+        "name": "Snorlax ex",
+        "url": "/tcgpocket/eeveegrove/057.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove58 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/58.jpg",
+        "name": "Aipom",
+        "url": "/tcgpocket/eeveegrove/058.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove59 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/59.jpg",
+        "name": "Ambipom",
+        "url": "/tcgpocket/eeveegrove/059.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove60 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/60.jpg",
+        "name": "Chatot",
+        "url": "/tcgpocket/eeveegrove/060.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove61 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/61.jpg",
+        "name": "Audino",
+        "url": "/tcgpocket/eeveegrove/061.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove62 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/62.jpg",
+        "name": "Minccino",
+        "url": "/tcgpocket/eeveegrove/062.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove63 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/63.jpg",
+        "name": "Cinccino",
+        "url": "/tcgpocket/eeveegrove/063.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Eevee Grove64 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/64.jpg",
+        "name": "Skwovet",
+        "url": "/tcgpocket/eeveegrove/064.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove65 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/65.jpg",
+        "name": "Greedent",
+        "url": "/tcgpocket/eeveegrove/065.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove66 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/66.jpg",
+        "name": "Eevee Bag",
+        "url": "/tcgpocket/eeveegrove/066.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove67 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/67.jpg",
+        "name": "Leftovers",
+        "url": "/tcgpocket/eeveegrove/067.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove68 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/68.jpg",
+        "name": "Hau",
+        "url": "/tcgpocket/eeveegrove/068.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Eevee Grove69 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/69.jpg",
+        "name": "Penny",
+        "url": "/tcgpocket/eeveegrove/069.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Eevee Grove70 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/70.jpg",
+        "name": "Leafeon",
+        "url": "/tcgpocket/eeveegrove/070.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Eevee Grove71 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/71.jpg",
+        "name": "Flareon",
+        "url": "/tcgpocket/eeveegrove/071.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Eevee Grove72 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/72.jpg",
+        "name": "Vaporeon",
+        "url": "/tcgpocket/eeveegrove/072.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Eevee Grove73 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/73.jpg",
+        "name": "Glaceon",
+        "url": "/tcgpocket/eeveegrove/073.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Eevee Grove74 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/74.jpg",
+        "name": "Jolteon",
+        "url": "/tcgpocket/eeveegrove/074.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Eevee Grove75 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/75.jpg",
+        "name": "Espeon",
+        "url": "/tcgpocket/eeveegrove/075.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Eevee Grove76 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/76.jpg",
+        "name": "Sylveon",
+        "url": "/tcgpocket/eeveegrove/076.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Eevee Grove77 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/77.jpg",
+        "name": "Umbreon",
+        "url": "/tcgpocket/eeveegrove/077.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Eevee Grove78 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/78.jpg",
+        "name": "Eevee",
+        "url": "/tcgpocket/eeveegrove/078.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove79 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/79.jpg",
+        "name": "Flareon ex",
+        "url": "/tcgpocket/eeveegrove/079.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove80 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/80.jpg",
+        "name": "Primarina ex",
+        "url": "/tcgpocket/eeveegrove/080.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove81 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/81.jpg",
+        "name": "Sylveon ex",
+        "url": "/tcgpocket/eeveegrove/081.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove82 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/82.jpg",
+        "name": "Dragonite ex",
+        "url": "/tcgpocket/eeveegrove/082.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove83 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/83.jpg",
+        "name": "Eevee ex",
+        "url": "/tcgpocket/eeveegrove/083.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove84 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/84.jpg",
+        "name": "Snorlax ex",
+        "url": "/tcgpocket/eeveegrove/084.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove85 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/85.jpg",
+        "name": "Hau",
+        "url": "/tcgpocket/eeveegrove/085.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove86 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/86.jpg",
+        "name": "Penny",
+        "url": "/tcgpocket/eeveegrove/086.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove87 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/87.jpg",
+        "name": "Flareon ex",
+        "url": "/tcgpocket/eeveegrove/087.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove88 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/88.jpg",
+        "name": "Primarina ex",
+        "url": "/tcgpocket/eeveegrove/088.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove89 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/89.jpg",
+        "name": "Sylveon ex",
+        "url": "/tcgpocket/eeveegrove/089.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove90 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/90.jpg",
+        "name": "Dragonite ex",
+        "url": "/tcgpocket/eeveegrove/090.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Eevee Grove91 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/91.jpg",
+        "name": "Snorlax ex",
+        "url": "/tcgpocket/eeveegrove/091.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Eevee Grove92 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/92.jpg",
+        "name": "Eevee ex",
+        "url": "/tcgpocket/eeveegrove/092.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Eevee Grove93 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/93.jpg",
+        "name": "Pinsir",
+        "url": "/tcgpocket/eeveegrove/093.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Eevee Grove94 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/94.jpg",
+        "name": "Lapras",
+        "url": "/tcgpocket/eeveegrove/094.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Eevee Grove95 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/95.jpg",
+        "name": "Voltorb",
+        "url": "/tcgpocket/eeveegrove/095.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Eevee Grove96 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/96.jpg",
+        "name": "Electrode",
+        "url": "/tcgpocket/eeveegrove/096.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Eevee Grove97 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/97.jpg",
+        "name": "Ralts",
+        "url": "/tcgpocket/eeveegrove/097.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Eevee Grove98 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/98.jpg",
+        "name": "Kirlia",
+        "url": "/tcgpocket/eeveegrove/098.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Eevee Grove99 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/99.jpg",
+        "name": "Gardevoir",
+        "url": "/tcgpocket/eeveegrove/099.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Eevee Grove100 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/100.jpg",
+        "name": "Ekans",
+        "url": "/tcgpocket/eeveegrove/100.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Eevee Grove101 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/101.jpg",
+        "name": "Arbok",
+        "url": "/tcgpocket/eeveegrove/101.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Eevee Grove102 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/102.jpg",
+        "name": "Farfetch'd",
+        "url": "/tcgpocket/eeveegrove/102.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Eevee Grove103 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/103.jpg",
+        "name": "Moltres ex",
+        "url": "/tcgpocket/eeveegrove/103.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Eevee Grove104 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/104.jpg",
+        "name": "Articuno ex",
+        "url": "/tcgpocket/eeveegrove/104.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Eevee Grove105 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/105.jpg",
+        "name": "Zapdos ex",
+        "url": "/tcgpocket/eeveegrove/105.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Eevee Grove106 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/106.jpg",
+        "name": "Gallade ex",
+        "url": "/tcgpocket/eeveegrove/106.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Eevee Grove",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Eevee Grove107 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/eeveegrove/107.jpg",
+        "name": "Eevee Bag",
+        "url": "/tcgpocket/eeveegrove/107.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    }
+]

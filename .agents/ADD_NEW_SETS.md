@@ -38,14 +38,37 @@ mkdir scripts/{set-name}
 
 ### Step 3: Fetch the Set Table HTML
 
+**For AI Agents (Recommended):**
+
+Use the `cursor-browser-extension` MCP to extract raw HTML:
+
+1. Navigate to the set page using `browser_navigate`:
+   ```
+   browser_navigate({ url: "https://www.serebii.net/tcgpocket/{serebii-path}/" })
+   ```
+
+2. Extract the table HTML using `browser_evaluate`:
+   ```
+   browser_evaluate({ function: "() => { const table = document.querySelector('table.dextable'); return table ? table.outerHTML : 'No table found'; }" })
+   ```
+
+3. The output is a JavaScript string - you'll need to unescape it:
+   - Remove the leading and trailing quotes
+   - Replace `\"` with `"`
+   - Replace `\n` with newlines
+   - Replace `\t` with tabs
+
+4. Save the unescaped HTML to `scripts/{set-name}/{set-name}.html`
+
+**For Manual Process:**
+
 1. Go to the specific set page on Serebii (e.g., `https://www.serebii.net/tcgpocket/geneticapex/`)
 2. Open browser Developer Tools (F12 or right-click → Inspect)
 3. Find the `<table class="dextable">` element containing the card data
 4. Copy the entire table HTML including the opening and closing `<table>` tags
 5. Save it to `scripts/{set-name}/{set-name}.html`
 
-**Alternative (for agents):**
-Use `WebFetch` to retrieve the set page, then extract the table HTML from the response.
+**Note:** The `WebFetch` tool returns Markdown, not raw HTML, so it cannot be used for this task.
 
 ### Step 4: Run the Parser Script
 
@@ -135,23 +158,25 @@ Each card in the JSON array has the following structure:
 - Trainer cards may have different structure (no HP, weakness, retreat)
 - Check if the source HTML has the expected nested table structure
 
-## Current Sets (as of last update)
+## Current Sets (as of February 2026)
 
-**In `/scripts/` folder:**
-- genetic-apex
-- mythical-islands
-- space-time-smackdown
-- triumphant-light
-- shining-revelry
-- celestial-guardians
-- extradimensional-crisis
-- eevee-grove
-- wisdom-of-sea-and-sky
-- secluded-springs
-- deluxe-pack-ex
-- mega-rising
-- crimson-blaze
-- fantastical-parade
+**In `/scripts/` folder (14 main sets):**
+| Set Name | Folder | Cards |
+|----------|--------|-------|
+| Genetic Apex | genetic-apex | 286 |
+| Mythical Island | mythical-islands | 86 |
+| Space-time Smackdown | space-time-smackdown | 207 |
+| Triumphant Light | triumphant-light | 96 |
+| Shining Revelry | shining-revelry | 112 |
+| Celestial Guardians | celestial-guardians | 239 |
+| Extradimensional Crisis | extradimensional-crisis | 103 |
+| Eevee Grove | eevee-grove | 107 |
+| Wisdom of Sea and Sky | wisdom-of-sea-and-sky | 241 |
+| Secluded Springs | secluded-springs | 105 |
+| Deluxe Pack ex | deluxe-pack-ex | 379 |
+| Mega Rising | mega-rising | 331 |
+| Crimson Blaze | crimson-blaze | 103 |
+| Fantastical Parade | fantastical-parade | 234 |
 
 **Promo sets (optional):**
 - promo-a
