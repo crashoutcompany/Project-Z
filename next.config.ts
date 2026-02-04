@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Ensure Prisma client and its runtime are not bundled (resolves custom output + Turbopack)
+  serverExternalPackages: ["@prisma/client", "prisma"],
+
   // Next.js 16: React Compiler is now a stable top-level option
   reactCompiler: true,
 

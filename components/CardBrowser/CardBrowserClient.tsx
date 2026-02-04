@@ -197,8 +197,9 @@ export function CardBrowserClient({
         </p>
       )}
 
-      {/* Card grid */}
+      {/* Card grid - key resets state when set or search changes */}
       <CardGrid
+        key={`${activeSetId}-${searchQuery}`}
         initialCards={cards}
         initialCursor={cursor}
         setId={isSearching ? undefined : activeSetId}

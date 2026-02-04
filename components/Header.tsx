@@ -39,12 +39,15 @@ export default function SiteHeader() {
 
         <div className="ml-auto flex items-center">
           <Sheet>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
-                <Menu className="h-5 w-5" />
-                <span className="sr-only">Toggle menu</span>
-              </Button>
-            </SheetTrigger>
+            <SheetTrigger
+              nativeButton
+              render={
+                <Button variant="ghost" size="icon" className="md:hidden">
+                  <Menu className="h-5 w-5" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
+              }
+            ></SheetTrigger>
             <SheetContent side="right">
               <nav className="mt-8 flex flex-col gap-4">
                 <Link

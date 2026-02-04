@@ -114,9 +114,10 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
           />
 
           <div className="absolute inset-x-0 bottom-0 z-20 translate-y-full p-4 transition-transform group-hover:translate-y-0">
-            <Button className="w-full rounded-full" asChild>
-              <Link href={`/collections`}>View Details</Link>
-            </Button>
+            <Button
+              className="w-full rounded-full"
+              render={<Link href={`/collections`}>View Details</Link>}
+            ></Button>
           </div>
         </div>
       ))}

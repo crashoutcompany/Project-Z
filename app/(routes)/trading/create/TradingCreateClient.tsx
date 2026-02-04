@@ -3,10 +3,7 @@
 import { useState, useCallback } from "react";
 import { Set } from "@/prisma/generated/client/client";
 import { CardBrowserClient } from "@/components/CardBrowser/CardBrowserClient";
-import {
-  CardWithSet,
-  SelectedCards,
-} from "@/components/CardBrowser/types";
+import { CardWithSet, SelectedCards } from "@/components/CardBrowser/types";
 import { H3 } from "@/components/typography/headings";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -44,7 +41,8 @@ export function TradingCreateClient({
     }));
   };
 
-  const canSubmit = selectedCards.want.length > 0 && selectedCards.give.length > 0;
+  const canSubmit =
+    selectedCards.want.length > 0 && selectedCards.give.length > 0;
 
   return (
     <div className="space-y-6">
@@ -52,8 +50,8 @@ export function TradingCreateClient({
       <div className="space-y-2">
         <H3>Create a Trade</H3>
         <p className="text-muted-foreground text-sm">
-          Select cards you want to receive and cards you&apos;re willing to give.
-          Click on cards below to add them to your trade.
+          Select cards you want to receive and cards you&apos;re willing to
+          give. Click on cards below to add them to your trade.
         </p>
       </div>
 
@@ -76,31 +74,31 @@ export function TradingCreateClient({
       {/* Submit Button */}
       <div className="flex justify-end">
         <Button
-          asChild={canSubmit}
           disabled={!canSubmit}
           size="lg"
           className="gap-2"
-        >
-          {canSubmit ? (
-            <Link
-              href={{
-                pathname: "/trading/create/confirm",
-                query: {
-                  want: selectedCards.want.map((c) => c.id).join(","),
-                  give: selectedCards.give.map((c) => c.id).join(","),
-                },
-              }}
-            >
-              Continue
-              <ArrowRight className="h-4 w-4" />
-            </Link>
-          ) : (
-            <>
-              Continue
-              <ArrowRight className="h-4 w-4" />
-            </>
-          )}
-        </Button>
+          render={
+            canSubmit ? (
+              <Link
+                href={{
+                  pathname: "/trading/create/confirm",
+                  query: {
+                    want: selectedCards.want.map((c) => c.id).join(","),
+                    give: selectedCards.give.map((c) => c.id).join(","),
+                  },
+                }}
+              >
+                Continue
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            ) : (
+              <span>
+                Continue
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            )
+          }
+        ></Button>
       </div>
 
       {/* Card Browser */}
@@ -131,7 +129,8 @@ function SelectionZone({
   onRemove: (card: CardWithSet) => void;
   variant: "want" | "give";
 }) {
-  const borderColor = variant === "want" ? "border-blue-500/50" : "border-green-500/50";
+  const borderColor =
+    variant === "want" ? "border-blue-500/50" : "border-green-500/50";
   const bgColor = variant === "want" ? "bg-blue-500/5" : "bg-green-500/5";
 
   return (
@@ -167,7 +166,7 @@ function SelectionZone({
                   <button
                     type="button"
                     onClick={() => onRemove(card)}
-                    className="absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full bg-destructive text-destructive-foreground opacity-0 transition-opacity group-hover:opacity-100"
+                    className="bg-destructive text-destructive-foreground absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full opacity-0 transition-opacity group-hover:opacity-100"
                   >
                     <X className="h-3 w-3" />
                   </button>

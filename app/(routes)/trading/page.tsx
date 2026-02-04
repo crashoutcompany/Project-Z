@@ -6,6 +6,7 @@ import { Trade } from "@/prisma/generated/client/client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { headers } from "next/headers";
+import { ArrowRight } from "lucide-react";
 
 export default async function TradingPage() {
   const session = await auth.api.getSession({
@@ -35,11 +36,13 @@ export default async function TradingPage() {
 
   return (
     <>
-      <Button asChild>
-        <Link className="cursor-pointer" href="/trading/create">
-          Make a trade
-        </Link>
-      </Button>
+      <Button
+        render={
+          <Link className="cursor-pointer" href="/trading/create">
+            Make a trade
+          </Link>
+        }
+      ></Button>
       <TradeContainer trades={userTrades} title="Your Trades" />
       <TradeContainer trades={allTrades} title="Public Trades" />
     </>

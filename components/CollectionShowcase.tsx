@@ -67,13 +67,13 @@ export default function CollectionShowcase() {
               size="sm"
               variant="secondary"
               className="rounded-full"
-              asChild
-            >
-              <Link href={`/collections/${collection.id}`}>
-                View Collection
-                <ChevronRight className="ml-1 h-4 w-4" />
-              </Link>
-            </Button>
+              render={
+                <Link href={`/collections/${collection.id}`}>
+                  View Collection
+                  <ChevronRight className="ml-1 h-4 w-4" />
+                </Link>
+              }
+            ></Button>
           </div>
         </div>
       ))}
