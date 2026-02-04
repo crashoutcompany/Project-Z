@@ -43,7 +43,7 @@ export const domain =
  * }, 300);
  * ```
  */
-export const debounce = <T extends (...args: unknown[]) => unknown>(
+export const debounce = <T extends (...args: any[]) => any>(
   fn: T,
   delay: number,
 ): ((...args: Parameters<T>) => void) => {
