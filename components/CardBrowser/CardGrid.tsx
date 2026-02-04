@@ -23,12 +23,6 @@ export function CardGrid({
   const loadMoreRef = useRef<HTMLDivElement>(null);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
-  // Reset cards when setId or searchQuery changes
-  useEffect(() => {
-    setCards(initialCards);
-    setCursor(initialCursor);
-  }, [initialCards, initialCursor, setId, searchQuery]);
-
   const loadMore = useCallback(() => {
     if (!cursor || isPending) return;
 
@@ -40,7 +34,7 @@ export function CardGrid({
         tradeableOnly,
       });
 
-      setCards((prev) => [...prev, ...result.cards as CardWithSet[]]);
+      setCards((prev) => [...prev, ...(result.cards as CardWithSet[])]);
       setCursor(result.nextCursor);
     });
   }, [cursor, isPending, setId, searchQuery, tradeableOnly]);
@@ -104,7 +98,7 @@ export function CardGrid({
       {/* Load more trigger */}
       <div ref={loadMoreRef} className="flex justify-center py-4">
         {isPending && (
-          <div className="flex items-center gap-2 text-muted-foreground">
+          <div className="text-muted-foreground flex items-center gap-2">
             <Loader2 className="h-4 w-4 animate-spin" />
             <span>Loading more cards...</span>
           </div>

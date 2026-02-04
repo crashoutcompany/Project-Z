@@ -52,7 +52,14 @@ const LazyImage = ({
     }
   }, []);
 
-  return <Image ref={imgRef} src={isVisible ? src : "/back.png"} {...props} />;
+  return (
+    <Image
+      ref={imgRef}
+      src={isVisible ? src : "/back.png"}
+      {...props}
+      alt="Pokemon Card"
+    />
+  );
 };
 
 export default LazyImage;

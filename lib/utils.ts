@@ -43,8 +43,7 @@ export const domain =
  * }, 300);
  * ```
  */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const debounce = <T extends (...args: any[]) => any>(
+export const debounce = <T extends (...args: unknown[]) => unknown>(
   fn: T,
   delay: number,
 ): ((...args: Parameters<T>) => void) => {
