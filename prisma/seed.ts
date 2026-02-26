@@ -18,6 +18,7 @@ import deluxePackEx from "../scripts/deluxe-pack-ex/deluxe-pack-ex.json";
 import megaRising from "../scripts/mega-rising/mega-rising.json";
 import crimsonBlaze from "../scripts/crimson-blaze/crimson-blaze.json";
 import fantasticalParade from "../scripts/fantastical-parade/fantastical-parade.json";
+import paldeanWonders from "../scripts/paldean-wonders/paldean-wonders.json";
 
 // Configure Neon for WebSocket connections
 neonConfig.webSocketConstructor = ws;
@@ -186,6 +187,16 @@ async function main() {
   });
   console.log("  ✓ Fantastical Parade (id: %d)", fantasticalParadeSet.id);
 
+  const paldeanWondersSet = await prisma.set.upsert({
+    where: { setName: "Paldean Wonders" },
+    update: {},
+    create: {
+      setName: "Paldean Wonders",
+      image: "/tcgpocket/sets/paldean-wonders.png",
+    },
+  });
+  console.log("  ✓ Paldean Wonders (id: %d)", paldeanWondersSet.id);
+
   const cardSets: { cards: typeof shiningRevelry; setName: string }[] = [
     { cards: shiningRevelry, setName: "Shining Revelry" },
     { cards: triumphantLight, setName: "Triumphant Light" },
@@ -201,6 +212,7 @@ async function main() {
     { cards: megaRising, setName: "Mega Rising" },
     { cards: crimsonBlaze, setName: "Crimson Blaze" },
     { cards: fantasticalParade, setName: "Fantastical Parade" },
+    { cards: paldeanWonders, setName: "Paldean Wonders" },
   ];
 
   let totalUpserted = 0;
@@ -261,6 +273,9 @@ async function main() {
           break;
         case "Fantastical Parade":
           setId = fantasticalParadeSet.id;
+          break;
+        case "Paldean Wonders":
+          setId = paldeanWondersSet.id;
           break;
         default:
           console.warn(`  ⚠ Unknown set name: ${card.set.setName} (card: ${card.name})`);

@@ -1,0 +1,3146 @@
+[
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders1 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/1.jpg",
+    "name": "Sprigatito",
+    "url": "/tcgpocket/paldeanwonders/001.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders2 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/2.jpg",
+    "name": "Floragato",
+    "url": "/tcgpocket/paldeanwonders/002.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Paldean Wonders3 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/3.jpg",
+    "name": "Meowscarada ex",
+    "url": "/tcgpocket/paldeanwonders/003.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders4 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/4.jpg",
+    "name": "Tarountula",
+    "url": "/tcgpocket/paldeanwonders/004.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders5 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/5.jpg",
+    "name": "Spidops",
+    "url": "/tcgpocket/paldeanwonders/005.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders6 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/6.jpg",
+    "name": "Nymble",
+    "url": "/tcgpocket/paldeanwonders/006.shtml",
+    "details": {
+      "hp": "40HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders7 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/7.jpg",
+    "name": "Smoliv",
+    "url": "/tcgpocket/paldeanwonders/007.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders8 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/8.jpg",
+    "name": "Dolliv",
+    "url": "/tcgpocket/paldeanwonders/008.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders9 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/9.jpg",
+    "name": "Arboliva",
+    "url": "/tcgpocket/paldeanwonders/009.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders10 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/10.jpg",
+    "name": "Bramblin",
+    "url": "/tcgpocket/paldeanwonders/010.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders11 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/11.jpg",
+    "name": "Brambleghast",
+    "url": "/tcgpocket/paldeanwonders/011.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders12 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/12.jpg",
+    "name": "Capsakid",
+    "url": "/tcgpocket/paldeanwonders/012.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders13 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/13.jpg",
+    "name": "Scovillain",
+    "url": "/tcgpocket/paldeanwonders/013.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders14 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/14.jpg",
+    "name": "Rellor",
+    "url": "/tcgpocket/paldeanwonders/014.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders15 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/15.jpg",
+    "name": "Wo-Chien",
+    "url": "/tcgpocket/paldeanwonders/015.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders16 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/16.jpg",
+    "name": "Fuecoco",
+    "url": "/tcgpocket/paldeanwonders/016.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders17 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/17.jpg",
+    "name": "Crocalor",
+    "url": "/tcgpocket/paldeanwonders/017.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders18 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/18.jpg",
+    "name": "Skeledirge",
+    "url": "/tcgpocket/paldeanwonders/018.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders19 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/19.jpg",
+    "name": "Charcadet",
+    "url": "/tcgpocket/paldeanwonders/019.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Paldean Wonders20 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/20.jpg",
+    "name": "Armarouge ex",
+    "url": "/tcgpocket/paldeanwonders/020.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders21 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/21.jpg",
+    "name": "Chi-Yu",
+    "url": "/tcgpocket/paldeanwonders/021.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders22 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/22.jpg",
+    "name": "Quaxly",
+    "url": "/tcgpocket/paldeanwonders/022.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders23 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/23.jpg",
+    "name": "Quaxwell",
+    "url": "/tcgpocket/paldeanwonders/023.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders24 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/24.jpg",
+    "name": "Quaquaval",
+    "url": "/tcgpocket/paldeanwonders/024.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders25 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/25.jpg",
+    "name": "Wiglett",
+    "url": "/tcgpocket/paldeanwonders/025.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders26 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/26.jpg",
+    "name": "Wugtrio",
+    "url": "/tcgpocket/paldeanwonders/026.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders27 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/27.jpg",
+    "name": "Finizen",
+    "url": "/tcgpocket/paldeanwonders/027.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders28 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/28.jpg",
+    "name": "Palafin",
+    "url": "/tcgpocket/paldeanwonders/028.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders29 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/29.jpg",
+    "name": "Cetoddle",
+    "url": "/tcgpocket/paldeanwonders/029.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders30 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/30.jpg",
+    "name": "Cetitan",
+    "url": "/tcgpocket/paldeanwonders/030.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders31 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/31.jpg",
+    "name": "Veluza",
+    "url": "/tcgpocket/paldeanwonders/031.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders32 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/32.jpg",
+    "name": "Dondozo",
+    "url": "/tcgpocket/paldeanwonders/032.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders33 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/33.jpg",
+    "name": "Tatsugiri",
+    "url": "/tcgpocket/paldeanwonders/033.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders34 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/34.jpg",
+    "name": "Frigibax",
+    "url": "/tcgpocket/paldeanwonders/034.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders35 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/35.jpg",
+    "name": "Arctibax",
+    "url": "/tcgpocket/paldeanwonders/035.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders36 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/36.jpg",
+    "name": "Baxcalibur",
+    "url": "/tcgpocket/paldeanwonders/036.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Paldean Wonders37 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/37.jpg",
+    "name": "Chien-Pao ex",
+    "url": "/tcgpocket/paldeanwonders/037.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders38 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/38.jpg",
+    "name": "Pawmi",
+    "url": "/tcgpocket/paldeanwonders/038.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders39 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/39.jpg",
+    "name": "Pawmo",
+    "url": "/tcgpocket/paldeanwonders/039.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders40 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/40.jpg",
+    "name": "Pawmot",
+    "url": "/tcgpocket/paldeanwonders/040.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders41 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/41.jpg",
+    "name": "Tadbulb",
+    "url": "/tcgpocket/paldeanwonders/041.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Paldean Wonders42 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/42.jpg",
+    "name": "Bellibolt ex",
+    "url": "/tcgpocket/paldeanwonders/042.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders43 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/43.jpg",
+    "name": "Wattrel",
+    "url": "/tcgpocket/paldeanwonders/043.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders44 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/44.jpg",
+    "name": "Kilowattrel",
+    "url": "/tcgpocket/paldeanwonders/044.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders45 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/45.jpg",
+    "name": "Miraidon",
+    "url": "/tcgpocket/paldeanwonders/045.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders46 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/46.jpg",
+    "name": "Fidough",
+    "url": "/tcgpocket/paldeanwonders/046.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders47 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/47.jpg",
+    "name": "Dachsbun",
+    "url": "/tcgpocket/paldeanwonders/047.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders48 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/48.jpg",
+    "name": "Ceruledge",
+    "url": "/tcgpocket/paldeanwonders/048.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders49 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/49.jpg",
+    "name": "Rabsca",
+    "url": "/tcgpocket/paldeanwonders/049.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders50 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/50.jpg",
+    "name": "Flittle",
+    "url": "/tcgpocket/paldeanwonders/050.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders51 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/51.jpg",
+    "name": "Espathra",
+    "url": "/tcgpocket/paldeanwonders/051.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders52 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/52.jpg",
+    "name": "Greavard",
+    "url": "/tcgpocket/paldeanwonders/052.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders53 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/53.jpg",
+    "name": "Houndstone",
+    "url": "/tcgpocket/paldeanwonders/053.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders54 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/54.jpg",
+    "name": "Gimmighoul",
+    "url": "/tcgpocket/paldeanwonders/054.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders55 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/55.jpg",
+    "name": "Mankey",
+    "url": "/tcgpocket/paldeanwonders/055.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders56 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/56.jpg",
+    "name": "Primeape",
+    "url": "/tcgpocket/paldeanwonders/056.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders57 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/57.jpg",
+    "name": "Annihilape",
+    "url": "/tcgpocket/paldeanwonders/057.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders58 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/58.jpg",
+    "name": "Tauros",
+    "url": "/tcgpocket/paldeanwonders/058.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders59 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/59.jpg",
+    "name": "Toedscool",
+    "url": "/tcgpocket/paldeanwonders/059.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders60 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/60.jpg",
+    "name": "Toedscruel",
+    "url": "/tcgpocket/paldeanwonders/060.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders61 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/61.jpg",
+    "name": "Klawf",
+    "url": "/tcgpocket/paldeanwonders/061.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders62 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/62.jpg",
+    "name": "Ting-Lu",
+    "url": "/tcgpocket/paldeanwonders/062.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders63 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/63.jpg",
+    "name": "Koraidon",
+    "url": "/tcgpocket/paldeanwonders/063.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders64 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/64.jpg",
+    "name": "Wooper",
+    "url": "/tcgpocket/paldeanwonders/064.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders65 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/65.jpg",
+    "name": "Clodsire",
+    "url": "/tcgpocket/paldeanwonders/065.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders66 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/66.jpg",
+    "name": "Lokix",
+    "url": "/tcgpocket/paldeanwonders/066.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders67 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/67.jpg",
+    "name": "Maschiff",
+    "url": "/tcgpocket/paldeanwonders/067.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders68 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/68.jpg",
+    "name": "Mabosstiff",
+    "url": "/tcgpocket/paldeanwonders/068.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders69 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/69.jpg",
+    "name": "Shroodle",
+    "url": "/tcgpocket/paldeanwonders/069.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders70 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/70.jpg",
+    "name": "Grafaiai",
+    "url": "/tcgpocket/paldeanwonders/070.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders71 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/71.jpg",
+    "name": "Bombirdier",
+    "url": "/tcgpocket/paldeanwonders/071.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders72 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/72.jpg",
+    "name": "Tinkatink",
+    "url": "/tcgpocket/paldeanwonders/072.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders73 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/73.jpg",
+    "name": "Tinkatuff",
+    "url": "/tcgpocket/paldeanwonders/073.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Paldean Wonders74 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/74.jpg",
+    "name": "Tinkaton",
+    "url": "/tcgpocket/paldeanwonders/074.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders75 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/75.jpg",
+    "name": "Varoom",
+    "url": "/tcgpocket/paldeanwonders/075.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders76 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/76.jpg",
+    "name": "Revavroom",
+    "url": "/tcgpocket/paldeanwonders/076.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders77 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/77.jpg",
+    "name": "Orthworm",
+    "url": "/tcgpocket/paldeanwonders/077.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Paldean Wonders78 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/78.jpg",
+    "name": "Gholdengo ex",
+    "url": "/tcgpocket/paldeanwonders/078.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders79 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/79.jpg",
+    "name": "Lechonk",
+    "url": "/tcgpocket/paldeanwonders/079.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders80 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/80.jpg",
+    "name": "Oinkologne",
+    "url": "/tcgpocket/paldeanwonders/080.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders81 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/81.jpg",
+    "name": "Tandemaus",
+    "url": "/tcgpocket/paldeanwonders/081.shtml",
+    "details": {
+      "hp": "30HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders82 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/82.jpg",
+    "name": "Maushold",
+    "url": "/tcgpocket/paldeanwonders/082.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders83 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/83.jpg",
+    "name": "Squawkabilly",
+    "url": "/tcgpocket/paldeanwonders/083.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders84 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/84.jpg",
+    "name": "Cyclizar",
+    "url": "/tcgpocket/paldeanwonders/084.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Paldean Wonders85 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/85.jpg",
+    "name": "Flamigo",
+    "url": "/tcgpocket/paldeanwonders/085.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders86 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/86.jpg",
+    "name": "Electric Generator",
+    "url": "/tcgpocket/paldeanwonders/086.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders87 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/87.jpg",
+    "name": "Big Air Balloon",
+    "url": "/tcgpocket/paldeanwonders/087.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders88 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/88.jpg",
+    "name": "Team Star Grunts",
+    "url": "/tcgpocket/paldeanwonders/088.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders89 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/89.jpg",
+    "name": "Iono",
+    "url": "/tcgpocket/paldeanwonders/089.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders90 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/90.jpg",
+    "name": "Nemona",
+    "url": "/tcgpocket/paldeanwonders/090.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders91 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/91.jpg",
+    "name": "Arven",
+    "url": "/tcgpocket/paldeanwonders/091.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders92 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/92.jpg",
+    "name": "Penny",
+    "url": "/tcgpocket/paldeanwonders/092.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Paldean Wonders93 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/93.jpg",
+    "name": "Mesagoza",
+    "url": "/tcgpocket/paldeanwonders/093.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Paldean Wonders94 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/94.jpg",
+    "name": "Fuecoco",
+    "url": "/tcgpocket/paldeanwonders/094.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Paldean Wonders95 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/95.jpg",
+    "name": "Greavard",
+    "url": "/tcgpocket/paldeanwonders/095.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Paldean Wonders96 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/96.jpg",
+    "name": "Gimmighoul",
+    "url": "/tcgpocket/paldeanwonders/096.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Paldean Wonders97 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/97.jpg",
+    "name": "Wooper",
+    "url": "/tcgpocket/paldeanwonders/097.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Paldean Wonders98 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/98.jpg",
+    "name": "Orthworm",
+    "url": "/tcgpocket/paldeanwonders/098.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Paldean Wonders99 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/99.jpg",
+    "name": "Maushold",
+    "url": "/tcgpocket/paldeanwonders/099.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders100 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/100.jpg",
+    "name": "Meowscarada ex",
+    "url": "/tcgpocket/paldeanwonders/100.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders101 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/101.jpg",
+    "name": "Armarouge ex",
+    "url": "/tcgpocket/paldeanwonders/101.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders102 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/102.jpg",
+    "name": "Chien-Pao ex",
+    "url": "/tcgpocket/paldeanwonders/102.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders103 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/103.jpg",
+    "name": "Bellibolt ex",
+    "url": "/tcgpocket/paldeanwonders/103.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders104 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/104.jpg",
+    "name": "Gholdengo ex",
+    "url": "/tcgpocket/paldeanwonders/104.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders105 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/105.jpg",
+    "name": "Team Star Grunts",
+    "url": "/tcgpocket/paldeanwonders/105.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders106 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/106.jpg",
+    "name": "Iono",
+    "url": "/tcgpocket/paldeanwonders/106.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders107 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/107.jpg",
+    "name": "Nemona",
+    "url": "/tcgpocket/paldeanwonders/107.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders108 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/108.jpg",
+    "name": "Arven",
+    "url": "/tcgpocket/paldeanwonders/108.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders109 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/109.jpg",
+    "name": "Penny",
+    "url": "/tcgpocket/paldeanwonders/109.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders110 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/110.jpg",
+    "name": "Meowscarada ex",
+    "url": "/tcgpocket/paldeanwonders/110.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders111 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/111.jpg",
+    "name": "Armarouge ex",
+    "url": "/tcgpocket/paldeanwonders/111.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders112 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/112.jpg",
+    "name": "Chien-Pao ex",
+    "url": "/tcgpocket/paldeanwonders/112.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders113 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/113.jpg",
+    "name": "Bellibolt ex",
+    "url": "/tcgpocket/paldeanwonders/113.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Paldean Wonders114 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/114.jpg",
+    "name": "Gholdengo ex",
+    "url": "/tcgpocket/paldeanwonders/114.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/star3.png",
+      "pokedex": "Paldean Wonders115 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/115.jpg",
+    "name": "Arven",
+    "url": "/tcgpocket/paldeanwonders/115.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star3.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Paldean Wonders116 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/116.jpg",
+    "name": "Sprigatito",
+    "url": "/tcgpocket/paldeanwonders/116.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Paldean Wonders117 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/117.jpg",
+    "name": "Floragato",
+    "url": "/tcgpocket/paldeanwonders/117.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Paldean Wonders118 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/118.jpg",
+    "name": "Meowscarada",
+    "url": "/tcgpocket/paldeanwonders/118.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Paldean Wonders119 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/119.jpg",
+    "name": "Pawmi",
+    "url": "/tcgpocket/paldeanwonders/119.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Paldean Wonders120 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/120.jpg",
+    "name": "Pawmo",
+    "url": "/tcgpocket/paldeanwonders/120.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Paldean Wonders121 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/121.jpg",
+    "name": "Pawmot",
+    "url": "/tcgpocket/paldeanwonders/121.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Paldean Wonders122 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/122.jpg",
+    "name": "Gimmighoul",
+    "url": "/tcgpocket/paldeanwonders/122.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Paldean Wonders123 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/123.jpg",
+    "name": "Tinkatink",
+    "url": "/tcgpocket/paldeanwonders/123.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Paldean Wonders124 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/124.jpg",
+    "name": "Tinkatuff",
+    "url": "/tcgpocket/paldeanwonders/124.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Paldean Wonders125 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/125.jpg",
+    "name": "Gholdengo",
+    "url": "/tcgpocket/paldeanwonders/125.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Paldean Wonders126 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/126.jpg",
+    "name": "Entei ex",
+    "url": "/tcgpocket/paldeanwonders/126.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Paldean Wonders127 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/127.jpg",
+    "name": "Suicune ex",
+    "url": "/tcgpocket/paldeanwonders/127.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Paldean Wonders128 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/128.jpg",
+    "name": "Raikou ex",
+    "url": "/tcgpocket/paldeanwonders/128.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Paldean Wonders129 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/129.jpg",
+    "name": "Tinkaton ex",
+    "url": "/tcgpocket/paldeanwonders/129.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/crown.png",
+      "pokedex": "Paldean Wonders130 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/130.jpg",
+    "name": "Baxcalibur",
+    "url": "/tcgpocket/paldeanwonders/130.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "/tcgpocket/image/colorless.png",
+    "rarity": "/tcgpocket/image/crown.png"
+  },
+  {
+    "set": {
+      "setName": "Paldean Wonders",
+      "image": "/tcgpocket/image/crown.png",
+      "pokedex": "Paldean Wonders131 / 93"
+    },
+    "thumbnail": "/tcgpocket/th/paldeanwonders/131.jpg",
+    "name": "Electric Generator",
+    "url": "/tcgpocket/paldeanwonders/131.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/crown.png"
+  }
+]

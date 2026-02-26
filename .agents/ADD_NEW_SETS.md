@@ -70,6 +70,8 @@ Use the `cursor-browser-extension` MCP to extract raw HTML:
 
 **Note:** The `WebFetch` tool returns Markdown, not raw HTML, so it cannot be used for this task.
 
+**If extracting from a full page:** Save the full page to `scripts/{set-name}/{set-name}.html` first, then run the extraction (see Troubleshooting → "Only a few rows in extracted table") so the parser receives **only** the card list table.
+
 ### Step 4: Run the Parser Script
 
 Update `scripts/main.py` to point to your new set:
@@ -167,6 +169,7 @@ pnpm prisma db seed
 | Mega Rising | `/tcgpocket/megarising/` |
 | Crimson Blaze | `/tcgpocket/crimsonblaze/` |
 | Fantastical Parade | `/tcgpocket/fantasticalparade/` |
+| Paldean Wonders | `/tcgpocket/paldeanwonders/` |
 
 ## JSON Output Structure
 
@@ -201,6 +204,21 @@ Each card in the JSON array has the following structure:
 
 ## Troubleshooting
 
+### Only a few rows in extracted table (e.g. 4 rows instead of 90+)
+Serebii’s card list table has **nested tables** (each card’s “Card Details” cell contains an inner `<table>`). If you use a parser like BeautifulSoup with `find('table', class_='dextable')`, it may stop at the first inner `</table>`, so you get only the header and a couple of card rows.
+
+**Fix:** Extract the card list table by **bracket counting** instead of DOM parsing:
+
+1. Fetch the full set page and save it (e.g. `scripts/{set-name}/{set-name}-full.html`).
+2. Find the start of the card list table: `<table class="dextable">`.
+3. Scan forward from there. For every `<table>` increment a depth counter; for every `</table>` decrement it. When depth returns to 0, that’s the end of the card list table.
+4. Save only that substring to `scripts/{set-name}/{set-name}.html` (this is the file the parser should read).
+
+The parser expects a single table; it skips rows with fewer than 5 `<td>`s, so inner detail rows are ignored.
+
+### Unicode/encoding errors when reading HTML
+If you see `UnicodeDecodeError` (e.g. `byte 0xe9`) when opening the saved HTML, the page may use Latin-1 or contain characters like é (e.g. in “Pokémon”). Open the file with `encoding='utf-8', errors='replace'` (or the appropriate encoding) when reading.
+
 ### Parser skips rows
 - Check if the HTML table structure matches expected format
 - Ensure rows have at least 5 columns (`<td>` elements)
@@ -209,10 +227,11 @@ Each card in the JSON array has the following structure:
 ### Missing data in JSON
 - Trainer cards may have different structure (no HP, weakness, retreat)
 - Check if the source HTML has the expected nested table structure
+- Serebii HTML can occasionally have malformed tags (e.g. extra `</td>`); the parser skips bad rows and continues
 
 ## Current Sets (as of February 2026)
 
-**In `/scripts/` folder (14 main sets):**
+**In `/scripts/` folder (15 main sets):**
 | Set Name | Folder | Cards |
 |----------|--------|-------|
 | Genetic Apex | genetic-apex | 286 |
@@ -229,6 +248,7 @@ Each card in the JSON array has the following structure:
 | Mega Rising | mega-rising | 331 |
 | Crimson Blaze | crimson-blaze | 103 |
 | Fantastical Parade | fantastical-parade | 234 |
+| Paldean Wonders | paldean-wonders | 131 |
 
 **Promo sets (optional):**
 - promo-a
