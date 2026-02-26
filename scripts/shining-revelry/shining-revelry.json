@@ -1,2555 +1,2666 @@
 [
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry1 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/1.jpg",
-    "name": "Weedle",
-    "url": "/tcgpocket/shiningrevelry/001.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry2 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/2.jpg",
-    "name": "Kakuna",
-    "url": "/tcgpocket/shiningrevelry/002.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Shining Revelry3 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/3.jpg",
-    "name": "Beedrill ex",
-    "url": "/tcgpocket/shiningrevelry/003.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry4 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/4.jpg",
-    "name": "Pinsir",
-    "url": "/tcgpocket/shiningrevelry/004.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry5 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/5.jpg",
-    "name": "Sprigatito",
-    "url": "/tcgpocket/shiningrevelry/005.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry6 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/6.jpg",
-    "name": "Floragato",
-    "url": "/tcgpocket/shiningrevelry/006.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Shining Revelry7 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/7.jpg",
-    "name": "Meowscarada",
-    "url": "/tcgpocket/shiningrevelry/007.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry8 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/8.jpg",
-    "name": "Charmander",
-    "url": "/tcgpocket/shiningrevelry/008.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry9 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/9.jpg",
-    "name": "Charmeleon",
-    "url": "/tcgpocket/shiningrevelry/009.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Shining Revelry10 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/10.jpg",
-    "name": "Charizard ex",
-    "url": "/tcgpocket/shiningrevelry/010.shtml",
-    "details": {
-      "hp": "180HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry11 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/11.jpg",
-    "name": "Magmar",
-    "url": "/tcgpocket/shiningrevelry/011.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Shining Revelry12 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/12.jpg",
-    "name": "Magmortar",
-    "url": "/tcgpocket/shiningrevelry/012.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry13 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/13.jpg",
-    "name": "Tauros",
-    "url": "/tcgpocket/shiningrevelry/013.shtml",
-    "details": {
-      "hp": "110HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry14 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/14.jpg",
-    "name": "Tentacool",
-    "url": "/tcgpocket/shiningrevelry/014.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry15 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/15.jpg",
-    "name": "Tentacruel",
-    "url": "/tcgpocket/shiningrevelry/015.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry16 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/16.jpg",
-    "name": "Buizel",
-    "url": "/tcgpocket/shiningrevelry/016.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry17 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/17.jpg",
-    "name": "Floatzel",
-    "url": "/tcgpocket/shiningrevelry/017.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry18 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/18.jpg",
-    "name": "Wiglett",
-    "url": "/tcgpocket/shiningrevelry/018.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Shining Revelry19 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/19.jpg",
-    "name": "Wugtrio ex",
-    "url": "/tcgpocket/shiningrevelry/019.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Shining Revelry20 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/20.jpg",
-    "name": "Dondozo",
-    "url": "/tcgpocket/shiningrevelry/020.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry21 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/21.jpg",
-    "name": "Tatsugiri",
-    "url": "/tcgpocket/shiningrevelry/021.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Shining Revelry22 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/22.jpg",
-    "name": "Pikachu ex",
-    "url": "/tcgpocket/shiningrevelry/022.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry23 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/23.jpg",
-    "name": "Voltorb",
-    "url": "/tcgpocket/shiningrevelry/023.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry24 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/24.jpg",
-    "name": "Electrode",
-    "url": "/tcgpocket/shiningrevelry/024.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry25 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/25.jpg",
-    "name": "Pachirisu",
-    "url": "/tcgpocket/shiningrevelry/025.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry26 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/26.jpg",
-    "name": "Pawmi",
-    "url": "/tcgpocket/shiningrevelry/026.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry27 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/27.jpg",
-    "name": "Pawmo",
-    "url": "/tcgpocket/shiningrevelry/027.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Shining Revelry28 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/28.jpg",
-    "name": "Pawmot",
-    "url": "/tcgpocket/shiningrevelry/028.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry29 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/29.jpg",
-    "name": "Abra",
-    "url": "/tcgpocket/shiningrevelry/029.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry30 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/30.jpg",
-    "name": "Kadabra",
-    "url": "/tcgpocket/shiningrevelry/030.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Shining Revelry31 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/31.jpg",
-    "name": "Alakazam",
-    "url": "/tcgpocket/shiningrevelry/031.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry32 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/32.jpg",
-    "name": "Mr. Mime",
-    "url": "/tcgpocket/shiningrevelry/032.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry33 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/33.jpg",
-    "name": "Drifloon",
-    "url": "/tcgpocket/shiningrevelry/033.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry34 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/34.jpg",
-    "name": "Drifblim",
-    "url": "/tcgpocket/shiningrevelry/034.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Shining Revelry35 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/35.jpg",
-    "name": "Giratina ex",
-    "url": "/tcgpocket/shiningrevelry/035.shtml",
-    "details": {
-      "hp": "150HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry36 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/36.jpg",
-    "name": "Gimmighoul",
-    "url": "/tcgpocket/shiningrevelry/036.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry37 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/37.jpg",
-    "name": "Machop",
-    "url": "/tcgpocket/shiningrevelry/037.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry38 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/38.jpg",
-    "name": "Machoke",
-    "url": "/tcgpocket/shiningrevelry/038.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Shining Revelry39 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/39.jpg",
-    "name": "Machamp",
-    "url": "/tcgpocket/shiningrevelry/039.shtml",
-    "details": {
-      "hp": "150HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry40 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/40.jpg",
-    "name": "Hitmonlee",
-    "url": "/tcgpocket/shiningrevelry/040.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry41 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/41.jpg",
-    "name": "Hitmonchan",
-    "url": "/tcgpocket/shiningrevelry/041.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry42 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/42.jpg",
-    "name": "Riolu",
-    "url": "/tcgpocket/shiningrevelry/042.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Shining Revelry43 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/43.jpg",
-    "name": "Lucario ex",
-    "url": "/tcgpocket/shiningrevelry/043.shtml",
-    "details": {
-      "hp": "150HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry44 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/44.jpg",
-    "name": "Flamigo",
-    "url": "/tcgpocket/shiningrevelry/044.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry45 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/45.jpg",
-    "name": "Ekans",
-    "url": "/tcgpocket/shiningrevelry/045.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry46 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/46.jpg",
-    "name": "Arbok",
-    "url": "/tcgpocket/shiningrevelry/046.shtml",
-    "details": {
-      "hp": "110HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry47 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/47.jpg",
-    "name": "Wooper",
-    "url": "/tcgpocket/shiningrevelry/047.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Shining Revelry48 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/48.jpg",
-    "name": "Clodsire ex",
-    "url": "/tcgpocket/shiningrevelry/048.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry49 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/49.jpg",
-    "name": "Spiritomb",
-    "url": "/tcgpocket/shiningrevelry/049.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry50 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/50.jpg",
-    "name": "Shroodle",
-    "url": "/tcgpocket/shiningrevelry/050.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Shining Revelry51 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/51.jpg",
-    "name": "Grafaiai",
-    "url": "/tcgpocket/shiningrevelry/051.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry52 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/52.jpg",
-    "name": "Tinkatink",
-    "url": "/tcgpocket/shiningrevelry/052.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry53 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/53.jpg",
-    "name": "Tinkatuff",
-    "url": "/tcgpocket/shiningrevelry/053.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Shining Revelry54 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/54.jpg",
-    "name": "Tinkaton ex",
-    "url": "/tcgpocket/shiningrevelry/054.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry55 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/55.jpg",
-    "name": "Varoom",
-    "url": "/tcgpocket/shiningrevelry/055.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry56 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/56.jpg",
-    "name": "Revavroom",
-    "url": "/tcgpocket/shiningrevelry/056.shtml",
-    "details": {
-      "hp": "110HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Shining Revelry57 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/57.jpg",
-    "name": "Gholdengo",
-    "url": "/tcgpocket/shiningrevelry/057.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry58 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/58.jpg",
-    "name": "Rattata",
-    "url": "/tcgpocket/shiningrevelry/058.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry59 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/59.jpg",
-    "name": "Raticate",
-    "url": "/tcgpocket/shiningrevelry/059.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry60 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/60.jpg",
-    "name": "Jigglypuff",
-    "url": "/tcgpocket/shiningrevelry/060.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Shining Revelry61 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/61.jpg",
-    "name": "Wigglytuff",
-    "url": "/tcgpocket/shiningrevelry/061.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry62 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/62.jpg",
-    "name": "Lickitung",
-    "url": "/tcgpocket/shiningrevelry/062.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry63 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/63.jpg",
-    "name": "Lickilicky",
-    "url": "/tcgpocket/shiningrevelry/063.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry64 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/64.jpg",
-    "name": "Bidoof",
-    "url": "/tcgpocket/shiningrevelry/064.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Shining Revelry65 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/65.jpg",
-    "name": "Bibarel ex",
-    "url": "/tcgpocket/shiningrevelry/065.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry66 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/66.jpg",
-    "name": "Buneary",
-    "url": "/tcgpocket/shiningrevelry/066.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Shining Revelry67 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/67.jpg",
-    "name": "Lopunny",
-    "url": "/tcgpocket/shiningrevelry/067.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry68 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/68.jpg",
-    "name": "Cyclizar",
-    "url": "/tcgpocket/shiningrevelry/068.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry69 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/69.jpg",
-    "name": "Iono",
-    "url": "/tcgpocket/shiningrevelry/069.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry70 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/70.jpg",
-    "name": "Pokemon Center Lady",
-    "url": "/tcgpocket/shiningrevelry/070.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry71 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/71.jpg",
-    "name": "Red",
-    "url": "/tcgpocket/shiningrevelry/071.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Shining Revelry72 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/72.jpg",
-    "name": "Team Rocket Grunt",
-    "url": "/tcgpocket/shiningrevelry/072.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Shining Revelry73 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/73.jpg",
-    "name": "Meowscarada",
-    "url": "/tcgpocket/shiningrevelry/073.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Shining Revelry74 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/74.jpg",
-    "name": "Buizel",
-    "url": "/tcgpocket/shiningrevelry/074.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Shining Revelry75 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/75.jpg",
-    "name": "Tatsugiri",
-    "url": "/tcgpocket/shiningrevelry/075.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Shining Revelry76 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/76.jpg",
-    "name": "Grafaiai",
-    "url": "/tcgpocket/shiningrevelry/076.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Shining Revelry77 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/77.jpg",
-    "name": "Gholdengo",
-    "url": "/tcgpocket/shiningrevelry/077.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry78 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/78.jpg",
-    "name": "Wigglytuff",
-    "url": "/tcgpocket/shiningrevelry/078.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry79 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/79.jpg",
-    "name": "Beedrill ex",
-    "url": "/tcgpocket/shiningrevelry/079.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry80 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/80.jpg",
-    "name": "Charizard ex",
-    "url": "/tcgpocket/shiningrevelry/080.shtml",
-    "details": {
-      "hp": "180HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry81 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/81.jpg",
-    "name": "Wugtrio ex",
-    "url": "/tcgpocket/shiningrevelry/081.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry82 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/82.jpg",
-    "name": "Pikachu ex",
-    "url": "/tcgpocket/shiningrevelry/082.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry83 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/83.jpg",
-    "name": "Giratina ex",
-    "url": "/tcgpocket/shiningrevelry/083.shtml",
-    "details": {
-      "hp": "150HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry84 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/84.jpg",
-    "name": "Lucario ex",
-    "url": "/tcgpocket/shiningrevelry/084.shtml",
-    "details": {
-      "hp": "150HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry85 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/85.jpg",
-    "name": "Clodsire ex",
-    "url": "/tcgpocket/shiningrevelry/085.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry86 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/86.jpg",
-    "name": "Tinkaton ex",
-    "url": "/tcgpocket/shiningrevelry/086.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry87 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/87.jpg",
-    "name": "Bibarel ex",
-    "url": "/tcgpocket/shiningrevelry/087.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry88 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/88.jpg",
-    "name": "Iono",
-    "url": "/tcgpocket/shiningrevelry/088.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry89 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/89.jpg",
-    "name": "Pokemon Center Lady",
-    "url": "/tcgpocket/shiningrevelry/089.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry90 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/90.jpg",
-    "name": "Red",
-    "url": "/tcgpocket/shiningrevelry/090.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry91 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/91.jpg",
-    "name": "Team Rocket Grunt",
-    "url": "/tcgpocket/shiningrevelry/091.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry92 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/92.jpg",
-    "name": "Pikachu ex",
-    "url": "/tcgpocket/shiningrevelry/092.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry93 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/93.jpg",
-    "name": "Clodsire ex",
-    "url": "/tcgpocket/shiningrevelry/093.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry94 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/94.jpg",
-    "name": "Tinkaton ex",
-    "url": "/tcgpocket/shiningrevelry/094.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Shining Revelry95 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/95.jpg",
-    "name": "Bibarel ex",
-    "url": "/tcgpocket/shiningrevelry/095.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/star3.png",
-      "pokedex": "Shining Revelry96 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/96.jpg",
-    "name": "Giratina ex",
-    "url": "/tcgpocket/shiningrevelry/096.shtml",
-    "details": {
-      "hp": "150HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny1.png",
-      "pokedex": "Shining Revelry97 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/97.jpg",
-    "name": "Weedle",
-    "url": "/tcgpocket/shiningrevelry/097.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny1.png",
-      "pokedex": "Shining Revelry98 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/98.jpg",
-    "name": "Kakuna",
-    "url": "/tcgpocket/shiningrevelry/098.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny1.png",
-      "pokedex": "Shining Revelry99 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/99.jpg",
-    "name": "Charmander",
-    "url": "/tcgpocket/shiningrevelry/099.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny1.png",
-      "pokedex": "Shining Revelry100 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/100.jpg",
-    "name": "Charmeleon",
-    "url": "/tcgpocket/shiningrevelry/100.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny1.png",
-      "pokedex": "Shining Revelry101 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/101.jpg",
-    "name": "Wiglett",
-    "url": "/tcgpocket/shiningrevelry/101.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny1.png",
-      "pokedex": "Shining Revelry102 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/102.jpg",
-    "name": "Dondozo",
-    "url": "/tcgpocket/shiningrevelry/102.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny1.png",
-      "pokedex": "Shining Revelry103 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/103.jpg",
-    "name": "Pachirisu",
-    "url": "/tcgpocket/shiningrevelry/103.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny1.png",
-      "pokedex": "Shining Revelry104 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/104.jpg",
-    "name": "Riolu",
-    "url": "/tcgpocket/shiningrevelry/104.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny1.png",
-      "pokedex": "Shining Revelry105 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/105.jpg",
-    "name": "Varoom",
-    "url": "/tcgpocket/shiningrevelry/105.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny1.png",
-      "pokedex": "Shining Revelry106 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/106.jpg",
-    "name": "Revavroom",
-    "url": "/tcgpocket/shiningrevelry/106.shtml",
-    "details": {
-      "hp": "110HP",
-      "type": "/tcgpocket/image/metal.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny2.png",
-      "pokedex": "Shining Revelry107 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/107.jpg",
-    "name": "Beedrill ex",
-    "url": "/tcgpocket/shiningrevelry/107.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny2.png",
-      "pokedex": "Shining Revelry108 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/108.jpg",
-    "name": "Charizard ex",
-    "url": "/tcgpocket/shiningrevelry/108.shtml",
-    "details": {
-      "hp": "180HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny2.png",
-      "pokedex": "Shining Revelry109 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/109.jpg",
-    "name": "Wugtrio ex",
-    "url": "/tcgpocket/shiningrevelry/109.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/shiny2.png",
-      "pokedex": "Shining Revelry110 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/110.jpg",
-    "name": "Lucario ex",
-    "url": "/tcgpocket/shiningrevelry/110.shtml",
-    "details": {
-      "hp": "150HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "booster.png"
-  },
-  {
-    "set": {
-      "setName": "Shining Revelry",
-      "image": "/tcgpocket/image/crown.png",
-      "pokedex": "Shining Revelry111 / 72"
-    },
-    "thumbnail": "/tcgpocket/th/shiningrevelry/111.jpg",
-    "name": "Poke Ball",
-    "url": "/tcgpocket/shiningrevelry/111.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "booster.png"
-  }
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry1 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/1.jpg",
+        "name": "Weedle",
+        "url": "/tcgpocket/shiningrevelry/001.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry2 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/2.jpg",
+        "name": "Kakuna",
+        "url": "/tcgpocket/shiningrevelry/002.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Shining Revelry3 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/3.jpg",
+        "name": "Beedrill ex",
+        "url": "/tcgpocket/shiningrevelry/003.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry4 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/4.jpg",
+        "name": "Pinsir",
+        "url": "/tcgpocket/shiningrevelry/004.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry5 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/5.jpg",
+        "name": "Sprigatito",
+        "url": "/tcgpocket/shiningrevelry/005.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry6 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/6.jpg",
+        "name": "Floragato",
+        "url": "/tcgpocket/shiningrevelry/006.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Shining Revelry7 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/7.jpg",
+        "name": "Meowscarada",
+        "url": "/tcgpocket/shiningrevelry/007.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry8 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/8.jpg",
+        "name": "Charmander",
+        "url": "/tcgpocket/shiningrevelry/008.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry9 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/9.jpg",
+        "name": "Charmeleon",
+        "url": "/tcgpocket/shiningrevelry/009.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Shining Revelry10 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/10.jpg",
+        "name": "Charizard ex",
+        "url": "/tcgpocket/shiningrevelry/010.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry11 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/11.jpg",
+        "name": "Magmar",
+        "url": "/tcgpocket/shiningrevelry/011.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Shining Revelry12 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/12.jpg",
+        "name": "Magmortar",
+        "url": "/tcgpocket/shiningrevelry/012.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry13 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/13.jpg",
+        "name": "Tauros",
+        "url": "/tcgpocket/shiningrevelry/013.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry14 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/14.jpg",
+        "name": "Tentacool",
+        "url": "/tcgpocket/shiningrevelry/014.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry15 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/15.jpg",
+        "name": "Tentacruel",
+        "url": "/tcgpocket/shiningrevelry/015.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry16 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/16.jpg",
+        "name": "Buizel",
+        "url": "/tcgpocket/shiningrevelry/016.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry17 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/17.jpg",
+        "name": "Floatzel",
+        "url": "/tcgpocket/shiningrevelry/017.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry18 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/18.jpg",
+        "name": "Wiglett",
+        "url": "/tcgpocket/shiningrevelry/018.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Shining Revelry19 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/19.jpg",
+        "name": "Wugtrio ex",
+        "url": "/tcgpocket/shiningrevelry/019.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Shining Revelry20 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/20.jpg",
+        "name": "Dondozo",
+        "url": "/tcgpocket/shiningrevelry/020.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry21 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/21.jpg",
+        "name": "Tatsugiri",
+        "url": "/tcgpocket/shiningrevelry/021.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Shining Revelry22 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/22.jpg",
+        "name": "Pikachu ex",
+        "url": "/tcgpocket/shiningrevelry/022.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry23 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/23.jpg",
+        "name": "Voltorb",
+        "url": "/tcgpocket/shiningrevelry/023.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry24 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/24.jpg",
+        "name": "Electrode",
+        "url": "/tcgpocket/shiningrevelry/024.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry25 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/25.jpg",
+        "name": "Pachirisu",
+        "url": "/tcgpocket/shiningrevelry/025.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry26 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/26.jpg",
+        "name": "Pawmi",
+        "url": "/tcgpocket/shiningrevelry/026.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry27 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/27.jpg",
+        "name": "Pawmo",
+        "url": "/tcgpocket/shiningrevelry/027.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Shining Revelry28 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/28.jpg",
+        "name": "Pawmot",
+        "url": "/tcgpocket/shiningrevelry/028.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry29 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/29.jpg",
+        "name": "Abra",
+        "url": "/tcgpocket/shiningrevelry/029.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry30 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/30.jpg",
+        "name": "Kadabra",
+        "url": "/tcgpocket/shiningrevelry/030.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Shining Revelry31 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/31.jpg",
+        "name": "Alakazam",
+        "url": "/tcgpocket/shiningrevelry/031.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry32 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/32.jpg",
+        "name": "Mr. Mime",
+        "url": "/tcgpocket/shiningrevelry/032.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry33 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/33.jpg",
+        "name": "Drifloon",
+        "url": "/tcgpocket/shiningrevelry/033.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry34 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/34.jpg",
+        "name": "Drifblim",
+        "url": "/tcgpocket/shiningrevelry/034.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Shining Revelry35 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/35.jpg",
+        "name": "Giratina ex",
+        "url": "/tcgpocket/shiningrevelry/035.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry36 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/36.jpg",
+        "name": "Gimmighoul",
+        "url": "/tcgpocket/shiningrevelry/036.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry37 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/37.jpg",
+        "name": "Machop",
+        "url": "/tcgpocket/shiningrevelry/037.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry38 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/38.jpg",
+        "name": "Machoke",
+        "url": "/tcgpocket/shiningrevelry/038.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Shining Revelry39 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/39.jpg",
+        "name": "Machamp",
+        "url": "/tcgpocket/shiningrevelry/039.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry40 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/40.jpg",
+        "name": "Hitmonlee",
+        "url": "/tcgpocket/shiningrevelry/040.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry41 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/41.jpg",
+        "name": "Hitmonchan",
+        "url": "/tcgpocket/shiningrevelry/041.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry42 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/42.jpg",
+        "name": "Riolu",
+        "url": "/tcgpocket/shiningrevelry/042.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Shining Revelry43 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/43.jpg",
+        "name": "Lucario ex",
+        "url": "/tcgpocket/shiningrevelry/043.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry44 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/44.jpg",
+        "name": "Flamigo",
+        "url": "/tcgpocket/shiningrevelry/044.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry45 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/45.jpg",
+        "name": "Ekans",
+        "url": "/tcgpocket/shiningrevelry/045.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry46 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/46.jpg",
+        "name": "Arbok",
+        "url": "/tcgpocket/shiningrevelry/046.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry47 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/47.jpg",
+        "name": "Wooper",
+        "url": "/tcgpocket/shiningrevelry/047.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Shining Revelry48 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/48.jpg",
+        "name": "Clodsire ex",
+        "url": "/tcgpocket/shiningrevelry/048.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry49 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/49.jpg",
+        "name": "Spiritomb",
+        "url": "/tcgpocket/shiningrevelry/049.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry50 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/50.jpg",
+        "name": "Shroodle",
+        "url": "/tcgpocket/shiningrevelry/050.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Shining Revelry51 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/51.jpg",
+        "name": "Grafaiai",
+        "url": "/tcgpocket/shiningrevelry/051.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry52 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/52.jpg",
+        "name": "Tinkatink",
+        "url": "/tcgpocket/shiningrevelry/052.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry53 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/53.jpg",
+        "name": "Tinkatuff",
+        "url": "/tcgpocket/shiningrevelry/053.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Shining Revelry54 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/54.jpg",
+        "name": "Tinkaton ex",
+        "url": "/tcgpocket/shiningrevelry/054.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry55 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/55.jpg",
+        "name": "Varoom",
+        "url": "/tcgpocket/shiningrevelry/055.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry56 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/56.jpg",
+        "name": "Revavroom",
+        "url": "/tcgpocket/shiningrevelry/056.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Shining Revelry57 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/57.jpg",
+        "name": "Gholdengo",
+        "url": "/tcgpocket/shiningrevelry/057.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry58 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/58.jpg",
+        "name": "Rattata",
+        "url": "/tcgpocket/shiningrevelry/058.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry59 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/59.jpg",
+        "name": "Raticate",
+        "url": "/tcgpocket/shiningrevelry/059.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry60 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/60.jpg",
+        "name": "Jigglypuff",
+        "url": "/tcgpocket/shiningrevelry/060.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Shining Revelry61 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/61.jpg",
+        "name": "Wigglytuff",
+        "url": "/tcgpocket/shiningrevelry/061.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry62 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/62.jpg",
+        "name": "Lickitung",
+        "url": "/tcgpocket/shiningrevelry/062.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry63 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/63.jpg",
+        "name": "Lickilicky",
+        "url": "/tcgpocket/shiningrevelry/063.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry64 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/64.jpg",
+        "name": "Bidoof",
+        "url": "/tcgpocket/shiningrevelry/064.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Shining Revelry65 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/65.jpg",
+        "name": "Bibarel ex",
+        "url": "/tcgpocket/shiningrevelry/065.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry66 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/66.jpg",
+        "name": "Buneary",
+        "url": "/tcgpocket/shiningrevelry/066.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Shining Revelry67 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/67.jpg",
+        "name": "Lopunny",
+        "url": "/tcgpocket/shiningrevelry/067.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry68 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/68.jpg",
+        "name": "Cyclizar",
+        "url": "/tcgpocket/shiningrevelry/068.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry69 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/69.jpg",
+        "name": "Iono",
+        "url": "/tcgpocket/shiningrevelry/069.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry70 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/70.jpg",
+        "name": "Pokemon Center Lady",
+        "url": "/tcgpocket/shiningrevelry/070.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry71 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/71.jpg",
+        "name": "Red",
+        "url": "/tcgpocket/shiningrevelry/071.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Shining Revelry72 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/72.jpg",
+        "name": "Team Rocket Grunt",
+        "url": "/tcgpocket/shiningrevelry/072.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Shining Revelry73 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/73.jpg",
+        "name": "Meowscarada",
+        "url": "/tcgpocket/shiningrevelry/073.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Shining Revelry74 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/74.jpg",
+        "name": "Buizel",
+        "url": "/tcgpocket/shiningrevelry/074.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Shining Revelry75 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/75.jpg",
+        "name": "Tatsugiri",
+        "url": "/tcgpocket/shiningrevelry/075.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Shining Revelry76 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/76.jpg",
+        "name": "Grafaiai",
+        "url": "/tcgpocket/shiningrevelry/076.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Shining Revelry77 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/77.jpg",
+        "name": "Gholdengo",
+        "url": "/tcgpocket/shiningrevelry/077.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry78 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/78.jpg",
+        "name": "Wigglytuff",
+        "url": "/tcgpocket/shiningrevelry/078.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry79 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/79.jpg",
+        "name": "Beedrill ex",
+        "url": "/tcgpocket/shiningrevelry/079.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry80 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/80.jpg",
+        "name": "Charizard ex",
+        "url": "/tcgpocket/shiningrevelry/080.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry81 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/81.jpg",
+        "name": "Wugtrio ex",
+        "url": "/tcgpocket/shiningrevelry/081.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry82 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/82.jpg",
+        "name": "Pikachu ex",
+        "url": "/tcgpocket/shiningrevelry/082.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry83 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/83.jpg",
+        "name": "Giratina ex",
+        "url": "/tcgpocket/shiningrevelry/083.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry84 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/84.jpg",
+        "name": "Lucario ex",
+        "url": "/tcgpocket/shiningrevelry/084.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry85 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/85.jpg",
+        "name": "Clodsire ex",
+        "url": "/tcgpocket/shiningrevelry/085.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry86 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/86.jpg",
+        "name": "Tinkaton ex",
+        "url": "/tcgpocket/shiningrevelry/086.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry87 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/87.jpg",
+        "name": "Bibarel ex",
+        "url": "/tcgpocket/shiningrevelry/087.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry88 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/88.jpg",
+        "name": "Iono",
+        "url": "/tcgpocket/shiningrevelry/088.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry89 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/89.jpg",
+        "name": "Pokemon Center Lady",
+        "url": "/tcgpocket/shiningrevelry/089.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry90 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/90.jpg",
+        "name": "Red",
+        "url": "/tcgpocket/shiningrevelry/090.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry91 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/91.jpg",
+        "name": "Team Rocket Grunt",
+        "url": "/tcgpocket/shiningrevelry/091.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry92 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/92.jpg",
+        "name": "Pikachu ex",
+        "url": "/tcgpocket/shiningrevelry/092.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry93 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/93.jpg",
+        "name": "Clodsire ex",
+        "url": "/tcgpocket/shiningrevelry/093.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry94 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/94.jpg",
+        "name": "Tinkaton ex",
+        "url": "/tcgpocket/shiningrevelry/094.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Shining Revelry95 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/95.jpg",
+        "name": "Bibarel ex",
+        "url": "/tcgpocket/shiningrevelry/095.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Shining Revelry96 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/96.jpg",
+        "name": "Giratina ex",
+        "url": "/tcgpocket/shiningrevelry/096.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Shining Revelry97 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/97.jpg",
+        "name": "Weedle",
+        "url": "/tcgpocket/shiningrevelry/097.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Shining Revelry98 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/98.jpg",
+        "name": "Kakuna",
+        "url": "/tcgpocket/shiningrevelry/098.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Shining Revelry99 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/99.jpg",
+        "name": "Charmander",
+        "url": "/tcgpocket/shiningrevelry/099.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Shining Revelry100 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/100.jpg",
+        "name": "Charmeleon",
+        "url": "/tcgpocket/shiningrevelry/100.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Shining Revelry101 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/101.jpg",
+        "name": "Wiglett",
+        "url": "/tcgpocket/shiningrevelry/101.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Shining Revelry102 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/102.jpg",
+        "name": "Dondozo",
+        "url": "/tcgpocket/shiningrevelry/102.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Shining Revelry103 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/103.jpg",
+        "name": "Pachirisu",
+        "url": "/tcgpocket/shiningrevelry/103.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Shining Revelry104 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/104.jpg",
+        "name": "Riolu",
+        "url": "/tcgpocket/shiningrevelry/104.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Shining Revelry105 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/105.jpg",
+        "name": "Varoom",
+        "url": "/tcgpocket/shiningrevelry/105.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Shining Revelry106 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/106.jpg",
+        "name": "Revavroom",
+        "url": "/tcgpocket/shiningrevelry/106.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Shining Revelry107 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/107.jpg",
+        "name": "Beedrill ex",
+        "url": "/tcgpocket/shiningrevelry/107.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Shining Revelry108 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/108.jpg",
+        "name": "Charizard ex",
+        "url": "/tcgpocket/shiningrevelry/108.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Shining Revelry109 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/109.jpg",
+        "name": "Wugtrio ex",
+        "url": "/tcgpocket/shiningrevelry/109.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Shining Revelry110 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/110.jpg",
+        "name": "Lucario ex",
+        "url": "/tcgpocket/shiningrevelry/110.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Shining Revelry",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Shining Revelry111 /"
+        },
+        "thumbnail": "/tcgpocket/th/shiningrevelry/111.jpg",
+        "name": "Poke Ball",
+        "url": "/tcgpocket/shiningrevelry/111.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    }
 ]

@@ -92,11 +92,16 @@ export default function CollectionsPage() {
       <main className="flex-1">
         <div className="container px-4 py-8">
           <div className="mb-8 flex items-center">
-            <Button variant="ghost" size="icon" asChild className="mr-2">
-              <Link href="/">
-                <ArrowLeft className="h-5 w-5" />
-              </Link>
-            </Button>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="mr-2"
+              render={
+                <Link href="/">
+                  <ArrowLeft className="h-5 w-5" />
+                </Link>
+              }
+            ></Button>
             <h1 className="text-3xl font-bold">Card Collections</h1>
           </div>
 
@@ -177,13 +182,13 @@ export default function CollectionsPage() {
                         size="sm"
                         variant="secondary"
                         className="rounded-full"
-                        asChild
-                      >
-                        <Link href={`/collections/${set.id}`}>
-                          View Set
-                          <ChevronRight className="ml-1 h-4 w-4" />
-                        </Link>
-                      </Button>
+                        render={
+                          <Link href={`/collections/${set.id}`}>
+                            View Set
+                            <ChevronRight className="ml-1 h-4 w-4" />
+                          </Link>
+                        }
+                      ></Button>
                     </div>
                   </div>
                 ))}

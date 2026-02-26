@@ -1,3 +1,4 @@
+import Link from "next/link";
 import LazyImage from "./LazyImage";
 import prisma from "@/prisma/db";
 
@@ -12,14 +13,18 @@ export const CardDex = ({
 }) => (
   <div className="grid grid-cols-2 place-content-center gap-y-4 p-4 md:grid-cols-3 lg:grid-cols-6">
     {cards.map((card, index) => (
-      <div key={`${card.name}-${index}`} className="flex flex-col items-center">
+      <Link
+        target="_blank"
+        rel="noopener noreferrer"
+        href={`https://serebii.net/${card.url}`}
+        key={`${card.name}-${index}`}
+        className="flex flex-col items-center"
+      >
         <LazyImage
           className="rounded-lg select-none"
           key={`${card.name}-${index}`}
           src={`https://serebii.net${card.thumbnail.replace("/th", "")}`}
           alt={`${card.name} Card`}
-          defaultUrl="/back.png"
-          externalUrl={card.url}
           width={200}
           height={300}
           draggable={false}
@@ -29,7 +34,7 @@ export const CardDex = ({
         <div>Retreat {card.details.retreat.count}</div>
         <div>Type {card.details.type.split("/").at(-1)?.split(".").at(0)}</div>
         <div>Weakness {card.details.weakness.value}</div> */}
-      </div>
+      </Link>
     ))}
   </div>
 );

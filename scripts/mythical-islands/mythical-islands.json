@@ -1,1980 +1,2066 @@
 [
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island1 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/1.jpg",
-    "name": "Exeggcute",
-    "url": "/tcgpocket/mythicalisland/001.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island2 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/2.jpg",
-    "name": "Exeggutor",
-    "url": "/tcgpocket/mythicalisland/002.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Mythical Island3 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/3.jpg",
-    "name": "Celebi ex",
-    "url": "/tcgpocket/mythicalisland/003.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island4 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/4.jpg",
-    "name": "Snivy",
-    "url": "/tcgpocket/mythicalisland/004.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island5 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/5.jpg",
-    "name": "Servine",
-    "url": "/tcgpocket/mythicalisland/005.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Mythical Island6 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/6.jpg",
-    "name": "Serperior",
-    "url": "/tcgpocket/mythicalisland/006.shtml",
-    "details": {
-      "hp": "110HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island7 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/7.jpg",
-    "name": "Morelull",
-    "url": "/tcgpocket/mythicalisland/007.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island8 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/8.jpg",
-    "name": "Shiinotic",
-    "url": "/tcgpocket/mythicalisland/008.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island9 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/9.jpg",
-    "name": "Dhelmise",
-    "url": "/tcgpocket/mythicalisland/009.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island10 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/10.jpg",
-    "name": "Ponyta",
-    "url": "/tcgpocket/mythicalisland/010.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island11 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/11.jpg",
-    "name": "Rapidash",
-    "url": "/tcgpocket/mythicalisland/011.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island12 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/12.jpg",
-    "name": "Magmar",
-    "url": "/tcgpocket/mythicalisland/012.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island13 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/13.jpg",
-    "name": "Larvesta",
-    "url": "/tcgpocket/mythicalisland/013.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Mythical Island14 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/14.jpg",
-    "name": "Volcarona",
-    "url": "/tcgpocket/mythicalisland/014.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island15 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/15.jpg",
-    "name": "Salandit",
-    "url": "/tcgpocket/mythicalisland/015.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island16 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/16.jpg",
-    "name": "Salazzle",
-    "url": "/tcgpocket/mythicalisland/016.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island17 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/17.jpg",
-    "name": "Magikarp",
-    "url": "/tcgpocket/mythicalisland/017.shtml",
-    "details": {
-      "hp": "30HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Mythical Island18 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/18.jpg",
-    "name": "Gyarados ex",
-    "url": "/tcgpocket/mythicalisland/018.shtml",
-    "details": {
-      "hp": "180HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Mythical Island19 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/19.jpg",
-    "name": "Vaporeon",
-    "url": "/tcgpocket/mythicalisland/019.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island20 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/20.jpg",
-    "name": "Finneon",
-    "url": "/tcgpocket/mythicalisland/020.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island21 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/21.jpg",
-    "name": "Lumineon",
-    "url": "/tcgpocket/mythicalisland/021.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island22 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/22.jpg",
-    "name": "Chewtle",
-    "url": "/tcgpocket/mythicalisland/022.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island23 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/23.jpg",
-    "name": "Drednaw",
-    "url": "/tcgpocket/mythicalisland/023.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island24 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/24.jpg",
-    "name": "Cramorant",
-    "url": "/tcgpocket/mythicalisland/024.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island25 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/25.jpg",
-    "name": "Pikachu",
-    "url": "/tcgpocket/mythicalisland/025.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Mythical Island26 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/26.jpg",
-    "name": "Raichu",
-    "url": "/tcgpocket/mythicalisland/026.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island27 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/27.jpg",
-    "name": "Electabuzz",
-    "url": "/tcgpocket/mythicalisland/027.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island28 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/28.jpg",
-    "name": "Joltik",
-    "url": "/tcgpocket/mythicalisland/028.shtml",
-    "details": {
-      "hp": "40HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island29 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/29.jpg",
-    "name": "Galvantula",
-    "url": "/tcgpocket/mythicalisland/029.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island30 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/30.jpg",
-    "name": "Dedenne",
-    "url": "/tcgpocket/mythicalisland/030.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Mythical Island31 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/31.jpg",
-    "name": "Mew",
-    "url": "/tcgpocket/mythicalisland/031.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Mythical Island32 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/32.jpg",
-    "name": "Mew ex",
-    "url": "/tcgpocket/mythicalisland/032.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island33 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/33.jpg",
-    "name": "Sigilyph",
-    "url": "/tcgpocket/mythicalisland/033.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island34 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/34.jpg",
-    "name": "Elgyem",
-    "url": "/tcgpocket/mythicalisland/034.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island35 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/35.jpg",
-    "name": "Beheeyem",
-    "url": "/tcgpocket/mythicalisland/035.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island36 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/36.jpg",
-    "name": "Flab\u00e9b\u00e9",
-    "url": "/tcgpocket/mythicalisland/036.shtml",
-    "details": {
-      "hp": "40HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island37 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/37.jpg",
-    "name": "Floette",
-    "url": "/tcgpocket/mythicalisland/037.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island38 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/38.jpg",
-    "name": "Florges",
-    "url": "/tcgpocket/mythicalisland/038.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island39 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/39.jpg",
-    "name": "Swirlix",
-    "url": "/tcgpocket/mythicalisland/039.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island40 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/40.jpg",
-    "name": "Slurpuff",
-    "url": "/tcgpocket/mythicalisland/040.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island41 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/41.jpg",
-    "name": "Mankey",
-    "url": "/tcgpocket/mythicalisland/041.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island42 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/42.jpg",
-    "name": "Primeape",
-    "url": "/tcgpocket/mythicalisland/042.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island43 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/43.jpg",
-    "name": "Geodude",
-    "url": "/tcgpocket/mythicalisland/043.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island44 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/44.jpg",
-    "name": "Graveler",
-    "url": "/tcgpocket/mythicalisland/044.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Mythical Island45 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/45.jpg",
-    "name": "Golem",
-    "url": "/tcgpocket/mythicalisland/045.shtml",
-    "details": {
-      "hp": "160HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Mythical Island46 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/46.jpg",
-    "name": "Aerodactyl ex",
-    "url": "/tcgpocket/mythicalisland/046.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Mythical Island47 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/47.jpg",
-    "name": "Marshadow",
-    "url": "/tcgpocket/mythicalisland/047.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island48 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/48.jpg",
-    "name": "Stonjourner",
-    "url": "/tcgpocket/mythicalisland/048.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/grass.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island49 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/49.jpg",
-    "name": "Koffing",
-    "url": "/tcgpocket/mythicalisland/049.shtml",
-    "details": {
-      "hp": "70HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island50 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/50.jpg",
-    "name": "Weezing",
-    "url": "/tcgpocket/mythicalisland/050.shtml",
-    "details": {
-      "hp": "110HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island51 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/51.jpg",
-    "name": "Purrloin",
-    "url": "/tcgpocket/mythicalisland/051.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island52 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/52.jpg",
-    "name": "Liepard",
-    "url": "/tcgpocket/mythicalisland/052.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island53 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/53.jpg",
-    "name": "Venipede",
-    "url": "/tcgpocket/mythicalisland/053.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island54 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/54.jpg",
-    "name": "Whirlipede",
-    "url": "/tcgpocket/mythicalisland/054.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island55 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/55.jpg",
-    "name": "Scolipede",
-    "url": "/tcgpocket/mythicalisland/055.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/darkness.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island56 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/56.jpg",
-    "name": "Druddigon",
-    "url": "/tcgpocket/mythicalisland/056.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/dragon.png",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island57 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/57.jpg",
-    "name": "Pidgey",
-    "url": "/tcgpocket/mythicalisland/057.shtml",
-    "details": {
-      "hp": "50HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island58 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/58.jpg",
-    "name": "Pidgeotto",
-    "url": "/tcgpocket/mythicalisland/058.shtml",
-    "details": {
-      "hp": "90HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond4.png",
-      "pokedex": "Mythical Island59 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/59.jpg",
-    "name": "Pidgeot ex",
-    "url": "/tcgpocket/mythicalisland/059.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond3.png",
-      "pokedex": "Mythical Island60 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/60.jpg",
-    "name": "Tauros",
-    "url": "/tcgpocket/mythicalisland/060.shtml",
-    "details": {
-      "hp": "100HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island61 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/61.jpg",
-    "name": "Eevee",
-    "url": "/tcgpocket/mythicalisland/061.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island62 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/62.jpg",
-    "name": "Chatot",
-    "url": "/tcgpocket/mythicalisland/062.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond1.png",
-      "pokedex": "Mythical Island63 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/63.jpg",
-    "name": "Old Amber",
-    "url": "/tcgpocket/mythicalisland/063.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island64 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/64.jpg",
-    "name": "Pokemon Flute",
-    "url": "/tcgpocket/mythicalisland/064.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island65 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/65.jpg",
-    "name": "Mythical Slab",
-    "url": "/tcgpocket/mythicalisland/065.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island66 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/66.jpg",
-    "name": "Budding Expeditioner",
-    "url": "/tcgpocket/mythicalisland/066.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island67 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/67.jpg",
-    "name": "Blue",
-    "url": "/tcgpocket/mythicalisland/067.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/diamond2.png",
-      "pokedex": "Mythical Island68 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/68.jpg",
-    "name": "Leaf",
-    "url": "/tcgpocket/mythicalisland/068.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Mythical Island69 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/69.jpg",
-    "name": "Exeggutor",
-    "url": "/tcgpocket/mythicalisland/069.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Mythical Island70 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/70.jpg",
-    "name": "Serperior",
-    "url": "/tcgpocket/mythicalisland/070.shtml",
-    "details": {
-      "hp": "110HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Mythical Island71 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/71.jpg",
-    "name": "Salandit",
-    "url": "/tcgpocket/mythicalisland/071.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/fire.png",
-      "weakness": {
-        "image": "/tcgpocket/image/water.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Mythical Island72 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/72.jpg",
-    "name": "Vaporeon",
-    "url": "/tcgpocket/mythicalisland/072.shtml",
-    "details": {
-      "hp": "120HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "2"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Mythical Island73 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/73.jpg",
-    "name": "Dedenne",
-    "url": "/tcgpocket/mythicalisland/073.shtml",
-    "details": {
-      "hp": "60HP",
-      "type": "/tcgpocket/image/electric.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fighting.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star1.png",
-      "pokedex": "Mythical Island74 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/74.jpg",
-    "name": "Marshadow",
-    "url": "/tcgpocket/mythicalisland/074.shtml",
-    "details": {
-      "hp": "80HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/psychic.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Mythical Island75 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/75.jpg",
-    "name": "Celebi ex",
-    "url": "/tcgpocket/mythicalisland/075.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Mythical Island76 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/76.jpg",
-    "name": "Gyarados ex",
-    "url": "/tcgpocket/mythicalisland/076.shtml",
-    "details": {
-      "hp": "180HP",
-      "type": "/tcgpocket/image/water.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "3"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Mythical Island77 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/77.jpg",
-    "name": "Mew ex",
-    "url": "/tcgpocket/mythicalisland/077.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Mythical Island78 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/78.jpg",
-    "name": "Aerodactyl ex",
-    "url": "/tcgpocket/mythicalisland/078.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Mythical Island79 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/79.jpg",
-    "name": "Pidgeot ex",
-    "url": "/tcgpocket/mythicalisland/079.shtml",
-    "details": {
-      "hp": "170HP",
-      "type": "/tcgpocket/image/colorless.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Mythical Island80 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/80.jpg",
-    "name": "Budding Expeditioner",
-    "url": "/tcgpocket/mythicalisland/080.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Mythical Island81 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/81.jpg",
-    "name": "Blue",
-    "url": "/tcgpocket/mythicalisland/081.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Mythical Island82 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/82.jpg",
-    "name": "Leaf",
-    "url": "/tcgpocket/mythicalisland/082.shtml",
-    "details": {
-      "hp": "",
-      "type": "",
-      "weakness": {
-        "image": "",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "",
-        "count": "0"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Mythical Island83 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/83.jpg",
-    "name": "Mew ex",
-    "url": "/tcgpocket/mythicalisland/083.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star2.png",
-      "pokedex": "Mythical Island84 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/84.jpg",
-    "name": "Aerodactyl ex",
-    "url": "/tcgpocket/mythicalisland/084.shtml",
-    "details": {
-      "hp": "140HP",
-      "type": "/tcgpocket/image/fighting.png",
-      "weakness": {
-        "image": "/tcgpocket/image/electric.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/star3.png",
-      "pokedex": "Mythical Island85 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/85.jpg",
-    "name": "Celebi ex",
-    "url": "/tcgpocket/mythicalisland/085.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/grass.png",
-      "weakness": {
-        "image": "/tcgpocket/image/fire.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  },
-  {
-    "set": {
-      "setName": "Mythical Island",
-      "image": "/tcgpocket/image/crown.png",
-      "pokedex": "Mythical Island86 / 68"
-    },
-    "thumbnail": "/tcgpocket/th/mythicalisland/86.jpg",
-    "name": "Mew ex",
-    "url": "/tcgpocket/mythicalisland/086.shtml",
-    "details": {
-      "hp": "130HP",
-      "type": "/tcgpocket/image/psychic.png",
-      "weakness": {
-        "image": "/tcgpocket/image/darkness.png",
-        "value": "20"
-      },
-      "retreat": {
-        "image": "/tcgpocket/image/colorless.png",
-        "count": "1"
-      }
-    },
-    "expansion": "mew.png"
-  }
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island1 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/1.jpg",
+        "name": "Exeggcute",
+        "url": "/tcgpocket/mythicalisland/001.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island2 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/2.jpg",
+        "name": "Exeggutor",
+        "url": "/tcgpocket/mythicalisland/002.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Mythical Island3 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/3.jpg",
+        "name": "Celebi ex",
+        "url": "/tcgpocket/mythicalisland/003.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island4 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/4.jpg",
+        "name": "Snivy",
+        "url": "/tcgpocket/mythicalisland/004.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island5 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/5.jpg",
+        "name": "Servine",
+        "url": "/tcgpocket/mythicalisland/005.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mythical Island6 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/6.jpg",
+        "name": "Serperior",
+        "url": "/tcgpocket/mythicalisland/006.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island7 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/7.jpg",
+        "name": "Morelull",
+        "url": "/tcgpocket/mythicalisland/007.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island8 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/8.jpg",
+        "name": "Shiinotic",
+        "url": "/tcgpocket/mythicalisland/008.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island9 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/9.jpg",
+        "name": "Dhelmise",
+        "url": "/tcgpocket/mythicalisland/009.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island10 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/10.jpg",
+        "name": "Ponyta",
+        "url": "/tcgpocket/mythicalisland/010.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island11 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/11.jpg",
+        "name": "Rapidash",
+        "url": "/tcgpocket/mythicalisland/011.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island12 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/12.jpg",
+        "name": "Magmar",
+        "url": "/tcgpocket/mythicalisland/012.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island13 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/13.jpg",
+        "name": "Larvesta",
+        "url": "/tcgpocket/mythicalisland/013.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mythical Island14 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/14.jpg",
+        "name": "Volcarona",
+        "url": "/tcgpocket/mythicalisland/014.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island15 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/15.jpg",
+        "name": "Salandit",
+        "url": "/tcgpocket/mythicalisland/015.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island16 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/16.jpg",
+        "name": "Salazzle",
+        "url": "/tcgpocket/mythicalisland/016.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island17 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/17.jpg",
+        "name": "Magikarp",
+        "url": "/tcgpocket/mythicalisland/017.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Mythical Island18 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/18.jpg",
+        "name": "Gyarados ex",
+        "url": "/tcgpocket/mythicalisland/018.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mythical Island19 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/19.jpg",
+        "name": "Vaporeon",
+        "url": "/tcgpocket/mythicalisland/019.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island20 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/20.jpg",
+        "name": "Finneon",
+        "url": "/tcgpocket/mythicalisland/020.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island21 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/21.jpg",
+        "name": "Lumineon",
+        "url": "/tcgpocket/mythicalisland/021.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island22 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/22.jpg",
+        "name": "Chewtle",
+        "url": "/tcgpocket/mythicalisland/022.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island23 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/23.jpg",
+        "name": "Drednaw",
+        "url": "/tcgpocket/mythicalisland/023.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island24 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/24.jpg",
+        "name": "Cramorant",
+        "url": "/tcgpocket/mythicalisland/024.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island25 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/25.jpg",
+        "name": "Pikachu",
+        "url": "/tcgpocket/mythicalisland/025.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mythical Island26 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/26.jpg",
+        "name": "Raichu",
+        "url": "/tcgpocket/mythicalisland/026.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island27 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/27.jpg",
+        "name": "Electabuzz",
+        "url": "/tcgpocket/mythicalisland/027.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island28 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/28.jpg",
+        "name": "Joltik",
+        "url": "/tcgpocket/mythicalisland/028.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island29 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/29.jpg",
+        "name": "Galvantula",
+        "url": "/tcgpocket/mythicalisland/029.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island30 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/30.jpg",
+        "name": "Dedenne",
+        "url": "/tcgpocket/mythicalisland/030.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mythical Island31 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/31.jpg",
+        "name": "Mew",
+        "url": "/tcgpocket/mythicalisland/031.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Mythical Island32 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/32.jpg",
+        "name": "Mew ex",
+        "url": "/tcgpocket/mythicalisland/032.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island33 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/33.jpg",
+        "name": "Sigilyph",
+        "url": "/tcgpocket/mythicalisland/033.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island34 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/34.jpg",
+        "name": "Elgyem",
+        "url": "/tcgpocket/mythicalisland/034.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island35 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/35.jpg",
+        "name": "Beheeyem",
+        "url": "/tcgpocket/mythicalisland/035.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island36 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/36.jpg",
+        "name": "Flab\u00e9b\u00e9",
+        "url": "/tcgpocket/mythicalisland/036.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island37 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/37.jpg",
+        "name": "Floette",
+        "url": "/tcgpocket/mythicalisland/037.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island38 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/38.jpg",
+        "name": "Florges",
+        "url": "/tcgpocket/mythicalisland/038.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island39 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/39.jpg",
+        "name": "Swirlix",
+        "url": "/tcgpocket/mythicalisland/039.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island40 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/40.jpg",
+        "name": "Slurpuff",
+        "url": "/tcgpocket/mythicalisland/040.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island41 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/41.jpg",
+        "name": "Mankey",
+        "url": "/tcgpocket/mythicalisland/041.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island42 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/42.jpg",
+        "name": "Primeape",
+        "url": "/tcgpocket/mythicalisland/042.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island43 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/43.jpg",
+        "name": "Geodude",
+        "url": "/tcgpocket/mythicalisland/043.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island44 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/44.jpg",
+        "name": "Graveler",
+        "url": "/tcgpocket/mythicalisland/044.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mythical Island45 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/45.jpg",
+        "name": "Golem",
+        "url": "/tcgpocket/mythicalisland/045.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Mythical Island46 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/46.jpg",
+        "name": "Aerodactyl ex",
+        "url": "/tcgpocket/mythicalisland/046.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mythical Island47 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/47.jpg",
+        "name": "Marshadow",
+        "url": "/tcgpocket/mythicalisland/047.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island48 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/48.jpg",
+        "name": "Stonjourner",
+        "url": "/tcgpocket/mythicalisland/048.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island49 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/49.jpg",
+        "name": "Koffing",
+        "url": "/tcgpocket/mythicalisland/049.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island50 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/50.jpg",
+        "name": "Weezing",
+        "url": "/tcgpocket/mythicalisland/050.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island51 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/51.jpg",
+        "name": "Purrloin",
+        "url": "/tcgpocket/mythicalisland/051.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island52 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/52.jpg",
+        "name": "Liepard",
+        "url": "/tcgpocket/mythicalisland/052.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island53 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/53.jpg",
+        "name": "Venipede",
+        "url": "/tcgpocket/mythicalisland/053.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island54 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/54.jpg",
+        "name": "Whirlipede",
+        "url": "/tcgpocket/mythicalisland/054.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island55 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/55.jpg",
+        "name": "Scolipede",
+        "url": "/tcgpocket/mythicalisland/055.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island56 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/56.jpg",
+        "name": "Druddigon",
+        "url": "/tcgpocket/mythicalisland/056.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island57 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/57.jpg",
+        "name": "Pidgey",
+        "url": "/tcgpocket/mythicalisland/057.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island58 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/58.jpg",
+        "name": "Pidgeotto",
+        "url": "/tcgpocket/mythicalisland/058.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Mythical Island59 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/59.jpg",
+        "name": "Pidgeot ex",
+        "url": "/tcgpocket/mythicalisland/059.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mythical Island60 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/60.jpg",
+        "name": "Tauros",
+        "url": "/tcgpocket/mythicalisland/060.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island61 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/61.jpg",
+        "name": "Eevee",
+        "url": "/tcgpocket/mythicalisland/061.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island62 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/62.jpg",
+        "name": "Chatot",
+        "url": "/tcgpocket/mythicalisland/062.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mythical Island63 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/63.jpg",
+        "name": "Old Amber",
+        "url": "/tcgpocket/mythicalisland/063.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island64 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/64.jpg",
+        "name": "Pokemon Flute",
+        "url": "/tcgpocket/mythicalisland/064.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island65 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/65.jpg",
+        "name": "Mythical Slab",
+        "url": "/tcgpocket/mythicalisland/065.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island66 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/66.jpg",
+        "name": "Budding Expeditioner",
+        "url": "/tcgpocket/mythicalisland/066.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island67 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/67.jpg",
+        "name": "Blue",
+        "url": "/tcgpocket/mythicalisland/067.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mythical Island68 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/68.jpg",
+        "name": "Leaf",
+        "url": "/tcgpocket/mythicalisland/068.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mythical Island69 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/69.jpg",
+        "name": "Exeggutor",
+        "url": "/tcgpocket/mythicalisland/069.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mythical Island70 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/70.jpg",
+        "name": "Serperior",
+        "url": "/tcgpocket/mythicalisland/070.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mythical Island71 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/71.jpg",
+        "name": "Salandit",
+        "url": "/tcgpocket/mythicalisland/071.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mythical Island72 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/72.jpg",
+        "name": "Vaporeon",
+        "url": "/tcgpocket/mythicalisland/072.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mythical Island73 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/73.jpg",
+        "name": "Dedenne",
+        "url": "/tcgpocket/mythicalisland/073.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mythical Island74 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/74.jpg",
+        "name": "Marshadow",
+        "url": "/tcgpocket/mythicalisland/074.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mythical Island75 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/75.jpg",
+        "name": "Celebi ex",
+        "url": "/tcgpocket/mythicalisland/075.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mythical Island76 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/76.jpg",
+        "name": "Gyarados ex",
+        "url": "/tcgpocket/mythicalisland/076.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mythical Island77 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/77.jpg",
+        "name": "Mew ex",
+        "url": "/tcgpocket/mythicalisland/077.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mythical Island78 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/78.jpg",
+        "name": "Aerodactyl ex",
+        "url": "/tcgpocket/mythicalisland/078.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mythical Island79 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/79.jpg",
+        "name": "Pidgeot ex",
+        "url": "/tcgpocket/mythicalisland/079.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mythical Island80 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/80.jpg",
+        "name": "Budding Expeditioner",
+        "url": "/tcgpocket/mythicalisland/080.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mythical Island81 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/81.jpg",
+        "name": "Blue",
+        "url": "/tcgpocket/mythicalisland/081.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mythical Island82 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/82.jpg",
+        "name": "Leaf",
+        "url": "/tcgpocket/mythicalisland/082.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mythical Island83 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/83.jpg",
+        "name": "Mew ex",
+        "url": "/tcgpocket/mythicalisland/083.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mythical Island84 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/84.jpg",
+        "name": "Aerodactyl ex",
+        "url": "/tcgpocket/mythicalisland/084.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Mythical Island85 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/85.jpg",
+        "name": "Celebi ex",
+        "url": "/tcgpocket/mythicalisland/085.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Mythical Island",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Mythical Island86 / 68"
+        },
+        "thumbnail": "/tcgpocket/th/mythicalisland/86.jpg",
+        "name": "Mew ex",
+        "url": "/tcgpocket/mythicalisland/086.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "mew.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    }
 ]

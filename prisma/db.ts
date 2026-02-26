@@ -1,11 +1,10 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "./generated/client/client";
 import { PrismaNeon } from "@prisma/adapter-neon";
-import { Pool, neonConfig } from "@neondatabase/serverless";
-// import config from "../lib/config";
-
+import { neonConfig } from "@neondatabase/serverless";
 import ws from "ws";
-neonConfig.webSocketConstructor = ws;
 
+// Configure Neon for WebSocket connections
+neonConfig.webSocketConstructor = ws;
 // To work in edge environments (Cloudflare Workers, Vercel Edge, etc.), enable querying over fetch
 neonConfig.poolQueryViaFetch = true;
 
@@ -14,14 +13,13 @@ declare global {
   var prisma: PrismaClient | undefined;
 }
 
-const connectionString = process.env.DATABASE_URL;
+const connectionString = process.env.DATABASE_URL!;
 
-const pool = new Pool({ connectionString }) as any;
-const adapter = new PrismaNeon(pool);
-const prisma =
-  // @ts-ignore
-  global.prisma ||
-  new PrismaClient({ adapter, log: ["warn", "error", "info"] });
+// Create Neon adapter for serverless PostgreSQL
+const adapter = new PrismaNeon({ connectionString });
+
+// Initialize Prisma Client with the Neon adapter
+const prisma = global.prisma ?? new PrismaClient({ adapter });
 
 if (process.env.NODE_ENV === "development") global.prisma = prisma;
 

@@ -92,12 +92,16 @@ export default function HomePage() {
             </Tabs>
 
             <div className="mt-12 flex justify-center">
-              <Button variant="outline" className="rounded-full" asChild>
-                <Link href="/collections">
-                  View All Cards
-                  <ChevronRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              <Button
+                variant="outline"
+                className="rounded-full"
+                render={
+                  <Link href="/collections">
+                    View All Cards
+                    <ChevronRight className="ml-2 h-4 w-4" />
+                  </Link>
+                }
+              ></Button>
             </div>
           </div>
         </section>
@@ -121,12 +125,15 @@ export default function HomePage() {
             <CollectionShowcase />
 
             <div className="mt-12 flex justify-center">
-              <Button className="rounded-full" asChild>
-                <Link href="/collections">
-                  Browse All Collections
-                  <ChevronRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              <Button
+                className="rounded-full"
+                render={
+                  <Link href="/collections">
+                    Browse All Collections
+                    <ChevronRight className="ml-2 h-4 w-4" />
+                  </Link>
+                }
+              ></Button>
             </div>
           </div>
         </section>
@@ -207,18 +214,14 @@ export default function HomePage() {
                 size="lg"
                 variant="secondary"
                 className="rounded-full"
-                asChild
-              >
-                <Link href="/trading">Start Trading Now</Link>
-              </Button>
+                render={<Link href="/trading">Start Trading Now</Link>}
+              ></Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="rounded-full border-white bg-transparent text-white hover:bg-white/20"
-                asChild
-              >
-                <Link href="/collections">Explore Collections</Link>
-              </Button>
+                render={<Link href="/collections">Explore Collections</Link>}
+              ></Button>
             </div>
           </div>
         </section>

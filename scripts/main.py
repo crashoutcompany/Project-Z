@@ -3,6 +3,17 @@ import json
 import os
 
 def parse_table(html):
+    """
+    Parses an HTML table of card data and returns a JSON-formatted list of card details.
+    
+    Extracts structured information for each card, including set information, thumbnail, name, URL, card details (HP, type, weakness, retreat), expansion, and rarity. Skips malformed or incomplete rows.
+    
+    Args:
+        html: The HTML string containing the card table.
+    
+    Returns:
+        A JSON-formatted string representing a list of card dictionaries.
+    """
     soup = BeautifulSoup(html, 'html.parser')
     rows = soup.find_all('tr')
     cards = []
@@ -21,6 +32,9 @@ def parse_table(html):
                 "image": set_td.find('img')['src'] if set_td.find('img') else "",
                 "pokedex": next((text.strip() for text in set_td.text.strip().split('\n') if '/' in text), "")
             }
+            
+            # Extract rarity from the first td
+            rarity = set_td.find('img')['src'] if set_td.find('img') else ""
             
             # Parse second td - thumbnail
             thumbnail = cols[1].find('img')['src'] if cols[1].find('img') else ""
@@ -97,7 +111,8 @@ def parse_table(html):
                 "name": name,
                 "url": url,
                 "details": details,
-                "expansion": expansion
+                "expansion": expansion,
+                "rarity": rarity  # Add rarity property
             }
             
             cards.append(card)

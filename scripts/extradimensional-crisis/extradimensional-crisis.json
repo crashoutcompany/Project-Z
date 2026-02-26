@@ -1,0 +1,2474 @@
+[
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis1 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/1.jpg",
+    "name": "Petilil",
+    "url": "/tcgpocket/extradimensionalcrisis/001.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis2 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/2.jpg",
+    "name": "Lilligant",
+    "url": "/tcgpocket/extradimensionalcrisis/002.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis3 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/3.jpg",
+    "name": "Rowlet",
+    "url": "/tcgpocket/extradimensionalcrisis/003.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis4 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/4.jpg",
+    "name": "Dartrix",
+    "url": "/tcgpocket/extradimensionalcrisis/004.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Extradimensional Crisis5 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/5.jpg",
+    "name": "Decidueye",
+    "url": "/tcgpocket/extradimensionalcrisis/005.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Extradimensional Crisis6 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/6.jpg",
+    "name": "Buzzwole ex",
+    "url": "/tcgpocket/extradimensionalcrisis/006.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis7 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/7.jpg",
+    "name": "Pheromosa",
+    "url": "/tcgpocket/extradimensionalcrisis/007.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis8 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/8.jpg",
+    "name": "Kartana",
+    "url": "/tcgpocket/extradimensionalcrisis/008.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis9 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/9.jpg",
+    "name": "Blacephalon",
+    "url": "/tcgpocket/extradimensionalcrisis/009.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis10 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/10.jpg",
+    "name": "Mantine",
+    "url": "/tcgpocket/extradimensionalcrisis/010.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis11 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/11.jpg",
+    "name": "Carvanha",
+    "url": "/tcgpocket/extradimensionalcrisis/011.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis12 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/12.jpg",
+    "name": "Sharpedo",
+    "url": "/tcgpocket/extradimensionalcrisis/012.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis13 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/13.jpg",
+    "name": "Shinx",
+    "url": "/tcgpocket/extradimensionalcrisis/013.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis14 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/14.jpg",
+    "name": "Luxio",
+    "url": "/tcgpocket/extradimensionalcrisis/014.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Extradimensional Crisis15 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/15.jpg",
+    "name": "Luxray",
+    "url": "/tcgpocket/extradimensionalcrisis/015.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis16 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/16.jpg",
+    "name": "Blitzle",
+    "url": "/tcgpocket/extradimensionalcrisis/016.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis17 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/17.jpg",
+    "name": "Zebstrika",
+    "url": "/tcgpocket/extradimensionalcrisis/017.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis18 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/18.jpg",
+    "name": "Emolga",
+    "url": "/tcgpocket/extradimensionalcrisis/018.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Extradimensional Crisis19 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/19.jpg",
+    "name": "Tapu Koko ex",
+    "url": "/tcgpocket/extradimensionalcrisis/019.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis20 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/20.jpg",
+    "name": "Xurkitree",
+    "url": "/tcgpocket/extradimensionalcrisis/020.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Extradimensional Crisis21 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/21.jpg",
+    "name": "Zeraora",
+    "url": "/tcgpocket/extradimensionalcrisis/021.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis22 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/22.jpg",
+    "name": "Clefairy",
+    "url": "/tcgpocket/extradimensionalcrisis/022.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis23 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/23.jpg",
+    "name": "Clefable",
+    "url": "/tcgpocket/extradimensionalcrisis/023.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis24 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/24.jpg",
+    "name": "Phantump",
+    "url": "/tcgpocket/extradimensionalcrisis/024.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis25 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/25.jpg",
+    "name": "Trevenant",
+    "url": "/tcgpocket/extradimensionalcrisis/025.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis26 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/26.jpg",
+    "name": "Morelull",
+    "url": "/tcgpocket/extradimensionalcrisis/026.shtml",
+    "details": {
+      "hp": "50HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Extradimensional Crisis27 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/27.jpg",
+    "name": "Shiinotic",
+    "url": "/tcgpocket/extradimensionalcrisis/027.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/metal.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis28 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/28.jpg",
+    "name": "Meditite",
+    "url": "/tcgpocket/extradimensionalcrisis/028.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis29 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/29.jpg",
+    "name": "Medicham",
+    "url": "/tcgpocket/extradimensionalcrisis/029.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/psychic.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis30 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/30.jpg",
+    "name": "Baltoy",
+    "url": "/tcgpocket/extradimensionalcrisis/030.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis31 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/31.jpg",
+    "name": "Claydol",
+    "url": "/tcgpocket/extradimensionalcrisis/031.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis32 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/32.jpg",
+    "name": "Rockruff",
+    "url": "/tcgpocket/extradimensionalcrisis/032.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Extradimensional Crisis33 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/33.jpg",
+    "name": "Lycanroc ex",
+    "url": "/tcgpocket/extradimensionalcrisis/033.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis34 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/34.jpg",
+    "name": "Passimian",
+    "url": "/tcgpocket/extradimensionalcrisis/034.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis35 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/35.jpg",
+    "name": "Sandygast",
+    "url": "/tcgpocket/extradimensionalcrisis/035.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis36 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/36.jpg",
+    "name": "Palossand",
+    "url": "/tcgpocket/extradimensionalcrisis/036.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis37 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/37.jpg",
+    "name": "Meowth",
+    "url": "/tcgpocket/extradimensionalcrisis/037.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis38 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/38.jpg",
+    "name": "Persian",
+    "url": "/tcgpocket/extradimensionalcrisis/038.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis39 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/39.jpg",
+    "name": "Sandile",
+    "url": "/tcgpocket/extradimensionalcrisis/039.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis40 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/40.jpg",
+    "name": "Krokorok",
+    "url": "/tcgpocket/extradimensionalcrisis/040.shtml",
+    "details": {
+      "hp": "90HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis41 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/41.jpg",
+    "name": "Krookodile",
+    "url": "/tcgpocket/extradimensionalcrisis/041.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Extradimensional Crisis42 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/42.jpg",
+    "name": "Nihilego",
+    "url": "/tcgpocket/extradimensionalcrisis/042.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Extradimensional Crisis43 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/43.jpg",
+    "name": "Guzzlord ex",
+    "url": "/tcgpocket/extradimensionalcrisis/043.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis44 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/44.jpg",
+    "name": "Poipole",
+    "url": "/tcgpocket/extradimensionalcrisis/044.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Extradimensional Crisis45 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/45.jpg",
+    "name": "Naganadel",
+    "url": "/tcgpocket/extradimensionalcrisis/045.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis46 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/46.jpg",
+    "name": "Diglett",
+    "url": "/tcgpocket/extradimensionalcrisis/046.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond4.png",
+      "pokedex": "Extradimensional Crisis47 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/47.jpg",
+    "name": "Dugtrio ex",
+    "url": "/tcgpocket/extradimensionalcrisis/047.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond4.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis48 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/48.jpg",
+    "name": "Aron",
+    "url": "/tcgpocket/extradimensionalcrisis/048.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis49 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/49.jpg",
+    "name": "Lairon",
+    "url": "/tcgpocket/extradimensionalcrisis/049.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis50 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/50.jpg",
+    "name": "Aggron",
+    "url": "/tcgpocket/extradimensionalcrisis/050.shtml",
+    "details": {
+      "hp": "160HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis51 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/51.jpg",
+    "name": "Ferroseed",
+    "url": "/tcgpocket/extradimensionalcrisis/051.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis52 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/52.jpg",
+    "name": "Ferrothorn",
+    "url": "/tcgpocket/extradimensionalcrisis/052.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis53 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/53.jpg",
+    "name": "Stakataka",
+    "url": "/tcgpocket/extradimensionalcrisis/053.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis54 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/54.jpg",
+    "name": "Lillipup",
+    "url": "/tcgpocket/extradimensionalcrisis/054.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis55 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/55.jpg",
+    "name": "Herdier",
+    "url": "/tcgpocket/extradimensionalcrisis/055.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis56 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/56.jpg",
+    "name": "Stoutland",
+    "url": "/tcgpocket/extradimensionalcrisis/056.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis57 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/57.jpg",
+    "name": "Stufful",
+    "url": "/tcgpocket/extradimensionalcrisis/057.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis58 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/58.jpg",
+    "name": "Bewear",
+    "url": "/tcgpocket/extradimensionalcrisis/058.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "3"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond1.png",
+      "pokedex": "Extradimensional Crisis59 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/59.jpg",
+    "name": "Oranguru",
+    "url": "/tcgpocket/extradimensionalcrisis/059.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis60 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/60.jpg",
+    "name": "Type: Null",
+    "url": "/tcgpocket/extradimensionalcrisis/060.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Extradimensional Crisis61 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/61.jpg",
+    "name": "Silvally",
+    "url": "/tcgpocket/extradimensionalcrisis/061.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond3.png",
+      "pokedex": "Extradimensional Crisis62 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/62.jpg",
+    "name": "Celesteela",
+    "url": "/tcgpocket/extradimensionalcrisis/062.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond3.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis63 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/63.jpg",
+    "name": "Beast Wall",
+    "url": "/tcgpocket/extradimensionalcrisis/063.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis64 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/64.jpg",
+    "name": "Repel",
+    "url": "/tcgpocket/extradimensionalcrisis/064.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis65 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/65.jpg",
+    "name": "Electrical Cord",
+    "url": "/tcgpocket/extradimensionalcrisis/065.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis66 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/66.jpg",
+    "name": "Beastite",
+    "url": "/tcgpocket/extradimensionalcrisis/066.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis67 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/67.jpg",
+    "name": "Gladion",
+    "url": "/tcgpocket/extradimensionalcrisis/067.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis68 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/68.jpg",
+    "name": "Looker",
+    "url": "/tcgpocket/extradimensionalcrisis/068.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/diamond2.png",
+      "pokedex": "Extradimensional Crisis69 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/69.jpg",
+    "name": "Lusamine",
+    "url": "/tcgpocket/extradimensionalcrisis/069.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/diamond2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Extradimensional Crisis70 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/70.jpg",
+    "name": "Rowlet",
+    "url": "/tcgpocket/extradimensionalcrisis/070.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Extradimensional Crisis71 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/71.jpg",
+    "name": "Pheromosa",
+    "url": "/tcgpocket/extradimensionalcrisis/071.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Extradimensional Crisis72 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/72.jpg",
+    "name": "Blacephalon",
+    "url": "/tcgpocket/extradimensionalcrisis/072.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Extradimensional Crisis73 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/73.jpg",
+    "name": "Meowth",
+    "url": "/tcgpocket/extradimensionalcrisis/073.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Extradimensional Crisis74 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/74.jpg",
+    "name": "Silvally",
+    "url": "/tcgpocket/extradimensionalcrisis/074.shtml",
+    "details": {
+      "hp": "110HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star1.png",
+      "pokedex": "Extradimensional Crisis75 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/75.jpg",
+    "name": "Celesteela",
+    "url": "/tcgpocket/extradimensionalcrisis/075.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis76 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/76.jpg",
+    "name": "Buzzwole ex",
+    "url": "/tcgpocket/extradimensionalcrisis/076.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis77 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/77.jpg",
+    "name": "Tapu Koko ex",
+    "url": "/tcgpocket/extradimensionalcrisis/077.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis78 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/78.jpg",
+    "name": "Lycanroc ex",
+    "url": "/tcgpocket/extradimensionalcrisis/078.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis79 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/79.jpg",
+    "name": "Guzzlord ex",
+    "url": "/tcgpocket/extradimensionalcrisis/079.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis80 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/80.jpg",
+    "name": "Dugtrio ex",
+    "url": "/tcgpocket/extradimensionalcrisis/080.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis81 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/81.jpg",
+    "name": "Gladion",
+    "url": "/tcgpocket/extradimensionalcrisis/081.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis82 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/82.jpg",
+    "name": "Looker",
+    "url": "/tcgpocket/extradimensionalcrisis/082.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis83 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/83.jpg",
+    "name": "Lusamine",
+    "url": "/tcgpocket/extradimensionalcrisis/083.shtml",
+    "details": {
+      "hp": "",
+      "type": "",
+      "weakness": {
+        "image": "",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "",
+        "count": "0"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis84 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/84.jpg",
+    "name": "Tapu Koko ex",
+    "url": "/tcgpocket/extradimensionalcrisis/084.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/electric.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis85 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/85.jpg",
+    "name": "Lycanroc ex",
+    "url": "/tcgpocket/extradimensionalcrisis/085.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fighting.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis86 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/86.jpg",
+    "name": "Guzzlord ex",
+    "url": "/tcgpocket/extradimensionalcrisis/086.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/grass.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "4"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star2.png",
+      "pokedex": "Extradimensional Crisis87 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/87.jpg",
+    "name": "Dugtrio ex",
+    "url": "/tcgpocket/extradimensionalcrisis/087.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/metal.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/star3.png",
+      "pokedex": "Extradimensional Crisis88 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/88.jpg",
+    "name": "Buzzwole ex",
+    "url": "/tcgpocket/extradimensionalcrisis/088.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/star3.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Extradimensional Crisis89 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/89.jpg",
+    "name": "Growlithe",
+    "url": "/tcgpocket/extradimensionalcrisis/089.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Extradimensional Crisis90 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/90.jpg",
+    "name": "Arcanine",
+    "url": "/tcgpocket/extradimensionalcrisis/090.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Extradimensional Crisis91 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/91.jpg",
+    "name": "Froakie",
+    "url": "/tcgpocket/extradimensionalcrisis/091.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Extradimensional Crisis92 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/92.jpg",
+    "name": "Frogadier",
+    "url": "/tcgpocket/extradimensionalcrisis/092.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Extradimensional Crisis93 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/93.jpg",
+    "name": "Greninja",
+    "url": "/tcgpocket/extradimensionalcrisis/093.shtml",
+    "details": {
+      "hp": "120HP",
+      "type": "/tcgpocket/image/water.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Extradimensional Crisis94 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/94.jpg",
+    "name": "Jynx",
+    "url": "/tcgpocket/extradimensionalcrisis/094.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/psychic.png",
+      "weakness": {
+        "image": "/tcgpocket/image/darkness.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Extradimensional Crisis95 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/95.jpg",
+    "name": "Pidgey",
+    "url": "/tcgpocket/extradimensionalcrisis/095.shtml",
+    "details": {
+      "hp": "60HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Extradimensional Crisis96 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/96.jpg",
+    "name": "Pidgeotto",
+    "url": "/tcgpocket/extradimensionalcrisis/096.shtml",
+    "details": {
+      "hp": "80HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Extradimensional Crisis97 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/97.jpg",
+    "name": "Pidgeot",
+    "url": "/tcgpocket/extradimensionalcrisis/097.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny1.png",
+      "pokedex": "Extradimensional Crisis98 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/98.jpg",
+    "name": "Aerodactyl",
+    "url": "/tcgpocket/extradimensionalcrisis/098.shtml",
+    "details": {
+      "hp": "100HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny1.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Extradimensional Crisis99 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/99.jpg",
+    "name": "Celebi ex",
+    "url": "/tcgpocket/extradimensionalcrisis/099.shtml",
+    "details": {
+      "hp": "130HP",
+      "type": "/tcgpocket/image/grass.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fire.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Extradimensional Crisis100 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/100.jpg",
+    "name": "Arcanine ex",
+    "url": "/tcgpocket/extradimensionalcrisis/100.shtml",
+    "details": {
+      "hp": "150HP",
+      "type": "/tcgpocket/image/fire.png",
+      "weakness": {
+        "image": "/tcgpocket/image/water.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "2"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Extradimensional Crisis101 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/101.jpg",
+    "name": "Aerodactyl ex",
+    "url": "/tcgpocket/extradimensionalcrisis/101.shtml",
+    "details": {
+      "hp": "140HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/shiny2.png",
+      "pokedex": "Extradimensional Crisis102 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/102.jpg",
+    "name": "Pidgeot ex",
+    "url": "/tcgpocket/extradimensionalcrisis/102.shtml",
+    "details": {
+      "hp": "170HP",
+      "type": "/tcgpocket/image/colorless.png",
+      "weakness": {
+        "image": "/tcgpocket/image/electric.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/shiny2.png"
+  },
+  {
+    "set": {
+      "setName": "Extradimensional Crisis",
+      "image": "/tcgpocket/image/crown.png",
+      "pokedex": "Extradimensional Crisis103 / 69"
+    },
+    "thumbnail": "/tcgpocket/th/extradimensionalcrisis/103.jpg",
+    "name": "Nihilego",
+    "url": "/tcgpocket/extradimensionalcrisis/103.shtml",
+    "details": {
+      "hp": "70HP",
+      "type": "/tcgpocket/image/darkness.png",
+      "weakness": {
+        "image": "/tcgpocket/image/fighting.png",
+        "value": "20"
+      },
+      "retreat": {
+        "image": "/tcgpocket/image/colorless.png",
+        "count": "1"
+      }
+    },
+    "expansion": "booster.png",
+    "rarity": "/tcgpocket/image/crown.png"
+  }
+]
