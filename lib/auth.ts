@@ -5,7 +5,6 @@ import prisma from "@/prisma/db";
 // Helper to resolve the base URL for OAuth redirect URIs
 const getBaseUrl = () => {
   if (process.env.NODE_ENV === "production") {
-    // Replace with your actual production URL
     return "https://pockettrading.vercel.app";
   }
   // Default to local development
