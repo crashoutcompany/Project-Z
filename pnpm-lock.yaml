@@ -69,8 +69,8 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@4.1.5)
       ws:
-        specifier: ^8.18.1
-        version: 8.18.2
+        specifier: ^8.19.0
+        version: 8.19.0
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3
@@ -3338,8 +3338,8 @@ packages:
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  ws@8.18.2:
-    resolution: {integrity: sha512-DMricUmwGZUVr++AEAe2uiVM7UoO9MAVZMDu05UQOaUII0lp+zOzLLU4Xqh/JvTqklB1T4uELaaPBKyjE1r4fQ==}
+  ws@8.19.0:
+    resolution: {integrity: sha512-blAT2mjOEIi0ZzruJfIhb3nps74PRWTCz1IjglWEEpQl5XS/UNama6u2/rjFkDDouqr4L67ry+1aGIALViWjDg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -6706,7 +6706,7 @@ snapshots:
 
   wrappy@1.0.2: {}
 
-  ws@8.18.2: {}
+  ws@8.19.0: {}
 
   yallist@3.1.1: {}
 
