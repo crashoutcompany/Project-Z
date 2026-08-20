@@ -45,6 +45,10 @@ next-env.d.ts
 # Prisma generated client
 prisma/generated/
 
+# Cloud Agent local dev proxy (generated TLS certs + isolated deps)
+.cursor/dev/certs/
+.cursor/dev/node_modules/
+
 #vscode
 .vscode
 
