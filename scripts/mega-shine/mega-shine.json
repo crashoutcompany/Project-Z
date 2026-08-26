@@ -1,0 +1,2810 @@
+[
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine1 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/1.jpg",
+        "name": "Scyther",
+        "url": "/tcgpocket/megashine/001.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine2 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/2.jpg",
+        "name": "Pineco",
+        "url": "/tcgpocket/megashine/002.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine3 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/3.jpg",
+        "name": "Volbeat",
+        "url": "/tcgpocket/megashine/003.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine4 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/4.jpg",
+        "name": "Illumise",
+        "url": "/tcgpocket/megashine/004.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine5 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/5.jpg",
+        "name": "Phantump",
+        "url": "/tcgpocket/megashine/005.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine6 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/6.jpg",
+        "name": "Trevenant",
+        "url": "/tcgpocket/megashine/006.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine7 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/7.jpg",
+        "name": "Charmander",
+        "url": "/tcgpocket/megashine/007.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine8 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/8.jpg",
+        "name": "Charmeleon",
+        "url": "/tcgpocket/megashine/008.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Mega Shine9 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/9.jpg",
+        "name": "Charizard ex",
+        "url": "/tcgpocket/megashine/009.shtml",
+        "details": {
+            "hp": "220HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine10 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/10.jpg",
+        "name": "Ponyta",
+        "url": "/tcgpocket/megashine/010.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine11 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/11.jpg",
+        "name": "Rapidash",
+        "url": "/tcgpocket/megashine/011.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine12 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/12.jpg",
+        "name": "Magmar",
+        "url": "/tcgpocket/megashine/012.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine13 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/13.jpg",
+        "name": "Magmortar",
+        "url": "/tcgpocket/megashine/013.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine14 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/14.jpg",
+        "name": "Tauros",
+        "url": "/tcgpocket/megashine/014.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine15 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/15.jpg",
+        "name": "Slowpoke",
+        "url": "/tcgpocket/megashine/015.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Mega Shine16 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/16.jpg",
+        "name": "Slowbro ex",
+        "url": "/tcgpocket/megashine/016.shtml",
+        "details": {
+            "hp": "200HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine17 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/17.jpg",
+        "name": "Lapras",
+        "url": "/tcgpocket/megashine/017.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine18 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/18.jpg",
+        "name": "Piplup",
+        "url": "/tcgpocket/megashine/018.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine19 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/19.jpg",
+        "name": "Prinplup",
+        "url": "/tcgpocket/megashine/019.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mega Shine20 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/20.jpg",
+        "name": "Empoleon",
+        "url": "/tcgpocket/megashine/020.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine21 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/21.jpg",
+        "name": "Phione",
+        "url": "/tcgpocket/megashine/021.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine22 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/22.jpg",
+        "name": "Pikachu",
+        "url": "/tcgpocket/megashine/022.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine23 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/23.jpg",
+        "name": "Raichu",
+        "url": "/tcgpocket/megashine/023.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine24 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/24.jpg",
+        "name": "Electabuzz",
+        "url": "/tcgpocket/megashine/024.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine25 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/25.jpg",
+        "name": "Electivire",
+        "url": "/tcgpocket/megashine/025.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine26 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/26.jpg",
+        "name": "Electrike",
+        "url": "/tcgpocket/megashine/026.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Mega Shine27 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/27.jpg",
+        "name": "Manectric ex",
+        "url": "/tcgpocket/megashine/027.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine28 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/28.jpg",
+        "name": "Drowzee",
+        "url": "/tcgpocket/megashine/028.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine29 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/29.jpg",
+        "name": "Hypno",
+        "url": "/tcgpocket/megashine/029.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mega Shine30 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/30.jpg",
+        "name": "Mew",
+        "url": "/tcgpocket/megashine/030.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine31 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/31.jpg",
+        "name": "Spoink",
+        "url": "/tcgpocket/megashine/031.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine32 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/32.jpg",
+        "name": "Grumpig",
+        "url": "/tcgpocket/megashine/032.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine33 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/33.jpg",
+        "name": "Diglett",
+        "url": "/tcgpocket/megashine/033.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine34 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/34.jpg",
+        "name": "Dugtrio",
+        "url": "/tcgpocket/megashine/034.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mega Shine35 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/35.jpg",
+        "name": "Groudon",
+        "url": "/tcgpocket/megashine/035.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine36 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/36.jpg",
+        "name": "Hawlucha",
+        "url": "/tcgpocket/megashine/036.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine37 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/37.jpg",
+        "name": "Gastly",
+        "url": "/tcgpocket/megashine/037.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine38 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/38.jpg",
+        "name": "Haunter",
+        "url": "/tcgpocket/megashine/038.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Mega Shine39 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/39.jpg",
+        "name": "Gengar ex",
+        "url": "/tcgpocket/megashine/039.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mega Shine40 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/40.jpg",
+        "name": "Darkrai",
+        "url": "/tcgpocket/megashine/040.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine41 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/41.jpg",
+        "name": "Trubbish",
+        "url": "/tcgpocket/megashine/041.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine42 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/42.jpg",
+        "name": "Garbodor",
+        "url": "/tcgpocket/megashine/042.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine43 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/43.jpg",
+        "name": "Zorua",
+        "url": "/tcgpocket/megashine/043.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mega Shine44 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/44.jpg",
+        "name": "Zoroark",
+        "url": "/tcgpocket/megashine/044.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine45 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/45.jpg",
+        "name": "Morpeko",
+        "url": "/tcgpocket/megashine/045.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine46 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/46.jpg",
+        "name": "Forretress",
+        "url": "/tcgpocket/megashine/046.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Mega Shine47 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/47.jpg",
+        "name": "Scizor ex",
+        "url": "/tcgpocket/megashine/047.shtml",
+        "details": {
+            "hp": "200HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine48 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/48.jpg",
+        "name": "Kartana",
+        "url": "/tcgpocket/megashine/048.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine49 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/49.jpg",
+        "name": "Varoom",
+        "url": "/tcgpocket/megashine/049.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mega Shine50 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/50.jpg",
+        "name": "Revavroom",
+        "url": "/tcgpocket/megashine/050.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine51 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/51.jpg",
+        "name": "Dratini",
+        "url": "/tcgpocket/megashine/051.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine52 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/52.jpg",
+        "name": "Dragonair",
+        "url": "/tcgpocket/megashine/052.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mega Shine53 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/53.jpg",
+        "name": "Dragonite",
+        "url": "/tcgpocket/megashine/053.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine54 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/54.jpg",
+        "name": "Axew",
+        "url": "/tcgpocket/megashine/054.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine55 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/55.jpg",
+        "name": "Fraxure",
+        "url": "/tcgpocket/megashine/055.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Mega Shine56 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/56.jpg",
+        "name": "Haxorus",
+        "url": "/tcgpocket/megashine/056.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine57 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/57.jpg",
+        "name": "Druddigon",
+        "url": "/tcgpocket/megashine/057.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine58 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/58.jpg",
+        "name": "Jigglypuff",
+        "url": "/tcgpocket/megashine/058.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine59 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/59.jpg",
+        "name": "Wigglytuff",
+        "url": "/tcgpocket/megashine/059.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine60 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/60.jpg",
+        "name": "Miltank",
+        "url": "/tcgpocket/megashine/060.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine61 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/61.jpg",
+        "name": "Chatot",
+        "url": "/tcgpocket/megashine/061.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine62 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/62.jpg",
+        "name": "Minccino",
+        "url": "/tcgpocket/megashine/062.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Mega Shine63 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/63.jpg",
+        "name": "Cinccino",
+        "url": "/tcgpocket/megashine/063.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine64 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/64.jpg",
+        "name": "Furfrou",
+        "url": "/tcgpocket/megashine/064.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine65 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/65.jpg",
+        "name": "Nasty Notice",
+        "url": "/tcgpocket/megashine/065.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine66 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/66.jpg",
+        "name": "Maintenance",
+        "url": "/tcgpocket/megashine/066.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine67 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/67.jpg",
+        "name": "Iris",
+        "url": "/tcgpocket/megashine/067.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine68 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/68.jpg",
+        "name": "Calem",
+        "url": "/tcgpocket/megashine/068.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Mega Shine69 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/69.jpg",
+        "name": "Hiking Trail",
+        "url": "/tcgpocket/megashine/069.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mega Shine70 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/70.jpg",
+        "name": "Lapras",
+        "url": "/tcgpocket/megashine/070.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mega Shine71 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/71.jpg",
+        "name": "Empoleon",
+        "url": "/tcgpocket/megashine/071.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mega Shine72 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/72.jpg",
+        "name": "Groudon",
+        "url": "/tcgpocket/megashine/072.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mega Shine73 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/73.jpg",
+        "name": "Morpeko",
+        "url": "/tcgpocket/megashine/073.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mega Shine74 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/74.jpg",
+        "name": "Revavroom",
+        "url": "/tcgpocket/megashine/074.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Mega Shine75 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/75.jpg",
+        "name": "Miltank",
+        "url": "/tcgpocket/megashine/075.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mega Shine76 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/76.jpg",
+        "name": "Charizard ex",
+        "url": "/tcgpocket/megashine/076.shtml",
+        "details": {
+            "hp": "220HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mega Shine77 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/77.jpg",
+        "name": "Slowbro ex",
+        "url": "/tcgpocket/megashine/077.shtml",
+        "details": {
+            "hp": "200HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mega Shine78 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/78.jpg",
+        "name": "Manectric ex",
+        "url": "/tcgpocket/megashine/078.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mega Shine79 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/79.jpg",
+        "name": "Gengar ex",
+        "url": "/tcgpocket/megashine/079.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mega Shine80 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/80.jpg",
+        "name": "Scizor ex",
+        "url": "/tcgpocket/megashine/080.shtml",
+        "details": {
+            "hp": "200HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mega Shine81 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/81.jpg",
+        "name": "Iris",
+        "url": "/tcgpocket/megashine/081.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mega Shine82 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/82.jpg",
+        "name": "Calem",
+        "url": "/tcgpocket/megashine/082.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mega Shine83 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/83.jpg",
+        "name": "Slowbro ex",
+        "url": "/tcgpocket/megashine/083.shtml",
+        "details": {
+            "hp": "200HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Mega Shine84 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/84.jpg",
+        "name": "Manectric ex",
+        "url": "/tcgpocket/megashine/084.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Mega Shine85 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/85.jpg",
+        "name": "Mew",
+        "url": "/tcgpocket/megashine/085.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Mega Shine86 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/86.jpg",
+        "name": "Mew",
+        "url": "/tcgpocket/megashine/086.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine87 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/87.jpg",
+        "name": "Scyther",
+        "url": "/tcgpocket/megashine/087.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine88 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/88.jpg",
+        "name": "Pineco",
+        "url": "/tcgpocket/megashine/088.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine89 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/89.jpg",
+        "name": "Phantump",
+        "url": "/tcgpocket/megashine/089.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine90 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/90.jpg",
+        "name": "Trevenant",
+        "url": "/tcgpocket/megashine/090.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine91 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/91.jpg",
+        "name": "Charmander",
+        "url": "/tcgpocket/megashine/091.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine92 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/92.jpg",
+        "name": "Charmeleon",
+        "url": "/tcgpocket/megashine/092.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine93 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/93.jpg",
+        "name": "Ponyta",
+        "url": "/tcgpocket/megashine/093.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine94 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/94.jpg",
+        "name": "Rapidash",
+        "url": "/tcgpocket/megashine/094.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine95 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/95.jpg",
+        "name": "Slowpoke",
+        "url": "/tcgpocket/megashine/095.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine96 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/96.jpg",
+        "name": "Pikachu",
+        "url": "/tcgpocket/megashine/096.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine97 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/97.jpg",
+        "name": "Raichu",
+        "url": "/tcgpocket/megashine/097.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine98 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/98.jpg",
+        "name": "Electrike",
+        "url": "/tcgpocket/megashine/098.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine99 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/99.jpg",
+        "name": "Hawlucha",
+        "url": "/tcgpocket/megashine/099.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine100 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/100.jpg",
+        "name": "Gastly",
+        "url": "/tcgpocket/megashine/100.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine101 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/101.jpg",
+        "name": "Haunter",
+        "url": "/tcgpocket/megashine/101.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine102 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/102.jpg",
+        "name": "Zorua",
+        "url": "/tcgpocket/megashine/102.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine103 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/103.jpg",
+        "name": "Zoroark",
+        "url": "/tcgpocket/megashine/103.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine104 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/104.jpg",
+        "name": "Forretress",
+        "url": "/tcgpocket/megashine/104.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine105 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/105.jpg",
+        "name": "Dratini",
+        "url": "/tcgpocket/megashine/105.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine106 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/106.jpg",
+        "name": "Dragonair",
+        "url": "/tcgpocket/megashine/106.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine107 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/107.jpg",
+        "name": "Dragonite",
+        "url": "/tcgpocket/megashine/107.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine108 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/108.jpg",
+        "name": "Axew",
+        "url": "/tcgpocket/megashine/108.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine109 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/109.jpg",
+        "name": "Fraxure",
+        "url": "/tcgpocket/megashine/109.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Mega Shine110 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/110.jpg",
+        "name": "Haxorus",
+        "url": "/tcgpocket/megashine/110.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Mega Shine111 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/111.jpg",
+        "name": "Charizard ex",
+        "url": "/tcgpocket/megashine/111.shtml",
+        "details": {
+            "hp": "220HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Mega Shine112 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/112.jpg",
+        "name": "Slowbro ex",
+        "url": "/tcgpocket/megashine/112.shtml",
+        "details": {
+            "hp": "200HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Mega Shine113 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/113.jpg",
+        "name": "Manectric ex",
+        "url": "/tcgpocket/megashine/113.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Mega Shine114 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/114.jpg",
+        "name": "Gengar ex",
+        "url": "/tcgpocket/megashine/114.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Mega Shine115 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/115.jpg",
+        "name": "Scizor ex",
+        "url": "/tcgpocket/megashine/115.shtml",
+        "details": {
+            "hp": "200HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Mega Shine116 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/116.jpg",
+        "name": "Arboliva",
+        "url": "/tcgpocket/megashine/116.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    },
+    {
+        "set": {
+            "setName": "Mega Shine",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Mega Shine117 / 69"
+        },
+        "thumbnail": "/tcgpocket/th/megashine/117.jpg",
+        "name": "Metal Core Barrier",
+        "url": "/tcgpocket/megashine/117.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    }
+]

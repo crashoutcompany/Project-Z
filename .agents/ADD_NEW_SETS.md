@@ -167,6 +167,15 @@ pnpm prisma db seed
 | Mega Rising | `/tcgpocket/megarising/` |
 | Crimson Blaze | `/tcgpocket/crimsonblaze/` |
 | Fantastical Parade | `/tcgpocket/fantasticalparade/` |
+| Paldean Wonders | `/tcgpocket/paldeanwonders/` |
+| Mega Shine | `/tcgpocket/megashine/` |
+| Pulsing Aura | `/tcgpocket/pulsingaura/` |
+| Paradox Drive | `/tcgpocket/paradoxdrive/` |
+| Everyday Wonders | `/tcgpocket/everydaywonders/` |
+| Ruler of the Skies | `/tcgpocket/ruleroftheskies/` |
+| Team Rocket's Ambition | `/tcgpocket/teamrocket'sambition/` |
+| Promo-A | `/tcgpocket/promo-a/` |
+| Promo-B | `/tcgpocket/promo-b/` |
 
 ## JSON Output Structure
 
@@ -210,9 +219,9 @@ Each card in the JSON array has the following structure:
 - Trainer cards may have different structure (no HP, weakness, retreat)
 - Check if the source HTML has the expected nested table structure
 
-## Current Sets (as of February 2026)
+## Current Sets (as of August 2026)
 
-**In `/scripts/` folder (14 main sets):**
+**In `/scripts/` folder (23 sets):**
 | Set Name | Folder | Cards |
 |----------|--------|-------|
 | Genetic Apex | genetic-apex | 286 |
@@ -229,7 +238,14 @@ Each card in the JSON array has the following structure:
 | Mega Rising | mega-rising | 331 |
 | Crimson Blaze | crimson-blaze | 103 |
 | Fantastical Parade | fantastical-parade | 234 |
+| Paldean Wonders | paldean-wonders | 131 |
+| Mega Shine | mega-shine | 117 |
+| Pulsing Aura | pulsing-aura | 234 |
+| Paradox Drive | paradox-drive | 109 |
+| Everyday Wonders | everyday-wonders | 106 |
+| Ruler of the Skies | ruler-of-the-skies | 233 |
+| Team Rocket's Ambition | team-rockets-ambition | 0 (not yet released) |
+| Promo-A | promo-a | 109 |
+| Promo-B | promo-b | 86 |
 
-**Promo sets (optional):**
-- promo-a
-- promo-b
+**Note:** Serebii loads card tables via JavaScript. Use `scripts/scrape_sets.py` (Playwright) to scrape new sets rather than raw HTTP requests.

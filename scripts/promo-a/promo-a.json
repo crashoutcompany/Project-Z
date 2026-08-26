@@ -1,0 +1,2618 @@
+[
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A9 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/9.jpg",
+        "name": "Pikachu",
+        "url": "/tcgpocket/promo-a/009.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A10 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/10.jpg",
+        "name": "Mewtwo",
+        "url": "/tcgpocket/promo-a/010.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A11 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/11.jpg",
+        "name": "Chansey",
+        "url": "/tcgpocket/promo-a/011.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A12 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/12.jpg",
+        "name": "Meowth",
+        "url": "/tcgpocket/promo-a/012.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A13 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/13.jpg",
+        "name": "Butterfree",
+        "url": "/tcgpocket/promo-a/013.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A14 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/14.jpg",
+        "name": "Lapras ex",
+        "url": "/tcgpocket/promo-a/014.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A15 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/15.jpg",
+        "name": "Pikachu",
+        "url": "/tcgpocket/promo-a/015.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A16 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/16.jpg",
+        "name": "Clefairy",
+        "url": "/tcgpocket/promo-a/016.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A17 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/17.jpg",
+        "name": "Mankey",
+        "url": "/tcgpocket/promo-a/017.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A18 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/18.jpg",
+        "name": "Venusaur",
+        "url": "/tcgpocket/promo-a/018.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A19 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/19.jpg",
+        "name": "Greninja",
+        "url": "/tcgpocket/promo-a/019.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A20 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/20.jpg",
+        "name": "Haunter",
+        "url": "/tcgpocket/promo-a/020.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A21 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/21.jpg",
+        "name": "Onix",
+        "url": "/tcgpocket/promo-a/021.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A22 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/22.jpg",
+        "name": "Jigglypuff",
+        "url": "/tcgpocket/promo-a/022.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A23 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/23.jpg",
+        "name": "Bulbasaur",
+        "url": "/tcgpocket/promo-a/023.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A24 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/24.jpg",
+        "name": "Magnemite",
+        "url": "/tcgpocket/promo-a/024.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A25 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/25.jpg",
+        "name": "Moltres ex",
+        "url": "/tcgpocket/promo-a/025.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A26 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/26.jpg",
+        "name": "Pikachu",
+        "url": "/tcgpocket/promo-a/026.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A27 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/27.jpg",
+        "name": "Snivy",
+        "url": "/tcgpocket/promo-a/027.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A28 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/28.jpg",
+        "name": "Volcarona",
+        "url": "/tcgpocket/promo-a/028.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A29 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/29.jpg",
+        "name": "Blastoise",
+        "url": "/tcgpocket/promo-a/029.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A30 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/30.jpg",
+        "name": "Eevee",
+        "url": "/tcgpocket/promo-a/030.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A31 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/31.jpg",
+        "name": "Cinccino",
+        "url": "/tcgpocket/promo-a/031.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A32 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/32.jpg",
+        "name": "Charmander",
+        "url": "/tcgpocket/promo-a/032.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A33 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/33.jpg",
+        "name": "Squirtle",
+        "url": "/tcgpocket/promo-a/033.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A34 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/34.jpg",
+        "name": "Piplup",
+        "url": "/tcgpocket/promo-a/034.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A35 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/35.jpg",
+        "name": "Turtwig",
+        "url": "/tcgpocket/promo-a/035.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A36 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/36.jpg",
+        "name": "Electivire",
+        "url": "/tcgpocket/promo-a/036.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A37 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/37.jpg",
+        "name": "Cresselia",
+        "url": "/tcgpocket/promo-a/037.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A38 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/38.jpg",
+        "name": "Misdreavus",
+        "url": "/tcgpocket/promo-a/038.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A39 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/39.jpg",
+        "name": "Skarmory",
+        "url": "/tcgpocket/promo-a/039.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A40 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/40.jpg",
+        "name": "Chimchar",
+        "url": "/tcgpocket/promo-a/040.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A41 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/41.jpg",
+        "name": "Togepi",
+        "url": "/tcgpocket/promo-a/041.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A42 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/42.jpg",
+        "name": "Darkrai ex",
+        "url": "/tcgpocket/promo-a/042.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A43 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/43.jpg",
+        "name": "Cherrim",
+        "url": "/tcgpocket/promo-a/043.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A44 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/44.jpg",
+        "name": "Raichu",
+        "url": "/tcgpocket/promo-a/044.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A45 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/45.jpg",
+        "name": "Nosepass",
+        "url": "/tcgpocket/promo-a/045.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A46 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/46.jpg",
+        "name": "Gible",
+        "url": "/tcgpocket/promo-a/046.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A47 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/47.jpg",
+        "name": "Staraptor",
+        "url": "/tcgpocket/promo-a/047.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A48 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/48.jpg",
+        "name": "Manaphy",
+        "url": "/tcgpocket/promo-a/048.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A49 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/49.jpg",
+        "name": "Snorlax",
+        "url": "/tcgpocket/promo-a/049.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A50 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/50.jpg",
+        "name": "Mewtwo ex",
+        "url": "/tcgpocket/promo-a/050.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A51 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/51.jpg",
+        "name": "Cyclizar",
+        "url": "/tcgpocket/promo-a/051.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A52 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/52.jpg",
+        "name": "Sprigatito",
+        "url": "/tcgpocket/promo-a/052.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A53 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/53.jpg",
+        "name": "Floatzel",
+        "url": "/tcgpocket/promo-a/053.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A54 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/54.jpg",
+        "name": "Pawmot",
+        "url": "/tcgpocket/promo-a/054.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A55 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/55.jpg",
+        "name": "Machamp",
+        "url": "/tcgpocket/promo-a/055.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A56 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/56.jpg",
+        "name": "Ekans",
+        "url": "/tcgpocket/promo-a/056.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A57 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/57.jpg",
+        "name": "Bidoof",
+        "url": "/tcgpocket/promo-a/057.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A58 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/58.jpg",
+        "name": "Pachirisu",
+        "url": "/tcgpocket/promo-a/058.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A59 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/59.jpg",
+        "name": "Riolu",
+        "url": "/tcgpocket/promo-a/059.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A60 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/60.jpg",
+        "name": "Exeggcute",
+        "url": "/tcgpocket/promo-a/060.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A61 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/61.jpg",
+        "name": "Froakie",
+        "url": "/tcgpocket/promo-a/061.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A62 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/62.jpg",
+        "name": "Farfetch'd",
+        "url": "/tcgpocket/promo-a/062.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A63 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/63.jpg",
+        "name": "Rayquaza",
+        "url": "/tcgpocket/promo-a/063.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A64 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/64.jpg",
+        "name": "Rayquaza ex",
+        "url": "/tcgpocket/promo-a/064.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A65 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/65.jpg",
+        "name": "Rayquaza ex",
+        "url": "/tcgpocket/promo-a/065.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A66 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/66.jpg",
+        "name": "Mimikyu",
+        "url": "/tcgpocket/promo-a/066.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A67 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/67.jpg",
+        "name": "Cosmog",
+        "url": "/tcgpocket/promo-a/067.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A68 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/68.jpg",
+        "name": "Lycanroc",
+        "url": "/tcgpocket/promo-a/068.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A69 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/69.jpg",
+        "name": "Exeggutor",
+        "url": "/tcgpocket/promo-a/069.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A70 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/70.jpg",
+        "name": "Ninetales",
+        "url": "/tcgpocket/promo-a/070.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A71 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/71.jpg",
+        "name": "Crabrawler",
+        "url": "/tcgpocket/promo-a/071.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A72 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/72.jpg",
+        "name": "Grimer",
+        "url": "/tcgpocket/promo-a/072.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A73 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/73.jpg",
+        "name": "Toucannon",
+        "url": "/tcgpocket/promo-a/073.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A74 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/74.jpg",
+        "name": "Zeraora",
+        "url": "/tcgpocket/promo-a/074.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A75 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/75.jpg",
+        "name": "Kartana",
+        "url": "/tcgpocket/promo-a/075.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A76 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/76.jpg",
+        "name": "Blacephalon",
+        "url": "/tcgpocket/promo-a/076.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A77 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/77.jpg",
+        "name": "Xurkitree",
+        "url": "/tcgpocket/promo-a/077.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A78 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/78.jpg",
+        "name": "Necrozma",
+        "url": "/tcgpocket/promo-a/078.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A79 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/79.jpg",
+        "name": "Necrozma",
+        "url": "/tcgpocket/promo-a/079.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A80 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/80.jpg",
+        "name": "Stakataka",
+        "url": "/tcgpocket/promo-a/080.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A81 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/81.jpg",
+        "name": "Necrozma ex",
+        "url": "/tcgpocket/promo-a/081.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A82 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/82.jpg",
+        "name": "Poipole",
+        "url": "/tcgpocket/promo-a/082.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A83 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/83.jpg",
+        "name": "Stufful",
+        "url": "/tcgpocket/promo-a/083.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A84 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/84.jpg",
+        "name": "Tapu Koko ex",
+        "url": "/tcgpocket/promo-a/084.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A85 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/85.jpg",
+        "name": "Vanillite",
+        "url": "/tcgpocket/promo-a/085.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A86 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/86.jpg",
+        "name": "Jolteon",
+        "url": "/tcgpocket/promo-a/086.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A87 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/87.jpg",
+        "name": "Alcremie",
+        "url": "/tcgpocket/promo-a/087.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A88 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/88.jpg",
+        "name": "Dragonair",
+        "url": "/tcgpocket/promo-a/088.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A89 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/89.jpg",
+        "name": "Audino",
+        "url": "/tcgpocket/promo-a/089.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A90 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/90.jpg",
+        "name": "Togedemaru",
+        "url": "/tcgpocket/promo-a/090.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A91 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/91.jpg",
+        "name": "Greedent",
+        "url": "/tcgpocket/promo-a/091.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A92 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/92.jpg",
+        "name": "Eevee",
+        "url": "/tcgpocket/promo-a/092.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A93 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/93.jpg",
+        "name": "Cleffa",
+        "url": "/tcgpocket/promo-a/093.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A94 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/94.jpg",
+        "name": "Horsea",
+        "url": "/tcgpocket/promo-a/094.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A95 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/95.jpg",
+        "name": "Chinchou",
+        "url": "/tcgpocket/promo-a/095.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A96 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/96.jpg",
+        "name": "Houndoom",
+        "url": "/tcgpocket/promo-a/096.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A97 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/97.jpg",
+        "name": "Kangaskhan",
+        "url": "/tcgpocket/promo-a/097.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A98 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/98.jpg",
+        "name": "Blissey ex",
+        "url": "/tcgpocket/promo-a/098.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A99 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/99.jpg",
+        "name": "Marill",
+        "url": "/tcgpocket/promo-a/099.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A100 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/100.jpg",
+        "name": "Weavile",
+        "url": "/tcgpocket/promo-a/100.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A101 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/101.jpg",
+        "name": "Latias",
+        "url": "/tcgpocket/promo-a/101.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A102 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/102.jpg",
+        "name": "Tropius",
+        "url": "/tcgpocket/promo-a/102.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A103 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/103.jpg",
+        "name": "Poliwag",
+        "url": "/tcgpocket/promo-a/103.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A104 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/104.jpg",
+        "name": "Milotic",
+        "url": "/tcgpocket/promo-a/104.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A105 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/105.jpg",
+        "name": "Zorua",
+        "url": "/tcgpocket/promo-a/105.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A106 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/106.jpg",
+        "name": "Zoroark",
+        "url": "/tcgpocket/promo-a/106.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A107 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/107.jpg",
+        "name": "Miltank",
+        "url": "/tcgpocket/promo-a/107.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A108 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/108.jpg",
+        "name": "Phanpy",
+        "url": "/tcgpocket/promo-a/108.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A109 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/109.jpg",
+        "name": "Eevee ex",
+        "url": "/tcgpocket/promo-a/109.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A110 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/110.jpg",
+        "name": "Entei ex",
+        "url": "/tcgpocket/promo-a/110.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A111 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/111.jpg",
+        "name": "Pikachu",
+        "url": "/tcgpocket/promo-a/111.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A112 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/112.jpg",
+        "name": "Raichu ex",
+        "url": "/tcgpocket/promo-a/112.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A113 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/113.jpg",
+        "name": "Mimikyu",
+        "url": "/tcgpocket/promo-a/113.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A114 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/114.jpg",
+        "name": "Machamp",
+        "url": "/tcgpocket/promo-a/114.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A115 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/115.jpg",
+        "name": "Regigigas",
+        "url": "/tcgpocket/promo-a/115.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A116 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/116.jpg",
+        "name": "Shaymin",
+        "url": "/tcgpocket/promo-a/116.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    },
+    {
+        "set": {
+            "setName": "Promo-A",
+            "image": "/tcgpocket/image/promo.png",
+            "pokedex": "Promo-A117 / P-A"
+        },
+        "thumbnail": "/tcgpocket/th/promo-a/117.jpg",
+        "name": "Absol",
+        "url": "/tcgpocket/promo-a/117.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "/tcgpocket/image/colorless.png",
+        "rarity": "/tcgpocket/image/promo.png"
+    }
+]
