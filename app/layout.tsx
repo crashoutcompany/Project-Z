@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { appendFileSync } from "node:fs";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 import { ReactScan } from "@/components/ReactScan";
@@ -42,6 +43,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // #region agent log
+  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "C", location: "app/layout.tsx:RootLayout:entry", message: "Root layout component types", data: { themeProviderType: typeof ThemeProvider, reactScanType: typeof ReactScan, toasterType: typeof Toaster, navbarType: typeof Navbar }, timestamp: Date.now() })}\n`);
+  // #endregion
+  // #region agent log
+  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "B,C", location: "app/layout.tsx:RootLayout:before-return", message: "Root layout returning signin child tree", data: { hasChildren: children != null, childrenType: typeof children }, timestamp: Date.now() })}\n`);
+  // #endregion
   return (
     <html lang="en" suppressHydrationWarning>
       <ReactScan />
