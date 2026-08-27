@@ -1,5 +1,4 @@
 import { auth } from "@/lib/auth";
-import { appendFileSync } from "node:fs";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Link from "next/link";
@@ -20,22 +19,9 @@ export const instant = false;
  * Displays options for users to sign in using GitHub or Google. If the user is already authenticated, they are redirected to the root path.
  */
 export default async function Page() {
-  // #region agent log
-  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "A,B", location: "app/(routes)/signin/page.tsx:Page:entry", message: "Signin page entered", data: { getSessionType: typeof auth.api.getSession, signInButtonsType: typeof SignInButtons }, timestamp: Date.now() })}\n`);
-  // #endregion
-  // #region agent log
-  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "A", location: "app/(routes)/signin/page.tsx:Page:before-headers", message: "About to access request headers outside a page-local Suspense boundary", data: {}, timestamp: Date.now() })}\n`);
-  // #endregion
-  const requestHeaders = await headers();
-  // #region agent log
-  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "A", location: "app/(routes)/signin/page.tsx:Page:after-headers", message: "Request headers resolved", data: { constructorName: requestHeaders.constructor?.name }, timestamp: Date.now() })}\n`);
-  // #endregion
   const session = await auth.api.getSession({
-    headers: requestHeaders,
+    headers: await headers(),
   });
-  // #region agent log
-  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "A,D", location: "app/(routes)/signin/page.tsx:Page:after-session", message: "Session lookup completed", data: { hasSession: Boolean(session), redirectBranch: Boolean(session) }, timestamp: Date.now() })}\n`);
-  // #endregion
 
   if (session) redirect("/");
 
