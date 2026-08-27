@@ -9,7 +9,7 @@ Card set data is scraped from [Serebii.net TCG Pocket Sets](https://www.serebii.
 ## Prerequisites
 
 - Python 3.x installed
-- `beautifulsoup4` package installed (`pip install beautifulsoup4`)
+- Scraper dependencies: `pip install -r scripts/requirements.txt && python3 -m playwright install chromium`
 
 ## Process
 
@@ -19,79 +19,24 @@ Card set data is scraped from [Serebii.net TCG Pocket Sets](https://www.serebii.
 2. Compare the sets listed on Serebii with the folders in `/scripts/`
 3. Identify any sets that are missing from the `/scripts/` folder
 
-### Step 2: Create Set Folder
+### Step 2: Add the Set to the Scraper
 
-Create a new folder in `/scripts/` using the set name in kebab-case (lowercase with hyphens):
+Use kebab-case folder names (lowercase, spaces to hyphens). Examples: `genetic-apex`, `space-time-smackdown`, `team-rockets-ambition`.
 
-```bash
-mkdir scripts/{set-name}
-```
+Add a `(folder, display name, serebii-path)` entry to `SETS` in `scripts/scrape_sets.py`. The scraper creates the folder if needed.
 
-**Naming Convention:**
-- Use lowercase letters only
-- Replace spaces with hyphens
-- Examples:
-  - "Genetic Apex" → `genetic-apex`
-  - "Space-time Smackdown" → `space-time-smackdown`
-  - "Wisdom of Sea and Sky" → `wisdom-of-sea-and-sky`
-  - "Deluxe Pack ex" → `deluxe-pack-ex`
-
-### Step 3: Fetch the Set Table HTML
-
-**For AI Agents (Recommended):**
-
-Use the `cursor-browser-extension` MCP to extract raw HTML:
-
-1. Navigate to the set page using `browser_navigate`:
-   ```
-   browser_navigate({ url: "https://www.serebii.net/tcgpocket/{serebii-path}/" })
-   ```
-
-2. Extract the table HTML using `browser_evaluate`:
-   ```
-   browser_evaluate({ function: "() => { const table = document.querySelector('table.dextable'); return table ? table.outerHTML : 'No table found'; }" })
-   ```
-
-3. The output is a JavaScript string - you'll need to unescape it:
-   - Remove the leading and trailing quotes
-   - Replace `\"` with `"`
-   - Replace `\n` with newlines
-   - Replace `\t` with tabs
-
-4. Save the unescaped HTML to `scripts/{set-name}/{set-name}.html`
-
-**For Manual Process:**
-
-1. Go to the specific set page on Serebii (e.g., `https://www.serebii.net/tcgpocket/geneticapex/`)
-2. Open browser Developer Tools (F12 or right-click → Inspect)
-3. Find the `<table class="dextable">` element containing the card data
-4. Copy the entire table HTML including the opening and closing `<table>` tags
-5. Save it to `scripts/{set-name}/{set-name}.html`
-
-**Note:** The `WebFetch` tool returns Markdown, not raw HTML, so it cannot be used for this task.
-
-**If extracting from a full page:** Save the full page to `scripts/{set-name}/{set-name}.html` first, then run the extraction (see Troubleshooting → "Only a few rows in extracted table") so the parser receives **only** the card list table.
-
-### Step 4: Run the Parser Script
-
-Update `scripts/main.py` to point to your new set:
-
-```python
-# Get input file paths
-file_to_read, file_to_write = get_Input(
-    "{set-name}/{set-name}.html",
-    "{set-name}/{set-name}.json"
-)
-```
-
-Then run the script:
+### Step 3: Scrape HTML + JSON with Playwright
 
 ```bash
 cd scripts
-python main.py
+python3 scrape_sets.py {set-name}
 ```
 
-This will generate the `{set-name}.json` file in the same folder.
+This fetches the live Serebii card list table and writes `{set-name}.html` and `{set-name}.json`. Do not fetch Serebii HTML with curl or BeautifulSoup; Playwright is required. `WebFetch` returns Markdown, not the card table.
+
+### Step 4: Confirm Parser Output
+
+`scrape_sets.py` already runs `parse_table` from `scripts/main.py`. To re-parse saved HTML without refetching, point `get_Input()` in `main.py` at the set files and run `python3 main.py`.
 
 ### Step 5: Verify the JSON Output
 
@@ -213,14 +158,9 @@ Each card in the JSON array has the following structure:
 ## Troubleshooting
 
 ### Only a few rows in extracted table (e.g. 4 rows instead of 90+)
-Serebii’s card list table has **nested tables** (each card’s “Card Details” cell contains an inner `<table>`). If you use a parser like BeautifulSoup with `find('table', class_='dextable')`, it may stop at the first inner `</table>`, so you get only the header and a couple of card rows.
+Serebii’s card list table has **nested tables** (each card’s “Card Details” cell contains an inner `<table>`). `scripts/scrape_sets.py` uses Playwright to serialize the live DOM `outerHTML` of the table whose header contains “Set Number” and “Card Name”, which preserves nested tables.
 
-**Fix:** Extract the card list table by **bracket counting** instead of DOM parsing:
-
-1. Fetch the full set page and save it (e.g. `scripts/{set-name}/{set-name}-full.html`).
-2. Find the start of the card list table: `<table class="dextable">`.
-3. Scan forward from there. For every `<table>` increment a depth counter; for every `</table>` decrement it. When depth returns to 0, that’s the end of the card list table.
-4. Save only that substring to `scripts/{set-name}/{set-name}.html` (this is the file the parser should read).
+If you are debugging a saved full page instead: extract the card list table by **bracket counting** rather than BeautifulSoup `find('table', class_='dextable')`, which may stop at the first inner `</table>`.
 
 The parser expects a single table; it skips rows with fewer than 5 `<td>`s, so inner detail rows are ignored.
 
@@ -239,7 +179,7 @@ If you see `UnicodeDecodeError` (e.g. `byte 0xe9`) when opening the saved HTML, 
 
 ## Current Sets (as of August 2026)
 
-**In `/scripts/` folder (23 sets):**
+**In `/scripts/` folder (21 main sets + 2 promo sets):**
 | Set Name | Folder | Cards |
 |----------|--------|-------|
 | Genetic Apex | genetic-apex | 286 |
@@ -262,7 +202,7 @@ If you see `UnicodeDecodeError` (e.g. `byte 0xe9`) when opening the saved HTML, 
 | Paradox Drive | paradox-drive | 109 |
 | Everyday Wonders | everyday-wonders | 106 |
 | Ruler of the Skies | ruler-of-the-skies | 233 |
-| Team Rocket's Ambition | team-rockets-ambition | 0 (not yet released) |
+| Team Rocket's Ambition | team-rockets-ambition | 110 |
 | Promo-A | promo-a | 109 |
 | Promo-B | promo-b | 86 |
 

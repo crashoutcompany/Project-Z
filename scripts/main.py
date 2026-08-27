@@ -155,24 +155,24 @@ if __name__ == "__main__":
         "shining-revelry/shining-revelry.json"
     )
     try:
-        with open(file_to_read, 'r') as file:
+        with open(file_to_read, 'r', encoding="utf-8", errors="replace") as file:
             html = file.read()
     except FileNotFoundError:
         create_file = input(f"File {file_to_read} not found. Would you like to create it? (y/n): ").lower()
         if create_file == 'y':
-            with open(file_to_read, 'w') as file:
+            with open(file_to_read, 'w', encoding="utf-8") as file:
                 file.write('')
-            with open(file_to_read, 'r') as file:
+            with open(file_to_read, 'r', encoding="utf-8", errors="replace") as file:
                 html = file.read()
         else:
             print("Exiting program.")
-            exit()
+            raise SystemExit(0)
 
     parsed_json = parse_table(html)
 
     os.makedirs(os.path.dirname(os.path.abspath(file_to_write)), exist_ok=True)
 
-    with open(file_to_write, 'w') as json_file:
+    with open(file_to_write, 'w', encoding="utf-8") as json_file:
         json_file.write(parsed_json)
 
     print(f"Reading from: {file_to_read}")
