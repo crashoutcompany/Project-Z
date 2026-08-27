@@ -1,0 +1,2618 @@
+[
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive1 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/1.jpg",
+        "name": "Surskit",
+        "url": "/tcgpocket/paradoxdrive/001.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive2 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/2.jpg",
+        "name": "Masquerain",
+        "url": "/tcgpocket/paradoxdrive/002.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive3 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/3.jpg",
+        "name": "Brute Bonnet",
+        "url": "/tcgpocket/paradoxdrive/003.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive4 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/4.jpg",
+        "name": "Slither Wing",
+        "url": "/tcgpocket/paradoxdrive/004.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive5 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/5.jpg",
+        "name": "Iron Moth",
+        "url": "/tcgpocket/paradoxdrive/005.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive6 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/6.jpg",
+        "name": "Psyduck",
+        "url": "/tcgpocket/paradoxdrive/006.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive7 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/7.jpg",
+        "name": "Golduck",
+        "url": "/tcgpocket/paradoxdrive/007.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive8 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/8.jpg",
+        "name": "Vaporeon",
+        "url": "/tcgpocket/paradoxdrive/008.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive9 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/9.jpg",
+        "name": "Buizel",
+        "url": "/tcgpocket/paradoxdrive/009.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive10 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/10.jpg",
+        "name": "Floatzel",
+        "url": "/tcgpocket/paradoxdrive/010.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive11 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/11.jpg",
+        "name": "Snom",
+        "url": "/tcgpocket/paradoxdrive/011.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive12 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/12.jpg",
+        "name": "Frosmoth",
+        "url": "/tcgpocket/paradoxdrive/012.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Paradox Drive13 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/13.jpg",
+        "name": "Iron Bundle ex",
+        "url": "/tcgpocket/paradoxdrive/013.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive14 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/14.jpg",
+        "name": "Pawmi",
+        "url": "/tcgpocket/paradoxdrive/014.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive15 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/15.jpg",
+        "name": "Pawmo",
+        "url": "/tcgpocket/paradoxdrive/015.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive16 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/16.jpg",
+        "name": "Pawmot",
+        "url": "/tcgpocket/paradoxdrive/016.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive17 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/17.jpg",
+        "name": "Iron Hands",
+        "url": "/tcgpocket/paradoxdrive/017.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive18 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/18.jpg",
+        "name": "Iron Thorns",
+        "url": "/tcgpocket/paradoxdrive/018.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Paradox Drive19 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/19.jpg",
+        "name": "Miraidon ex",
+        "url": "/tcgpocket/paradoxdrive/019.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive20 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/20.jpg",
+        "name": "Espeon",
+        "url": "/tcgpocket/paradoxdrive/020.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive21 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/21.jpg",
+        "name": "Flittle",
+        "url": "/tcgpocket/paradoxdrive/021.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive22 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/22.jpg",
+        "name": "Espathra",
+        "url": "/tcgpocket/paradoxdrive/022.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive23 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/23.jpg",
+        "name": "Greavard",
+        "url": "/tcgpocket/paradoxdrive/023.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive24 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/24.jpg",
+        "name": "Houndstone",
+        "url": "/tcgpocket/paradoxdrive/024.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive25 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/25.jpg",
+        "name": "Scream Tail",
+        "url": "/tcgpocket/paradoxdrive/025.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Paradox Drive26 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/26.jpg",
+        "name": "Flutter Mane ex",
+        "url": "/tcgpocket/paradoxdrive/026.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive27 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/27.jpg",
+        "name": "Iron Valiant",
+        "url": "/tcgpocket/paradoxdrive/027.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive28 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/28.jpg",
+        "name": "Iron Leaves",
+        "url": "/tcgpocket/paradoxdrive/028.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive29 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/29.jpg",
+        "name": "Iron Boulder",
+        "url": "/tcgpocket/paradoxdrive/029.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive30 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/30.jpg",
+        "name": "Iron Crown",
+        "url": "/tcgpocket/paradoxdrive/030.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive31 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/31.jpg",
+        "name": "Nacli",
+        "url": "/tcgpocket/paradoxdrive/031.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive32 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/32.jpg",
+        "name": "Naclstack",
+        "url": "/tcgpocket/paradoxdrive/032.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive33 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/33.jpg",
+        "name": "Garganacl",
+        "url": "/tcgpocket/paradoxdrive/033.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive34 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/34.jpg",
+        "name": "Great Tusk",
+        "url": "/tcgpocket/paradoxdrive/034.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive35 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/35.jpg",
+        "name": "Sandy Shocks",
+        "url": "/tcgpocket/paradoxdrive/035.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Paradox Drive36 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/36.jpg",
+        "name": "Koraidon ex",
+        "url": "/tcgpocket/paradoxdrive/036.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive37 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/37.jpg",
+        "name": "Umbreon",
+        "url": "/tcgpocket/paradoxdrive/037.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive38 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/38.jpg",
+        "name": "Sneasel",
+        "url": "/tcgpocket/paradoxdrive/038.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive39 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/39.jpg",
+        "name": "Weavile",
+        "url": "/tcgpocket/paradoxdrive/039.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive40 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/40.jpg",
+        "name": "Sableye",
+        "url": "/tcgpocket/paradoxdrive/040.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive41 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/41.jpg",
+        "name": "Pawniard",
+        "url": "/tcgpocket/paradoxdrive/041.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive42 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/42.jpg",
+        "name": "Bisharp",
+        "url": "/tcgpocket/paradoxdrive/042.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive43 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/43.jpg",
+        "name": "Kingambit",
+        "url": "/tcgpocket/paradoxdrive/043.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive44 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/44.jpg",
+        "name": "Glimmet",
+        "url": "/tcgpocket/paradoxdrive/044.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive45 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/45.jpg",
+        "name": "Glimmora",
+        "url": "/tcgpocket/paradoxdrive/045.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive46 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/46.jpg",
+        "name": "Iron Jugulis",
+        "url": "/tcgpocket/paradoxdrive/046.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive47 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/47.jpg",
+        "name": "Roaring Moon",
+        "url": "/tcgpocket/paradoxdrive/047.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive48 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/48.jpg",
+        "name": "Corviknight",
+        "url": "/tcgpocket/paradoxdrive/048.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive49 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/49.jpg",
+        "name": "Cufant",
+        "url": "/tcgpocket/paradoxdrive/049.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive50 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/50.jpg",
+        "name": "Copperajah",
+        "url": "/tcgpocket/paradoxdrive/050.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive51 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/51.jpg",
+        "name": "Iron Treads",
+        "url": "/tcgpocket/paradoxdrive/051.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive52 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/52.jpg",
+        "name": "Altaria",
+        "url": "/tcgpocket/paradoxdrive/052.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive53 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/53.jpg",
+        "name": "Walking Wake",
+        "url": "/tcgpocket/paradoxdrive/053.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive54 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/54.jpg",
+        "name": "Gouging Fire",
+        "url": "/tcgpocket/paradoxdrive/054.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive55 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/55.jpg",
+        "name": "Raging Bolt",
+        "url": "/tcgpocket/paradoxdrive/055.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive56 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/56.jpg",
+        "name": "Eevee",
+        "url": "/tcgpocket/paradoxdrive/056.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive57 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/57.jpg",
+        "name": "Girafarig",
+        "url": "/tcgpocket/paradoxdrive/057.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive58 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/58.jpg",
+        "name": "Farigiraf",
+        "url": "/tcgpocket/paradoxdrive/058.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive59 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/59.jpg",
+        "name": "Dunsparce",
+        "url": "/tcgpocket/paradoxdrive/059.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Paradox Drive60 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/60.jpg",
+        "name": "Dudunsparce",
+        "url": "/tcgpocket/paradoxdrive/060.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive61 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/61.jpg",
+        "name": "Swablu",
+        "url": "/tcgpocket/paradoxdrive/061.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive62 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/62.jpg",
+        "name": "Rufflet",
+        "url": "/tcgpocket/paradoxdrive/062.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive63 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/63.jpg",
+        "name": "Braviary",
+        "url": "/tcgpocket/paradoxdrive/063.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive64 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/64.jpg",
+        "name": "Hawlucha",
+        "url": "/tcgpocket/paradoxdrive/064.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive65 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/65.jpg",
+        "name": "Rookidee",
+        "url": "/tcgpocket/paradoxdrive/065.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive66 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/66.jpg",
+        "name": "Corvisquire",
+        "url": "/tcgpocket/paradoxdrive/066.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Paradox Drive67 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/67.jpg",
+        "name": "Flamigo",
+        "url": "/tcgpocket/paradoxdrive/067.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Paradox Drive68 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/68.jpg",
+        "name": "Terapagos ex",
+        "url": "/tcgpocket/paradoxdrive/068.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive69 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/69.jpg",
+        "name": "Ancient Booster Energy Capsule",
+        "url": "/tcgpocket/paradoxdrive/069.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive70 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/70.jpg",
+        "name": "Future Booster Energy Capsule",
+        "url": "/tcgpocket/paradoxdrive/070.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive71 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/71.jpg",
+        "name": "Juliana",
+        "url": "/tcgpocket/paradoxdrive/071.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive72 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/72.jpg",
+        "name": "Professor Sada",
+        "url": "/tcgpocket/paradoxdrive/072.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive73 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/73.jpg",
+        "name": "Professor Turo",
+        "url": "/tcgpocket/paradoxdrive/073.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Paradox Drive74 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/74.jpg",
+        "name": "Area Zero",
+        "url": "/tcgpocket/paradoxdrive/074.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Paradox Drive75 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/75.jpg",
+        "name": "Snom",
+        "url": "/tcgpocket/paradoxdrive/075.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Paradox Drive76 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/76.jpg",
+        "name": "Flittle",
+        "url": "/tcgpocket/paradoxdrive/076.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Paradox Drive77 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/77.jpg",
+        "name": "Iron Boulder",
+        "url": "/tcgpocket/paradoxdrive/077.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Paradox Drive78 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/78.jpg",
+        "name": "Glimmora",
+        "url": "/tcgpocket/paradoxdrive/078.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Paradox Drive79 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/79.jpg",
+        "name": "Raging Bolt",
+        "url": "/tcgpocket/paradoxdrive/079.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Paradox Drive80 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/80.jpg",
+        "name": "Hawlucha",
+        "url": "/tcgpocket/paradoxdrive/080.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive81 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/81.jpg",
+        "name": "Iron Bundle ex",
+        "url": "/tcgpocket/paradoxdrive/081.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive82 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/82.jpg",
+        "name": "Miraidon ex",
+        "url": "/tcgpocket/paradoxdrive/082.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive83 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/83.jpg",
+        "name": "Flutter Mane ex",
+        "url": "/tcgpocket/paradoxdrive/083.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive84 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/84.jpg",
+        "name": "Koraidon ex",
+        "url": "/tcgpocket/paradoxdrive/084.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive85 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/85.jpg",
+        "name": "Terapagos ex",
+        "url": "/tcgpocket/paradoxdrive/085.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive86 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/86.jpg",
+        "name": "Juliana",
+        "url": "/tcgpocket/paradoxdrive/086.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive87 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/87.jpg",
+        "name": "Professor Sada",
+        "url": "/tcgpocket/paradoxdrive/087.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive88 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/88.jpg",
+        "name": "Professor Turo",
+        "url": "/tcgpocket/paradoxdrive/088.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive89 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/89.jpg",
+        "name": "Iron Bundle ex",
+        "url": "/tcgpocket/paradoxdrive/089.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive90 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/90.jpg",
+        "name": "Miraidon ex",
+        "url": "/tcgpocket/paradoxdrive/090.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive91 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/91.jpg",
+        "name": "Flutter Mane ex",
+        "url": "/tcgpocket/paradoxdrive/091.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Paradox Drive92 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/92.jpg",
+        "name": "Koraidon ex",
+        "url": "/tcgpocket/paradoxdrive/092.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Paradox Drive93 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/93.jpg",
+        "name": "Terapagos ex",
+        "url": "/tcgpocket/paradoxdrive/093.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Paradox Drive94 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/94.jpg",
+        "name": "Rellor",
+        "url": "/tcgpocket/paradoxdrive/094.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Paradox Drive95 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/95.jpg",
+        "name": "Charcadet",
+        "url": "/tcgpocket/paradoxdrive/095.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Paradox Drive96 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/96.jpg",
+        "name": "Tadbulb",
+        "url": "/tcgpocket/paradoxdrive/096.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Paradox Drive97 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/97.jpg",
+        "name": "Rabsca",
+        "url": "/tcgpocket/paradoxdrive/097.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Paradox Drive98 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/98.jpg",
+        "name": "Diglett",
+        "url": "/tcgpocket/paradoxdrive/098.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Paradox Drive99 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/99.jpg",
+        "name": "Dugtrio",
+        "url": "/tcgpocket/paradoxdrive/099.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Paradox Drive100 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/100.jpg",
+        "name": "Klawf",
+        "url": "/tcgpocket/paradoxdrive/100.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Paradox Drive101 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/101.jpg",
+        "name": "Orthworm",
+        "url": "/tcgpocket/paradoxdrive/101.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Paradox Drive102 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/102.jpg",
+        "name": "Swablu",
+        "url": "/tcgpocket/paradoxdrive/102.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Paradox Drive103 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/103.jpg",
+        "name": "Altaria",
+        "url": "/tcgpocket/paradoxdrive/103.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Paradox Drive104 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/104.jpg",
+        "name": "Meowscarada ex",
+        "url": "/tcgpocket/paradoxdrive/104.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Paradox Drive105 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/105.jpg",
+        "name": "Armarouge ex",
+        "url": "/tcgpocket/paradoxdrive/105.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Paradox Drive106 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/106.jpg",
+        "name": "Bellibolt ex",
+        "url": "/tcgpocket/paradoxdrive/106.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Paradox Drive107 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/107.jpg",
+        "name": "Altaria ex",
+        "url": "/tcgpocket/paradoxdrive/107.shtml",
+        "details": {
+            "hp": "190HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Paradox Drive108 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/108.jpg",
+        "name": "Iron Valiant",
+        "url": "/tcgpocket/paradoxdrive/108.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    },
+    {
+        "set": {
+            "setName": "Paradox Drive",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Paradox Drive109 / 74"
+        },
+        "thumbnail": "/tcgpocket/th/paradoxdrive/109.jpg",
+        "name": "Roaring Moon",
+        "url": "/tcgpocket/paradoxdrive/109.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    }
+]

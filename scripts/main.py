@@ -149,35 +149,32 @@ def get_Input(input_path=None, output_path=None):
     
     return file_to_read, file_to_write
 
-# Get input file paths
-file_to_read, file_to_write = get_Input(
-    "shining-revelry/shining-revelry.html",
-    "shining-revelry/shining-revelry.json"
-)
-# Example usage
-try:
-    with open(file_to_read, 'r') as file:
-        html = file.read()
-except FileNotFoundError:
-    create_file = input(f"File {file_to_read} not found. Would you like to create it? (y/n): ").lower()
-    if create_file == 'y':
-        with open(file_to_read, 'w') as file:
-            file.write('')
-        with open(file_to_read, 'r') as file:
+if __name__ == "__main__":
+    file_to_read, file_to_write = get_Input(
+        "shining-revelry/shining-revelry.html",
+        "shining-revelry/shining-revelry.json"
+    )
+    try:
+        with open(file_to_read, 'r', encoding="utf-8", errors="replace") as file:
             html = file.read()
-    else:
-        print("Exiting program.")
-        exit()
+    except FileNotFoundError:
+        create_file = input(f"File {file_to_read} not found. Would you like to create it? (y/n): ").lower()
+        if create_file == 'y':
+            with open(file_to_read, 'w', encoding="utf-8") as file:
+                file.write('')
+            with open(file_to_read, 'r', encoding="utf-8", errors="replace") as file:
+                html = file.read()
+        else:
+            print("Exiting program.")
+            raise SystemExit(0)
 
-parsed_json = parse_table(html)
+    parsed_json = parse_table(html)
 
-# Create directory for output file if it doesn't exist
-os.makedirs(os.path.dirname(os.path.abspath(file_to_write)), exist_ok=True)
+    os.makedirs(os.path.dirname(os.path.abspath(file_to_write)), exist_ok=True)
 
-# Write the parsed JSON to a file
-with open(file_to_write, 'w') as json_file:
-    json_file.write(parsed_json)
+    with open(file_to_write, 'w', encoding="utf-8") as json_file:
+        json_file.write(parsed_json)
 
-print(f"Reading from: {file_to_read}")
-print(f"Writing to: {file_to_write}")
-print(parsed_json)
+    print(f"Reading from: {file_to_read}")
+    print(f"Writing to: {file_to_write}")
+    print(parsed_json)

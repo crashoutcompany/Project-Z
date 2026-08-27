@@ -19,6 +19,14 @@ import megaRising from "../scripts/mega-rising/mega-rising.json";
 import crimsonBlaze from "../scripts/crimson-blaze/crimson-blaze.json";
 import fantasticalParade from "../scripts/fantastical-parade/fantastical-parade.json";
 import paldeanWonders from "../scripts/paldean-wonders/paldean-wonders.json";
+import megaShine from "../scripts/mega-shine/mega-shine.json";
+import pulsingAura from "../scripts/pulsing-aura/pulsing-aura.json";
+import paradoxDrive from "../scripts/paradox-drive/paradox-drive.json";
+import everydayWonders from "../scripts/everyday-wonders/everyday-wonders.json";
+import rulerOfTheSkies from "../scripts/ruler-of-the-skies/ruler-of-the-skies.json";
+import teamRocketsAmbition from "../scripts/team-rockets-ambition/team-rockets-ambition.json";
+import promoA from "../scripts/promo-a/promo-a.json";
+import promoB from "../scripts/promo-b/promo-b.json";
 
 // Configure Neon for WebSocket connections
 neonConfig.webSocketConstructor = ws;
@@ -38,7 +46,7 @@ const prisma = new PrismaClient({ adapter });
 /**
  * Seeds the database with predefined card sets and their associated cards, including detailed card attributes and relations.
  *
- * Upserts five card sets and iterates through imported card data to create card records with nested details, retreat costs, and weakness types. Skips cards with missing required fields or unknown set names.
+ * Upserts all card sets and iterates through imported card data to create card records with nested details, retreat costs, and weakness types. Skips cards with missing required fields or unknown set names.
  *
  * @remark Cards missing a name or set pokedex, or belonging to an unknown set, are skipped and not inserted.
  */
@@ -197,6 +205,86 @@ async function main() {
   });
   console.log("  ✓ Paldean Wonders (id: %d)", paldeanWondersSet.id);
 
+  const megaShineSet = await prisma.set.upsert({
+    where: { setName: "Mega Shine" },
+    update: {},
+    create: {
+      setName: "Mega Shine",
+      image: "/tcgpocket/sets/mega-shine.png",
+    },
+  });
+  console.log("  ✓ Mega Shine (id: %d)", megaShineSet.id);
+
+  const pulsingAuraSet = await prisma.set.upsert({
+    where: { setName: "Pulsing Aura" },
+    update: {},
+    create: {
+      setName: "Pulsing Aura",
+      image: "/tcgpocket/sets/pulsing-aura.png",
+    },
+  });
+  console.log("  ✓ Pulsing Aura (id: %d)", pulsingAuraSet.id);
+
+  const paradoxDriveSet = await prisma.set.upsert({
+    where: { setName: "Paradox Drive" },
+    update: {},
+    create: {
+      setName: "Paradox Drive",
+      image: "/tcgpocket/sets/paradox-drive.png",
+    },
+  });
+  console.log("  ✓ Paradox Drive (id: %d)", paradoxDriveSet.id);
+
+  const everydayWondersSet = await prisma.set.upsert({
+    where: { setName: "Everyday Wonders" },
+    update: {},
+    create: {
+      setName: "Everyday Wonders",
+      image: "/tcgpocket/sets/everyday-wonders.png",
+    },
+  });
+  console.log("  ✓ Everyday Wonders (id: %d)", everydayWondersSet.id);
+
+  const rulerOfTheSkiesSet = await prisma.set.upsert({
+    where: { setName: "Ruler of the Skies" },
+    update: {},
+    create: {
+      setName: "Ruler of the Skies",
+      image: "/tcgpocket/sets/ruler-of-the-skies.png",
+    },
+  });
+  console.log("  ✓ Ruler of the Skies (id: %d)", rulerOfTheSkiesSet.id);
+
+  const teamRocketsAmbitionSet = await prisma.set.upsert({
+    where: { setName: "Team Rocket's Ambition" },
+    update: {},
+    create: {
+      setName: "Team Rocket's Ambition",
+      image: "/tcgpocket/sets/team-rockets-ambition.png",
+    },
+  });
+  console.log("  ✓ Team Rocket's Ambition (id: %d)", teamRocketsAmbitionSet.id);
+
+  const promoASet = await prisma.set.upsert({
+    where: { setName: "Promo-A" },
+    update: {},
+    create: {
+      setName: "Promo-A",
+      image: "/tcgpocket/sets/promo-a.png",
+    },
+  });
+  console.log("  ✓ Promo-A (id: %d)", promoASet.id);
+
+  const promoBSet = await prisma.set.upsert({
+    where: { setName: "Promo-B" },
+    update: {},
+    create: {
+      setName: "Promo-B",
+      image: "/tcgpocket/sets/promo-b.png",
+    },
+  });
+  console.log("  ✓ Promo-B (id: %d)", promoBSet.id);
+
   const cardSets: { cards: typeof shiningRevelry; setName: string }[] = [
     { cards: shiningRevelry, setName: "Shining Revelry" },
     { cards: triumphantLight, setName: "Triumphant Light" },
@@ -213,6 +301,14 @@ async function main() {
     { cards: crimsonBlaze, setName: "Crimson Blaze" },
     { cards: fantasticalParade, setName: "Fantastical Parade" },
     { cards: paldeanWonders, setName: "Paldean Wonders" },
+    { cards: megaShine, setName: "Mega Shine" },
+    { cards: pulsingAura, setName: "Pulsing Aura" },
+    { cards: paradoxDrive, setName: "Paradox Drive" },
+    { cards: everydayWonders, setName: "Everyday Wonders" },
+    { cards: rulerOfTheSkies, setName: "Ruler of the Skies" },
+    { cards: teamRocketsAmbition, setName: "Team Rocket's Ambition" },
+    { cards: promoA, setName: "Promo-A" },
+    { cards: promoB, setName: "Promo-B" },
   ];
 
   let totalUpserted = 0;
@@ -276,6 +372,30 @@ async function main() {
           break;
         case "Paldean Wonders":
           setId = paldeanWondersSet.id;
+          break;
+        case "Mega Shine":
+          setId = megaShineSet.id;
+          break;
+        case "Pulsing Aura":
+          setId = pulsingAuraSet.id;
+          break;
+        case "Paradox Drive":
+          setId = paradoxDriveSet.id;
+          break;
+        case "Everyday Wonders":
+          setId = everydayWondersSet.id;
+          break;
+        case "Ruler of the Skies":
+          setId = rulerOfTheSkiesSet.id;
+          break;
+        case "Team Rocket's Ambition":
+          setId = teamRocketsAmbitionSet.id;
+          break;
+        case "Promo-A":
+          setId = promoASet.id;
+          break;
+        case "Promo-B":
+          setId = promoBSet.id;
           break;
         default:
           console.warn(`  ⚠ Unknown set name: ${card.set.setName} (card: ${card.name})`);

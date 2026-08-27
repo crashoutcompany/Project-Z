@@ -1,0 +1,5618 @@
+[
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura1 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/1.jpg",
+        "name": "Tangela",
+        "url": "/tcgpocket/pulsingaura/001.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura2 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/2.jpg",
+        "name": "Tangrowth",
+        "url": "/tcgpocket/pulsingaura/002.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura3 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/3.jpg",
+        "name": "Heracross",
+        "url": "/tcgpocket/pulsingaura/003.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura4 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/4.jpg",
+        "name": "Celebi",
+        "url": "/tcgpocket/pulsingaura/004.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura5 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/5.jpg",
+        "name": "Treecko",
+        "url": "/tcgpocket/pulsingaura/005.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura6 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/6.jpg",
+        "name": "Grovyle",
+        "url": "/tcgpocket/pulsingaura/006.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura7 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/7.jpg",
+        "name": "Sceptile",
+        "url": "/tcgpocket/pulsingaura/007.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Pulsing Aura8 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/8.jpg",
+        "name": "Sceptile ex",
+        "url": "/tcgpocket/pulsingaura/008.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura9 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/9.jpg",
+        "name": "Surskit",
+        "url": "/tcgpocket/pulsingaura/009.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura10 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/10.jpg",
+        "name": "Masquerain",
+        "url": "/tcgpocket/pulsingaura/010.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura11 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/11.jpg",
+        "name": "Shroomish",
+        "url": "/tcgpocket/pulsingaura/011.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura12 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/12.jpg",
+        "name": "Breloom",
+        "url": "/tcgpocket/pulsingaura/012.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura13 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/13.jpg",
+        "name": "Budew",
+        "url": "/tcgpocket/pulsingaura/013.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura14 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/14.jpg",
+        "name": "Carnivine",
+        "url": "/tcgpocket/pulsingaura/014.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura15 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/15.jpg",
+        "name": "Sewaddle",
+        "url": "/tcgpocket/pulsingaura/015.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura16 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/16.jpg",
+        "name": "Swadloon",
+        "url": "/tcgpocket/pulsingaura/016.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura17 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/17.jpg",
+        "name": "Leavanny",
+        "url": "/tcgpocket/pulsingaura/017.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura18 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/18.jpg",
+        "name": "Durant",
+        "url": "/tcgpocket/pulsingaura/018.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura19 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/19.jpg",
+        "name": "Applin",
+        "url": "/tcgpocket/pulsingaura/019.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura20 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/20.jpg",
+        "name": "Flapple",
+        "url": "/tcgpocket/pulsingaura/020.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura21 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/21.jpg",
+        "name": "Numel",
+        "url": "/tcgpocket/pulsingaura/021.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura22 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/22.jpg",
+        "name": "Camerupt",
+        "url": "/tcgpocket/pulsingaura/022.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Pulsing Aura23 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/23.jpg",
+        "name": "Camerupt ex",
+        "url": "/tcgpocket/pulsingaura/023.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura24 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/24.jpg",
+        "name": "Castform",
+        "url": "/tcgpocket/pulsingaura/024.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura25 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/25.jpg",
+        "name": "Victini",
+        "url": "/tcgpocket/pulsingaura/025.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura26 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/26.jpg",
+        "name": "Tepig",
+        "url": "/tcgpocket/pulsingaura/026.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura27 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/27.jpg",
+        "name": "Pignite",
+        "url": "/tcgpocket/pulsingaura/027.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura28 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/28.jpg",
+        "name": "Emboar",
+        "url": "/tcgpocket/pulsingaura/028.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura29 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/29.jpg",
+        "name": "Darumaka",
+        "url": "/tcgpocket/pulsingaura/029.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura30 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/30.jpg",
+        "name": "Darmanitan",
+        "url": "/tcgpocket/pulsingaura/030.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura31 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/31.jpg",
+        "name": "Larvesta",
+        "url": "/tcgpocket/pulsingaura/031.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura32 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/32.jpg",
+        "name": "Volcarona",
+        "url": "/tcgpocket/pulsingaura/032.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura33 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/33.jpg",
+        "name": "Poliwag",
+        "url": "/tcgpocket/pulsingaura/033.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura34 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/34.jpg",
+        "name": "Poliwhirl",
+        "url": "/tcgpocket/pulsingaura/034.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura35 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/35.jpg",
+        "name": "Politoed",
+        "url": "/tcgpocket/pulsingaura/035.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura36 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/36.jpg",
+        "name": "Tauros",
+        "url": "/tcgpocket/pulsingaura/036.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Pulsing Aura37 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/37.jpg",
+        "name": "Vaporeon ex",
+        "url": "/tcgpocket/pulsingaura/037.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura38 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/38.jpg",
+        "name": "Wooper",
+        "url": "/tcgpocket/pulsingaura/038.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura39 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/39.jpg",
+        "name": "Quagsire",
+        "url": "/tcgpocket/pulsingaura/039.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura40 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/40.jpg",
+        "name": "Castform",
+        "url": "/tcgpocket/pulsingaura/040.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura41 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/41.jpg",
+        "name": "Castform",
+        "url": "/tcgpocket/pulsingaura/041.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura42 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/42.jpg",
+        "name": "Clamperl",
+        "url": "/tcgpocket/pulsingaura/042.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura43 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/43.jpg",
+        "name": "Huntail",
+        "url": "/tcgpocket/pulsingaura/043.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura44 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/44.jpg",
+        "name": "Gorebyss",
+        "url": "/tcgpocket/pulsingaura/044.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura45 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/45.jpg",
+        "name": "Regice",
+        "url": "/tcgpocket/pulsingaura/045.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura46 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/46.jpg",
+        "name": "Cubchoo",
+        "url": "/tcgpocket/pulsingaura/046.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura47 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/47.jpg",
+        "name": "Beartic",
+        "url": "/tcgpocket/pulsingaura/047.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura48 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/48.jpg",
+        "name": "Sobble",
+        "url": "/tcgpocket/pulsingaura/048.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura49 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/49.jpg",
+        "name": "Drizzile",
+        "url": "/tcgpocket/pulsingaura/049.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura50 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/50.jpg",
+        "name": "Inteleon",
+        "url": "/tcgpocket/pulsingaura/050.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura51 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/51.jpg",
+        "name": "Urshifu",
+        "url": "/tcgpocket/pulsingaura/051.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura52 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/52.jpg",
+        "name": "Magnemite",
+        "url": "/tcgpocket/pulsingaura/052.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura53 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/53.jpg",
+        "name": "Magneton",
+        "url": "/tcgpocket/pulsingaura/053.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Pulsing Aura54 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/54.jpg",
+        "name": "Magnezone ex",
+        "url": "/tcgpocket/pulsingaura/054.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura55 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/55.jpg",
+        "name": "Voltorb",
+        "url": "/tcgpocket/pulsingaura/055.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura56 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/56.jpg",
+        "name": "Electrode",
+        "url": "/tcgpocket/pulsingaura/056.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura57 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/57.jpg",
+        "name": "Chinchou",
+        "url": "/tcgpocket/pulsingaura/057.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura58 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/58.jpg",
+        "name": "Lanturn",
+        "url": "/tcgpocket/pulsingaura/058.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura59 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/59.jpg",
+        "name": "Zekrom",
+        "url": "/tcgpocket/pulsingaura/059.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura60 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/60.jpg",
+        "name": "Toxel",
+        "url": "/tcgpocket/pulsingaura/060.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura61 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/61.jpg",
+        "name": "Toxtricity",
+        "url": "/tcgpocket/pulsingaura/061.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura62 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/62.jpg",
+        "name": "Morpeko",
+        "url": "/tcgpocket/pulsingaura/062.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura63 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/63.jpg",
+        "name": "Ralts",
+        "url": "/tcgpocket/pulsingaura/063.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura64 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/64.jpg",
+        "name": "Kirlia",
+        "url": "/tcgpocket/pulsingaura/064.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura65 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/65.jpg",
+        "name": "Espurr",
+        "url": "/tcgpocket/pulsingaura/065.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura66 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/66.jpg",
+        "name": "Meowstic",
+        "url": "/tcgpocket/pulsingaura/066.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura67 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/67.jpg",
+        "name": "Diancie",
+        "url": "/tcgpocket/pulsingaura/067.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura68 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/68.jpg",
+        "name": "Oricorio",
+        "url": "/tcgpocket/pulsingaura/068.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura69 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/69.jpg",
+        "name": "Hatenna",
+        "url": "/tcgpocket/pulsingaura/069.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura70 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/70.jpg",
+        "name": "Hattrem",
+        "url": "/tcgpocket/pulsingaura/070.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura71 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/71.jpg",
+        "name": "Hatterene",
+        "url": "/tcgpocket/pulsingaura/071.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura72 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/72.jpg",
+        "name": "Bramblin",
+        "url": "/tcgpocket/pulsingaura/072.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura73 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/73.jpg",
+        "name": "Brambleghast",
+        "url": "/tcgpocket/pulsingaura/073.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura74 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/74.jpg",
+        "name": "Gligar",
+        "url": "/tcgpocket/pulsingaura/074.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura75 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/75.jpg",
+        "name": "Gliscor",
+        "url": "/tcgpocket/pulsingaura/075.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura76 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/76.jpg",
+        "name": "Trapinch",
+        "url": "/tcgpocket/pulsingaura/076.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura77 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/77.jpg",
+        "name": "Regirock",
+        "url": "/tcgpocket/pulsingaura/077.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura78 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/78.jpg",
+        "name": "Bonsly",
+        "url": "/tcgpocket/pulsingaura/078.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura79 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/79.jpg",
+        "name": "Riolu",
+        "url": "/tcgpocket/pulsingaura/079.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura80 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/80.jpg",
+        "name": "Lucario",
+        "url": "/tcgpocket/pulsingaura/080.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Pulsing Aura81 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/81.jpg",
+        "name": "Lucario ex",
+        "url": "/tcgpocket/pulsingaura/081.shtml",
+        "details": {
+            "hp": "190HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura82 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/82.jpg",
+        "name": "Croagunk",
+        "url": "/tcgpocket/pulsingaura/082.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura83 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/83.jpg",
+        "name": "Toxicroak",
+        "url": "/tcgpocket/pulsingaura/083.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura84 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/84.jpg",
+        "name": "Gallade",
+        "url": "/tcgpocket/pulsingaura/084.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura85 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/85.jpg",
+        "name": "Throh",
+        "url": "/tcgpocket/pulsingaura/085.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura86 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/86.jpg",
+        "name": "Sawk",
+        "url": "/tcgpocket/pulsingaura/086.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura87 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/87.jpg",
+        "name": "Dwebble",
+        "url": "/tcgpocket/pulsingaura/087.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Pulsing Aura88 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/88.jpg",
+        "name": "Crustle ex",
+        "url": "/tcgpocket/pulsingaura/088.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura89 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/89.jpg",
+        "name": "Meloetta",
+        "url": "/tcgpocket/pulsingaura/089.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura90 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/90.jpg",
+        "name": "Stufful",
+        "url": "/tcgpocket/pulsingaura/090.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura91 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/91.jpg",
+        "name": "Bewear",
+        "url": "/tcgpocket/pulsingaura/091.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura92 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/92.jpg",
+        "name": "Rolycoly",
+        "url": "/tcgpocket/pulsingaura/092.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura93 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/93.jpg",
+        "name": "Carkol",
+        "url": "/tcgpocket/pulsingaura/093.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura94 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/94.jpg",
+        "name": "Coalossal",
+        "url": "/tcgpocket/pulsingaura/094.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura95 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/95.jpg",
+        "name": "Silicobra",
+        "url": "/tcgpocket/pulsingaura/095.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura96 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/96.jpg",
+        "name": "Sandaconda",
+        "url": "/tcgpocket/pulsingaura/096.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura97 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/97.jpg",
+        "name": "Kubfu",
+        "url": "/tcgpocket/pulsingaura/097.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura98 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/98.jpg",
+        "name": "Zubat",
+        "url": "/tcgpocket/pulsingaura/098.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura99 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/99.jpg",
+        "name": "Golbat",
+        "url": "/tcgpocket/pulsingaura/099.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura100 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/100.jpg",
+        "name": "Crobat",
+        "url": "/tcgpocket/pulsingaura/100.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura101 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/101.jpg",
+        "name": "Koffing",
+        "url": "/tcgpocket/pulsingaura/101.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura102 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/102.jpg",
+        "name": "Weezing",
+        "url": "/tcgpocket/pulsingaura/102.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura103 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/103.jpg",
+        "name": "Qwilfish",
+        "url": "/tcgpocket/pulsingaura/103.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura104 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/104.jpg",
+        "name": "Seviper",
+        "url": "/tcgpocket/pulsingaura/104.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura105 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/105.jpg",
+        "name": "Zorua",
+        "url": "/tcgpocket/pulsingaura/105.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Pulsing Aura106 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/106.jpg",
+        "name": "Zoroark ex",
+        "url": "/tcgpocket/pulsingaura/106.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura107 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/107.jpg",
+        "name": "Foongus",
+        "url": "/tcgpocket/pulsingaura/107.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura108 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/108.jpg",
+        "name": "Amoonguss",
+        "url": "/tcgpocket/pulsingaura/108.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura109 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/109.jpg",
+        "name": "Vullaby",
+        "url": "/tcgpocket/pulsingaura/109.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura110 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/110.jpg",
+        "name": "Mandibuzz",
+        "url": "/tcgpocket/pulsingaura/110.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura111 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/111.jpg",
+        "name": "Inkay",
+        "url": "/tcgpocket/pulsingaura/111.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura112 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/112.jpg",
+        "name": "Malamar",
+        "url": "/tcgpocket/pulsingaura/112.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura113 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/113.jpg",
+        "name": "Urshifu",
+        "url": "/tcgpocket/pulsingaura/113.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura114 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/114.jpg",
+        "name": "Zarude",
+        "url": "/tcgpocket/pulsingaura/114.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura115 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/115.jpg",
+        "name": "Bombirdier",
+        "url": "/tcgpocket/pulsingaura/115.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura116 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/116.jpg",
+        "name": "Registeel",
+        "url": "/tcgpocket/pulsingaura/116.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura117 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/117.jpg",
+        "name": "Bronzor",
+        "url": "/tcgpocket/pulsingaura/117.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura118 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/118.jpg",
+        "name": "Bronzong",
+        "url": "/tcgpocket/pulsingaura/118.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura119 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/119.jpg",
+        "name": "Pawniard",
+        "url": "/tcgpocket/pulsingaura/119.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura120 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/120.jpg",
+        "name": "Bisharp",
+        "url": "/tcgpocket/pulsingaura/120.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura121 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/121.jpg",
+        "name": "Magearna",
+        "url": "/tcgpocket/pulsingaura/121.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura122 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/122.jpg",
+        "name": "Meltan",
+        "url": "/tcgpocket/pulsingaura/122.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura123 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/123.jpg",
+        "name": "Melmetal",
+        "url": "/tcgpocket/pulsingaura/123.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Pulsing Aura124 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/124.jpg",
+        "name": "Corviknight ex",
+        "url": "/tcgpocket/pulsingaura/124.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura125 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/125.jpg",
+        "name": "Vibrava",
+        "url": "/tcgpocket/pulsingaura/125.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Pulsing Aura126 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/126.jpg",
+        "name": "Flygon ex",
+        "url": "/tcgpocket/pulsingaura/126.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura127 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/127.jpg",
+        "name": "Chansey",
+        "url": "/tcgpocket/pulsingaura/127.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura128 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/128.jpg",
+        "name": "Blissey",
+        "url": "/tcgpocket/pulsingaura/128.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura129 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/129.jpg",
+        "name": "Eevee",
+        "url": "/tcgpocket/pulsingaura/129.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura130 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/130.jpg",
+        "name": "Dunsparce",
+        "url": "/tcgpocket/pulsingaura/130.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura131 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/131.jpg",
+        "name": "Teddiursa",
+        "url": "/tcgpocket/pulsingaura/131.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura132 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/132.jpg",
+        "name": "Ursaring",
+        "url": "/tcgpocket/pulsingaura/132.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura133 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/133.jpg",
+        "name": "Castform",
+        "url": "/tcgpocket/pulsingaura/133.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura134 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/134.jpg",
+        "name": "Regigigas",
+        "url": "/tcgpocket/pulsingaura/134.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura135 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/135.jpg",
+        "name": "Patrat",
+        "url": "/tcgpocket/pulsingaura/135.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura136 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/136.jpg",
+        "name": "Watchog",
+        "url": "/tcgpocket/pulsingaura/136.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura137 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/137.jpg",
+        "name": "Lillipup",
+        "url": "/tcgpocket/pulsingaura/137.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura138 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/138.jpg",
+        "name": "Herdier",
+        "url": "/tcgpocket/pulsingaura/138.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Pulsing Aura139 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/139.jpg",
+        "name": "Stoutland",
+        "url": "/tcgpocket/pulsingaura/139.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura140 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/140.jpg",
+        "name": "Audino",
+        "url": "/tcgpocket/pulsingaura/140.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Pulsing Aura141 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/141.jpg",
+        "name": "Audino ex",
+        "url": "/tcgpocket/pulsingaura/141.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura142 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/142.jpg",
+        "name": "Minccino",
+        "url": "/tcgpocket/pulsingaura/142.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura143 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/143.jpg",
+        "name": "Cinccino",
+        "url": "/tcgpocket/pulsingaura/143.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura144 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/144.jpg",
+        "name": "Furfrou",
+        "url": "/tcgpocket/pulsingaura/144.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Pulsing Aura145 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/145.jpg",
+        "name": "Rookidee",
+        "url": "/tcgpocket/pulsingaura/145.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura146 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/146.jpg",
+        "name": "Corvisquire",
+        "url": "/tcgpocket/pulsingaura/146.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura147 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/147.jpg",
+        "name": "Field Blower",
+        "url": "/tcgpocket/pulsingaura/147.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura148 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/148.jpg",
+        "name": "Lucky Egg",
+        "url": "/tcgpocket/pulsingaura/148.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura149 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/149.jpg",
+        "name": "Korrina",
+        "url": "/tcgpocket/pulsingaura/149.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura150 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/150.jpg",
+        "name": "Cabbie",
+        "url": "/tcgpocket/pulsingaura/150.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura151 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/151.jpg",
+        "name": "Cheren",
+        "url": "/tcgpocket/pulsingaura/151.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura152 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/152.jpg",
+        "name": "Parasol Lady",
+        "url": "/tcgpocket/pulsingaura/152.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura153 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/153.jpg",
+        "name": "Fragrant Forest",
+        "url": "/tcgpocket/pulsingaura/153.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura154 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/154.jpg",
+        "name": "Arena of Antiquity",
+        "url": "/tcgpocket/pulsingaura/154.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Pulsing Aura155 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/155.jpg",
+        "name": "Bounded Field",
+        "url": "/tcgpocket/pulsingaura/155.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura156 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/156.jpg",
+        "name": "Treecko",
+        "url": "/tcgpocket/pulsingaura/156.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura157 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/157.jpg",
+        "name": "Grovyle",
+        "url": "/tcgpocket/pulsingaura/157.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura158 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/158.jpg",
+        "name": "Shroomish",
+        "url": "/tcgpocket/pulsingaura/158.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura159 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/159.jpg",
+        "name": "Budew",
+        "url": "/tcgpocket/pulsingaura/159.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura160 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/160.jpg",
+        "name": "Flapple",
+        "url": "/tcgpocket/pulsingaura/160.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura161 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/161.jpg",
+        "name": "Tepig",
+        "url": "/tcgpocket/pulsingaura/161.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura162 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/162.jpg",
+        "name": "Quagsire",
+        "url": "/tcgpocket/pulsingaura/162.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura163 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/163.jpg",
+        "name": "Zekrom",
+        "url": "/tcgpocket/pulsingaura/163.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura164 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/164.jpg",
+        "name": "Morpeko",
+        "url": "/tcgpocket/pulsingaura/164.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura165 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/165.jpg",
+        "name": "Meowstic",
+        "url": "/tcgpocket/pulsingaura/165.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura166 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/166.jpg",
+        "name": "Oricorio",
+        "url": "/tcgpocket/pulsingaura/166.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura167 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/167.jpg",
+        "name": "Brambleghast",
+        "url": "/tcgpocket/pulsingaura/167.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura168 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/168.jpg",
+        "name": "Bonsly",
+        "url": "/tcgpocket/pulsingaura/168.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura169 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/169.jpg",
+        "name": "Riolu",
+        "url": "/tcgpocket/pulsingaura/169.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura170 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/170.jpg",
+        "name": "Meloetta",
+        "url": "/tcgpocket/pulsingaura/170.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura171 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/171.jpg",
+        "name": "Carkol",
+        "url": "/tcgpocket/pulsingaura/171.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura172 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/172.jpg",
+        "name": "Kubfu",
+        "url": "/tcgpocket/pulsingaura/172.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura173 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/173.jpg",
+        "name": "Seviper",
+        "url": "/tcgpocket/pulsingaura/173.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura174 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/174.jpg",
+        "name": "Zorua",
+        "url": "/tcgpocket/pulsingaura/174.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura175 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/175.jpg",
+        "name": "Malamar",
+        "url": "/tcgpocket/pulsingaura/175.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura176 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/176.jpg",
+        "name": "Bisharp",
+        "url": "/tcgpocket/pulsingaura/176.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura177 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/177.jpg",
+        "name": "Meltan",
+        "url": "/tcgpocket/pulsingaura/177.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura178 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/178.jpg",
+        "name": "Castform",
+        "url": "/tcgpocket/pulsingaura/178.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Pulsing Aura179 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/179.jpg",
+        "name": "Cinccino",
+        "url": "/tcgpocket/pulsingaura/179.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura180 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/180.jpg",
+        "name": "Sceptile ex",
+        "url": "/tcgpocket/pulsingaura/180.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura181 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/181.jpg",
+        "name": "Camerupt ex",
+        "url": "/tcgpocket/pulsingaura/181.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura182 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/182.jpg",
+        "name": "Vaporeon ex",
+        "url": "/tcgpocket/pulsingaura/182.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura183 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/183.jpg",
+        "name": "Magnezone ex",
+        "url": "/tcgpocket/pulsingaura/183.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura184 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/184.jpg",
+        "name": "Lucario ex",
+        "url": "/tcgpocket/pulsingaura/184.shtml",
+        "details": {
+            "hp": "190HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura185 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/185.jpg",
+        "name": "Crustle ex",
+        "url": "/tcgpocket/pulsingaura/185.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura186 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/186.jpg",
+        "name": "Zoroark ex",
+        "url": "/tcgpocket/pulsingaura/186.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura187 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/187.jpg",
+        "name": "Corviknight ex",
+        "url": "/tcgpocket/pulsingaura/187.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura188 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/188.jpg",
+        "name": "Flygon ex",
+        "url": "/tcgpocket/pulsingaura/188.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura189 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/189.jpg",
+        "name": "Audino ex",
+        "url": "/tcgpocket/pulsingaura/189.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura190 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/190.jpg",
+        "name": "Korrina",
+        "url": "/tcgpocket/pulsingaura/190.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura191 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/191.jpg",
+        "name": "Cabbie",
+        "url": "/tcgpocket/pulsingaura/191.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura192 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/192.jpg",
+        "name": "Cheren",
+        "url": "/tcgpocket/pulsingaura/192.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura193 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/193.jpg",
+        "name": "Parasol Lady",
+        "url": "/tcgpocket/pulsingaura/193.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura194 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/194.jpg",
+        "name": "Sceptile ex",
+        "url": "/tcgpocket/pulsingaura/194.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura195 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/195.jpg",
+        "name": "Camerupt ex",
+        "url": "/tcgpocket/pulsingaura/195.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura196 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/196.jpg",
+        "name": "Vaporeon ex",
+        "url": "/tcgpocket/pulsingaura/196.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura197 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/197.jpg",
+        "name": "Magnezone ex",
+        "url": "/tcgpocket/pulsingaura/197.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura198 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/198.jpg",
+        "name": "Crustle ex",
+        "url": "/tcgpocket/pulsingaura/198.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura199 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/199.jpg",
+        "name": "Zoroark ex",
+        "url": "/tcgpocket/pulsingaura/199.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura200 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/200.jpg",
+        "name": "Corviknight ex",
+        "url": "/tcgpocket/pulsingaura/200.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura201 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/201.jpg",
+        "name": "Flygon ex",
+        "url": "/tcgpocket/pulsingaura/201.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Pulsing Aura202 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/202.jpg",
+        "name": "Audino ex",
+        "url": "/tcgpocket/pulsingaura/202.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Pulsing Aura203 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/203.jpg",
+        "name": "Sobble",
+        "url": "/tcgpocket/pulsingaura/203.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Pulsing Aura204 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/204.jpg",
+        "name": "Lucario ex",
+        "url": "/tcgpocket/pulsingaura/204.shtml",
+        "details": {
+            "hp": "190HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura205 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/205.jpg",
+        "name": "Cottonee",
+        "url": "/tcgpocket/pulsingaura/205.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura206 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/206.jpg",
+        "name": "Torchic",
+        "url": "/tcgpocket/pulsingaura/206.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura207 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/207.jpg",
+        "name": "Combusken",
+        "url": "/tcgpocket/pulsingaura/207.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura208 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/208.jpg",
+        "name": "Blaziken",
+        "url": "/tcgpocket/pulsingaura/208.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura209 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/209.jpg",
+        "name": "Frillish",
+        "url": "/tcgpocket/pulsingaura/209.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura210 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/210.jpg",
+        "name": "Jellicent",
+        "url": "/tcgpocket/pulsingaura/210.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura211 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/211.jpg",
+        "name": "Onix",
+        "url": "/tcgpocket/pulsingaura/211.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura212 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/212.jpg",
+        "name": "Zubat",
+        "url": "/tcgpocket/pulsingaura/212.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura213 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/213.jpg",
+        "name": "Golbat",
+        "url": "/tcgpocket/pulsingaura/213.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura214 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/214.jpg",
+        "name": "Crobat",
+        "url": "/tcgpocket/pulsingaura/214.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura215 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/215.jpg",
+        "name": "Grimer",
+        "url": "/tcgpocket/pulsingaura/215.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura216 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/216.jpg",
+        "name": "Muk",
+        "url": "/tcgpocket/pulsingaura/216.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura217 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/217.jpg",
+        "name": "Absol",
+        "url": "/tcgpocket/pulsingaura/217.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura218 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/218.jpg",
+        "name": "Skrelp",
+        "url": "/tcgpocket/pulsingaura/218.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura219 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/219.jpg",
+        "name": "Steelix",
+        "url": "/tcgpocket/pulsingaura/219.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura220 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/220.jpg",
+        "name": "Chansey",
+        "url": "/tcgpocket/pulsingaura/220.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura221 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/221.jpg",
+        "name": "Blissey",
+        "url": "/tcgpocket/pulsingaura/221.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura222 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/222.jpg",
+        "name": "Porygon",
+        "url": "/tcgpocket/pulsingaura/222.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura223 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/223.jpg",
+        "name": "Porygon2",
+        "url": "/tcgpocket/pulsingaura/223.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Pulsing Aura224 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/224.jpg",
+        "name": "Porygon-Z",
+        "url": "/tcgpocket/pulsingaura/224.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Pulsing Aura225 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/225.jpg",
+        "name": "Whimsicott ex",
+        "url": "/tcgpocket/pulsingaura/225.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Pulsing Aura226 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/226.jpg",
+        "name": "Blaziken ex",
+        "url": "/tcgpocket/pulsingaura/226.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Pulsing Aura227 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/227.jpg",
+        "name": "Greninja ex",
+        "url": "/tcgpocket/pulsingaura/227.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Pulsing Aura228 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/228.jpg",
+        "name": "Jolteon ex",
+        "url": "/tcgpocket/pulsingaura/228.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Pulsing Aura229 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/229.jpg",
+        "name": "Hitmonchan ex",
+        "url": "/tcgpocket/pulsingaura/229.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Pulsing Aura230 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/230.jpg",
+        "name": "Absol ex",
+        "url": "/tcgpocket/pulsingaura/230.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Pulsing Aura231 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/231.jpg",
+        "name": "Dragalge ex",
+        "url": "/tcgpocket/pulsingaura/231.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Pulsing Aura232 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/232.jpg",
+        "name": "Steelix ex",
+        "url": "/tcgpocket/pulsingaura/232.shtml",
+        "details": {
+            "hp": "220HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Pulsing Aura233 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/233.jpg",
+        "name": "Celebi",
+        "url": "/tcgpocket/pulsingaura/233.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    },
+    {
+        "set": {
+            "setName": "Pulsing Aura",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Pulsing Aura234 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/pulsingaura/234.jpg",
+        "name": "Bombirdier",
+        "url": "/tcgpocket/pulsingaura/234.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    }
+]

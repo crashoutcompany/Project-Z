@@ -1,0 +1,5594 @@
+[
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies1 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/1.jpg",
+        "name": "Wurmple",
+        "url": "/tcgpocket/ruleroftheskies/001.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies2 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/2.jpg",
+        "name": "Silcoon",
+        "url": "/tcgpocket/ruleroftheskies/002.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies3 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/3.jpg",
+        "name": "Beautifly",
+        "url": "/tcgpocket/ruleroftheskies/003.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies4 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/4.jpg",
+        "name": "Cascoon",
+        "url": "/tcgpocket/ruleroftheskies/004.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies5 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/5.jpg",
+        "name": "Dustox",
+        "url": "/tcgpocket/ruleroftheskies/005.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies6 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/6.jpg",
+        "name": "Lileep",
+        "url": "/tcgpocket/ruleroftheskies/006.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies7 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/7.jpg",
+        "name": "Cradily",
+        "url": "/tcgpocket/ruleroftheskies/007.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies8 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/8.jpg",
+        "name": "Kricketot",
+        "url": "/tcgpocket/ruleroftheskies/008.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies9 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/9.jpg",
+        "name": "Kricketune",
+        "url": "/tcgpocket/ruleroftheskies/009.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies10 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/10.jpg",
+        "name": "Combee",
+        "url": "/tcgpocket/ruleroftheskies/010.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Ruler of the Skies11 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/11.jpg",
+        "name": "Vespiquen ex",
+        "url": "/tcgpocket/ruleroftheskies/011.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies12 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/12.jpg",
+        "name": "Karrablast",
+        "url": "/tcgpocket/ruleroftheskies/012.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies13 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/13.jpg",
+        "name": "Shelmet",
+        "url": "/tcgpocket/ruleroftheskies/013.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies14 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/14.jpg",
+        "name": "Accelgor",
+        "url": "/tcgpocket/ruleroftheskies/014.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies15 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/15.jpg",
+        "name": "Dhelmise",
+        "url": "/tcgpocket/ruleroftheskies/015.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies16 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/16.jpg",
+        "name": "Pheromosa",
+        "url": "/tcgpocket/ruleroftheskies/016.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies17 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/17.jpg",
+        "name": "Poltchageist",
+        "url": "/tcgpocket/ruleroftheskies/017.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies18 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/18.jpg",
+        "name": "Sinistcha",
+        "url": "/tcgpocket/ruleroftheskies/018.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies19 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/19.jpg",
+        "name": "Ogerpon",
+        "url": "/tcgpocket/ruleroftheskies/019.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies20 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/20.jpg",
+        "name": "Ponyta",
+        "url": "/tcgpocket/ruleroftheskies/020.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies21 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/21.jpg",
+        "name": "Rapidash",
+        "url": "/tcgpocket/ruleroftheskies/021.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies22 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/22.jpg",
+        "name": "Flareon",
+        "url": "/tcgpocket/ruleroftheskies/022.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies23 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/23.jpg",
+        "name": "Moltres",
+        "url": "/tcgpocket/ruleroftheskies/023.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies24 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/24.jpg",
+        "name": "Cyndaquil",
+        "url": "/tcgpocket/ruleroftheskies/024.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies25 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/25.jpg",
+        "name": "Quilava",
+        "url": "/tcgpocket/ruleroftheskies/025.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Ruler of the Skies26 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/26.jpg",
+        "name": "Typhlosion ex",
+        "url": "/tcgpocket/ruleroftheskies/026.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies27 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/27.jpg",
+        "name": "Houndour",
+        "url": "/tcgpocket/ruleroftheskies/027.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies28 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/28.jpg",
+        "name": "Houndoom",
+        "url": "/tcgpocket/ruleroftheskies/028.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies29 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/29.jpg",
+        "name": "Heatmor",
+        "url": "/tcgpocket/ruleroftheskies/029.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies30 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/30.jpg",
+        "name": "Psyduck",
+        "url": "/tcgpocket/ruleroftheskies/030.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies31 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/31.jpg",
+        "name": "Golduck",
+        "url": "/tcgpocket/ruleroftheskies/031.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies32 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/32.jpg",
+        "name": "Staryu",
+        "url": "/tcgpocket/ruleroftheskies/032.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies33 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/33.jpg",
+        "name": "Starmie",
+        "url": "/tcgpocket/ruleroftheskies/033.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies34 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/34.jpg",
+        "name": "Carvanha",
+        "url": "/tcgpocket/ruleroftheskies/034.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Ruler of the Skies35 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/35.jpg",
+        "name": "Sharpedo ex",
+        "url": "/tcgpocket/ruleroftheskies/035.shtml",
+        "details": {
+            "hp": "190HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies36 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/36.jpg",
+        "name": "Wailmer",
+        "url": "/tcgpocket/ruleroftheskies/036.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Ruler of the Skies37 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/37.jpg",
+        "name": "Wailord ex",
+        "url": "/tcgpocket/ruleroftheskies/037.shtml",
+        "details": {
+            "hp": "250HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies38 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/38.jpg",
+        "name": "Spheal",
+        "url": "/tcgpocket/ruleroftheskies/038.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies39 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/39.jpg",
+        "name": "Sealeo",
+        "url": "/tcgpocket/ruleroftheskies/039.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies40 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/40.jpg",
+        "name": "Walrein",
+        "url": "/tcgpocket/ruleroftheskies/040.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies41 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/41.jpg",
+        "name": "Kyogre",
+        "url": "/tcgpocket/ruleroftheskies/041.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies42 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/42.jpg",
+        "name": "Oshawott",
+        "url": "/tcgpocket/ruleroftheskies/042.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies43 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/43.jpg",
+        "name": "Dewott",
+        "url": "/tcgpocket/ruleroftheskies/043.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies44 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/44.jpg",
+        "name": "Samurott",
+        "url": "/tcgpocket/ruleroftheskies/044.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies45 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/45.jpg",
+        "name": "Alomomola",
+        "url": "/tcgpocket/ruleroftheskies/045.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies46 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/46.jpg",
+        "name": "Dewpider",
+        "url": "/tcgpocket/ruleroftheskies/046.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies47 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/47.jpg",
+        "name": "Araquanid",
+        "url": "/tcgpocket/ruleroftheskies/047.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies48 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/48.jpg",
+        "name": "Bruxish",
+        "url": "/tcgpocket/ruleroftheskies/048.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies49 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/49.jpg",
+        "name": "Pikachu",
+        "url": "/tcgpocket/ruleroftheskies/049.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies50 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/50.jpg",
+        "name": "Raichu",
+        "url": "/tcgpocket/ruleroftheskies/050.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies51 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/51.jpg",
+        "name": "Shinx",
+        "url": "/tcgpocket/ruleroftheskies/051.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies52 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/52.jpg",
+        "name": "Luxio",
+        "url": "/tcgpocket/ruleroftheskies/052.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies53 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/53.jpg",
+        "name": "Luxray",
+        "url": "/tcgpocket/ruleroftheskies/053.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies54 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/54.jpg",
+        "name": "Pachirisu",
+        "url": "/tcgpocket/ruleroftheskies/054.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Ruler of the Skies55 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/55.jpg",
+        "name": "Rotom ex",
+        "url": "/tcgpocket/ruleroftheskies/055.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies56 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/56.jpg",
+        "name": "Tynamo",
+        "url": "/tcgpocket/ruleroftheskies/056.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies57 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/57.jpg",
+        "name": "Eelektrik",
+        "url": "/tcgpocket/ruleroftheskies/057.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies58 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/58.jpg",
+        "name": "Eelektross",
+        "url": "/tcgpocket/ruleroftheskies/058.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies59 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/59.jpg",
+        "name": "Thundurus",
+        "url": "/tcgpocket/ruleroftheskies/059.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies60 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/60.jpg",
+        "name": "Helioptile",
+        "url": "/tcgpocket/ruleroftheskies/060.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies61 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/61.jpg",
+        "name": "Heliolisk",
+        "url": "/tcgpocket/ruleroftheskies/061.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies62 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/62.jpg",
+        "name": "Wattrel",
+        "url": "/tcgpocket/ruleroftheskies/062.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies63 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/63.jpg",
+        "name": "Kilowattrel",
+        "url": "/tcgpocket/ruleroftheskies/063.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies64 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/64.jpg",
+        "name": "Clefairy",
+        "url": "/tcgpocket/ruleroftheskies/064.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies65 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/65.jpg",
+        "name": "Clefable",
+        "url": "/tcgpocket/ruleroftheskies/065.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies66 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/66.jpg",
+        "name": "Drowzee",
+        "url": "/tcgpocket/ruleroftheskies/066.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies67 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/67.jpg",
+        "name": "Hypno",
+        "url": "/tcgpocket/ruleroftheskies/067.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies68 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/68.jpg",
+        "name": "Mime Jr.",
+        "url": "/tcgpocket/ruleroftheskies/068.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies69 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/69.jpg",
+        "name": "Mr. Mime",
+        "url": "/tcgpocket/ruleroftheskies/069.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies70 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/70.jpg",
+        "name": "Mewtwo",
+        "url": "/tcgpocket/ruleroftheskies/070.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies71 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/71.jpg",
+        "name": "Ralts",
+        "url": "/tcgpocket/ruleroftheskies/071.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies72 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/72.jpg",
+        "name": "Kirlia",
+        "url": "/tcgpocket/ruleroftheskies/072.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies73 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/73.jpg",
+        "name": "Chimecho",
+        "url": "/tcgpocket/ruleroftheskies/073.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies74 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/74.jpg",
+        "name": "Wynaut",
+        "url": "/tcgpocket/ruleroftheskies/074.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies75 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/75.jpg",
+        "name": "Woobat",
+        "url": "/tcgpocket/ruleroftheskies/075.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies76 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/76.jpg",
+        "name": "Swoobat",
+        "url": "/tcgpocket/ruleroftheskies/076.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies77 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/77.jpg",
+        "name": "Hoopa",
+        "url": "/tcgpocket/ruleroftheskies/077.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies78 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/78.jpg",
+        "name": "Oricorio",
+        "url": "/tcgpocket/ruleroftheskies/078.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies79 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/79.jpg",
+        "name": "Makuhita",
+        "url": "/tcgpocket/ruleroftheskies/079.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies80 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/80.jpg",
+        "name": "Hariyama",
+        "url": "/tcgpocket/ruleroftheskies/080.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies81 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/81.jpg",
+        "name": "Anorith",
+        "url": "/tcgpocket/ruleroftheskies/081.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies82 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/82.jpg",
+        "name": "Armaldo",
+        "url": "/tcgpocket/ruleroftheskies/082.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies83 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/83.jpg",
+        "name": "Groudon",
+        "url": "/tcgpocket/ruleroftheskies/083.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Ruler of the Skies84 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/84.jpg",
+        "name": "Gallade ex",
+        "url": "/tcgpocket/ruleroftheskies/084.shtml",
+        "details": {
+            "hp": "220HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies85 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/85.jpg",
+        "name": "Drilbur",
+        "url": "/tcgpocket/ruleroftheskies/085.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies86 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/86.jpg",
+        "name": "Excadrill",
+        "url": "/tcgpocket/ruleroftheskies/086.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies87 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/87.jpg",
+        "name": "Timburr",
+        "url": "/tcgpocket/ruleroftheskies/087.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies88 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/88.jpg",
+        "name": "Gurdurr",
+        "url": "/tcgpocket/ruleroftheskies/088.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies89 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/89.jpg",
+        "name": "Conkeldurr",
+        "url": "/tcgpocket/ruleroftheskies/089.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies90 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/90.jpg",
+        "name": "Minior",
+        "url": "/tcgpocket/ruleroftheskies/090.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies91 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/91.jpg",
+        "name": "Grimer",
+        "url": "/tcgpocket/ruleroftheskies/091.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies92 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/92.jpg",
+        "name": "Muk",
+        "url": "/tcgpocket/ruleroftheskies/092.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies93 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/93.jpg",
+        "name": "Poochyena",
+        "url": "/tcgpocket/ruleroftheskies/093.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies94 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/94.jpg",
+        "name": "Mightyena",
+        "url": "/tcgpocket/ruleroftheskies/094.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies95 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/95.jpg",
+        "name": "Zigzagoon",
+        "url": "/tcgpocket/ruleroftheskies/095.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies96 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/96.jpg",
+        "name": "Linoone",
+        "url": "/tcgpocket/ruleroftheskies/096.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies97 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/97.jpg",
+        "name": "Obstagoon",
+        "url": "/tcgpocket/ruleroftheskies/097.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies98 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/98.jpg",
+        "name": "Gulpin",
+        "url": "/tcgpocket/ruleroftheskies/098.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies99 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/99.jpg",
+        "name": "Swalot",
+        "url": "/tcgpocket/ruleroftheskies/099.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies100 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/100.jpg",
+        "name": "Absol",
+        "url": "/tcgpocket/ruleroftheskies/100.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies101 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/101.jpg",
+        "name": "Vullaby",
+        "url": "/tcgpocket/ruleroftheskies/101.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies102 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/102.jpg",
+        "name": "Mandibuzz",
+        "url": "/tcgpocket/ruleroftheskies/102.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Ruler of the Skies103 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/103.jpg",
+        "name": "Hoopa ex",
+        "url": "/tcgpocket/ruleroftheskies/103.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies104 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/104.jpg",
+        "name": "Skarmory",
+        "url": "/tcgpocket/ruleroftheskies/104.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies105 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/105.jpg",
+        "name": "Mawile",
+        "url": "/tcgpocket/ruleroftheskies/105.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies106 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/106.jpg",
+        "name": "Beldum",
+        "url": "/tcgpocket/ruleroftheskies/106.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies107 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/107.jpg",
+        "name": "Metang",
+        "url": "/tcgpocket/ruleroftheskies/107.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies108 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/108.jpg",
+        "name": "Metagross",
+        "url": "/tcgpocket/ruleroftheskies/108.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Ruler of the Skies109 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/109.jpg",
+        "name": "Metagross ex",
+        "url": "/tcgpocket/ruleroftheskies/109.shtml",
+        "details": {
+            "hp": "230HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies110 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/110.jpg",
+        "name": "Escavalier",
+        "url": "/tcgpocket/ruleroftheskies/110.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies111 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/111.jpg",
+        "name": "Genesect",
+        "url": "/tcgpocket/ruleroftheskies/111.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies112 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/112.jpg",
+        "name": "Duraludon",
+        "url": "/tcgpocket/ruleroftheskies/112.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies113 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/113.jpg",
+        "name": "Archaludon",
+        "url": "/tcgpocket/ruleroftheskies/113.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies114 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/114.jpg",
+        "name": "Varoom",
+        "url": "/tcgpocket/ruleroftheskies/114.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies115 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/115.jpg",
+        "name": "Revavroom",
+        "url": "/tcgpocket/ruleroftheskies/115.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies116 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/116.jpg",
+        "name": "Dratini",
+        "url": "/tcgpocket/ruleroftheskies/116.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies117 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/117.jpg",
+        "name": "Dragonair",
+        "url": "/tcgpocket/ruleroftheskies/117.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies118 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/118.jpg",
+        "name": "Dragonite",
+        "url": "/tcgpocket/ruleroftheskies/118.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies119 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/119.jpg",
+        "name": "Rayquaza",
+        "url": "/tcgpocket/ruleroftheskies/119.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Ruler of the Skies120 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/120.jpg",
+        "name": "Rayquaza ex",
+        "url": "/tcgpocket/ruleroftheskies/120.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies121 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/121.jpg",
+        "name": "Noibat",
+        "url": "/tcgpocket/ruleroftheskies/121.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies122 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/122.jpg",
+        "name": "Noivern",
+        "url": "/tcgpocket/ruleroftheskies/122.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies123 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/123.jpg",
+        "name": "Turtonator",
+        "url": "/tcgpocket/ruleroftheskies/123.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies124 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/124.jpg",
+        "name": "Drampa",
+        "url": "/tcgpocket/ruleroftheskies/124.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies125 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/125.jpg",
+        "name": "Applin",
+        "url": "/tcgpocket/ruleroftheskies/125.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies126 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/126.jpg",
+        "name": "Dipplin",
+        "url": "/tcgpocket/ruleroftheskies/126.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies127 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/127.jpg",
+        "name": "Hydrapple",
+        "url": "/tcgpocket/ruleroftheskies/127.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies128 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/128.jpg",
+        "name": "Cyclizar",
+        "url": "/tcgpocket/ruleroftheskies/128.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies129 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/129.jpg",
+        "name": "Rattata",
+        "url": "/tcgpocket/ruleroftheskies/129.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies130 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/130.jpg",
+        "name": "Raticate",
+        "url": "/tcgpocket/ruleroftheskies/130.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies131 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/131.jpg",
+        "name": "Eevee",
+        "url": "/tcgpocket/ruleroftheskies/131.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies132 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/132.jpg",
+        "name": "Aipom",
+        "url": "/tcgpocket/ruleroftheskies/132.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies133 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/133.jpg",
+        "name": "Ambipom",
+        "url": "/tcgpocket/ruleroftheskies/133.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies134 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/134.jpg",
+        "name": "Skitty",
+        "url": "/tcgpocket/ruleroftheskies/134.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies135 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/135.jpg",
+        "name": "Delcatty",
+        "url": "/tcgpocket/ruleroftheskies/135.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies136 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/136.jpg",
+        "name": "Kecleon",
+        "url": "/tcgpocket/ruleroftheskies/136.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies137 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/137.jpg",
+        "name": "Pidove",
+        "url": "/tcgpocket/ruleroftheskies/137.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies138 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/138.jpg",
+        "name": "Tranquill",
+        "url": "/tcgpocket/ruleroftheskies/138.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies139 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/139.jpg",
+        "name": "Unfezant",
+        "url": "/tcgpocket/ruleroftheskies/139.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies140 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/140.jpg",
+        "name": "Ducklett",
+        "url": "/tcgpocket/ruleroftheskies/140.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Ruler of the Skies141 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/141.jpg",
+        "name": "Swanna ex",
+        "url": "/tcgpocket/ruleroftheskies/141.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies142 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/142.jpg",
+        "name": "Furfrou",
+        "url": "/tcgpocket/ruleroftheskies/142.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies143 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/143.jpg",
+        "name": "Type: Null",
+        "url": "/tcgpocket/ruleroftheskies/143.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Ruler of the Skies144 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/144.jpg",
+        "name": "Silvally",
+        "url": "/tcgpocket/ruleroftheskies/144.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies145 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/145.jpg",
+        "name": "Order Pad",
+        "url": "/tcgpocket/ruleroftheskies/145.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies146 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/146.jpg",
+        "name": "Claw Fossil",
+        "url": "/tcgpocket/ruleroftheskies/146.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies147 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/147.jpg",
+        "name": "Root Fossil",
+        "url": "/tcgpocket/ruleroftheskies/147.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies148 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/148.jpg",
+        "name": "Deceptive Needle",
+        "url": "/tcgpocket/ruleroftheskies/148.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies149 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/149.jpg",
+        "name": "Clear Veil",
+        "url": "/tcgpocket/ruleroftheskies/149.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies150 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/150.jpg",
+        "name": "Psychic",
+        "url": "/tcgpocket/ruleroftheskies/150.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies151 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/151.jpg",
+        "name": "Drayden",
+        "url": "/tcgpocket/ruleroftheskies/151.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies152 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/152.jpg",
+        "name": "Skyla",
+        "url": "/tcgpocket/ruleroftheskies/152.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies153 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/153.jpg",
+        "name": "Wally",
+        "url": "/tcgpocket/ruleroftheskies/153.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies154 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/154.jpg",
+        "name": "Soothing Shore",
+        "url": "/tcgpocket/ruleroftheskies/154.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Ruler of the Skies155 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/155.jpg",
+        "name": "Rainbow Cave",
+        "url": "/tcgpocket/ruleroftheskies/155.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies156 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/156.jpg",
+        "name": "Wurmple",
+        "url": "/tcgpocket/ruleroftheskies/156.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies157 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/157.jpg",
+        "name": "Lileep",
+        "url": "/tcgpocket/ruleroftheskies/157.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies158 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/158.jpg",
+        "name": "Kricketune",
+        "url": "/tcgpocket/ruleroftheskies/158.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies159 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/159.jpg",
+        "name": "Accelgor",
+        "url": "/tcgpocket/ruleroftheskies/159.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies160 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/160.jpg",
+        "name": "Ponyta",
+        "url": "/tcgpocket/ruleroftheskies/160.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies161 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/161.jpg",
+        "name": "Quilava",
+        "url": "/tcgpocket/ruleroftheskies/161.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies162 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/162.jpg",
+        "name": "Kyogre",
+        "url": "/tcgpocket/ruleroftheskies/162.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies163 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/163.jpg",
+        "name": "Samurott",
+        "url": "/tcgpocket/ruleroftheskies/163.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies164 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/164.jpg",
+        "name": "Raichu",
+        "url": "/tcgpocket/ruleroftheskies/164.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies165 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/165.jpg",
+        "name": "Wattrel",
+        "url": "/tcgpocket/ruleroftheskies/165.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies166 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/166.jpg",
+        "name": "Clefairy",
+        "url": "/tcgpocket/ruleroftheskies/166.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies167 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/167.jpg",
+        "name": "Ralts",
+        "url": "/tcgpocket/ruleroftheskies/167.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies168 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/168.jpg",
+        "name": "Wynaut",
+        "url": "/tcgpocket/ruleroftheskies/168.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies169 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/169.jpg",
+        "name": "Oricorio",
+        "url": "/tcgpocket/ruleroftheskies/169.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies170 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/170.jpg",
+        "name": "Anorith",
+        "url": "/tcgpocket/ruleroftheskies/170.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies171 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/171.jpg",
+        "name": "Poochyena",
+        "url": "/tcgpocket/ruleroftheskies/171.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies172 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/172.jpg",
+        "name": "Gulpin",
+        "url": "/tcgpocket/ruleroftheskies/172.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies173 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/173.jpg",
+        "name": "Vullaby",
+        "url": "/tcgpocket/ruleroftheskies/173.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies174 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/174.jpg",
+        "name": "Genesect",
+        "url": "/tcgpocket/ruleroftheskies/174.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies175 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/175.jpg",
+        "name": "Dragonair",
+        "url": "/tcgpocket/ruleroftheskies/175.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies176 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/176.jpg",
+        "name": "Noivern",
+        "url": "/tcgpocket/ruleroftheskies/176.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies177 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/177.jpg",
+        "name": "Cyclizar",
+        "url": "/tcgpocket/ruleroftheskies/177.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies178 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/178.jpg",
+        "name": "Raticate",
+        "url": "/tcgpocket/ruleroftheskies/178.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Ruler of the Skies179 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/179.jpg",
+        "name": "Aipom",
+        "url": "/tcgpocket/ruleroftheskies/179.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies180 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/180.jpg",
+        "name": "Vespiquen ex",
+        "url": "/tcgpocket/ruleroftheskies/180.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies181 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/181.jpg",
+        "name": "Typhlosion ex",
+        "url": "/tcgpocket/ruleroftheskies/181.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies182 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/182.jpg",
+        "name": "Sharpedo ex",
+        "url": "/tcgpocket/ruleroftheskies/182.shtml",
+        "details": {
+            "hp": "190HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies183 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/183.jpg",
+        "name": "Wailord ex",
+        "url": "/tcgpocket/ruleroftheskies/183.shtml",
+        "details": {
+            "hp": "250HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies184 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/184.jpg",
+        "name": "Rotom ex",
+        "url": "/tcgpocket/ruleroftheskies/184.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies185 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/185.jpg",
+        "name": "Gallade ex",
+        "url": "/tcgpocket/ruleroftheskies/185.shtml",
+        "details": {
+            "hp": "220HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies186 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/186.jpg",
+        "name": "Hoopa ex",
+        "url": "/tcgpocket/ruleroftheskies/186.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies187 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/187.jpg",
+        "name": "Metagross ex",
+        "url": "/tcgpocket/ruleroftheskies/187.shtml",
+        "details": {
+            "hp": "230HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies188 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/188.jpg",
+        "name": "Rayquaza ex",
+        "url": "/tcgpocket/ruleroftheskies/188.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies189 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/189.jpg",
+        "name": "Swanna ex",
+        "url": "/tcgpocket/ruleroftheskies/189.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies190 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/190.jpg",
+        "name": "Psychic",
+        "url": "/tcgpocket/ruleroftheskies/190.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies191 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/191.jpg",
+        "name": "Drayden",
+        "url": "/tcgpocket/ruleroftheskies/191.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies192 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/192.jpg",
+        "name": "Skyla",
+        "url": "/tcgpocket/ruleroftheskies/192.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies193 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/193.jpg",
+        "name": "Wally",
+        "url": "/tcgpocket/ruleroftheskies/193.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies194 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/194.jpg",
+        "name": "Vespiquen ex",
+        "url": "/tcgpocket/ruleroftheskies/194.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies195 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/195.jpg",
+        "name": "Typhlosion ex",
+        "url": "/tcgpocket/ruleroftheskies/195.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies196 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/196.jpg",
+        "name": "Sharpedo ex",
+        "url": "/tcgpocket/ruleroftheskies/196.shtml",
+        "details": {
+            "hp": "190HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies197 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/197.jpg",
+        "name": "Wailord ex",
+        "url": "/tcgpocket/ruleroftheskies/197.shtml",
+        "details": {
+            "hp": "250HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies198 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/198.jpg",
+        "name": "Gallade ex",
+        "url": "/tcgpocket/ruleroftheskies/198.shtml",
+        "details": {
+            "hp": "220HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies199 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/199.jpg",
+        "name": "Hoopa ex",
+        "url": "/tcgpocket/ruleroftheskies/199.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies200 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/200.jpg",
+        "name": "Metagross ex",
+        "url": "/tcgpocket/ruleroftheskies/200.shtml",
+        "details": {
+            "hp": "230HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Ruler of the Skies201 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/201.jpg",
+        "name": "Swanna ex",
+        "url": "/tcgpocket/ruleroftheskies/201.shtml",
+        "details": {
+            "hp": "HP",
+            "type": "/tcgpocket/image/.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Ruler of the Skies202 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/202.jpg",
+        "name": "Rotom ex",
+        "url": "/tcgpocket/ruleroftheskies/202.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Ruler of the Skies203 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/203.jpg",
+        "name": "Rayquaza ex",
+        "url": "/tcgpocket/ruleroftheskies/203.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Ruler of the Skies204 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/204.jpg",
+        "name": "Vulpix",
+        "url": "/tcgpocket/ruleroftheskies/204.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies205 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/205.jpg",
+        "name": "Mudkip",
+        "url": "/tcgpocket/ruleroftheskies/205.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies206 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/206.jpg",
+        "name": "Marshtomp",
+        "url": "/tcgpocket/ruleroftheskies/206.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies207 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/207.jpg",
+        "name": "Swampert",
+        "url": "/tcgpocket/ruleroftheskies/207.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies208 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/208.jpg",
+        "name": "Electabuzz",
+        "url": "/tcgpocket/ruleroftheskies/208.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies209 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/209.jpg",
+        "name": "Plusle",
+        "url": "/tcgpocket/ruleroftheskies/209.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies210 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/210.jpg",
+        "name": "Minun",
+        "url": "/tcgpocket/ruleroftheskies/210.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies211 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/211.jpg",
+        "name": "Mr. Mime",
+        "url": "/tcgpocket/ruleroftheskies/211.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies212 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/212.jpg",
+        "name": "Mewtwo",
+        "url": "/tcgpocket/ruleroftheskies/212.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies213 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/213.jpg",
+        "name": "Roggenrola",
+        "url": "/tcgpocket/ruleroftheskies/213.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies214 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/214.jpg",
+        "name": "Boldore",
+        "url": "/tcgpocket/ruleroftheskies/214.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies215 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/215.jpg",
+        "name": "Falinks",
+        "url": "/tcgpocket/ruleroftheskies/215.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies216 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/216.jpg",
+        "name": "Koffing",
+        "url": "/tcgpocket/ruleroftheskies/216.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies217 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/217.jpg",
+        "name": "Weezing",
+        "url": "/tcgpocket/ruleroftheskies/217.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies218 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/218.jpg",
+        "name": "Meowth",
+        "url": "/tcgpocket/ruleroftheskies/218.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies219 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/219.jpg",
+        "name": "Perrserker",
+        "url": "/tcgpocket/ruleroftheskies/219.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies220 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/220.jpg",
+        "name": "Rattata",
+        "url": "/tcgpocket/ruleroftheskies/220.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies221 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/221.jpg",
+        "name": "Raticate",
+        "url": "/tcgpocket/ruleroftheskies/221.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies222 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/222.jpg",
+        "name": "Smeargle",
+        "url": "/tcgpocket/ruleroftheskies/222.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Ruler of the Skies223 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/223.jpg",
+        "name": "Buneary",
+        "url": "/tcgpocket/ruleroftheskies/223.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Ruler of the Skies224 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/224.jpg",
+        "name": "Blacephalon ex",
+        "url": "/tcgpocket/ruleroftheskies/224.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Ruler of the Skies225 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/225.jpg",
+        "name": "Ninetales ex",
+        "url": "/tcgpocket/ruleroftheskies/225.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Ruler of the Skies226 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/226.jpg",
+        "name": "Swampert ex",
+        "url": "/tcgpocket/ruleroftheskies/226.shtml",
+        "details": {
+            "hp": "230HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Ruler of the Skies227 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/227.jpg",
+        "name": "Gardevoir ex",
+        "url": "/tcgpocket/ruleroftheskies/227.shtml",
+        "details": {
+            "hp": "210HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Ruler of the Skies228 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/228.jpg",
+        "name": "Lopunny ex",
+        "url": "/tcgpocket/ruleroftheskies/228.shtml",
+        "details": {
+            "hp": "190HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/psychic.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Ruler of the Skies229 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/229.jpg",
+        "name": "Gigalith ex",
+        "url": "/tcgpocket/ruleroftheskies/229.shtml",
+        "details": {
+            "hp": "190HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Ruler of the Skies230 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/230.jpg",
+        "name": "Zoroark ex",
+        "url": "/tcgpocket/ruleroftheskies/230.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Ruler of the Skies231 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/231.jpg",
+        "name": "Kangaskhan ex",
+        "url": "/tcgpocket/ruleroftheskies/231.shtml",
+        "details": {
+            "hp": "180HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Ruler of the Skies232 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/232.jpg",
+        "name": "Raichu",
+        "url": "/tcgpocket/ruleroftheskies/232.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    },
+    {
+        "set": {
+            "setName": "Ruler of the Skies",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Ruler of the Skies233 / 155"
+        },
+        "thumbnail": "/tcgpocket/th/ruleroftheskies/233.jpg",
+        "name": "Dragonair",
+        "url": "/tcgpocket/ruleroftheskies/233.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    }
+]

@@ -1,0 +1,2642 @@
+[
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition1 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/1.jpg",
+        "name": "Volbeat",
+        "url": "/tcgpocket/teamrocket'sambition/001.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition2 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/2.jpg",
+        "name": "Illumise",
+        "url": "/tcgpocket/teamrocket'sambition/002.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition3 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/3.jpg",
+        "name": "Snivy",
+        "url": "/tcgpocket/teamrocket'sambition/003.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition4 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/4.jpg",
+        "name": "Servine",
+        "url": "/tcgpocket/teamrocket'sambition/004.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Team Rocket's Ambition5 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/5.jpg",
+        "name": "Serperior",
+        "url": "/tcgpocket/teamrocket'sambition/005.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/grass.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition6 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/6.jpg",
+        "name": "Magmar",
+        "url": "/tcgpocket/teamrocket'sambition/006.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Team Rocket's Ambition7 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/7.jpg",
+        "name": "Moltres ex",
+        "url": "/tcgpocket/teamrocket'sambition/007.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition8 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/8.jpg",
+        "name": "Houndour",
+        "url": "/tcgpocket/teamrocket'sambition/008.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition9 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/9.jpg",
+        "name": "Houndoom",
+        "url": "/tcgpocket/teamrocket'sambition/009.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition10 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/10.jpg",
+        "name": "Fennekin",
+        "url": "/tcgpocket/teamrocket'sambition/010.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition11 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/11.jpg",
+        "name": "Braixen",
+        "url": "/tcgpocket/teamrocket'sambition/011.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Team Rocket's Ambition12 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/12.jpg",
+        "name": "Delphox",
+        "url": "/tcgpocket/teamrocket'sambition/012.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition13 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/13.jpg",
+        "name": "Lapras",
+        "url": "/tcgpocket/teamrocket'sambition/013.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Team Rocket's Ambition14 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/14.jpg",
+        "name": "Articuno ex",
+        "url": "/tcgpocket/teamrocket'sambition/014.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition15 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/15.jpg",
+        "name": "Wingull",
+        "url": "/tcgpocket/teamrocket'sambition/015.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition16 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/16.jpg",
+        "name": "Pelipper",
+        "url": "/tcgpocket/teamrocket'sambition/016.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition17 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/17.jpg",
+        "name": "Basculin",
+        "url": "/tcgpocket/teamrocket'sambition/017.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition18 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/18.jpg",
+        "name": "Basculegion",
+        "url": "/tcgpocket/teamrocket'sambition/018.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition19 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/19.jpg",
+        "name": "Voltorb",
+        "url": "/tcgpocket/teamrocket'sambition/019.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition20 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/20.jpg",
+        "name": "Electrode",
+        "url": "/tcgpocket/teamrocket'sambition/020.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Team Rocket's Ambition21 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/21.jpg",
+        "name": "Zapdos ex",
+        "url": "/tcgpocket/teamrocket'sambition/021.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition22 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/22.jpg",
+        "name": "Blitzle",
+        "url": "/tcgpocket/teamrocket'sambition/022.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition23 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/23.jpg",
+        "name": "Zebstrika",
+        "url": "/tcgpocket/teamrocket'sambition/023.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition24 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/24.jpg",
+        "name": "Pincurchin",
+        "url": "/tcgpocket/teamrocket'sambition/024.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition25 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/25.jpg",
+        "name": "Slowpoke",
+        "url": "/tcgpocket/teamrocket'sambition/025.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Team Rocket's Ambition26 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/26.jpg",
+        "name": "Slowking ex",
+        "url": "/tcgpocket/teamrocket'sambition/026.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition27 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/27.jpg",
+        "name": "Drowzee",
+        "url": "/tcgpocket/teamrocket'sambition/027.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition28 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/28.jpg",
+        "name": "Hypno",
+        "url": "/tcgpocket/teamrocket'sambition/028.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition29 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/29.jpg",
+        "name": "Mr. Mime",
+        "url": "/tcgpocket/teamrocket'sambition/029.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Team Rocket's Ambition30 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/30.jpg",
+        "name": "Mewtwo",
+        "url": "/tcgpocket/teamrocket'sambition/030.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition31 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/31.jpg",
+        "name": "Espurr",
+        "url": "/tcgpocket/teamrocket'sambition/031.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition32 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/32.jpg",
+        "name": "Meowstic",
+        "url": "/tcgpocket/teamrocket'sambition/032.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition33 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/33.jpg",
+        "name": "Oranguru",
+        "url": "/tcgpocket/teamrocket'sambition/033.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition34 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/34.jpg",
+        "name": "Gimmighoul",
+        "url": "/tcgpocket/teamrocket'sambition/034.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition35 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/35.jpg",
+        "name": "Cubone",
+        "url": "/tcgpocket/teamrocket'sambition/035.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition36 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/36.jpg",
+        "name": "Marowak",
+        "url": "/tcgpocket/teamrocket'sambition/036.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Team Rocket's Ambition37 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/37.jpg",
+        "name": "Landorus",
+        "url": "/tcgpocket/teamrocket'sambition/037.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fighting.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition38 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/38.jpg",
+        "name": "Ekans",
+        "url": "/tcgpocket/teamrocket'sambition/038.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition39 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/39.jpg",
+        "name": "Arbok",
+        "url": "/tcgpocket/teamrocket'sambition/039.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition40 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/40.jpg",
+        "name": "Grimer",
+        "url": "/tcgpocket/teamrocket'sambition/040.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition41 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/41.jpg",
+        "name": "Muk",
+        "url": "/tcgpocket/teamrocket'sambition/041.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition42 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/42.jpg",
+        "name": "Koffing",
+        "url": "/tcgpocket/teamrocket'sambition/042.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Team Rocket's Ambition43 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/43.jpg",
+        "name": "Weezing ex",
+        "url": "/tcgpocket/teamrocket'sambition/043.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition44 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/44.jpg",
+        "name": "Sneasel",
+        "url": "/tcgpocket/teamrocket'sambition/044.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/grass.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition45 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/45.jpg",
+        "name": "Togedemaru",
+        "url": "/tcgpocket/teamrocket'sambition/045.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition46 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/46.jpg",
+        "name": "Cufant",
+        "url": "/tcgpocket/teamrocket'sambition/046.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition47 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/47.jpg",
+        "name": "Copperajah",
+        "url": "/tcgpocket/teamrocket'sambition/047.shtml",
+        "details": {
+            "hp": "160HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "4"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition48 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/48.jpg",
+        "name": "Tinkatink",
+        "url": "/tcgpocket/teamrocket'sambition/048.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition49 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/49.jpg",
+        "name": "Tinkatuff",
+        "url": "/tcgpocket/teamrocket'sambition/049.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Team Rocket's Ambition50 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/50.jpg",
+        "name": "Tinkaton",
+        "url": "/tcgpocket/teamrocket'sambition/050.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition51 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/51.jpg",
+        "name": "Gholdengo",
+        "url": "/tcgpocket/teamrocket'sambition/051.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition52 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/52.jpg",
+        "name": "Gible",
+        "url": "/tcgpocket/teamrocket'sambition/052.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition53 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/53.jpg",
+        "name": "Gabite",
+        "url": "/tcgpocket/teamrocket'sambition/053.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Team Rocket's Ambition54 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/54.jpg",
+        "name": "Garchomp",
+        "url": "/tcgpocket/teamrocket'sambition/054.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition55 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/55.jpg",
+        "name": "Duraludon",
+        "url": "/tcgpocket/teamrocket'sambition/055.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Team Rocket's Ambition56 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/56.jpg",
+        "name": "Archaludon",
+        "url": "/tcgpocket/teamrocket'sambition/056.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition57 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/57.jpg",
+        "name": "Regidrago",
+        "url": "/tcgpocket/teamrocket'sambition/057.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/dragon.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition58 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/58.jpg",
+        "name": "Rattata",
+        "url": "/tcgpocket/teamrocket'sambition/058.shtml",
+        "details": {
+            "hp": "40HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond4.png",
+            "pokedex": "Team Rocket's Ambition59 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/59.jpg",
+        "name": "Raticate ex",
+        "url": "/tcgpocket/teamrocket'sambition/059.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond4.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition60 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/60.jpg",
+        "name": "Meowth",
+        "url": "/tcgpocket/teamrocket'sambition/060.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition61 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/61.jpg",
+        "name": "Persian",
+        "url": "/tcgpocket/teamrocket'sambition/061.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition62 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/62.jpg",
+        "name": "Kecleon",
+        "url": "/tcgpocket/teamrocket'sambition/062.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Team Rocket's Ambition63 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/63.jpg",
+        "name": "Happiny",
+        "url": "/tcgpocket/teamrocket'sambition/063.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition64 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/64.jpg",
+        "name": "Furfrou",
+        "url": "/tcgpocket/teamrocket'sambition/064.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition65 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/65.jpg",
+        "name": "Lechonk",
+        "url": "/tcgpocket/teamrocket'sambition/065.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition66 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/66.jpg",
+        "name": "Oinkologne",
+        "url": "/tcgpocket/teamrocket'sambition/066.shtml",
+        "details": {
+            "hp": "110HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition67 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/67.jpg",
+        "name": "Team Rocket's Thieving Machine",
+        "url": "/tcgpocket/teamrocket'sambition/067.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition68 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/68.jpg",
+        "name": "Team Rocket's Goo-zooka",
+        "url": "/tcgpocket/teamrocket'sambition/068.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond1.png",
+            "pokedex": "Team Rocket's Ambition69 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/69.jpg",
+        "name": "Team Rocket's Researcher",
+        "url": "/tcgpocket/teamrocket'sambition/069.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition70 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/70.jpg",
+        "name": "Team Rocket's Master Plan",
+        "url": "/tcgpocket/teamrocket'sambition/070.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond2.png",
+            "pokedex": "Team Rocket's Ambition71 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/71.jpg",
+        "name": "Team Rocket's Boss",
+        "url": "/tcgpocket/teamrocket'sambition/071.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/diamond3.png",
+            "pokedex": "Team Rocket's Ambition72 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/72.jpg",
+        "name": "Arcade",
+        "url": "/tcgpocket/teamrocket'sambition/072.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/diamond3.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Team Rocket's Ambition73 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/73.jpg",
+        "name": "Delphox",
+        "url": "/tcgpocket/teamrocket'sambition/073.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Team Rocket's Ambition74 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/74.jpg",
+        "name": "Hypno",
+        "url": "/tcgpocket/teamrocket'sambition/074.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Team Rocket's Ambition75 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/75.jpg",
+        "name": "Tinkaton",
+        "url": "/tcgpocket/teamrocket'sambition/075.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Team Rocket's Ambition76 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/76.jpg",
+        "name": "Kecleon",
+        "url": "/tcgpocket/teamrocket'sambition/076.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Team Rocket's Ambition77 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/77.jpg",
+        "name": "Happiny",
+        "url": "/tcgpocket/teamrocket'sambition/077.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star1.png",
+            "pokedex": "Team Rocket's Ambition78 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/78.jpg",
+        "name": "Lechonk",
+        "url": "/tcgpocket/teamrocket'sambition/078.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition79 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/79.jpg",
+        "name": "Moltres ex",
+        "url": "/tcgpocket/teamrocket'sambition/079.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition80 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/80.jpg",
+        "name": "Articuno ex",
+        "url": "/tcgpocket/teamrocket'sambition/080.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition81 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/81.jpg",
+        "name": "Zapdos ex",
+        "url": "/tcgpocket/teamrocket'sambition/081.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition82 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/82.jpg",
+        "name": "Slowking ex",
+        "url": "/tcgpocket/teamrocket'sambition/082.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition83 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/83.jpg",
+        "name": "Weezing ex",
+        "url": "/tcgpocket/teamrocket'sambition/083.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition84 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/84.jpg",
+        "name": "Raticate ex",
+        "url": "/tcgpocket/teamrocket'sambition/084.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition85 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/85.jpg",
+        "name": "Team Rocket's Researcher",
+        "url": "/tcgpocket/teamrocket'sambition/085.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition86 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/86.jpg",
+        "name": "Team Rocket's Master Plan",
+        "url": "/tcgpocket/teamrocket'sambition/086.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition87 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/87.jpg",
+        "name": "Team Rocket's Boss",
+        "url": "/tcgpocket/teamrocket'sambition/087.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition88 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/88.jpg",
+        "name": "Moltres ex",
+        "url": "/tcgpocket/teamrocket'sambition/088.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition89 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/89.jpg",
+        "name": "Articuno ex",
+        "url": "/tcgpocket/teamrocket'sambition/089.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/metal.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition90 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/90.jpg",
+        "name": "Zapdos ex",
+        "url": "/tcgpocket/teamrocket'sambition/090.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition91 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/91.jpg",
+        "name": "Slowking ex",
+        "url": "/tcgpocket/teamrocket'sambition/091.shtml",
+        "details": {
+            "hp": "130HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "3"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition92 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/92.jpg",
+        "name": "Weezing ex",
+        "url": "/tcgpocket/teamrocket'sambition/092.shtml",
+        "details": {
+            "hp": "140HP",
+            "type": "/tcgpocket/image/darkness.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star2.png",
+            "pokedex": "Team Rocket's Ambition93 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/93.jpg",
+        "name": "Raticate ex",
+        "url": "/tcgpocket/teamrocket'sambition/093.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/star3.png",
+            "pokedex": "Team Rocket's Ambition94 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/94.jpg",
+        "name": "Team Rocket's Master Plan",
+        "url": "/tcgpocket/teamrocket'sambition/094.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/star3.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Team Rocket's Ambition95 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/95.jpg",
+        "name": "Vulpix",
+        "url": "/tcgpocket/teamrocket'sambition/095.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Team Rocket's Ambition96 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/96.jpg",
+        "name": "Ninetales",
+        "url": "/tcgpocket/teamrocket'sambition/096.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Team Rocket's Ambition97 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/97.jpg",
+        "name": "Goldeen",
+        "url": "/tcgpocket/teamrocket'sambition/097.shtml",
+        "details": {
+            "hp": "50HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Team Rocket's Ambition98 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/98.jpg",
+        "name": "Seaking",
+        "url": "/tcgpocket/teamrocket'sambition/098.shtml",
+        "details": {
+            "hp": "90HP",
+            "type": "/tcgpocket/image/water.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Team Rocket's Ambition99 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/99.jpg",
+        "name": "Toxel",
+        "url": "/tcgpocket/teamrocket'sambition/099.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Team Rocket's Ambition100 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/100.jpg",
+        "name": "Sinistea",
+        "url": "/tcgpocket/teamrocket'sambition/100.shtml",
+        "details": {
+            "hp": "30HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Team Rocket's Ambition101 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/101.jpg",
+        "name": "Polteageist",
+        "url": "/tcgpocket/teamrocket'sambition/101.shtml",
+        "details": {
+            "hp": "70HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Team Rocket's Ambition102 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/102.jpg",
+        "name": "Mawile",
+        "url": "/tcgpocket/teamrocket'sambition/102.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Team Rocket's Ambition103 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/103.jpg",
+        "name": "Taillow",
+        "url": "/tcgpocket/teamrocket'sambition/103.shtml",
+        "details": {
+            "hp": "60HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny1.png",
+            "pokedex": "Team Rocket's Ambition104 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/104.jpg",
+        "name": "Swellow",
+        "url": "/tcgpocket/teamrocket'sambition/104.shtml",
+        "details": {
+            "hp": "80HP",
+            "type": "/tcgpocket/image/colorless.png",
+            "weakness": {
+                "image": "/tcgpocket/image/electric.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny1.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Team Rocket's Ambition105 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/105.jpg",
+        "name": "Charizard ex",
+        "url": "/tcgpocket/teamrocket'sambition/105.shtml",
+        "details": {
+            "hp": "220HP",
+            "type": "/tcgpocket/image/fire.png",
+            "weakness": {
+                "image": "/tcgpocket/image/water.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Team Rocket's Ambition106 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/106.jpg",
+        "name": "Toxtricity ex",
+        "url": "/tcgpocket/teamrocket'sambition/106.shtml",
+        "details": {
+            "hp": "150HP",
+            "type": "/tcgpocket/image/electric.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fighting.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Team Rocket's Ambition107 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/107.jpg",
+        "name": "Mimikyu ex",
+        "url": "/tcgpocket/teamrocket'sambition/107.shtml",
+        "details": {
+            "hp": "120HP",
+            "type": "/tcgpocket/image/psychic.png",
+            "weakness": {
+                "image": "/tcgpocket/image/darkness.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "2"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/shiny2.png",
+            "pokedex": "Team Rocket's Ambition108 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/108.jpg",
+        "name": "Mawile ex",
+        "url": "/tcgpocket/teamrocket'sambition/108.shtml",
+        "details": {
+            "hp": "170HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/shiny2.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Team Rocket's Ambition109 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/109.jpg",
+        "name": "Gholdengo",
+        "url": "/tcgpocket/teamrocket'sambition/109.shtml",
+        "details": {
+            "hp": "100HP",
+            "type": "/tcgpocket/image/metal.png",
+            "weakness": {
+                "image": "/tcgpocket/image/fire.png",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "/tcgpocket/image/colorless.png",
+                "count": "1"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    },
+    {
+        "set": {
+            "setName": "Team Rocket's Ambition",
+            "image": "/tcgpocket/image/crown.png",
+            "pokedex": "Team Rocket's Ambition110 / 72"
+        },
+        "thumbnail": "/tcgpocket/th/teamrocket'sambition/110.jpg",
+        "name": "Team Rocket's Goo-zooka",
+        "url": "/tcgpocket/teamrocket'sambition/110.shtml",
+        "details": {
+            "hp": "",
+            "type": "",
+            "weakness": {
+                "image": "",
+                "value": "20"
+            },
+            "retreat": {
+                "image": "",
+                "count": "0"
+            }
+        },
+        "expansion": "booster.png",
+        "rarity": "/tcgpocket/image/crown.png"
+    }
+]
