@@ -1,5 +1,6 @@
 import { auth } from "@/lib/auth";
 import type { Metadata } from "next";
+import { appendFileSync } from "node:fs";
 import { headers } from "next/headers";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -19,12 +20,25 @@ export const instant = false;
  * Displays options for users to sign in using GitHub or Google. If the user is already authenticated, they are redirected to the root path.
  */
 export default async function Page() {
+  const requestHeaders = await headers();
+  // #region agent log
+  // eslint-disable-next-line react-hooks/purity
+  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "A,D", location: "app/(routes)/signin/page.tsx:Page:entry", message: "Signin page entered with imports and request classification", data: { types: { Link: typeof Link, SignInButtons: typeof SignInButtons }, request: { hasRscHeader: requestHeaders.has("rsc"), fetchMode: requestHeaders.get("sec-fetch-mode"), fetchSite: requestHeaders.get("sec-fetch-site"), cookieNames: requestHeaders.get("cookie")?.split(";").map((cookie) => cookie.trim().split("=")[0]).filter(Boolean) ?? [] } }, timestamp: Date.now() })}\n`);
+  // #endregion
   const session = await auth.api.getSession({
-    headers: await headers(),
+    headers: requestHeaders,
   });
+  // #region agent log
+  // eslint-disable-next-line react-hooks/purity
+  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "A,D", location: "app/(routes)/signin/page.tsx:Page:after-session", message: "Signin session lookup completed", data: { hasSession: Boolean(session), redirectBranch: Boolean(session) }, timestamp: Date.now() })}\n`);
+  // #endregion
 
   if (session) redirect("/");
 
+  // #region agent log
+  // eslint-disable-next-line react-hooks/purity
+  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "A", location: "app/(routes)/signin/page.tsx:Page:before-return", message: "Signin page returning anonymous tree", data: { signInButtonsType: typeof SignInButtons }, timestamp: Date.now() })}\n`);
+  // #endregion
   return (
     <main className="relative isolate flex min-h-[calc(100svh-4rem)] items-center overflow-hidden bg-[#faf8f6] px-4 py-10 sm:px-6 lg:py-14 dark:bg-[#0c0b0d]">
       <div
