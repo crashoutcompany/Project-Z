@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     "Sign in to trade cards and manage your Pocket Trading collection.",
 };
 
+export const instant = false;
+
 /**
  * Renders the sign-in page, redirecting authenticated users to the home page.
  *
