@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Menu } from "lucide-react";
 import { appendFileSync } from "node:fs";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "@/next-themes/modetoggle";
 import { auth } from "@/lib/auth";
@@ -13,19 +13,19 @@ export const Navbar = async () => {
   const requestHeaders = await headers();
   // #region agent log
   // eslint-disable-next-line react-hooks/purity
-  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "B,D", location: "components/Navbar.tsx:Navbar:entry", message: "Navbar entered with component types and request classification", data: { types: { Link: typeof Link, Menu: typeof Menu, Button: typeof Button, Sheet: typeof Sheet, SheetContent: typeof SheetContent, SheetTrigger: typeof SheetTrigger, ModeToggle: typeof ModeToggle, AuthButton: typeof AuthButton }, request: { hasRscHeader: requestHeaders.has("rsc"), fetchMode: requestHeaders.get("sec-fetch-mode"), fetchSite: requestHeaders.get("sec-fetch-site"), cookieNames: requestHeaders.get("cookie")?.split(";").map((cookie) => cookie.trim().split("=")[0]).filter(Boolean) ?? [] } }, timestamp: Date.now() })}\n`);
+  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "B,D", location: "components/Navbar.tsx:Navbar:entry", message: "Navbar entered with component types and request classification", data: { types: { Link: typeof Link, Menu: typeof Menu, Sheet: typeof Sheet, SheetContent: typeof SheetContent, SheetTrigger: typeof SheetTrigger, ModeToggle: typeof ModeToggle, AuthButton: typeof AuthButton }, request: { hasRscHeader: requestHeaders.has("rsc"), fetchMode: requestHeaders.get("sec-fetch-mode"), fetchSite: requestHeaders.get("sec-fetch-site"), cookieNames: requestHeaders.get("cookie")?.split(";").map((cookie) => cookie.trim().split("=")[0]).filter(Boolean) ?? [] } }, timestamp: 0 })}\n`);
   // #endregion
   const session = await auth.api.getSession({
     headers: requestHeaders,
   });
   // #region agent log
   // eslint-disable-next-line react-hooks/purity
-  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "B,D", location: "components/Navbar.tsx:Navbar:after-session", message: "Navbar session lookup completed", data: { hasSession: Boolean(session), hasUser: Boolean(session?.user) }, timestamp: Date.now() })}\n`);
+  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "B,D", location: "components/Navbar.tsx:Navbar:after-session", message: "Navbar session lookup completed", data: { hasSession: Boolean(session), hasUser: Boolean(session?.user) }, timestamp: 0 })}\n`);
   // #endregion
   console.log(session);
   // #region agent log
   // eslint-disable-next-line react-hooks/purity
-  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "B", location: "components/Navbar.tsx:Navbar:before-return", message: "Navbar returning shared component tree", data: { authBranch: session ? "authenticated" : "anonymous" }, timestamp: Date.now() })}\n`);
+  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "B", location: "components/Navbar.tsx:Navbar:before-return", message: "Navbar returning shared component tree without render-prop composition", data: { authBranch: session ? "authenticated" : "anonymous", sheetTriggerRenderProp: false }, timestamp: 0 })}\n`);
   // #endregion
   return (
     <header className="bg-background/80 sticky top-0 z-50 w-full border-b backdrop-blur-sm">
@@ -70,13 +70,15 @@ export const Navbar = async () => {
           <Sheet>
             <SheetTrigger
               nativeButton
-              render={
-                <Button variant="ghost" size="icon" className="md:hidden">
-                  <Menu className="h-5 w-5" />
-                  <span className="sr-only">Toggle menu</span>
-                </Button>
-              }
-            ></SheetTrigger>
+              className={buttonVariants({
+                variant: "ghost",
+                size: "icon",
+                className: "md:hidden",
+              })}
+            >
+              <Menu className="h-5 w-5" />
+              <span className="sr-only">Toggle menu</span>
+            </SheetTrigger>
             <SheetContent side="right">
               <nav className="mt-8 flex flex-col gap-4">
                 <Link

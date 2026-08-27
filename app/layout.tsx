@@ -45,7 +45,7 @@ export default function RootLayout({
 }>) {
   // #region agent log
   // eslint-disable-next-line react-hooks/purity
-  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "C", location: "app/layout.tsx:RootLayout:entry", message: "Root layout entered with shared component types", data: { types: { ThemeProvider: typeof ThemeProvider, ReactScan: typeof ReactScan, Navbar: typeof Navbar, Toaster: typeof Toaster }, hasChildren: children != null }, timestamp: Date.now() })}\n`);
+  appendFileSync("/opt/cursor/logs/debug.log", `${JSON.stringify({ hypothesisId: "C", location: "app/layout.tsx:RootLayout:entry", message: "Root layout entered with shared component types", data: { types: { ThemeProvider: typeof ThemeProvider, ReactScan: typeof ReactScan, Navbar: typeof Navbar, Toaster: typeof Toaster }, hasChildren: children != null }, timestamp: 0 })}\n`);
   // #endregion
   return (
     <html lang="en" suppressHydrationWarning>
