@@ -24,6 +24,7 @@ import pulsingAura from "../scripts/pulsing-aura/pulsing-aura.json";
 import paradoxDrive from "../scripts/paradox-drive/paradox-drive.json";
 import everydayWonders from "../scripts/everyday-wonders/everyday-wonders.json";
 import rulerOfTheSkies from "../scripts/ruler-of-the-skies/ruler-of-the-skies.json";
+import teamRocketsAmbition from "../scripts/team-rockets-ambition/team-rockets-ambition.json";
 import promoA from "../scripts/promo-a/promo-a.json";
 import promoB from "../scripts/promo-b/promo-b.json";
 
@@ -305,6 +306,7 @@ async function main() {
     { cards: paradoxDrive, setName: "Paradox Drive" },
     { cards: everydayWonders, setName: "Everyday Wonders" },
     { cards: rulerOfTheSkies, setName: "Ruler of the Skies" },
+    { cards: teamRocketsAmbition, setName: "Team Rocket's Ambition" },
     { cards: promoA, setName: "Promo-A" },
     { cards: promoB, setName: "Promo-B" },
   ];
@@ -385,6 +387,9 @@ async function main() {
           break;
         case "Ruler of the Skies":
           setId = rulerOfTheSkiesSet.id;
+          break;
+        case "Team Rocket's Ambition":
+          setId = teamRocketsAmbitionSet.id;
           break;
         case "Promo-A":
           setId = promoASet.id;
