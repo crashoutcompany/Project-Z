@@ -58,66 +58,116 @@ model Verification {
   updatedAt  DateTime @updatedAt
 }
 
+enum CardType {
+  POKEMON
+  TRAINER
+}
+
+enum Stage {
+  BASIC
+  STAGE1
+  STAGE2
+}
+
+enum TrainerType {
+  SUPPORTER
+  ITEM
+  TOOL
+  STADIUM
+}
+
+enum DamageKind {
+  NONE
+  FIXED
+  PLUS
+  SCALING
+  MINUS
+}
+
+enum EffectKind {
+  ABILITY
+  TRAINER
+}
+
 model Card {
-  id          Int      @id @default(autoincrement()) @map("card_id")
+  id          Int          @id @default(autoincrement()) @map("card_id")
+  setId       Int          @map("set_id")
+  set         Set          @relation(fields: [setId], references: [id])
+  number      Int
   name        String
-  type        String
-  image       String
-  set         Set      @relation(fields: [setId], references: [id])
-  setId       Int      @map("set_id")
-  details     Details?
-  expansion   String
-  pokedex     String
-  url         String
-  thumbnail   String
+  cardType    CardType
+  imageUrl    String
   rarity      String
-  isTradeable Boolean  @default(false) @map("is_tradeable")
+  isTradeable Boolean      @default(false) @map("is_tradeable")
+  pack        String?
+
+  // Pokémon-only (null for trainers)
+  energyType  String?
+  hp          Int?
+  stage       Stage?
+  isEx        Boolean      @default(false)
+  isBaby      Boolean      @default(false)
+  weakness    String?
+  retreatCost Int?
+
+  // Trainer-only
+  trainerType TrainerType?
+
+  attacks     Attack[]
+  effects     CardEffect[]
   trades      Trade[]
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
 
-  @@unique([name, setId, pokedex])
+  @@unique([setId, number])
+  @@index([name])
+  @@index([cardType, stage])
+  @@index([energyType])
 }
 
 model Set {
-  id      Int    @id @default(autoincrement()) @map("set_id")
-  setName String @unique
-  image   String
-  cards   Card[]
+  id          Int       @id @default(autoincrement()) @map("set_id")
+  code        String    @unique
+  setName     String    @unique
+  image       String
+  releaseDate DateTime?
+  cards       Card[]
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
 }
 
-model Details {
-  id                Int           @id @default(autoincrement()) @map("details_id")
-  hp                Int
-  type              String
-  weaknessType      WeaknessType? @relation(fields: [weaknessTypeImage, weaknessTypeValue], references: [image, value])
-  weaknessTypeImage String?       @map("weakness_type_image")
-  weaknessTypeValue String?       @map("weakness_type_value")
-  retreatCost       RetreatCost?  @relation(fields: [retreatCostImage, retreatCostCount], references: [image, count])
-  retreatCostImage  String?       @map("retreat_cost_image")
-  retreatCostCount  Int?          @map("retreat_cost_count")
-  card              Card          @relation(fields: [cardId], references: [id])
-  cardId            Int           @unique @map("card_id")
+model Attack {
+  id          Int        @id @default(autoincrement())
+  cardId      Int        @map("card_id")
+  card        Card       @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  position    Int
+  name        String
+  damageRaw   String
+  damageBase  Int?
+  damageKind  DamageKind
+  energyCost  Int
+  energyTypes String[]
+  effectText  String
+  tags        String[]
+
+  @@unique([cardId, position])
+  @@index([energyCost])
+  @@index([tags], type: Gin)
 }
 
-model WeaknessType {
-  image   String
-  value   String
-  details Details[]
+model CardEffect {
+  id         Int        @id @default(autoincrement())
+  cardId     Int        @map("card_id")
+  card       Card       @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  kind       EffectKind
+  name       String?
+  effectText String
+  tags       String[]
 
-  @@id(name: "imageValue", [image, value])
-}
-
-model RetreatCost {
-  image   String
-  count   Int
-  details Details[]
-
-  @@id(name: "imageCount", [image, count])
+  @@unique([cardId, kind])
+  @@index([tags], type: Gin)
 }
 
 // The receiver is the one who will accept the trade
