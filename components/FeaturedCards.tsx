@@ -18,7 +18,7 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
         rarity: "Ultra Rare",
         price: 299.99,
         rating: 4.9,
-        image: "/tcgpocket/th/geneticapex/36.jpg",
+        image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_036_EN.webp",
       },
       {
         id: 2,
@@ -27,7 +27,7 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
         rarity: "Rare",
         price: 49.99,
         rating: 4.8,
-        image: "/tcgpocket/th/geneticapex/285.jpg",
+        image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_285_EN.webp",
       },
       {
         id: 3,
@@ -36,7 +36,7 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
         rarity: "Ultra Rare",
         price: 199.99,
         rating: 4.7,
-        image: "/tcgpocket/th/geneticapex/129.jpg",
+        image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_129_EN.webp",
       },
     ],
     rare: [
@@ -47,7 +47,7 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
         rarity: "Secret Rare",
         price: 349.99,
         rating: 5.0,
-        image: "/tcgpocket/th/space-time-smackdown/49.jpg",
+        image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2/A2_049_EN.webp",
       },
       {
         id: 6,
@@ -56,7 +56,7 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
         rarity: "Alt Art",
         price: 279.99,
         rating: 4.9,
-        image: "/tcgpocket/th/space-time-smackdown/50.jpg",
+        image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2/A2_050_EN.webp",
       },
       {
         id: 7,
@@ -65,7 +65,7 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
         rarity: "Alt Art",
         price: 399.99,
         rating: 4.9,
-        image: "/tcgpocket/th/space-time-smackdown/51.jpg",
+        image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2/A2_051_EN.webp",
       },
     ],
     new: [
@@ -76,7 +76,7 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
         rarity: "Hyper Rare",
         price: 129.99,
         rating: 4.7,
-        image: "/tcgpocket/th/mythical-islands/31.jpg",
+        image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1a/A1a_031_EN.webp",
       },
       {
         id: 10,
@@ -85,7 +85,7 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
         rarity: "Ultra Rare",
         price: 79.99,
         rating: 4.6,
-        image: "/tcgpocket/th/mythical-islands/32.jpg",
+        image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2a/A2a_071_EN.webp",
       },
       {
         id: 11,
@@ -94,7 +94,7 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
         rarity: "Ultra Rare",
         price: 89.99,
         rating: 4.8,
-        image: "/tcgpocket/th/genetic-apex/5.jpg",
+        image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_005_EN.webp",
       },
     ],
   };
@@ -106,7 +106,7 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
       {cards.map((card) => (
         <div key={card.id}>
           <Image
-            src={`https://serebii.net${card.image.replace("/th", "")}`}
+            src={card.image}
             alt={card.name}
             width={300}
             height={450}

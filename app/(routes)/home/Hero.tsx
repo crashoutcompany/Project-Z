@@ -11,32 +11,32 @@ export default function HeroSection() {
     {
       name: "Arceus",
       position: "translate-y-8",
-      url: "/tcgpocket/th/triumphantlight/71.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2a/A2a_071_EN.webp",
     },
     {
       name: "Dialga",
       position: "",
-      url: "/tcgpocket/th/space-timesmackdown/119.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2/A2_119_EN.webp",
     },
     {
       name: "Mewtwo",
       position: "translate-y-12",
-      url: "/tcgpocket/th/geneticapex/286.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_286_EN.webp",
     },
     {
       name: "Palkia",
       position: "translate-y-4",
-      url: "/tcgpocket/th/space-timesmackdown/49.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2/A2_049_EN.webp",
     },
     {
       name: "Mew",
       position: "translate-y-16",
-      url: "/tcgpocket/th/mythicalisland/77.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1a/A1a_077_EN.webp",
     },
     {
       name: "Pikachu",
       position: "translate-y-8",
-      url: "/tcgpocket/th/geneticapex/285.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_285_EN.webp",
     },
   ];
   return (
@@ -93,7 +93,7 @@ export default function HeroSection() {
                   >
                     <div className="aspect-[2/3] overflow-hidden rounded-xl shadow-lg">
                       <Image
-                        src={`https://serebii.net${card.url.replace("/th", "")}`}
+                        src={card.url}
                         alt={`${card.name} card`}
                         width={200}
                         height={300}

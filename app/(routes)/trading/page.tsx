@@ -26,11 +26,11 @@ export default async function TradingPage() {
   // Maybe make each one fetch it's own data, so we're not waiting for all of them to load
   const [allTrades, userTrades] = await Promise.all([
     prisma.trade.findMany({
-      include: { cards: { select: { name: true, image: true } } },
+      include: { cards: { select: { name: true, imageUrl: true } } },
     }),
     prisma.trade.findMany({
       where: { identifier },
-      include: { cards: { select: { name: true, image: true } } },
+      include: { cards: { select: { name: true, imageUrl: true } } },
     }),
   ]);
 
