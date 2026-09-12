@@ -7,7 +7,10 @@
     "postinstall": "prisma generate",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "vitest run",
+    "import:cards": "tsx scripts/import-cards.ts",
+    "import:cards:dry": "tsx scripts/import-cards.ts --dry-run"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
@@ -33,7 +36,8 @@
     "tailwind-merge": "^3.0.1",
     "tailwindcss": "^4.0.7",
     "tailwindcss-animate": "^1.0.7",
-    "ws": "^8.21.3"
+    "ws": "^8.21.3",
+    "zod": "^4.6.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.6",
@@ -48,7 +52,8 @@
     "prettier-plugin-tailwindcss": "^0.6.11",
     "prisma": "^7.10.0",
     "tsx": "^4.21.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vitest": "^5.0.0"
   },
   "pnpm": {
     "overrides": {

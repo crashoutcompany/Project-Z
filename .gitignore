@@ -31,6 +31,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+node-compile-cache/
+scripts/cache/
 
 # env files (can opt-in for committing if needed)
 .env*
@@ -66,7 +68,7 @@ dist/
 downloads/
 eggs/
 .eggs/
-scripts/lib/
+scripts/lib/python*/
 scripts/lib64/
 parts/
 sdist/
