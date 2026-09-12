@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
 export default function CollectionShowcase() {
@@ -63,17 +64,16 @@ export default function CollectionShowcase() {
               {collection.name}
             </h3>
             <p className="mb-4 text-white/80">{collection.cardCount} cards</p>
-            <Button
-              size="sm"
-              variant="secondary"
-              className="rounded-full"
-              render={
-                <Link href={`/collections/${collection.id}`}>
-                  View Collection
-                  <ChevronRight className="ml-1 h-4 w-4" />
-                </Link>
-              }
-            ></Button>
+            <Link
+              href={`/collections/${collection.id}`}
+              className={cn(
+                buttonVariants({ size: "sm", variant: "secondary" }),
+                "rounded-full"
+              )}
+            >
+              View Collection
+              <ChevronRight className="ml-1 h-4 w-4" />
+            </Link>
           </div>
         </div>
       ))}

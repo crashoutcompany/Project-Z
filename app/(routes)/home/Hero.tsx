@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 // TODO Change cards to 1 at a time and fade in/out on a timer
@@ -63,22 +64,19 @@ export default function HeroSection() {
                 dream Pokémon card collection.
               </p>
               <div className="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
-                <Button
-                  size="lg"
-                  className="rounded-full"
-                  render={
-                    <Link href="/trading">
-                      Start Trading
-                      <ChevronRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  }
-                ></Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="rounded-full"
-                  render={<Link href="/collections">Browse Collections</Link>}
-                ></Button>
+                <Link
+                  href="/trading"
+                  className={cn(buttonVariants({ size: "lg" }), "rounded-full")}
+                >
+                  Start Trading
+                  <ChevronRight className="ml-2 h-4 w-4" />
+                </Link>
+                <Link
+                  href="/collections"
+                  className={cn(buttonVariants({ size: "lg", variant: "outline" }), "rounded-full")}
+                >
+                  Browse Collections
+                </Link>
               </div>
             </div>
 

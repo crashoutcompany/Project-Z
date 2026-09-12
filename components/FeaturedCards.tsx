@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 interface FeaturedCardsProps {
   category: "trending" | "rare" | "new" | "deals";
@@ -114,10 +115,12 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
           />
 
           <div className="absolute inset-x-0 bottom-0 z-20 translate-y-full p-4 transition-transform group-hover:translate-y-0">
-            <Button
-              className="w-full rounded-full"
-              render={<Link href={`/collections`}>View Details</Link>}
-            ></Button>
+            <Link
+              href="/collections"
+              className={cn(buttonVariants(), "w-full rounded-full")}
+            >
+              View Details
+            </Link>
           </div>
         </div>
       ))}

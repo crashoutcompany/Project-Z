@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 import prisma from "@/prisma/db";
 import { H2 } from "@/components/typography/headings";
 import { Trade } from "@/prisma/generated/client/client";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { headers } from "next/headers";
 import { ArrowRight } from "lucide-react";
@@ -36,13 +36,9 @@ export default async function TradingPage() {
 
   return (
     <>
-      <Button
-        render={
-          <Link className="cursor-pointer" href="/trading/create">
-            Make a trade
-          </Link>
-        }
-      ></Button>
+      <Link className={buttonVariants()} href="/trading/create">
+        Make a trade
+      </Link>
       <TradeContainer trades={userTrades} title="Your Trades" />
       <TradeContainer trades={allTrades} title="Public Trades" />
     </>
