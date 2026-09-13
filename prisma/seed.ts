@@ -1,6 +1,6 @@
 // use relative imports
 
-import { PrismaClient } from "./generated/client/client";
+import { CardType, PrismaClient } from "./generated/client/client";
 import { PrismaNeon } from "@prisma/adapter-neon";
 import { neonConfig } from "@neondatabase/serverless";
 import ws from "ws";
@@ -39,16 +39,52 @@ if (!connectionString) {
 const adapter = new PrismaNeon({ connectionString });
 const prisma = new PrismaClient({ adapter });
 
+const SET_CODES: Record<string, string> = {
+  "Genetic Apex": "A1",
+  "Mythical Island": "A1a",
+  "Space-time Smackdown": "A2",
+  "Triumphant Light": "A2a",
+  "Shining Revelry": "A2b",
+  "Celestial Guardians": "A3",
+  "Extradimensional Crisis": "A3a",
+  "Eevee Grove": "A3b",
+  "Wisdom of Sea and Sky": "A4",
+  "Secluded Springs": "A4a",
+  "Deluxe Pack ex": "A4b",
+  "Mega Rising": "B1",
+  "Crimson Blaze": "B1a",
+  "Fantastical Parade": "B2",
+  "Paldean Wonders": "B2a",
+  "Mega Shine": "B2b",
+  "Pulsing Aura": "B3",
+  "Paradox Drive": "B3a",
+  "Everyday Wonders": "B3b",
+  "Ruler of the Skies": "B4",
+  "Team Rocket's Ambition": "B4a",
+  "Promo-A": "P-A",
+  "Promo-B": "P-B",
+};
+
+function deriveImageUrl(code: string, number: number): string {
+  const pad = String(number).padStart(3, "0");
+  return `https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/${code}/${code}_${pad}_EN_SM.webp`;
+}
+
+function imageBasename(path: string | undefined): string | null {
+  if (!path) return null;
+  const name = path.split("/").pop()?.split(".")[0];
+  return name && name !== "Unknown type" ? name : null;
+}
+
 // ! When adding new sets make sure to update the setName in the upsert calls below
 // ! and the import paths to the JSON files in the imports section above.
 // ! And add it to the switch statement in the main function to handle the set ID correctly.
 
 /**
- * Seeds the database with predefined card sets and their associated cards, including detailed card attributes and relations.
+ * Seeds the database with predefined card sets and their flattened card records.
  *
- * Upserts all card sets and iterates through imported card data to create card records with nested details, retreat costs, and weakness types. Skips cards with missing required fields or unknown set names.
- *
- * @remark Cards missing a name or set pokedex, or belonging to an unknown set, are skipped and not inserted.
+ * Upserts all card sets and iterates through imported card data to create cards
+ * keyed by (setId, number). Skips cards with missing required fields or unknown set names.
  */
 async function main() {
   console.log("🌱 Starting database seed...");
@@ -60,6 +96,7 @@ async function main() {
     update: {},
     create: {
       setName: "Genetic Apex",
+      code: SET_CODES["Genetic Apex"],
       image: "/tcgpocket/sets/genetic-apex.png",
     },
   });
@@ -70,6 +107,7 @@ async function main() {
     update: {},
     create: {
       setName: "Mythical Island",
+      code: SET_CODES["Mythical Island"],
       image: "/tcgpocket/sets/mythical-islands.png",
     },
   });
@@ -80,6 +118,7 @@ async function main() {
     update: {},
     create: {
       setName: "Space-time Smackdown",
+      code: SET_CODES["Space-time Smackdown"],
       image: "/tcgpocket/sets/space-time-smackdown.png",
     },
   });
@@ -90,6 +129,7 @@ async function main() {
     update: {},
     create: {
       setName: "Triumphant Light",
+      code: SET_CODES["Triumphant Light"],
       image: "/tcgpocket/sets/triumphant-light.png",
     },
   });
@@ -100,6 +140,7 @@ async function main() {
     update: {},
     create: {
       setName: "Shining Revelry",
+      code: SET_CODES["Shining Revelry"],
       image: "/tcgpocket/sets/shining-revelry.png",
     },
   });
@@ -110,6 +151,7 @@ async function main() {
     update: {},
     create: {
       setName: "Celestial Guardians",
+      code: SET_CODES["Celestial Guardians"],
       image: "/tcgpocket/sets/celestial-guardians.png",
     },
   });
@@ -120,6 +162,7 @@ async function main() {
     update: {},
     create: {
       setName: "Extradimensional Crisis",
+      code: SET_CODES["Extradimensional Crisis"],
       image: "/tcgpocket/sets/extra-dimensional-crisis.png",
     },
   });
@@ -130,6 +173,7 @@ async function main() {
     update: {},
     create: {
       setName: "Eevee Grove",
+      code: SET_CODES["Eevee Grove"],
       image: "/tcgpocket/sets/eevee-grove.png",
     },
   });
@@ -140,6 +184,7 @@ async function main() {
     update: {},
     create: {
       setName: "Wisdom of Sea and Sky",
+      code: SET_CODES["Wisdom of Sea and Sky"],
       image: "/tcgpocket/sets/wisdom-of-sea-and-sky.png",
     },
   });
@@ -150,6 +195,7 @@ async function main() {
     update: {},
     create: {
       setName: "Secluded Springs",
+      code: SET_CODES["Secluded Springs"],
       image: "/tcgpocket/sets/secluded-springs.png",
     },
   });
@@ -160,6 +206,7 @@ async function main() {
     update: {},
     create: {
       setName: "Deluxe Pack ex",
+      code: SET_CODES["Deluxe Pack ex"],
       image: "/tcgpocket/sets/deluxe-pack-ex.png",
     },
   });
@@ -170,6 +217,7 @@ async function main() {
     update: {},
     create: {
       setName: "Mega Rising",
+      code: SET_CODES["Mega Rising"],
       image: "/tcgpocket/sets/mega-rising.png",
     },
   });
@@ -180,6 +228,7 @@ async function main() {
     update: {},
     create: {
       setName: "Crimson Blaze",
+      code: SET_CODES["Crimson Blaze"],
       image: "/tcgpocket/sets/crimson-blaze.png",
     },
   });
@@ -190,6 +239,7 @@ async function main() {
     update: {},
     create: {
       setName: "Fantastical Parade",
+      code: SET_CODES["Fantastical Parade"],
       image: "/tcgpocket/sets/fantastical-parade.png",
     },
   });
@@ -200,6 +250,7 @@ async function main() {
     update: {},
     create: {
       setName: "Paldean Wonders",
+      code: SET_CODES["Paldean Wonders"],
       image: "/tcgpocket/sets/paldean-wonders.png",
     },
   });
@@ -210,6 +261,7 @@ async function main() {
     update: {},
     create: {
       setName: "Mega Shine",
+      code: SET_CODES["Mega Shine"],
       image: "/tcgpocket/sets/mega-shine.png",
     },
   });
@@ -220,6 +272,7 @@ async function main() {
     update: {},
     create: {
       setName: "Pulsing Aura",
+      code: SET_CODES["Pulsing Aura"],
       image: "/tcgpocket/sets/pulsing-aura.png",
     },
   });
@@ -230,6 +283,7 @@ async function main() {
     update: {},
     create: {
       setName: "Paradox Drive",
+      code: SET_CODES["Paradox Drive"],
       image: "/tcgpocket/sets/paradox-drive.png",
     },
   });
@@ -240,6 +294,7 @@ async function main() {
     update: {},
     create: {
       setName: "Everyday Wonders",
+      code: SET_CODES["Everyday Wonders"],
       image: "/tcgpocket/sets/everyday-wonders.png",
     },
   });
@@ -250,6 +305,7 @@ async function main() {
     update: {},
     create: {
       setName: "Ruler of the Skies",
+      code: SET_CODES["Ruler of the Skies"],
       image: "/tcgpocket/sets/ruler-of-the-skies.png",
     },
   });
@@ -260,6 +316,7 @@ async function main() {
     update: {},
     create: {
       setName: "Team Rocket's Ambition",
+      code: SET_CODES["Team Rocket's Ambition"],
       image: "/tcgpocket/sets/team-rockets-ambition.png",
     },
   });
@@ -270,6 +327,7 @@ async function main() {
     update: {},
     create: {
       setName: "Promo-A",
+      code: SET_CODES["Promo-A"],
       image: "/tcgpocket/sets/promo-a.png",
     },
   });
@@ -280,6 +338,7 @@ async function main() {
     update: {},
     create: {
       setName: "Promo-B",
+      code: SET_CODES["Promo-B"],
       image: "/tcgpocket/sets/promo-b.png",
     },
   });
@@ -403,63 +462,44 @@ async function main() {
           continue; // Skip this card if the set name is unknown
       }
 
-      const type = card.details.type.split("/").pop()?.split(".")[0];
-      const pokedex = card.set.pokedex.split(card.set.setName)[1].trim();
+      const number = parseInt(
+        card.set.pokedex.split(card.set.setName)[1]?.split("/")[0] ?? "",
+        10,
+      );
+      if (!Number.isFinite(number)) {
+        setSkipped++;
+        continue;
+      }
 
-      // Upsert the card and its details
+      const energyType = imageBasename(card.details.type);
+      const setCode = SET_CODES[card.set.setName];
+      if (!setCode) {
+        setSkipped++;
+        continue;
+      }
+      const hp = Number(card.details.hp.replace(/\D/g, "")) || null;
+      const retreatCost = Number(card.details.retreat.count) || null;
+
       await prisma.card.upsert({
         where: {
-          name_setId_pokedex: {
-            name: card.name,
-            setId: setId,
-            pokedex: pokedex,
+          setId_number: {
+            setId,
+            number,
           },
         },
-        update: {}, // No update, or specify fields to update if needed
+        update: {},
         create: {
           name: card.name,
-          type: type || "Unknown type",
-          image: card.thumbnail,
-          setId: setId,
-          expansion: card.expansion,
-          pokedex,
-          url: card.url,
-          thumbnail: card.thumbnail,
+          number,
+          setId,
+          cardType: energyType ? CardType.POKEMON : CardType.TRAINER,
+          imageUrl: deriveImageUrl(setCode, number),
           rarity: card.rarity,
-          details: {
-            create: {
-              hp: Number(card.details.hp.replace(/\D/g, "")) || -1,
-              type: card.details.type || "Unknown type",
-              retreatCost: {
-                connectOrCreate: {
-                  create: {
-                    image: card.details.retreat.image,
-                    count: Number(card.details.retreat.count) || -1,
-                  },
-                  where: {
-                    imageCount: {
-                      count: Number(card.details.retreat.count) || -1,
-                      image: card.details.retreat.image,
-                    },
-                  },
-                },
-              },
-              weaknessType: {
-                connectOrCreate: {
-                  create: {
-                    image: card.details.weakness.image,
-                    value: card.details.weakness.value,
-                  },
-                  where: {
-                    imageValue: {
-                      image: card.details.weakness.image,
-                      value: card.details.weakness.value,
-                    },
-                  },
-                },
-              },
-            },
-          },
+          energyType,
+          hp,
+          isEx: card.name.toLowerCase().includes(" ex"),
+          weakness: imageBasename(card.details.weakness.image),
+          retreatCost,
         },
       });
       setUpserted++;
