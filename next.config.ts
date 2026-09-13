@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "limitlesstcg.nyc3.cdn.digitaloceanspaces.com",
+        port: "",
+        pathname: "/pocket/**",
+      },
+      {
+        protocol: "https",
         hostname: "serebii.net",
         port: "",
         pathname: "/tcgpocket/**",

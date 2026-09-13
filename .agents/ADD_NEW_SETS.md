@@ -1,5 +1,7 @@
 # Adding New TCG Pocket Sets
 
+> **Note:** The Serebii scrape workflow below is being replaced by the collection-tracker import pipeline (attacks, abilities, Limitless images). See [DECK_BUILDER_SPEC.md](./DECK_BUILDER_SPEC.md) for the new process. This doc remains until Phase 4 cleanup.
+
 This guide documents the process for adding new Pokémon TCG Pocket card sets to the project when they are released.
 
 ## Overview
