@@ -5,9 +5,7 @@ export const CardDex = ({
   cards,
 }: {
   cards: Awaited<
-    ReturnType<
-      typeof prisma.card.findMany<{ include: { set: true } }>
-    >
+    ReturnType<typeof prisma.card.findMany<{ include: { set: true } }>>
   >;
 }) => (
   <div className="grid grid-cols-2 place-content-center gap-y-4 p-4 md:grid-cols-3 lg:grid-cols-6">
