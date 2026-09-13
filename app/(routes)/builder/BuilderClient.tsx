@@ -29,44 +29,54 @@ export function BuilderClient() {
   const [deck, setDeck] = useState<DeckCard[]>([]);
   const [searchError, setSearchError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
-  const [hydrated, setHydrated] = useState(false);
+  const [hydrated, setHydrated] = useState(() => {
+    const { entries } = decodeBuilderSearchParams({
+      v: searchParams.get("v"),
+      deck: searchParams.get("deck"),
+    });
+    return entries.length === 0;
+  });
   const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
+    if (hydrated) return;
+
     let cancelled = false;
-    async function hydrate() {
-      try {
-        const { entries } = decodeBuilderSearchParams({
-          v: searchParams.get("v"),
-          deck: searchParams.get("deck"),
-        });
-        if (entries.length === 0) {
-          setHydrated(true);
-          return;
+    const { entries } = decodeBuilderSearchParams({
+      v: searchParams.get("v"),
+      deck: searchParams.get("deck"),
+    });
+    const refs = entries.map((e) => e.ref);
+    fetch("/api/cards/by-refs", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ refs }),
+    })
+      .then(async (res) => {
+        if (!res.ok) {
+          console.error("Failed to load deck cards");
+          return null;
         }
-        const refs = entries.map((e) => e.ref);
-        const res = await fetch("/api/cards/by-refs", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ refs }),
-        });
-        if (!res.ok) throw new Error("Failed to load deck cards");
-        const data = (await res.json()) as { cards: SearchCardResult[] };
+        return (await res.json()) as { cards: SearchCardResult[] };
+      })
+      .then((data) => {
         if (cancelled) return;
-        const byRef = new Map(data.cards.map((c) => [refOf(c), c]));
-        const next: DeckCard[] = [];
-        for (const entry of entries) {
-          const card = byRef.get(entry.ref);
-          if (card) next.push({ ...card, count: entry.count });
+        if (data) {
+          const byRef = new Map(data.cards.map((c) => [refOf(c), c]));
+          const next: DeckCard[] = [];
+          for (const entry of entries) {
+            const card = byRef.get(entry.ref);
+            if (card) next.push({ ...card, count: entry.count });
+          }
+          setDeck(next);
         }
-        setDeck(next);
-      } catch (err) {
+        setHydrated(true);
+      })
+      .catch((err) => {
         console.error(err);
-      } finally {
         if (!cancelled) setHydrated(true);
-      }
-    }
-    void hydrate();
+      });
+
     return () => {
       cancelled = true;
     };
@@ -358,6 +368,7 @@ function DeckSection({
                 size="icon"
                 variant="ghost"
                 className="h-8 w-8"
+                aria-label={`Remove one ${card.name}`}
                 onClick={() => onRemove(card)}
               >
                 <Minus className="h-4 w-4" />
@@ -368,6 +379,7 @@ function DeckSection({
                 size="icon"
                 variant="ghost"
                 className="h-8 w-8"
+                aria-label={`Add one ${card.name}`}
                 onClick={() => onAdd(card)}
                 disabled={card.count >= 2}
               >

@@ -141,6 +141,7 @@ export default function CollectionsPage() {
                     variant="outline"
                     size="icon"
                     className="rounded-full"
+                    aria-label="Filter collections"
                   >
                     <Filter className="h-4 w-4" />
                   </Button>

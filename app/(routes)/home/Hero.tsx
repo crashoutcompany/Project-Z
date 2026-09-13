@@ -84,9 +84,9 @@ export default function HeroSection() {
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-red-500/20 via-red-400/20 to-white/30 opacity-70 blur-xl" />
               {/* <div className="pointer-events-none absolute inset-4 h-60 w-60 -translate-1/2 translate-x-16 scale-150 rounded-full bg-gradient-to-b from-red-500 from-40% via-black via-50% to-white to-50% blur-3xl" /> */}
               <div className="relative grid grid-cols-3 gap-3">
-                {pokemon.map((card, index) => (
+                {pokemon.map((card) => (
                   <div
-                    key={index}
+                    key={card.name}
                     className={`transform ${card.position} transition-all duration-500 hover:z-10 hover:scale-105`}
                   >
                     <div className="aspect-[2/3] overflow-hidden rounded-xl shadow-lg">

@@ -17,6 +17,7 @@ export function CardGrid({
   selectionMode,
   onCardClick,
 }: CardGridProps) {
+  // Remount via parent key when results are replaced; local state only for infinite scroll.
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
   const [cursor, setCursor] = useState<number | null>(initialCursor);
   const [isPending, startTransition] = useTransition();
@@ -39,7 +40,6 @@ export function CardGrid({
     });
   }, [cursor, isPending, setId, searchQuery, tradeableOnly]);
 
-  // Set up intersection observer for infinite scroll
   useEffect(() => {
     if (observerRef.current) {
       observerRef.current.disconnect();
@@ -95,19 +95,18 @@ export function CardGrid({
         ))}
       </div>
 
-      {/* Load more trigger */}
       <div ref={loadMoreRef} className="flex justify-center py-4">
-        {isPending && (
+        {isPending ? (
           <div className="text-muted-foreground flex items-center gap-2">
             <Loader2 className="h-4 w-4 animate-spin" />
             <span>Loading more cards...</span>
           </div>
-        )}
-        {!cursor && cards.length > 0 && (
+        ) : null}
+        {!cursor && cards.length > 0 ? (
           <p className="text-muted-foreground text-sm">
             All {cards.length} cards loaded
           </p>
-        )}
+        ) : null}
       </div>
     </div>
   );

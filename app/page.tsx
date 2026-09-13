@@ -27,8 +27,8 @@ export default function HomePage() {
         <section className="border-y backdrop-blur-sm dark:bg-red-600">
           <div className="p-3">
             <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-              {bannerStats.map((stat, index) => (
-                <div key={index} className="text-center">
+              {bannerStats.map((stat) => (
+                <div key={stat.label} className="text-center">
                   <p className="text-3xl font-bold text-black md:text-4xl dark:text-white">
                     {stat.value}
                   </p>
@@ -173,9 +173,9 @@ export default function HomePage() {
                   description:
                     "Connect with other collectors and finalize your trades",
                 },
-              ].map((item, index) => (
+              ].map((item) => (
                 <Card
-                  key={index}
+                  key={item.step}
                   className="bg-background/50 border-none shadow-md backdrop-blur-sm"
                 >
                   <CardContent className="pt-6">

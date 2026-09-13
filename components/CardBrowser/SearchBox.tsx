@@ -1,10 +1,9 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { debounce } from "@/lib/utils";
 import { Search, X } from "lucide-react";
 
 export type SearchMode = "name" | "effects";
@@ -27,27 +26,31 @@ export function SearchBox({
   filterChips = [],
 }: SearchBoxProps) {
   const inputRef = useRef<HTMLInputElement>(null);
+  const onChangeRef = useRef(onChange);
+  const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [localValue, setLocalValue] = useState(value);
 
   useEffect(() => {
-    if (value === "") setLocalValue("");
-  }, [value]);
+    onChangeRef.current = onChange;
+  }, [onChange]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const debouncedOnChange = useCallback(
-    debounce((next: string) => {
-      onChange(next);
-    }, 300),
-    [onChange],
-  );
+  useEffect(() => {
+    return () => {
+      if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
+    };
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const next = e.target.value;
     setLocalValue(next);
-    debouncedOnChange(next);
+    if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
+    debounceTimerRef.current = setTimeout(() => {
+      onChangeRef.current(next);
+    }, 300);
   };
 
   const handleClear = () => {
+    if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
     setLocalValue("");
     onChange("");
   };

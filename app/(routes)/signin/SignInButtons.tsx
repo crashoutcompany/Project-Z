@@ -52,15 +52,15 @@ export function SignInButtons() {
 
   const handleSignIn = async (provider: Provider) => {
     setPendingProvider(provider);
-
     try {
       await signIn.social({
         provider,
         callbackURL: "/",
       });
-    } finally {
-      setPendingProvider(null);
+    } catch (err) {
+      console.error(err);
     }
+    setPendingProvider(null);
   };
 
   return (

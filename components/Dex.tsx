@@ -11,17 +11,16 @@ export const CardDex = ({
   >;
 }) => (
   <div className="grid grid-cols-2 place-content-center gap-y-4 p-4 md:grid-cols-3 lg:grid-cols-6">
-    {cards.map((card, index) => (
+    {cards.map((card) => (
       <a
         target="_blank"
         rel="noopener noreferrer"
         href={`https://pocket.limitlesstcg.com/cards/${card.set.code}/${card.number}`}
-        key={`${card.name}-${index}`}
+        key={card.id}
         className="flex flex-col items-center"
       >
         <LazyImage
           className="rounded-lg select-none"
-          key={`${card.name}-${index}`}
           src={card.imageUrl}
           alt={`${card.name} Card`}
           width={200}

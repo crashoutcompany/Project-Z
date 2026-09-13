@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState, useTransition } from "react";
+import { useCallback, useState, useTransition } from "react";
 import { Set } from "@/prisma/generated/client/client";
 import { fetchCards } from "@/server/actions";
 import { CardGrid } from "./CardGrid";
@@ -104,21 +104,21 @@ export function CardBrowserClient({
   const [filterChips, setFilterChips] = useState<string[]>([]);
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
   const [cursor, setCursor] = useState<number | null>(initialCursor);
+  const [resultsEpoch, setResultsEpoch] = useState(0);
   const [selectionMode, setSelectionMode] = useState<SelectionMode>("want");
   const [selectedCards, setSelectedCards] =
     useState<SelectedCards>(initialSelected);
   const [isPending, startTransition] = useTransition();
   const [effectsError, setEffectsError] = useState<string | null>(null);
 
-  const isFirstRender = useRef(true);
-
-  useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
-    onSelectionChange?.(selectedCards);
-  }, [selectedCards, onSelectionChange]);
+  const replaceResults = useCallback(
+    (nextCards: CardWithSet[], nextCursor: number | null) => {
+      setCards(nextCards);
+      setCursor(nextCursor);
+      setResultsEpoch((n) => n + 1);
+    },
+    [],
+  );
 
   const isSearching = searchQuery.length > 0;
 
@@ -129,13 +129,12 @@ export function CardBrowserClient({
           setId,
           tradeableOnly,
         });
-        setCards(result.cards as CardWithSet[]);
-        setCursor(result.nextCursor);
+        replaceResults(result.cards as CardWithSet[], result.nextCursor);
         setFilterChips([]);
         setEffectsError(null);
       });
     },
-    [tradeableOnly],
+    [tradeableOnly, replaceResults],
   );
 
   const handleSetChange = useCallback(
@@ -154,21 +153,19 @@ export function CardBrowserClient({
             search: query,
             tradeableOnly,
           });
-          setCards(result.cards as CardWithSet[]);
-          setCursor(result.nextCursor);
+          replaceResults(result.cards as CardWithSet[], result.nextCursor);
         } else {
           const result = await fetchCards({
             setId: activeSetId,
             tradeableOnly,
           });
-          setCards(result.cards as CardWithSet[]);
-          setCursor(result.nextCursor);
+          replaceResults(result.cards as CardWithSet[], result.nextCursor);
         }
         setFilterChips([]);
         setEffectsError(null);
       });
     },
-    [activeSetId, tradeableOnly],
+    [activeSetId, tradeableOnly, replaceResults],
   );
 
   const runEffectsSearch = useCallback(
@@ -179,8 +176,7 @@ export function CardBrowserClient({
             setId: activeSetId,
             tradeableOnly,
           });
-          setCards(result.cards as CardWithSet[]);
-          setCursor(result.nextCursor);
+          replaceResults(result.cards as CardWithSet[], result.nextCursor);
           setFilterChips([]);
           setEffectsError(null);
           return;
@@ -200,26 +196,24 @@ export function CardBrowserClient({
           };
           if (!res.ok) {
             setEffectsError(data.error ?? "Search failed");
-            setCards([]);
-            setCursor(null);
+            replaceResults([], null);
             setFilterChips([]);
             return;
           }
           setEffectsError(null);
           setFilterChips(data.filter ? filterToChips(data.filter) : []);
-          setCards(
+          replaceResults(
             (data.cards ?? []).map((c) => searchResultToCardWithSet(c, sets)),
+            null,
           );
-          setCursor(null);
         } catch {
           setEffectsError("Search request failed");
-          setCards([]);
-          setCursor(null);
+          replaceResults([], null);
           setFilterChips([]);
         }
       });
     },
-    [activeSetId, tradeableOnly, sets],
+    [activeSetId, tradeableOnly, sets, replaceResults],
   );
 
   const handleSearchChange = useCallback(
@@ -249,35 +243,34 @@ export function CardBrowserClient({
     (card: CardWithSet) => {
       if (mode !== "select") return;
 
-      setSelectedCards((prev) => {
-        const newSelected = { ...prev };
-        const currentList = selectionMode === "want" ? "want" : "give";
-        const otherList = selectionMode === "want" ? "give" : "want";
+      const currentList = selectionMode === "want" ? "want" : "give";
+      const otherList = selectionMode === "want" ? "give" : "want";
+      const indexInCurrent = selectedCards[currentList].findIndex(
+        (c) => c.id === card.id,
+      );
 
-        const indexInCurrent = newSelected[currentList].findIndex(
-          (c) => c.id === card.id,
-        );
+      const next: SelectedCards = {
+        want: [...selectedCards.want],
+        give: [...selectedCards.give],
+      };
 
-        if (indexInCurrent !== -1) {
-          newSelected[currentList] = newSelected[currentList].filter(
-            (c) => c.id !== card.id,
-          );
-        } else {
-          newSelected[otherList] = newSelected[otherList].filter(
-            (c) => c.id !== card.id,
-          );
-          newSelected[currentList] = [...newSelected[currentList], card];
-        }
+      if (indexInCurrent !== -1) {
+        next[currentList] = next[currentList].filter((c) => c.id !== card.id);
+      } else {
+        next[otherList] = next[otherList].filter((c) => c.id !== card.id);
+        next[currentList] = [...next[currentList], card];
+      }
 
-        return newSelected;
-      });
+      setSelectedCards(next);
+      onSelectionChange?.(next);
     },
-    [mode, selectionMode],
+    [mode, selectionMode, selectedCards, onSelectionChange],
   );
 
   return (
     <div className="space-y-4">
       <SearchBox
+        key={searchMode}
         value={searchQuery}
         onChange={handleSearchChange}
         mode={searchMode}
@@ -341,11 +334,11 @@ export function CardBrowserClient({
       )}
 
       <CardGrid
-        key={`${activeSetId}-${searchQuery}-${searchMode}`}
+        key={`${activeSetId}-${searchQuery}-${searchMode}-${resultsEpoch}`}
         initialCards={cards}
         initialCursor={searchMode === "effects" ? null : cursor}
         setId={isSearching || searchMode === "effects" ? undefined : activeSetId}
-        searchQuery={searchMode === "name" ? searchQuery : ""}
+        searchQuery={searchQuery}
         tradeableOnly={tradeableOnly}
         selectable={mode === "select"}
         selectedCards={selectedCards}
