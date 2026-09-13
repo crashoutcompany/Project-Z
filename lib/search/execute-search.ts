@@ -288,11 +288,14 @@ function matchesScalarFilters(
   if (filter.trainerType && row.trainerType !== filter.trainerType) return false;
   if (
     filter.energyType?.length &&
-    (!row.energyType || !filter.energyType.includes(row.energyType))
+    (!row.energyType || !filter.energyType.some((type) => type === row.energyType))
   ) {
     return false;
   }
-  if (filter.stage?.length && (!row.stage || !filter.stage.includes(row.stage))) {
+  if (
+    filter.stage?.length &&
+    (!row.stage || !filter.stage.some((stage) => stage === row.stage))
+  ) {
     return false;
   }
   if (filter.isEx !== undefined && row.isEx !== filter.isEx) return false;
