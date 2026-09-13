@@ -30,37 +30,6 @@ export const SET_MAP: Record<string, SetInfo> = {
   "P-B": { code: "P-B", name: "Promo-B", releaseDate: "2025-10-30" },
 };
 
-/**
- * Maps legacy/existing database set names to set codes.
- */
-export const LEGACY_SET_NAME_TO_CODE: Record<string, string> = {
-  "Genetic Apex": "A1",
-  "Mythical Island": "A1a",
-  "Space-time Smackdown": "A2",
-  "Space-Time Smackdown": "A2",
-  "Triumphant Light": "A2a",
-  "Shining Revelry": "A2b",
-  "Celestial Guardians": "A3",
-  "Extradimensional Crisis": "A3a",
-  "Eevee Grove": "A3b",
-  "Wisdom of Sea and Sky": "A4",
-  "Secluded Springs": "A4a",
-  "Deluxe Pack ex": "A4b",
-  "Deluxe Pack: ex": "A4b",
-  "Mega Rising": "B1",
-  "Crimson Blaze": "B1a",
-  "Fantastical Parade": "B2",
-  "Paldean Wonders": "B2a",
-  "Mega Shine": "B2b",
-  "Pulsing Aura": "B3",
-  "Paradox Drive": "B3a",
-  "Everyday Wonders": "B3b",
-  "Ruler of the Skies": "B4",
-  "Team Rocket's Ambition": "B4a",
-  "Promo-A": "P-A",
-  "Promo-B": "P-B",
-};
-
 export function getSetInfo(code: string): SetInfo {
   const info = SET_MAP[code];
   if (!info) {

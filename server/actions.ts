@@ -2,7 +2,7 @@
 
 import { auth, Session } from "@/lib/auth";
 import prisma from "@/prisma/db";
-import { Card, Set } from "@/prisma/generated/client/client";
+import { Card } from "@/prisma/generated/client/client";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
@@ -81,15 +81,4 @@ export const fetchCards = async ({
   }
 
   return { cards, nextCursor };
-};
-
-/**
- * Fetches all card sets from the database.
- *
- * @returns {Promise<Set[]>} All card sets.
- */
-export const fetchSets = async (): Promise<Set[]> => {
-  return prisma.set.findMany({
-    orderBy: { id: "asc" },
-  });
 };
