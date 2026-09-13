@@ -1,13 +1,27 @@
-import prisma from "@/prisma/db";
-import { TradingCreateClient } from "./TradingCreateClient";
-import { CardWithSet } from "@/components/CardBrowser/types";
+import { Suspense } from "react";
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { headers } from "next/headers";
+import { CatalogShell } from "@/components/catalog/CatalogShell";
+import { CatalogLoading } from "@/components/catalog/CatalogLoading";
+import { loadCardCatalog } from "@/components/CardBrowser";
+import { TradingCreateClient } from "./TradingCreateClient";
 
-const INITIAL_LIMIT = 20;
+export default function Page() {
+  return (
+    <CatalogShell
+      eyebrow="Trading"
+      title="Create a Trade"
+      description="Pick cards you want and cards you’ll give. Click a card in the catalog to add it."
+    >
+      <Suspense fallback={<CatalogLoading embedded />}>
+        <CreateTradeContent />
+      </Suspense>
+    </CatalogShell>
+  );
+}
 
-export default async function Page() {
+async function CreateTradeContent() {
   const session = await auth.api.getSession({
     headers: await headers(),
   });
@@ -16,45 +30,6 @@ export default async function Page() {
     redirect("/signin");
   }
 
-  // Fetch all sets
-  const sets = await prisma.set.findMany({
-    orderBy: { id: "asc" },
-  });
-
-  if (sets.length === 0) {
-    return (
-      <div className="py-12 text-center">
-        <p className="text-muted-foreground">No card sets available.</p>
-      </div>
-    );
-  }
-
-  // Fetch initial tradeable cards for the first set
-  const initialSetId = sets[0].id;
-  const initialCards = await prisma.card.findMany({
-    take: INITIAL_LIMIT + 1,
-    where: {
-      setId: initialSetId,
-      isTradeable: true,
-    },
-    orderBy: { id: "asc" },
-    include: {
-      set: true,
-    },
-  });
-
-  let initialCursor: number | null = null;
-  if (initialCards.length > INITIAL_LIMIT) {
-    const lastItem = initialCards.pop();
-    initialCursor = lastItem?.id ?? null;
-  }
-
-  return (
-    <TradingCreateClient
-      sets={sets}
-      initialSetId={initialSetId}
-      initialCards={initialCards as CardWithSet[]}
-      initialCursor={initialCursor}
-    />
-  );
+  const data = await loadCardCatalog({ tradeableOnly: true });
+  return <TradingCreateClient {...data} />;
 }

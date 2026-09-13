@@ -2,22 +2,36 @@
 
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { SetTabsProps } from "./types";
+import { cn } from "@/lib/utils";
 
-export function SetTabs({ sets, activeSetId, onSetChange, disabled }: SetTabsProps) {
+export function SetTabs({
+  sets,
+  activeSetId,
+  onSetChange,
+  disabled,
+}: SetTabsProps) {
   return (
-    <div className="w-full overflow-x-auto pb-2">
+    <div className="w-full overflow-x-auto pb-1 [scrollbar-width:thin]">
       <Tabs
         value={String(activeSetId)}
         onValueChange={(value) => onSetChange(Number(value))}
       >
-        <TabsList className="inline-flex h-auto w-max gap-1 bg-muted/50 p-1">
+        <TabsList className="bg-muted/60 inline-flex h-auto w-max gap-1 rounded-xl p-1">
           {sets.map((set) => (
             <TabsTrigger
               key={set.id}
               value={String(set.id)}
               disabled={disabled}
-              className="whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium transition-colors data-[state=active]:bg-background data-[state=active]:shadow-sm"
+              className={cn(
+                "h-8 gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium whitespace-nowrap",
+                "transition-[background-color,color,box-shadow] duration-150 ease-out",
+              )}
             >
+              {set.code ? (
+                <span className="text-muted-foreground font-mono text-[11px]">
+                  {set.code}
+                </span>
+              ) : null}
               {set.setName}
             </TabsTrigger>
           ))}

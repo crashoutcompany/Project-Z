@@ -1,18 +1,31 @@
+import { Suspense } from "react";
 import { CardBrowser } from "@/components/CardBrowser";
-import { H1 } from "@/components/typography/headings";
-import { connection } from "next/server";
+import { CatalogShell } from "@/components/catalog/CatalogShell";
+import { CatalogLoading } from "@/components/catalog/CatalogLoading";
 
-export default async function Page() {
-  // Next.js 16: Signal that this component uses dynamic data
-  await connection();
-
+export default function Page({
+  searchParams,
+}: {
+  searchParams: Promise<{ set?: string }>;
+}) {
   return (
-    <div className="m-16">
-      <H1>Card Dex</H1>
-      <p className="text-muted-foreground mb-6">
-        Browse all available cards across different sets.
-      </p>
-      <CardBrowser mode="view" />
-    </div>
+    <CatalogShell
+      eyebrow="Dex"
+      title="Card Dex"
+      description="Browse every Pokémon TCG Pocket card by set, name, or effect."
+    >
+      <Suspense fallback={<CatalogLoading embedded />}>
+        <DexCatalog searchParams={searchParams} />
+      </Suspense>
+    </CatalogShell>
   );
+}
+
+async function DexCatalog({
+  searchParams,
+}: {
+  searchParams: Promise<{ set?: string }>;
+}) {
+  const { set } = await searchParams;
+  return <CardBrowser mode="view" initialSetCode={set} />;
 }

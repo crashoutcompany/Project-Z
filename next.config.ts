@@ -11,6 +11,21 @@ const nextConfig: NextConfig = {
   // This enables Partial Pre-Rendering (PPR) and the new caching model
   cacheComponents: true,
 
+  async redirects() {
+    return [
+      {
+        source: "/collections",
+        destination: "/dex",
+        permanent: true,
+      },
+      {
+        source: "/collections/:path*",
+        destination: "/dex",
+        permanent: true,
+      },
+    ];
+  },
+
   images: {
     remotePatterns: [
       {

@@ -94,7 +94,7 @@ export default function HomePage() {
 
             <div className="mt-12 flex justify-center">
               <Link
-                href="/collections"
+                href="/dex"
                 className={cn(buttonVariants({ variant: "outline" }), "rounded-full")}
               >
                 View All Cards
@@ -113,7 +113,7 @@ export default function HomePage() {
                 Card Sets
               </div>
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-                Explore Collections
+                Explore Sets
               </h2>
               <p className="text-muted-foreground mt-4 max-w-2xl">
                 Discover complete Pokémon card sets from every generation
@@ -124,10 +124,10 @@ export default function HomePage() {
 
             <div className="mt-12 flex justify-center">
               <Link
-                href="/collections"
+                href="/dex"
                 className={cn(buttonVariants(), "rounded-full")}
               >
-                Browse All Collections
+                Browse the Dex
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
             </div>
@@ -157,9 +157,9 @@ export default function HomePage() {
               {[
                 {
                   step: "01",
-                  title: "Browse Collections",
+                  title: "Browse the Dex",
                   description:
-                    "Explore our extensive catalog of Pokémon cards organized by sets",
+                    "Explore the Pokémon TCG Pocket catalog organized by set",
                 },
                 {
                   step: "02",
@@ -213,13 +213,13 @@ export default function HomePage() {
                 Start Trading Now
               </Link>
               <Link
-                href="/collections"
+                href="/dex"
                 className={cn(
                   buttonVariants({ size: "lg", variant: "outline" }),
                   "rounded-full border-white bg-transparent text-white hover:bg-white/20"
                 )}
               >
-                Explore Collections
+                Browse the Dex
               </Link>
             </div>
           </div>
