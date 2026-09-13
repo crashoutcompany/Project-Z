@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { AttackFilterSchema } from "./filter-schema";
 import { heuristicParse } from "./heuristic-parse";
 import { normalizeQuery } from "./normalize-query";
 
@@ -40,6 +41,53 @@ describe("heuristicParse — damage minimum", () => {
     const hpOnly = parse("at least 100 hp");
     expect(hpOnly.hpMin).toBe(100);
     expect(hpOnly.attack?.damageMin).toBeUndefined();
+  });
+});
+
+describe("heuristicParse — ability queries", () => {
+  it("treats a plain ability query as an effect search", () => {
+    const f = parse("ability");
+    expect(f.effect?.kind).toBe("ABILITY");
+    expect(f.attack?.tags).toBeUndefined();
+    expect(f.surface).toBe("effect");
+  });
+
+  it("keeps ability kind when effect tags are also present", () => {
+    const f = parse("ability that draws");
+    expect(f.effect?.kind).toBe("ABILITY");
+    expect(f.effect?.tags).toContain("draw");
+  });
+
+  it("reserves ability_interaction for explicit attack phrasing", () => {
+    const f = parse("attack that disable ability");
+    expect(f.attack?.tags).toContain("ability_interaction");
+    expect(f.effect?.kind).not.toBe("ABILITY");
+  });
+});
+
+describe("heuristicParse — structured filters vs textFallback", () => {
+  it("does not add textFallback when card-level filters exist", () => {
+    const f = parse("fire pokemon");
+    expect(f.cardType).toBe("POKEMON");
+    expect(f.energyType).toEqual(["fire"]);
+    expect(f.textFallback).toBeUndefined();
+  });
+
+  it("does not add textFallback for HP-only queries", () => {
+    const f = parse("at least 100 hp");
+    expect(f.hpMin).toBe(100);
+    expect(f.textFallback).toBeUndefined();
+  });
+});
+
+describe("energyTypeCounts schema", () => {
+  it("rejects unknown energy type keys", () => {
+    expect(
+      AttackFilterSchema.safeParse({ energyTypeCounts: { fairy: 1 } }).success,
+    ).toBe(false);
+    expect(
+      AttackFilterSchema.safeParse({ energyTypeCounts: { fire: 2 } }).success,
+    ).toBe(true);
   });
 });
 

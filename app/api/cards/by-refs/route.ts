@@ -11,22 +11,25 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
-  const refs =
+  const rawRefs =
     typeof body === "object" &&
     body !== null &&
     "refs" in body &&
     Array.isArray((body as { refs: unknown }).refs)
-      ? (body as { refs: unknown[] }).refs.filter(
-          (r): r is string => typeof r === "string",
-        )
+      ? (body as { refs: unknown[] }).refs
       : null;
 
-  if (!refs) {
+  if (
+    !rawRefs ||
+    !rawRefs.every((r): r is string => typeof r === "string")
+  ) {
     return NextResponse.json(
       { error: "Missing string[] field: refs" },
       { status: 400 },
     );
   }
+
+  const refs = rawRefs;
 
   if (refs.length > 40) {
     return NextResponse.json({ error: "Too many refs" }, { status: 400 });

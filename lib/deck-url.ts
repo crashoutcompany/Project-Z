@@ -86,7 +86,7 @@ export function decodeBuilderSearchParams(params: {
   deck?: string | null;
 }): DeckDecodeResult {
   const version = params.v ? Number(params.v) : 1;
-  if (!Number.isInteger(version) || version < 1) {
+  if (version !== 1) {
     throw new Error(`Unsupported deck URL version: ${params.v}`);
   }
   return {

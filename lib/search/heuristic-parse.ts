@@ -69,7 +69,14 @@ export function heuristicParse(normalized: string): FilterJSON {
   if (/\bswitch/.test(normalized)) addEffect("switch");
   if (/\bprevent|can'?t\b/.test(normalized)) addEffect("prevent");
   if (/\bevolv/.test(normalized)) addEffect("evolution");
-  if (/\bability\b/.test(normalized)) addAttack("ability_interaction");
+  let effectKind: "ABILITY" | undefined;
+  if (/\bability\b/.test(normalized)) {
+    if (/\b(interact|disable|copy)\b/.test(normalized)) {
+      addAttack("ability_interaction");
+    } else {
+      effectKind = "ABILITY";
+    }
+  }
 
   if (/\bsupporter\b/.test(normalized)) {
     filter.cardType = "TRAINER";
@@ -169,10 +176,18 @@ export function heuristicParse(normalized: string): FilterJSON {
     }
   }
 
-  if (effectTags.length) {
+  if (effectTags.length || effectKind) {
     filter.effect = {
-      tags: effectTags as NonNullable<FilterJSON["effect"]>["tags"],
-      ...(filter.trainerType ? { kind: "TRAINER" as const } : {}),
+      ...(effectTags.length
+        ? {
+            tags: effectTags as NonNullable<FilterJSON["effect"]>["tags"],
+          }
+        : {}),
+      ...(filter.trainerType
+        ? { kind: "TRAINER" as const }
+        : effectKind
+          ? { kind: effectKind }
+          : {}),
     };
   }
 
@@ -182,12 +197,23 @@ export function heuristicParse(normalized: string): FilterJSON {
     filter.surface = "effect";
   }
 
-  if (!filter.attack && !filter.effect && !filter.anyOf) {
-    filter.textFallback = normalized.slice(0, 100);
-  }
-
   const hp = normalized.match(/\b(?:at least\s+)?(\d{2,3})\s*hp\b/);
   if (hp) filter.hpMin = Number(hp[1]);
+
+  const hasStructured =
+    filter.attack ||
+    filter.effect ||
+    filter.anyOf ||
+    filter.cardType ||
+    filter.trainerType ||
+    filter.energyType ||
+    filter.stage ||
+    filter.isEx !== undefined ||
+    filter.hpMin !== undefined ||
+    filter.setCodes;
+  if (!hasStructured) {
+    filter.textFallback = normalized.slice(0, 100);
+  }
 
   return filter;
 }

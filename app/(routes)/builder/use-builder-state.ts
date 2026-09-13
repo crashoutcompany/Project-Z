@@ -83,26 +83,27 @@ export function useBuilderDeck() {
 
   // URL <-> deck synchronisation.
   //
-  // `syncedParam` is the ?deck= value we last wrote via router.replace, so a
+  // `syncedUrlKey` is the ?v=&deck= pair we last wrote via router.replace, so a
   // URL change equal to it is our own echo. Any other change is an external
   // navigation (a new shared link) and becomes `pendingParam`, which the
-  // hydration effect below resolves. `seenParam` is the previous render's
-  // deckParam; comparing against it is the documented "adjust state when a
+  // hydration effect below resolves. `seenUrlKey` is the previous render's
+  // URL pair; comparing against it is the documented "adjust state when a
   // prop changes" pattern and keeps setState out of effect bodies.
   // Starts null (not "") so a bare /builder reached by navigation after
   // hydrating from a shared link is treated as external and resets the deck.
-  const [syncedParam, setSyncedParam] = useState<string | null>(null);
-  const [seenParam, setSeenParam] = useState(deckParam);
+  const urlKey = `${versionParam ?? ""}|${deckParam}`;
+  const [syncedUrlKey, setSyncedUrlKey] = useState<string | null>(null);
+  const [seenUrlKey, setSeenUrlKey] = useState(urlKey);
   const [pendingParam, setPendingParam] = useState<string | null>(
     deckParam === "" ? null : deckParam,
   );
 
-  if (deckParam !== seenParam) {
-    setSeenParam(deckParam);
+  if (urlKey !== seenUrlKey) {
+    setSeenUrlKey(urlKey);
     // Consume the echo (or any stale echo) so a later external navigation to
     // the same value, e.g. browser forward after back, is treated as external.
-    setSyncedParam(null);
-    if (deckParam !== syncedParam) setPendingParam(deckParam);
+    setSyncedUrlKey(null);
+    if (urlKey !== syncedUrlKey) setPendingParam(deckParam);
   }
 
   const pending = useMemo(() => {
@@ -149,13 +150,21 @@ export function useBuilderDeck() {
         if (cancelled) return;
         if (data) {
           const byRef = new Map(data.cards.map((c) => [refOf(c), c]));
-          const next: DeckCard[] = [];
-          for (const entry of entries) {
-            const card = byRef.get(entry.ref);
-            if (card) next.push({ ...card, count: entry.count });
+          const missing = entries.filter((entry) => !byRef.has(entry.ref));
+          if (missing.length > 0) {
+            setDeck([]);
+            setFetchError(
+              `Unknown card ref: ${missing.map((entry) => entry.ref).join(", ")}`,
+            );
+          } else {
+            setDeck(
+              entries.map((entry) => ({
+                ...byRef.get(entry.ref)!,
+                count: entry.count,
+              })),
+            );
+            setFetchError(null);
           }
-          setDeck(next);
-          setFetchError(null);
         } else {
           setDeck([]);
           setFetchError("Failed to load deck cards.");
@@ -195,7 +204,7 @@ export function useBuilderDeck() {
       setDeck(next);
       setFetchError(null);
       setPendingParam(null);
-      setSyncedParam(encodeDeck(nextEntries));
+      setSyncedUrlKey(`1|${encodeDeck(nextEntries)}`);
       router.replace(buildBuilderUrl(nextEntries), { scroll: false });
     },
     [router],

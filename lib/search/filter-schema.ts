@@ -9,7 +9,9 @@ export const AttackFilterSchema = z.object({
   energyCost: z.number().int().min(0).max(5).optional(),
   energyCostMin: z.number().int().min(0).max(5).optional(),
   energyCostMax: z.number().int().min(0).max(5).optional(),
-  energyTypeCounts: z.record(z.string(), z.number().int().min(1)).optional(),
+  energyTypeCounts: z
+    .partialRecord(EnergyTypeSchema, z.number().int().min(1))
+    .optional(),
   damageMin: z.number().int().min(0).optional(),
   damageKind: z.enum(["FIXED", "PLUS", "SCALING"]).optional(),
 });
