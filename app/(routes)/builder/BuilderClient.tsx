@@ -1,6 +1,12 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState, useTransition } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  useTransition,
+} from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -9,6 +15,7 @@ import { cn } from "@/lib/utils";
 import {
   buildBuilderUrl,
   decodeBuilderSearchParams,
+  encodeDeck,
   type DeckEntry,
   validateDeck,
 } from "@/lib/deck-url";
@@ -17,46 +24,98 @@ import { Check, Copy, Minus, Plus, Search, Trash2 } from "lucide-react";
 
 type DeckCard = SearchCardResult & { count: number };
 
+const EMPTY_DECK: DeckCard[] = [];
+
 function refOf(card: { setCode: string; number: number }) {
   return `${card.setCode}-${card.number}`;
+}
+
+function toEntries(cards: DeckCard[]): DeckEntry[] {
+  return cards.map((c) => ({
+    setCode: c.setCode,
+    number: c.number,
+    count: c.count,
+    ref: refOf(c),
+  }));
 }
 
 export function BuilderClient() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const deckParam = searchParams.get("deck") ?? "";
+  const versionParam = searchParams.get("v");
+
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchCardResult[]>([]);
-  const [deck, setDeck] = useState<DeckCard[]>([]);
   const [searchError, setSearchError] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
-  const [hydrated, setHydrated] = useState(() => {
-    const { entries } = decodeBuilderSearchParams({
-      v: searchParams.get("v"),
-      deck: searchParams.get("deck"),
-    });
-    return entries.length === 0;
-  });
   const [isPending, startTransition] = useTransition();
 
-  useEffect(() => {
-    if (hydrated) return;
+  const [deck, setDeck] = useState<DeckCard[]>([]);
+  const [fetchError, setFetchError] = useState<string | null>(null);
 
+  // URL <-> deck synchronisation.
+  //
+  // `syncedParam` is the ?deck= value we last wrote via router.replace, so a
+  // URL change equal to it is our own echo. Any other change is an external
+  // navigation (a new shared link) and becomes `pendingParam`, which the
+  // hydration effect below resolves. `seenParam` is the previous render's
+  // deckParam; comparing against it is the documented "adjust state when a
+  // prop changes" pattern and keeps setState out of effect bodies.
+  // Starts null (not "") so a bare /builder reached by navigation after
+  // hydrating from a shared link is treated as external and resets the deck.
+  const [syncedParam, setSyncedParam] = useState<string | null>(null);
+  const [seenParam, setSeenParam] = useState(deckParam);
+  const [pendingParam, setPendingParam] = useState<string | null>(
+    deckParam === "" ? null : deckParam,
+  );
+
+  if (deckParam !== seenParam) {
+    setSeenParam(deckParam);
+    // Consume the echo (or any stale echo) so a later external navigation to
+    // the same value, e.g. browser forward after back, is treated as external.
+    setSyncedParam(null);
+    if (deckParam !== syncedParam) setPendingParam(deckParam);
+  }
+
+  const pending = useMemo(() => {
+    if (pendingParam === null) return null;
+    try {
+      return {
+        entries: decodeBuilderSearchParams({
+          v: versionParam,
+          deck: pendingParam,
+        }).entries,
+        error: null as string | null,
+      };
+    } catch (err) {
+      return {
+        entries: [] as DeckEntry[],
+        error: err instanceof Error ? err.message : "Invalid deck link.",
+      };
+    }
+  }, [pendingParam, versionParam]);
+
+  // A pending param that decodes to nothing (empty or invalid) needs no fetch:
+  // the visible deck is simply empty until the user edits it.
+  const fetchNeeded =
+    pending !== null && pending.error === null && pending.entries.length > 0;
+  const hydrated = !fetchNeeded;
+  const visibleDeck = pendingParam === null ? deck : EMPTY_DECK;
+  const loadError = pending?.error ?? fetchError;
+
+  useEffect(() => {
+    if (!fetchNeeded || pending === null) return;
+    const { entries } = pending;
     let cancelled = false;
-    const { entries } = decodeBuilderSearchParams({
-      v: searchParams.get("v"),
-      deck: searchParams.get("deck"),
-    });
-    const refs = entries.map((e) => e.ref);
+
     fetch("/api/cards/by-refs", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ refs }),
+      body: JSON.stringify({ refs: entries.map((e) => e.ref) }),
     })
       .then(async (res) => {
-        if (!res.ok) {
-          console.error("Failed to load deck cards");
-          return null;
-        }
+        if (!res.ok) return null;
         return (await res.json()) as { cards: SearchCardResult[] };
       })
       .then((data) => {
@@ -69,50 +128,47 @@ export function BuilderClient() {
             if (card) next.push({ ...card, count: entry.count });
           }
           setDeck(next);
+          setFetchError(null);
+        } else {
+          setDeck([]);
+          setFetchError("Failed to load deck cards.");
         }
-        setHydrated(true);
+        setPendingParam(null);
       })
       .catch((err) => {
         console.error(err);
-        if (!cancelled) setHydrated(true);
+        if (cancelled) return;
+        setDeck([]);
+        setFetchError("Failed to load deck cards.");
+        setPendingParam(null);
       });
 
     return () => {
       cancelled = true;
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [fetchNeeded, pending]);
 
   const nameByRef = useMemo(() => {
     const map: Record<string, string> = {};
-    for (const card of deck) map[refOf(card)] = card.name;
+    for (const card of visibleDeck) map[refOf(card)] = card.name;
     return map;
-  }, [deck]);
+  }, [visibleDeck]);
 
-  const entries: DeckEntry[] = useMemo(
-    () =>
-      deck.map((c) => ({
-        setCode: c.setCode,
-        number: c.number,
-        count: c.count,
-        ref: refOf(c),
-      })),
-    [deck],
-  );
+  const entries = useMemo(() => toEntries(visibleDeck), [visibleDeck]);
 
   const validation = useMemo(
     () => validateDeck(entries, nameByRef),
     [entries, nameByRef],
   );
 
-  const syncUrl = useCallback(
-    (nextDeck: DeckCard[]) => {
-      const nextEntries: DeckEntry[] = nextDeck.map((c) => ({
-        setCode: c.setCode,
-        number: c.number,
-        count: c.count,
-        ref: refOf(c),
-      }));
+  /** Commit a deck edit: update state, then mirror it into the URL. */
+  const commitDeck = useCallback(
+    (next: DeckCard[]) => {
+      const nextEntries = toEntries(next);
+      setDeck(next);
+      setFetchError(null);
+      setPendingParam(null);
+      setSyncedParam(encodeDeck(nextEntries));
       router.replace(buildBuilderUrl(nextEntries), { scroll: false });
     },
     [router],
@@ -148,63 +204,65 @@ export function BuilderClient() {
 
   const addCard = useCallback(
     (card: SearchCardResult) => {
-      setDeck((prev) => {
-        const key = refOf(card);
-        const existing = prev.find((c) => refOf(c) === key);
-        const nameCount = prev
-          .filter((c) => c.name === card.name)
-          .reduce((sum, c) => sum + c.count, 0);
-        if (nameCount >= 2) return prev;
-        const total = prev.reduce((sum, c) => sum + c.count, 0);
-        if (total >= 20) return prev;
+      const prev = visibleDeck;
+      const key = refOf(card);
+      const existing = prev.find((c) => refOf(c) === key);
+      const nameCount = prev
+        .filter((c) => c.name === card.name)
+        .reduce((sum, c) => sum + c.count, 0);
+      if (nameCount >= 2) return;
+      const total = prev.reduce((sum, c) => sum + c.count, 0);
+      if (total >= 20) return;
 
-        let next: DeckCard[];
-        if (existing) {
-          if (existing.count >= 2) return prev;
-          next = prev.map((c) =>
+      if (existing) {
+        if (existing.count >= 2) return;
+        commitDeck(
+          prev.map((c) =>
             refOf(c) === key ? { ...c, count: c.count + 1 } : c,
-          );
-        } else {
-          next = [...prev, { ...card, count: 1 }];
-        }
-        syncUrl(next);
-        return next;
-      });
+          ),
+        );
+        return;
+      }
+      commitDeck([...prev, { ...card, count: 1 }]);
     },
-    [syncUrl],
+    [visibleDeck, commitDeck],
   );
 
   const removeOne = useCallback(
     (card: DeckCard) => {
-      setDeck((prev) => {
-        const key = refOf(card);
-        const next = prev
+      const key = refOf(card);
+      commitDeck(
+        visibleDeck
           .map((c) => (refOf(c) === key ? { ...c, count: c.count - 1 } : c))
-          .filter((c) => c.count > 0);
-        syncUrl(next);
-        return next;
-      });
+          .filter((c) => c.count > 0),
+      );
     },
-    [syncUrl],
+    [visibleDeck, commitDeck],
   );
 
   const clearDeck = useCallback(() => {
-    setDeck([]);
-    syncUrl([]);
-  }, [syncUrl]);
+    commitDeck([]);
+  }, [commitDeck]);
 
   const copyLink = useCallback(async () => {
     const url = `${window.location.origin}${buildBuilderUrl(entries)}`;
-    await navigator.clipboard.writeText(url);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    try {
+      await navigator.clipboard.writeText(url);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Clipboard write failed", err);
+    }
   }, [entries]);
 
   const grouped = useMemo(() => {
-    const pokemon = deck.filter((c) => c.cardType === "POKEMON");
-    const trainers = deck.filter((c) => c.cardType === "TRAINER");
+    const pokemon: DeckCard[] = [];
+    const trainers: DeckCard[] = [];
+    for (const c of visibleDeck) {
+      (c.cardType === "POKEMON" ? pokemon : trainers).push(c);
+    }
     return { pokemon, trainers };
-  }, [deck]);
+  }, [visibleDeck]);
 
   return (
     <div className="grid gap-6 lg:grid-cols-2">
@@ -280,7 +338,7 @@ export function BuilderClient() {
               variant="outline"
               size="sm"
               onClick={clearDeck}
-              disabled={deck.length === 0}
+              disabled={visibleDeck.length === 0}
             >
               <Trash2 className="mr-1 h-4 w-4" />
               Clear
@@ -300,6 +358,10 @@ export function BuilderClient() {
             </Button>
           </div>
         </div>
+
+        {loadError && (
+          <p className="text-destructive text-sm">{loadError}</p>
+        )}
 
         {validation.errors.length > 0 && (
           <ul className="text-destructive list-inside list-disc text-sm">

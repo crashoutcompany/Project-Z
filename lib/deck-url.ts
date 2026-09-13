@@ -2,8 +2,9 @@
  * Deck URL codec for /builder?v=1&deck=A1-1,A1-94x2,...
  *
  * Card refs are `{setCode}-{number}`. Set codes may contain hyphens (P-A).
- * Count suffix `xN` is optional (default 1). Max 2 copies per name is enforced
- * at validation time, not in the codec.
+ * Count suffix `xN` is optional (default 1) and must be 1 or 2 in both
+ * directions. The 20-card total and max-2-copies-per-*name* rules are
+ * enforced by validateDeck, not the codec.
  */
 
 export type DeckEntry = {
@@ -20,6 +21,15 @@ export type DeckDecodeResult = {
 };
 
 const REF_RE = /^(.+)-(\d+)$/;
+
+const MIN_COUNT = 1;
+const MAX_COUNT = 2;
+
+function assertValidCount(count: number, context: string): void {
+  if (!Number.isInteger(count) || count < MIN_COUNT || count > MAX_COUNT) {
+    throw new Error(`Invalid count in deck entry: ${context}`);
+  }
+}
 
 export function parseCardRef(ref: string): { setCode: string; number: number } {
   const match = REF_RE.exec(ref.trim());
@@ -40,6 +50,8 @@ export function encodeDeck(
     .map((e) => {
       const ref = formatCardRef(e.setCode, e.number);
       const count = e.count ?? 1;
+      // Keep the codec symmetric: never emit a param decodeDeckParam rejects.
+      assertValidCount(count, `${ref}x${count}`);
       return count > 1 ? `${ref}x${count}` : ref;
     })
     .join(",");
@@ -61,9 +73,7 @@ export function decodeDeckParam(deckParam: string): DeckEntry[] {
       ref = part;
       count = 1;
     }
-    if (!Number.isInteger(count) || count < 1 || count > 2) {
-      throw new Error(`Invalid count in deck entry: ${part}`);
-    }
+    assertValidCount(count, part);
     const { setCode, number } = parseCardRef(ref);
     entries.push({ setCode, number, count, ref: formatCardRef(setCode, number) });
   }

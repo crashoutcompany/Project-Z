@@ -1,44 +1,16 @@
 import { DamageKind, EffectKind } from "../../prisma/generated/client/client";
-import type { NormalizedAttack } from "./normalize";
+// Single source of truth for the closed tag vocabulary. The search layer
+// (lib/search/filter-schema.ts) validates LLM/heuristic output against the
+// same lists, so the importer and the query side cannot drift apart.
+import {
+  ALL_TAGS,
+  ATTACK_TAGS,
+  EFFECT_TAGS,
+  type AttackTag,
+  type EffectTag,
+} from "../../lib/search/tags";
 
-export const ATTACK_TAGS = [
-  "bench_damage",
-  "multi_target",
-  "random_target",
-  "applies_condition",
-  "condition_poison",
-  "condition_burn",
-  "condition_sleep",
-  "condition_confused",
-  "condition_paralyzed",
-  "coin_flip",
-  "damage_plus",
-  "damage_scaling",
-  "energy_attach",
-  "energy_discard",
-  "draw",
-  "heal",
-  "ability_interaction",
-  "free_attack",
-] as const;
-
-export type AttackTag = (typeof ATTACK_TAGS)[number];
-
-export const EFFECT_TAGS = [
-  "once_per_turn",
-  "energy_attach",
-  "heal",
-  "draw",
-  "prevent",
-  "search_deck",
-  "switch",
-  "bench_damage",
-  "evolution",
-] as const;
-
-export type EffectTag = (typeof EFFECT_TAGS)[number];
-
-export const ALL_TAGS = Array.from(new Set([...ATTACK_TAGS, ...EFFECT_TAGS]));
+export { ALL_TAGS, ATTACK_TAGS, EFFECT_TAGS, type AttackTag, type EffectTag };
 
 export function tagAttack(attack: {
   name?: string;

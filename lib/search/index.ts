@@ -9,6 +9,7 @@ export { heuristicParse } from "./heuristic-parse";
 export {
   executeSearch,
   type SearchCardResult,
+  type SearchOptions,
   type SearchResult,
 } from "./execute-search";
 export { normalizeQuery, hashQuery, validateQuery } from "./normalize-query";

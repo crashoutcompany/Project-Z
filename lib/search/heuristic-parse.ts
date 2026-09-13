@@ -109,8 +109,12 @@ export function heuristicParse(normalized: string): FilterJSON {
     filter.energyType = energyTypes;
   }
 
+  // Attack energy cost. Only treat "N energy" as a cost when the phrasing is
+  // about cost ("costs 2 energy", "with 1 energy", "2 energy attack",
+  // "2 energy for"). Effect phrases like "discard 1 energy" / "attach 2 energy"
+  // are tags (energy_discard / energy_attach), not cost constraints.
   const costExact = normalized.match(
-    /\b(?:costs?|with)\s+(\d)\s+energy\b|\b(\d)\s+energy\b/,
+    /\b(?:costs?|with|for)\s+(\d)\s+energy\b|\b(\d)\s+energy\s+(?:attack|cost|move)s?\b/,
   );
   const costNum = costExact ? Number(costExact[1] ?? costExact[2]) : undefined;
 
@@ -118,13 +122,22 @@ export function heuristicParse(normalized: string): FilterJSON {
     /\b(single|double|triple|1|2|3)\s+(grass|fire|water|lightning|psychic|fighting|darkness|metal|dragon|colorless)\b/,
   );
 
-  const damageMinMatch = normalized.match(/\b(\d{2,3})\s*\+?\b/);
+  // Damage floor. The number must sit next to damage language ("50 damage",
+  // "damage of 50", "does 50"), so unrelated numbers such as "100 hp" are not
+  // mistaken for a damage minimum. Note: normalizeQuery strips "+", so
+  // "50+" arrives here as "50".
+  const damageMinMatch = normalized.match(
+    /\b(\d{2,3})\s+(?:plus\s+|or more\s+)?damage\b|\bdamage\s+(?:of\s+)?(?:at least\s+)?(\d{2,3})\b|\b(?:does|deals?|hits? for|at least)\s+(\d{2,3})\b(?!\s*hp)/,
+  );
+  const damageMin = damageMinMatch
+    ? Number(damageMinMatch[1] ?? damageMinMatch[2] ?? damageMinMatch[3])
+    : undefined;
 
   if (
     attackTags.length ||
     costNum !== undefined ||
     typedCount ||
-    (damageMinMatch && /\b(damage|attack|energy|\+)\b/.test(normalized))
+    damageMin !== undefined
   ) {
     filter.attack = {};
     if (attackTags.length) {
@@ -146,8 +159,8 @@ export function heuristicParse(normalized: string): FilterJSON {
             : 3;
       filter.attack.energyTypeCounts = { [type]: count };
     }
-    if (damageMinMatch && /\b(damage|attack|energy|\+)\b/.test(normalized)) {
-      filter.attack.damageMin = Number(damageMinMatch[1]);
+    if (damageMin !== undefined && !Number.isNaN(damageMin)) {
+      filter.attack.damageMin = damageMin;
     }
     if (/\bplus\b|\bmore damage\b/.test(normalized)) {
       filter.attack.damageKind = "PLUS";

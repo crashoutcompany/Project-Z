@@ -1,16 +1,32 @@
-import type { Prisma } from "@/prisma/generated/client/client";
+import { Prisma } from "@/prisma/generated/client/client";
 import prisma from "@/prisma/db";
 import type { AttackFilter, EffectFilter, FilterJSON } from "./filter-schema";
+import { cardMatchesClauses, hasEnergyTypeCounts } from "./match";
 
+export type SearchOptions = {
+  limit?: number;
+  /** Restrict results to cards flagged tradeable (used by /trading/create). */
+  tradeableOnly?: boolean;
+};
+
+// Upper bound on rows scanned when a filter needs JS post-filtering. Well
+// above the number of cards that share any single energy type.
+const POST_FILTER_SCAN_CAP = 2000;
+
+// Keyed by the rarity *codes* the importer stores (scripts/lib/rarity-map.ts),
+// not the raw ◊/☆ symbols from the source payload. Lower = more common.
 const RARITY_RANK: Record<string, number> = {
-  "◊": 1,
-  "◊◊": 2,
-  "◊◊◊": 3,
-  "◊◊◊◊": 4,
-  "☆": 5,
-  "☆☆": 6,
-  "☆☆☆": 7,
-  "♛": 8,
+  C: 1, // ◊
+  U: 2, // ◊◊
+  R: 3, // ◊◊◊
+  RR: 4, // ◊◊◊◊
+  AR: 5, // ☆
+  SR: 6, // ☆☆
+  S: 7, // ✵
+  SSR: 8, // ✵✵
+  IM: 9, // ☆☆☆
+  UR: 10, // Crown Rare
+  PROMO: 11,
 };
 
 function attackWhere(filter: AttackFilter): Prisma.AttackWhereInput {
@@ -47,6 +63,9 @@ function attackWhere(filter: AttackFilter): Prisma.AttackWhereInput {
   if (filter.energyTypeCounts) {
     const types = Object.keys(filter.energyTypeCounts);
     if (types.length) {
+      // Prisma cannot count duplicate array members, so this is only a
+      // necessary-condition prefilter. Exact counts ("double fire" => two
+      // fire symbols) are enforced in JS by cardMatchesClauses() (./match).
       where.AND = types.map((type) => ({
         energyTypes: { has: type },
       }));
@@ -63,10 +82,14 @@ function effectWhere(filter: EffectFilter): Prisma.CardEffectWhereInput {
   return where;
 }
 
-function buildCardWhere(filter: FilterJSON): Prisma.CardWhereInput {
+function buildCardWhere(
+  filter: FilterJSON,
+  opts: SearchOptions,
+): Prisma.CardWhereInput {
   const where: Prisma.CardWhereInput = {};
   const and: Prisma.CardWhereInput[] = [];
 
+  if (opts.tradeableOnly) where.isTradeable = true;
   if (filter.cardType) where.cardType = filter.cardType;
   if (filter.trainerType) where.trainerType = filter.trainerType;
   if (filter.energyType?.length) where.energyType = { in: filter.energyType };
@@ -146,6 +169,7 @@ export type SearchCardResult = {
   hp: number | null;
   rarity: string;
   isEx: boolean;
+  isTradeable: boolean;
   matchedTags: string[];
 };
 
@@ -177,19 +201,41 @@ function collectMatchedTags(
 
 async function queryCards(
   filter: FilterJSON,
+  opts: SearchOptions,
   limit: number,
 ): Promise<SearchCardResult[]> {
+  // energyTypeCounts can only be enforced in JS, and the DB prefilter for it
+  // (type membership) is much looser than the real predicate. Scan the whole
+  // prefiltered set in that case so exact matches beyond the first page are
+  // not lost; the set is bounded by cards sharing one energy type.
+  const needsPostFilter = hasEnergyTypeCounts(filter);
   const rows = await prisma.card.findMany({
-    where: buildCardWhere(filter),
-    take: Math.min(limit * 3, 240),
+    where: buildCardWhere(filter, opts),
+    take: needsPostFilter ? POST_FILTER_SCAN_CAP : Math.min(limit * 3, 240),
+    // Deterministic sample: without an orderBy Postgres may return a different
+    // subset of the candidate set on each call, making rankings flap. `id` is
+    // the unique tie-breaker (name+number can repeat across sets).
+    orderBy: [{ name: "asc" }, { number: "asc" }, { id: "asc" }],
     include: {
       set: { select: { code: true } },
-      attacks: { select: { tags: true, damageBase: true } },
-      effects: { select: { tags: true } },
+      attacks: {
+        select: {
+          tags: true,
+          damageBase: true,
+          damageKind: true,
+          energyCost: true,
+          energyTypes: true,
+        },
+      },
+      effects: { select: { tags: true, kind: true } },
     },
   });
 
-  return rows
+  const candidates = needsPostFilter
+    ? rows.filter((c) => cardMatchesClauses(filter, c))
+    : rows;
+
+  return candidates
     .map((c) => {
       const matchedTags = collectMatchedTags(filter, c.attacks, c.effects);
       const maxDamage = c.attacks.reduce(
@@ -207,6 +253,7 @@ async function queryCards(
         hp: c.hp,
         rarity: c.rarity,
         isEx: c.isEx,
+        isTradeable: c.isTradeable,
         matchedTags,
         _rank: RARITY_RANK[c.rarity] ?? 99,
         _matched: matchedTags.length,
@@ -227,8 +274,13 @@ async function queryCards(
 
 async function ftsFallback(
   text: string,
+  opts: SearchOptions,
   limit: number,
 ): Promise<SearchCardResult[]> {
+  const tradeableClause = opts.tradeableOnly
+    ? Prisma.sql`AND c.is_tradeable = true`
+    : Prisma.empty;
+
   const rows = await prisma.$queryRaw<
     Array<{
       id: number;
@@ -241,6 +293,7 @@ async function ftsFallback(
       hp: number | null;
       rarity: string;
       isEx: boolean;
+      isTradeable: boolean;
     }>
   >`
     SELECT c.card_id AS id,
@@ -252,20 +305,24 @@ async function ftsFallback(
            c."energyType" AS "energyType",
            c.hp,
            c.rarity,
-           c."isEx" AS "isEx"
+           c."isEx" AS "isEx",
+           c.is_tradeable AS "isTradeable"
     FROM "Card" c
     JOIN "Set" s ON s.set_id = c.set_id
-    WHERE EXISTS (
-      SELECT 1 FROM "Attack" a
-      WHERE a.card_id = c.card_id
-        AND a.effect_tsv @@ plainto_tsquery('english', ${text})
+    WHERE (
+      EXISTS (
+        SELECT 1 FROM "Attack" a
+        WHERE a.card_id = c.card_id
+          AND a.effect_tsv @@ plainto_tsquery('english', ${text})
+      )
+      OR EXISTS (
+        SELECT 1 FROM "CardEffect" e
+        WHERE e.card_id = c.card_id
+          AND e.effect_tsv @@ plainto_tsquery('english', ${text})
+      )
+      OR c.name ILIKE ${"%" + text + "%"}
     )
-    OR EXISTS (
-      SELECT 1 FROM "CardEffect" e
-      WHERE e.card_id = c.card_id
-        AND e.effect_tsv @@ plainto_tsquery('english', ${text})
-    )
-    OR c.name ILIKE ${"%" + text + "%"}
+    ${tradeableClause}
     ORDER BY c.name ASC, c.number ASC
     LIMIT ${limit}
   `;
@@ -275,15 +332,15 @@ async function ftsFallback(
 
 export async function executeSearch(
   filter: FilterJSON,
-  opts: { limit?: number } = {},
+  opts: SearchOptions = {},
 ): Promise<SearchResult> {
   const limit = opts.limit ?? 60;
   let usedFallback = false;
 
-  let cards = await queryCards(filter, limit);
+  let cards = await queryCards(filter, opts, limit);
 
   if (cards.length === 0 && filter.textFallback?.trim()) {
-    cards = await ftsFallback(filter.textFallback.trim(), limit);
+    cards = await ftsFallback(filter.textFallback.trim(), opts, limit);
     if (cards.length) usedFallback = true;
   } else if (cards.length === 0) {
     const bits = [
@@ -291,7 +348,7 @@ export async function executeSearch(
       ...(filter.effect?.tags ?? []),
     ].map((t) => t.replaceAll("_", " "));
     if (bits.length) {
-      cards = await ftsFallback(bits.join(" "), limit);
+      cards = await ftsFallback(bits.join(" "), opts, limit);
       if (cards.length) usedFallback = true;
     }
   }

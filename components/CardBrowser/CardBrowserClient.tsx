@@ -72,7 +72,7 @@ function searchResultToCardWithSet(
     cardType: card.cardType as CardWithSet["cardType"],
     imageUrl: card.imageUrl,
     rarity: card.rarity,
-    isTradeable: false,
+    isTradeable: card.isTradeable,
     pack: null,
     energyType: card.energyType,
     hp: card.hp,
@@ -186,7 +186,7 @@ export function CardBrowserClient({
           const res = await fetch("/api/search", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ query, limit: 60 }),
+            body: JSON.stringify({ query, limit: 60, tradeableOnly }),
           });
           const data = (await res.json()) as {
             error?: string;

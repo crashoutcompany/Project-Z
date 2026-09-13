@@ -1,4 +1,7 @@
-/** Closed tag vocabulary — keep in sync with scripts/lib/tagger.ts */
+/**
+ * Closed tag vocabulary. This is the single definition; scripts/lib/tagger.ts
+ * imports from here so the importer and the search layer always agree.
+ */
 
 export const ATTACK_TAGS = [
   "bench_damage",

@@ -68,19 +68,24 @@ export async function parseQueryToFilter(
 
   filter = FilterJSONSchema.parse(filter);
 
-  await prisma.searchQueryCache.upsert({
-    where: { queryHash },
-    create: {
-      queryHash,
-      queryText: normalized,
-      filterJson: filter as Prisma.InputJsonValue,
-    },
-    update: {
-      filterJson: filter as Prisma.InputJsonValue,
-      queryText: normalized,
-      hitCount: { increment: 1 },
-    },
-  });
+  // Only persist LLM output. Caching the heuristic fallback would pin a
+  // degraded parse to this query hash forever and never retry the LLM once
+  // it recovers (or once an API key is configured).
+  if (source === "llm") {
+    await prisma.searchQueryCache.upsert({
+      where: { queryHash },
+      create: {
+        queryHash,
+        queryText: normalized,
+        filterJson: filter as Prisma.InputJsonValue,
+      },
+      update: {
+        filterJson: filter as Prisma.InputJsonValue,
+        queryText: normalized,
+        hitCount: { increment: 1 },
+      },
+    });
+  }
 
   return { filter, cached: false, source };
 }

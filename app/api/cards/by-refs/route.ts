@@ -32,12 +32,25 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Too many refs" }, { status: 400 });
   }
 
+  // Malformed refs are a client error, not a lookup failure.
+  let parsed: Array<{ ref: string; setCode: string; number: number }>;
   try {
-    const parsed = refs.map((ref) => {
+    parsed = refs.map((ref) => {
       const { setCode, number } = parseCardRef(ref);
       return { ref, setCode, number };
     });
+  } catch (err) {
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "Invalid card ref" },
+      { status: 400 },
+    );
+  }
 
+  if (parsed.length === 0) {
+    return NextResponse.json({ cards: [] });
+  }
+
+  try {
     const cards = await prisma.card.findMany({
       where: {
         OR: parsed.map((p) => ({
@@ -60,6 +73,7 @@ export async function POST(request: Request) {
         hp: c.hp,
         rarity: c.rarity,
         isEx: c.isEx,
+        isTradeable: c.isTradeable,
         matchedTags: [] as string[],
       })),
     });
