@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { FilterJSONSchema } from "./filter-schema";
 import { heuristicParse } from "./heuristic-parse";
 import { normalizeQuery } from "./normalize-query";
 
@@ -47,5 +48,30 @@ describe("heuristicParse — typed energy counts", () => {
   it("emits energyTypeCounts for 'double fire'", () => {
     const f = parse("double fire attack");
     expect(f.attack?.energyTypeCounts).toEqual({ fire: 2 });
+  });
+});
+
+describe("heuristicParse — ability and structured fallback", () => {
+  it("parses a plain ability query as an effect kind", () => {
+    const f = parse("ability");
+    expect(f.effect?.kind).toBe("ABILITY");
+    expect(f.attack?.tags).toBeUndefined();
+    expect(f.textFallback).toBeUndefined();
+  });
+
+  it("does not add textFallback when a top-level structured filter exists", () => {
+    const f = parse("fire pokemon");
+    expect(f.cardType).toBe("POKEMON");
+    expect(f.energyType).toEqual(["fire"]);
+    expect(f.textFallback).toBeUndefined();
+  });
+
+  it("rejects invalid energyTypeCounts keys", () => {
+    expect(
+      FilterJSONSchema.safeParse({
+        surface: "any",
+        attack: { energyTypeCounts: { fairy: 1 } },
+      }).success,
+    ).toBe(false);
   });
 });

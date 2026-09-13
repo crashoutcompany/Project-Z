@@ -9,8 +9,8 @@
     "start": "next start",
     "lint": "eslint .",
     "test": "vitest run",
-    "import:cards": "tsx --env-file=.env scripts/import-cards.ts",
-    "import:cards:dry": "tsx --env-file=.env scripts/import-cards.ts --dry-run",
+    "import:cards": "tsx scripts/import-cards.ts",
+    "import:cards:dry": "tsx scripts/import-cards.ts --dry-run",
     "doctor": "react-doctor"
   },
   "prisma": {

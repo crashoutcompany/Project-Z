@@ -29,16 +29,33 @@ export function SearchBox({
   const onChangeRef = useRef(onChange);
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [localValue, setLocalValue] = useState(value);
+  const [seenMode, setSeenMode] = useState(mode);
+  const [seenValue, setSeenValue] = useState(value);
 
   useEffect(() => {
     onChangeRef.current = onChange;
   }, [onChange]);
+
+  if (mode !== seenMode || value !== seenValue) {
+    setSeenMode(mode);
+    setSeenValue(value);
+    setLocalValue(value);
+  }
 
   useEffect(() => {
     return () => {
       if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
     };
   }, []);
+
+  const switchMode = (next: SearchMode) => {
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+      debounceTimerRef.current = null;
+    }
+    if (next !== mode) setLocalValue("");
+    onModeChange(next);
+  };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const next = e.target.value;
@@ -69,7 +86,7 @@ export function SearchBox({
             type="button"
             variant="ghost"
             size="sm"
-            onClick={() => onModeChange("name")}
+            onClick={() => switchMode("name")}
             className={cn(
               "rounded-md px-3",
               mode === "name" &&
@@ -82,7 +99,7 @@ export function SearchBox({
             type="button"
             variant="ghost"
             size="sm"
-            onClick={() => onModeChange("effects")}
+            onClick={() => switchMode("effects")}
             className={cn(
               "rounded-md px-3",
               mode === "effects" &&

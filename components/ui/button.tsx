@@ -52,11 +52,19 @@ function Button({
 }: ButtonProps) {
   // If href is passed directly, render a Next.js Link styled as a button
   if (href) {
-    const { children, ...restProps } = props
+    const { children, disabled, ...restProps } = props
+    const classes = cn(buttonVariants({ variant, size, className }))
+    if (disabled) {
+      return (
+        <span aria-disabled="true" className={classes}>
+          {children}
+        </span>
+      )
+    }
     return (
       <Link
         href={href}
-        className={cn(buttonVariants({ variant, size, className }))}
+        className={classes}
         {...(restProps as unknown as Omit<React.ComponentProps<typeof Link>, "href">)}
       >
         {children}
@@ -67,12 +75,23 @@ function Button({
   // Handle render prop when an element with href (like <Link>) is passed across RSC boundaries
   if (React.isValidElement(render) && (render.props as { href?: string })?.href) {
     const linkProps = render.props as React.ComponentProps<typeof Link>
+    const { children: buttonChildren, disabled, ...restButtonProps } = props
+    const classes = cn(buttonVariants({ variant, size, className }), linkProps.className)
+    if (disabled) {
+      return (
+        <span aria-disabled="true" className={classes}>
+          {linkProps.children ?? buttonChildren}
+        </span>
+      )
+    }
     return (
       <Link
+        {...(restButtonProps as unknown as React.ComponentProps<typeof Link>)}
         {...linkProps}
-        className={cn(buttonVariants({ variant, size, className }), linkProps.className)}
+        href={linkProps.href}
+        className={classes}
       >
-        {linkProps.children ?? props.children}
+        {linkProps.children ?? buttonChildren}
       </Link>
     )
   }

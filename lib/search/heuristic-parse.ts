@@ -69,7 +69,11 @@ export function heuristicParse(normalized: string): FilterJSON {
   if (/\bswitch/.test(normalized)) addEffect("switch");
   if (/\bprevent|can'?t\b/.test(normalized)) addEffect("prevent");
   if (/\bevolv/.test(normalized)) addEffect("evolution");
-  if (/\bability\b/.test(normalized)) addAttack("ability_interaction");
+  const plainAbility = /\bability\b/.test(normalized);
+  const abilityInteraction =
+    plainAbility &&
+    /\b(interact|disable|copy|ignore|against)\b/.test(normalized);
+  if (abilityInteraction) addAttack("ability_interaction");
 
   if (/\bsupporter\b/.test(normalized)) {
     filter.cardType = "TRAINER";
@@ -169,10 +173,18 @@ export function heuristicParse(normalized: string): FilterJSON {
     }
   }
 
-  if (effectTags.length) {
+  if (effectTags.length || (plainAbility && !abilityInteraction)) {
     filter.effect = {
-      tags: effectTags as NonNullable<FilterJSON["effect"]>["tags"],
-      ...(filter.trainerType ? { kind: "TRAINER" as const } : {}),
+      ...(effectTags.length
+        ? {
+            tags: effectTags as NonNullable<FilterJSON["effect"]>["tags"],
+          }
+        : {}),
+      ...(filter.trainerType
+        ? { kind: "TRAINER" as const }
+        : plainAbility && !abilityInteraction
+          ? { kind: "ABILITY" as const }
+          : {}),
     };
   }
 
@@ -182,12 +194,24 @@ export function heuristicParse(normalized: string): FilterJSON {
     filter.surface = "effect";
   }
 
-  if (!filter.attack && !filter.effect && !filter.anyOf) {
-    filter.textFallback = normalized.slice(0, 100);
-  }
-
   const hp = normalized.match(/\b(?:at least\s+)?(\d{2,3})\s*hp\b/);
   if (hp) filter.hpMin = Number(hp[1]);
+
+  const hasStructured =
+    Boolean(filter.attack) ||
+    Boolean(filter.effect) ||
+    Boolean(filter.anyOf) ||
+    Boolean(filter.cardType) ||
+    Boolean(filter.trainerType) ||
+    Boolean(filter.energyType) ||
+    Boolean(filter.stage) ||
+    filter.isEx !== undefined ||
+    filter.hpMin !== undefined ||
+    Boolean(filter.setCodes);
+
+  if (!hasStructured) {
+    filter.textFallback = normalized.slice(0, 100);
+  }
 
   return filter;
 }

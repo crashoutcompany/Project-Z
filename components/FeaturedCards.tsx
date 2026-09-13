@@ -43,8 +43,8 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
     rare: [
       {
         id: 5,
-        name: "Lugia GX",
-        type: "Psychic",
+        name: "Palkia ex",
+        type: "Water",
         rarity: "Secret Rare",
         price: 349.99,
         rating: 5.0,

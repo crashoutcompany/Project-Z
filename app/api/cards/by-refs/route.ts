@@ -11,14 +11,17 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
-  const refs =
+  const rawRefs =
     typeof body === "object" &&
     body !== null &&
     "refs" in body &&
     Array.isArray((body as { refs: unknown }).refs)
-      ? (body as { refs: unknown[] }).refs.filter(
-          (r): r is string => typeof r === "string",
-        )
+      ? (body as { refs: unknown[] }).refs
+      : null;
+
+  const refs =
+    rawRefs?.every((r): r is string => typeof r === "string") ?? false
+      ? rawRefs
       : null;
 
   if (!refs) {

@@ -49,9 +49,11 @@ function LoadingIcon() {
 
 export function SignInButtons() {
   const [pendingProvider, setPendingProvider] = useState<Provider | null>(null);
+  const [signInError, setSignInError] = useState<string | null>(null);
 
   const handleSignIn = async (provider: Provider) => {
     setPendingProvider(provider);
+    setSignInError(null);
     try {
       await signIn.social({
         provider,
@@ -59,6 +61,7 @@ export function SignInButtons() {
       });
     } catch (err) {
       console.error(err);
+      setSignInError("Sign-in failed. Please try again.");
     }
     setPendingProvider(null);
   };
@@ -96,7 +99,7 @@ export function SignInButtons() {
       >
         {pendingProvider
           ? "A secure sign-in window is opening."
-          : "Secure sign-in. No password required."}
+          : (signInError ?? "Secure sign-in. No password required.")}
       </p>
     </div>
   );

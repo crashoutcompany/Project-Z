@@ -272,10 +272,44 @@ async function queryCards(
     .map(({ _rank, _matched, _damage, ...rest }) => rest);
 }
 
+function matchesScalarFilters(
+  row: {
+    cardType: string;
+    trainerType: string | null;
+    energyType: string | null;
+    stage: string | null;
+    hp: number | null;
+    isEx: boolean;
+    setCode: string;
+  },
+  filter: FilterJSON,
+): boolean {
+  if (filter.cardType && row.cardType !== filter.cardType) return false;
+  if (filter.trainerType && row.trainerType !== filter.trainerType) return false;
+  if (
+    filter.energyType?.length &&
+    (!row.energyType || !filter.energyType.includes(row.energyType))
+  ) {
+    return false;
+  }
+  if (filter.stage?.length && (!row.stage || !filter.stage.includes(row.stage))) {
+    return false;
+  }
+  if (filter.isEx !== undefined && row.isEx !== filter.isEx) return false;
+  if (filter.hpMin !== undefined && (row.hp == null || row.hp < filter.hpMin)) {
+    return false;
+  }
+  if (filter.setCodes?.length && !filter.setCodes.includes(row.setCode)) {
+    return false;
+  }
+  return true;
+}
+
 async function ftsFallback(
   text: string,
   opts: SearchOptions,
   limit: number,
+  filter: FilterJSON,
 ): Promise<SearchCardResult[]> {
   const tradeableClause = opts.tradeableOnly
     ? Prisma.sql`AND c.is_tradeable = true`
@@ -289,7 +323,9 @@ async function ftsFallback(
       setCode: string;
       number: number;
       cardType: string;
+      trainerType: string | null;
       energyType: string | null;
+      stage: string | null;
       hp: number | null;
       rarity: string;
       isEx: boolean;
@@ -302,7 +338,9 @@ async function ftsFallback(
            s.code AS "setCode",
            c.number,
            c."cardType"::text AS "cardType",
+           c."trainerType"::text AS "trainerType",
            c."energyType" AS "energyType",
+           c.stage::text AS stage,
            c.hp,
            c.rarity,
            c."isEx" AS "isEx",
@@ -324,10 +362,16 @@ async function ftsFallback(
     )
     ${tradeableClause}
     ORDER BY c.name ASC, c.number ASC
-    LIMIT ${limit}
+    LIMIT ${limit * 3}
   `;
 
-  return rows.map((r) => ({ ...r, matchedTags: [] }));
+  return rows
+    .filter((r) => matchesScalarFilters(r, filter))
+    .slice(0, limit)
+    .map(({ trainerType: _trainerType, stage: _stage, ...r }) => ({
+      ...r,
+      matchedTags: [],
+    }));
 }
 
 export async function executeSearch(
@@ -340,7 +384,7 @@ export async function executeSearch(
   let cards = await queryCards(filter, opts, limit);
 
   if (cards.length === 0 && filter.textFallback?.trim()) {
-    cards = await ftsFallback(filter.textFallback.trim(), opts, limit);
+    cards = await ftsFallback(filter.textFallback.trim(), opts, limit, filter);
     if (cards.length) usedFallback = true;
   } else if (cards.length === 0) {
     const bits = [
@@ -348,7 +392,7 @@ export async function executeSearch(
       ...(filter.effect?.tags ?? []),
     ].map((t) => t.replaceAll("_", " "));
     if (bits.length) {
-      cards = await ftsFallback(bits.join(" "), opts, limit);
+      cards = await ftsFallback(bits.join(" "), opts, limit, filter);
       if (cards.length) usedFallback = true;
     }
   }

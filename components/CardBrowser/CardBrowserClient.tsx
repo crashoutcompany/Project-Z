@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState, useTransition } from "react";
+import { useCallback, useRef, useState, useTransition } from "react";
 import { Set } from "@/prisma/generated/client/client";
 import { fetchCards } from "@/server/actions";
 import { CardGrid } from "./CardGrid";
@@ -110,6 +110,7 @@ export function CardBrowserClient({
     useState<SelectedCards>(initialSelected);
   const [isPending, startTransition] = useTransition();
   const [effectsError, setEffectsError] = useState<string | null>(null);
+  const requestSeq = useRef(0);
 
   const replaceResults = useCallback(
     (nextCards: CardWithSet[], nextCursor: number | null) => {
@@ -124,11 +125,13 @@ export function CardBrowserClient({
 
   const loadSet = useCallback(
     (setId: number) => {
+      const seq = ++requestSeq.current;
       startTransition(async () => {
         const result = await fetchCards({
           setId,
           tradeableOnly,
         });
+        if (seq !== requestSeq.current) return;
         replaceResults(result.cards as CardWithSet[], result.nextCursor);
         setFilterChips([]);
         setEffectsError(null);
@@ -147,18 +150,21 @@ export function CardBrowserClient({
 
   const runNameSearch = useCallback(
     (query: string) => {
+      const seq = ++requestSeq.current;
       startTransition(async () => {
         if (query) {
           const result = await fetchCards({
             search: query,
             tradeableOnly,
           });
+          if (seq !== requestSeq.current) return;
           replaceResults(result.cards as CardWithSet[], result.nextCursor);
         } else {
           const result = await fetchCards({
             setId: activeSetId,
             tradeableOnly,
           });
+          if (seq !== requestSeq.current) return;
           replaceResults(result.cards as CardWithSet[], result.nextCursor);
         }
         setFilterChips([]);
@@ -170,12 +176,14 @@ export function CardBrowserClient({
 
   const runEffectsSearch = useCallback(
     (query: string) => {
+      const seq = ++requestSeq.current;
       startTransition(async () => {
         if (!query) {
           const result = await fetchCards({
             setId: activeSetId,
             tradeableOnly,
           });
+          if (seq !== requestSeq.current) return;
           replaceResults(result.cards as CardWithSet[], result.nextCursor);
           setFilterChips([]);
           setEffectsError(null);
@@ -194,6 +202,7 @@ export function CardBrowserClient({
             cards?: SearchCardResult[];
             usedFallback?: boolean;
           };
+          if (seq !== requestSeq.current) return;
           if (!res.ok) {
             setEffectsError(data.error ?? "Search failed");
             replaceResults([], null);
@@ -207,6 +216,7 @@ export function CardBrowserClient({
             null,
           );
         } catch {
+          if (seq !== requestSeq.current) return;
           setEffectsError("Search request failed");
           replaceResults([], null);
           setFilterChips([]);

@@ -42,10 +42,12 @@ export async function parseQueryToFilter(
   if (cached) {
     const parsed = FilterJSONSchema.safeParse(cached.filterJson);
     if (parsed.success) {
-      await prisma.searchQueryCache.update({
-        where: { queryHash },
-        data: { hitCount: { increment: 1 } },
-      });
+      await prisma.searchQueryCache
+        .update({
+          where: { queryHash },
+          data: { hitCount: { increment: 1 } },
+        })
+        .catch((error) => console.error("[search-cache:update]", error));
       return { filter: parsed.data, cached: true, source: "cache" };
     }
   }
@@ -72,19 +74,21 @@ export async function parseQueryToFilter(
   // degraded parse to this query hash forever and never retry the LLM once
   // it recovers (or once an API key is configured).
   if (source === "llm") {
-    await prisma.searchQueryCache.upsert({
-      where: { queryHash },
-      create: {
-        queryHash,
-        queryText: normalized,
-        filterJson: filter as Prisma.InputJsonValue,
-      },
-      update: {
-        filterJson: filter as Prisma.InputJsonValue,
-        queryText: normalized,
-        hitCount: { increment: 1 },
-      },
-    });
+    await prisma.searchQueryCache
+      .upsert({
+        where: { queryHash },
+        create: {
+          queryHash,
+          queryText: normalized,
+          filterJson: filter as Prisma.InputJsonValue,
+        },
+        update: {
+          filterJson: filter as Prisma.InputJsonValue,
+          queryText: normalized,
+          hitCount: { increment: 1 },
+        },
+      })
+      .catch((error) => console.error("[search-cache:upsert]", error));
   }
 
   return { filter, cached: false, source };
