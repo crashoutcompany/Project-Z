@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 // TODO Change cards to 1 at a time and fade in/out on a timer
@@ -11,32 +12,32 @@ export default function HeroSection() {
     {
       name: "Arceus",
       position: "translate-y-8",
-      url: "/tcgpocket/th/triumphantlight/71.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2a/A2a_071_EN.webp",
     },
     {
       name: "Dialga",
       position: "",
-      url: "/tcgpocket/th/space-timesmackdown/119.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2/A2_119_EN.webp",
     },
     {
       name: "Mewtwo",
       position: "translate-y-12",
-      url: "/tcgpocket/th/geneticapex/286.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_286_EN.webp",
     },
     {
       name: "Palkia",
       position: "translate-y-4",
-      url: "/tcgpocket/th/space-timesmackdown/49.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2/A2_049_EN.webp",
     },
     {
       name: "Mew",
       position: "translate-y-16",
-      url: "/tcgpocket/th/mythicalisland/77.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1a/A1a_077_EN.webp",
     },
     {
       name: "Pikachu",
       position: "translate-y-8",
-      url: "/tcgpocket/th/geneticapex/285.jpg",
+      url: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_285_EN.webp",
     },
   ];
   return (
@@ -63,22 +64,19 @@ export default function HeroSection() {
                 dream Pokémon card collection.
               </p>
               <div className="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
-                <Button
-                  size="lg"
-                  className="rounded-full"
-                  render={
-                    <Link href="/trading">
-                      Start Trading
-                      <ChevronRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  }
-                ></Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="rounded-full"
-                  render={<Link href="/collections">Browse Collections</Link>}
-                ></Button>
+                <Link
+                  href="/trading"
+                  className={cn(buttonVariants({ size: "lg" }), "rounded-full")}
+                >
+                  Start Trading
+                  <ChevronRight className="ml-2 h-4 w-4" />
+                </Link>
+                <Link
+                  href="/collections"
+                  className={cn(buttonVariants({ size: "lg", variant: "outline" }), "rounded-full")}
+                >
+                  Browse Collections
+                </Link>
               </div>
             </div>
 
@@ -86,14 +84,14 @@ export default function HeroSection() {
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-red-500/20 via-red-400/20 to-white/30 opacity-70 blur-xl" />
               {/* <div className="pointer-events-none absolute inset-4 h-60 w-60 -translate-1/2 translate-x-16 scale-150 rounded-full bg-gradient-to-b from-red-500 from-40% via-black via-50% to-white to-50% blur-3xl" /> */}
               <div className="relative grid grid-cols-3 gap-3">
-                {pokemon.map((card, index) => (
+                {pokemon.map((card) => (
                   <div
-                    key={index}
+                    key={card.name}
                     className={`transform ${card.position} transition-all duration-500 hover:z-10 hover:scale-105`}
                   >
                     <div className="aspect-[2/3] overflow-hidden rounded-xl shadow-lg">
                       <Image
-                        src={`https://serebii.net${card.url.replace("/th", "")}`}
+                        src={card.url}
                         alt={`${card.name} card`}
                         width={200}
                         height={300}

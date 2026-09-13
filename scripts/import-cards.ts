@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import prisma from "../prisma/db";
 import { SourcePayloadSchema, type SourceCard } from "./lib/source-schema";
-import { SET_MAP, getSetInfo, parseCardId } from "./lib/set-map";
+import { SET_MAP, parseCardId } from "./lib/set-map";
 import { normalizeRarity } from "./lib/rarity-map";
 import { deriveImageUrl } from "./lib/image-url";
 import { normalizeCard, type NormalizedCard } from "./lib/normalize";
@@ -32,9 +32,13 @@ async function loadSourceData(): Promise<SourceCard[]> {
     const res = await fetch(SOURCE_URL);
     if (res.ok) {
       jsonString = await res.text();
+    } else {
+      console.warn(`Source fetch returned ${res.status}; trying local cache.`);
     }
   } catch (err) {
-    // Network fetch failed, try local cache
+    console.warn(
+      `Source fetch failed (${err instanceof Error ? err.message : String(err)}); trying local cache.`
+    );
   }
 
   if (!jsonString && fs.existsSync(localCachePath)) {
@@ -314,11 +318,11 @@ export async function runImport(options: { dryRun?: boolean } = {}) {
 
   console.log(`\n======================================================`);
   if (hasCountMismatch) {
-    console.error(`❌ ERROR: Set count mismatch detected! Aborting with exit code 1.`);
-    process.exit(1);
-  } else {
-    console.log(`✅ SUCCESS: Card import completed cleanly without mismatches.`);
+    // Throw rather than process.exit so callers (CLI below, prisma/seed.ts)
+    // run their .finally() disconnect and decide the exit code themselves.
+    throw new Error("Set count mismatch detected between source and processed cards.");
   }
+  console.log(`✅ SUCCESS: Card import completed cleanly without mismatches.`);
 }
 
 // CLI entry point

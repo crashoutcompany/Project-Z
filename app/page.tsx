@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { ChevronRight, Sparkles } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import FeaturedCards from "@/components/FeaturedCards";
@@ -26,8 +27,8 @@ export default function HomePage() {
         <section className="border-y backdrop-blur-sm dark:bg-red-600">
           <div className="p-3">
             <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-              {bannerStats.map((stat, index) => (
-                <div key={index} className="text-center">
+              {bannerStats.map((stat) => (
+                <div key={stat.label} className="text-center">
                   <p className="text-3xl font-bold text-black md:text-4xl dark:text-white">
                     {stat.value}
                   </p>
@@ -92,16 +93,13 @@ export default function HomePage() {
             </Tabs>
 
             <div className="mt-12 flex justify-center">
-              <Button
-                variant="outline"
-                className="rounded-full"
-                render={
-                  <Link href="/collections">
-                    View All Cards
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Link>
-                }
-              ></Button>
+              <Link
+                href="/collections"
+                className={cn(buttonVariants({ variant: "outline" }), "rounded-full")}
+              >
+                View All Cards
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Link>
             </div>
           </div>
         </section>
@@ -125,15 +123,13 @@ export default function HomePage() {
             <CollectionShowcase />
 
             <div className="mt-12 flex justify-center">
-              <Button
-                className="rounded-full"
-                render={
-                  <Link href="/collections">
-                    Browse All Collections
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Link>
-                }
-              ></Button>
+              <Link
+                href="/collections"
+                className={cn(buttonVariants(), "rounded-full")}
+              >
+                Browse All Collections
+                <ChevronRight className="ml-2 h-4 w-4" />
+              </Link>
             </div>
           </div>
         </section>
@@ -177,9 +173,9 @@ export default function HomePage() {
                   description:
                     "Connect with other collectors and finalize your trades",
                 },
-              ].map((item, index) => (
+              ].map((item) => (
                 <Card
-                  key={index}
+                  key={item.step}
                   className="bg-background/50 border-none shadow-md backdrop-blur-sm"
                 >
                   <CardContent className="pt-6">
@@ -210,18 +206,21 @@ export default function HomePage() {
               dream collection today.
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Button
-                size="lg"
-                variant="secondary"
-                className="rounded-full"
-                render={<Link href="/trading">Start Trading Now</Link>}
-              ></Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full border-white bg-transparent text-white hover:bg-white/20"
-                render={<Link href="/collections">Explore Collections</Link>}
-              ></Button>
+              <Link
+                href="/trading"
+                className={cn(buttonVariants({ size: "lg", variant: "secondary" }), "rounded-full")}
+              >
+                Start Trading Now
+              </Link>
+              <Link
+                href="/collections"
+                className={cn(
+                  buttonVariants({ size: "lg", variant: "outline" }),
+                  "rounded-full border-white bg-transparent text-white hover:bg-white/20"
+                )}
+              >
+                Explore Collections
+              </Link>
             </div>
           </div>
         </section>

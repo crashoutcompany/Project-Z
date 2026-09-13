@@ -19,12 +19,6 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/pocket/**",
       },
-      {
-        protocol: "https",
-        hostname: "serebii.net",
-        port: "",
-        pathname: "/tcgpocket/**",
-      },
     ],
   },
 };

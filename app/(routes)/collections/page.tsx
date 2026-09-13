@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft, ChevronRight, Filter, Search } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -92,16 +93,15 @@ export default function CollectionsPage() {
       <main className="flex-1">
         <div className="container px-4 py-8">
           <div className="mb-8 flex items-center">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="mr-2"
-              render={
-                <Link href="/">
-                  <ArrowLeft className="h-5 w-5" />
-                </Link>
-              }
-            ></Button>
+            <Link
+              href="/"
+              className={cn(
+                buttonVariants({ variant: "ghost", size: "icon" }),
+                "mr-2"
+              )}
+            >
+              <ArrowLeft className="h-5 w-5" />
+            </Link>
             <h1 className="text-3xl font-bold">Card Collections</h1>
           </div>
 
@@ -141,6 +141,7 @@ export default function CollectionsPage() {
                     variant="outline"
                     size="icon"
                     className="rounded-full"
+                    aria-label="Filter collections"
                   >
                     <Filter className="h-4 w-4" />
                   </Button>
@@ -178,17 +179,16 @@ export default function CollectionsPage() {
                       <p className="mb-3 text-sm text-white/80">
                         {set.cardCount} cards
                       </p>
-                      <Button
-                        size="sm"
-                        variant="secondary"
-                        className="rounded-full"
-                        render={
-                          <Link href={`/collections/${set.id}`}>
-                            View Set
-                            <ChevronRight className="ml-1 h-4 w-4" />
-                          </Link>
-                        }
-                      ></Button>
+                      <Link
+                        href={`/collections/${set.id}`}
+                        className={cn(
+                          buttonVariants({ size: "sm", variant: "secondary" }),
+                          "rounded-full"
+                        )}
+                      >
+                        View Set
+                        <ChevronRight className="ml-1 h-4 w-4" />
+                      </Link>
                     </div>
                   </div>
                 ))}

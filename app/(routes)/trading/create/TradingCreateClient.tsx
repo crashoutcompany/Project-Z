@@ -166,6 +166,7 @@ function SelectionZone({
                   <button
                     type="button"
                     onClick={() => onRemove(card)}
+                    aria-label={`Remove ${card.name}`}
                     className="bg-destructive text-destructive-foreground absolute -top-2 -right-2 flex h-5 w-5 items-center justify-center rounded-full opacity-0 transition-opacity group-hover:opacity-100"
                   >
                     <X className="h-3 w-3" />

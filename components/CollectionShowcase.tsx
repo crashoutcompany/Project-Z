@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ChevronRight } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { Badge } from "@/components/ui/badge";
 
 export default function CollectionShowcase() {
@@ -12,7 +13,7 @@ export default function CollectionShowcase() {
       name: "Genetic Apex",
       releaseYear: 2024,
       cardCount: 226,
-      image: "https://serebii.net/tcgpocket/geneticapex/mewtwo.jpg",
+      image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_129_EN.webp",
       color: "from-red-600 to-red-500",
     },
     {
@@ -20,7 +21,7 @@ export default function CollectionShowcase() {
       name: "Mythical Island",
       releaseYear: 2025,
       cardCount: 68,
-      image: "https://serebii.net/tcgpocket/mythicalisland/mew.jpg",
+      image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1a/A1a_077_EN.webp",
       color: "from-red-500 to-red-400",
     },
     {
@@ -28,7 +29,7 @@ export default function CollectionShowcase() {
       name: "Triumphant Light",
       releaseYear: 2025,
       cardCount: 75,
-      image: "https://serebii.net/tcgpocket/triumphantlight/arceus.jpg",
+      image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2a/A2a_071_EN.webp",
       color: "from-red-600 to-red-500",
     },
   ];
@@ -63,17 +64,16 @@ export default function CollectionShowcase() {
               {collection.name}
             </h3>
             <p className="mb-4 text-white/80">{collection.cardCount} cards</p>
-            <Button
-              size="sm"
-              variant="secondary"
-              className="rounded-full"
-              render={
-                <Link href={`/collections/${collection.id}`}>
-                  View Collection
-                  <ChevronRight className="ml-1 h-4 w-4" />
-                </Link>
-              }
-            ></Button>
+            <Link
+              href={`/collections/${collection.id}`}
+              className={cn(
+                buttonVariants({ size: "sm", variant: "secondary" }),
+                "rounded-full"
+              )}
+            >
+              View Collection
+              <ChevronRight className="ml-1 h-4 w-4" />
+            </Link>
           </div>
         </div>
       ))}
