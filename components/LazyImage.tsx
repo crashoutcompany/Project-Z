@@ -5,59 +5,57 @@ import { useState, useEffect, useRef } from "react";
 
 const LazyImage = ({
   src,
+  priority,
+  loading,
   ...props
 }: {
   src: string;
 } & ImageProps) => {
-  const imgRef = useRef(null);
-  const [isVisible, setIsVisible] = useState(false);
+  const eager = priority === true || loading === "eager";
+  const imgRef = useRef<HTMLImageElement>(null);
+  const [isVisible, setIsVisible] = useState(eager);
 
   useEffect(() => {
-    let observer: IntersectionObserver;
-    let image: HTMLImageElement;
+    const image = imgRef.current;
+    if (!image) return;
 
-    if (imgRef.current) {
-      image = imgRef.current;
+    const handleLoadError = () => {
+      setIsVisible(false);
+    };
 
-      const handleLoadError = (event: ErrorEvent) => {
-        console.error("Image failed to load:", event);
-        setIsVisible(false);
-      };
+    image.addEventListener("error", handleLoadError);
 
-      image.addEventListener("error", handleLoadError);
-
+    let observer: IntersectionObserver | undefined;
+    if (!eager) {
       observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
               setIsVisible(true);
-              observer.unobserve(entry.target);
+              observer?.unobserve(entry.target);
             }
           });
         },
         { threshold: 0.1, rootMargin: "100px" },
       );
       observer.observe(image);
-
-      return () => {
-        // Cleanup event listener
-        image.removeEventListener("error", handleLoadError);
-
-        // Cleanup observer
-        if (observer && image) {
-          observer.unobserve(image);
-          observer.disconnect();
-        }
-      };
     }
-  }, []);
+
+    return () => {
+      image.removeEventListener("error", handleLoadError);
+      observer?.disconnect();
+    };
+  }, [eager]);
 
   return (
     <Image
+      {...props}
       ref={imgRef}
       src={isVisible ? src : "/back.png"}
-      {...props}
-      alt="Pokemon Card"
+      priority={priority}
+      loading={eager ? "eager" : (loading ?? "lazy")}
+      alt={props.alt ?? "Pokémon card"}
+      onError={() => setIsVisible(false)}
     />
   );
 };

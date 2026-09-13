@@ -41,10 +41,18 @@ export default function SiteFooter() {
               </li>
               <li>
                 <Link
-                  href="/collections"
+                  href="/dex"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Collections
+                  Dex
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/builder"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Builder
                 </Link>
               </li>
             </ul>

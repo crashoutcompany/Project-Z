@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  useCallback,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  useTransition,
-} from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import {
   buildBuilderUrl,
@@ -33,48 +26,6 @@ export function toEntries(cards: DeckCard[]): DeckEntry[] {
     count: c.count,
     ref: refOf(c),
   }));
-}
-
-export function useBuilderSearch() {
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState<SearchCardResult[]>([]);
-  const [searchError, setSearchError] = useState<string | null>(null);
-  const [isPending, startTransition] = useTransition();
-  const searchSeq = useRef(0);
-
-  const runSearch = useCallback((q: string) => {
-    const seq = ++searchSeq.current;
-    startTransition(async () => {
-      if (!q.trim()) {
-        if (seq !== searchSeq.current) return;
-        setResults([]);
-        setSearchError(null);
-        return;
-      }
-      try {
-        const res = await fetch("/api/search", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ query: q, limit: 40 }),
-        });
-        const data = await res.json();
-        if (seq !== searchSeq.current) return;
-        if (!res.ok) {
-          setSearchError(data.error ?? "Search failed");
-          setResults([]);
-          return;
-        }
-        setSearchError(null);
-        setResults(data.cards ?? []);
-      } catch {
-        if (seq !== searchSeq.current) return;
-        setSearchError("Search request failed");
-        setResults([]);
-      }
-    });
-  }, []);
-
-  return { query, setQuery, results, searchError, isPending, runSearch };
 }
 
 export function useBuilderDeck() {

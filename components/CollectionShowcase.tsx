@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 export default function CollectionShowcase() {
   const collections = [
     {
-      id: 1,
+      code: "A1",
       name: "Genetic Apex",
       releaseYear: 2024,
       cardCount: 226,
@@ -17,7 +17,7 @@ export default function CollectionShowcase() {
       color: "from-red-600 to-red-500",
     },
     {
-      id: 2,
+      code: "A1a",
       name: "Mythical Island",
       releaseYear: 2025,
       cardCount: 68,
@@ -25,7 +25,7 @@ export default function CollectionShowcase() {
       color: "from-red-500 to-red-400",
     },
     {
-      id: 3,
+      code: "A2a",
       name: "Triumphant Light",
       releaseYear: 2025,
       cardCount: 75,
@@ -38,7 +38,7 @@ export default function CollectionShowcase() {
     <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
       {collections.map((collection) => (
         <div
-          key={collection.id}
+          key={collection.code}
           className="group relative overflow-hidden rounded-2xl shadow-lg"
         >
           <div className="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-transparent to-black/80" />
@@ -65,13 +65,13 @@ export default function CollectionShowcase() {
             </h3>
             <p className="mb-4 text-white/80">{collection.cardCount} cards</p>
             <Link
-              href={`/collections/${collection.id}`}
+              href={`/dex?set=${collection.code}`}
               className={cn(
                 buttonVariants({ size: "sm", variant: "secondary" }),
                 "rounded-full"
               )}
             >
-              View Collection
+              View in Dex
               <ChevronRight className="ml-1 h-4 w-4" />
             </Link>
           </div>

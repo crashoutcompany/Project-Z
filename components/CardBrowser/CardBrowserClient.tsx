@@ -23,8 +23,13 @@ type CardBrowserClientProps = {
   initialCursor: number | null;
   mode: CardBrowserMode;
   tradeableOnly: boolean;
+  defaultSearchMode?: SearchMode;
+  showSearchModes?: boolean;
   onSelectionChange?: (selected: SelectedCards) => void;
   initialSelected?: SelectedCards;
+  selected?: SelectedCards;
+  onCardClick?: (card: CardWithSet) => void;
+  cardCounts?: Record<number, number>;
 };
 
 function filterToChips(filter: FilterJSON): string[] {
@@ -95,22 +100,37 @@ export function CardBrowserClient({
   initialCursor,
   mode,
   tradeableOnly,
+  defaultSearchMode = "name",
+  showSearchModes = true,
   onSelectionChange,
   initialSelected = { want: [], give: [] },
+  selected,
+  onCardClick,
+  cardCounts,
 }: CardBrowserClientProps) {
   const [activeSetId, setActiveSetId] = useState(initialSetId);
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchMode, setSearchMode] = useState<SearchMode>("name");
+  const [searchMode, setSearchMode] = useState<SearchMode>(defaultSearchMode);
   const [filterChips, setFilterChips] = useState<string[]>([]);
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
   const [cursor, setCursor] = useState<number | null>(initialCursor);
   const [resultsEpoch, setResultsEpoch] = useState(0);
   const [selectionMode, setSelectionMode] = useState<SelectionMode>("want");
-  const [selectedCards, setSelectedCards] =
+  const [internalSelected, setInternalSelected] =
     useState<SelectedCards>(initialSelected);
   const [isPending, startTransition] = useTransition();
   const [effectsError, setEffectsError] = useState<string | null>(null);
   const requestSeq = useRef(0);
+
+  const selectedCards = selected ?? internalSelected;
+
+  const commitSelection = useCallback(
+    (next: SelectedCards) => {
+      if (!selected) setInternalSelected(next);
+      onSelectionChange?.(next);
+    },
+    [selected, onSelectionChange],
+  );
 
   const replaceResults = useCallback(
     (nextCards: CardWithSet[], nextCursor: number | null) => {
@@ -251,6 +271,11 @@ export function CardBrowserClient({
 
   const handleCardClick = useCallback(
     (card: CardWithSet) => {
+      if (mode === "build") {
+        onCardClick?.(card);
+        return;
+      }
+
       if (mode !== "select") return;
 
       const currentList = selectionMode === "want" ? "want" : "give";
@@ -271,10 +296,9 @@ export function CardBrowserClient({
         next[currentList] = [...next[currentList], card];
       }
 
-      setSelectedCards(next);
-      onSelectionChange?.(next);
+      commitSelection(next);
     },
-    [mode, selectionMode, selectedCards, onSelectionChange],
+    [mode, selectionMode, selectedCards, onCardClick, commitSelection],
   );
 
   return (
@@ -286,12 +310,13 @@ export function CardBrowserClient({
         mode={searchMode}
         onModeChange={handleModeChange}
         filterChips={filterChips}
+        showModes={showSearchModes}
       />
 
-      {mode === "select" && (
+      {mode === "select" ? (
         <div className="flex items-center gap-2">
-          <span className="text-muted-foreground text-sm">Adding to:</span>
-          <div className="flex rounded-lg border p-1">
+          <span className="text-muted-foreground text-sm">Adding to</span>
+          <div className="bg-muted flex rounded-lg p-0.5">
             <Button
               type="button"
               variant="ghost"
@@ -320,28 +345,28 @@ export function CardBrowserClient({
             </Button>
           </div>
         </div>
-      )}
+      ) : null}
 
-      {!isSearching && searchMode === "name" && (
+      {!isSearching && searchMode === "name" ? (
         <SetTabs
           sets={sets}
           activeSetId={activeSetId}
           onSetChange={handleSetChange}
           disabled={isPending}
         />
-      )}
+      ) : null}
 
-      {isSearching && (
+      {isSearching ? (
         <p className="text-muted-foreground text-sm">
           {searchMode === "name"
-            ? `Searching names for "${searchQuery}"`
-            : `Searching effects for "${searchQuery}"`}
+            ? `Searching names for “${searchQuery}”`
+            : `Searching effects for “${searchQuery}”`}
         </p>
-      )}
+      ) : null}
 
-      {effectsError && (
+      {effectsError ? (
         <p className="text-destructive text-sm">{effectsError}</p>
-      )}
+      ) : null}
 
       <CardGrid
         key={`${activeSetId}-${searchQuery}-${searchMode}-${resultsEpoch}`}
@@ -350,9 +375,11 @@ export function CardBrowserClient({
         setId={isSearching || searchMode === "effects" ? undefined : activeSetId}
         searchQuery={searchQuery}
         tradeableOnly={tradeableOnly}
-        selectable={mode === "select"}
+        selectable={mode === "select" || mode === "build"}
         selectedCards={selectedCards}
         selectionMode={selectionMode}
+        density={mode === "build" ? "compact" : "comfortable"}
+        cardCounts={cardCounts}
         onCardClick={handleCardClick}
       />
     </div>

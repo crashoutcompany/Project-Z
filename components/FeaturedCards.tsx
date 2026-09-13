@@ -111,12 +111,12 @@ export default function FeaturedCards({ category }: FeaturedCardsProps) {
             alt={card.name}
             width={300}
             height={450}
-            className="object-cover transition-transform duration-500 group-hover:scale-110"
+            className="h-auto w-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
 
           <div className="absolute inset-x-0 bottom-0 z-20 translate-y-full p-4 transition-transform group-hover:translate-y-0">
             <Link
-              href="/collections"
+              href="/dex"
               className={cn(buttonVariants(), "w-full rounded-full")}
             >
               View Details

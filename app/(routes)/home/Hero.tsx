@@ -72,10 +72,10 @@ export default function HeroSection() {
                   <ChevronRight className="ml-2 h-4 w-4" />
                 </Link>
                 <Link
-                  href="/collections"
+                  href="/dex"
                   className={cn(buttonVariants({ size: "lg", variant: "outline" }), "rounded-full")}
                 >
-                  Browse Collections
+                  Browse the Dex
                 </Link>
               </div>
             </div>

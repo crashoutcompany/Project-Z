@@ -1,14 +1,29 @@
+import { Suspense } from "react";
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import prisma from "@/prisma/db";
 import { H2 } from "@/components/typography/headings";
 import { Trade } from "@/prisma/generated/client/client";
-import { buttonVariants } from "@/components/ui/button";
-import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import { headers } from "next/headers";
-import { ArrowRight } from "lucide-react";
+import { CatalogShell } from "@/components/catalog/CatalogShell";
+import { CatalogLoading } from "@/components/catalog/CatalogLoading";
 
-export default async function TradingPage() {
+export default function TradingPage() {
+  return (
+    <CatalogShell
+      eyebrow="Trading"
+      title="Trading"
+      description="Create a trade or browse offers from other trainers."
+    >
+      <Suspense fallback={<CatalogLoading embedded />}>
+        <TradingPageContent />
+      </Suspense>
+    </CatalogShell>
+  );
+}
+
+async function TradingPageContent() {
   const session = await auth.api.getSession({
     headers: await headers(),
   });
@@ -36,9 +51,9 @@ export default async function TradingPage() {
 
   return (
     <>
-      <Link className={buttonVariants()} href="/trading/create">
+      <Button href="/trading/create" className="active:scale-[0.97]">
         Make a trade
-      </Link>
+      </Button>
       <TradeContainer trades={userTrades} title="Your Trades" />
       <TradeContainer trades={allTrades} title="Public Trades" />
     </>

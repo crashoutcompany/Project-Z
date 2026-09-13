@@ -5,6 +5,9 @@ import { fetchCards } from "@/server/actions";
 import { CardItem } from "./CardItem";
 import { CardGridProps, CardWithSet } from "./types";
 import { Loader2 } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+const ABOVE_FOLD_PRIORITY_COUNT = 6;
 
 export function CardGrid({
   initialCards,
@@ -15,9 +18,10 @@ export function CardGrid({
   selectable,
   selectedCards,
   selectionMode,
+  density = "comfortable",
+  cardCounts,
   onCardClick,
 }: CardGridProps) {
-  // Remount via parent key when results are replaced; local state only for infinite scroll.
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
   const [cursor, setCursor] = useState<number | null>(initialCursor);
   const [isPending, startTransition] = useTransition();
@@ -71,7 +75,7 @@ export function CardGrid({
 
   if (cards.length === 0 && !isPending) {
     return (
-      <div className="py-12 text-center">
+      <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed py-16 text-center">
         <p className="text-muted-foreground">
           {searchQuery
             ? `No cards found for "${searchQuery}"`
@@ -83,13 +87,22 @@ export function CardGrid({
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6">
-        {cards.map((card) => (
+      <div
+        className={cn(
+          "catalog-results grid gap-3",
+          density === "compact"
+            ? "grid-cols-2 sm:grid-cols-3 xl:grid-cols-4"
+            : "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6",
+        )}
+      >
+        {cards.map((card, index) => (
           <CardItem
             key={card.id}
             card={card}
             selectable={selectable}
             selectionState={getSelectionState(card)}
+            count={cardCounts?.[card.id]}
+            priority={index < ABOVE_FOLD_PRIORITY_COUNT}
             onClick={() => onCardClick?.(card)}
           />
         ))}
