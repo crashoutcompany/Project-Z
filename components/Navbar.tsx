@@ -46,6 +46,12 @@ export const Navbar = async () => {
             >
               Dex
             </Link>
+            <Link
+              href="/builder"
+              className="text-sm font-medium transition-colors hover:text-red-500"
+            >
+              Builder
+            </Link>
             <ModeToggle />
             <AuthButton hideOnSmallScreens={true} session={session} />
           </nav>
@@ -79,6 +85,18 @@ export const Navbar = async () => {
                   className="hover:text-primary text-lg font-medium transition-colors"
                 >
                   Collections
+                </Link>
+                <Link
+                  href="/dex"
+                  className="hover:text-primary text-lg font-medium transition-colors"
+                >
+                  Dex
+                </Link>
+                <Link
+                  href="/builder"
+                  className="hover:text-primary text-lg font-medium transition-colors"
+                >
+                  Builder
                 </Link>
               </nav>
             </SheetContent>

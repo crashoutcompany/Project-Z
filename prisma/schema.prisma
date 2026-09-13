@@ -170,6 +170,17 @@ model CardEffect {
   @@index([tags], type: Gin)
 }
 
+/// Caches NL query → FilterJSON only (never result sets).
+model SearchQueryCache {
+  id         Int      @id @default(autoincrement())
+  queryHash  String   @unique
+  queryText  String
+  filterJson Json
+  hitCount   Int      @default(0)
+  createdAt  DateTime @default(now())
+  lastUsedAt DateTime @updatedAt
+}
+
 // The receiver is the one who will accept the trade
 model Trade {
   id              Int         @id @default(autoincrement()) @map("trade_id")

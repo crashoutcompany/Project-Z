@@ -57,8 +57,13 @@ export type SetTabsProps = {
   disabled?: boolean;
 };
 
+export type SearchMode = "name" | "effects";
+
 export type SearchBoxProps = {
   value: string;
   onChange: (value: string) => void;
+  mode: SearchMode;
+  onModeChange: (mode: SearchMode) => void;
   placeholder?: string;
+  filterChips?: string[];
 };
