@@ -1,6 +1,6 @@
 # Adding New TCG Pocket Sets
 
-Use the collection-tracker import pipeline. Card data (attacks, abilities/effects, tags, Limitless CDN images) is imported from a pinned upstream payload — not scraped from Serebii.
+Use the collection-tracker import pipeline. Card data (attacks, abilities/effects, tags) is imported from a pinned upstream payload — not scraped from Serebii. Images are copied to Vercel Blob during import.
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ The importer is idempotent. It upserts sets/cards/attacks/effects and never dele
 ### 4. Verify
 
 - Per-set source vs processed counts match in the summary report
-- Spot-check a few cards in `/dex` (images load from Limitless CDN)
+- Spot-check a few cards in `/dex` (images load from Vercel Blob)
 - Effects search on `/dex` finds tagged attacks (e.g. `coin flip`, `bench damage`)
 
 ### 5. Search cache
@@ -56,7 +56,7 @@ Tags are assigned at import time by `scripts/lib/tagger.ts`. The NL search LLM m
 
 ## Images
 
-Image URLs are derived from set code + number (Limitless CDN). Do not store Serebii paths. Attribution belongs in the README/footer.
+Image files are copied from Limitless CDN into Vercel Blob at import time (`pocket/{code}/{code}_{pad}_EN_SM.webp`). `Card.imageUrl` stores the Blob public URL. Requires `BLOB_READ_WRITE_TOKEN` (and `BLOB_STORE_ID`) in `.env.local`. Do not store Serebii paths. Attribution belongs in the README/footer.
 
 ## Out of scope for set adds
 

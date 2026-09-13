@@ -4,9 +4,22 @@ import prisma from "../prisma/db";
 import { SourcePayloadSchema, type SourceCard } from "./lib/source-schema";
 import { SET_MAP, parseCardId } from "./lib/set-map";
 import { normalizeRarity } from "./lib/rarity-map";
-import { deriveImageUrl } from "./lib/image-url";
-import { normalizeCard, type NormalizedCard } from "./lib/normalize";
+import {
+  cardImageKey,
+  resolveCardImageUrls,
+} from "./lib/image-url";
+import { normalizeCard } from "./lib/normalize";
 import { tagAttack, tagEffect } from "./lib/tagger";
+
+function loadLocalEnv() {
+  for (const file of [".env.local", ".env"] as const) {
+    try {
+      process.loadEnvFile(file);
+    } catch {
+      // Optional; `pnpm import:cards` also passes --env-file=.env
+    }
+  }
+}
 
 export const PINNED_COMMIT_SHA = "dc4a37d4fb7978265a27836b893d8f8b3aabee56";
 export const SOURCE_URL = `https://raw.githubusercontent.com/marcelpanse/tcg-pocket-collection-tracker/${PINNED_COMMIT_SHA}/frontend/assets/cards.json`;
@@ -63,6 +76,7 @@ async function loadSourceData(): Promise<SourceCard[]> {
 }
 
 export async function runImport(options: { dryRun?: boolean } = {}) {
+  loadLocalEnv();
   const { dryRun = false } = options;
   console.log(`\n======================================================`);
   console.log(`🚀 Starting Card Import Pipeline ${dryRun ? "(DRY RUN)" : ""}`);
@@ -143,6 +157,16 @@ export async function runImport(options: { dryRun?: boolean } = {}) {
 
   const sourceCardKeySet = new Set<string>();
 
+  const imageTargets = sourceCards.map((card) => parseCardId(card.card_id));
+  console.log(
+    dryRun
+      ? "Resolving image URLs (dry run; uploads skipped)..."
+      : "Copying missing card images to Vercel Blob..."
+  );
+  const images = await resolveCardImageUrls(imageTargets, { skipUpload: dryRun });
+  console.log(`  Reused from Blob: ${images.reused}`);
+  console.log(`  Uploaded to Blob: ${images.uploaded}\n`);
+
   // 3. Process cards
   for (const sourceCard of sourceCards) {
     const { setCode, number } = parseCardId(sourceCard.card_id);
@@ -154,7 +178,10 @@ export async function runImport(options: { dryRun?: boolean } = {}) {
     const key = `${setId}-${number}`;
     sourceCardKeySet.add(key);
 
-    const derivedImageUrl = deriveImageUrl(setCode, number);
+    const derivedImageUrl = images.urls.get(cardImageKey(setCode, number));
+    if (!derivedImageUrl) {
+      throw new Error(`No image URL resolved for ${sourceCard.card_id}`);
+    }
     const normalizedRarity = normalizeRarity(sourceCard.rarity);
     const normalized = normalizeCard(sourceCard, derivedImageUrl, normalizedRarity, number);
 
