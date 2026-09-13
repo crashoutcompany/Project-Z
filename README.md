@@ -33,6 +33,12 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+## Card data and images
+
+Factual card data is imported from community sources ([collection-tracker](https://github.com/marcelpanse/tcg-pocket-collection-tracker) and Limitless TCG). Card art is copied from Limitless into **Vercel Blob** at import time and served from Blob via `next/image`. Limitless is not used as a runtime image CDN.
+
+If Blob or Image Optimization cost becomes a problem, the same pathnames can move to Cloudflare R2 without a schema change (see `.agents/DECK_BUILDER_SPEC.md`).
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

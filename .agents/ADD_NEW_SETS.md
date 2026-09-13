@@ -4,7 +4,8 @@ Use the collection-tracker import pipeline. Card data (attacks, abilities/effect
 
 ## Prerequisites
 
-- `DATABASE_URL` / `DIRECT_URL` configured in `.env`
+- `DATABASE_URL` / `DIRECT_URL` configured in `.env` / `.env.local`
+- `BLOB_STORE_ID` and `BLOB_READ_WRITE_TOKEN` in `.env.local` (and on the Vercel project)
 - Dependencies installed (`pnpm install`)
 - Prisma migrations applied (`pnpm exec prisma migrate deploy`)
 
@@ -56,7 +57,17 @@ Tags are assigned at import time by `scripts/lib/tagger.ts`. The NL search LLM m
 
 ## Images
 
-Image files are copied from Limitless CDN into Vercel Blob at import time (`pocket/{code}/{code}_{pad}_EN_SM.webp`). `Card.imageUrl` stores the Blob public URL. Requires `BLOB_READ_WRITE_TOKEN` (and `BLOB_STORE_ID`) in `.env.local`. Do not store Serebii paths. Attribution belongs in the README/footer.
+Limitless CDN is the **import copy source only**. Dex, builder, and trades serve `Card.imageUrl` (Vercel Blob) through `next/image`.
+
+- Pathname: `pocket/{code}/{code}_{pad}_EN_SM.webp` (`addRandomSuffix: false`)
+- Blob `Cache-Control`: 1 year (origin). Users hit the image optimizer cache, which only re-fetches Blob on a miss.
+- Re-import reuses existing Blob keys; it does not re-upload.
+
+Do not store Serebii paths. Attribution belongs in the README/footer.
+
+### Future: Cloudflare R2
+
+If Vercel Image Optimization (transformations, cache, Fast Data Transfer) or Blob ops/transfer get too expensive, copy the same keys to a public R2 bucket + custom domain and point `imageUrl` at that host. Schema stays a string. Do not use `*.r2.dev` in production. See **Image Strategy** in `DECK_BUILDER_SPEC.md`.
 
 ## Out of scope for set adds
 

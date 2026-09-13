@@ -2,7 +2,7 @@
 
 Consolidated plan from design review (Aug 2026), revised Sep 2026 after auditing the source payload and existing schema. Use this as the source of truth for implementation.
 
-**Revision notes (Sep 2026):** image URLs are now derived from `card_id` (source `image` paths don't resolve); source data-quality fixes added (damage/name split bug, `"No Cost"`, trainer text junk); copy limit corrected to per-name; trainers added to scope; card-level fields flattened onto `Card`; filter semantics, ranking, de-duping, indexes, abuse controls, and a verification plan added.
+**Revision notes (Sep 2026):** image URLs are now derived from `card_id` (source `image` paths don't resolve); source data-quality fixes added (damage/name split bug, `"No Cost"`, trainer text junk); copy limit corrected to per-name; trainers added to scope; card-level fields flattened onto `Card`; filter semantics, ranking, de-duping, indexes, abuse controls, and a verification plan added. Card art is copied from Limitless into Vercel Blob at import and served from Blob — Limitless is not used as a runtime CDN.
 
 ---
 
@@ -28,7 +28,7 @@ Build a **deck builder with natural language card search** for Pokémon TCG Pock
 | **Tagging** | Deterministic rules at import time (no LLM). Raw effect text kept for fallback |
 | **Search UI** | Extend `SearchBox` with Name / Effects toggle; tag chips in Effects mode; per-route defaults |
 | **Results** | Card grid with `groupPrints` query param: `true` on `/builder` (one canonical print + alt-art picker), `false` on `/dex` (full collector binder) |
-| **Images** | Limitless CDN URL **derived from set code + number** for v1 (Cloudflare R2 as production path). Attribution in README/footer |
+| **Images** | Copy Limitless `_SM` art into **Vercel Blob** at import (`pocket/{code}/{code}_{pad}_EN_SM.webp`). Store the Blob public URL on `Card.imageUrl`. Serve via `next/image`. Limitless is import-only. Cloudflare R2 if Blob/optimizer cost becomes a problem — same keys, schema unchanged. Attribution in README/footer |
 | **Abuse controls** | Query length cap, per-IP rate limit (Vercel WAF rule), closed tag enum in the LLM schema. Sign-in required for Effects mode if quota becomes a problem |
 | **Data sync** | Manual `npm run import:cards` for v1; automate later. Import is idempotent and never deletes cards |
 
@@ -156,7 +156,7 @@ model Card {
   number      Int                            // within set
   name        String
   cardType    CardType
-  imageUrl    String                          // derived Limitless URL
+  imageUrl    String                          // Vercel Blob public URL (Limitless is the import copy source only)
   rarity      String                          // normalized code: C, U, R, RR, AR, SR, IM, S, SSR, UR, PROMO
   isTradeable Boolean      @default(false) @map("is_tradeable")
   pack        String?
@@ -321,40 +321,48 @@ Tags are the vocabulary the LLM is allowed to emit. **The Zod schema's `tags` fi
 
 ## Image Strategy
 
-**Do not** store card images in `public/` and **do not** use the source's `image` path. Derive one URL per card at import:
+**Do not** store card images in `public/` and **do not** persist the source payload's `image` path. **Do not** hotlink Limitless (or Serebii) from Dex, builder, or trades.
 
-```ts
-const pad = (n: number) => String(n).padStart(3, "0");
-imageUrl = `https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/${code}/${code}_${pad(number)}_EN_SM.webp`;
-// Full-size variant: drop "_SM". Both verified live for A1, P-A, B4a.
-```
+At import (`scripts/lib/image-url.ts`):
 
-Store the `_SM` URL; a helper `fullSizeUrl(card.imageUrl)` swaps the suffix where a large image is needed.
+1. Derive the Limitless `_SM` URL from set code + number — **copy source only**.
+2. `list()` existing Blob keys; `put()` missing files at `pocket/{code}/{code}_{pad}_EN_SM.webp` (`addRandomSuffix: false`, `cacheControlMaxAge` = 1 year).
+3. Write the Blob public URL to `Card.imageUrl`.
+
+`fullSizeUrl()` still drops `_SM` if a large variant is needed; copy that size the same way if we start using it.
+
+Dex / builder / trading render `card.imageUrl` through `next/image`. Two caches:
+
+- **Image optimizer** (what users hit): `/_next/image?url=<blob>&w=&q=`. Default `minimumCacheTTL` is 60s. Hits do not touch Blob.
+- **Blob origin**: year-long `Cache-Control` on the object. Only applies when the optimizer (or a raw Blob URL) fetches origin.
+
+Env: `BLOB_STORE_ID`, `BLOB_READ_WRITE_TOKEN` in `.env.local` and on the Vercel project (Development / Preview / Production).
 
 ### next.config.ts
 
 ```ts
 images: {
   remotePatterns: [
-    { protocol: "https", hostname: "limitlesstcg.nyc3.cdn.digitaloceanspaces.com", pathname: "/pocket/**" },
-    { protocol: "https", hostname: "serebii.net", pathname: "/tcgpocket/**" }, // remove in Phase 4
+    { protocol: "https", hostname: "limitlesstcg.nyc3.cdn.digitaloceanspaces.com", pathname: "/pocket/**" }, // import source + leftover homepage mocks
+    { protocol: "https", hostname: "*.public.blob.vercel-storage.com", pathname: "/pocket/**" },
   ],
 }
 ```
 
-### Every Serebii touchpoint to update
+Serebii is gone. Limitless stays in `remotePatterns` only as the import source and until homepage mocks (`Hero`, `FeaturedCards`, `CollectionShowcase`) switch to Blob URLs.
 
-| File | Current | Change |
-|------|---------|--------|
-| `components/CardBrowser/CardItem.tsx` | `serebii.net${card.thumbnail.replace("/th","")}` | `card.imageUrl` |
-| `components/Dex.tsx` | thumbnail hack + `href` to Serebii card page | `card.imageUrl`; link to Limitless page or drop link |
-| `app/(routes)/trading/create/TradingCreateClient.tsx` | thumbnail hack | `card.imageUrl` |
-| `app/(routes)/trading/page.tsx` | `select: { image: true }` | `select: { imageUrl: true }` |
-| `app/(routes)/home/Hero.tsx` | hardcoded Serebii thumbnail paths | query real cards or hardcode Limitless URLs |
-| `components/FeaturedCards.tsx` | mock data with Serebii paths | same as Hero |
-| `next.config.ts` | Serebii only | add Limitless; remove Serebii in Phase 4 |
+Card page links stay derived, not stored: `https://pocket.limitlesstcg.com/cards/{code}/{number}`.
 
-**Check Limitless's hotlinking/terms and collection-tracker's license before shipping.** If hotlinking is disallowed, the fallback is a one-time copy to Vercel Blob with the same derived key — the schema doesn't change.
+### Future: Cloudflare R2 if Vercel gets too costly
+
+Watch Image Optimization (transformations + cache + Fast Data Transfer) and Blob ops/transfer. When those dominate the bill, move the **same keys** to [Cloudflare R2](https://developers.cloudflare.com/r2/) ($0 egress to the internet; you still pay storage and Class A/B ops). Schema does not change.
+
+1. Create a public R2 bucket and a **custom domain** (do not serve production from `*.r2.dev`).
+2. Copy existing Blob objects to R2 under `pocket/{code}/{code}_{pad}_EN_SM.webp`.
+3. Point the import `put` / URL builder at the R2 host; re-import or `UPDATE "Card"."imageUrl"`.
+4. Swap `remotePatterns` to the R2 host; keep or drop `next/image` (direct `<img src={r2}>` avoids optimizer fees, loses resize/AVIF).
+
+Do not dump files into `public/` as the migration path.
 
 ---
 
@@ -575,7 +583,7 @@ Bump the SHA deliberately when adopting a new set. Validate the whole payload wi
 
 1. Fetch + Zod-validate payload.
 2. Upsert `Set` rows from `set-map.ts` (throw on unknown code).
-3. For each card: normalize (see Source Data), derive `imageUrl`, `rarity`, `isTradeable`, `cardType`, `stage`/`trainerType`.
+3. For each card: normalize (see Source Data), copy the Limitless `_SM` image to Vercel Blob if missing, then persist the Blob `imageUrl`, `rarity`, `isTradeable`, `cardType`, `stage`/`trainerType`.
 4. Upsert `Card` on `(setId, number)`. **Never delete.** Cards present in DB but absent from source are reported, not removed.
 5. Replace `Attack` and `CardEffect` rows for that card (delete + insert inside a transaction — these have no external references).
 6. Run `tagAttack` / `tagEffect`.
@@ -607,10 +615,10 @@ scripts/
   lib/
     source-schema.ts     # Zod for collection-tracker payload
     normalize.ts         # damage/name fix, No Cost, trainer junk, nullables
-    set-map.ts           # code → name (+ existing setName → code for migration)
+    set-map.ts           # code → name + release date
     rarity-map.ts        # symbol → code, tradeable flags
     tagger.ts            # pure tag functions
-    image-url.ts         # derive Limitless URLs
+    image-url.ts         # Limitless source URL + Blob pathname / upload
   __tests__/
     tagger.golden.test.ts
     normalize.test.ts
@@ -656,7 +664,7 @@ scripts/
 - [ ] `scripts/lib/*` + `import-cards.ts` with dry-run and report
 - [ ] Golden tests for tagger, normalizer
 - [ ] Run import; verify counts, image HEADs
-- [ ] Replace every Serebii touchpoint (table above); add Limitless to `remotePatterns`
+- [x] Replace Serebii touchpoints; serve `card.imageUrl` from Vercel Blob (`next.config.ts` allows Blob + Limitless source)
 
 ### Phase 2 — Search
 
@@ -677,9 +685,10 @@ scripts/
 
 ### Phase 4 — Cleanup
 
-- [ ] Delete Serebii scripts and caches; slim/remove `seed.ts`
-- [ ] Rewrite `ADD_NEW_SETS.md` for the import workflow
-- [ ] Remove Serebii from `remotePatterns`
+- [x] Delete Serebii scripts and caches; slim `seed.ts` to call the importer
+- [x] Rewrite `ADD_NEW_SETS.md` for the import workflow
+- [x] Remove Serebii from `remotePatterns`; card art lives on Vercel Blob
+- [ ] Switch homepage mocks (`Hero`, `FeaturedCards`, `CollectionShowcase`) off Limitless URLs
 
 ---
 
@@ -688,7 +697,8 @@ scripts/
 - Auto deck generation; deck-aware search
 - DB-persisted decks, user collections, public deck gallery
 - LLM extraction of card text on import
-- Card images in `public/`; Vercel Blob (only if hotlinking is disallowed)
+- Card images in `public/`
+- Cloudflare R2 (only if Vercel Blob / Image Optimization cost justifies the move — see Image Strategy)
 - Upstash / Redis (only if WAF rate limiting proves insufficient)
 - Result-set caching
 - Multi-language card text
@@ -697,7 +707,7 @@ scripts/
 
 ## Resolved Decisions
 
-- **Image hosting & licensing**: Limitless CDN URLs used directly for v1 (Next.js Image optimizes and caches at Vercel edge). Cloudflare R2 ($0 egress) planned for production migration if needed. Factual card data is credited to community resources (Limitless TCG & collection-tracker) in README / app footer.
+- **Image hosting & licensing**: Limitless `_SM` files are copied into Vercel Blob at import. The app serves Blob URLs through `next/image` (optimizer cache + Blob origin `Cache-Control` of 1 year). Limitless is not a runtime CDN. If Vercel Image Optimization or Blob transfer/ops get too costly, move the same keys to Cloudflare R2 ($0 egress) without a schema change. Factual card data is credited to community resources (Limitless TCG & collection-tracker) in README / app footer.
 - **Print grouping**: Controlled via `groupPrints: boolean` query param. Defaults to `true` on `/builder` (clean tactical view, no duplicate prints) and `false` on `/dex` (complete collector binder with all 286+ cards per set).
 
 ---

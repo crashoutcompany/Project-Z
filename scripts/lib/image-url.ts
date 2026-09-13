@@ -1,9 +1,34 @@
-import { list, put } from "@vercel/blob";
+import { BlobServiceRateLimited, list, put } from "@vercel/blob";
 
 const SOURCE_HOST = "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com";
 const BLOB_PATH_PREFIX = "pocket";
-const UPLOAD_CONCURRENCY = 8;
+const UPLOAD_CONCURRENCY = 2;
 const YEAR_IN_SECONDS = 60 * 60 * 24 * 365;
+const MAX_BLOB_RETRIES = 6;
+const PROGRESS_EVERY = 50;
+
+async function sleep(ms: number) {
+  await new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function withBlobRetry<T>(label: string, fn: () => Promise<T>): Promise<T> {
+  let attempt = 0;
+  while (true) {
+    try {
+      return await fn();
+    } catch (err) {
+      if (!(err instanceof BlobServiceRateLimited) || attempt >= MAX_BLOB_RETRIES) {
+        throw err;
+      }
+      attempt += 1;
+      const waitSec = Math.max(err.retryAfter || 60, 1);
+      console.warn(
+        `  Blob rate limited during ${label}; retry ${attempt}/${MAX_BLOB_RETRIES} in ${waitSec}s`
+      );
+      await sleep(waitSec * 1000);
+    }
+  }
+}
 
 export function paddedCardNumber(number: number): string {
   return String(number).padStart(3, "0");
@@ -44,12 +69,14 @@ export async function listExistingCardImages(): Promise<Map<string, string>> {
   let cursor: string | undefined;
 
   do {
-    const result = await list({
-      prefix: `${BLOB_PATH_PREFIX}/`,
-      cursor,
-      limit: 1000,
-      token,
-    });
+    const result = await withBlobRetry("list", () =>
+      list({
+        prefix: `${BLOB_PATH_PREFIX}/`,
+        cursor,
+        limit: 1000,
+        token,
+      })
+    );
     for (const blob of result.blobs) {
       urls.set(blob.pathname, blob.url);
     }
@@ -72,13 +99,15 @@ export async function uploadCardImage(
   }
 
   const bytes = Buffer.from(await res.arrayBuffer());
-  const blob = await put(pathname, bytes, {
-    access: "public",
-    addRandomSuffix: false,
-    contentType: "image/webp",
-    cacheControlMaxAge: YEAR_IN_SECONDS,
-    token,
-  });
+  const blob = await withBlobRetry(`put ${pathname}`, () =>
+    put(pathname, bytes, {
+      access: "public",
+      addRandomSuffix: false,
+      contentType: "image/webp",
+      cacheControlMaxAge: YEAR_IN_SECONDS,
+      token,
+    })
+  );
   return blob.url;
 }
 
@@ -151,10 +180,14 @@ export async function resolveCardImageUrls(
     return { urls, uploaded, reused };
   }
 
+  console.log(`  Uploading ${missing.length} missing images (concurrency ${UPLOAD_CONCURRENCY})...`);
   await mapPool(missing, UPLOAD_CONCURRENCY, async (card) => {
     const url = await uploadCardImage(card.setCode, card.number);
     urls.set(cardImageKey(card.setCode, card.number), url);
     uploaded += 1;
+    if (uploaded % PROGRESS_EVERY === 0 || uploaded === missing.length) {
+      console.log(`  Uploaded ${uploaded}/${missing.length}`);
+    }
   });
 
   return { urls, uploaded, reused };

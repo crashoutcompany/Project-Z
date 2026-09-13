@@ -168,6 +168,8 @@ export async function runImport(options: { dryRun?: boolean } = {}) {
   console.log(`  Uploaded to Blob: ${images.uploaded}\n`);
 
   // 3. Process cards
+  console.log("Writing cards to the database...");
+  let processed = 0;
   for (const sourceCard of sourceCards) {
     const { setCode, number } = parseCardId(sourceCard.card_id);
     const setId = setCodeToDbId.get(setCode);
@@ -305,6 +307,11 @@ export async function runImport(options: { dryRun?: boolean } = {}) {
         }
       });
     }
+
+    processed += 1;
+    if (processed % 200 === 0 || processed === sourceCards.length) {
+      console.log(`  Wrote ${processed}/${sourceCards.length} cards`);
+    }
   }
 
   // Count cards only in DB
@@ -356,11 +363,13 @@ export async function runImport(options: { dryRun?: boolean } = {}) {
 if (require.main === module || process.argv[1]?.endsWith("import-cards.ts")) {
   const isDryRun = process.argv.includes("--dry-run");
   runImport({ dryRun: isDryRun })
-    .catch((err) => {
-      console.error("❌ Fatal error in import-cards:", err);
-      process.exit(1);
-    })
-    .finally(async () => {
+    .then(async () => {
       await prisma.$disconnect();
+      process.exit(0);
+    })
+    .catch(async (err) => {
+      console.error("❌ Fatal error in import-cards:", err);
+      await prisma.$disconnect().catch(() => undefined);
+      process.exit(1);
     });
 }
