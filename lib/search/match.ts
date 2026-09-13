@@ -18,8 +18,17 @@ export type AttackRow = {
 
 export type EffectRow = { tags: string[]; kind: string };
 
+function hasAllTags(needed: string[] | undefined, have: string[]): boolean {
+  if (!needed?.length) return true;
+  const haveSet = new Set(have);
+  for (const tag of needed) {
+    if (!haveSet.has(tag)) return false;
+  }
+  return true;
+}
+
 export function attackMatches(f: AttackFilter, a: AttackRow): boolean {
-  if (f.tags?.length && !f.tags.every((t) => a.tags.includes(t))) return false;
+  if (!hasAllTags(f.tags, a.tags)) return false;
   if (f.energyCost !== undefined) {
     if (a.energyCost !== f.energyCost) return false;
   } else {
@@ -46,7 +55,7 @@ export function attackMatches(f: AttackFilter, a: AttackRow): boolean {
 
 export function effectMatches(f: EffectFilter, e: EffectRow): boolean {
   if (f.kind && e.kind !== f.kind) return false;
-  if (f.tags?.length && !f.tags.every((t) => e.tags.includes(t))) return false;
+  if (!hasAllTags(f.tags, e.tags)) return false;
   return true;
 }
 

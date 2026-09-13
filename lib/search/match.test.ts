@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 import type { FilterJSON } from "./filter-schema";
-import { attackMatches, cardMatchesClauses, type AttackRow } from "./match";
+import {
+  attackMatches,
+  cardMatchesClauses,
+  effectMatches,
+  type AttackRow,
+} from "./match";
 
 const attack = (over: Partial<AttackRow> = {}): AttackRow => ({
   tags: [],
@@ -9,6 +14,24 @@ const attack = (over: Partial<AttackRow> = {}): AttackRow => ({
   energyCost: 2,
   energyTypes: ["fire", "colorless"],
   ...over,
+});
+
+describe("attackMatches — tags", () => {
+  it("requires every requested tag to be present", () => {
+    const row = attack({ tags: ["draw", "discard"] });
+    expect(attackMatches({ tags: ["draw"] }, row)).toBe(true);
+    expect(attackMatches({ tags: ["draw", "discard"] }, row)).toBe(true);
+    expect(attackMatches({ tags: ["draw", "heal"] }, row)).toBe(false);
+  });
+});
+
+describe("effectMatches — tags", () => {
+  it("requires every requested tag to be present", () => {
+    const row = { tags: ["draw", "discard"], kind: "ABILITY" };
+    expect(effectMatches({ tags: ["draw"] }, row)).toBe(true);
+    expect(effectMatches({ tags: ["draw", "heal"] }, row)).toBe(false);
+    expect(effectMatches({ kind: "TRAINER" }, row)).toBe(false);
+  });
 });
 
 describe("attackMatches — energyTypeCounts", () => {
