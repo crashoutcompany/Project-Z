@@ -22,7 +22,7 @@ async function llmParse(normalized: string): Promise<FilterJSON> {
 
   const google = createGoogleGenerativeAI({ apiKey });
   const { object } = await generateObject({
-    model: google("gemini-2.0-flash"),
+    model: google("gemini-3.8-flash"),
     schema: FilterJSONSchema,
     system: FILTER_JSON_SYSTEM_PROMPT,
     prompt: normalized,
