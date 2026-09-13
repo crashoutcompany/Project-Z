@@ -159,7 +159,7 @@ function SelectionZone({
                     title={card.name}
                     className="h-28 w-auto rounded-md"
                     alt={card.name}
-                    src={`https://serebii.net${card.thumbnail.replace("/th", "")}`}
+                    src={card.imageUrl}
                     width={80}
                     height={112}
                   />

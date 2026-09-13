@@ -6,9 +6,7 @@ export const CardDex = ({
   cards,
 }: {
   cards: Awaited<
-    ReturnType<
-      typeof prisma.card.findMany<{ include: { details: true; set: true } }>
-    >
+    ReturnType<typeof prisma.card.findMany<{ include: { set: true } }>>
   >;
 }) => (
   <div className="grid grid-cols-2 place-content-center gap-y-4 p-4 md:grid-cols-3 lg:grid-cols-6">
@@ -16,14 +14,14 @@ export const CardDex = ({
       <Link
         target="_blank"
         rel="noopener noreferrer"
-        href={`https://serebii.net/${card.url}`}
+        href={card.imageUrl}
         key={`${card.name}-${index}`}
         className="flex flex-col items-center"
       >
         <LazyImage
           className="rounded-lg select-none"
           key={`${card.name}-${index}`}
-          src={`https://serebii.net${card.thumbnail.replace("/th", "")}`}
+          src={card.imageUrl}
           alt={`${card.name} Card`}
           width={200}
           height={300}
