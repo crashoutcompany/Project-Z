@@ -63,6 +63,9 @@ describe("deck-url codec", () => {
     expect(() =>
       decodeBuilderSearchParams({ v: "0", deck: "A1-1" }),
     ).toThrow(/Unsupported deck URL version/);
+    expect(() =>
+      decodeBuilderSearchParams({ v: "foo", deck: "A1-1" }),
+    ).toThrow(/Unsupported deck URL version/);
   });
 
   it("validates 20 cards and max 2 per name", () => {

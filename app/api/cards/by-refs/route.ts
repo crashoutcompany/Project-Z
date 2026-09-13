@@ -19,17 +19,17 @@ export async function POST(request: Request) {
       ? (body as { refs: unknown[] }).refs
       : null;
 
-  const refs =
-    rawRefs?.every((r): r is string => typeof r === "string") ?? false
-      ? rawRefs
-      : null;
-
-  if (!refs) {
+  if (
+    !rawRefs ||
+    !rawRefs.every((r): r is string => typeof r === "string")
+  ) {
     return NextResponse.json(
       { error: "Missing string[] field: refs" },
       { status: 400 },
     );
   }
+
+  const refs = rawRefs;
 
   if (refs.length > 40) {
     return NextResponse.json({ error: "Too many refs" }, { status: 400 });

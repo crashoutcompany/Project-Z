@@ -69,11 +69,14 @@ export function heuristicParse(normalized: string): FilterJSON {
   if (/\bswitch/.test(normalized)) addEffect("switch");
   if (/\bprevent|can'?t\b/.test(normalized)) addEffect("prevent");
   if (/\bevolv/.test(normalized)) addEffect("evolution");
-  const plainAbility = /\bability\b/.test(normalized);
-  const abilityInteraction =
-    plainAbility &&
-    /\b(interact|disable|copy|ignore|against)\b/.test(normalized);
-  if (abilityInteraction) addAttack("ability_interaction");
+  let effectKind: "ABILITY" | undefined;
+  if (/\bability\b/.test(normalized)) {
+    if (/\b(interact|disable|copy)\b/.test(normalized)) {
+      addAttack("ability_interaction");
+    } else {
+      effectKind = "ABILITY";
+    }
+  }
 
   if (/\bsupporter\b/.test(normalized)) {
     filter.cardType = "TRAINER";
@@ -173,7 +176,7 @@ export function heuristicParse(normalized: string): FilterJSON {
     }
   }
 
-  if (effectTags.length || (plainAbility && !abilityInteraction)) {
+  if (effectTags.length || effectKind) {
     filter.effect = {
       ...(effectTags.length
         ? {
@@ -182,8 +185,8 @@ export function heuristicParse(normalized: string): FilterJSON {
         : {}),
       ...(filter.trainerType
         ? { kind: "TRAINER" as const }
-        : plainAbility && !abilityInteraction
-          ? { kind: "ABILITY" as const }
+        : effectKind
+          ? { kind: effectKind }
           : {}),
     };
   }
@@ -198,17 +201,16 @@ export function heuristicParse(normalized: string): FilterJSON {
   if (hp) filter.hpMin = Number(hp[1]);
 
   const hasStructured =
-    Boolean(filter.attack) ||
-    Boolean(filter.effect) ||
-    Boolean(filter.anyOf) ||
-    Boolean(filter.cardType) ||
-    Boolean(filter.trainerType) ||
-    Boolean(filter.energyType) ||
-    Boolean(filter.stage) ||
+    filter.attack ||
+    filter.effect ||
+    filter.anyOf ||
+    filter.cardType ||
+    filter.trainerType ||
+    filter.energyType ||
+    filter.stage ||
     filter.isEx !== undefined ||
     filter.hpMin !== undefined ||
-    Boolean(filter.setCodes);
-
+    filter.setCodes;
   if (!hasStructured) {
     filter.textFallback = normalized.slice(0, 100);
   }

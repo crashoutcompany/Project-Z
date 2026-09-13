@@ -90,26 +90,26 @@ export function useBuilderDeck() {
 
   // URL <-> deck synchronisation.
   //
-  // `syncedKey` is the v+deck pair we last wrote via router.replace, so a
+  // `syncedUrlKey` is the ?v=&deck= pair we last wrote via router.replace, so a
   // URL change equal to it is our own echo. Any other change is an external
   // navigation (a new shared link) and becomes `pendingParam`, which the
-  // hydration effect below resolves. `seenKey` is the previous render's
+  // hydration effect below resolves. `seenUrlKey` is the previous render's
   // URL pair; comparing against it is the documented "adjust state when a
   // prop changes" pattern and keeps setState out of effect bodies.
   // Starts null (not "") so a bare /builder reached by navigation after
   // hydrating from a shared link is treated as external and resets the deck.
-  const [syncedKey, setSyncedKey] = useState<string | null>(null);
-  const [seenKey, setSeenKey] = useState(urlKey);
+  const [syncedUrlKey, setSyncedUrlKey] = useState<string | null>(null);
+  const [seenUrlKey, setSeenUrlKey] = useState(urlKey);
   const [pendingParam, setPendingParam] = useState<string | null>(
     deckParam === "" ? null : deckParam,
   );
 
-  if (urlKey !== seenKey) {
-    setSeenKey(urlKey);
+  if (urlKey !== seenUrlKey) {
+    setSeenUrlKey(urlKey);
     // Consume the echo (or any stale echo) so a later external navigation to
     // the same value, e.g. browser forward after back, is treated as external.
-    setSyncedKey(null);
-    if (urlKey !== syncedKey) setPendingParam(deckParam);
+    setSyncedUrlKey(null);
+    if (urlKey !== syncedUrlKey) setPendingParam(deckParam);
   }
 
   const pending = useMemo(() => {
@@ -210,7 +210,7 @@ export function useBuilderDeck() {
       setDeck(next);
       setFetchError(null);
       setPendingParam(null);
-      setSyncedKey(`1|${encodeDeck(nextEntries)}`);
+      setSyncedUrlKey(`1|${encodeDeck(nextEntries)}`);
       router.replace(buildBuilderUrl(nextEntries), { scroll: false });
     },
     [router],
