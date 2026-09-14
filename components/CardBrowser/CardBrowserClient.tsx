@@ -347,7 +347,7 @@ export function CardBrowserClient({
         </div>
       ) : null}
 
-      {!isSearching && searchMode === "name" ? (
+      {!isSearching ? (
         <SetTabs
           sets={sets}
           activeSetId={activeSetId}
@@ -371,8 +371,8 @@ export function CardBrowserClient({
       <CardGrid
         key={`${activeSetId}-${searchQuery}-${searchMode}-${resultsEpoch}`}
         initialCards={cards}
-        initialCursor={searchMode === "effects" ? null : cursor}
-        setId={isSearching || searchMode === "effects" ? undefined : activeSetId}
+        initialCursor={isSearching && searchMode === "effects" ? null : cursor}
+        setId={isSearching ? undefined : activeSetId}
         searchQuery={searchQuery}
         tradeableOnly={tradeableOnly}
         selectable={mode === "select" || mode === "build"}

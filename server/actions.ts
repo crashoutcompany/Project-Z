@@ -76,8 +76,8 @@ export const fetchCards = async ({
 
   let nextCursor: number | null = null;
   if (cards.length > limit) {
-    const nextItem = cards.pop();
-    nextCursor = nextItem?.id ?? null;
+    cards.pop();
+    nextCursor = cards.at(-1)?.id ?? null;
   }
 
   return { cards, nextCursor };

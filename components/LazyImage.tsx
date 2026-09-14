@@ -55,7 +55,10 @@ const LazyImage = ({
       priority={priority}
       loading={eager ? "eager" : (loading ?? "lazy")}
       alt={props.alt ?? "Pokémon card"}
-      onError={() => setIsVisible(false)}
+      onError={(event) => {
+        props.onError?.(event);
+        setIsVisible(false);
+      }}
     />
   );
 };

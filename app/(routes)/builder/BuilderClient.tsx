@@ -120,7 +120,7 @@ function DeckTray({
               size="sm"
               onClick={onClear}
               disabled={visibleDeck.length === 0}
-              className="active:scale-[0.97]"
+              className="active:scale-[0.97] motion-reduce:active:scale-100"
             >
               <Trash2 />
               Clear
@@ -130,7 +130,7 @@ function DeckTray({
               size="sm"
               onClick={onCopyLink}
               disabled={!validation.valid}
-              className="active:scale-[0.97]"
+              className="active:scale-[0.97] motion-reduce:active:scale-100"
             >
               {copied ? <Check /> : <Copy />}
               {copied ? "Copied" : "Copy link"}
