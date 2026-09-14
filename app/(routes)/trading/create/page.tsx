@@ -2,6 +2,7 @@ import prisma from "@/prisma/db";
 import { TradingCreateClient } from "./TradingCreateClient";
 import { CardWithSet } from "@/components/CardBrowser/types";
 import { auth } from "@/lib/auth";
+import { fetchCards } from "@/server/actions";
 import { redirect } from "next/navigation";
 import { headers } from "next/headers";
 
@@ -31,23 +32,11 @@ export default async function Page() {
 
   // Fetch initial tradeable cards for the first set
   const initialSetId = sets[0].id;
-  const initialCards = await prisma.card.findMany({
-    take: INITIAL_LIMIT + 1,
-    where: {
-      setId: initialSetId,
-      isTradeable: true,
-    },
-    orderBy: { id: "asc" },
-    include: {
-      set: true,
-    },
+  const { cards: initialCards, nextCursor: initialCursor } = await fetchCards({
+    setId: initialSetId,
+    limit: INITIAL_LIMIT,
+    tradeableOnly: true,
   });
-
-  let initialCursor: number | null = null;
-  if (initialCards.length > INITIAL_LIMIT) {
-    const lastItem = initialCards.pop();
-    initialCursor = lastItem?.id ?? null;
-  }
 
   return (
     <TradingCreateClient

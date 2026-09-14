@@ -1,4 +1,5 @@
 import prisma from "@/prisma/db";
+import { fetchCards } from "@/server/actions";
 import { CardBrowserClient } from "./CardBrowserClient";
 import { CardBrowserProps, CardWithSet } from "./types";
 
@@ -25,23 +26,11 @@ export async function CardBrowser({
 
   // Fetch initial cards for the first set
   const initialSetId = sets[0].id;
-  const initialCards = await prisma.card.findMany({
-    take: INITIAL_LIMIT + 1,
-    where: {
-      setId: initialSetId,
-      ...(tradeableOnly && { isTradeable: true }),
-    },
-    orderBy: { id: "asc" },
-    include: {
-      set: true,
-    },
+  const { cards: initialCards, nextCursor: initialCursor } = await fetchCards({
+    setId: initialSetId,
+    limit: INITIAL_LIMIT,
+    tradeableOnly,
   });
-
-  let initialCursor: number | null = null;
-  if (initialCards.length > INITIAL_LIMIT) {
-    const lastItem = initialCards.pop();
-    initialCursor = lastItem?.id ?? null;
-  }
 
   return (
     <CardBrowserClient

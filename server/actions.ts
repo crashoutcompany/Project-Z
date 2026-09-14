@@ -1,6 +1,7 @@
 "use server";
 
 import { auth, Session } from "@/lib/auth";
+import { paginateByCursor } from "@/lib/cursor-page";
 import prisma from "@/prisma/db";
 import { Card } from "@/prisma/generated/client/client";
 import { headers } from "next/headers";
@@ -52,10 +53,10 @@ export const fetchCards = async ({
   limit = 20,
   tradeableOnly = false,
 }: FetchCardsParams): Promise<FetchCardsResult> => {
-  const cards = await prisma.card.findMany({
+  const rows = await prisma.card.findMany({
     take: limit + 1, // Fetch one extra to determine if there are more
     ...(cursor && {
-      skip: 1, // Skip the cursor itself
+      skip: 1, // Skip the cursor itself (the last included row of the previous page)
       cursor: { id: cursor },
     }),
     where: {
@@ -74,11 +75,6 @@ export const fetchCards = async ({
     },
   });
 
-  let nextCursor: number | null = null;
-  if (cards.length > limit) {
-    const nextItem = cards.pop();
-    nextCursor = nextItem?.id ?? null;
-  }
-
-  return { cards, nextCursor };
+  const { items, nextCursor } = paginateByCursor(rows, limit);
+  return { cards: items, nextCursor };
 };
