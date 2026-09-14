@@ -72,7 +72,7 @@ export function TradingCreateClient({
         <Button
           disabled={!canSubmit}
           size="lg"
-          className="gap-2 active:scale-[0.97]"
+          className="gap-2 active:scale-[0.97] motion-reduce:active:scale-100"
           render={
             canSubmit ? (
               <Link

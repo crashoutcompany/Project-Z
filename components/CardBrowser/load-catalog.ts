@@ -44,8 +44,8 @@ export async function loadCardCatalog({
 
   let initialCursor: number | null = null;
   if (initialCards.length > INITIAL_LIMIT) {
-    const lastItem = initialCards.pop();
-    initialCursor = lastItem?.id ?? null;
+    initialCards.pop();
+    initialCursor = initialCards.at(-1)?.id ?? null;
   }
 
   return {
