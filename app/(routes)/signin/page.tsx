@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { auth, enabledSocialProviders } from "@/lib/auth";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
@@ -11,21 +12,32 @@ export const metadata: Metadata = {
     "Sign in to trade cards and manage your Pocket Trading collection.",
 };
 
-export const instant = false;
-
-/**
- * Renders the sign-in page, redirecting authenticated users to the home page.
- *
- * Displays the social providers that have credentials configured for this environment. If the user is already authenticated, they are redirected to the root path.
- */
-export default async function Page() {
+async function RedirectIfAuthenticated() {
   const requestHeaders = await headers();
   const session = await auth.api.getSession({
     headers: requestHeaders,
   });
 
   if (session) redirect("/");
+  return null;
+}
 
+/**
+ * Sign-in chrome is static so the route navigates instantly. Session lookup
+ * (and the authenticated redirect) streams in behind Suspense.
+ */
+export default function Page() {
+  return (
+    <>
+      <Suspense fallback={null}>
+        <RedirectIfAuthenticated />
+      </Suspense>
+      <SignInView />
+    </>
+  );
+}
+
+function SignInView() {
   return (
     <main className="relative isolate flex min-h-[calc(100svh-4rem)] items-center overflow-hidden bg-[#faf8f6] px-4 py-10 sm:px-6 lg:py-14 dark:bg-[#0c0b0d]">
       <div
