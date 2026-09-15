@@ -34,6 +34,44 @@ jobs:
 
       - name: Run linter
         run: pnpm run lint
+
+  test:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: postgresql://user:pass@127.0.0.1:5432/pocket_test
+      DIRECT_URL: postgresql://user:pass@127.0.0.1:5432/pocket_test
+      AUTH_SECRET: test-auth-secret-not-for-production
+      E2E_AUTH_BYPASS: "1"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.1.0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.19.0"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run unit tests with coverage
+        run: pnpm test:coverage
+
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Build Next.js
+        run: pnpm build
+
+      - name: Run instant navigation tests
+        run: pnpm test:e2e
+
   build:
     if: github.event_name != 'pull_request' || (github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]')
     runs-on: ubuntu-latest
