@@ -3,11 +3,17 @@ import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import prisma from "@/prisma/db";
 import { H2 } from "@/components/typography/headings";
-import { Trade } from "@/prisma/generated/client/client";
 import { Button } from "@/components/ui/button";
 import { headers } from "next/headers";
 import { CatalogShell } from "@/components/catalog/CatalogShell";
 import { CatalogLoading } from "@/components/catalog/CatalogLoading";
+import { TradeListingCard } from "@/components/trading/TradeListingCard";
+import {
+  loadListingsForIdentifier,
+  loadPublicListings,
+} from "@/lib/trade-queries";
+import { tradeIdentifier } from "@/lib/trade";
+import type { TradeListingView } from "@/lib/trade-queries";
 
 export default function TradingPage() {
   return (
@@ -27,74 +33,72 @@ async function TradingPageContent() {
   const session = await auth.api.getSession({
     headers: await headers(),
   });
-  if (!session) redirect("/signin");
+  if (!session?.user?.email) redirect("/signin");
 
-  // Get provider from the account linked to this user
   const account = await prisma.account.findFirst({
     where: { userId: session.user.id },
     select: { providerId: true },
   });
 
-  const identifier = `${session.user?.email}.${account?.providerId?.toUpperCase() ?? "UNKNOWN"}`;
-  console.log({ identifier });
+  const identifier = tradeIdentifier(session.user.email, account?.providerId);
 
-  // Maybe make each one fetch it's own data, so we're not waiting for all of them to load
-  const [allTrades, userTrades] = await Promise.all([
-    prisma.trade.findMany({
-      include: { cards: { select: { name: true, imageUrl: true } } },
-    }),
-    prisma.trade.findMany({
-      where: { identifier },
-      include: { cards: { select: { name: true, imageUrl: true } } },
-    }),
+  const [userListings, publicListings] = await Promise.all([
+    loadListingsForIdentifier(identifier),
+    loadPublicListings(identifier),
   ]);
+
+  const now = new Date();
 
   return (
     <>
       <Button href="/trading/create" className="active:scale-[0.97]">
         Make a trade
       </Button>
-      <TradeContainer trades={userTrades} title="Your Trades" />
-      <TradeContainer trades={allTrades} title="Public Trades" />
+      <ListingSection
+        title="Your Trades"
+        listings={userListings}
+        empty="You haven’t published a trade yet."
+        now={now}
+      />
+      <ListingSection
+        title="Public Trades"
+        listings={publicListings}
+        empty="No public listings right now."
+        now={now}
+      />
     </>
   );
 }
 
-const Gameboy = () => {
-  return (
-    <div className="mx-auto flex h-screen items-center justify-center">
-      <div className="h-7/12 w-1/4 border border-white">
-        <div className="mx-auto mt-6 h-3/6 w-3/4 bg-green-600"></div>
-      </div>
-    </div>
-  );
-};
-
-const TradeContainer = ({
-  trades,
+function ListingSection({
   title,
+  listings,
+  empty,
+  now,
 }: {
-  trades: Trade[];
   title: string;
-}) => {
+  listings: TradeListingView[];
+  empty: string;
+  now: Date;
+}) {
   return (
-    <div className="my-8">
+    <section className="my-8 space-y-4">
       <H2>{title}</H2>
-      <div className="w-full rounded-lg border border-white">
-        <div className="flex flex-col items-center justify-center">
-          {trades.map((trade) => (
-            <div
-              key={trade.id}
-              className="m-2 flex w-full items-center justify-between rounded-lg border border-white bg-gray-800 p-4"
-            >
-              <div className="flex flex-col">
-                <span>{trade.id}</span>
-                <span>{trade.isSeeking}</span>
-              </div>
-            </div>
+      {listings.length === 0 ? (
+        <p className="text-muted-foreground rounded-2xl border border-dashed py-10 text-center text-sm">
+          {empty}
+        </p>
+      ) : (
+        <div className="flex flex-col gap-4">
+          {listings.map((listing) => (
+            <TradeListingCard
+              key={listing.listingId}
+              listing={listing}
+              now={now}
+            />
           ))}
         </div>
-      </div>
-    </div>
+      )}
+    </section>
   );
-};
+}

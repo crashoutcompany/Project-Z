@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "eslint .",
     "test": "vitest run",
+    "test:e2e": "playwright test",
     "import:cards": "tsx scripts/import-cards.ts",
     "import:cards:dry": "tsx scripts/import-cards.ts --dry-run",
     "doctor": "react-doctor"
@@ -45,6 +46,8 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.6",
+    "@next/playwright": "^16.3.5",
+    "@playwright/test": "^1.63.0",
     "@types/node": "^25.3.3",
     "@types/react": "^19",
     "@types/react-dom": "^19",
