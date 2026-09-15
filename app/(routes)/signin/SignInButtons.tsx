@@ -4,8 +4,9 @@ import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { signIn } from "@/lib/auth-client";
+import type { SocialProviderId } from "@/lib/auth";
 
-type Provider = "github" | "google";
+type Provider = SocialProviderId;
 
 function GitHubIcon() {
   return (
@@ -47,7 +48,11 @@ function LoadingIcon() {
   );
 }
 
-export function SignInButtons() {
+export function SignInButtons({
+  providers,
+}: {
+  providers: readonly Provider[];
+}) {
   const [pendingProvider, setPendingProvider] = useState<Provider | null>(null);
   const [signInError, setSignInError] = useState<string | null>(null);
 
@@ -66,33 +71,46 @@ export function SignInButtons() {
     setPendingProvider(null);
   };
 
+  if (providers.length === 0) {
+    return (
+      <p className="text-muted-foreground text-sm leading-6">
+        Sign-in is temporarily unavailable. No identity provider is configured
+        for this environment.
+      </p>
+    );
+  }
+
   return (
     <div className="flex flex-col gap-3">
-      <Button
-        type="button"
-        size="lg"
-        className="h-12 w-full cursor-pointer rounded-xl text-sm shadow-sm"
-        disabled={pendingProvider !== null}
-        onClick={() => handleSignIn("github")}
-      >
-        {pendingProvider === "github" ? <LoadingIcon /> : <GitHubIcon />}
-        {pendingProvider === "github"
-          ? "Connecting to GitHub…"
-          : "Continue with GitHub"}
-      </Button>
-      <Button
-        type="button"
-        size="lg"
-        variant="outline"
-        className="h-12 w-full cursor-pointer rounded-xl bg-white/70 text-sm shadow-sm hover:bg-white dark:bg-white/5 dark:hover:bg-white/10"
-        disabled={pendingProvider !== null}
-        onClick={() => handleSignIn("google")}
-      >
-        {pendingProvider === "google" ? <LoadingIcon /> : <GoogleIcon />}
-        {pendingProvider === "google"
-          ? "Connecting to Google…"
-          : "Continue with Google"}
-      </Button>
+      {providers.includes("github") ? (
+        <Button
+          type="button"
+          size="lg"
+          className="h-12 w-full cursor-pointer rounded-xl text-sm shadow-sm"
+          disabled={pendingProvider !== null}
+          onClick={() => handleSignIn("github")}
+        >
+          {pendingProvider === "github" ? <LoadingIcon /> : <GitHubIcon />}
+          {pendingProvider === "github"
+            ? "Connecting to GitHub…"
+            : "Continue with GitHub"}
+        </Button>
+      ) : null}
+      {providers.includes("google") ? (
+        <Button
+          type="button"
+          size="lg"
+          variant="outline"
+          className="h-12 w-full cursor-pointer rounded-xl bg-white/70 text-sm shadow-sm hover:bg-white dark:bg-white/5 dark:hover:bg-white/10"
+          disabled={pendingProvider !== null}
+          onClick={() => handleSignIn("google")}
+        >
+          {pendingProvider === "google" ? <LoadingIcon /> : <GoogleIcon />}
+          {pendingProvider === "google"
+            ? "Connecting to Google…"
+            : "Continue with Google"}
+        </Button>
+      ) : null}
       <p
         className="text-muted-foreground mt-1 text-center text-xs"
         aria-live="polite"
