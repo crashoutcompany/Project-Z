@@ -2,10 +2,11 @@
 
 import { useCallback, useRef, useState, useTransition } from "react";
 import { Set } from "@/prisma/generated/client/client";
-import { fetchCards } from "@/server/actions";
+import { fetchCards, fetchCardDetail } from "@/server/actions";
 import { CardGrid } from "./CardGrid";
 import { SearchBox, type SearchMode } from "./SearchBox";
 import { SetTabs } from "./SetTabs";
+import { CardDetailSheet } from "./CardDetailSheet";
 import {
   CardBrowserMode,
   CardWithSet,
@@ -15,6 +16,9 @@ import {
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { FilterJSON, SearchCardResult } from "@/lib/search";
+import type { CardDetail } from "@/lib/card-detail";
+import { buildDexCardPath, replaceDexSearchParams } from "@/lib/dex-url";
+import { formatCardRef } from "@/lib/deck-url";
 
 type CardBrowserClientProps = {
   sets: Set[];
@@ -30,6 +34,8 @@ type CardBrowserClientProps = {
   selected?: SelectedCards;
   onCardClick?: (card: CardWithSet) => void;
   cardCounts?: Record<number, number>;
+  initialDetail?: CardDetail | null;
+  syncDexUrl?: boolean;
 };
 
 function filterToChips(filter: FilterJSON): string[] {
@@ -93,6 +99,30 @@ function searchResultToCardWithSet(
   };
 }
 
+function previewFromCard(card: CardWithSet): CardDetail {
+  return {
+    id: card.id,
+    name: card.name,
+    imageUrl: card.imageUrl,
+    setCode: card.set.code,
+    setName: card.set.setName,
+    number: card.number,
+    ref: formatCardRef(card.set.code, card.number),
+    cardType: card.cardType,
+    rarity: card.rarity,
+    isTradeable: card.isTradeable,
+    hp: card.hp,
+    energyType: card.energyType,
+    stage: card.stage,
+    isEx: card.isEx,
+    trainerType: card.trainerType,
+    weakness: card.weakness,
+    retreatCost: card.retreatCost,
+    attacks: [],
+    effects: [],
+  };
+}
+
 export function CardBrowserClient({
   sets,
   initialSetId,
@@ -107,6 +137,8 @@ export function CardBrowserClient({
   selected,
   onCardClick,
   cardCounts,
+  initialDetail = null,
+  syncDexUrl = false,
 }: CardBrowserClientProps) {
   const [activeSetId, setActiveSetId] = useState(initialSetId);
   const [searchQuery, setSearchQuery] = useState("");
@@ -121,6 +153,11 @@ export function CardBrowserClient({
   const [isPending, startTransition] = useTransition();
   const [effectsError, setEffectsError] = useState<string | null>(null);
   const requestSeq = useRef(0);
+  const detailSeq = useRef(0);
+  const [detailOpen, setDetailOpen] = useState(Boolean(initialDetail));
+  const [detail, setDetail] = useState<CardDetail | null>(initialDetail);
+  const [detailLoading, setDetailLoading] = useState(false);
+  const [detailError, setDetailError] = useState<string | null>(null);
 
   const selectedCards = selected ?? internalSelected;
 
@@ -271,6 +308,33 @@ export function CardBrowserClient({
 
   const handleCardClick = useCallback(
     (card: CardWithSet) => {
+      if (mode === "view") {
+        const ref = formatCardRef(card.set.code, card.number);
+        const seq = ++detailSeq.current;
+        setDetailOpen(true);
+        setDetail(previewFromCard(card));
+        setDetailError(null);
+        setDetailLoading(true);
+        if (syncDexUrl) {
+          replaceDexSearchParams({ set: card.set.code, card: ref });
+        }
+        void fetchCardDetail({ id: card.id })
+          .then((next) => {
+            if (seq !== detailSeq.current) return;
+            setDetail(next ?? previewFromCard(card));
+            if (!next) setDetailError("Card not found");
+          })
+          .catch(() => {
+            if (seq !== detailSeq.current) return;
+            setDetailError("Couldn't load this card");
+          })
+          .finally(() => {
+            if (seq !== detailSeq.current) return;
+            setDetailLoading(false);
+          });
+        return;
+      }
+
       if (mode === "build") {
         onCardClick?.(card);
         return;
@@ -298,8 +362,23 @@ export function CardBrowserClient({
 
       commitSelection(next);
     },
-    [mode, selectionMode, selectedCards, onCardClick, commitSelection],
+    [mode, selectionMode, selectedCards, onCardClick, commitSelection, syncDexUrl],
   );
+
+  const handleDetailOpenChange = useCallback(
+    (open: boolean) => {
+      setDetailOpen(open);
+      if (!open && syncDexUrl) {
+        replaceDexSearchParams({ card: null });
+      }
+    },
+    [syncDexUrl],
+  );
+
+  const shareUrl =
+    syncDexUrl && detail
+      ? buildDexCardPath(detail.setCode, detail.ref)
+      : null;
 
   return (
     <div className="space-y-4">
@@ -382,6 +461,17 @@ export function CardBrowserClient({
         cardCounts={cardCounts}
         onCardClick={handleCardClick}
       />
+
+      {mode === "view" ? (
+        <CardDetailSheet
+          open={detailOpen}
+          onOpenChange={handleDetailOpenChange}
+          detail={detail}
+          loading={detailLoading}
+          error={detailError}
+          shareUrl={shareUrl}
+        />
+      ) : null}
     </div>
   );
 }
