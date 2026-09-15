@@ -1,4 +1,4 @@
-import { auth } from "@/lib/auth";
+import { auth, enabledSocialProviders } from "@/lib/auth";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Link from "next/link";
@@ -16,7 +16,7 @@ export const instant = false;
 /**
  * Renders the sign-in page, redirecting authenticated users to the home page.
  *
- * Displays options for users to sign in using GitHub or Google. If the user is already authenticated, they are redirected to the root path.
+ * Displays the social providers that have credentials configured for this environment. If the user is already authenticated, they are redirected to the root path.
  */
 export default async function Page() {
   const requestHeaders = await headers();
@@ -131,7 +131,7 @@ export default async function Page() {
 
             <div className="from-border via-border my-8 h-px bg-gradient-to-r to-transparent" />
 
-            <SignInButtons />
+            <SignInButtons providers={enabledSocialProviders} />
           </div>
 
           <p className="text-muted-foreground text-center text-xs leading-5 sm:text-left">
