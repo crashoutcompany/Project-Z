@@ -13,6 +13,8 @@ export function isPublicPath(pathname: string): boolean {
 }
 
 /** Playwright / CI-only bypass so instant() tests can hit protected shells. */
-export function shouldBypassAuth(env: NodeJS.ProcessEnv = process.env): boolean {
+export function shouldBypassAuth(
+  env: Record<string, string | undefined> = process.env,
+): boolean {
   return env.E2E_AUTH_BYPASS === "1";
 }
