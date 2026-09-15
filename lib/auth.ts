@@ -20,34 +20,30 @@ const isLoopbackUrl = (url: string) => {
  * Resolves the base URL Better Auth uses for cookies, OAuth redirect URIs, and
  * the default trusted origin.
  *
- * `BETTER_AUTH_URL` wins where it is set, except on Vercel production: a
+ * `BETTER_AUTH_URL` wins where it is set, except in a deployed build: a
  * loopback value there leaves the deployment unable to trust its own domain and
- * hands providers a `localhost` redirect URI, so the canonical URL is used.
+ * hands providers a `localhost` redirect URI, so the canonical URL is used
+ * instead. The check deliberately keys off `NODE_ENV` rather than `VERCEL_ENV`,
+ * which is only present when Vercel system environment variables are exposed.
  */
 const getBaseUrl = () => {
-  const vercelEnv = process.env.VERCEL_ENV;
   const configuredUrl = process.env.BETTER_AUTH_URL;
+  const isDeployedBuild = process.env.NODE_ENV === "production";
 
-  if (vercelEnv === "production") {
-    if (configuredUrl && !isLoopbackUrl(configuredUrl)) return configuredUrl;
-    if (configuredUrl) {
-      console.warn(
-        `[auth] Ignoring loopback BETTER_AUTH_URL in production and using ${PRODUCTION_URL}. Set BETTER_AUTH_URL to the production URL.`,
-      );
-    }
-    return PRODUCTION_URL;
+  if (configuredUrl) {
+    if (!isDeployedBuild || !isLoopbackUrl(configuredUrl)) return configuredUrl;
+
+    console.warn(
+      `[auth] Ignoring loopback BETTER_AUTH_URL in a production build and using ${PRODUCTION_URL}. Set BETTER_AUTH_URL to the deployment URL.`,
+    );
   }
 
-  if (configuredUrl) return configuredUrl;
-
-  if (vercelEnv === "preview") {
+  if (process.env.VERCEL_ENV === "preview") {
     const previewHost = process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL;
     if (previewHost) return `https://${previewHost}`;
   }
 
-  return process.env.NODE_ENV === "production"
-    ? PRODUCTION_URL
-    : DEVELOPMENT_URL;
+  return isDeployedBuild ? PRODUCTION_URL : DEVELOPMENT_URL;
 };
 
 /**
