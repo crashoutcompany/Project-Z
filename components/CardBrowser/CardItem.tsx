@@ -2,6 +2,7 @@
 
 import { memo } from "react";
 import LazyImage from "@/components/LazyImage";
+import { formatCardRef } from "@/lib/deck-url";
 import { cn } from "@/lib/utils";
 import { CardItemProps } from "./types";
 import { Check } from "lucide-react";
@@ -74,6 +75,7 @@ export const CardItem = memo(function CardItem({
     <button
       type="button"
       onClick={onClick}
+      data-card-ref={formatCardRef(card.set.code, card.number)}
       aria-label={selectable ? card.name : `View ${card.name} details`}
       aria-haspopup={selectable ? undefined : "dialog"}
       className={className}

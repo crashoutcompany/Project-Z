@@ -10,6 +10,7 @@ import { formatShinedust, getRarityInfo, getShinedustCost } from "@/lib/rarity";
 import { cn } from "@/lib/utils";
 import { Check, Copy, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 
 const ENERGY_COLORS: Record<string, string> = {
   grass: "bg-green-500",
@@ -70,7 +71,7 @@ function EnergyPips({ types }: { types: string[] }) {
   );
 }
 
-/** Right-side inspect panel. CatalogShell is not isolated so this can stack above the navbar. */
+/** Right-side inspect panel, portaled to `document.body` so it stacks above the navbar. */
 export function CardDetailSheet({
   open,
   onOpenChange,
@@ -80,7 +81,10 @@ export function CardDetailSheet({
   shareUrl,
 }: CardDetailSheetProps) {
   const [copied, setCopied] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const panelRef = useRef<HTMLElement>(null);
+  const onOpenChangeRef = useRef(onOpenChange);
+  onOpenChangeRef.current = onOpenChange;
   const titleId = useId();
   const descriptionId = useId();
   const rarity = detail ? getRarityInfo(detail.rarity) : null;
@@ -91,10 +95,14 @@ export function CardDetailSheet({
   const trainerText = detail?.effects.find((e) => e.kind === "TRAINER");
 
   useEffect(() => {
-    if (!open) return;
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!open || !mounted) return;
     panelRef.current?.focus();
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") onOpenChange(false);
+      if (event.key === "Escape") onOpenChangeRef.current(false);
     };
     window.addEventListener("keydown", onKey);
     const prevOverflow = document.body.style.overflow;
@@ -103,7 +111,11 @@ export function CardDetailSheet({
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prevOverflow;
     };
-  }, [open, onOpenChange]);
+  }, [open, mounted]);
+
+  function closeSheet() {
+    onOpenChangeRef.current(false);
+  }
 
   async function copyLink() {
     if (!shareUrl) return;
@@ -122,22 +134,24 @@ export function CardDetailSheet({
 
   if (!open) return null;
 
-  return (
-    <div className="fixed inset-0 z-[100]">
+  const overlay = (
+    <div className="fixed inset-0 z-[200]" data-testid="card-detail-root">
       <button
         type="button"
+        data-testid="card-detail-backdrop"
         aria-label="Close card details"
-        className="absolute inset-0 z-0 bg-black/10 backdrop-blur-xs"
-        onClick={() => onOpenChange(false)}
+        className="absolute inset-0 bg-black/10 backdrop-blur-xs"
+        onClick={closeSheet}
       />
       <aside
         ref={panelRef}
+        data-testid="card-detail-sheet"
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
         aria-describedby={descriptionId}
         tabIndex={-1}
-        className="bg-background text-foreground absolute inset-y-0 right-0 z-10 flex h-dvh w-full max-w-md flex-col border-l shadow-lg outline-none"
+        className="bg-background text-foreground fixed inset-y-0 right-0 z-[201] flex h-dvh w-full max-w-md flex-col border-l shadow-lg outline-none"
       >
         <div className="relative flex items-start justify-between gap-3 border-b px-4 py-4 pr-12">
           <div className="min-w-0">
@@ -155,9 +169,10 @@ export function CardDetailSheet({
           </div>
           <button
             type="button"
+            data-testid="card-detail-close"
             className="hover:bg-muted absolute top-4 right-4 inline-flex size-8 items-center justify-center rounded-md"
             aria-label="Close"
-            onClick={() => onOpenChange(false)}
+            onClick={closeSheet}
           >
             <X className="size-4" />
           </button>
@@ -319,6 +334,9 @@ export function CardDetailSheet({
       </aside>
     </div>
   );
+
+  if (!mounted) return overlay;
+  return createPortal(overlay, document.body);
 }
 
 function Meta({ label, value }: { label: string; value: string }) {

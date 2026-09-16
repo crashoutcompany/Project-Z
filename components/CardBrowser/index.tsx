@@ -37,6 +37,7 @@ export async function CardBrowser({
 
   return (
     <CardBrowserClient
+      key={initialDetail?.ref ?? `set-${initialSetId}`}
       sets={sets}
       initialSetId={initialSetId}
       initialCards={initialCards}
