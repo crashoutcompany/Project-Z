@@ -5,18 +5,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Skeleton } from "@/components/ui/skeleton";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-} from "@/components/ui/sheet";
 import type { CardDetail } from "@/lib/card-detail";
 import { formatShinedust, getRarityInfo, getShinedustCost } from "@/lib/rarity";
 import { cn } from "@/lib/utils";
-import { Check, Copy } from "lucide-react";
-import { useState } from "react";
+import { Check, Copy, X } from "lucide-react";
+import { useEffect, useId, useRef, useState } from "react";
 
 const ENERGY_COLORS: Record<string, string> = {
   grass: "bg-green-500",
@@ -77,6 +70,7 @@ function EnergyPips({ types }: { types: string[] }) {
   );
 }
 
+/** Right-side inspect panel. Uses a modal `<dialog>` so open-from-click and deep-link both paint. */
 export function CardDetailSheet({
   open,
   onOpenChange,
@@ -86,12 +80,25 @@ export function CardDetailSheet({
   shareUrl,
 }: CardDetailSheetProps) {
   const [copied, setCopied] = useState(false);
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const titleId = useId();
+  const descriptionId = useId();
   const rarity = detail ? getRarityInfo(detail.rarity) : null;
   const shinedust = detail
     ? getShinedustCost(detail.rarity, detail.isTradeable)
     : null;
   const ability = detail?.effects.find((e) => e.kind === "ABILITY");
   const trainerText = detail?.effects.find((e) => e.kind === "TRAINER");
+
+  useEffect(() => {
+    const node = dialogRef.current;
+    if (!node) return;
+    if (open) {
+      if (!node.open) node.showModal();
+      return;
+    }
+    if (node.open) node.close();
+  }, [open]);
 
   async function copyLink() {
     if (!shareUrl) return;
@@ -109,177 +116,197 @@ export function CardDetailSheet({
   }
 
   return (
-    <Sheet open={open} onOpenChange={onOpenChange}>
-      <SheetContent
-        side="right"
-        className="w-full gap-0 overflow-hidden p-0 sm:max-w-md"
-      >
-        <SheetHeader className="border-b pr-12">
-          <SheetTitle className="text-lg font-semibold tracking-tight">
+    <dialog
+      ref={dialogRef}
+      aria-labelledby={titleId}
+      aria-describedby={descriptionId}
+      onClose={() => onOpenChange(false)}
+      className={cn(
+        "bg-background text-foreground relative m-0 h-dvh max-h-dvh w-full max-w-md overflow-hidden border-0 border-l p-0 shadow-lg",
+        "open:fixed open:inset-y-0 open:right-0 open:left-auto open:flex open:flex-col",
+        "backdrop:bg-black/10 backdrop:backdrop-blur-xs",
+      )}
+    >
+      <div className="flex items-start justify-between gap-3 border-b px-4 py-4 pr-12">
+        <div className="min-w-0">
+          <h2
+            id={titleId}
+            className="text-lg font-semibold tracking-tight"
+          >
             {detail?.name ?? (loading ? "Loading card" : "Card")}
             {detail?.isEx ? " ex" : ""}
-          </SheetTitle>
-          <SheetDescription>
+          </h2>
+          <p id={descriptionId} className="text-muted-foreground text-sm">
             {detail
               ? `${detail.setName} · ${detail.ref}`
               : loading
                 ? "Loading card details"
                 : "Card details"}
-          </SheetDescription>
-        </SheetHeader>
+          </p>
+        </div>
+        <Button
+          type="button"
+          variant="ghost"
+          size="icon-sm"
+          className="absolute top-4 right-4"
+          aria-label="Close"
+          onClick={() => dialogRef.current?.close()}
+        >
+          <X />
+        </Button>
+      </div>
 
-        <ScrollArea className="min-h-0 flex-1">
-          <div className="space-y-5 px-4 py-4">
-            {error ? (
-              <p className="text-destructive text-sm">{error}</p>
-            ) : null}
+      <ScrollArea className="min-h-0 flex-1">
+        <div className="space-y-5 px-4 py-4">
+          {error ? (
+            <p className="text-destructive text-sm">{error}</p>
+          ) : null}
 
-            <div className="mx-auto w-full max-w-[16rem]">
-              {detail ? (
-                <LazyImage
-                  title={detail.name}
-                  alt={detail.name}
-                  src={detail.imageUrl}
-                  width={320}
-                  height={448}
-                  priority
-                  className="h-auto w-full rounded-xl shadow-xs ring-1 ring-foreground/10"
-                />
-              ) : (
-                <Skeleton className="aspect-[5/7] w-full rounded-xl" />
-              )}
-            </div>
-
-            {detail && rarity ? (
-              <dl className="grid grid-cols-2 gap-3 text-sm">
-                <Meta label="Set / number" value={detail.ref} />
-                <Meta
-                  label="Rarity"
-                  value={`${rarity.symbol} ${rarity.name}`}
-                />
-                {detail.hp != null ? (
-                  <Meta label="HP" value={String(detail.hp)} />
-                ) : null}
-                {detail.energyType ? (
-                  <Meta label="Type" value={titleCase(detail.energyType)} />
-                ) : null}
-                {detail.stage ? (
-                  <Meta
-                    label="Stage"
-                    value={STAGE_LABEL[detail.stage] ?? detail.stage}
-                  />
-                ) : null}
-                {detail.trainerType ? (
-                  <Meta
-                    label="Trainer"
-                    value={TRAINER_LABEL[detail.trainerType] ?? detail.trainerType}
-                  />
-                ) : null}
-              </dl>
-            ) : loading ? (
-              <div className="space-y-2">
-                <Skeleton className="h-4 w-2/3" />
-                <Skeleton className="h-4 w-1/2" />
-              </div>
-            ) : null}
-
+          <div className="mx-auto w-full max-w-[16rem]">
             {detail ? (
-              <div className="flex flex-wrap items-center gap-2">
-                <Badge variant={detail.isTradeable ? "secondary" : "outline"}>
-                  {detail.isTradeable ? "Tradeable" : "Not tradeable"}
-                </Badge>
-                {shinedust != null ? (
-                  <Badge variant="outline">
-                    {shinedust === 0
-                      ? "0 Shinedust"
-                      : `${formatShinedust(shinedust)} Shinedust`}
-                  </Badge>
-                ) : null}
-              </div>
-            ) : null}
-
-            {loading &&
-            detail &&
-            detail.attacks.length === 0 &&
-            !ability &&
-            !trainerText ? (
-              <div className="space-y-3">
-                <Skeleton className="h-16 w-full rounded-xl" />
-                <Skeleton className="h-16 w-full rounded-xl" />
-              </div>
-            ) : null}
-
-            {ability ? (
-              <section className="space-y-1">
-                <h3 className="text-sm font-semibold tracking-tight">
-                  Ability{ability.name ? ` · ${ability.name}` : ""}
-                </h3>
-                <p className="text-muted-foreground text-sm text-pretty">
-                  {ability.effectText || "No effect text."}
-                </p>
-              </section>
-            ) : null}
-
-            {detail && detail.attacks.length > 0 ? (
-              <section className="space-y-2">
-                <h3 className="text-sm font-semibold tracking-tight">
-                  Attacks
-                </h3>
-                <ul className="space-y-2">
-                  {detail.attacks.map((atk) => (
-                    <li
-                      key={`${atk.position}-${atk.name}`}
-                      className="rounded-xl bg-muted/40 p-3 ring-1 ring-foreground/10"
-                    >
-                      <div className="flex items-start justify-between gap-2">
-                        <div className="flex items-center gap-2">
-                          <EnergyPips types={atk.energyTypes} />
-                          <span className="font-medium">{atk.name}</span>
-                        </div>
-                        {atk.damageRaw ? (
-                          <span className="tabular-nums font-semibold">
-                            {atk.damageRaw}
-                          </span>
-                        ) : null}
-                      </div>
-                      {atk.effectText ? (
-                        <p className="text-muted-foreground mt-1.5 text-sm text-pretty">
-                          {atk.effectText}
-                        </p>
-                      ) : null}
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ) : null}
-
-            {trainerText ? (
-              <section className="space-y-1">
-                <h3 className="text-sm font-semibold tracking-tight">
-                  Trainer text
-                  {trainerText.name ? ` · ${trainerText.name}` : ""}
-                </h3>
-                <p className="text-muted-foreground text-sm text-pretty">
-                  {trainerText.effectText || "No effect text."}
-                </p>
-              </section>
-            ) : null}
-
-            {shareUrl ? (
-              <Button
-                type="button"
-                variant="outline"
-                className="w-full active:scale-[0.97] motion-reduce:active:scale-100"
-                onClick={() => void copyLink()}
-              >
-                {copied ? <Check /> : <Copy />}
-                {copied ? "Copied link" : "Copy link"}
-              </Button>
-            ) : null}
+              <LazyImage
+                title={detail.name}
+                alt={detail.name}
+                src={detail.imageUrl}
+                width={320}
+                height={448}
+                priority
+                className="h-auto w-full rounded-xl shadow-xs ring-1 ring-foreground/10"
+              />
+            ) : (
+              <Skeleton className="aspect-[5/7] w-full rounded-xl" />
+            )}
           </div>
-        </ScrollArea>
-      </SheetContent>
-    </Sheet>
+
+          {detail && rarity ? (
+            <dl className="grid grid-cols-2 gap-3 text-sm">
+              <Meta label="Set / number" value={detail.ref} />
+              <Meta
+                label="Rarity"
+                value={`${rarity.symbol} ${rarity.name}`}
+              />
+              {detail.hp != null ? (
+                <Meta label="HP" value={String(detail.hp)} />
+              ) : null}
+              {detail.energyType ? (
+                <Meta label="Type" value={titleCase(detail.energyType)} />
+              ) : null}
+              {detail.stage ? (
+                <Meta
+                  label="Stage"
+                  value={STAGE_LABEL[detail.stage] ?? detail.stage}
+                />
+              ) : null}
+              {detail.trainerType ? (
+                <Meta
+                  label="Trainer"
+                  value={TRAINER_LABEL[detail.trainerType] ?? detail.trainerType}
+                />
+              ) : null}
+            </dl>
+          ) : loading ? (
+            <div className="space-y-2">
+              <Skeleton className="h-4 w-2/3" />
+              <Skeleton className="h-4 w-1/2" />
+            </div>
+          ) : null}
+
+          {detail ? (
+            <div className="flex flex-wrap items-center gap-2">
+              <Badge variant={detail.isTradeable ? "secondary" : "outline"}>
+                {detail.isTradeable ? "Tradeable" : "Not tradeable"}
+              </Badge>
+              {shinedust != null ? (
+                <Badge variant="outline">
+                  {shinedust === 0
+                    ? "0 Shinedust"
+                    : `${formatShinedust(shinedust)} Shinedust`}
+                </Badge>
+              ) : null}
+            </div>
+          ) : null}
+
+          {loading &&
+          detail &&
+          detail.attacks.length === 0 &&
+          !ability &&
+          !trainerText ? (
+            <div className="space-y-3">
+              <Skeleton className="h-16 w-full rounded-xl" />
+              <Skeleton className="h-16 w-full rounded-xl" />
+            </div>
+          ) : null}
+
+          {ability ? (
+            <section className="space-y-1">
+              <h3 className="text-sm font-semibold tracking-tight">
+                Ability{ability.name ? ` · ${ability.name}` : ""}
+              </h3>
+              <p className="text-muted-foreground text-sm text-pretty">
+                {ability.effectText || "No effect text."}
+              </p>
+            </section>
+          ) : null}
+
+          {detail && detail.attacks.length > 0 ? (
+            <section className="space-y-2">
+              <h3 className="text-sm font-semibold tracking-tight">
+                Attacks
+              </h3>
+              <ul className="space-y-2">
+                {detail.attacks.map((atk) => (
+                  <li
+                    key={`${atk.position}-${atk.name}`}
+                    className="rounded-xl bg-muted/40 p-3 ring-1 ring-foreground/10"
+                  >
+                    <div className="flex items-start justify-between gap-2">
+                      <div className="flex items-center gap-2">
+                        <EnergyPips types={atk.energyTypes} />
+                        <span className="font-medium">{atk.name}</span>
+                      </div>
+                      {atk.damageRaw ? (
+                        <span className="tabular-nums font-semibold">
+                          {atk.damageRaw}
+                        </span>
+                      ) : null}
+                    </div>
+                    {atk.effectText ? (
+                      <p className="text-muted-foreground mt-1.5 text-sm text-pretty">
+                        {atk.effectText}
+                      </p>
+                    ) : null}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+
+          {trainerText ? (
+            <section className="space-y-1">
+              <h3 className="text-sm font-semibold tracking-tight">
+                Trainer text
+                {trainerText.name ? ` · ${trainerText.name}` : ""}
+              </h3>
+              <p className="text-muted-foreground text-sm text-pretty">
+                {trainerText.effectText || "No effect text."}
+              </p>
+            </section>
+          ) : null}
+
+          {shareUrl ? (
+            <Button
+              type="button"
+              variant="outline"
+              className="w-full active:scale-[0.97] motion-reduce:active:scale-100"
+              onClick={() => void copyLink()}
+            >
+              {copied ? <Check /> : <Copy />}
+              {copied ? "Copied link" : "Copy link"}
+            </Button>
+          ) : null}
+        </div>
+      </ScrollArea>
+    </dialog>
   );
 }
 
