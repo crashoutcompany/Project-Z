@@ -39,6 +39,16 @@ Factual card data is imported from community sources ([collection-tracker](https
 
 If Blob or Image Optimization cost becomes a problem, the same pathnames can move to Cloudflare R2 without a schema change (see `.agents/DECK_BUILDER_SPEC.md`).
 
+## Preview / local test login
+
+Agents and local testing can mint a real Better Auth session for a seeded tester user. This is **not** a public password form, and it is **not** enabled in Production — even if `TEST_AUTH_SECRET` is set there by mistake. Do not set `E2E_AUTH_BYPASS` on Preview; that flag is CI-only for `instant()` shells.
+
+1. Set `TEST_AUTH_SECRET` in local `.env` and in Vercel **Preview** (and optionally Development). Never Production.
+2. `POST /api/test-auth/login` with header `x-test-auth-secret` set to that value.
+3. Use the `Set-Cookie` session on later requests to open `/me` and mutate as the tester.
+
+Missing secret, Production, or a GET to the same path returns 404. A wrong header on an enabled environment returns 401.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
