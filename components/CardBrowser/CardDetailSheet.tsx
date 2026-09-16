@@ -101,6 +101,10 @@ export function CardDetailSheet({
 
   useEffect(() => {
     if (!open || !isClient) return;
+    const previouslyFocused =
+      document.activeElement instanceof HTMLElement
+        ? document.activeElement
+        : null;
     panelRef.current?.focus();
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") onOpenChangeRef.current(false);
@@ -111,6 +115,7 @@ export function CardDetailSheet({
     return () => {
       window.removeEventListener("keydown", onKey);
       document.body.style.overflow = prevOverflow;
+      if (previouslyFocused?.isConnected) previouslyFocused.focus();
     };
   }, [open, isClient]);
 
