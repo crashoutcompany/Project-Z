@@ -2,6 +2,7 @@
 
 import { memo } from "react";
 import LazyImage from "@/components/LazyImage";
+import { formatCardRef } from "@/lib/deck-url";
 import { cn } from "@/lib/utils";
 import { CardItemProps } from "./types";
 import { Check } from "lucide-react";
@@ -18,12 +19,14 @@ export const CardItem = memo(function CardItem({
   const showCount = count > 0;
   const atCap = count >= 2;
 
+  const interactive = Boolean(onClick);
+
   const className = cn(
     "relative overflow-hidden rounded-xl bg-card shadow-xs ring-1 ring-foreground/10",
     "transition-[transform,box-shadow] duration-150 ease-out",
-    selectable &&
+    interactive &&
       "cursor-pointer active:scale-[0.97] motion-reduce:active:scale-100 [@media(hover:hover)_and_(pointer:fine)]:hover:-translate-y-0.5 [@media(hover:hover)_and_(pointer:fine)]:hover:shadow-md motion-reduce:hover:translate-y-0",
-    !selectable && "cursor-default",
+    !interactive && "cursor-default",
     isSelected && "ring-2 ring-offset-2 ring-offset-background",
     selectionState === "want" && "ring-blue-500",
     selectionState === "give" && "ring-green-500",
@@ -64,12 +67,19 @@ export const CardItem = memo(function CardItem({
     </>
   );
 
-  if (!selectable) {
+  if (!interactive) {
     return <div className={className}>{media}</div>;
   }
 
   return (
-    <button type="button" onClick={onClick} className={className}>
+    <button
+      type="button"
+      onClick={onClick}
+      data-card-ref={formatCardRef(card.set.code, card.number)}
+      aria-label={selectable ? card.name : `View ${card.name} details`}
+      aria-haspopup={selectable ? undefined : "dialog"}
+      className={className}
+    >
       {media}
     </button>
   );

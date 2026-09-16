@@ -11,6 +11,9 @@ const nextConfig: NextConfig = {
   // This enables Partial Pre-Rendering (PPR) and the new caching model
   cacheComponents: true,
 
+  // Headless/local clients often hit 127.0.0.1 while Turbopack binds another hostname.
+  allowedDevOrigins: ["127.0.0.1", "localhost"],
+
   async redirects() {
     return [
       {

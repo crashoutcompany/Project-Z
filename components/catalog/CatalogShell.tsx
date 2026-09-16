@@ -17,7 +17,7 @@ export function CatalogShell({
   className,
 }: CatalogShellProps) {
   return (
-    <div className="relative isolate min-h-[calc(100dvh-4rem)]">
+    <div className="relative min-h-[calc(100dvh-4rem)]">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-x-0 top-0 h-72 bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.08),transparent_62%)] dark:bg-[radial-gradient(ellipse_at_top,rgba(239,68,68,0.14),transparent_58%)]"
