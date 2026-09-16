@@ -35,7 +35,10 @@ jobs:
     steps:
       - name: Get branch expiration date as an env variable (2 weeks from now)
         id: get_expiration_date
-        run: echo "EXPIRES_AT=$(date -u --date '+14 days' +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_ENV"
+        run: |
+          echo "EXPIRES_AT=$(date -u --date '+14 days' +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_ENV"
+          echo "NEON_DATABASE=pocket" >> "$GITHUB_ENV"
+          echo "NEON_ROLE=pocket" >> "$GITHUB_ENV"
       - name: Create Neon Branch
         id: create_neon_branch
         uses: neondatabase/create-branch-action@v6
@@ -44,8 +47,8 @@ jobs:
           branch_name: preview/pr-${{ github.event.number }}-${{ needs.setup.outputs.branch }}
           api_key: ${{ secrets.NEON_API_KEY }}
           expires_at: ${{ env.EXPIRES_AT }}
-          database: pocket
-          role: pocket
+          database: ${{ env.NEON_DATABASE }}
+          role: ${{ env.NEON_ROLE }}
 
   # The step above creates a new Neon branch.
   # You may want to do something with the new branch, such as run migrations, run tests
