@@ -10,6 +10,7 @@ import { formatShinedust, getRarityInfo, getShinedustCost } from "@/lib/rarity";
 import { cn } from "@/lib/utils";
 import { Check, Copy, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 
 const ENERGY_COLORS: Record<string, string> = {
   grass: "bg-green-500",
@@ -70,7 +71,7 @@ function EnergyPips({ types }: { types: string[] }) {
   );
 }
 
-/** Right-side inspect panel, rendered in-tree so open state cannot be clobbered. */
+/** Right-side inspect panel, portaled to body so it stacks above CatalogShell isolate. */
 export function CardDetailSheet({
   open,
   onOpenChange,
@@ -80,6 +81,7 @@ export function CardDetailSheet({
   shareUrl,
 }: CardDetailSheetProps) {
   const [copied, setCopied] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const panelRef = useRef<HTMLElement>(null);
   const titleId = useId();
   const descriptionId = useId();
@@ -89,6 +91,10 @@ export function CardDetailSheet({
     : null;
   const ability = detail?.effects.find((e) => e.kind === "ABILITY");
   const trainerText = detail?.effects.find((e) => e.kind === "TRAINER");
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -120,9 +126,9 @@ export function CardDetailSheet({
     }
   }
 
-  if (!open) return null;
+  if (!open || !mounted) return null;
 
-  return (
+  return createPortal(
     <div className="fixed inset-0 z-[100]">
       <button
         type="button"
@@ -153,16 +159,14 @@ export function CardDetailSheet({
                   : "Card details"}
             </p>
           </div>
-          <Button
+          <button
             type="button"
-            variant="ghost"
-            size="icon-sm"
-            className="absolute top-4 right-4"
+            className="hover:bg-muted absolute top-4 right-4 inline-flex size-8 items-center justify-center rounded-md"
             aria-label="Close"
             onClick={() => onOpenChange(false)}
           >
-            <X />
-          </Button>
+            <X className="size-4" />
+          </button>
         </div>
 
         <ScrollArea className="min-h-0 flex-1">
@@ -309,6 +313,7 @@ export function CardDetailSheet({
                 type="button"
                 variant="outline"
                 className="w-full active:scale-[0.97] motion-reduce:active:scale-100"
+                nativeButton
                 onClick={() => void copyLink()}
               >
                 {copied ? <Check /> : <Copy />}
@@ -318,7 +323,8 @@ export function CardDetailSheet({
           </div>
         </ScrollArea>
       </aside>
-    </div>
+    </div>,
+    document.body,
   );
 }
 
