@@ -10,7 +10,6 @@ import { formatShinedust, getRarityInfo, getShinedustCost } from "@/lib/rarity";
 import { cn } from "@/lib/utils";
 import { Check, Copy, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
-import { createPortal } from "react-dom";
 
 const ENERGY_COLORS: Record<string, string> = {
   grass: "bg-green-500",
@@ -71,7 +70,7 @@ function EnergyPips({ types }: { types: string[] }) {
   );
 }
 
-/** Right-side inspect panel, portaled to body so it stacks above CatalogShell isolate. */
+/** Right-side inspect panel. CatalogShell is not isolated so this can stack above the navbar. */
 export function CardDetailSheet({
   open,
   onOpenChange,
@@ -81,7 +80,6 @@ export function CardDetailSheet({
   shareUrl,
 }: CardDetailSheetProps) {
   const [copied, setCopied] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const panelRef = useRef<HTMLElement>(null);
   const titleId = useId();
   const descriptionId = useId();
@@ -91,10 +89,6 @@ export function CardDetailSheet({
     : null;
   const ability = detail?.effects.find((e) => e.kind === "ABILITY");
   const trainerText = detail?.effects.find((e) => e.kind === "TRAINER");
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   useEffect(() => {
     if (!open) return;
@@ -126,9 +120,9 @@ export function CardDetailSheet({
     }
   }
 
-  if (!open || !mounted) return null;
+  if (!open) return null;
 
-  return createPortal(
+  return (
     <div className="fixed inset-0 z-[100]">
       <button
         type="button"
@@ -323,8 +317,7 @@ export function CardDetailSheet({
           </div>
         </ScrollArea>
       </aside>
-    </div>,
-    document.body,
+    </div>
   );
 }
 
