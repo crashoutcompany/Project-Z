@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef, useState, useTransition } from "react";
+import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import { Set } from "@/prisma/generated/client/client";
 import { fetchCards, fetchCardDetail } from "@/server/actions";
 import { CardGrid } from "./CardGrid";
@@ -158,6 +158,12 @@ export function CardBrowserClient({
   const [detail, setDetail] = useState<CardDetail | null>(initialDetail);
   const [detailLoading, setDetailLoading] = useState(false);
   const [detailError, setDetailError] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!initialDetail) return;
+    setDetail(initialDetail);
+    setDetailOpen(true);
+  }, [initialDetail]);
 
   const selectedCards = selected ?? internalSelected;
 
