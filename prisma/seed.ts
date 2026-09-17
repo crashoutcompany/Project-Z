@@ -1,5 +1,6 @@
 import { TESTER_EMAIL, TESTER_ID, TESTER_NAME } from "../lib/test-auth";
 import { runImport } from "../scripts/import-cards";
+import { SEED_CARDS_PER_SET } from "../scripts/lib/sample-cards";
 import prisma from "./db";
 
 async function seedTesterUser() {
@@ -19,7 +20,9 @@ async function seedTesterUser() {
 async function main() {
   console.log("🌱 Running database seed...");
   await seedTesterUser();
-  await runImport();
+  // Lightweight sample for Cloud Agent snapshots and local bootstraps.
+  // Full catalog + Blob uploads stay on `pnpm import:cards`.
+  await runImport({ skipUpload: true, perSetLimit: SEED_CARDS_PER_SET });
 }
 
 main()

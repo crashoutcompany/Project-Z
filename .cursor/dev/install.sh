@@ -55,10 +55,18 @@ done
 
 echo "==> [3/8] Installing PostgreSQL (if missing)"
 if ! command -v pg_ctlcluster >/dev/null 2>&1; then
+  # Cloud Agent VMs can boot with a clock in the past; apt then rejects
+  # InRelease files as "not valid yet".
+  echo 'Acquire::Check-Valid-Until "false";
+Acquire::Check-Date "false";' | sudo tee /etc/apt/apt.conf.d/99no-check-valid >/dev/null
   sudo apt-get update -qq
   sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq postgresql postgresql-contrib
 fi
-PG_VERSION="$(ls /etc/postgresql | sort -n | tail -1)"
+PG_VERSION="$(ls /etc/postgresql 2>/dev/null | sort -n | tail -1)"
+if [ -z "$PG_VERSION" ]; then
+  echo "Could not detect a PostgreSQL cluster under /etc/postgresql" >&2
+  exit 1
+fi
 echo "    PostgreSQL major version: $PG_VERSION"
 
 echo "==> [4/8] Configuring Postgres auth + starting the cluster"
@@ -115,6 +123,8 @@ pnpm install --frozen-lockfile
 
 echo "==> [8/8] Syncing schema + seeding data"
 export NODE_EXTRA_CA_CERTS="$CERT_DIR/ca.crt"
+# User secrets (e.g. BLOB_READ_WRITE_TOKEN) are not injected during Builds.
+export SKIP_BLOB_UPLOAD=1
 # db push creates every table in schema.prisma, including the Better Auth tables
 # that the committed migrations do not yet cover.
 pnpm exec prisma db push
@@ -123,10 +133,19 @@ sudo sysctl -w net.ipv4.ip_unprivileged_port_start=443 >/dev/null
 node "$DEV_DIR/neon-local-proxy.mjs" >/tmp/neon-proxy-seed.log 2>&1 &
 PROXY_PID=$!
 trap 'kill "$PROXY_PID" 2>/dev/null || true' EXIT
+PROXY_OK=0
 for _ in $(seq 1 20); do
-  curl -sf --cacert "$CERT_DIR/ca.crt" https://db.localtest.me/health >/dev/null 2>&1 && break
+  if curl -sf --cacert "$CERT_DIR/ca.crt" https://db.localtest.me/health >/dev/null 2>&1; then
+    PROXY_OK=1
+    break
+  fi
   sleep 0.5
 done
+if [ "$PROXY_OK" != 1 ]; then
+  echo "Neon local proxy did not become healthy on :443. Last log:" >&2
+  cat /tmp/neon-proxy-seed.log >&2 || true
+  exit 1
+fi
 pnpm exec prisma db seed
 kill "$PROXY_PID" 2>/dev/null || true
 trap - EXIT

@@ -56,6 +56,22 @@ describe("image-url derivation", () => {
     expect(blobPathname("P-A", 12)).toBe("pocket/P-A/P-A_012_EN_SM.webp");
   });
 
+  it("throws when uploads are requested without a Blob token", async () => {
+    const previous = process.env.BLOB_READ_WRITE_TOKEN;
+    delete process.env.BLOB_READ_WRITE_TOKEN;
+    try {
+      await expect(
+        resolveCardImageUrls([{ setCode: "A1", number: 1 }])
+      ).rejects.toThrow(/BLOB_READ_WRITE_TOKEN is not set/);
+    } finally {
+      if (previous === undefined) {
+        delete process.env.BLOB_READ_WRITE_TOKEN;
+      } else {
+        process.env.BLOB_READ_WRITE_TOKEN = previous;
+      }
+    }
+  });
+
   it("falls back to source URLs on dry-run when Blob token is missing", async () => {
     const previous = process.env.BLOB_READ_WRITE_TOKEN;
     delete process.env.BLOB_READ_WRITE_TOKEN;

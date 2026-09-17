@@ -3,6 +3,7 @@ import path from "node:path";
 import prisma from "../prisma/db";
 import { SourcePayloadSchema, type SourceCard } from "./lib/source-schema";
 import { SET_MAP, parseCardId } from "./lib/set-map";
+import { sampleCardsPerSet } from "./lib/sample-cards";
 import { normalizeRarity } from "./lib/rarity-map";
 import {
   cardImageKey,
@@ -75,16 +76,31 @@ async function loadSourceData(): Promise<SourceCard[]> {
   return validated.data;
 }
 
-export async function runImport(options: { dryRun?: boolean } = {}) {
+export async function runImport(
+  options: { dryRun?: boolean; skipUpload?: boolean; perSetLimit?: number } = {}
+) {
   loadLocalEnv();
   const { dryRun = false } = options;
+  const skipUpload =
+    options.skipUpload ?? (dryRun || process.env.SKIP_BLOB_UPLOAD === "1");
+  const envLimit = Number(process.env.SEED_PER_SET_LIMIT);
+  const perSetLimit =
+    options.perSetLimit ?? (Number.isFinite(envLimit) && envLimit > 0 ? envLimit : undefined);
   console.log(`\n======================================================`);
   console.log(`🚀 Starting Card Import Pipeline ${dryRun ? "(DRY RUN)" : ""}`);
   console.log(`Pinned commit: ${PINNED_COMMIT_SHA}`);
   console.log(`======================================================\n`);
 
-  const sourceCards = await loadSourceData();
-  console.log(`Loaded and validated ${sourceCards.length} cards from source payload.\n`);
+  let sourceCards = await loadSourceData();
+  console.log(`Loaded and validated ${sourceCards.length} cards from source payload.`);
+  if (perSetLimit !== undefined) {
+    sourceCards = sampleCardsPerSet(sourceCards, perSetLimit);
+    console.log(
+      `Sampling up to ${perSetLimit} cards per set (${sourceCards.length} cards).\n`
+    );
+  } else {
+    console.log("");
+  }
 
   const stats: ImportStats = {
     setsTouched: 0,
@@ -159,11 +175,11 @@ export async function runImport(options: { dryRun?: boolean } = {}) {
 
   const imageTargets = sourceCards.map((card) => parseCardId(card.card_id));
   console.log(
-    dryRun
-      ? "Resolving image URLs (dry run; uploads skipped)..."
+    skipUpload
+      ? "Resolving image URLs (uploads skipped)..."
       : "Copying missing card images to Vercel Blob..."
   );
-  const images = await resolveCardImageUrls(imageTargets, { skipUpload: dryRun });
+  const images = await resolveCardImageUrls(imageTargets, { skipUpload });
   console.log(`  Reused from Blob: ${images.reused}`);
   console.log(`  Uploaded to Blob: ${images.uploaded}\n`);
 
