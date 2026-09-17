@@ -1,12 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 
 import { Button } from "@/components/ui/button";
-import { signIn } from "@/lib/auth-client";
-import type { SocialProviderId } from "@/lib/auth";
-
-type Provider = SocialProviderId;
+import { signIn } from "@/lib/auth/client";
+import type { SocialProviderId } from "@/lib/auth/create-auth";
 
 function GitHubIcon() {
   return (
@@ -48,28 +46,61 @@ function LoadingIcon() {
   );
 }
 
+const PROVIDERS: Record<
+  SocialProviderId,
+  {
+    icon: ReactNode;
+    label: string;
+    pendingLabel: string;
+    variant: "default" | "outline";
+    className: string;
+  }
+> = {
+  github: {
+    icon: <GitHubIcon />,
+    label: "Continue with GitHub",
+    pendingLabel: "Connecting to GitHub…",
+    variant: "default",
+    className: "h-12 w-full cursor-pointer rounded-xl text-sm shadow-sm",
+  },
+  google: {
+    icon: <GoogleIcon />,
+    label: "Continue with Google",
+    pendingLabel: "Connecting to Google…",
+    variant: "outline",
+    className:
+      "h-12 w-full cursor-pointer rounded-xl bg-white/70 text-sm shadow-sm hover:bg-white dark:bg-white/5 dark:hover:bg-white/10",
+  },
+};
+
 export function SignInButtons({
   providers,
 }: {
-  providers: readonly Provider[];
+  providers: readonly SocialProviderId[];
 }) {
-  const [pendingProvider, setPendingProvider] = useState<Provider | null>(null);
+  const [pendingProvider, setPendingProvider] =
+    useState<SocialProviderId | null>(null);
   const [signInError, setSignInError] = useState<string | null>(null);
 
-  const handleSignIn = async (provider: Provider) => {
+  async function handleSignIn(provider: SocialProviderId) {
     setPendingProvider(provider);
     setSignInError(null);
+
     try {
-      await signIn.social({
+      const result = await signIn.social({
         provider,
         callbackURL: "/",
       });
-    } catch (err) {
-      console.error(err);
+
+      if (result.error) {
+        setSignInError("Sign-in failed. Please try again.");
+      }
+    } catch {
       setSignInError("Sign-in failed. Please try again.");
+    } finally {
+      setPendingProvider(null);
     }
-    setPendingProvider(null);
-  };
+  }
 
   if (providers.length === 0) {
     return (
@@ -82,35 +113,25 @@ export function SignInButtons({
 
   return (
     <div className="flex flex-col gap-3">
-      {providers.includes("github") ? (
-        <Button
-          type="button"
-          size="lg"
-          className="h-12 w-full cursor-pointer rounded-xl text-sm shadow-sm"
-          disabled={pendingProvider !== null}
-          onClick={() => handleSignIn("github")}
-        >
-          {pendingProvider === "github" ? <LoadingIcon /> : <GitHubIcon />}
-          {pendingProvider === "github"
-            ? "Connecting to GitHub…"
-            : "Continue with GitHub"}
-        </Button>
-      ) : null}
-      {providers.includes("google") ? (
-        <Button
-          type="button"
-          size="lg"
-          variant="outline"
-          className="h-12 w-full cursor-pointer rounded-xl bg-white/70 text-sm shadow-sm hover:bg-white dark:bg-white/5 dark:hover:bg-white/10"
-          disabled={pendingProvider !== null}
-          onClick={() => handleSignIn("google")}
-        >
-          {pendingProvider === "google" ? <LoadingIcon /> : <GoogleIcon />}
-          {pendingProvider === "google"
-            ? "Connecting to Google…"
-            : "Continue with Google"}
-        </Button>
-      ) : null}
+      {providers.map((provider) => {
+        const config = PROVIDERS[provider];
+        const isPending = pendingProvider === provider;
+
+        return (
+          <Button
+            key={provider}
+            type="button"
+            size="lg"
+            variant={config.variant}
+            className={config.className}
+            disabled={pendingProvider !== null}
+            onClick={() => handleSignIn(provider)}
+          >
+            {isPending ? <LoadingIcon /> : config.icon}
+            {isPending ? config.pendingLabel : config.label}
+          </Button>
+        );
+      })}
       <p
         className="text-muted-foreground mt-1 text-center text-xs"
         aria-live="polite"

@@ -1,16 +1,14 @@
 import { describe, expect, it } from "vitest";
-import {
-  PRODUCTION_URL,
-  isLoopbackUrl,
-  resolveAuthBaseUrl,
-} from "./auth-base-url";
+
+import { PRODUCTION_URL } from "./config";
+import { isLoopbackUrl, resolveAuthBaseUrl } from "./base-url";
 
 describe("isLoopbackUrl", () => {
   it("detects localhost variants", () => {
     expect(isLoopbackUrl("http://localhost:3999")).toBe(true);
     expect(isLoopbackUrl("http://127.0.0.1:3999")).toBe(true);
     expect(isLoopbackUrl("http://[::1]:3999")).toBe(true);
-    expect(isLoopbackUrl("https://pockettrading.vercel.app")).toBe(false);
+    expect(isLoopbackUrl(PRODUCTION_URL)).toBe(false);
     expect(isLoopbackUrl("not a url")).toBe(false);
   });
 });
@@ -18,7 +16,7 @@ describe("isLoopbackUrl", () => {
 describe("resolveAuthBaseUrl", () => {
   it("uses BETTER_AUTH_URL in development even if it is loopback", () => {
     expect(
-      resolveAuthBaseUrl({
+      resolveAuthBaseUrl(PRODUCTION_URL, {
         NODE_ENV: "development",
         BETTER_AUTH_URL: "http://localhost:4000",
       }),
@@ -27,7 +25,7 @@ describe("resolveAuthBaseUrl", () => {
 
   it("ignores loopback BETTER_AUTH_URL in production", () => {
     expect(
-      resolveAuthBaseUrl({
+      resolveAuthBaseUrl(PRODUCTION_URL, {
         NODE_ENV: "production",
         BETTER_AUTH_URL: "http://localhost:3999",
       }),
@@ -36,16 +34,16 @@ describe("resolveAuthBaseUrl", () => {
 
   it("keeps a non-loopback BETTER_AUTH_URL in production", () => {
     expect(
-      resolveAuthBaseUrl({
+      resolveAuthBaseUrl(PRODUCTION_URL, {
         NODE_ENV: "production",
         BETTER_AUTH_URL: "https://example.com",
       }),
     ).toBe("https://example.com");
   });
 
-  it("uses the Vercel preview host when VERCEL_ENV is preview", () => {
+  it("uses the Vercel preview host for preview builds", () => {
     expect(
-      resolveAuthBaseUrl({
+      resolveAuthBaseUrl(PRODUCTION_URL, {
         NODE_ENV: "production",
         VERCEL_ENV: "preview",
         VERCEL_BRANCH_URL: "project-z-git-feat.vercel.app",
@@ -54,12 +52,17 @@ describe("resolveAuthBaseUrl", () => {
   });
 
   it("falls back to localhost in development", () => {
-    expect(resolveAuthBaseUrl({ NODE_ENV: "development", PORT: "3001" })).toBe(
-      "http://localhost:3001",
-    );
+    expect(
+      resolveAuthBaseUrl(PRODUCTION_URL, {
+        NODE_ENV: "development",
+        PORT: "3001",
+      }),
+    ).toBe("http://localhost:3001");
   });
 
-  it("falls back to the production URL in production", () => {
-    expect(resolveAuthBaseUrl({ NODE_ENV: "production" })).toBe(PRODUCTION_URL);
+  it("falls back to the supplied production URL in production", () => {
+    expect(resolveAuthBaseUrl(PRODUCTION_URL, { NODE_ENV: "production" })).toBe(
+      PRODUCTION_URL,
+    );
   });
 });

@@ -1,27 +1,14 @@
 import { auth } from "@/lib/auth";
-import { isPublicPath, shouldBypassAuth } from "@/lib/public-path";
-import { NextRequest, NextResponse } from "next/server";
-import { headers } from "next/headers";
+import { SIGN_IN_PATH } from "@/lib/auth/config";
+import { createAuthProxy } from "@/lib/auth/proxy";
 
-// Next.js 16: proxy.ts replaces middleware.ts
-// The proxy function runs on the Node.js runtime and handles request interception
-export default async function proxy(request: NextRequest) {
-  if (shouldBypassAuth()) {
-    return NextResponse.next();
-  }
-
-  // Use Better Auth's api.getSession() to check session and handle authentication
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
-
-  if (!session && !isPublicPath(request.nextUrl.pathname)) {
-    return NextResponse.redirect(new URL("/signin", request.url));
-  }
-
-  return NextResponse.next();
-}
+export default createAuthProxy({
+  auth,
+  publicPaths: ["/", SIGN_IN_PATH],
+  rules: [{ path: "*", access: "session" }],
+  signInPath: SIGN_IN_PATH,
+});
 
 export const config = {
-  matcher: ["/((?!api|_next/static|_next/image|.*\\.png$).*)"],
+  matcher: ["/((?!api(?:/|$)|_next(?:/|$)|favicon\\.ico$|images(?:/|$)).*)"],
 };
