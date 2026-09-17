@@ -28,7 +28,7 @@
     "@vercel/blob": "^2.8.0",
     "ai": "^7.0.99",
     "babel-plugin-react-compiler": "^1.0.0",
-    "better-auth": "^1.6.30",
+    "better-auth": "^1.7.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.475.0",
