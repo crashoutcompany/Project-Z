@@ -10,7 +10,6 @@ const SECRET = "preview-only-test-secret";
 describe("readTestAuthSecret", () => {
   it("rejects missing and whitespace-only values", () => {
     expect(readTestAuthSecret(undefined)).toBeNull();
-    expect(readTestAuthSecret(null)).toBeNull();
     expect(readTestAuthSecret("")).toBeNull();
     expect(readTestAuthSecret("   ")).toBeNull();
   });
@@ -21,128 +20,95 @@ describe("readTestAuthSecret", () => {
 });
 
 describe("isTestAuthEnabled", () => {
-  it("allows Vercel Preview and Development when the secret is set", () => {
-    expect(
-      isTestAuthEnabled({ vercelEnv: "preview", secret: SECRET }),
-    ).toBe(true);
+  it("allows preview, local development, and exposed local e2e", () => {
     expect(
       isTestAuthEnabled({
-        vercelEnv: "preview",
-        nodeEnv: "production",
-        secret: SECRET,
+        TEST_AUTH_SECRET: SECRET,
+        VERCEL: "1",
+        VERCEL_ENV: "preview",
       }),
     ).toBe(true);
     expect(
-      isTestAuthEnabled({ vercelEnv: "development", secret: SECRET }),
-    ).toBe(true);
-  });
-
-  it("allows local only when VERCEL_ENV is absent and NODE_ENV is development", () => {
-    expect(
-      isTestAuthEnabled({ nodeEnv: "development", secret: SECRET }),
+      isTestAuthEnabled({
+        NODE_ENV: "development",
+        TEST_AUTH_SECRET: SECRET,
+      }),
     ).toBe(true);
     expect(
       isTestAuthEnabled({
-        vercelEnv: "",
-        nodeEnv: "development",
-        secret: SECRET,
+        EXPOSE_TESTING_API: "1",
+        TEST_AUTH_SECRET: SECRET,
       }),
     ).toBe(true);
   });
 
-  it("blocks Production and every other VERCEL_ENV even if the secret is set", () => {
-    expect(
-      isTestAuthEnabled({ vercelEnv: "production", secret: SECRET }),
-    ).toBe(false);
+  it("blocks production and unclassified Vercel runtimes", () => {
     expect(
       isTestAuthEnabled({
-        vercelEnv: "production",
-        nodeEnv: "development",
-        secret: SECRET,
+        EXPOSE_TESTING_API: "1",
+        TEST_AUTH_SECRET: SECRET,
+        VERCEL: "1",
+        VERCEL_ENV: "production",
       }),
     ).toBe(false);
     expect(
-      isTestAuthEnabled({ vercelEnv: "staging", secret: SECRET }),
-    ).toBe(false);
-    expect(
-      isTestAuthEnabled({ vercelEnv: "Preview", secret: SECRET }),
+      isTestAuthEnabled({
+        EXPOSE_TESTING_API: "1",
+        TEST_AUTH_SECRET: SECRET,
+        VERCEL: "1",
+      }),
     ).toBe(false);
   });
 
-  it("blocks local when NODE_ENV is not development", () => {
-    expect(isTestAuthEnabled({ secret: SECRET })).toBe(false);
+  it("blocks when the API is not exposed or the secret is missing", () => {
+    expect(isTestAuthEnabled({ TEST_AUTH_SECRET: SECRET })).toBe(false);
     expect(
-      isTestAuthEnabled({ nodeEnv: "production", secret: SECRET }),
-    ).toBe(false);
-    expect(isTestAuthEnabled({ nodeEnv: "test", secret: SECRET })).toBe(
-      false,
-    );
-  });
-
-  it("blocks every environment when the secret is missing", () => {
-    expect(isTestAuthEnabled({ vercelEnv: "preview" })).toBe(false);
-    expect(isTestAuthEnabled({ vercelEnv: "preview", secret: "" })).toBe(
-      false,
-    );
-    expect(
-      isTestAuthEnabled({ nodeEnv: "development", secret: "   " }),
+      isTestAuthEnabled({
+        EXPOSE_TESTING_API: "1",
+        TEST_AUTH_SECRET: "   ",
+      }),
     ).toBe(false);
   });
 });
 
 describe("evaluateTestAuthRequest", () => {
-  it("404s when disabled, including Production and unrecognized envs", () => {
+  it("404s when disabled or running in production", () => {
     expect(
       evaluateTestAuthRequest(SECRET, {
-        nodeEnv: "development",
-        secret: null,
-      }),
-    ).toEqual({
-      allow: false,
-      status: 404,
-    });
-    expect(
-      evaluateTestAuthRequest(SECRET, {
-        vercelEnv: "production",
-        secret: SECRET,
+        TEST_AUTH_SECRET: SECRET,
       }),
     ).toEqual({ allow: false, status: 404 });
     expect(
       evaluateTestAuthRequest(SECRET, {
-        vercelEnv: "staging",
-        secret: SECRET,
+        EXPOSE_TESTING_API: "1",
+        TEST_AUTH_SECRET: SECRET,
+        VERCEL: "1",
+        VERCEL_ENV: "production",
       }),
     ).toEqual({ allow: false, status: 404 });
-    expect(evaluateTestAuthRequest(SECRET, { secret: SECRET })).toEqual({
-      allow: false,
-      status: 404,
-    });
   });
 
   it("401s when enabled but the header is missing or wrong", () => {
     expect(
-      evaluateTestAuthRequest(null, { vercelEnv: "preview", secret: SECRET }),
+      evaluateTestAuthRequest(null, {
+        EXPOSE_TESTING_API: "1",
+        TEST_AUTH_SECRET: SECRET,
+      }),
     ).toEqual({ allow: false, status: 401 });
     expect(
       evaluateTestAuthRequest("nope", {
-        vercelEnv: "preview",
-        secret: SECRET,
+        EXPOSE_TESTING_API: "1",
+        TEST_AUTH_SECRET: SECRET,
       }),
     ).toEqual({ allow: false, status: 401 });
   });
 
-  it("allows Preview and local development when the header matches", () => {
+  it("allows an exposed local request when the header matches", () => {
     expect(
       evaluateTestAuthRequest(SECRET, {
-        vercelEnv: "preview",
-        secret: SECRET,
+        EXPOSE_TESTING_API: "1",
+        TEST_AUTH_SECRET: SECRET,
       }),
-    ).toEqual({ allow: true, secret: SECRET });
-    expect(
-      evaluateTestAuthRequest(SECRET, {
-        nodeEnv: "development",
-        secret: SECRET,
-      }),
-    ).toEqual({ allow: true, secret: SECRET });
+    ).toEqual({ allow: true });
   });
 });

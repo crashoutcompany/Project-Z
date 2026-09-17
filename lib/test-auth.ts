@@ -1,32 +1,32 @@
 import { constantTimeEqual } from "better-auth/crypto";
 
+import type { E2EEnvironment } from "@/lib/e2e-env";
+import { isTestingApiExposed } from "@/lib/e2e-env";
+
 /** Header agents send when minting a tester session. */
 export const TEST_AUTH_HEADER = "x-test-auth-secret";
 
-/** Stable tester identity used by seed and the test-login endpoint. */
-export const TESTER_ID = "preview-tester";
-export const TESTER_EMAIL = "tester@preview.pockettrading.local";
-export const TESTER_NAME = "Preview Tester";
-
-export type TestAuthEnv = {
-  vercelEnv?: string | null;
-  nodeEnv?: string | null;
-  secret?: string | null;
+export type TestAuthEnv = E2EEnvironment & {
+  NODE_ENV?: string;
+  TEST_AUTH_SECRET?: string;
+  VERCEL_ENV?: string;
 };
 
 export type TestAuthDecision =
-  | { allow: true; secret: string }
+  | { allow: true }
   | { allow: false; status: 401 | 404 };
 
 function currentTestAuthEnv(): TestAuthEnv {
   return {
-    vercelEnv: process.env.VERCEL_ENV,
-    nodeEnv: process.env.NODE_ENV,
-    secret: process.env.TEST_AUTH_SECRET,
+    EXPOSE_TESTING_API: process.env.EXPOSE_TESTING_API,
+    NODE_ENV: process.env.NODE_ENV,
+    TEST_AUTH_SECRET: process.env.TEST_AUTH_SECRET,
+    VERCEL: process.env.VERCEL,
+    VERCEL_ENV: process.env.VERCEL_ENV,
   };
 }
 
-function readEnvLabel(value: string | null | undefined): string | null {
+function readEnvValue(value: string | undefined): string | null {
   const trimmed = value?.trim();
   return trimmed ? trimmed : null;
 }
@@ -34,28 +34,26 @@ function readEnvLabel(value: string | null | undefined): string | null {
 /**
  * Treat unset / whitespace-only values as missing. Never log the raw secret.
  */
-export function readTestAuthSecret(
-  secret: string | null | undefined,
-): string | null {
-  return readEnvLabel(secret);
+export function readTestAuthSecret(secret: string | undefined): string | null {
+  return readEnvValue(secret);
 }
 
 /**
- * Test login is allowed only when `TEST_AUTH_SECRET` is set and the runtime is
- * an explicit non-production environment: Vercel Preview, Vercel Development,
- * or local (`VERCEL_ENV` absent and `NODE_ENV=development`). Preview builds
- * still use `NODE_ENV=production`, so that value is not used as a deny flag.
- * Production and any other `VERCEL_ENV` fail closed.
+ * Test login is available in explicit non-production Vercel environments,
+ * local development, and local e2e builds. Every mode requires its own secret.
  */
 export function isTestAuthEnabled(
   env: TestAuthEnv = currentTestAuthEnv(),
 ): boolean {
-  if (readTestAuthSecret(env.secret) === null) return false;
+  if (readTestAuthSecret(env.TEST_AUTH_SECRET) === null) return false;
 
-  const vercelEnv = readEnvLabel(env.vercelEnv);
+  const vercelEnv = readEnvValue(env.VERCEL_ENV);
   if (vercelEnv === "preview" || vercelEnv === "development") return true;
   if (vercelEnv) return false;
-  return readEnvLabel(env.nodeEnv) === "development";
+
+  return (
+    readEnvValue(env.NODE_ENV) === "development" || isTestingApiExposed(env)
+  );
 }
 
 export function evaluateTestAuthRequest(
@@ -66,10 +64,14 @@ export function evaluateTestAuthRequest(
     return { allow: false, status: 404 };
   }
 
-  const expected = readTestAuthSecret(env.secret);
-  if (!expected || !headerValue || !constantTimeEqual(headerValue, expected)) {
+  const expected = readTestAuthSecret(env.TEST_AUTH_SECRET);
+  if (!expected) {
+    return { allow: false, status: 404 };
+  }
+
+  if (!constantTimeEqual(headerValue ?? "", expected)) {
     return { allow: false, status: 401 };
   }
 
-  return { allow: true, secret: expected };
+  return { allow: true };
 }
