@@ -1,11 +1,12 @@
+// shared:eslint-config v1
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
 
 const eslintConfig = defineConfig([
   ...nextVitals,
-  // Override default ignores of eslint-config-next.
+  ...nextTs,
   globalIgnores([
-    // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",
     "build/**",
@@ -14,6 +15,7 @@ const eslintConfig = defineConfig([
     "prisma/generated/**",
     "scripts/.venv/**",
     "scripts/cache/**",
+    ".cursor/dev/**",
   ]),
 ]);
 

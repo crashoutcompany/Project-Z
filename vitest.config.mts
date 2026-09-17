@@ -1,14 +1,23 @@
 import path from "node:path";
 import { defineConfig } from "vitest/config";
 
-export default defineConfig({
-  resolve: {
-    alias: {
-      "@": path.resolve(import.meta.dirname, "."),
-    },
+const resolve = {
+  alias: {
+    "@": path.resolve(import.meta.dirname, "."),
   },
+};
+
+const testExclude = [
+  "**/node_modules/**",
+  "**/.next/**",
+  "**/e2e/**",
+  "**/playwright-report/**",
+  "**/test-results/**",
+];
+
+export default defineConfig({
+  resolve,
   test: {
-    environment: "node",
     env: {
       DATABASE_URL:
         process.env.DATABASE_URL ??
@@ -17,13 +26,7 @@ export default defineConfig({
         process.env.BETTER_AUTH_SECRET ??
         "test-better-auth-secret-at-least-32-characters",
     },
-    exclude: [
-      "**/node_modules/**",
-      "**/.next/**",
-      "**/e2e/**",
-      "**/playwright-report/**",
-      "**/test-results/**",
-    ],
+    exclude: testExclude,
     coverage: {
       provider: "v8",
       reporter: ["text", "json-summary"],
@@ -51,5 +54,16 @@ export default defineConfig({
         branches: 60,
       },
     },
+    projects: [
+      {
+        resolve,
+        test: {
+          name: "node",
+          environment: "node",
+          include: ["**/*.test.ts"],
+          exclude: testExclude,
+        },
+      },
+    ],
   },
 });
