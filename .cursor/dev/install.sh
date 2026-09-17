@@ -25,7 +25,7 @@ if [ ! -f "$REPO_ROOT/.env" ]; then
 DATABASE_URL="postgresql://pocket:pocket@db.localtest.me:5432/pocket?sslmode=disable"
 DIRECT_URL="postgresql://pocket:pocket@db.localtest.me:5432/pocket?sslmode=disable"
 
-AUTH_SECRET="dev-secret-please-change-0123456789abcdef0123456789abcdef"
+BETTER_AUTH_SECRET="dev-secret-please-change-0123456789abcdef0123456789abcdef"
 
 # Local-only tester login. Never set this on Vercel Production.
 TEST_AUTH_SECRET="local-test-auth-secret-not-for-production"
@@ -40,6 +40,9 @@ ENV
   echo "    wrote $REPO_ROOT/.env"
 else
   echo "    .env already present, leaving as-is"
+  if ! grep -q '^BETTER_AUTH_SECRET=' "$REPO_ROOT/.env"; then
+    printf '\n# Better Auth signing secret for local development only.\nBETTER_AUTH_SECRET="dev-secret-please-change-0123456789abcdef0123456789abcdef"\n' >> "$REPO_ROOT/.env"
+  fi
   if ! grep -q '^TEST_AUTH_SECRET=' "$REPO_ROOT/.env"; then
     printf '\n# Local-only tester login. Never set this on Vercel Production.\nTEST_AUTH_SECRET="local-test-auth-secret-not-for-production"\n' >> "$REPO_ROOT/.env"
   fi
