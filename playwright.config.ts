@@ -29,7 +29,9 @@ export default defineConfig({
       DATABASE_URL:
         process.env.DATABASE_URL ??
         "postgresql://user:pass@127.0.0.1:5432/pocket_test",
-      AUTH_SECRET: process.env.AUTH_SECRET ?? "test-auth-secret-not-for-production",
+      BETTER_AUTH_SECRET:
+        process.env.BETTER_AUTH_SECRET ??
+        "test-better-auth-secret-at-least-32-characters",
     },
   },
 });
