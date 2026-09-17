@@ -20,20 +20,7 @@ describe("readTestAuthSecret", () => {
 });
 
 describe("isTestAuthEnabled", () => {
-  it("allows preview, local development, and exposed local e2e", () => {
-    expect(
-      isTestAuthEnabled({
-        TEST_AUTH_SECRET: SECRET,
-        VERCEL: "1",
-        VERCEL_ENV: "preview",
-      }),
-    ).toBe(true);
-    expect(
-      isTestAuthEnabled({
-        NODE_ENV: "development",
-        TEST_AUTH_SECRET: SECRET,
-      }),
-    ).toBe(true);
+  it("allows only when EXPOSE_TESTING_API=1 and a secret are set (non-Vercel)", () => {
     expect(
       isTestAuthEnabled({
         EXPOSE_TESTING_API: "1",
@@ -42,15 +29,21 @@ describe("isTestAuthEnabled", () => {
     ).toBe(true);
   });
 
-  it("blocks production and unclassified Vercel runtimes", () => {
+  it("never auto-enables from NODE_ENV or VERCEL_ENV alone", () => {
     expect(
       isTestAuthEnabled({
-        EXPOSE_TESTING_API: "1",
         TEST_AUTH_SECRET: SECRET,
-        VERCEL: "1",
-        VERCEL_ENV: "production",
       }),
     ).toBe(false);
+    expect(
+      isTestAuthEnabled({
+        EXPOSE_TESTING_API: "0",
+        TEST_AUTH_SECRET: SECRET,
+      }),
+    ).toBe(false);
+  });
+
+  it("blocks Vercel runtimes even when the testing API flag is set", () => {
     expect(
       isTestAuthEnabled({
         EXPOSE_TESTING_API: "1",
@@ -60,19 +53,19 @@ describe("isTestAuthEnabled", () => {
     ).toBe(false);
   });
 
-  it("blocks when the API is not exposed or the secret is missing", () => {
-    expect(isTestAuthEnabled({ TEST_AUTH_SECRET: SECRET })).toBe(false);
+  it("blocks when the secret is missing", () => {
     expect(
       isTestAuthEnabled({
         EXPOSE_TESTING_API: "1",
         TEST_AUTH_SECRET: "   ",
       }),
     ).toBe(false);
+    expect(isTestAuthEnabled({ EXPOSE_TESTING_API: "1" })).toBe(false);
   });
 });
 
 describe("evaluateTestAuthRequest", () => {
-  it("404s when disabled or running in production", () => {
+  it("404s when disabled", () => {
     expect(
       evaluateTestAuthRequest(SECRET, {
         TEST_AUTH_SECRET: SECRET,
@@ -83,7 +76,6 @@ describe("evaluateTestAuthRequest", () => {
         EXPOSE_TESTING_API: "1",
         TEST_AUTH_SECRET: SECRET,
         VERCEL: "1",
-        VERCEL_ENV: "production",
       }),
     ).toEqual({ allow: false, status: 404 });
   });
