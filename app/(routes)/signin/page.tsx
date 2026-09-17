@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 
 import { SignInButtons } from "@/components/auth/sign-in-buttons";
-import { auth, enabledSocialProviders } from "@/lib/auth";
+import { enabledSocialProviders, getSession } from "@/lib/auth";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Link from "next/link";
@@ -14,10 +14,7 @@ export const metadata: Metadata = {
 };
 
 async function RedirectIfAuthenticated() {
-  const requestHeaders = await headers();
-  const session = await auth.api.getSession({
-    headers: requestHeaders,
-  });
+  const session = await getSession(await headers());
 
   if (session) redirect("/");
   return null;
