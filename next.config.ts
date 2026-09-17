@@ -1,22 +1,9 @@
 import type { NextConfig } from "next";
 
-import { isTestingApiExposed } from "./lib/e2e-env";
+import { withAppDefaults } from "./lib/next-config";
 
-const nextConfig: NextConfig = {
-  // Ensure Prisma client and its runtime are not bundled (resolves custom output + Turbopack)
+const nextConfig: NextConfig = withAppDefaults({
   serverExternalPackages: ["@prisma/client", "prisma"],
-
-  // Next.js 16: React Compiler is now a stable top-level option
-  reactCompiler: true,
-
-  // Next.js 16: Enable Cache Components for opt-in caching with "use cache" directive
-  // This enables Partial Pre-Rendering (PPR) and the new caching model
-  cacheComponents: true,
-
-  experimental: {
-    exposeTestingApiInProductionBuild: isTestingApiExposed(),
-  },
-
   async redirects() {
     return [
       {
@@ -31,7 +18,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-
   images: {
     remotePatterns: [
       {
@@ -48,6 +34,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-};
+});
 
 export default nextConfig;

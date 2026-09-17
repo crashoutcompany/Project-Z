@@ -32,6 +32,7 @@ type CreateAuthOptions = {
   env?: AuthEnv;
   productionUrl: string;
   previewOrigin: string;
+  extraTrustedOrigins?: readonly string[];
   sessionModelName?: string;
   userAdditionalFields?: NonNullable<
     NonNullable<BetterAuthOptions["user"]>["additionalFields"]
@@ -115,6 +116,7 @@ export function createAuth({
   env = process.env,
   productionUrl,
   previewOrigin,
+  extraTrustedOrigins = [],
   sessionModelName,
   userAdditionalFields,
   onError,
@@ -124,7 +126,9 @@ export function createAuth({
   return betterAuth({
     appName,
     baseURL: resolveAuthBaseUrl(productionUrl, env),
-    trustedOrigins: [productionUrl, previewOrigin],
+    trustedOrigins: [
+      ...new Set([productionUrl, previewOrigin, ...extraTrustedOrigins]),
+    ],
     database,
     secret,
     socialProviders,
