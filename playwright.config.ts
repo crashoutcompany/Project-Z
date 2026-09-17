@@ -33,6 +33,8 @@ export default defineConfig({
           BETTER_AUTH_SECRET:
             process.env.BETTER_AUTH_SECRET ??
             "test-better-auth-secret-at-least-32-characters",
+          TEST_AUTH_SECRET:
+            process.env.TEST_AUTH_SECRET ?? "test-auth-secret",
         },
       },
 });

@@ -11,8 +11,8 @@
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "build:e2e": "EXPOSE_TESTING_API=1 next build",
-    "test:e2e": "pnpm build:e2e && playwright test",
-    "test:e2e:ui": "pnpm build:e2e && playwright test --ui",
+    "test:e2e": "TEST_AUTH_SECRET=\"${TEST_AUTH_SECRET:-test-auth-secret}\" pnpm build:e2e && playwright test",
+    "test:e2e:ui": "TEST_AUTH_SECRET=\"${TEST_AUTH_SECRET:-test-auth-secret}\" pnpm build:e2e && playwright test --ui",
     "import:cards": "tsx scripts/import-cards.ts",
     "import:cards:dry": "tsx scripts/import-cards.ts --dry-run",
     "doctor": "react-doctor"
