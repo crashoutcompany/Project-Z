@@ -58,7 +58,7 @@ export async function POST(request: Request) {
     name: cookie.name,
     value: signedValue,
     httpOnly: cookie.attributes.httpOnly ?? true,
-    secure: cookie.attributes.secure ?? false,
+    secure: cookie.attributes.secure === true,
     sameSite: "lax",
     path: cookie.attributes.path ?? "/",
     maxAge: cookie.attributes.maxAge,
