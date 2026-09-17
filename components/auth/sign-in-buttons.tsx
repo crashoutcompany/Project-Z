@@ -97,9 +97,10 @@ export function SignInButtons({
       }
     } catch {
       setSignInError("Sign-in failed. Please try again.");
-    } finally {
-      setPendingProvider(null);
     }
+
+    // Avoid try/finally so React Compiler can optimize this handler.
+    setPendingProvider(null);
   }
 
   if (providers.length === 0) {
