@@ -39,15 +39,27 @@ Factual card data is imported from community sources ([collection-tracker](https
 
 If Blob or Image Optimization cost becomes a problem, the same pathnames can move to Cloudflare R2 without a schema change (see `.agents/DECK_BUILDER_SPEC.md`).
 
-## Preview / local test login
+## Authentication and browser testing
 
-Agents and local testing can mint a real Better Auth session for a seeded tester user. This is **not** a public password form, and it is **not** enabled in Production — even if `TEST_AUTH_SECRET` is set there by mistake. Do not set `E2E_AUTH_BYPASS` on Preview; that flag is CI-only for `instant()` shells.
+Authentication is self-hosted with Better Auth. Sign-in lives at `/signin`.
 
-1. Set `TEST_AUTH_SECRET` in local `.env` and in Vercel **Preview** (and optionally Development). Never Production.
-2. `POST /api/test-auth/login` with header `x-test-auth-secret` set to that value.
-3. Use the `Set-Cookie` session on later requests to open `/me` and mutate as the tester.
+- `BETTER_AUTH_SECRET` is required. `BETTER_AUTH_URL` may override the
+  deployment URL.
+- GitHub uses `AUTH_GITHUB_ID` and `AUTH_GITHUB_SECRET`; Google uses
+  `AUTH_GOOGLE_ID` and `AUTH_GOOGLE_SECRET`. A provider is enabled only when
+  both values are set.
+- Prisma uses `DATABASE_URL` and `DIRECT_URL`.
 
-Missing secret, Production, or a GET to the same path returns 404. A wrong header on an enabled environment returns 401.
+Local browser automation can mint a real Better Auth session for the tester
+account. Set `EXPOSE_TESTING_API=1` and `TEST_AUTH_SECRET`, then `POST
+/api/test-auth/login` with that secret in the `x-test-auth-secret` header. The
+same secret-gated route may be enabled in Vercel Preview or Development, but is
+always unavailable in Production. Disabled environments and `GET` return 404.
+A wrong header returns 401.
+
+Playwright uses `PLAYWRIGHT_BASE_URL` when supplied and otherwise starts the app
+at `http://127.0.0.1:3000`. For protected Vercel deployments,
+`VERCEL_AUTOMATION_BYPASS_SECRET` is forwarded as the protection bypass header.
 
 ## Deploy on Vercel
 

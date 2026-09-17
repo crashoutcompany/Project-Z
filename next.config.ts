@@ -1,5 +1,7 @@
 import type { NextConfig } from "next";
 
+import { isTestingApiExposed } from "./lib/e2e-env";
+
 const nextConfig: NextConfig = {
   // Ensure Prisma client and its runtime are not bundled (resolves custom output + Turbopack)
   serverExternalPackages: ["@prisma/client", "prisma"],
@@ -11,10 +13,8 @@ const nextConfig: NextConfig = {
   // This enables Partial Pre-Rendering (PPR) and the new caching model
   cacheComponents: true,
 
-  // Instant() Playwright tests need the testing lock in `next start`.
-  // Only baked in when the e2e job builds with E2E_AUTH_BYPASS=1; Vercel prod stays off.
   experimental: {
-    exposeTestingApiInProductionBuild: process.env.E2E_AUTH_BYPASS === "1",
+    exposeTestingApiInProductionBuild: isTestingApiExposed(),
   },
 
   async redirects() {
