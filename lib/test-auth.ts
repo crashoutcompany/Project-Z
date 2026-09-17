@@ -1,3 +1,5 @@
+// shared:test-auth v2
+
 import { constantTimeEqual } from "better-auth/crypto";
 
 import type { E2EEnvironment } from "@/lib/e2e-env";
@@ -7,9 +9,7 @@ import { isTestingApiExposed } from "@/lib/e2e-env";
 export const TEST_AUTH_HEADER = "x-test-auth-secret";
 
 export type TestAuthEnv = E2EEnvironment & {
-  NODE_ENV?: string;
   TEST_AUTH_SECRET?: string;
-  VERCEL_ENV?: string;
 };
 
 export type TestAuthDecision =
@@ -19,10 +19,8 @@ export type TestAuthDecision =
 function currentTestAuthEnv(): TestAuthEnv {
   return {
     EXPOSE_TESTING_API: process.env.EXPOSE_TESTING_API,
-    NODE_ENV: process.env.NODE_ENV,
     TEST_AUTH_SECRET: process.env.TEST_AUTH_SECRET,
     VERCEL: process.env.VERCEL,
-    VERCEL_ENV: process.env.VERCEL_ENV,
   };
 }
 
@@ -39,21 +37,15 @@ export function readTestAuthSecret(secret: string | undefined): string | null {
 }
 
 /**
- * Test login is available in explicit non-production Vercel environments,
- * local development, and local e2e builds. Every mode requires its own secret.
+ * RDC-strict: test login requires EXPOSE_TESTING_API=1 and is never auto-on
+ * from NODE_ENV or VERCEL_ENV alone. Vercel runtimes stay closed via
+ * isTestingApiExposed (VERCEL !== "1").
  */
 export function isTestAuthEnabled(
   env: TestAuthEnv = currentTestAuthEnv(),
 ): boolean {
   if (readTestAuthSecret(env.TEST_AUTH_SECRET) === null) return false;
-
-  const vercelEnv = readEnvValue(env.VERCEL_ENV);
-  if (vercelEnv === "preview" || vercelEnv === "development") return true;
-  if (vercelEnv) return false;
-
-  return (
-    readEnvValue(env.NODE_ENV) === "development" || isTestingApiExposed(env)
-  );
+  return isTestingApiExposed(env);
 }
 
 export function evaluateTestAuthRequest(
