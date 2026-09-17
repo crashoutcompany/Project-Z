@@ -78,6 +78,9 @@ jobs:
     env:
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      # Prefer the real Vercel/repo secret once Ty sets it; CI fallback keeps
+      # vercel build from failing while AUTH_SECRET is renamed to BETTER_AUTH_SECRET.
+      BETTER_AUTH_SECRET: ${{ secrets.BETTER_AUTH_SECRET != '' && secrets.BETTER_AUTH_SECRET || 'test-better-auth-secret-at-least-32-characters' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -108,4 +111,5 @@ jobs:
       - name: Build with Vercel
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          BETTER_AUTH_SECRET: ${{ env.BETTER_AUTH_SECRET }}
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
