@@ -1,76 +1,51 @@
-name: Actions CI
+name: CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
   pull_request:
-    types: [opened, synchronize, reopened]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  DATABASE_URL: postgresql://user:pass@127.0.0.1:5432/pocket_test
+  DIRECT_URL: postgresql://user:pass@127.0.0.1:5432/pocket_test
+  BETTER_AUTH_SECRET: test-better-auth-secret-at-least-32-characters
 
 jobs:
   lint:
     runs-on: ubuntu-latest
-    continue-on-error: true
-    env:
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      DIRECT_URL: ${{ secrets.DIRECT_URL }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
         with:
           version: 10.1.0
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20.19.0"
-          cache: "pnpm"
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Run linter
-        run: pnpm run lint
+          node-version: "24"
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
 
   test:
     runs-on: ubuntu-latest
-    env:
-      DATABASE_URL: postgresql://user:pass@127.0.0.1:5432/pocket_test
-      DIRECT_URL: postgresql://user:pass@127.0.0.1:5432/pocket_test
-      BETTER_AUTH_SECRET: test-better-auth-secret-at-least-32-characters
-      E2E_AUTH_BYPASS: "1"
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
         with:
           version: 10.1.0
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20.19.0"
-          cache: "pnpm"
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Run unit tests with coverage
-        run: pnpm test:coverage
-
-      - name: Install Playwright Chromium
-        run: pnpm exec playwright install --with-deps chromium
-
-      - name: Build Next.js
-        run: pnpm build
-
-      - name: Run instant navigation tests
-        run: pnpm test:e2e
+          node-version: "24"
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test:coverage
 
   build:
     if: github.event_name != 'pull_request' || (github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]')
@@ -78,36 +53,102 @@ jobs:
     env:
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_URL: ${{ secrets.DIRECT_URL }}
       BETTER_AUTH_SECRET: ${{ secrets.BETTER_AUTH_SECRET || 'test-better-auth-secret-at-least-32-characters' }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
         with:
           version: 10.1.0
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20.19.0"
-          cache: "pnpm"
+          node-version: "24"
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm add --global vercel@latest
+      - name: Pull Vercel environment
+        env:
+          VERCEL_ENV: ${{ github.event_name == 'push' && 'production' || 'preview' }}
+        run: vercel pull --yes --environment="$VERCEL_ENV" --token="$VERCEL_TOKEN"
+      - name: Build with Vercel
+        env:
+          VERCEL_ENV: ${{ github.event_name == 'push' && 'production' || 'preview' }}
+        run: |
+          if [ "$VERCEL_ENV" = "production" ]; then
+            vercel build --prod --token="$VERCEL_TOKEN"
+          else
+            vercel build --token="$VERCEL_TOKEN"
+          fi
 
-      - name: Install Vercel CLI
-        run: pnpm add -global vercel@latest
+  e2e:
+    if: github.event_name != 'pull_request' || (github.event.pull_request.head.repo.full_name == github.repository && github.actor != 'dependabot[bot]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      TEST_AUTH_SECRET: ${{ secrets.TEST_AUTH_SECRET || 'test-auth-secret' }}
+      BETTER_AUTH_SECRET: ${{ secrets.BETTER_AUTH_SECRET || 'test-better-auth-secret-at-least-32-characters' }}
+      NEXT_PUBLIC_POSTHOG_KEY: ${{ secrets.NEXT_PUBLIC_POSTHOG_KEY }}
+      NEXT_PUBLIC_POSTHOG_HOST: ${{ secrets.NEXT_PUBLIC_POSTHOG_HOST }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.1.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: pnpm
+
+      - name: Resolve Neon branch
+        id: neon
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PR_NUMBER: ${{ github.event.number }}
+          HEAD_REF: ${{ github.head_ref }}
+          GIT_SHA: ${{ github.sha }}
+        run: |
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            safe_ref="${HEAD_REF//\//-}"
+            printf 'name=preview/pr-%s-%s\n' "$PR_NUMBER" "$safe_ref" >> "$GITHUB_OUTPUT"
+            printf 'ephemeral=false\n' >> "$GITHUB_OUTPUT"
+          else
+            printf 'name=ci/e2e-%s\n' "$GIT_SHA" >> "$GITHUB_OUTPUT"
+            printf 'ephemeral=true\n' >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create or reuse Neon branch
+        id: database
+        uses: neondatabase/create-branch-action@v6
+        with:
+          project_id: ${{ vars.NEON_PROJECT_ID }}
+          branch_name: ${{ steps.neon.outputs.name }}
+          api_key: ${{ secrets.NEON_API_KEY }}
+          database: ${{ secrets.NEON_DATABASE || 'pocket' }}
+          role: ${{ secrets.NEON_ROLE || 'pocket' }}
+          prisma: true
 
       - name: Install dependencies
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-          DIRECT_URL: ${{ secrets.DIRECT_URL }}
-        run: pnpm install
+          DATABASE_URL: ${{ steps.database.outputs.db_url_pooled }}
+          DIRECT_URL: ${{ steps.database.outputs.db_url }}
+        run: pnpm install --frozen-lockfile
 
-      - name: Pull Vercel Environment Variables
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
 
-      - name: Build with Vercel
+      - name: Run authenticated E2E
         env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
-          BETTER_AUTH_SECRET: ${{ env.BETTER_AUTH_SECRET }}
-        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+          DATABASE_URL: ${{ steps.database.outputs.db_url_pooled }}
+          DIRECT_URL: ${{ steps.database.outputs.db_url }}
+          EXPOSE_TESTING_API: "1"
+        run: pnpm test:e2e
+
+      - name: Delete ephemeral Neon branch
+        if: always() && steps.neon.outputs.ephemeral == 'true' && steps.database.outcome == 'success'
+        uses: neondatabase/delete-branch-action@v3
+        with:
+          project_id: ${{ vars.NEON_PROJECT_ID }}
+          branch: ${{ steps.database.outputs.branch_id }}
+          api_key: ${{ secrets.NEON_API_KEY }}

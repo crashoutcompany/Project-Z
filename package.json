@@ -2,12 +2,17 @@
   "name": "project-z",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@10.1.0",
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "postinstall": "prisma generate",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "build:e2e": "EXPOSE_TESTING_API=1 next build",
