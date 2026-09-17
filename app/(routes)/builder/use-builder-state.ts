@@ -28,6 +28,39 @@ export function toEntries(cards: DeckCard[]): DeckEntry[] {
   }));
 }
 
+/** Returns the next deck, or `null` if Pocket copy/size rules reject the add. */
+export function addCardToDeck(
+  prev: DeckCard[],
+  card: SearchCardResult,
+): DeckCard[] | null {
+  const key = refOf(card);
+  const existing = prev.find((c) => refOf(c) === key);
+  const nameCount = prev
+    .filter((c) => c.name === card.name)
+    .reduce((sum, c) => sum + c.count, 0);
+  if (nameCount >= 2) return null;
+  const total = prev.reduce((sum, c) => sum + c.count, 0);
+  if (total >= 20) return null;
+
+  if (existing) {
+    if (existing.count >= 2) return null;
+    return prev.map((c) =>
+      refOf(c) === key ? { ...c, count: c.count + 1 } : c,
+    );
+  }
+  return [...prev, { ...card, count: 1 }];
+}
+
+export function removeOneFromDeck(
+  prev: DeckCard[],
+  card: DeckCard,
+): DeckCard[] {
+  const key = refOf(card);
+  return prev
+    .map((c) => (refOf(c) === key ? { ...c, count: c.count - 1 } : c))
+    .filter((c) => c.count > 0);
+}
+
 export function useBuilderDeck() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -169,38 +202,15 @@ export function useBuilderDeck() {
 
   const addCard = useCallback(
     (card: SearchCardResult) => {
-      const prev = visibleDeck;
-      const key = refOf(card);
-      const existing = prev.find((c) => refOf(c) === key);
-      const nameCount = prev
-        .filter((c) => c.name === card.name)
-        .reduce((sum, c) => sum + c.count, 0);
-      if (nameCount >= 2) return;
-      const total = prev.reduce((sum, c) => sum + c.count, 0);
-      if (total >= 20) return;
-
-      if (existing) {
-        if (existing.count >= 2) return;
-        commitDeck(
-          prev.map((c) =>
-            refOf(c) === key ? { ...c, count: c.count + 1 } : c,
-          ),
-        );
-        return;
-      }
-      commitDeck([...prev, { ...card, count: 1 }]);
+      const next = addCardToDeck(visibleDeck, card);
+      if (next) commitDeck(next);
     },
     [visibleDeck, commitDeck],
   );
 
   const removeOne = useCallback(
     (card: DeckCard) => {
-      const key = refOf(card);
-      commitDeck(
-        visibleDeck
-          .map((c) => (refOf(c) === key ? { ...c, count: c.count - 1 } : c))
-          .filter((c) => c.count > 0),
-      );
+      commitDeck(removeOneFromDeck(visibleDeck, card));
     },
     [visibleDeck, commitDeck],
   );

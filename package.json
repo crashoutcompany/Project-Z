@@ -9,6 +9,8 @@
     "start": "next start",
     "lint": "eslint .",
     "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
     "import:cards": "tsx scripts/import-cards.ts",
     "import:cards:dry": "tsx scripts/import-cards.ts --dry-run",
     "doctor": "react-doctor"
@@ -45,10 +47,13 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.6",
+    "@next/playwright": "^16.3.5",
+    "@playwright/test": "^1.63.0",
     "@types/node": "^25.3.3",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/ws": "^8.18.1",
+    "@vitest/coverage-v8": "5.0.1",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.3",
     "postcss": "^8.5.26",
@@ -58,7 +63,7 @@
     "react-doctor": "^0.9.14",
     "tsx": "^4.21.0",
     "typescript": "^5.7.3",
-    "vitest": "^5.0.0"
+    "vitest": "^5.0.1"
   },
   "pnpm": {
     "overrides": {

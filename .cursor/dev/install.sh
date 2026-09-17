@@ -27,6 +27,9 @@ DIRECT_URL="postgresql://pocket:pocket@db.localtest.me:5432/pocket?sslmode=disab
 
 AUTH_SECRET="dev-secret-please-change-0123456789abcdef0123456789abcdef"
 
+# Local-only tester login. Never set this on Vercel Production.
+TEST_AUTH_SECRET="local-test-auth-secret-not-for-production"
+
 # OAuth providers require real external apps; placeholders let the app boot.
 # Real Google/GitHub sign-in needs valid credentials (see README / secrets).
 AUTH_GITHUB_ID="dev-github-id"
@@ -37,6 +40,9 @@ ENV
   echo "    wrote $REPO_ROOT/.env"
 else
   echo "    .env already present, leaving as-is"
+  if ! grep -q '^TEST_AUTH_SECRET=' "$REPO_ROOT/.env"; then
+    printf '\n# Local-only tester login. Never set this on Vercel Production.\nTEST_AUTH_SECRET="local-test-auth-secret-not-for-production"\n' >> "$REPO_ROOT/.env"
+  fi
 fi
 
 echo "==> [2/8] Ensuring hostname aliases in /etc/hosts"
