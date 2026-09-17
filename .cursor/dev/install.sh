@@ -56,11 +56,11 @@ done
 echo "==> [3/8] Installing PostgreSQL (if missing)"
 if ! command -v pg_ctlcluster >/dev/null 2>&1; then
   # Cloud Agent VMs can boot with a clock in the past; apt then rejects
-  # InRelease files as "not valid yet".
-  echo 'Acquire::Check-Valid-Until "false";
-Acquire::Check-Date "false";' | sudo tee /etc/apt/apt.conf.d/99no-check-valid >/dev/null
-  sudo apt-get update -qq
-  sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq postgresql postgresql-contrib
+  # InRelease files as "not valid yet". Scope the workaround to these commands.
+  sudo apt-get -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false update -qq
+  sudo DEBIAN_FRONTEND=noninteractive apt-get \
+    -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false \
+    install -y -qq postgresql postgresql-contrib
 fi
 PG_VERSION="$(ls /etc/postgresql 2>/dev/null | sort -n | tail -1)"
 if [ -z "$PG_VERSION" ]; then
