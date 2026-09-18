@@ -1,4 +1,4 @@
-import { TESTER_EMAIL, TESTER_ID, TESTER_NAME } from "../lib/test-auth";
+import { TESTER_EMAIL, TESTER_ID, TESTER_NAME } from "../lib/auth/config";
 import { runImport } from "../scripts/import-cards";
 import { SEED_CARDS_PER_SET } from "../scripts/lib/sample-cards";
 import prisma from "./db";
