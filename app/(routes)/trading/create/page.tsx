@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { auth } from "@/lib/auth";
+import { getSession } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { headers } from "next/headers";
 import { CatalogShell } from "@/components/catalog/CatalogShell";
@@ -22,9 +22,7 @@ export default function Page() {
 }
 
 async function CreateTradeContent() {
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
+  const session = await getSession(await headers());
 
   if (!session) {
     redirect("/signin");

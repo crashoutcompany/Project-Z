@@ -8,37 +8,18 @@ type InstantPage = {
   deferred?: string | RegExp;
 };
 
-const PAGES: InstantPage[] = [
+/**
+ * Auth-core only exposes guest shells for public routes. Gated pages are covered
+ * by the authenticated e2e branch once TEST_AUTH_SECRET login is available.
+ */
+const PUBLIC_PAGES: InstantPage[] = [
   {
     path: "/",
     heading: /Discover, Trade, and/,
   },
   {
-    path: "/dex",
-    heading: "Card Dex",
-    deferred: "No card sets found.",
-  },
-  {
-    path: "/builder",
-    heading: "Deck Builder",
-    deferred: "No card sets found.",
-  },
-  {
-    path: "/trading",
-    heading: "Trading",
-  },
-  {
-    path: "/trading/create",
-    heading: "Create a Trade",
-    deferred: "No card sets found.",
-  },
-  {
     path: "/signin",
     heading: "Sign in to your account",
-  },
-  {
-    path: "/me",
-    heading: "Me Page",
   },
 ];
 
@@ -52,8 +33,8 @@ async function expectShell(page: Page, spec: InstantPage) {
   }
 }
 
-test.describe("instant page shells", () => {
-  for (const spec of PAGES) {
+test.describe("public page shells as a guest", () => {
+  for (const spec of PUBLIC_PAGES) {
     test(`${spec.path} is instant on an initial page load`, async ({
       page,
       baseURL,
@@ -69,33 +50,11 @@ test.describe("instant page shells", () => {
     });
   }
 
-  test("home → dex client navigation is instant", async ({ page }) => {
-    await page.goto("/");
+  test("gated routes redirect guests to sign-in", async ({ page }) => {
+    await page.goto("/dex");
+    await page.waitForURL((url) => url.pathname === "/signin");
     await expect(
-      page.getByRole("heading", { name: /Discover, Trade, and/ }),
+      page.getByRole("heading", { name: "Sign in to your account" }),
     ).toBeVisible();
-
-    await instant(page, async () => {
-      await page.getByRole("link", { name: "Browse the Dex" }).first().click();
-      await page.waitForURL((url) => url.pathname === "/dex");
-      await expectShell(page, {
-        path: "/dex",
-        heading: "Card Dex",
-        deferred: "No card sets found.",
-      });
-    });
-  });
-
-  test("home → trading client navigation is instant", async ({ page }) => {
-    await page.goto("/");
-    await expect(
-      page.getByRole("heading", { name: /Discover, Trade, and/ }),
-    ).toBeVisible();
-
-    await instant(page, async () => {
-      await page.getByRole("link", { name: "Start Trading", exact: true }).click();
-      await page.waitForURL((url) => url.pathname === "/trading");
-      await expectShell(page, { path: "/trading", heading: "Trading" });
-    });
   });
 });

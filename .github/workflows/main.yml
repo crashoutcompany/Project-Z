@@ -40,7 +40,7 @@ jobs:
     env:
       DATABASE_URL: postgresql://user:pass@127.0.0.1:5432/pocket_test
       DIRECT_URL: postgresql://user:pass@127.0.0.1:5432/pocket_test
-      AUTH_SECRET: test-auth-secret-not-for-production
+      BETTER_AUTH_SECRET: test-better-auth-secret-at-least-32-characters
       E2E_AUTH_BYPASS: "1"
     steps:
       - name: Checkout repository
@@ -78,6 +78,7 @@ jobs:
     env:
       VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
       VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      BETTER_AUTH_SECRET: ${{ secrets.BETTER_AUTH_SECRET || 'test-better-auth-secret-at-least-32-characters' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -108,4 +109,5 @@ jobs:
       - name: Build with Vercel
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          BETTER_AUTH_SECRET: ${{ env.BETTER_AUTH_SECRET }}
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
