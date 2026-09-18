@@ -13,6 +13,9 @@ export default defineConfig({
       DATABASE_URL:
         process.env.DATABASE_URL ??
         "postgresql://user:pass@127.0.0.1:5432/pocket_test",
+      BETTER_AUTH_SECRET:
+        process.env.BETTER_AUTH_SECRET ??
+        "test-better-auth-secret-at-least-32-characters",
     },
     exclude: [
       "**/node_modules/**",
@@ -35,8 +38,8 @@ export default defineConfig({
       exclude: [
         "**/*.test.ts",
         "lib/auth.ts",
-        "lib/auth-client.ts",
-        "lib/config.ts",
+        "lib/auth/client.ts",
+        "lib/auth/config.ts",
         "lib/utils.ts",
         "lib/search/index.ts",
         "app/api/auth/**",
