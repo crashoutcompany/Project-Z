@@ -1,4 +1,4 @@
-# shared:neon-branches v2
+# shared:neon-branches v3
 name: Neon branches
 
 on:
@@ -26,8 +26,8 @@ jobs:
           project_id: ${{ secrets.NEON_PROJECT_ID || vars.NEON_PROJECT_ID }}
           branch_name: ${{ steps.neon.outputs.name }}
           api_key: ${{ secrets.NEON_API_KEY }}
-          database: ${{ secrets.NEON_DATABASE }}
-          role: ${{ secrets.NEON_ROLE }}
+          database: ptcgp
+          role: neondb_owner
 
   delete:
     if: github.event.action == 'closed' && github.event.pull_request.head.repo.full_name == github.repository
