@@ -1,4 +1,4 @@
-# shared:ci-main v3
+# shared:ci-main v4
 name: CI
 
 on:
@@ -194,8 +194,8 @@ jobs:
           project_id: ${{ secrets.NEON_PROJECT_ID || vars.NEON_PROJECT_ID }}
           branch_name: ${{ steps.neon.outputs.name }}
           api_key: ${{ secrets.NEON_API_KEY }}
-          database: ${{ secrets.NEON_DATABASE }}
-          role: ${{ secrets.NEON_ROLE }}
+          database: ptcgp
+          role: neondb_owner
           prisma: ${{ env.USE_PRISMA_NEON == 'true' }}
 
       - name: Install dependencies
