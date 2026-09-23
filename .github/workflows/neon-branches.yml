@@ -1,4 +1,4 @@
-# shared:neon-branches v3
+# shared:neon-branches v4
 name: Neon branches
 
 on:
@@ -26,7 +26,7 @@ jobs:
           project_id: ${{ secrets.NEON_PROJECT_ID || vars.NEON_PROJECT_ID }}
           branch_name: ${{ steps.neon.outputs.name }}
           api_key: ${{ secrets.NEON_API_KEY }}
-          database: ptcgp
+          database: neondb
           role: neondb_owner
 
   delete:
