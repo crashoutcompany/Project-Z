@@ -32,7 +32,7 @@ Required names — do **not** use `AUTH_URL` / `AUTH_SECRET`:
 
 - [ ] GitHub Actions secret `BETTER_AUTH_SECRET` (match Vercel; empty secret blanks break `vercel build`)
 - [ ] GitHub Actions secret `TEST_AUTH_SECRET` (**currently missing/empty on this repo** — workflow falls back to fixture for e2e; set the real value)
-- [ ] GitHub Actions variable `NEON_PROJECT_ID` plus secrets `NEON_API_KEY`, `NEON_DATABASE`, `NEON_ROLE` (e2e fails with `project_id` required until set)
+- [ ] GitHub Actions secret `NEON_PROJECT_ID` (preferred) or variable `NEON_PROJECT_ID`, plus secrets `NEON_API_KEY`, `NEON_DATABASE`, `NEON_ROLE`
 - [ ] Vercel env: `BETTER_AUTH_SECRET`, `BETTER_AUTH_URL` (prod + preview strategy), OAuth IDs/secrets
 - [ ] Google/GitHub OAuth redirect URIs include prod + `*.vercel.app` preview callbacks for `/api/auth/callback/*`
 
