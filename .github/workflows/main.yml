@@ -19,4 +19,8 @@ jobs:
       test-script: test:coverage
       has-e2e: true
       use-prisma-neon: true
+      # The repo's NEON_DATABASE secret points at the empty ptcgp database; the
+      # Prisma tables live in neondb.
+      neon-database: neondb
+      neon-role: neondb_owner
     secrets: inherit
