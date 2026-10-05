@@ -29,6 +29,7 @@ BETTER_AUTH_SECRET="dev-secret-please-change-0123456789abcdef0123456789abcdef"
 
 # Local-only tester login. Never set this on Vercel Production.
 TEST_AUTH_SECRET="local-test-auth-secret-not-for-production"
+EXPOSE_TESTING_API="1"
 
 # OAuth providers require real external apps; placeholders let the app boot.
 # Real Google/GitHub sign-in needs valid credentials (see README / secrets).
@@ -45,6 +46,9 @@ else
   fi
   if ! grep -q '^TEST_AUTH_SECRET=' "$REPO_ROOT/.env"; then
     printf '\n# Local-only tester login. Never set this on Vercel Production.\nTEST_AUTH_SECRET="local-test-auth-secret-not-for-production"\n' >> "$REPO_ROOT/.env"
+  fi
+  if ! grep -q '^EXPOSE_TESTING_API=' "$REPO_ROOT/.env"; then
+    printf 'EXPOSE_TESTING_API="1"\n' >> "$REPO_ROOT/.env"
   fi
 fi
 
