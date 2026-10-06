@@ -1,5 +1,3 @@
-// shared:test-auth v2
-
 import { constantTimeEqual } from "better-auth/crypto";
 
 import type { E2EEnvironment } from "@/lib/e2e-env";

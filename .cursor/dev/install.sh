@@ -17,6 +17,16 @@ CERT_DIR="$DEV_DIR/certs"
 cd "$REPO_ROOT"
 
 echo "==> [1/8] Ensuring local .env exists"
+# Set EXPOSE_TESTING_API="1" in an env file when it is absent or empty
+# (e.g. copied from .env.example). Explicit non-empty values are kept.
+ensure_expose_testing_api() {
+  local file="$1"
+  [ -f "$file" ] || return 0
+  grep -Eq '^EXPOSE_TESTING_API=("[^"]+"|[^"[:space:]]+)' "$file" && return 0
+  sed -i '/^EXPOSE_TESTING_API=/d' "$file"
+  printf 'EXPOSE_TESTING_API="1"\n' >>"$file"
+}
+
 if [ ! -f "$REPO_ROOT/.env" ]; then
   cat > "$REPO_ROOT/.env" <<'ENV'
 # Local development environment (gitignored). Not for production.
@@ -29,6 +39,7 @@ BETTER_AUTH_SECRET="dev-secret-please-change-0123456789abcdef0123456789abcdef"
 
 # Local-only tester login. Never set this on Vercel Production.
 TEST_AUTH_SECRET="local-test-auth-secret-not-for-production"
+EXPOSE_TESTING_API="1"
 
 # OAuth providers require real external apps; placeholders let the app boot.
 # Real Google/GitHub sign-in needs valid credentials (see README / secrets).
@@ -46,6 +57,7 @@ else
   if ! grep -q '^TEST_AUTH_SECRET=' "$REPO_ROOT/.env"; then
     printf '\n# Local-only tester login. Never set this on Vercel Production.\nTEST_AUTH_SECRET="local-test-auth-secret-not-for-production"\n' >> "$REPO_ROOT/.env"
   fi
+  ensure_expose_testing_api "$REPO_ROOT/.env"
 fi
 
 echo "==> [2/8] Ensuring hostname aliases in /etc/hosts"
