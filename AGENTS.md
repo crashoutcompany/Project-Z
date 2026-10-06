@@ -21,18 +21,17 @@ Required names — do **not** use `AUTH_URL` / `AUTH_SECRET`:
 
 | Name | Where |
 |------|--------|
-| `BETTER_AUTH_SECRET` | local, Vercel, Actions (build/e2e) |
+| `BETTER_AUTH_SECRET` | local, Vercel (CI uses a fixture for e2e and pulls Vercel env for build) |
 | `BETTER_AUTH_URL` | Vercel / local when OAuth callback origin must be explicit |
 | `AUTH_GOOGLE_ID` / `AUTH_GOOGLE_SECRET` | Vercel + OAuth console |
 | `AUTH_GITHUB_ID` / `AUTH_GITHUB_SECRET` | Vercel + OAuth console (optional provider) |
-| `TEST_AUTH_SECRET` | local e2e + Actions e2e (`x-test-auth-secret`) |
-| `EXPOSE_TESTING_API=1` | local / CI e2e builds only |
+| `TEST_AUTH_SECRET` | local / Cursor Cloud Agents (`x-test-auth-secret`; CI e2e uses a fixture) |
+| `EXPOSE_TESTING_API=1` | local, Cursor Cloud Agents, CI e2e builds only |
 
 ## Ops checklist (CI / OAuth)
 
-- [ ] GitHub Actions secret `BETTER_AUTH_SECRET` (match Vercel; empty secret blanks break `vercel build`)
-- [ ] GitHub Actions secret `TEST_AUTH_SECRET` (**currently missing/empty on this repo** — workflow falls back to fixture for e2e; set the real value)
-- [ ] GitHub Actions secret `NEON_PROJECT_ID` (preferred) or variable `NEON_PROJECT_ID`, plus secret `NEON_API_KEY`. CI hardcodes database `neondb` (where `User` / Prisma tables live) and role `neondb_owner`. The extra `ptcgp` database on this project is empty — do not point CI at it.
+- [ ] CI runs the shared workflow in `crashoutcompany/.github`. Auth secrets are not needed in GitHub Actions: lint/test/e2e use fixtures and the build pulls Vercel env.
+- [ ] GitHub Actions secrets `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`, `NEON_API_KEY`, plus `NEON_PROJECT_ID` (variable or secret). Neon database/role default to `neondb` (where `User` / Prisma tables live) and `neondb_owner`; leave `NEON_DATABASE` / `NEON_ROLE` unset. The extra `ptcgp` database on this project is empty — do not point CI at it.
 - [ ] Vercel env: `BETTER_AUTH_SECRET`, `BETTER_AUTH_URL` (prod + preview strategy), OAuth IDs/secrets
 - [ ] Google/GitHub OAuth redirect URIs include prod + `*.vercel.app` preview callbacks for `/api/auth/callback/*`
 

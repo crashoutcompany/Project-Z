@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "build:e2e": "EXPOSE_TESTING_API=1 next build",
@@ -67,7 +67,7 @@
     "prettier": "^3.5.2",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "prisma": "^7.10.0",
-    "react-doctor": "^0.9.14",
+    "react-doctor": "^0.9.17",
     "tsx": "^4.21.0",
     "typescript": "^5.7.3",
     "vitest": "^5.0.1"
