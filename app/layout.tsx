@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-import { ReactScan } from "@/components/ReactScan";
 import { Navbar } from "@/components/Navbar";
 import { Toaster } from "@/components/ui/sonner";
 import { Suspense } from "react";
@@ -37,6 +36,16 @@ function NavbarSkeleton() {
   );
 }
 
+/**
+ * Dev-only render profiler. The dynamic import sits behind a build-time
+ * NODE_ENV check so production bundles never include react-scan.
+ */
+async function DevReactScan() {
+  if (process.env.NODE_ENV !== "development") return null;
+  const { ReactScan } = await import("@/components/ReactScan");
+  return <ReactScan />;
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -44,10 +53,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ReactScan />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <DevReactScan />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

@@ -8,19 +8,25 @@ vi.mock("@/prisma/db", () => ({
   },
 }));
 
+const signOut = vi.fn();
+const getSession = vi.fn();
+
 vi.mock("@/lib/auth", () => ({
-  auth: { api: { signOut: vi.fn(), getSession: vi.fn() } },
+  auth: { api: { signOut, getSession: vi.fn() } },
+  getSession,
 }));
 
 vi.mock("next/headers", () => ({
   headers: vi.fn(async () => new Headers()),
 }));
 
+const redirect = vi.fn();
+
 vi.mock("next/navigation", () => ({
-  redirect: vi.fn(),
+  redirect,
 }));
 
-const { fetchCards } = await import("./actions");
+const { fetchCards, updateAuthStatus } = await import("./actions");
 
 describe("fetchCards", () => {
   beforeEach(() => {
@@ -67,5 +73,47 @@ describe("fetchCards", () => {
     );
     expect(result.nextCursor).toBeNull();
     expect(result.cards).toHaveLength(1);
+  });
+
+  it("rejects page sizes above the cap instead of scanning the table", async () => {
+    await expect(fetchCards({ limit: 1_000_000 })).rejects.toThrow();
+    expect(findMany).not.toHaveBeenCalled();
+  });
+
+  it("rejects malformed params from the client", async () => {
+    await expect(
+      fetchCards({ setId: "1" } as unknown as { setId: number }),
+    ).rejects.toThrow();
+    expect(findMany).not.toHaveBeenCalled();
+  });
+
+  it("defaults the page size to 20", async () => {
+    findMany.mockResolvedValue([]);
+    await fetchCards({});
+    expect(findMany).toHaveBeenCalledWith(
+      expect.objectContaining({ take: 21 }),
+    );
+  });
+});
+
+describe("updateAuthStatus", () => {
+  beforeEach(() => {
+    signOut.mockReset();
+    getSession.mockReset();
+    redirect.mockReset();
+  });
+
+  it("signs out based on the server session", async () => {
+    getSession.mockResolvedValue({ user: { id: "u1" } });
+    await updateAuthStatus();
+    expect(signOut).toHaveBeenCalledTimes(1);
+    expect(redirect).toHaveBeenCalledWith("/");
+  });
+
+  it("sends guests to sign-in without calling signOut", async () => {
+    getSession.mockResolvedValue(null);
+    await updateAuthStatus();
+    expect(signOut).not.toHaveBeenCalled();
+    expect(redirect).toHaveBeenCalledWith("/signin");
   });
 });

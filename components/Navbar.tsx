@@ -44,7 +44,10 @@ export const Navbar = async () => {
               Builder
             </Link>
             <ModeToggle />
-            <AuthButton hideOnSmallScreens={true} session={session} />
+            <AuthButton
+              hideOnSmallScreens={true}
+              hasSession={Boolean(session)}
+            />
           </nav>
         </div>
 
