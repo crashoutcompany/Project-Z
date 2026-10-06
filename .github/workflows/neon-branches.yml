@@ -1,0 +1,16 @@
+name: Neon branches
+
+on:
+  pull_request:
+    types: [opened, reopened, closed]
+
+permissions:
+  contents: read
+
+jobs:
+  neon:
+    uses: crashoutcompany/.github/.github/workflows/neon-branches.yml@v1
+    with:
+      neon-database: neondb
+      neon-role: neondb_owner
+    secrets: inherit

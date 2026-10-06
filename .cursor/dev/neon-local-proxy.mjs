@@ -22,7 +22,6 @@
 
 import https from "node:https";
 import net from "node:net";
-import fs from "node:fs";
 import { readFileSync } from "node:fs";
 import pg from "pg";
 import { WebSocketServer } from "ws";

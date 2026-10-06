@@ -3,15 +3,12 @@ import { Menu } from "lucide-react";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "@/next-themes/modetoggle";
-import { auth } from "@/lib/auth";
+import { getSession } from "@/lib/auth";
 import { AuthButton } from "./client/buttons";
 import { headers } from "next/headers";
 
 export const Navbar = async () => {
-  const requestHeaders = await headers();
-  const session = await auth.api.getSession({
-    headers: requestHeaders,
-  });
+  const session = await getSession(await headers());
   return (
     <header className="bg-background/80 sticky top-0 z-50 w-full border-b backdrop-blur-sm">
       <div className="mx-5 flex h-16 items-center">

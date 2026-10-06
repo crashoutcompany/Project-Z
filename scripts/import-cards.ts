@@ -3,6 +3,7 @@ import path from "node:path";
 import prisma from "../prisma/db";
 import { SourcePayloadSchema, type SourceCard } from "./lib/source-schema";
 import { SET_MAP, parseCardId } from "./lib/set-map";
+import { sampleCardsPerSet } from "./lib/sample-cards";
 import { normalizeRarity } from "./lib/rarity-map";
 import {
   cardImageKey,
@@ -24,20 +25,39 @@ function loadLocalEnv() {
 export const PINNED_COMMIT_SHA = "dc4a37d4fb7978265a27836b893d8f8b3aabee56";
 export const SOURCE_URL = `https://raw.githubusercontent.com/marcelpanse/tcg-pocket-collection-tracker/${PINNED_COMMIT_SHA}/frontend/assets/cards.json`;
 
-interface ImportStats {
-  setsTouched: number;
-  cardsCreated: number;
-  cardsUpdated: number;
-  cardsUnchanged: number;
-  cardsOnlyInDb: number;
-  perSetCounts: Record<string, { source: number; db: number }>;
-  attacksCount: number;
-  effectsCount: number;
-  attacksWithZeroTags: number;
-  tagFrequency: Record<string, number>;
+enum ImportEnvFlag {
+  SKIP_BLOB_UPLOAD = "SKIP_BLOB_UPLOAD",
 }
 
-async function loadSourceData(): Promise<SourceCard[]> {
+const SKIP_BLOB_UPLOAD_ENABLED = "1";
+
+function seedPayloadPath(): string {
+  return path.resolve(__dirname, "seed", "cards-sample.json");
+}
+
+function parseSourcePayload(jsonString: string, label: string): SourceCard[] {
+  const parsedJson = JSON.parse(jsonString);
+  const validated = SourcePayloadSchema.safeParse(parsedJson);
+  if (!validated.success) {
+    console.error(`${label} validation failed:`, validated.error.issues.slice(0, 5));
+    throw new Error(`${label} failed Zod schema validation.`);
+  }
+  return validated.data;
+}
+
+function loadBoundedSourceData(perSetLimit: number): SourceCard[] {
+  const seedPath = seedPayloadPath();
+  if (!fs.existsSync(seedPath)) {
+    throw new Error(
+      `Seed payload missing at ${seedPath}. Use pnpm import:cards for the full catalog.`
+    );
+  }
+  const jsonString = fs.readFileSync(seedPath, "utf8");
+  const cards = parseSourcePayload(jsonString, "Seed payload");
+  return sampleCardsPerSet(cards, perSetLimit);
+}
+
+async function loadFullSourceData(): Promise<SourceCard[]> {
   const localCachePath = path.resolve(__dirname, "cache", "cards.json");
   let jsonString: string | null = null;
 
@@ -65,26 +85,56 @@ async function loadSourceData(): Promise<SourceCard[]> {
     );
   }
 
-  const parsedJson = JSON.parse(jsonString);
-  const validated = SourcePayloadSchema.safeParse(parsedJson);
-  if (!validated.success) {
-    console.error("Source payload validation failed:", validated.error.issues.slice(0, 5));
-    throw new Error("Source payload failed Zod schema validation.");
-  }
-
-  return validated.data;
+  return parseSourcePayload(jsonString, "Source payload");
 }
 
-export async function runImport(options: { dryRun?: boolean } = {}) {
+async function loadSourceData(perSetLimit?: number): Promise<SourceCard[]> {
+  if (perSetLimit === undefined) {
+    return loadFullSourceData();
+  }
+  if (!Number.isInteger(perSetLimit) || perSetLimit < 1) {
+    throw new Error(`perSetLimit must be a positive integer, received ${String(perSetLimit)}`);
+  }
+  return loadBoundedSourceData(perSetLimit);
+}
+
+interface ImportStats {
+  setsTouched: number;
+  cardsCreated: number;
+  cardsUpdated: number;
+  cardsUnchanged: number;
+  cardsOnlyInDb: number;
+  perSetCounts: Record<string, { source: number; db: number }>;
+  attacksCount: number;
+  effectsCount: number;
+  attacksWithZeroTags: number;
+  tagFrequency: Record<string, number>;
+}
+
+export async function runImport(
+  options: { dryRun?: boolean; skipUpload?: boolean; perSetLimit?: number } = {}
+) {
   loadLocalEnv();
   const { dryRun = false } = options;
+  const skipUpload =
+    options.skipUpload ??
+    (dryRun || process.env[ImportEnvFlag.SKIP_BLOB_UPLOAD] === SKIP_BLOB_UPLOAD_ENABLED);
+  const envLimit = Number(process.env.SEED_PER_SET_LIMIT);
+  const perSetLimit =
+    options.perSetLimit ?? (Number.isFinite(envLimit) && envLimit > 0 ? envLimit : undefined);
   console.log(`\n======================================================`);
   console.log(`🚀 Starting Card Import Pipeline ${dryRun ? "(DRY RUN)" : ""}`);
   console.log(`Pinned commit: ${PINNED_COMMIT_SHA}`);
   console.log(`======================================================\n`);
 
-  const sourceCards = await loadSourceData();
-  console.log(`Loaded and validated ${sourceCards.length} cards from source payload.\n`);
+  const sourceCards = await loadSourceData(perSetLimit);
+  if (perSetLimit !== undefined) {
+    console.log(
+      `Loaded seed payload (${sourceCards.length} cards, up to ${perSetLimit} per set).\n`
+    );
+  } else {
+    console.log(`Loaded and validated ${sourceCards.length} cards from source payload.\n`);
+  }
 
   const stats: ImportStats = {
     setsTouched: 0,
@@ -159,11 +209,11 @@ export async function runImport(options: { dryRun?: boolean } = {}) {
 
   const imageTargets = sourceCards.map((card) => parseCardId(card.card_id));
   console.log(
-    dryRun
-      ? "Resolving image URLs (dry run; uploads skipped)..."
+    skipUpload
+      ? "Resolving image URLs (uploads skipped)..."
       : "Copying missing card images to Vercel Blob..."
   );
-  const images = await resolveCardImageUrls(imageTargets, { skipUpload: dryRun });
+  const images = await resolveCardImageUrls(imageTargets, { skipUpload });
   console.log(`  Reused from Blob: ${images.reused}`);
   console.log(`  Uploaded to Blob: ${images.uploaded}\n`);
 
