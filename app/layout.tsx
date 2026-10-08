@@ -36,13 +36,17 @@ function NavbarSkeleton() {
   );
 }
 
-/**
- * Dev-only render profiler. The dynamic import sits behind a build-time
- * NODE_ENV check so production bundles never include react-scan.
- */
+// Dev-only render profiler. The import() sits behind a build-time NODE_ENV
+// check so production bundles never include react-scan, and outside the
+// component because React Compiler cannot lower import().
+const loadReactScan =
+  process.env.NODE_ENV === "development"
+    ? () => import("@/components/ReactScan")
+    : null;
+
 async function DevReactScan() {
-  if (process.env.NODE_ENV !== "development") return null;
-  const { ReactScan } = await import("@/components/ReactScan");
+  if (!loadReactScan) return null;
+  const { ReactScan } = await loadReactScan();
   return <ReactScan />;
 }
 
