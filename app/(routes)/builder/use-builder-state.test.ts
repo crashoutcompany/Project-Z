@@ -8,6 +8,7 @@ vi.mock("next/navigation", () => ({
 import type { SearchCardResult } from "@/lib/search";
 import {
   addCardToDeck,
+  nextDeckAfterCatalogAdd,
   refOf,
   removeOneFromDeck,
   toEntries,
@@ -67,5 +68,13 @@ describe("builder deck helpers", () => {
     const once = removeOneFromDeck([pikachu], pikachu);
     expect(once[0]?.count).toBe(1);
     expect(removeOneFromDeck(once, once[0]!)).toEqual([]);
+  });
+
+  it("ignores catalog adds while a shared deck link is still hydrating", () => {
+    const pikachu = card({ id: 1, name: "Pikachu" });
+    expect(nextDeckAfterCatalogAdd(true, [], pikachu)).toBeNull();
+    expect(nextDeckAfterCatalogAdd(false, [], pikachu)).toEqual([
+      { ...pikachu, count: 1 },
+    ]);
   });
 });

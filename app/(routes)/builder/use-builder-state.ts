@@ -61,6 +61,19 @@ export function removeOneFromDeck(
     .filter((c) => c.count > 0);
 }
 
+/**
+ * Catalog edits while a shared `?deck=` fetch is in flight would commit against
+ * an empty visible tray and cancel hydration, silently discarding the link.
+ */
+export function nextDeckAfterCatalogAdd(
+  hydrationInFlight: boolean,
+  prev: DeckCard[],
+  card: SearchCardResult,
+): DeckCard[] | null {
+  if (hydrationInFlight) return null;
+  return addCardToDeck(prev, card);
+}
+
 export function useBuilderDeck() {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -190,6 +203,9 @@ export function useBuilderDeck() {
   /** Commit a deck edit: update state, then mirror it into the URL. */
   const commitDeck = useCallback(
     (next: DeckCard[]) => {
+      // Replacing the URL here also clears `pendingParam`, which cancels the
+      // in-flight `/api/cards/by-refs` hydration. Refuse until that settles.
+      if (fetchNeeded) return;
       const nextEntries = toEntries(next);
       setDeck(next);
       setFetchError(null);
@@ -197,15 +213,15 @@ export function useBuilderDeck() {
       setSyncedUrlKey(`1|${encodeDeck(nextEntries)}`);
       router.replace(buildBuilderUrl(nextEntries), { scroll: false });
     },
-    [router],
+    [router, fetchNeeded],
   );
 
   const addCard = useCallback(
     (card: SearchCardResult) => {
-      const next = addCardToDeck(visibleDeck, card);
+      const next = nextDeckAfterCatalogAdd(fetchNeeded, visibleDeck, card);
       if (next) commitDeck(next);
     },
-    [visibleDeck, commitDeck],
+    [fetchNeeded, visibleDeck, commitDeck],
   );
 
   const removeOne = useCallback(

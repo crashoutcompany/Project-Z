@@ -27,6 +27,8 @@ type CardBrowserClientProps = {
   selected?: SelectedCards;
   onCardClick?: (card: CardWithSet) => void;
   cardCounts?: Record<number, number>;
+  /** When false, catalog cards are not clickable (e.g. shared-deck hydration). */
+  interactive?: boolean;
   initialDetail?: CardDetail | null;
   syncDexUrl?: boolean;
 };
@@ -47,6 +49,7 @@ export function CardBrowserClient({
   selected,
   onCardClick,
   cardCounts,
+  interactive = true,
   initialDetail = null,
   syncDexUrl = false,
 }: CardBrowserClientProps) {
@@ -126,12 +129,14 @@ export function CardBrowserClient({
         setId={search.isSearching ? undefined : search.activeSetId}
         searchQuery={search.searchQuery}
         tradeableOnly={tradeableOnly}
-        selectable={mode === "select" || mode === "build"}
+        selectable={interactive && (mode === "select" || mode === "build")}
         selectedCards={selection.selectedCards}
         selectionMode={selection.selectionMode}
         density={mode === "build" ? "compact" : "comfortable"}
         cardCounts={cardCounts}
-        onCardClick={handleCardClick}
+        // CardItem is clickable whenever it receives a handler, so withholding
+        // it is what makes the catalog inert while `interactive` is false.
+        onCardClick={interactive ? handleCardClick : undefined}
       />
 
       {mode === "view" ? (
