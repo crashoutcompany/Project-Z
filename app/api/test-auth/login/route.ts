@@ -16,12 +16,15 @@ async function ensureTesterUser(ctx: AuthContext) {
   const existing = await ctx.internalAdapter.findUserByEmail(TESTER_EMAIL);
   if (existing?.user) return existing.user;
 
-  return ctx.internalAdapter.createUser({
-    id: TESTER_ID,
-    email: TESTER_EMAIL,
-    name: TESTER_NAME,
-    emailVerified: true,
-  });
+  return ctx.internalAdapter.createUser(
+    {
+      id: TESTER_ID,
+      email: TESTER_EMAIL,
+      name: TESTER_NAME,
+      emailVerified: true,
+    },
+    { method: "test-auth" },
+  );
 }
 
 /**

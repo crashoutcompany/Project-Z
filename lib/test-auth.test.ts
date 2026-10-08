@@ -23,7 +23,7 @@ describe("readConfiguredTestAuthSecret", () => {
   });
 });
 
-describe("isTestAuthEnabled (shared:test-auth v2)", () => {
+describe("isTestAuthEnabled", () => {
   it("allows only when EXPOSE_TESTING_API=1 and a secret are set (non-Vercel)", () => {
     expect(
       isTestAuthEnabled({
