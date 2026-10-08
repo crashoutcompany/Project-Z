@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { auth } from "@/lib/auth";
+import { getSession } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import prisma from "@/prisma/db";
 import { H2 } from "@/components/typography/headings";
@@ -24,9 +24,7 @@ export default function TradingPage() {
 }
 
 async function TradingPageContent() {
-  const session = await auth.api.getSession({
-    headers: await headers(),
-  });
+  const session = await getSession(await headers());
   if (!session) redirect("/signin");
 
   // Get provider from the account linked to this user

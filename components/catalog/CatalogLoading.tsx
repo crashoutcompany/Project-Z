@@ -32,11 +32,9 @@ export function CatalogLoading({
   sidebar?: boolean;
   embedded?: boolean;
 }) {
-  if (embedded) {
-    return <CatalogGridSkeleton sidebar={sidebar} />;
-  }
-
-  return (
+  const skeleton = embedded ? (
+    <CatalogGridSkeleton sidebar={sidebar} />
+  ) : (
     <div className="relative isolate min-h-[calc(100dvh-4rem)]">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <Skeleton className="mb-3 h-6 w-16 rounded-full" />
@@ -44,6 +42,12 @@ export function CatalogLoading({
         <Skeleton className="mb-8 h-5 w-80 max-w-full" />
         <CatalogGridSkeleton sidebar={sidebar} />
       </div>
+    </div>
+  );
+
+  return (
+    <div role="status" aria-label="Loading catalog">
+      {skeleton}
     </div>
   );
 }

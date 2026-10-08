@@ -17,6 +17,16 @@ CERT_DIR="$DEV_DIR/certs"
 cd "$REPO_ROOT"
 
 echo "==> [1/8] Ensuring local .env exists"
+# Set EXPOSE_TESTING_API="1" in an env file when it is absent or empty
+# (e.g. copied from .env.example). Explicit non-empty values are kept.
+ensure_expose_testing_api() {
+  local file="$1"
+  [ -f "$file" ] || return 0
+  grep -Eq '^EXPOSE_TESTING_API=("[^"]+"|[^"[:space:]]+)' "$file" && return 0
+  sed -i '/^EXPOSE_TESTING_API=/d' "$file"
+  printf 'EXPOSE_TESTING_API="1"\n' >>"$file"
+}
+
 if [ ! -f "$REPO_ROOT/.env" ]; then
   cat > "$REPO_ROOT/.env" <<'ENV'
 # Local development environment (gitignored). Not for production.
@@ -25,7 +35,11 @@ if [ ! -f "$REPO_ROOT/.env" ]; then
 DATABASE_URL="postgresql://pocket:pocket@db.localtest.me:5432/pocket?sslmode=disable"
 DIRECT_URL="postgresql://pocket:pocket@db.localtest.me:5432/pocket?sslmode=disable"
 
-AUTH_SECRET="dev-secret-please-change-0123456789abcdef0123456789abcdef"
+BETTER_AUTH_SECRET="dev-secret-please-change-0123456789abcdef0123456789abcdef"
+
+# Local-only tester login. Never set this on Vercel Production.
+TEST_AUTH_SECRET="local-test-auth-secret-not-for-production"
+EXPOSE_TESTING_API="1"
 
 # OAuth providers require real external apps; placeholders let the app boot.
 # Real Google/GitHub sign-in needs valid credentials (see README / secrets).
@@ -37,6 +51,13 @@ ENV
   echo "    wrote $REPO_ROOT/.env"
 else
   echo "    .env already present, leaving as-is"
+  if ! grep -q '^BETTER_AUTH_SECRET=' "$REPO_ROOT/.env"; then
+    printf '\n# Better Auth signing secret for local development only.\nBETTER_AUTH_SECRET="dev-secret-please-change-0123456789abcdef0123456789abcdef"\n' >> "$REPO_ROOT/.env"
+  fi
+  if ! grep -q '^TEST_AUTH_SECRET=' "$REPO_ROOT/.env"; then
+    printf '\n# Local-only tester login. Never set this on Vercel Production.\nTEST_AUTH_SECRET="local-test-auth-secret-not-for-production"\n' >> "$REPO_ROOT/.env"
+  fi
+  ensure_expose_testing_api "$REPO_ROOT/.env"
 fi
 
 echo "==> [2/8] Ensuring hostname aliases in /etc/hosts"
@@ -49,10 +70,18 @@ done
 
 echo "==> [3/8] Installing PostgreSQL (if missing)"
 if ! command -v pg_ctlcluster >/dev/null 2>&1; then
-  sudo apt-get update -qq
-  sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq postgresql postgresql-contrib
+  # Cloud Agent VMs can boot with a clock in the past; apt then rejects
+  # InRelease files as "not valid yet". Scope the workaround to these commands.
+  sudo apt-get -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false update -qq
+  sudo DEBIAN_FRONTEND=noninteractive apt-get \
+    -o Acquire::Check-Valid-Until=false -o Acquire::Check-Date=false \
+    install -y -qq postgresql postgresql-contrib
 fi
-PG_VERSION="$(ls /etc/postgresql | sort -n | tail -1)"
+PG_VERSION="$(ls /etc/postgresql 2>/dev/null | sort -n | tail -1)"
+if [ -z "$PG_VERSION" ]; then
+  echo "Could not detect a PostgreSQL cluster under /etc/postgresql" >&2
+  exit 1
+fi
 echo "    PostgreSQL major version: $PG_VERSION"
 
 echo "==> [4/8] Configuring Postgres auth + starting the cluster"
@@ -109,6 +138,8 @@ pnpm install --frozen-lockfile
 
 echo "==> [8/8] Syncing schema + seeding data"
 export NODE_EXTRA_CA_CERTS="$CERT_DIR/ca.crt"
+# User secrets (e.g. BLOB_READ_WRITE_TOKEN) are not injected during Builds.
+export SKIP_BLOB_UPLOAD=1
 # db push creates every table in schema.prisma, including the Better Auth tables
 # that the committed migrations do not yet cover.
 pnpm exec prisma db push
@@ -117,10 +148,19 @@ sudo sysctl -w net.ipv4.ip_unprivileged_port_start=443 >/dev/null
 node "$DEV_DIR/neon-local-proxy.mjs" >/tmp/neon-proxy-seed.log 2>&1 &
 PROXY_PID=$!
 trap 'kill "$PROXY_PID" 2>/dev/null || true' EXIT
+PROXY_OK=0
 for _ in $(seq 1 20); do
-  curl -sf --cacert "$CERT_DIR/ca.crt" https://db.localtest.me/health >/dev/null 2>&1 && break
+  if curl -sf --cacert "$CERT_DIR/ca.crt" https://db.localtest.me/health >/dev/null 2>&1; then
+    PROXY_OK=1
+    break
+  fi
   sleep 0.5
 done
+if [ "$PROXY_OK" != 1 ]; then
+  echo "Neon local proxy did not become healthy on :443. Last log:" >&2
+  cat /tmp/neon-proxy-seed.log >&2 || true
+  exit 1
+fi
 pnpm exec prisma db seed
 kill "$PROXY_PID" 2>/dev/null || true
 trap - EXIT

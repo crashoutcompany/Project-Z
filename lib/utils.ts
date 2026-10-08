@@ -43,13 +43,15 @@ export const domain =
  * }, 300);
  * ```
  */
-export const debounce = <T extends (...args: any[]) => any>(
-  fn: T,
+export const debounce = <Args extends unknown[]>(
+  fn: (...args: Args) => unknown,
   delay: number,
-): ((...args: Parameters<T>) => void) => {
-  let timeoutId: NodeJS.Timeout;
-  return (...args: Parameters<T>) => {
+): ((...args: Args) => void) => {
+  let timeoutId: ReturnType<typeof setTimeout>;
+  return (...args: Args) => {
     clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => fn(...args), delay);
+    timeoutId = setTimeout(() => {
+      fn(...args);
+    }, delay);
   };
 };
