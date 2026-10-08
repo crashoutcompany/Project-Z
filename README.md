@@ -48,13 +48,16 @@ Authentication is self-hosted with Better Auth. Sign-in lives at `/signin`.
 Local browser automation can mint a real Better Auth session for the tester
 account. Set `EXPOSE_TESTING_API=1` and `TEST_AUTH_SECRET`, then `POST
 /api/test-auth/login` with that secret in the `x-test-auth-secret` header. The
-same secret-gated route may be enabled in Vercel Preview or Development, but is
-always unavailable in Production. Disabled environments and `GET` return 404.
+route works only outside Vercel (local, CI, Cloud Agents); every Vercel
+deployment, Preview included, returns 404. Disabled environments and `GET`
+return 404.
 A wrong header returns 401.
 
 Playwright uses `PLAYWRIGHT_BASE_URL` when supplied and otherwise starts the app
 at `http://127.0.0.1:3000`. For protected Vercel deployments,
-`VERCEL_AUTOMATION_BYPASS_SECRET` is forwarded as the protection bypass header.
+`VERCEL_AUTOMATION_BYPASS_SECRET` is forwarded as the protection bypass header,
+but authenticated specs cannot run there because tester login is unavailable on
+Vercel.
 
 ## Deploy on Vercel
 

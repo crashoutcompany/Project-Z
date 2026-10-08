@@ -1,16 +1,16 @@
 "use client";
 
-import { Session } from "@/lib/auth";
 import { useTransition } from "react";
 import { Button } from "../ui/button";
 import { cn } from "@/lib/utils";
 import { updateAuthStatus } from "@/server/actions";
 
+/** `hasSession` is server-provided; never pass the session object (it carries the token). */
 export const AuthButton = ({
-  session,
+  hasSession,
   hideOnSmallScreens: hide = false,
 }: {
-  session: Session | null;
+  hasSession: boolean;
   hideOnSmallScreens?: boolean;
 }) => {
   const [isPending, startTransition] = useTransition();
@@ -19,7 +19,7 @@ export const AuthButton = ({
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        startTransition(async () => await updateAuthStatus(session));
+        startTransition(async () => await updateAuthStatus());
       }}
     >
       <Button
@@ -31,7 +31,7 @@ export const AuthButton = ({
         )}
         variant="ghost"
       >
-        {session ? "Sign Out" : "Sign In"}
+        {hasSession ? "Sign Out" : "Sign In"}
       </Button>
     </form>
   );
