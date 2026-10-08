@@ -50,6 +50,7 @@ export function BuilderClient({
         mode="build"
         tradeableOnly={false}
         defaultSearchMode="effects"
+        interactive={deck.hydrated}
         cardCounts={cardCounts}
         onCardClick={(card) => deck.addCard(toSearchCardResult(card))}
       />

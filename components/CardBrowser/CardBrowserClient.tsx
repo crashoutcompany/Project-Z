@@ -30,6 +30,8 @@ type CardBrowserClientProps = {
   selected?: SelectedCards;
   onCardClick?: (card: CardWithSet) => void;
   cardCounts?: Record<number, number>;
+  /** When false, catalog cards are not clickable (e.g. shared-deck hydration). */
+  interactive?: boolean;
 };
 
 function filterToChips(filter: FilterJSON): string[] {
@@ -107,6 +109,7 @@ export function CardBrowserClient({
   selected,
   onCardClick,
   cardCounts,
+  interactive = true,
 }: CardBrowserClientProps) {
   const [activeSetId, setActiveSetId] = useState(initialSetId);
   const [searchQuery, setSearchQuery] = useState("");
@@ -375,7 +378,7 @@ export function CardBrowserClient({
         setId={isSearching ? undefined : activeSetId}
         searchQuery={searchQuery}
         tradeableOnly={tradeableOnly}
-        selectable={mode === "select" || mode === "build"}
+        selectable={interactive && (mode === "select" || mode === "build")}
         selectedCards={selectedCards}
         selectionMode={selectionMode}
         density={mode === "build" ? "compact" : "comfortable"}
