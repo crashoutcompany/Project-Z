@@ -151,8 +151,8 @@ export function createAuth({
       : {}),
     ...(onError ? { onAPIError: { onError } } : {}),
     plugins: [
-      nextCookies(),
       ...(emailOtp ? createEmailOtpPlugins(emailOtp, appName) : []),
+      nextCookies(),
     ],
   });
 }
