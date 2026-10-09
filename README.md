@@ -43,6 +43,12 @@ Authentication is self-hosted with Better Auth. Sign-in lives at `/signin`.
 - GitHub uses `AUTH_GITHUB_ID` and `AUTH_GITHUB_SECRET`; Google uses
   `AUTH_GOOGLE_ID` and `AUTH_GOOGLE_SECRET`. A provider is enabled only when
   both values are set.
+- Email one-time-code sign-in is for allowlisted automation accounts only.
+  It is enabled only when `AUTH_OTP_ALLOWED_EMAILS` (comma-separated, case
+  insensitive), `RESEND_API_KEY` and `AUTH_EMAIL_FROM` (a sender on a domain
+  verified in Resend) are all set. Unlisted emails get the same "code sent"
+  response but no email, and cannot sign in. Codes are 6 digits, expire after
+  5 minutes and allow 3 attempts.
 - Prisma uses `DATABASE_URL` and `DIRECT_URL`.
 
 Local browser automation can mint a real Better Auth session for the tester
