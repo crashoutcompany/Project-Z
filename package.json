@@ -20,7 +20,9 @@
     "test:e2e:ui": "pnpm build:e2e && TEST_AUTH_SECRET=\"${TEST_AUTH_SECRET:-test-auth-secret}\" playwright test --ui",
     "import:cards": "tsx scripts/import-cards.ts",
     "import:cards:dry": "tsx scripts/import-cards.ts --dry-run",
-    "doctor": "react-doctor"
+    "doctor": "react-doctor",
+    "prepare": "test -z \"$CI\" && husky || true",
+    "update-neon-branch": "tsx scripts/update-neon-branch.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
@@ -63,6 +65,8 @@
     "@vitest/coverage-v8": "5.0.1",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.3.3",
+    "husky": "^9.1.7",
+    "neonctl": "^8.0.1",
     "postcss": "^8.5.26",
     "prettier": "^3.5.2",
     "prettier-plugin-tailwindcss": "^0.8.1",
