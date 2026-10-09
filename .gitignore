@@ -92,3 +92,7 @@ ENV/
 .coverage
 htmlcov/
 .pytest_cache/
+
+# neon branch switch log + saved pre-switch DB URLs
+.neon-switch.log
+.neon-switch.json
