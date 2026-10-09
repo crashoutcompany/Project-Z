@@ -1,4 +1,4 @@
-import { describe, it, expect } from "vitest";
+import { afterEach, describe, it, expect, vi } from "vitest";
 import { parseCardId, getSetInfo } from "../lib/set-map";
 import {
   blobPathname,
@@ -39,6 +39,8 @@ describe("set-map and card id parsing", () => {
 });
 
 describe("image-url derivation", () => {
+  afterEach(() => vi.unstubAllEnvs());
+
   it("pads numbers and derives small Limitless URL", () => {
     const url = deriveImageUrl("A1", 1);
     expect(url).toBe(
@@ -57,39 +59,21 @@ describe("image-url derivation", () => {
   });
 
   it("throws when uploads are requested without a Blob token", async () => {
-    const previous = process.env.BLOB_READ_WRITE_TOKEN;
-    delete process.env.BLOB_READ_WRITE_TOKEN;
-    try {
-      await expect(
-        resolveCardImageUrls([{ setCode: "A1", number: 1 }])
-      ).rejects.toThrow(/BLOB_READ_WRITE_TOKEN is not set/);
-    } finally {
-      if (previous === undefined) {
-        delete process.env.BLOB_READ_WRITE_TOKEN;
-      } else {
-        process.env.BLOB_READ_WRITE_TOKEN = previous;
-      }
-    }
+    vi.stubEnv("BLOB_READ_WRITE_TOKEN", undefined);
+    await expect(
+      resolveCardImageUrls([{ setCode: "A1", number: 1 }])
+    ).rejects.toThrow(/BLOB_READ_WRITE_TOKEN is not set/);
   });
 
   it("falls back to source URLs on dry-run when Blob token is missing", async () => {
-    const previous = process.env.BLOB_READ_WRITE_TOKEN;
-    delete process.env.BLOB_READ_WRITE_TOKEN;
-    try {
-      const { urls, uploaded, reused } = await resolveCardImageUrls(
-        [{ setCode: "A1", number: 1 }],
-        { skipUpload: true }
-      );
-      expect(uploaded).toBe(0);
-      expect(reused).toBe(0);
-      expect(urls.get(cardImageKey("A1", 1))).toBe(deriveImageUrl("A1", 1));
-    } finally {
-      if (previous === undefined) {
-        delete process.env.BLOB_READ_WRITE_TOKEN;
-      } else {
-        process.env.BLOB_READ_WRITE_TOKEN = previous;
-      }
-    }
+    vi.stubEnv("BLOB_READ_WRITE_TOKEN", undefined);
+    const { urls, uploaded, reused } = await resolveCardImageUrls(
+      [{ setCode: "A1", number: 1 }],
+      { skipUpload: true }
+    );
+    expect(uploaded).toBe(0);
+    expect(reused).toBe(0);
+    expect(urls.get(cardImageKey("A1", 1))).toBe(deriveImageUrl("A1", 1));
   });
 
   it("derives full-size URL by removing _SM suffix", () => {

@@ -55,6 +55,18 @@ describe("fetchCards", () => {
     expect(result.nextCursor).toBe(3);
   });
 
+  it("trims the search and drops the name filter when it is blank", async () => {
+    findMany.mockResolvedValue([]);
+    await fetchCards({ search: "  pika  " });
+    expect(findMany.mock.calls[0][0].where.name).toEqual({
+      contains: "pika",
+      mode: "insensitive",
+    });
+
+    await fetchCards({ search: "   " });
+    expect(findMany.mock.calls[1][0].where).not.toHaveProperty("name");
+  });
+
   it("applies tradeableOnly and skips the cursor row", async () => {
     findMany.mockResolvedValue([
       { id: 10, name: "Ten", set: { id: 2, code: "A2" } },

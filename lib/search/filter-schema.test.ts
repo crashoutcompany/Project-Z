@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { FilterJSONSchema } from "./filter-schema";
+import { AttackFilterSchema, FilterJSONSchema } from "./filter-schema";
 
 describe("FilterJSONSchema", () => {
   it("defaults surface to any", () => {
@@ -28,5 +28,14 @@ describe("FilterJSONSchema", () => {
     expect(
       FilterJSONSchema.safeParse({ textFallback: "x".repeat(101) }).success,
     ).toBe(false);
+  });
+
+  it("validates energyTypeCounts keys", () => {
+    expect(
+      AttackFilterSchema.safeParse({ energyTypeCounts: { fairy: 1 } }).success,
+    ).toBe(false);
+    expect(
+      AttackFilterSchema.safeParse({ energyTypeCounts: { fire: 2 } }).success,
+    ).toBe(true);
   });
 });

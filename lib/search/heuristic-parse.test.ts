@@ -1,5 +1,4 @@
 import { describe, expect, it } from "vitest";
-import { AttackFilterSchema } from "./filter-schema";
 import { heuristicParse } from "./heuristic-parse";
 import { normalizeQuery } from "./normalize-query";
 
@@ -77,17 +76,6 @@ describe("heuristicParse — structured filters vs textFallback", () => {
     const f = parse("at least 100 hp");
     expect(f.hpMin).toBe(100);
     expect(f.textFallback).toBeUndefined();
-  });
-});
-
-describe("energyTypeCounts schema", () => {
-  it("rejects unknown energy type keys", () => {
-    expect(
-      AttackFilterSchema.safeParse({ energyTypeCounts: { fairy: 1 } }).success,
-    ).toBe(false);
-    expect(
-      AttackFilterSchema.safeParse({ energyTypeCounts: { fire: 2 } }).success,
-    ).toBe(true);
   });
 });
 
