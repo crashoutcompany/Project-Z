@@ -9,6 +9,19 @@ function deckCount(page: Page, count: number) {
   return page.getByText(`${count}/20 cards`, { exact: true });
 }
 
+/** router.replace lands after the tray re-renders; wait for the URL to catch up. */
+async function expectDeckUrlCards(page: Page, count: number) {
+  await expect
+    .poll(() => {
+      const deck = new URL(page.url()).searchParams.get("deck") ?? "";
+      return deck
+        .split(",")
+        .filter(Boolean)
+        .reduce((sum, part) => sum + Number(/x(\d+)$/.exec(part)?.[1] ?? 1), 0);
+    })
+    .toBe(count);
+}
+
 test("adding and removing catalog cards updates the tray and URL", async ({
   page,
 }) => {
@@ -18,12 +31,13 @@ test("adding and removing catalog cards updates the tray and URL", async ({
 
   await catalogCards(page).first().click();
   await expect(deckCount(page, 1)).toBeVisible();
-  await expect(page).toHaveURL(/[?&]deck=[^&]+/);
+  await expectDeckUrlCards(page, 1);
 
   const slot = page.getByRole("button", { name: `Remove one ${name}` });
   await slot.click();
   await expect(deckCount(page, 0)).toBeVisible();
   await expect(slot).toHaveCount(0);
+  await expectDeckUrlCards(page, 0);
 });
 
 test("a shared deck link restores the deck", async ({ page, context }) => {
@@ -32,6 +46,7 @@ test("a shared deck link restores the deck", async ({ page, context }) => {
   await catalogCards(page).nth(0).click();
   await catalogCards(page).nth(1).click();
   await expect(deckCount(page, 2)).toBeVisible();
+  await expectDeckUrlCards(page, 2);
 
   const shared = await context.newPage();
   await shared.goto(page.url());
@@ -71,7 +86,7 @@ test.describe("a complete deck", () => {
     await copy.click();
     await expect(page.getByRole("button", { name: "Copied" })).toBeVisible();
     const copied = await page.evaluate(() => navigator.clipboard.readText());
-    expect(copied).toBe(page.url());
+    await expect(page).toHaveURL(copied);
   });
 });
 
