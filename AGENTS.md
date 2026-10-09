@@ -29,6 +29,8 @@ Required names — do **not** use `AUTH_URL` / `AUTH_SECRET`:
 | `BETTER_AUTH_URL` | Vercel / local when OAuth callback origin must be explicit |
 | `AUTH_GOOGLE_ID` / `AUTH_GOOGLE_SECRET` | Vercel + OAuth console |
 | `AUTH_GITHUB_ID` / `AUTH_GITHUB_SECRET` | Vercel + OAuth console (optional provider) |
+| `AUTH_OTP_ALLOWED_EMAILS` | Vercel Production (optional). Comma-separated emails allowed to use email OTP sign-in (bots only) |
+| `RESEND_API_KEY` / `AUTH_EMAIL_FROM` | Vercel Production, with `AUTH_OTP_ALLOWED_EMAILS`. Sender must be on a Resend-verified domain |
 | `TEST_AUTH_SECRET` | local / Cursor Cloud Agents (`x-test-auth-secret`; CI e2e uses a fixture) |
 | `EXPOSE_TESTING_API=1` | local, Cursor Cloud Agents, CI e2e builds only |
 
