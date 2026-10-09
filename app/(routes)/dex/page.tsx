@@ -6,13 +6,13 @@ import { CatalogLoading } from "@/components/catalog/CatalogLoading";
 export default function Page({
   searchParams,
 }: {
-  searchParams: Promise<{ set?: string }>;
+  searchParams: Promise<{ set?: string; card?: string }>;
 }) {
   return (
     <CatalogShell
       eyebrow="Dex"
       title="Card Dex"
-      description="Browse every Pokémon TCG Pocket card by set, name, or effect."
+      description="Browse every Pokémon TCG Pocket card by set, name, or effect. Tap a card to read its attacks and text."
     >
       <Suspense fallback={<CatalogLoading embedded />}>
         <DexCatalog searchParams={searchParams} />
@@ -24,8 +24,15 @@ export default function Page({
 async function DexCatalog({
   searchParams,
 }: {
-  searchParams: Promise<{ set?: string }>;
+  searchParams: Promise<{ set?: string; card?: string }>;
 }) {
-  const { set } = await searchParams;
-  return <CardBrowser mode="view" initialSetCode={set} />;
+  const { set, card } = await searchParams;
+  return (
+    <CardBrowser
+      mode="view"
+      initialSetCode={set}
+      initialCardRef={card}
+      syncDexUrl
+    />
+  );
 }

@@ -1,10 +1,13 @@
 import { CardBrowserClient } from "./CardBrowserClient";
 import { loadCardCatalog } from "./load-catalog";
 import { CardBrowserProps } from "./types";
+import { getCardDetailByRef } from "@/lib/card-detail";
+import { parseDexCardParam } from "@/lib/dex-url";
 
 export async function CardBrowser({
   mode,
   initialSetCode,
+  initialCardRef,
   tradeableOnly = false,
   defaultSearchMode = "name",
   showSearchModes = true,
@@ -13,9 +16,16 @@ export async function CardBrowser({
   selected,
   onCardClick,
   cardCounts,
+  syncDexUrl = false,
 }: CardBrowserProps) {
-  const { sets, initialSetId, initialCards, initialCursor } =
-    await loadCardCatalog({ tradeableOnly, setCode: initialSetCode });
+  const parsedCard = parseDexCardParam(initialCardRef);
+  const setCode = parsedCard?.setCode ?? initialSetCode;
+  const catalogPromise = loadCardCatalog({ tradeableOnly, setCode });
+  const detailPromise = parsedCard
+    ? getCardDetailByRef(parsedCard.ref)
+    : Promise.resolve(null);
+  const [{ sets, initialSetId, initialCards, initialCursor }, initialDetail] =
+    await Promise.all([catalogPromise, detailPromise]);
 
   if (sets.length === 0) {
     return (
@@ -27,6 +37,7 @@ export async function CardBrowser({
 
   return (
     <CardBrowserClient
+      key={initialDetail?.ref ?? `set-${initialSetId}`}
       sets={sets}
       initialSetId={initialSetId}
       initialCards={initialCards}
@@ -40,6 +51,8 @@ export async function CardBrowser({
       selected={selected}
       onCardClick={onCardClick}
       cardCounts={cardCounts}
+      initialDetail={initialDetail}
+      syncDexUrl={syncDexUrl}
     />
   );
 }
