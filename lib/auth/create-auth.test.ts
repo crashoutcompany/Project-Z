@@ -79,7 +79,14 @@ describe("createAuth", () => {
         RESEND_API_KEY: "re_test",
         AUTH_EMAIL_FROM: "auth@example.com",
       }),
-    ).toEqual(expect.arrayContaining(["email-otp", "email-otp-allowlist"]));
+    ).toEqual(
+      expect.arrayContaining([
+        "email-otp",
+        "email-otp-allowlist",
+        "email-otp-existing-account-guard",
+      ]),
+    );
     expect(build({})).not.toContain("email-otp");
+    expect(build({})).not.toContain("email-otp-existing-account-guard");
   });
 });

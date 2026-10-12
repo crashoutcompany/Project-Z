@@ -110,6 +110,17 @@ async function sendCodeAndSignIn(auth: TestAuth) {
   return post(auth, "/sign-in/email-otp", { email: EMAIL, otp });
 }
 
+/**
+ * Issues a valid sign-in code without sending it, for tests that need the
+ * sign-in guard to see a correct code. Blocked accounts get no emailed code.
+ */
+async function signInWithIssuedCode(auth: TestAuth) {
+  const otp = await auth.api.createVerificationOTP({
+    body: { email: EMAIL, type: "sign-in" },
+  });
+  return post(auth, "/sign-in/email-otp", { email: EMAIL, otp });
+}
+
 afterEach(() => {
   sendEmail.mockClear();
   vi.restoreAllMocks();
@@ -171,13 +182,72 @@ describe("otpExistingAccountGuardPlugin", () => {
     expect(db.session).toHaveLength(1);
   });
 
+  it("keeps a code-created user code-only across repeat sign-ins", async () => {
+    const db = buildDb();
+    const auth = buildAuth(db);
+
+    const first = await sendCodeAndSignIn(auth);
+    expect(first.status).toBe(200);
+    const userId = db.user[0]?.id;
+
+    const second = await sendCodeAndSignIn(auth);
+    expect(second.status).toBe(200);
+    expect(db.session).toHaveLength(2);
+    expect(db.user).toHaveLength(1);
+    expect(db.account.filter((row) => row.userId === userId)).toHaveLength(0);
+  });
+
+  it("sends no email to a blocked account but answers exactly like an unlisted one", async () => {
+    const blockedDb = buildDb({
+      user: [userRow("oauth-user")],
+      account: [accountRow("oauth-user", "github")],
+    });
+    const blocked = await post(buildAuth(blockedDb), "/email-otp/send-verification-otp", {
+      email: EMAIL,
+      type: "sign-in",
+    });
+    expect(sendEmail).not.toHaveBeenCalled();
+
+    const unlisted = await post(buildAuth(buildDb()), "/email-otp/send-verification-otp", {
+      email: "stranger@example.com",
+      type: "sign-in",
+    });
+    expect(sendEmail).not.toHaveBeenCalled();
+
+    expect(blocked.status).toBe(unlisted.status);
+    expect(await blocked.json()).toEqual(await unlisted.json());
+  });
+
+  it("sends no email to an admin account", async () => {
+    const db = buildDb({ user: [userRow("admin-user", { role: "admin" })] });
+    const response = await post(buildAuth(db), "/email-otp/send-verification-otp", {
+      email: EMAIL,
+      type: "sign-in",
+    });
+
+    expect(response.status).toBe(200);
+    expect(sendEmail).not.toHaveBeenCalled();
+    expect(db.verification).toHaveLength(0);
+  });
+
+  it("still emails a code-only account", async () => {
+    const db = buildDb({ user: [userRow("otp-user")] });
+    const response = await post(buildAuth(db), "/email-otp/send-verification-otp", {
+      email: EMAIL,
+      type: "sign-in",
+    });
+
+    expect(response.status).toBe(200);
+    expect(sendEmail).toHaveBeenCalledTimes(1);
+  });
+
   it("refuses email-code sign-in into an existing OAuth account", async () => {
     const db = buildDb({
       user: [userRow("oauth-user")],
       account: [accountRow("oauth-user", "github")],
     });
 
-    const response = await sendCodeAndSignIn(buildAuth(db));
+    const response = await signInWithIssuedCode(buildAuth(db));
 
     expect(response.status).toBe(400);
     expect(await response.json()).toMatchObject({ code: "INVALID_OTP" });
@@ -190,7 +260,7 @@ describe("otpExistingAccountGuardPlugin", () => {
       user: [userRow("admin-user", { role: "admin" })],
     });
 
-    const response = await sendCodeAndSignIn(buildAuth(db));
+    const response = await signInWithIssuedCode(buildAuth(db));
 
     expect(response.status).toBe(400);
     expect(await response.json()).toMatchObject({ code: "INVALID_OTP" });
@@ -202,7 +272,7 @@ describe("otpExistingAccountGuardPlugin", () => {
       user: [userRow("oauth-user")],
       account: [accountRow("oauth-user", "google")],
     });
-    const blocked = await sendCodeAndSignIn(buildAuth(guarded));
+    const blocked = await signInWithIssuedCode(buildAuth(guarded));
     const wrongCode = await post(buildAuth(buildDb()), "/sign-in/email-otp", {
       email: EMAIL,
       otp: "000000",

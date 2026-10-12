@@ -1,5 +1,13 @@
 import type { BetterAuthPlugin } from "better-auth";
-import { APIError, createAuthMiddleware } from "better-auth/api";
+import {
+  APIError,
+  createAuthMiddleware,
+  formCsrfMiddleware,
+} from "better-auth/api";
+
+type BeforeHook = NonNullable<
+  NonNullable<BetterAuthPlugin["hooks"]>["before"]
+>[number];
 
 /** Roles that must never be reachable through an email code. */
 const ELEVATED_ROLES = new Set(["admin", "owner"]);
@@ -26,6 +34,30 @@ export function isOtpSignInBlocked({
 }
 
 /**
+ * Blocked accounts can never use a code, so no code is stored or emailed for
+ * them. The send endpoint has no hook that can skip the email, so this hook
+ * returns the endpoint's own success body early. The CSRF check the endpoint
+ * would run first is kept, so a rejected request is rejected the same way.
+ * Only sign-in codes are checked. Other types do not email blocked accounts.
+ */
+const otpSendBlockedAccountHook = {
+  matcher: (ctx) => ctx.path === "/email-otp/send-verification-otp",
+  handler: createAuthMiddleware(async (ctx) => {
+    const body = ctx.body as { email?: unknown; type?: unknown } | undefined;
+    if (body?.type !== "sign-in" || typeof body.email !== "string") return;
+    // No trim here: an address with stray spaces must fail the endpoint's own
+    // validation exactly as it does for an unlisted address.
+    const found = await ctx.context.internalAdapter.findUserByEmail(
+      body.email.toLowerCase(),
+      { includeAccounts: true },
+    );
+    if (!found || !isOtpSignInBlocked(found)) return;
+    await formCsrfMiddleware(ctx);
+    return ctx.json({ success: true });
+  }),
+} satisfies BeforeHook;
+
+/**
  * Refuses email-code sign-in into an existing account that is not an
  * email-code account. Blocked attempts get the same INVALID_OTP error as a
  * wrong code, so the response does not reveal that the account exists. The
@@ -36,6 +68,7 @@ export const otpExistingAccountGuardPlugin = {
   id: "email-otp-existing-account-guard",
   hooks: {
     before: [
+      otpSendBlockedAccountHook,
       {
         matcher: (ctx) => ctx.path === "/sign-in/email-otp",
         handler: createAuthMiddleware(async (ctx) => {
