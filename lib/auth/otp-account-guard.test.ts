@@ -13,7 +13,10 @@ vi.mock("resend", () => ({
 }));
 
 import { createEmailOtpPlugins, type EmailOtpConfig } from "./email-otp";
-import { isOtpSignInBlocked, otpExistingAccountGuardPlugin } from "./otp-account-guard";
+import {
+  isOtpSignInBlocked,
+  otpExistingAccountGuardPlugin,
+} from "./otp-account-guard";
 
 const ORIGIN = "http://localhost:3000";
 const SECRET = "test-better-auth-secret-at-least-32-characters";
@@ -67,19 +70,31 @@ function buildDb(seed: Partial<Db> = {}): Db {
   };
 }
 
-function buildAuth(db: Db) {
+/**
+ * Builds auth on the in-memory adapter. The first `failingAccountReads` calls
+ * to read the account table throw, to exercise the guard's lookup retry.
+ */
+function buildAuth(db: Db, failingAccountReads = 0) {
+  let remainingFailures = failingAccountReads;
   return betterAuth({
     appName: "App",
     baseURL: ORIGIN,
     secret: SECRET,
     trustedOrigins: [ORIGIN],
-    database: memoryAdapter(db),
-    rateLimit: { enabled: false },
-    user: {
-      additionalFields: {
-        role: { type: "string", required: false, input: false },
-      },
+    database: (options) => {
+      const base = memoryAdapter(db)(options);
+      return {
+        ...base,
+        findMany: async (args: Parameters<typeof base.findMany>[0]) => {
+          if (args.model === "account" && remainingFailures > 0) {
+            remainingFailures -= 1;
+            throw new Error("account table unavailable");
+          }
+          return base.findMany(args);
+        },
+      };
     },
+    rateLimit: { enabled: false },
     plugins: [
       ...createEmailOtpPlugins(CONFIG, "App"),
       otpExistingAccountGuardPlugin,
@@ -99,11 +114,15 @@ function post(auth: TestAuth, path: string, body: Record<string, unknown>) {
   );
 }
 
-async function sendCodeAndSignIn(auth: TestAuth) {
-  await post(auth, "/email-otp/send-verification-otp", {
-    email: EMAIL,
+function sendCode(auth: TestAuth, email: string) {
+  return post(auth, "/email-otp/send-verification-otp", {
+    email,
     type: "sign-in",
   });
+}
+
+async function sendCodeAndSignIn(auth: TestAuth) {
+  await sendCode(auth, EMAIL);
   const otp = (sendEmail.mock.lastCall?.[0].text as string).match(
     /\b(\d{6})\b/,
   )?.[1];
@@ -127,40 +146,13 @@ afterEach(() => {
 });
 
 describe("isOtpSignInBlocked", () => {
-  it("allows a user with no linked accounts and no elevated role", () => {
-    expect(isOtpSignInBlocked({ user: { id: "u1" }, accounts: [] })).toBe(
-      false,
-    );
+  it("allows an account list that is empty", () => {
+    expect(isOtpSignInBlocked([])).toBe(false);
   });
 
   it("blocks a user with any linked OAuth or password account", () => {
-    expect(
-      isOtpSignInBlocked({
-        user: { id: "u1" },
-        accounts: [accountRow("u1", "github")],
-      }),
-    ).toBe(true);
-    expect(
-      isOtpSignInBlocked({
-        user: { id: "u1" },
-        accounts: [accountRow("u1", "credential")],
-      }),
-    ).toBe(true);
-  });
-
-  it("blocks admin and owner roles even without linked accounts", () => {
-    expect(
-      isOtpSignInBlocked({ user: { id: "u1", role: "admin" }, accounts: [] }),
-    ).toBe(true);
-    expect(
-      isOtpSignInBlocked({ user: { id: "u1", role: "owner" }, accounts: [] }),
-    ).toBe(true);
-  });
-
-  it("does not block an ordinary role", () => {
-    expect(
-      isOtpSignInBlocked({ user: { id: "u1", role: "member" }, accounts: [] }),
-    ).toBe(false);
+    expect(isOtpSignInBlocked([accountRow("u1", "github")])).toBe(true);
+    expect(isOtpSignInBlocked([accountRow("u1", "credential")])).toBe(true);
   });
 });
 
@@ -197,48 +189,31 @@ describe("otpExistingAccountGuardPlugin", () => {
     expect(db.account.filter((row) => row.userId === userId)).toHaveLength(0);
   });
 
-  it("sends no email to a blocked account but answers exactly like an unlisted one", async () => {
+  it("sends no email and stores no code for a blocked account, and answers like an unlisted one", async () => {
     const blockedDb = buildDb({
       user: [userRow("oauth-user")],
       account: [accountRow("oauth-user", "github")],
     });
-    const blocked = await post(buildAuth(blockedDb), "/email-otp/send-verification-otp", {
-      email: EMAIL,
-      type: "sign-in",
-    });
+    const blocked = await sendCode(buildAuth(blockedDb), EMAIL);
     expect(sendEmail).not.toHaveBeenCalled();
+    expect(blockedDb.verification).toHaveLength(0);
 
-    const unlisted = await post(buildAuth(buildDb()), "/email-otp/send-verification-otp", {
-      email: "stranger@example.com",
-      type: "sign-in",
-    });
+    const unlistedDb = buildDb();
+    const unlisted = await sendCode(buildAuth(unlistedDb), "stranger@example.com");
     expect(sendEmail).not.toHaveBeenCalled();
+    expect(unlistedDb.verification).toHaveLength(0);
 
     expect(blocked.status).toBe(unlisted.status);
     expect(await blocked.json()).toEqual(await unlisted.json());
   });
 
-  it("sends no email to an admin account", async () => {
-    const db = buildDb({ user: [userRow("admin-user", { role: "admin" })] });
-    const response = await post(buildAuth(db), "/email-otp/send-verification-otp", {
-      email: EMAIL,
-      type: "sign-in",
-    });
-
-    expect(response.status).toBe(200);
-    expect(sendEmail).not.toHaveBeenCalled();
-    expect(db.verification).toHaveLength(0);
-  });
-
   it("still emails a code-only account", async () => {
     const db = buildDb({ user: [userRow("otp-user")] });
-    const response = await post(buildAuth(db), "/email-otp/send-verification-otp", {
-      email: EMAIL,
-      type: "sign-in",
-    });
+    const response = await sendCode(buildAuth(db), EMAIL);
 
     expect(response.status).toBe(200);
     expect(sendEmail).toHaveBeenCalledTimes(1);
+    expect(db.verification).toHaveLength(1);
   });
 
   it("refuses email-code sign-in into an existing OAuth account", async () => {
@@ -255,18 +230,6 @@ describe("otpExistingAccountGuardPlugin", () => {
     expect(db.session).toHaveLength(0);
   });
 
-  it("refuses email-code sign-in into an existing admin account", async () => {
-    const db = buildDb({
-      user: [userRow("admin-user", { role: "admin" })],
-    });
-
-    const response = await signInWithIssuedCode(buildAuth(db));
-
-    expect(response.status).toBe(400);
-    expect(await response.json()).toMatchObject({ code: "INVALID_OTP" });
-    expect(db.session).toHaveLength(0);
-  });
-
   it("returns the same INVALID_OTP body as a wrong code, not a distinct error", async () => {
     const guarded = buildDb({
       user: [userRow("oauth-user")],
@@ -280,5 +243,43 @@ describe("otpExistingAccountGuardPlugin", () => {
 
     expect(blocked.status).toBe(wrongCode.status);
     expect(await blocked.json()).toEqual(await wrongCode.json());
+  });
+
+  it("lets a code-only user sign in when the account lookup fails once", async () => {
+    const db = buildDb({ user: [userRow("otp-user")] });
+    const response = await signInWithIssuedCode(buildAuth(db, 1));
+
+    expect(response.status).toBe(200);
+    expect(db.session).toHaveLength(1);
+  });
+
+  it("denies sign-in and logs when the account lookup fails twice", async () => {
+    const error = vi.spyOn(console, "error").mockImplementation(() => undefined);
+    const db = buildDb({ user: [userRow("otp-user")] });
+
+    const response = await signInWithIssuedCode(buildAuth(db, 2));
+
+    expect(response.status).toBeGreaterThanOrEqual(500);
+    expect(response.headers.get("set-cookie")).toBeNull();
+    expect(db.session).toHaveLength(0);
+    expect(error).toHaveBeenCalledWith(
+      "otp_guard_lookup_failed",
+      expect.objectContaining({ attempts: 2 }),
+    );
+  });
+
+  it("denies a send and stores no code when the account lookup fails twice", async () => {
+    const error = vi.spyOn(console, "error").mockImplementation(() => undefined);
+    const db = buildDb({ user: [userRow("otp-user")] });
+
+    const response = await sendCode(buildAuth(db, 2), EMAIL);
+
+    expect(response.status).toBeGreaterThanOrEqual(500);
+    expect(sendEmail).not.toHaveBeenCalled();
+    expect(db.verification).toHaveLength(0);
+    expect(error).toHaveBeenCalledWith(
+      "otp_guard_lookup_failed",
+      expect.any(Object),
+    );
   });
 });

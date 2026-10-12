@@ -5,32 +5,68 @@ import {
   formCsrfMiddleware,
 } from "better-auth/api";
 
+import { normalizeOtpEmail } from "./email-otp";
+
 type BeforeHook = NonNullable<
   NonNullable<BetterAuthPlugin["hooks"]>["before"]
 >[number];
 
-/** Roles that must never be reachable through an email code. */
-const ELEVATED_ROLES = new Set(["admin", "owner"]);
+/** Lookups run this many times in total before the guard fails closed. */
+const LOOKUP_ATTEMPTS = 2;
 
-export type OtpSignInCandidate = {
-  user: object;
+type OtpCandidate = {
+  userId: string;
   accounts: readonly unknown[];
 };
 
 /**
  * Email-code sign-in is for allowlisted bot accounts. It must not open an
- * account a person already uses another way (OAuth or password), nor an
- * elevated account. A user created by email-code sign-in has no linked
- * accounts, so it keeps signing in with codes.
+ * account a person already uses another way (OAuth or password). A user
+ * created by email-code sign-in has no linked accounts, so it keeps signing in
+ * with codes.
  */
-export function isOtpSignInBlocked({
-  user,
-  accounts,
-}: OtpSignInCandidate): boolean {
-  if (accounts.length > 0) return true;
-  return "role" in user && typeof user.role === "string"
-    ? ELEVATED_ROLES.has(user.role)
-    : false;
+export function isOtpSignInBlocked(accounts: readonly unknown[]): boolean {
+  return accounts.length > 0;
+}
+
+/**
+ * Loads the user for an email and that user's accounts by `userId`. Returns
+ * null when no user has the email.
+ */
+async function findOtpCandidate(
+  ctx: Parameters<Parameters<typeof createAuthMiddleware>[0]>[0],
+  email: string,
+): Promise<OtpCandidate | null> {
+  const internal = ctx.context.internalAdapter;
+  const found = await internal.findUserByEmail(email);
+  if (!found) return null;
+  const userId = found.user.id;
+  const accounts = await internal.findAccounts(userId);
+  return { userId, accounts };
+}
+
+/**
+ * Retries the user and account lookup once. If every attempt fails, the error
+ * is logged and rethrown, so the request fails and the sign-in or send is
+ * denied. The email is not logged.
+ */
+async function lookupOtpCandidate(
+  ctx: Parameters<Parameters<typeof createAuthMiddleware>[0]>[0],
+  email: string,
+): Promise<OtpCandidate | null> {
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= LOOKUP_ATTEMPTS; attempt += 1) {
+    try {
+      return await findOtpCandidate(ctx, email);
+    } catch (error) {
+      lastError = error;
+    }
+  }
+  console.error("otp_guard_lookup_failed", {
+    attempts: LOOKUP_ATTEMPTS,
+    error: lastError,
+  });
+  throw lastError;
 }
 
 /**
@@ -45,13 +81,11 @@ const otpSendBlockedAccountHook = {
   handler: createAuthMiddleware(async (ctx) => {
     const body = ctx.body as { email?: unknown; type?: unknown } | undefined;
     if (body?.type !== "sign-in" || typeof body.email !== "string") return;
-    // No trim here: an address with stray spaces must fail the endpoint's own
-    // validation exactly as it does for an unlisted address.
-    const found = await ctx.context.internalAdapter.findUserByEmail(
-      body.email.toLowerCase(),
-      { includeAccounts: true },
+    const candidate = await lookupOtpCandidate(
+      ctx,
+      normalizeOtpEmail(body.email),
     );
-    if (!found || !isOtpSignInBlocked(found)) return;
+    if (!candidate || !isOtpSignInBlocked(candidate.accounts)) return;
     await formCsrfMiddleware(ctx);
     return ctx.json({ success: true });
   }),
@@ -74,11 +108,11 @@ export const otpExistingAccountGuardPlugin = {
         handler: createAuthMiddleware(async (ctx) => {
           const email = (ctx.body as { email?: unknown } | undefined)?.email;
           if (typeof email !== "string") return;
-          const found = await ctx.context.internalAdapter.findUserByEmail(
-            email.trim().toLowerCase(),
-            { includeAccounts: true },
+          const candidate = await lookupOtpCandidate(
+            ctx,
+            normalizeOtpEmail(email),
           );
-          if (found && isOtpSignInBlocked(found)) {
+          if (candidate && isOtpSignInBlocked(candidate.accounts)) {
             throw APIError.from("BAD_REQUEST", {
               code: "INVALID_OTP",
               message: "Invalid OTP",

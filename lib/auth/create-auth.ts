@@ -4,6 +4,7 @@ import { nextCookies } from "better-auth/next-js";
 import { resolveAuthBaseUrl, type AuthBaseUrlEnv } from "./base-url";
 import {
   createEmailOtpPlugins,
+  EMAIL_OTP_DISABLED_PATHS,
   resolveEmailOtpConfig,
   type EmailOtpEnv,
 } from "./email-otp";
@@ -151,6 +152,7 @@ export function createAuth({
       ? { user: { additionalFields: userAdditionalFields } }
       : {}),
     ...(onError ? { onAPIError: { onError } } : {}),
+    ...(emailOtp ? { disabledPaths: [...EMAIL_OTP_DISABLED_PATHS] } : {}),
     plugins: [
       ...(emailOtp
         ? [
