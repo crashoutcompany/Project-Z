@@ -7,6 +7,7 @@ import {
   resolveEmailOtpConfig,
   type EmailOtpEnv,
 } from "./email-otp";
+import { otpExistingAccountGuardPlugin } from "./otp-account-guard";
 
 export type SocialProviderId = "github" | "google";
 
@@ -151,7 +152,12 @@ export function createAuth({
       : {}),
     ...(onError ? { onAPIError: { onError } } : {}),
     plugins: [
-      ...(emailOtp ? createEmailOtpPlugins(emailOtp, appName) : []),
+      ...(emailOtp
+        ? [
+            ...createEmailOtpPlugins(emailOtp, appName),
+            otpExistingAccountGuardPlugin,
+          ]
+        : []),
       nextCookies(),
     ],
   });
