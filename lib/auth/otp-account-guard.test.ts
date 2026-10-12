@@ -12,7 +12,11 @@ vi.mock("resend", () => ({
   },
 }));
 
-import { createEmailOtpPlugins, type EmailOtpConfig } from "./email-otp";
+import {
+  createEmailOtpPlugins,
+  otpEmailLogHash,
+  type EmailOtpConfig,
+} from "./email-otp";
 import {
   isOtpSignInBlocked,
   otpExistingAccountGuardPlugin,
@@ -253,33 +257,87 @@ describe("otpExistingAccountGuardPlugin", () => {
     expect(db.session).toHaveLength(1);
   });
 
-  it("denies sign-in and logs when the account lookup fails twice", async () => {
+  it("denies sign-in with the wrong-code response when the account lookup fails twice", async () => {
     const error = vi.spyOn(console, "error").mockImplementation(() => undefined);
     const db = buildDb({ user: [userRow("otp-user")] });
 
     const response = await signInWithIssuedCode(buildAuth(db, 2));
+    const wrongCode = await post(buildAuth(buildDb()), "/sign-in/email-otp", {
+      email: EMAIL,
+      otp: "000000",
+    });
 
-    expect(response.status).toBeGreaterThanOrEqual(500);
+    expect(response.status).toBe(wrongCode.status);
+    expect(await response.json()).toEqual(await wrongCode.json());
     expect(response.headers.get("set-cookie")).toBeNull();
     expect(db.session).toHaveLength(0);
     expect(error).toHaveBeenCalledWith(
       "otp_guard_lookup_failed",
-      expect.objectContaining({ attempts: 2 }),
+      expect.objectContaining({ attempts: 2, emailHash: hashOf(EMAIL) }),
     );
   });
 
-  it("denies a send and stores no code when the account lookup fails twice", async () => {
+  it("answers a send like an unlisted email and stores no code when the account lookup fails twice", async () => {
     const error = vi.spyOn(console, "error").mockImplementation(() => undefined);
     const db = buildDb({ user: [userRow("otp-user")] });
 
-    const response = await sendCode(buildAuth(db, 2), EMAIL);
+    const failed = await sendCode(buildAuth(db, 2), EMAIL);
+    const unlistedDb = buildDb();
+    const unlisted = await sendCode(buildAuth(unlistedDb), "stranger@example.com");
 
-    expect(response.status).toBeGreaterThanOrEqual(500);
+    const failedBody = await failed.json();
+    expect(failed.status).toBe(200);
+    expect(failedBody).toEqual({ success: true });
+    expect(failedBody).toEqual(await unlisted.json());
     expect(sendEmail).not.toHaveBeenCalled();
     expect(db.verification).toHaveLength(0);
     expect(error).toHaveBeenCalledWith(
       "otp_guard_lookup_failed",
-      expect.any(Object),
+      expect.objectContaining({ emailHash: hashOf(EMAIL) }),
     );
   });
+
+  it("logs a blocked account by hash, not by address", async () => {
+    const warn = vi.spyOn(console, "warn").mockImplementation(() => undefined);
+    const db = buildDb({
+      user: [userRow("oauth-user")],
+      account: [accountRow("oauth-user", "github")],
+    });
+
+    await signInWithIssuedCode(buildAuth(db));
+
+    expect(warn).toHaveBeenCalledWith("otp_sign_in_failed", {
+      reason: "otp_account_blocked",
+      emailHash: hashOf(EMAIL),
+      userId: "oauth-user",
+    });
+  });
+
+  it("never writes the raw email to the console on any guard path", async () => {
+    const spies = (["log", "info", "warn", "error", "debug"] as const).map(
+      (method) => vi.spyOn(console, method).mockImplementation(() => undefined),
+    );
+    const blockedDb = buildDb({
+      user: [userRow("oauth-user")],
+      account: [accountRow("oauth-user", "github")],
+    });
+    const failingDb = buildDb({ user: [userRow("otp-user")] });
+    const blockedAuth = buildAuth(blockedDb);
+    const failingAuth = buildAuth(failingDb, 4);
+
+    await sendCode(blockedAuth, EMAIL);
+    await signInWithIssuedCode(blockedAuth);
+    await sendCode(failingAuth, EMAIL);
+    await signInWithIssuedCode(failingAuth);
+
+    const logged = JSON.stringify(spies.flatMap((spy) => spy.mock.calls));
+    expect(logged).toContain("otp_guard_lookup_failed");
+    expect(logged).toContain("otp_account_blocked");
+    expect(logged).not.toContain(EMAIL);
+  });
 });
+
+/** The hash the guard logs for an address, with the default plain-SHA-256 mode. */
+function hashOf(email: string): string {
+  return otpEmailLogHash(email);
+}
