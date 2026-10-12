@@ -142,7 +142,8 @@ export function createAuth({
   // both use Redis when it is configured and fall back to memory otherwise.
   const rateLimitStore = createAuthRateLimitStore({
     env,
-    defaultPrefix: rateLimitPrefixFromAppName(appName),
+    appSlug: rateLimitPrefixFromAppName(appName),
+    secret,
   });
 
   return betterAuth({

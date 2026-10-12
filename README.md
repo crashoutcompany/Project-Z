@@ -57,15 +57,24 @@ Authentication is self-hosted with Better Auth. Sign-in lives at `/signin`.
   the user still sees "code sent". Rate limiting has two layers, in
   `lib/auth/rate-limit.ts` (shared, copied between apps) and wired in
   `lib/auth/create-auth.ts`. Per-IP limits are Better Auth's defaults for the
-  OTP routes. Per-email lockout counts every address, listed or not: 5 sends
-  per 15 minutes (over the limit, the route returns the same "code sent"
-  response and sends nothing) and 10 sign-in attempts per 15 minutes (429).
-  Counters are in Upstash Redis when `UPSTASH_REDIS_REST_URL` and
-  `UPSTASH_REDIS_REST_TOKEN` are both set, and in memory per server instance
-  otherwise. If Redis errors or takes over 1 second, that request falls back
-  to memory and `auth_rate_limit_redis_unavailable` is logged (at most once a
-  minute). `AUTH_RATE_LIMIT_PREFIX` namespaces the keys (default: the app name
-  slug, here `pocket-trading`), so apps can share one Redis database.
+  OTP routes. Per-email lockout counts every address, listed or not, in two
+  counters per 15 minutes: per email and client IP (5 sends, 10 sign-in
+  attempts) and per email alone from any IP (20 sends, 30 sign-in attempts).
+  Both counters run for every request. Over the send limit, the route returns
+  the same "code sent" response and sends nothing. Over the sign-in limit, it
+  returns 429 with a `Retry-After` header (seconds). Storage keys are HMAC-SHA256
+  digests keyed by `BETTER_AUTH_SECRET`, so Redis holds no raw email or IP.
+  Counters are in Upstash Redis when a complete URL and token pair is set:
+  `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`, or the Vercel
+  Upstash integration names `KV_REST_API_URL` and `KV_REST_API_TOKEN`. Otherwise
+  they are in memory per server instance. If Redis errors or takes over 1 second,
+  that request falls back to memory and `auth_rate_limit_redis_unavailable` is
+  logged (at most once a minute). Redis calls are not retried.
+  Keys are prefixed with `AUTH_RATE_LIMIT_PREFIX`. When unset, the prefix is
+  `<app slug>:<VERCEL_ENV or NODE_ENV>`, here `pocket-trading:production` or
+  `pocket-trading:preview`. If one Redis database is shared by several
+  environments, set `AUTH_RATE_LIMIT_PREFIX` to a value that differs per
+  environment, so a preview or local run cannot lock out production.
 - Prisma uses `DATABASE_URL` and `DIRECT_URL`.
 
 Local browser automation can mint a real Better Auth session for the tester
