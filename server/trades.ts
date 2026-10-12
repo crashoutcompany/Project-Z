@@ -151,20 +151,10 @@ export async function cancelTrade(
     return { error: "Missing listing." };
   }
 
-  let identity: { identifier: string };
-  try {
-    identity = await sessionTradeIdentity(session.user.id, session.user.email);
-  } catch (err) {
-    return {
-      error:
-        err instanceof Error ? err.message : "Could not resolve your account.",
-    };
-  }
-
   const result = await prisma.trade.updateMany({
     where: {
       listingId: parsed.data.listingId,
-      identifier: identity.identifier,
+      playerId: session.user.id,
       status: TradeStatus.ACTIVE,
     },
     data: { status: TradeStatus.CANCELLED },

@@ -28,6 +28,9 @@ export type TradeWithCards = Prisma.TradeGetPayload<{
   include: typeof tradeInclude;
 }>;
 
+/** Max public listings returned on the trading board. */
+export const PUBLIC_LISTINGS_LIMIT = 50;
+
 export type TradeListingView = {
   listingId: string;
   wantCards: TradeCardArt[];
@@ -35,7 +38,7 @@ export type TradeListingView = {
   expiresAt: Date;
   createdAt: Date;
   status: TradeStatus;
-  identifier: string;
+  playerId: string;
   isPrivate: boolean;
   validity: ReturnType<typeof listingValidity>;
 };
@@ -57,7 +60,7 @@ function toListingView(
     expiresAt,
     createdAt: listingCreatedAt(group),
     status,
-    identifier: sample?.identifier ?? "",
+    playerId: sample?.playerId ?? "",
     isPrivate: sample?.isPrivate ?? false,
     validity: listingValidity({
       found: Boolean(group.want || group.give),
@@ -76,11 +79,11 @@ function sortNewest(listings: TradeListingView[]): TradeListingView[] {
   );
 }
 
-export async function loadListingsForIdentifier(identifier: string) {
+export async function loadListingsForPlayer(playerId: string) {
   const trades = await prisma.trade.findMany({
-    where: { identifier },
+    where: { playerId },
     include: tradeInclude,
-    orderBy: { createdAt: "desc" },
+    orderBy: [{ createdAt: "desc" }, { id: "desc" }],
   });
   const now = new Date();
   return sortNewest(
@@ -88,23 +91,28 @@ export async function loadListingsForIdentifier(identifier: string) {
   );
 }
 
-export async function loadPublicListings(excludeIdentifier: string) {
+/**
+ * Public board: other players' active listings. `take` caps trade rows; each
+ * listing is two rows (want + give), so fetch 2x and slice the grouped result.
+ */
+export async function loadPublicListings(excludePlayerId: string) {
   const now = new Date();
   const trades = await prisma.trade.findMany({
     where: {
-      identifier: { not: excludeIdentifier },
+      playerId: { not: excludePlayerId },
       isPrivate: false,
       status: TradeStatus.ACTIVE,
       expiresAt: { gt: now },
     },
     include: tradeInclude,
-    orderBy: { createdAt: "desc" },
+    orderBy: [{ createdAt: "desc" }, { id: "desc" }],
+    take: PUBLIC_LISTINGS_LIMIT * 2,
   });
   return sortNewest(
     groupTradesByListing(trades)
       .map((group) => toListingView(group, now))
       .filter((listing) => listing.validity.valid),
-  );
+  ).slice(0, PUBLIC_LISTINGS_LIMIT);
 }
 
 export async function loadListingById(listingId: string) {

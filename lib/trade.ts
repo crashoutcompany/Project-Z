@@ -77,6 +77,18 @@ export function tradeIdentifier(
   return `${email}.${(providerId ?? "UNKNOWN").toUpperCase()}`;
 }
 
+/**
+ * Ownership is decided by the stored playerId (the Better Auth user id that
+ * published the listing), not by the email/provider identifier. A user can have
+ * several linked accounts, so the identifier is not stable per user.
+ */
+export function isListingOwner(
+  ownerPlayerId: string | undefined,
+  userId: string | null | undefined,
+): boolean {
+  return Boolean(ownerPlayerId && userId && ownerPlayerId === userId);
+}
+
 export function toProvider(providerId: string | undefined): TradeProvider {
   const upper = providerId?.toUpperCase();
   if (upper === "GOOGLE" || upper === "GITHUB") return upper;

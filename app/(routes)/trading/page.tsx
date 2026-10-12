@@ -1,18 +1,13 @@
 import { Suspense } from "react";
 import { getSession } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import prisma from "@/prisma/db";
 import { H2 } from "@/components/typography/headings";
 import { Button } from "@/components/ui/button";
 import { headers } from "next/headers";
 import { CatalogShell } from "@/components/catalog/CatalogShell";
 import { CatalogLoading } from "@/components/catalog/CatalogLoading";
 import { TradeListingCard } from "@/components/trading/TradeListingCard";
-import {
-  loadListingsForIdentifier,
-  loadPublicListings,
-} from "@/lib/trade-queries";
-import { tradeIdentifier } from "@/lib/trade";
+import { loadListingsForPlayer, loadPublicListings } from "@/lib/trade-queries";
 import type { TradeListingView } from "@/lib/trade-queries";
 
 export default function TradingPage() {
@@ -33,16 +28,9 @@ async function TradingPageContent() {
   const session = await getSession(await headers());
   if (!session) redirect("/signin");
 
-  const account = await prisma.account.findFirst({
-    where: { userId: session.user.id },
-    select: { providerId: true },
-  });
-
-  const identifier = tradeIdentifier(session.user.email, account?.providerId);
-
   const [userListings, publicListings] = await Promise.all([
-    loadListingsForIdentifier(identifier),
-    loadPublicListings(identifier),
+    loadListingsForPlayer(session.user.id),
+    loadPublicListings(session.user.id),
   ]);
 
   const now = new Date();

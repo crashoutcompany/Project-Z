@@ -10,9 +10,8 @@ import { Button } from "@/components/ui/button";
 import { CancelListingButton } from "@/components/trading/CancelListingButton";
 import { CopyTradeLink } from "@/components/trading/CopyTradeLink";
 import { TradeSideSection } from "@/components/trading/TradeCardArt";
-import { LISTING_INVALID_MESSAGE, tradeIdentifier } from "@/lib/trade";
+import { isListingOwner, LISTING_INVALID_MESSAGE } from "@/lib/trade";
 import { loadListingById } from "@/lib/trade-queries";
-import prisma from "@/prisma/db";
 
 export default function TradeListingPage({
   params,
@@ -60,16 +59,7 @@ async function TradeListingContent({
     );
   }
 
-  let isOwner = false;
-  if (session?.user?.email) {
-    const account = await prisma.account.findFirst({
-      where: { userId: session.user.id },
-      select: { providerId: true },
-    });
-    isOwner =
-      listing.identifier ===
-      tradeIdentifier(session.user.email, account?.providerId);
-  }
+  const isOwner = isListingOwner(listing.playerId, session?.user?.id);
 
   const expiresLabel = listing.expiresAt.toLocaleDateString(undefined, {
     month: "short",

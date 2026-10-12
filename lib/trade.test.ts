@@ -4,6 +4,7 @@ import {
   createListingId,
   encodeCardIdList,
   groupTradesByListing,
+  isListingOwner,
   LISTING_INVALID_MESSAGE,
   listingExpiresAt,
   listingValidity,
@@ -53,6 +54,14 @@ describe("trade URLs and identifiers", () => {
   it("builds the existing identifier format", () => {
     expect(tradeIdentifier("a@b.com", "google")).toBe("a@b.com.GOOGLE");
     expect(tradeIdentifier("a@b.com", undefined)).toBe("a@b.com.UNKNOWN");
+  });
+
+  it("decides ownership by playerId, not the email identifier", () => {
+    expect(isListingOwner("user_1", "user_1")).toBe(true);
+    expect(isListingOwner("user_1", "user_2")).toBe(false);
+    expect(isListingOwner("user_1", undefined)).toBe(false);
+    expect(isListingOwner("user_1", null)).toBe(false);
+    expect(isListingOwner("", "")).toBe(false);
   });
 
   it("maps OAuth providers", () => {
