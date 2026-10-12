@@ -49,6 +49,13 @@ Authentication is self-hosted with Better Auth. Sign-in lives at `/signin`.
   verified in Resend) are all set. Unlisted emails get the same "code sent"
   response but no email, and cannot sign in. Codes are 6 digits, expire after
   5 minutes and allow 3 attempts.
+  Email-code sign-in is refused for admins/owners and for any user who already
+  has a linked OAuth or password account (`lib/auth/otp-account-guard.ts`).
+  Those addresses get the same "code sent" response but no code, and a code
+  for them fails with the same `INVALID_OTP` error as a wrong code. If Resend
+  rejects a code email, it is logged as `[auth] sign-in code email failed` and
+  the user still sees "code sent". Rate limiting uses Better Auth's defaults,
+  which are in memory per server instance.
 - Prisma uses `DATABASE_URL` and `DIRECT_URL`.
 
 Local browser automation can mint a real Better Auth session for the tester
