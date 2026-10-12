@@ -43,6 +43,38 @@ Authentication is self-hosted with Better Auth. Sign-in lives at `/signin`.
 - GitHub uses `AUTH_GITHUB_ID` and `AUTH_GITHUB_SECRET`; Google uses
   `AUTH_GOOGLE_ID` and `AUTH_GOOGLE_SECRET`. A provider is enabled only when
   both values are set.
+- Email one-time-code sign-in is for allowlisted automation accounts only.
+  It is enabled only when `AUTH_OTP_ALLOWED_EMAILS` (comma-separated, case
+  insensitive), `RESEND_API_KEY` and `AUTH_EMAIL_FROM` (a sender on a domain
+  verified in Resend) are all set. Unlisted emails get the same "code sent"
+  response but no email, and cannot sign in. Codes are 6 digits, expire after
+  5 minutes and allow 3 attempts.
+  Email-code sign-in is refused for admins/owners and for any user who already
+  has a linked OAuth or password account (`lib/auth/otp-account-guard.ts`).
+  Those addresses get the same "code sent" response but no code, and a code
+  for them fails with the same `INVALID_OTP` error as a wrong code. If Resend
+  rejects a code email, it is logged as `[auth] sign-in code email failed` and
+  the user still sees "code sent". Rate limiting has two layers, in
+  `lib/auth/rate-limit.ts` (shared, copied between apps) and wired in
+  `lib/auth/create-auth.ts`. Per-IP limits are Better Auth's defaults for the
+  OTP routes. Per-email lockout counts every address, listed or not, in two
+  counters per 15 minutes: per email and client IP (5 sends, 10 sign-in
+  attempts) and per email alone from any IP (20 sends, 30 sign-in attempts).
+  Both counters run for every request. Over the send limit, the route returns
+  the same "code sent" response and sends nothing. Over the sign-in limit, it
+  returns 429 with a `Retry-After` header (seconds). Storage keys are HMAC-SHA256
+  digests keyed by `BETTER_AUTH_SECRET`, so Redis holds no raw email or IP.
+  Counters are in Upstash Redis when a complete URL and token pair is set:
+  `UPSTASH_REDIS_REST_URL` and `UPSTASH_REDIS_REST_TOKEN`, or the Vercel
+  Upstash integration names `KV_REST_API_URL` and `KV_REST_API_TOKEN`. Otherwise
+  they are in memory per server instance. If Redis errors or takes over 1 second,
+  that request falls back to memory and `auth_rate_limit_redis_unavailable` is
+  logged (at most once a minute). Redis calls are not retried.
+  Keys are prefixed with `AUTH_RATE_LIMIT_PREFIX`. When unset, the prefix is
+  `<app slug>:<VERCEL_ENV or NODE_ENV>`, here `pocket-trading:production` or
+  `pocket-trading:preview`. If one Redis database is shared by several
+  environments, set `AUTH_RATE_LIMIT_PREFIX` to a value that differs per
+  environment, so a preview or local run cannot lock out production.
 - Prisma uses `DATABASE_URL` and `DIRECT_URL`.
 
 Local browser automation can mint a real Better Auth session for the tester

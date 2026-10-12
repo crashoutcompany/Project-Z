@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 
 import { SignInButtons } from "@/components/auth/sign-in-buttons";
-import { enabledSocialProviders, getSession } from "@/lib/auth";
+import { emailOtpEnabled, enabledSocialProviders, getSession } from "@/lib/auth";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Link from "next/link";
@@ -141,7 +141,10 @@ function SignInView() {
 
             <div className="from-border via-border my-8 h-px bg-gradient-to-r to-transparent" />
 
-            <SignInButtons providers={enabledSocialProviders} />
+            <SignInButtons
+              providers={enabledSocialProviders}
+              emailOtpEnabled={emailOtpEnabled}
+            />
           </div>
 
           <p className="text-muted-foreground text-center text-xs leading-5 sm:text-left">
