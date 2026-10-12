@@ -15,7 +15,7 @@ import {
   rateLimitPrefixFromAppName,
   type RateLimitEnv,
 } from "./rate-limit";
-import { otpExistingAccountGuardPlugin } from "./otp-account-guard";
+import { createOtpExistingAccountGuardPlugin } from "./otp-account-guard";
 
 export type SocialProviderId = "github" | "google";
 
@@ -185,8 +185,9 @@ export function createAuth({
               store: rateLimitStore,
               normalizeEmail: normalizeOtpEmail,
             }),
-            ...createEmailOtpPlugins(emailOtp, appName),
-            otpExistingAccountGuardPlugin,
+            // The auth secret keys the email hash in OTP failure logs.
+            ...createEmailOtpPlugins(emailOtp, appName, { logSecret: secret }),
+            createOtpExistingAccountGuardPlugin({ logSecret: secret }),
           ]
         : []),
       nextCookies(),
