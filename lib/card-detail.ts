@@ -121,6 +121,16 @@ export async function getCardDetailById(
   return row ? mapCardRowToDetail(row) : null;
 }
 
+const CARD_REF_MAX_LENGTH = 16;
+// Same shape the importer accepts (scripts/lib/set-map.ts parseCardId):
+// set code, optional "-Letters" suffix (P-A), then 1-3 digit card number.
+const CARD_REF_RE = /^[A-Za-z0-9]+(?:-[A-Za-z]+)?-\d{1,3}$/;
+
+/** Cheap format gate for untrusted refs before they reach the database. */
+export function isValidCardDetailRef(ref: string): boolean {
+  return ref.length <= CARD_REF_MAX_LENGTH && CARD_REF_RE.test(ref);
+}
+
 export async function getCardDetailByRef(
   ref: string,
 ): Promise<CardDetail | null> {

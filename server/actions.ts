@@ -4,6 +4,7 @@ import { auth, getSession } from "@/lib/auth";
 import {
   getCardDetailById,
   getCardDetailByRef,
+  isValidCardDetailRef,
   type CardDetail,
 } from "@/lib/card-detail";
 import prisma from "@/prisma/db";
@@ -124,8 +125,11 @@ export const fetchCardDetail = async (
   if (typeof input.id === "number") {
     return getCardDetailById(input.id);
   }
-  if (typeof input.ref === "string" && input.ref.trim()) {
-    return getCardDetailByRef(input.ref.trim());
+  if (typeof input.ref === "string") {
+    const ref = input.ref.trim();
+    // Malformed refs get the same "not found" result as a missing card.
+    if (!isValidCardDetailRef(ref)) return null;
+    return getCardDetailByRef(ref);
   }
   return null;
 };

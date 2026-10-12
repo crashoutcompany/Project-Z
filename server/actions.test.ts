@@ -170,6 +170,14 @@ describe("fetchCardDetail", () => {
     expect(findFirst).toHaveBeenCalled();
   });
 
+  it("returns null without querying for malformed refs", async () => {
+    apiGetSession.mockResolvedValue({ user: { id: "u1" } });
+    await expect(fetchCardDetail({ ref: "A1-25'--" })).resolves.toBeNull();
+    await expect(fetchCardDetail({ ref: "x".repeat(5000) })).resolves.toBeNull();
+    await expect(fetchCardDetail({ ref: "   " })).resolves.toBeNull();
+    expect(findFirst).not.toHaveBeenCalled();
+  });
+
   it("returns null when neither id nor ref is provided", async () => {
     apiGetSession.mockResolvedValue({ user: { id: "u1" } });
     await expect(fetchCardDetail({})).resolves.toBeNull();

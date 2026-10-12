@@ -15,6 +15,7 @@ const {
   mapCardRowToDetail,
   getCardDetailById,
   getCardDetailByRef,
+  isValidCardDetailRef,
 } = await import("./card-detail");
 
 const row = {
@@ -94,6 +95,19 @@ describe("getCardDetailByRef", () => {
   it("returns null for malformed refs", async () => {
     await expect(getCardDetailByRef("nope")).resolves.toBeNull();
     expect(findFirst).not.toHaveBeenCalled();
+  });
+
+  it("accepts importer-shaped refs and rejects everything else", () => {
+    expect(isValidCardDetailRef("A1-25")).toBe(true);
+    expect(isValidCardDetailRef("A1a-151")).toBe(true);
+    expect(isValidCardDetailRef("P-A-12")).toBe(true);
+    expect(isValidCardDetailRef("")).toBe(false);
+    expect(isValidCardDetailRef("A1")).toBe(false);
+    expect(isValidCardDetailRef("A1-")).toBe(false);
+    expect(isValidCardDetailRef("A1-1234")).toBe(false);
+    expect(isValidCardDetailRef("A1-25'; DROP TABLE card;--")).toBe(false);
+    expect(isValidCardDetailRef("A1 -25")).toBe(false);
+    expect(isValidCardDetailRef(`${"A".repeat(20)}-1`)).toBe(false);
   });
 
   it("looks up by set code and number", async () => {
