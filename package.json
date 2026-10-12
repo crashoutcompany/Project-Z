@@ -36,7 +36,7 @@
     "@tailwindcss/postcss": "^4.3.3",
     "@upstash/redis": "^1.39.0",
     "@vercel/blob": "^2.8.0",
-    "ai": "^7.0.99",
+    "ai": "^7.0.136",
     "babel-plugin-react-compiler": "^1.0.0",
     "better-auth": "^1.7.7",
     "class-variance-authority": "^0.7.1",
