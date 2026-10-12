@@ -34,6 +34,7 @@
     "@prisma/adapter-neon": "7.10.0",
     "@prisma/client": "7.10.0",
     "@tailwindcss/postcss": "^4.3.3",
+    "@upstash/redis": "^1.39.0",
     "@vercel/blob": "^2.8.0",
     "ai": "^7.0.99",
     "babel-plugin-react-compiler": "^1.0.0",

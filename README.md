@@ -54,8 +54,18 @@ Authentication is self-hosted with Better Auth. Sign-in lives at `/signin`.
   Those addresses get the same "code sent" response but no code, and a code
   for them fails with the same `INVALID_OTP` error as a wrong code. If Resend
   rejects a code email, it is logged as `[auth] sign-in code email failed` and
-  the user still sees "code sent". Rate limiting uses Better Auth's defaults,
-  which are in memory per server instance.
+  the user still sees "code sent". Rate limiting has two layers, in
+  `lib/auth/rate-limit.ts` (shared, copied between apps) and wired in
+  `lib/auth/create-auth.ts`. Per-IP limits are Better Auth's defaults for the
+  OTP routes. Per-email lockout counts every address, listed or not: 5 sends
+  per 15 minutes (over the limit, the route returns the same "code sent"
+  response and sends nothing) and 10 sign-in attempts per 15 minutes (429).
+  Counters are in Upstash Redis when `UPSTASH_REDIS_REST_URL` and
+  `UPSTASH_REDIS_REST_TOKEN` are both set, and in memory per server instance
+  otherwise. If Redis errors or takes over 1 second, that request falls back
+  to memory and `auth_rate_limit_redis_unavailable` is logged (at most once a
+  minute). `AUTH_RATE_LIMIT_PREFIX` namespaces the keys (default: the app name
+  slug, here `pocket-trading`), so apps can share one Redis database.
 - Prisma uses `DATABASE_URL` and `DIRECT_URL`.
 
 Local browser automation can mint a real Better Auth session for the tester
