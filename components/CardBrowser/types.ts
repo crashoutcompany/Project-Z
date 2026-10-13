@@ -16,6 +16,8 @@ export type SelectedCards = {
 export type CardBrowserProps = {
   mode: CardBrowserMode;
   initialSetCode?: string;
+  /** `{setCode}-{number}` deep-link, e.g. `A1-94`. Opens the detail sheet. */
+  initialCardRef?: string;
   tradeableOnly?: boolean;
   defaultSearchMode?: SearchMode;
   showSearchModes?: boolean;
@@ -24,6 +26,8 @@ export type CardBrowserProps = {
   selected?: SelectedCards;
   onCardClick?: (card: CardWithSet) => void;
   cardCounts?: Record<number, number>;
+  /** When set (Dex), tapping a card writes `?set=&card=` for sharing. */
+  syncDexUrl?: boolean;
 };
 
 export type CardGridProps = {

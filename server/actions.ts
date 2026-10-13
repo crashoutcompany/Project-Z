@@ -1,11 +1,27 @@
 "use server";
 
 import { auth, getSession } from "@/lib/auth";
+import {
+  getCardDetailById,
+  getCardDetailByRef,
+  isValidCardDetailRef,
+  type CardDetail,
+} from "@/lib/card-detail";
 import prisma from "@/prisma/db";
 import { Card } from "@/prisma/generated/client/client";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { z } from "zod";
+
+async function requireSession() {
+  const session = await auth.api.getSession({
+    headers: await headers(),
+  });
+  if (!session) {
+    throw new Error("Unauthorized");
+  }
+  return session;
+}
 
 /**
  * Signs the current user out, or sends a guest to the sign-in page.
@@ -90,4 +106,30 @@ export const fetchCards = async (
   }
 
   return { cards, nextCursor };
+};
+
+export type FetchCardDetailInput = {
+  id?: number;
+  ref?: string;
+};
+
+/**
+ * Loads attack, ability, and trainer text for the card detail sheet.
+ * Catalog browsing stays on `fetchCards`; this is the on-demand inspect path.
+ */
+export const fetchCardDetail = async (
+  input: FetchCardDetailInput,
+): Promise<CardDetail | null> => {
+  await requireSession();
+
+  if (typeof input.id === "number") {
+    return getCardDetailById(input.id);
+  }
+  if (typeof input.ref === "string") {
+    const ref = input.ref.trim();
+    // Malformed refs get the same "not found" result as a missing card.
+    if (!isValidCardDetailRef(ref)) return null;
+    return getCardDetailByRef(ref);
+  }
+  return null;
 };

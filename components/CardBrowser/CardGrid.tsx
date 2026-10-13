@@ -103,7 +103,7 @@ export function CardGrid({
             selectionState={getSelectionState(card)}
             count={cardCounts?.[card.id]}
             priority={index < ABOVE_FOLD_PRIORITY_COUNT}
-            onClick={() => onCardClick?.(card)}
+            onClick={onCardClick ? () => onCardClick(card) : undefined}
           />
         ))}
       </div>
