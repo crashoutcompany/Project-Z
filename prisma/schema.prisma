@@ -90,35 +90,35 @@ enum EffectKind {
 }
 
 model Card {
-  id          Int          @id @default(autoincrement()) @map("card_id")
-  setId       Int          @map("set_id")
-  set         Set          @relation(fields: [setId], references: [id])
+  id          Int      @id @default(autoincrement()) @map("card_id")
+  setId       Int      @map("set_id")
+  set         Set      @relation(fields: [setId], references: [id])
   number      Int
   name        String
   cardType    CardType
   imageUrl    String
   rarity      String
-  isTradeable Boolean      @default(false) @map("is_tradeable")
+  isTradeable Boolean  @default(false) @map("is_tradeable")
   pack        String?
 
   // Pokémon-only (null for trainers)
   energyType  String?
   hp          Int?
   stage       Stage?
-  isEx        Boolean      @default(false)
-  isBaby      Boolean      @default(false)
+  isEx        Boolean @default(false)
+  isBaby      Boolean @default(false)
   weakness    String?
   retreatCost Int?
 
   // Trainer-only
   trainerType TrainerType?
 
-  attacks     Attack[]
-  effects     CardEffect[]
-  trades      Trade[]
+  attacks Attack[]
+  effects CardEffect[]
+  trades  Trade[]
 
-  createdAt   DateTime     @default(now())
-  updatedAt   DateTime     @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 
   @@unique([setId, number])
   @@index([name])
@@ -134,8 +134,8 @@ model Set {
   releaseDate DateTime?
   cards       Card[]
 
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @updatedAt
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
 model Attack {
@@ -181,10 +181,12 @@ model SearchQueryCache {
   lastUsedAt DateTime @updatedAt
 }
 
-// The receiver is the one who will accept the trade
+// One listing is a pair of Trade rows that share listingId:
+// isSeeking=true (want) and isSeeking=false (give). Share URL uses listingId.
 model Trade {
   id              Int         @id @default(autoincrement()) @map("trade_id")
   tradeCreationId String      @unique @map("trade_creation_id")
+  listingId       String      @map("listing_id")
   playerId        String      @map("player_id")
   cards           Card[]
   status          TradeStatus @default(ACTIVE)
@@ -198,6 +200,11 @@ model Trade {
   expiresAt DateTime @map("expires_at")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@unique([listingId, isSeeking])
+  @@index([listingId])
+  @@index([identifier])
+  @@index([status, expiresAt])
 }
 
 // 
