@@ -108,8 +108,8 @@ importers:
         specifier: ^3.3.7
         version: 3.3.7
       '@next/playwright':
-        specifier: ^16.3.5
-        version: 16.3.5(@playwright/test@1.64.1)
+        specifier: ^16.4.3
+        version: 16.4.3(@playwright/test@1.64.1)
       '@playwright/test':
         specifier: ^1.64.1
         version: 1.64.1
@@ -1140,8 +1140,8 @@ packages:
   '@next/eslint-plugin-next@16.3.3':
     resolution: {integrity: sha512-pbEh30vvjKpDoTAmo1v3q2uM4JUi8QaEBpbmjWvGfoec2jLghy/WNtvzAT0bk+Ik9oz6etjt4YjXEk4BQnicCw==}
 
-  '@next/playwright@16.3.5':
-    resolution: {integrity: sha512-R0gpYbyuTSBSid17ElLMiXCKLYEu3zcGEqkPZ5ne2lJyNB8NlWt3/5XIX7r5Wex1A5jwKhwe80d8Wsh6dPz+fg==}
+  '@next/playwright@16.4.3':
+    resolution: {integrity: sha512-UH0bkck8lDFE0EJLX8NMoxSBi/2LZ0z8nNZnCy+qsZgL+PrR6NgCe+mzT/VcnA/75gxCjNPwpHVDiDz6GtkUVw==}
     peerDependencies:
       '@playwright/test': '>=1.0.0'
     peerDependenciesMeta:
@@ -3475,8 +3475,8 @@ packages:
     resolution: {integrity: sha512-AiohS3H80sXO6owEltjGX+glb7qXaDhBoJb9XcQVH4UI207xu/bDLUcadVKp7Qe576reg9yr/PXZjV5qx8gfbA==}
     engines: {node: '>=18'}
 
-  import-in-the-middle@3.5.2:
-    resolution: {integrity: sha512-WseIA/4o56+GYO3RmlOPvejYi771OFeJEeK/ejROsr9bdjW+E5NXTOD1Di8TL40Qgg3JJX9aa97Hf8iiSVIKZw==}
+  import-in-the-middle@3.5.3:
+    resolution: {integrity: sha512-usm/IiY63VtOyx/dm7uEoZV+EsanCDmwRUroQZIkFLGu1NVXZ8mZqIOhaN4QIJ7EsbMTuQbJXwCySCx+ozMA8g==}
     engines: {node: '>=18'}
 
   imurmurhash@0.1.4:
@@ -6043,7 +6043,7 @@ snapshots:
     transitivePeerDependencies:
       - eslint
 
-  '@next/playwright@16.3.5(@playwright/test@1.64.1)':
+  '@next/playwright@16.4.3(@playwright/test@1.64.1)':
     optionalDependencies:
       '@playwright/test': 1.64.1
 
@@ -6635,7 +6635,7 @@ snapshots:
       '@sentry/conventions': 0.16.0
       '@sentry/core': 10.76.2
       '@sentry/opentelemetry': 10.76.2(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.12.0(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-trace-base@2.12.0(@opentelemetry/api@1.10.0))
-      import-in-the-middle: 3.5.2
+      import-in-the-middle: 3.5.3
     optionalDependencies:
       '@opentelemetry/api': 1.10.0
       '@opentelemetry/core': 2.12.0(@opentelemetry/api@1.10.0)
@@ -6668,7 +6668,7 @@ snapshots:
       '@sentry/node-core': 10.76.2(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.12.0(@opentelemetry/api@1.10.0))(@opentelemetry/instrumentation@0.220.0(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-trace-base@2.12.0(@opentelemetry/api@1.10.0))
       '@sentry/opentelemetry': 10.76.2(@opentelemetry/api@1.10.0)(@opentelemetry/core@2.12.0(@opentelemetry/api@1.10.0))(@opentelemetry/sdk-trace-base@2.12.0(@opentelemetry/api@1.10.0))
       '@sentry/server-utils': 10.76.2
-      import-in-the-middle: 3.5.2
+      import-in-the-middle: 3.5.3
     transitivePeerDependencies:
       - '@opentelemetry/core'
       - '@opentelemetry/exporter-trace-otlp-http'
@@ -8409,7 +8409,7 @@ snapshots:
       es-module-lexer: 2.3.2
       module-details-from-path: 1.0.4
 
-  import-in-the-middle@3.5.2:
+  import-in-the-middle@3.5.3:
     dependencies:
       cjs-module-lexer: 2.3.0
       es-module-lexer: 3.0.4
