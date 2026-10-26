@@ -1,5 +1,6 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 import { EmailOtpForm } from "@/components/auth/email-otp-form";
@@ -8,21 +9,36 @@ import { Button } from "@/components/ui/button";
 import { authClient } from "@/lib/auth/client";
 import {
   AUTH_SIGN_IN_PATH,
+  SIGN_IN_PATH,
   type SocialProvider,
 } from "@/lib/auth/config";
+import { AUTH_RETURN_QUERY, safeAuthReturnPath } from "@/lib/auth/return-path";
 
 const PROVIDER_LABELS: Record<SocialProvider, string> = {
   github: "GitHub",
   google: "Google",
 };
 
+export type SignInButtonsProps = {
+  providers: SocialProvider[];
+  emailOtpEnabled?: boolean;
+  callbackURL?: string;
+};
+
+/** Reads `?next=` so OAuth/OTP return to the gated page that sent the user here. */
+export function SignInButtonsFromQuery(props: SignInButtonsProps) {
+  const searchParams = useSearchParams();
+  const callbackURL =
+    safeAuthReturnPath(searchParams.get(AUTH_RETURN_QUERY), SIGN_IN_PATH) ??
+    "/";
+  return <SignInButtons {...props} callbackURL={callbackURL} />;
+}
+
 export function SignInButtons({
   providers,
   emailOtpEnabled = false,
-}: {
-  providers: SocialProvider[];
-  emailOtpEnabled?: boolean;
-}) {
+  callbackURL = "/",
+}: SignInButtonsProps) {
   const [pendingProvider, setPendingProvider] =
     useState<SocialProvider | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -33,8 +49,11 @@ export function SignInButtons({
 
     const result = await authClient.signIn.social({
       provider,
-      callbackURL: "/",
-      errorCallbackURL: AUTH_SIGN_IN_PATH,
+      callbackURL,
+      errorCallbackURL:
+        callbackURL === "/"
+          ? AUTH_SIGN_IN_PATH
+          : `${AUTH_SIGN_IN_PATH}?${AUTH_RETURN_QUERY}=${encodeURIComponent(callbackURL)}`,
     });
 
     if (result.error) {
@@ -76,7 +95,7 @@ export function SignInButtons({
       {emailOtpEnabled ? (
         <>
           {providers.length > 0 ? <AuthDivider /> : null}
-          <EmailOtpForm callbackURL="/" />
+          <EmailOtpForm callbackURL={callbackURL} />
         </>
       ) : null}
     </div>
