@@ -28,7 +28,7 @@
     "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
-    "@ai-sdk/google": "^4.0.104",
+    "@ai-sdk/google": "^4.0.105",
     "@base-ui/react": "^1.1.0",
     "@neondatabase/serverless": "^1.0.0",
     "@prisma/adapter-neon": "7.10.1",
@@ -36,7 +36,7 @@
     "@tailwindcss/postcss": "^4.3.3",
     "@upstash/redis": "^1.39.0",
     "@vercel/blob": "^2.8.0",
-    "ai": "^7.0.136",
+    "ai": "^7.0.153",
     "babel-plugin-react-compiler": "^1.0.0",
     "better-auth": "^1.7.7",
     "class-variance-authority": "^0.7.1",
