@@ -8,6 +8,8 @@ import {
   resolveCardImageUrls,
 } from "../lib/image-url";
 import { normalizeRarity } from "../lib/rarity-map";
+import { SourceCardSchema } from "../lib/source-schema";
+import { PINNED_COMMIT_SHA, SOURCE_URL } from "../lib/source-pin";
 
 describe("set-map and card id parsing", () => {
   it("parses standard set codes", () => {
@@ -23,6 +25,10 @@ describe("set-map and card id parsing", () => {
     expect(promoB).toEqual({ setCode: "P-B", number: 3 });
   });
 
+  it("parses the P-C promo series", () => {
+    expect(parseCardId("P-C-13")).toEqual({ setCode: "P-C", number: 13 });
+  });
+
   it("throws on invalid card_id format", () => {
     expect(() => parseCardId("invalid")).toThrow(/Invalid card_id format/);
   });
@@ -31,6 +37,12 @@ describe("set-map and card id parsing", () => {
     const set = getSetInfo("A1a");
     expect(set.name).toBe("Mythical Island");
     expect(set.code).toBe("A1a");
+  });
+
+  it("maps the B4b, C1 and P-C sets", () => {
+    expect(getSetInfo("B4b").name).toBe("Deluxe Pack: Mega");
+    expect(getSetInfo("C1").name).toBe("Dual Fusion");
+    expect(getSetInfo("P-C").name).toBe("Promo-C");
   });
 
   it("throws on unknown set code", () => {
@@ -94,5 +106,31 @@ describe("rarity normalization and tradeability", () => {
     expect(normalizeRarity("☆☆☆")).toEqual({ rarityCode: "IM", isTradeable: false });
     expect(normalizeRarity("Crown Rare")).toEqual({ rarityCode: "UR", isTradeable: false });
     expect(normalizeRarity("P")).toEqual({ rarityCode: "PROMO", isTradeable: false });
+  });
+});
+
+describe("source payload", () => {
+  it("accepts optional secondary_energy for dual-type cards", () => {
+    const base = {
+      expansion: "C1",
+      card_id: "C1-42",
+      image: "/images/en-US/C1-42.webp",
+      name: "Mega Greninja ex",
+      card_type: "pokémon",
+      evolution_type: "stage2",
+      rarity: "◊◊◊◊",
+      ex: true,
+      baby: false,
+      energy: "water",
+    };
+    expect(
+      SourceCardSchema.parse({ ...base, secondary_energy: "darkness" }).secondary_energy
+    ).toBe("darkness");
+    expect(SourceCardSchema.parse(base).secondary_energy).toBeUndefined();
+  });
+
+  it("derives the source URL from the pinned commit", () => {
+    expect(PINNED_COMMIT_SHA).toMatch(/^[0-9a-f]{40}$/);
+    expect(SOURCE_URL).toContain(`/${PINNED_COMMIT_SHA}/frontend/assets/cards.json`);
   });
 });

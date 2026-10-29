@@ -18,6 +18,7 @@ export const SourceCardSchema = z.object({
   image: z.string(),
   hp: z.number().optional().nullable(),
   energy: z.string().optional().nullable(),
+  secondary_energy: z.string().optional().nullable(),
   name: z.string(),
   card_type: z.string(),
   evolution_type: z.string(),

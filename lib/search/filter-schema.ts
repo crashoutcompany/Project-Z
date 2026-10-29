@@ -77,6 +77,7 @@ Return ONLY JSON matching this TypeScript type (no markdown):
 }
 
 Allowed energyType values: ${ENERGY_TYPES.join(", ")}
+energyType matches a Pokémon's primary or secondary type (dual-type cards)
 Allowed tags: ${ALL_TAGS.join(", ")}
 
 Rules:

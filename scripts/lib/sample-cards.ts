@@ -5,9 +5,12 @@ export const SEED_CARDS_PER_SET = 10;
 
 /**
  * Keep a stable subset of cards from each set (lowest card numbers first).
- * Sets with fewer than `perSetLimit` cards are kept in full.
+ * Sets with fewer than `perSetLimit` cards are kept in full. Dual-type cards
+ * (`secondary_energy`) are always kept so seeded DBs exercise that path.
  */
-export function sampleCardsPerSet<T extends { card_id: string }>(
+export function sampleCardsPerSet<
+  T extends { card_id: string; secondary_energy?: string | null },
+>(
   cards: T[],
   perSetLimit: number
 ): T[] {
@@ -26,7 +29,9 @@ export function sampleCardsPerSet<T extends { card_id: string }>(
     list.sort(
       (a, b) => parseCardId(a.card_id).number - parseCardId(b.card_id).number
     );
-    sampled.push(...list.slice(0, perSetLimit));
+    const head = list.slice(0, perSetLimit);
+    const dualType = list.slice(perSetLimit).filter((c) => c.secondary_energy);
+    sampled.push(...head, ...dualType);
   }
   return sampled;
 }

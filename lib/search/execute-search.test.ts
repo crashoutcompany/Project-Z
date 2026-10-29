@@ -19,6 +19,7 @@ function row(over: {
   rarity?: string;
   number?: number;
   energyType?: string | null;
+  secondaryEnergyType?: string | null;
   isTradeable?: boolean;
   attacks?: Array<{
     tags: string[];
@@ -36,6 +37,7 @@ function row(over: {
     number: over.number ?? over.id,
     cardType: "POKEMON",
     energyType: over.energyType ?? "fire",
+    secondaryEnergyType: over.secondaryEnergyType ?? null,
     hp: 100,
     rarity: over.rarity ?? "C",
     isEx: false,
@@ -157,6 +159,67 @@ describe("executeSearch", () => {
     expect(result.cards.map((c) => c.name)).toEqual(["Double Fire"]);
   });
 
+  it("matches energyType against either type of a dual-type card", async () => {
+    findMany.mockResolvedValue([
+      row({
+        id: 1,
+        name: "Mega Greninja ex",
+        energyType: "water",
+        secondaryEnergyType: "darkness",
+      }),
+    ]);
+
+    const result = await executeSearch(
+      { surface: "any", energyType: ["darkness"] },
+      { limit: 10 },
+    );
+
+    const where = findMany.mock.calls[0]?.[0]?.where;
+    expect(where.energyType).toBeUndefined();
+    expect(where.AND).toContainEqual({
+      OR: [
+        { energyType: { in: ["darkness"] } },
+        { secondaryEnergyType: { in: ["darkness"] } },
+      ],
+    });
+    expect(result.cards[0]).toMatchObject({
+      energyType: "water",
+      secondaryEnergyType: "darkness",
+    });
+  });
+
+  it("applies the either-type energy filter to FTS fallback rows", async () => {
+    findMany.mockResolvedValue([]);
+    const ftsRow = (id: number, name: string, secondary: string | null) => ({
+      id,
+      name,
+      imageUrl: `/img/${id}.webp`,
+      setCode: "C1",
+      number: id,
+      cardType: "POKEMON",
+      trainerType: null,
+      energyType: "water",
+      secondaryEnergyType: secondary,
+      stage: "STAGE2",
+      hp: 200,
+      rarity: "RR",
+      isEx: true,
+      isTradeable: true,
+    });
+    queryRaw.mockResolvedValue([
+      ftsRow(1, "Dual", "darkness"),
+      ftsRow(2, "Single", null),
+    ]);
+
+    const result = await executeSearch({
+      surface: "any",
+      energyType: ["darkness"],
+      textFallback: "greninja",
+    });
+    expect(result.usedFallback).toBe(true);
+    expect(result.cards.map((c) => c.name)).toEqual(["Dual"]);
+  });
+
   it("uses FTS fallback when the structured query is empty", async () => {
     findMany.mockResolvedValue([]);
     queryRaw.mockResolvedValue([
@@ -169,6 +232,7 @@ describe("executeSearch", () => {
         cardType: "POKEMON",
         trainerType: null,
         energyType: "fire",
+        secondaryEnergyType: null,
         stage: "BASIC",
         hp: 80,
         rarity: "C",
