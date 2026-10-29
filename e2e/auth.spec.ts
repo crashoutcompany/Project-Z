@@ -22,7 +22,12 @@ test.describe("as a guest", () => {
     await page.goto("/builder?v=1&deck=A1-1,A1-94x2");
     const url = new URL(page.url());
     expect(url.pathname).toBe("/signin");
-    expect(url.searchParams.get("next")).toBe("/builder?v=1&deck=A1-1,A1-94x2");
+    // Next encodes the comma (deck=A1-1%2CA1-94x2), so compare parsed values
+    // rather than the raw string.
+    const next = new URL(url.searchParams.get("next")!, url.origin);
+    expect(next.pathname).toBe("/builder");
+    expect(next.searchParams.get("v")).toBe("1");
+    expect(next.searchParams.get("deck")).toBe("A1-1,A1-94x2");
     await expect(
       page.getByRole("heading", { name: "Sign in to your account" }),
     ).toBeVisible();
