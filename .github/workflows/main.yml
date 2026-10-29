@@ -14,13 +14,13 @@ permissions:
 
 jobs:
   ci:
-    uses: crashoutcompany/.github/.github/workflows/ci.yml@fb4ced16d6e9b46edfbd2e6d8da421436b88622b # crashoutcompany/.github#4 (prisma-migrate-neon); re-pin to the release tag once merged
+    uses: crashoutcompany/.github/.github/workflows/ci.yml@86c6828bf4dad83218d867e40ca16f354d680e5f # v1.2.0
     with:
       test-script: test:coverage
       has-e2e: true
       use-prisma-neon: true
       # Apply this PR's migrations to the throwaway e2e Neon branch (copied from
-      # an older parent). Needs the pinned shared-workflow revision above.
+      # an older parent). Requires shared workflow v1.2.0 or later.
       prisma-migrate-neon: true
       # The repo's NEON_DATABASE secret points at the empty ptcgp database; the
       # Prisma tables live in neondb.
