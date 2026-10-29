@@ -196,4 +196,69 @@ describe("normalize - full card", () => {
       "Play this card as if it were a 40-HP Basic [C] Pokémon. At any time during your turn, you may discard this card from play."
     );
   });
+
+  it("maps secondary_energy for dual-type Pokemon and leaves it null otherwise", () => {
+    const base: SourceCard = {
+      expansion: "C1",
+      card_id: "C1-42",
+      image: "/images/en-US/C1-42.webp",
+      hp: 200,
+      energy: "water",
+      secondary_energy: "Darkness ",
+      name: "Mega Greninja ex",
+      card_type: "pokémon",
+      evolution_type: "stage2",
+      attacks: [],
+      weakness: "lightning",
+      retreat: 0,
+      rarity: "◊◊◊◊",
+      ex: true,
+      baby: false,
+    };
+    const rarity = { rarityCode: "RR", isTradeable: true };
+
+    const dual = normalizeCard(base, "https://example.test/C1_042_EN_SM.webp", rarity, 42);
+    expect(dual.energyType).toBe("water");
+    expect(dual.secondaryEnergyType).toBe("darkness");
+
+    const single = normalizeCard(
+      { ...base, secondary_energy: undefined },
+      "https://example.test/C1_042_EN_SM.webp",
+      rarity,
+      42
+    );
+    expect(single.secondaryEnergyType).toBe(null);
+
+    const blank = normalizeCard(
+      { ...base, secondary_energy: "  " },
+      "https://example.test/C1_042_EN_SM.webp",
+      rarity,
+      42
+    );
+    expect(blank.secondaryEnergyType).toBe(null);
+  });
+
+  it("ignores secondary_energy on trainer cards", () => {
+    const trainer: SourceCard = {
+      expansion: "C1",
+      card_id: "C1-200",
+      image: "/images/en-US/C1-200.webp",
+      energy: "trainer",
+      secondary_energy: "darkness",
+      name: "Some Item",
+      card_type: "trainer",
+      evolution_type: "item",
+      attacks: [],
+      rarity: "◊",
+      ex: false,
+      baby: false,
+    };
+    const card = normalizeCard(
+      trainer,
+      "https://example.test/C1_200_EN_SM.webp",
+      { rarityCode: "C", isTradeable: true },
+      200
+    );
+    expect(card.secondaryEnergyType).toBe(null);
+  });
 });

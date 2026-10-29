@@ -82,6 +82,7 @@ function searchResultToCardWithSet(
     isTradeable: card.isTradeable,
     pack: null,
     energyType: card.energyType,
+    secondaryEnergyType: card.secondaryEnergyType,
     hp: card.hp,
     stage: null,
     isEx: card.isEx,

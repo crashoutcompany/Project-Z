@@ -11,6 +11,7 @@ import {
 } from "./lib/image-url";
 import { normalizeCard } from "./lib/normalize";
 import { tagAttack, tagEffect } from "./lib/tagger";
+import { PINNED_COMMIT_SHA, SOURCE_URL } from "./lib/source-pin";
 
 function loadLocalEnv() {
   for (const file of [".env.local", ".env"] as const) {
@@ -22,8 +23,7 @@ function loadLocalEnv() {
   }
 }
 
-export const PINNED_COMMIT_SHA = "9fafc071e99e37c77263fdca4783d21e348caef5";
-export const SOURCE_URL = `https://raw.githubusercontent.com/marcelpanse/tcg-pocket-collection-tracker/${PINNED_COMMIT_SHA}/frontend/assets/cards.json`;
+export { PINNED_COMMIT_SHA, SOURCE_URL };
 
 enum ImportEnvFlag {
   SKIP_BLOB_UPLOAD = "SKIP_BLOB_UPLOAD",
@@ -185,6 +185,7 @@ export async function runImport(
       name: true,
       imageUrl: true,
       rarity: true,
+      secondaryEnergyType: true,
       hp: true,
       weakness: true,
       retreatCost: true,
@@ -265,6 +266,7 @@ export async function runImport(
         existing.name === normalized.name &&
         existing.imageUrl === normalized.imageUrl &&
         existing.rarity === normalized.rarity &&
+        existing.secondaryEnergyType === normalized.secondaryEnergyType &&
         existing.hp === normalized.hp &&
         existing.weakness === normalized.weakness &&
         existing.retreatCost === normalized.retreatCost;
@@ -295,6 +297,7 @@ export async function runImport(
             isTradeable: normalized.isTradeable,
             pack: normalized.pack,
             energyType: normalized.energyType,
+            secondaryEnergyType: normalized.secondaryEnergyType,
             hp: normalized.hp,
             stage: normalized.stage,
             isEx: normalized.isEx,
@@ -313,6 +316,7 @@ export async function runImport(
             isTradeable: normalized.isTradeable,
             pack: normalized.pack,
             energyType: normalized.energyType,
+            secondaryEnergyType: normalized.secondaryEnergyType,
             hp: normalized.hp,
             stage: normalized.stage,
             isEx: normalized.isEx,

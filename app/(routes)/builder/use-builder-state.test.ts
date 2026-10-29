@@ -23,6 +23,7 @@ const card = (
   number: over.id,
   cardType: "POKEMON",
   energyType: "fire",
+  secondaryEnergyType: null,
   hp: 70,
   rarity: "C",
   isEx: false,

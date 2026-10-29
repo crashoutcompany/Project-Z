@@ -92,12 +92,21 @@ function buildCardWhere(
   if (opts.tradeableOnly) where.isTradeable = true;
   if (filter.cardType) where.cardType = filter.cardType;
   if (filter.trainerType) where.trainerType = filter.trainerType;
-  if (filter.energyType?.length) where.energyType = { in: filter.energyType };
   if (filter.stage?.length) where.stage = { in: filter.stage };
   if (filter.isEx !== undefined) where.isEx = filter.isEx;
   if (filter.hpMin !== undefined) where.hp = { gte: filter.hpMin };
   if (filter.setCodes?.length) {
     where.set = { code: { in: filter.setCodes } };
+  }
+
+  if (filter.energyType?.length) {
+    // Dual-type cards match on either of their types.
+    and.push({
+      OR: [
+        { energyType: { in: filter.energyType } },
+        { secondaryEnergyType: { in: filter.energyType } },
+      ],
+    });
   }
 
   const attackClause: Prisma.CardWhereInput | null = filter.attack
@@ -166,6 +175,7 @@ export type SearchCardResult = {
   number: number;
   cardType: string;
   energyType: string | null;
+  secondaryEnergyType: string | null;
   hp: number | null;
   rarity: string;
   isEx: boolean;
@@ -250,6 +260,7 @@ async function queryCards(
         number: c.number,
         cardType: c.cardType,
         energyType: c.energyType,
+        secondaryEnergyType: c.secondaryEnergyType,
         hp: c.hp,
         rarity: c.rarity,
         isEx: c.isEx,
@@ -277,6 +288,7 @@ function matchesScalarFilters(
     cardType: string;
     trainerType: string | null;
     energyType: string | null;
+    secondaryEnergyType: string | null;
     stage: string | null;
     hp: number | null;
     isEx: boolean;
@@ -288,7 +300,9 @@ function matchesScalarFilters(
   if (filter.trainerType && row.trainerType !== filter.trainerType) return false;
   if (
     filter.energyType?.length &&
-    (!row.energyType || !filter.energyType.some((type) => type === row.energyType))
+    !filter.energyType.some(
+      (type) => type === row.energyType || type === row.secondaryEnergyType,
+    )
   ) {
     return false;
   }
@@ -328,6 +342,7 @@ async function ftsFallback(
       cardType: string;
       trainerType: string | null;
       energyType: string | null;
+      secondaryEnergyType: string | null;
       stage: string | null;
       hp: number | null;
       rarity: string;
@@ -343,6 +358,7 @@ async function ftsFallback(
            c."cardType"::text AS "cardType",
            c."trainerType"::text AS "trainerType",
            c."energyType" AS "energyType",
+           c."secondaryEnergyType" AS "secondaryEnergyType",
            c.stage::text AS stage,
            c.hp,
            c.rarity,

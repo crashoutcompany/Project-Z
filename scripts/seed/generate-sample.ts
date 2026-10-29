@@ -2,9 +2,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { SourcePayloadSchema } from "../lib/source-schema";
 import { sampleCardsPerSet, SEED_CARDS_PER_SET } from "../lib/sample-cards";
+import { SOURCE_URL } from "../lib/source-pin";
 
-const PINNED_COMMIT_SHA = "dc4a37d4fb7978265a27836b893d8f8b3aabee56";
-const SOURCE_URL = `https://raw.githubusercontent.com/marcelpanse/tcg-pocket-collection-tracker/${PINNED_COMMIT_SHA}/frontend/assets/cards.json`;
 
 async function main() {
   const res = await fetch(SOURCE_URL);
