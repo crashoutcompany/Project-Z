@@ -23,6 +23,10 @@ describe("set-map and card id parsing", () => {
     expect(promoB).toEqual({ setCode: "P-B", number: 3 });
   });
 
+  it("parses the P-C promo series", () => {
+    expect(parseCardId("P-C-13")).toEqual({ setCode: "P-C", number: 13 });
+  });
+
   it("throws on invalid card_id format", () => {
     expect(() => parseCardId("invalid")).toThrow(/Invalid card_id format/);
   });
@@ -31,6 +35,12 @@ describe("set-map and card id parsing", () => {
     const set = getSetInfo("A1a");
     expect(set.name).toBe("Mythical Island");
     expect(set.code).toBe("A1a");
+  });
+
+  it("maps the B4b, C1 and P-C sets", () => {
+    expect(getSetInfo("B4b").name).toBe("Deluxe Pack: Mega");
+    expect(getSetInfo("C1").name).toBe("Dual Fusion");
+    expect(getSetInfo("P-C").name).toBe("Promo-C");
   });
 
   it("throws on unknown set code", () => {

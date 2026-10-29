@@ -22,7 +22,7 @@ function loadLocalEnv() {
   }
 }
 
-export const PINNED_COMMIT_SHA = "dc4a37d4fb7978265a27836b893d8f8b3aabee56";
+export const PINNED_COMMIT_SHA = "9fafc071e99e37c77263fdca4783d21e348caef5";
 export const SOURCE_URL = `https://raw.githubusercontent.com/marcelpanse/tcg-pocket-collection-tracker/${PINNED_COMMIT_SHA}/frontend/assets/cards.json`;
 
 enum ImportEnvFlag {

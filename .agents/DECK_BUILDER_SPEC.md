@@ -98,8 +98,11 @@ A2  Space-Time Smackdown    A4b  Deluxe Pack: ex          B3a Paradox Drive
 A2a Triumphant Light        B1   Mega Rising              B3b Everyday Wonders
 A2b Shining Revelry         B1a  Crimson Blaze            B4  Ruler of the Skies
 A3  Celestial Guardians     B2   Fantastical Parade       B4a Team Rocket's Ambition
-A3a Extradimensional Crisis B2a  Paldean Wonders          P-A Promo-A
-A3b Eevee Grove                                           P-B Promo-B
+A3a Extradimensional Crisis B2a  Paldean Wonders          B4b Deluxe Pack: Mega
+A3b Eevee Grove                                           C1  Dual Fusion
+                                                          P-A Promo-A
+                                                          P-B Promo-B
+                                                          P-C Promo-C
 ```
 
 Existing DB `setName` values differ in casing/punctuation from the canonical names above (e.g. `"Space-time Smackdown"`, `"Deluxe Pack ex"`). The migration maps existing rows by their current `setName`; going forward `code` is the identity and `setName` is display-only.
