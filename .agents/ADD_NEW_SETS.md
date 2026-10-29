@@ -27,7 +27,7 @@ When a new set appears upstream:
 pnpm import:cards:dry
 ```
 
-Review the report: sets touched, creates/updates, tag frequency, attacks with zero tags.
+Review the report: sets touched, creates/skipped (updates/unchanged with `--full`), tag frequency, attacks with zero tags.
 
 ### 3. Import
 
@@ -35,7 +35,15 @@ Review the report: sets touched, creates/updates, tag frequency, attacks with ze
 pnpm import:cards
 ```
 
-The importer is idempotent. It upserts sets/cards/attacks/effects and never deletes cards (trades reference card IDs).
+By default the importer only creates cards that are missing from the DB (matched on set + number); existing cards, and their attacks/effects, are skipped untouched. It never deletes cards (trades reference card IDs).
+
+To re-upsert every card and replace attacks/effects (e.g. after a tagger or normalization change, or a bumped `PINNED_COMMIT_SHA` that corrects existing cards), pass `--full`:
+
+```bash
+pnpm import:cards --full
+```
+
+`--full` combines with `--dry-run` (`pnpm import:cards:dry --full`) to preview creates/updates/unchanged.
 
 ### 4. Verify
 
