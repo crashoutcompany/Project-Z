@@ -103,6 +103,8 @@ model Card {
 
   // Pokémon-only (null for trainers)
   energyType  String?
+  // Second type of dual-type Pokémon (C1+); null for single-type cards
+  secondaryEnergyType String?
   hp          Int?
   stage       Stage?
   isEx        Boolean      @default(false)
@@ -124,6 +126,7 @@ model Card {
   @@index([name])
   @@index([cardType, stage])
   @@index([energyType])
+  @@index([secondaryEnergyType])
 }
 
 model Set {

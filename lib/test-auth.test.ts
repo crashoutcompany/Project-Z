@@ -71,6 +71,32 @@ describe("isTestAuthEnabled", () => {
     ).toBe(false);
   });
 
+  it("allows Vercel preview only when the testing API is exposed", () => {
+    const vercelPreview = {
+      TEST_AUTH_SECRET: SECRET,
+      VERCEL: "1",
+      VERCEL_ENV: "preview",
+    };
+    expect(
+      isTestAuthEnabled({ ...vercelPreview, EXPOSE_TESTING_API: "1" }),
+    ).toBe(true);
+    expect(
+      isTestAuthEnabled({
+        ...vercelPreview,
+        EXPOSE_TESTING_API: "1",
+        VERCEL_ENV: "production",
+      }),
+    ).toBe(false);
+    expect(
+      isTestAuthEnabled({
+        ...vercelPreview,
+        EXPOSE_TESTING_API: "1",
+        VERCEL_ENV: "development",
+      }),
+    ).toBe(false);
+    expect(isTestAuthEnabled(vercelPreview)).toBe(false);
+  });
+
   it("blocks when the secret is missing", () => {
     expect(
       isTestAuthEnabled({
@@ -126,6 +152,22 @@ describe("evaluateTestAuthRequest", () => {
         VERCEL: "1",
       }),
     ).toEqual({ allow: false, status: 404 });
+  });
+
+  it("authorizes a Vercel preview request when exposed and the header matches", () => {
+    const vercelPreview = {
+      EXPOSE_TESTING_API: "1",
+      TEST_AUTH_SECRET: SECRET,
+      VERCEL: "1",
+      VERCEL_ENV: "preview",
+    };
+    expect(evaluateTestAuthRequest(SECRET, vercelPreview)).toEqual({
+      allow: true,
+    });
+    expect(evaluateTestAuthRequest("wrong", vercelPreview)).toEqual({
+      allow: false,
+      status: 401,
+    });
   });
 
   it("401s when enabled but the header is missing or wrong", () => {

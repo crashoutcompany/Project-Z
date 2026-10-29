@@ -10,6 +10,7 @@ export function toSearchCardResult(card: CardWithSet): SearchCardResult {
     number: card.number,
     cardType: card.cardType,
     energyType: card.energyType,
+    secondaryEnergyType: card.secondaryEnergyType,
     hp: card.hp,
     rarity: card.rarity,
     isEx: card.isEx,

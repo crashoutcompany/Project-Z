@@ -26,8 +26,11 @@ export const SET_MAP: Record<string, SetInfo> = {
   B3b: { code: "B3b", name: "Everyday Wonders", releaseDate: "2026-05-28" },
   B4: { code: "B4", name: "Ruler of the Skies", releaseDate: "2026-06-25" },
   B4a: { code: "B4a", name: "Team Rocket's Ambition", releaseDate: "2026-07-30" },
+  B4b: { code: "B4b", name: "Deluxe Pack: Mega", releaseDate: "2026-09-30" },
+  C1: { code: "C1", name: "Dual Fusion", releaseDate: "2026-10-29" },
   "P-A": { code: "P-A", name: "Promo-A", releaseDate: "2024-10-30" },
   "P-B": { code: "P-B", name: "Promo-B", releaseDate: "2025-10-30" },
+  "P-C": { code: "P-C", name: "Promo-C", releaseDate: "2026-10-29" },
 };
 
 export function getSetInfo(code: string): SetInfo {

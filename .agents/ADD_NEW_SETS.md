@@ -13,12 +13,12 @@ Use the collection-tracker import pipeline. Card data (attacks, abilities/effect
 
 ### 1. Confirm the pinned source
 
-`scripts/import-cards.ts` pins a commit SHA for  
+`scripts/lib/source-pin.ts` pins a commit SHA for  
 [marcelpanse/tcg-pocket-collection-tracker](https://github.com/marcelpanse/tcg-pocket-collection-tracker) `frontend/assets/cards.json`.
 
 When a new set appears upstream:
 
-1. Update `PINNED_COMMIT_SHA` in `scripts/import-cards.ts` to a commit that includes the set.
+1. Update `PINNED_COMMIT_SHA` in `scripts/lib/source-pin.ts` to a commit that includes the set (the importer and the seed sample generator both read it).
 2. Ensure `scripts/lib/set-map.ts` maps the new set code → display name (and release date if available). Unknown set codes must fail the import — never invent rows.
 
 ### 2. Dry-run (optional)
