@@ -73,6 +73,7 @@ export async function POST(request: Request) {
         number: c.number,
         cardType: c.cardType,
         energyType: c.energyType,
+        secondaryEnergyType: c.secondaryEnergyType,
         hp: c.hp,
         rarity: c.rarity,
         isEx: c.isEx,

@@ -2,11 +2,13 @@ import { headers } from "next/headers";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import { APP_NAME, PREVIEW_ORIGIN, PRODUCTION_URL } from "@/lib/auth/config";
 import { createAuth, getEnabledSocialProviders } from "@/lib/auth/create-auth";
+import { isEmailOtpEnabled } from "@/lib/auth/email-otp";
 import prisma from "@/prisma/db";
 
 export type { SocialProviderId } from "@/lib/auth/create-auth";
 
 export const enabledSocialProviders = getEnabledSocialProviders();
+export const emailOtpEnabled = isEmailOtpEnabled();
 
 export const auth = createAuth({
   appName: APP_NAME,

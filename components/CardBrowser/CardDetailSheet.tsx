@@ -1,8 +1,11 @@
 "use client";
 
+import Link from "next/link";
 import LazyImage from "@/components/LazyImage";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import { SIGN_IN_PATH } from "@/lib/auth/config";
+import { AUTH_RETURN_QUERY } from "@/lib/auth/return-path";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { CardDetail } from "@/lib/card-detail";
@@ -35,6 +38,8 @@ export type CardDetailSheetProps = {
   detail: CardDetail | null;
   loading: boolean;
   error: string | null;
+  /** The session expired; show the preview plus a sign-in prompt for the text. */
+  signedOut?: boolean;
   shareUrl?: string | null;
 };
 
@@ -61,6 +66,7 @@ function CardDetailDialog({
   detail,
   loading,
   error,
+  signedOut,
   shareUrl,
 }: SheetContentProps & { onOpenChange: (open: boolean) => void }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
@@ -155,6 +161,7 @@ function CardDetailDialog({
             detail={detail}
             loading={loading}
             error={error}
+            signedOut={signedOut}
             shareUrl={shareUrl}
           />
         </ScrollArea>
@@ -167,6 +174,7 @@ function CardDetailBody({
   detail,
   loading,
   error,
+  signedOut,
   shareUrl,
 }: SheetContentProps) {
   return (
@@ -175,7 +183,11 @@ function CardDetailBody({
       <CardArt detail={detail} />
       <CardFacts detail={detail} loading={loading} />
       {detail ? <CardBadges detail={detail} /> : null}
-      <CardText detail={detail} loading={loading} />
+      {signedOut ? (
+        <SignInPrompt returnPath={shareUrl} />
+      ) : (
+        <CardText detail={detail} loading={loading} />
+      )}
       {shareUrl ? <CopyLinkButton shareUrl={shareUrl} /> : null}
     </div>
   );
@@ -386,6 +398,26 @@ function CopyLinkButton({ shareUrl }: { shareUrl: string }) {
       {copied ? <Check /> : <Copy />}
       {copied ? "Copied link" : "Copy link"}
     </Button>
+  );
+}
+
+function SignInPrompt({ returnPath }: { returnPath?: string | null }) {
+  const next =
+    returnPath ?? `${window.location.pathname}${window.location.search}`;
+  const href = `${SIGN_IN_PATH}?${AUTH_RETURN_QUERY}=${encodeURIComponent(next)}`;
+  return (
+    <section
+      data-testid="card-detail-sign-in"
+      className="space-y-3 rounded-xl bg-muted/40 p-4 text-center ring-1 ring-foreground/10"
+    >
+      <p className="text-muted-foreground text-sm text-pretty">
+        Your session has ended. Sign in to read this card&apos;s attacks and
+        text.
+      </p>
+      <Link href={href} className={buttonVariants({ size: "sm" })}>
+        Sign in
+      </Link>
+    </section>
   );
 }
 

@@ -19,6 +19,7 @@ function row(over: {
   rarity?: string;
   number?: number;
   energyType?: string | null;
+  secondaryEnergyType?: string | null;
   isTradeable?: boolean;
   attacks?: Array<{
     tags: string[];
@@ -36,6 +37,7 @@ function row(over: {
     number: over.number ?? over.id,
     cardType: "POKEMON",
     energyType: over.energyType ?? "fire",
+    secondaryEnergyType: over.secondaryEnergyType ?? null,
     hp: 100,
     rarity: over.rarity ?? "C",
     isEx: false,
@@ -120,6 +122,112 @@ describe("executeSearch", () => {
     expect(result.cards[0]?.matchedTags).toEqual(["coin_flip", "draw"]);
   });
 
+  it("ranks a pure tag match above a big hitter whose tag shares an attack with unrelated tags", async () => {
+    const attack = (tags: string[], damageBase: number | null) => ({
+      tags,
+      damageBase,
+      damageKind: "FIXED",
+      energyCost: 1,
+      energyTypes: ["fire"],
+    });
+    findMany.mockResolvedValue([
+      // Rows come back name-ordered; ranking must not depend on that.
+      row({
+        id: 1,
+        name: "Charizard ex",
+        rarity: "RR",
+        attacks: [
+          attack(["energy_discard", "energy_attach"], 200),
+          attack([], 60),
+        ],
+      }),
+      row({
+        id: 2,
+        name: "Moltres ex",
+        rarity: "RR",
+        attacks: [attack(["energy_attach"], 0), attack([], 150)],
+      }),
+      row({
+        id: 3,
+        name: "Zapdos",
+        rarity: "C",
+        effects: [{ tags: ["energy_attach", "once_per_turn"], kind: "ABILITY" }],
+      }),
+      row({
+        id: 4,
+        name: "Blaine",
+        rarity: "U",
+        attacks: [],
+        effects: [{ tags: ["energy_attach"], kind: "SUPPORTER" }],
+      }),
+    ]);
+
+    const result = await executeSearch(
+      {
+        surface: "any",
+        attack: { tags: ["energy_attach"] },
+        effect: { tags: ["energy_attach"] },
+      },
+      { limit: 10 },
+    );
+
+    // Pure attachers first ("once per turn" is not a separate effect), with
+    // rarity breaking the tie: the 150 on Moltres's other attack does not
+    // count. Charizard's attach shares its attack with an Energy discard, so
+    // its 200 damage cannot lift it above them.
+    expect(result.cards.map((c) => c.name)).toEqual([
+      "Zapdos",
+      "Blaine",
+      "Moltres ex",
+      "Charizard ex",
+    ]);
+  });
+
+  it("prefers all wanted tags on one attack over tags spread across a card", async () => {
+    const attack = (tags: string[]) => ({
+      tags,
+      damageBase: 30,
+      damageKind: "FIXED",
+      energyCost: 1,
+      energyTypes: ["fire"],
+    });
+    findMany.mockResolvedValue([
+      row({ id: 1, name: "Spread", attacks: [attack(["coin_flip"]), attack(["draw"])] }),
+      row({ id: 2, name: "Focused", attacks: [attack(["coin_flip", "draw"])] }),
+    ]);
+
+    const result = await executeSearch(
+      { surface: "any" },
+      { tags: ["coin_flip", "draw"] },
+    );
+    expect(result.cards.map((c) => c.name)).toEqual(["Focused", "Spread"]);
+  });
+
+  it("scans every tag candidate instead of a name-ordered first page", async () => {
+    findMany.mockResolvedValue([]);
+    await executeSearch(
+      { surface: "any", attack: { tags: ["energy_attach"] } },
+      { limit: 10 },
+    );
+    expect(findMany.mock.calls[0]?.[0]?.take).toBe(2000);
+
+    findMany.mockClear();
+    await executeSearch({ surface: "any", cardType: "TRAINER" }, { limit: 10 });
+    expect(findMany.mock.calls[0]?.[0]?.take).toBe(30);
+  });
+
+  it("does not fall back to FTS when a parsed tag search is empty", async () => {
+    findMany.mockResolvedValue([]);
+    const result = await executeSearch({
+      surface: "any",
+      attack: { tags: ["energy_attach"] },
+      textFallback: "attach energy",
+    });
+    expect(result.cards).toEqual([]);
+    expect(result.usedFallback).toBe(false);
+    expect(queryRaw).not.toHaveBeenCalled();
+  });
+
   it("post-filters energyTypeCounts so single-fire cards drop out", async () => {
     findMany.mockResolvedValue([
       row({
@@ -157,6 +265,67 @@ describe("executeSearch", () => {
     expect(result.cards.map((c) => c.name)).toEqual(["Double Fire"]);
   });
 
+  it("matches energyType against either type of a dual-type card", async () => {
+    findMany.mockResolvedValue([
+      row({
+        id: 1,
+        name: "Mega Greninja ex",
+        energyType: "water",
+        secondaryEnergyType: "darkness",
+      }),
+    ]);
+
+    const result = await executeSearch(
+      { surface: "any", energyType: ["darkness"] },
+      { limit: 10 },
+    );
+
+    const where = findMany.mock.calls[0]?.[0]?.where;
+    expect(where.energyType).toBeUndefined();
+    expect(where.AND).toContainEqual({
+      OR: [
+        { energyType: { in: ["darkness"] } },
+        { secondaryEnergyType: { in: ["darkness"] } },
+      ],
+    });
+    expect(result.cards[0]).toMatchObject({
+      energyType: "water",
+      secondaryEnergyType: "darkness",
+    });
+  });
+
+  it("applies the either-type energy filter to FTS fallback rows", async () => {
+    findMany.mockResolvedValue([]);
+    const ftsRow = (id: number, name: string, secondary: string | null) => ({
+      id,
+      name,
+      imageUrl: `/img/${id}.webp`,
+      setCode: "C1",
+      number: id,
+      cardType: "POKEMON",
+      trainerType: null,
+      energyType: "water",
+      secondaryEnergyType: secondary,
+      stage: "STAGE2",
+      hp: 200,
+      rarity: "RR",
+      isEx: true,
+      isTradeable: true,
+    });
+    queryRaw.mockResolvedValue([
+      ftsRow(1, "Dual", "darkness"),
+      ftsRow(2, "Single", null),
+    ]);
+
+    const result = await executeSearch({
+      surface: "any",
+      energyType: ["darkness"],
+      textFallback: "greninja",
+    });
+    expect(result.usedFallback).toBe(true);
+    expect(result.cards.map((c) => c.name)).toEqual(["Dual"]);
+  });
+
   it("uses FTS fallback when the structured query is empty", async () => {
     findMany.mockResolvedValue([]);
     queryRaw.mockResolvedValue([
@@ -169,6 +338,7 @@ describe("executeSearch", () => {
         cardType: "POKEMON",
         trainerType: null,
         energyType: "fire",
+        secondaryEnergyType: null,
         stage: "BASIC",
         hp: 80,
         rarity: "C",
@@ -184,5 +354,83 @@ describe("executeSearch", () => {
     expect(result.usedFallback).toBe(true);
     expect(result.cards).toHaveLength(1);
     expect(result.cards[0]?.name).toBe("Fallbackmon");
+  });
+
+  it("requires every UI-picked tag on some attack or effect and skips FTS", async () => {
+    findMany.mockResolvedValue([
+      row({
+        id: 1,
+        name: "Gustmon",
+        effects: [{ tags: ["gust"], kind: "ABILITY" }],
+      }),
+    ]);
+
+    const result = await executeSearch(
+      { surface: "any" },
+      { tags: ["gust", "coin_flip"] },
+    );
+
+    const where = findMany.mock.calls[0]?.[0]?.where;
+    expect(where.AND).toEqual([
+      {
+        OR: [
+          { attacks: { some: { tags: { has: "gust" } } } },
+          { effects: { some: { tags: { has: "gust" } } } },
+        ],
+      },
+      {
+        OR: [
+          { attacks: { some: { tags: { has: "coin_flip" } } } },
+          { effects: { some: { tags: { has: "coin_flip" } } } },
+        ],
+      },
+    ]);
+    expect(result.cards[0]?.matchedTags).toEqual(["gust", "coin_flip"]);
+
+    findMany.mockResolvedValue([]);
+    const empty = await executeSearch({ surface: "any" }, { tags: ["gust"] });
+    expect(empty.cards).toEqual([]);
+    expect(queryRaw).not.toHaveBeenCalled();
+  });
+
+  it("matches any UI-picked tag in tagMode any, ranking cards with more first", async () => {
+    findMany.mockResolvedValue([
+      row({
+        id: 1,
+        name: "One",
+        effects: [{ tags: ["gust"], kind: "ABILITY" }],
+      }),
+      row({
+        id: 2,
+        name: "Both",
+        attacks: [
+          {
+            tags: ["snipe", "energy_zone_attach"],
+            damageBase: 30,
+            damageKind: "FIXED",
+            energyCost: 1,
+            energyTypes: ["fire"],
+          },
+        ],
+      }),
+    ]);
+
+    const result = await executeSearch(
+      { surface: "any" },
+      { tags: ["energy_zone_attach", "snipe"], tagMode: "any" },
+    );
+
+    const where = findMany.mock.calls[0]?.[0]?.where;
+    expect(where.AND).toEqual([
+      {
+        OR: [
+          { attacks: { some: { tags: { has: "energy_zone_attach" } } } },
+          { effects: { some: { tags: { has: "energy_zone_attach" } } } },
+          { attacks: { some: { tags: { has: "snipe" } } } },
+          { effects: { some: { tags: { has: "snipe" } } } },
+        ],
+      },
+    ]);
+    expect(result.cards.map((c) => c.name)).toEqual(["Both", "One"]);
   });
 });

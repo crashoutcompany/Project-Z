@@ -1,17 +1,28 @@
 import { Prisma } from "@/prisma/generated/client/client";
 import prisma from "@/prisma/db";
 import type { AttackFilter, EffectFilter, FilterJSON } from "./filter-schema";
+import { filterTags, type TagMode } from "./filter-tags";
 import { cardMatchesClauses, hasEnergyTypeCounts } from "./match";
+
+export type { TagMode };
 
 export type SearchOptions = {
   limit?: number;
   /** Restrict results to cards flagged tradeable (used by /trading/create). */
   tradeableOnly?: boolean;
+  /**
+   * Tags picked in the UI filter. With tagMode "all" (the default) a card
+   * matches when every tag appears on at least one of its attacks or effects
+   * (tags may sit on different ones); with "any", one tag is enough.
+   */
+  tags?: string[];
+  tagMode?: TagMode;
 };
 
-// Upper bound on rows scanned when a filter needs JS post-filtering. Well
-// above the number of cards that share any single energy type.
-const POST_FILTER_SCAN_CAP = 2000;
+// Upper bound on rows scanned when a filter needs JS post-filtering or
+// tag-relevance ranking. Well above the number of cards that share any single
+// energy type or tag.
+const FULL_SCAN_CAP = 2000;
 
 // Keyed by the rarity *codes* the importer stores (scripts/lib/rarity-map.ts),
 // not the raw ◊/☆ symbols from the source payload. Lower = more common.
@@ -92,12 +103,31 @@ function buildCardWhere(
   if (opts.tradeableOnly) where.isTradeable = true;
   if (filter.cardType) where.cardType = filter.cardType;
   if (filter.trainerType) where.trainerType = filter.trainerType;
-  if (filter.energyType?.length) where.energyType = { in: filter.energyType };
   if (filter.stage?.length) where.stage = { in: filter.stage };
   if (filter.isEx !== undefined) where.isEx = filter.isEx;
   if (filter.hpMin !== undefined) where.hp = { gte: filter.hpMin };
   if (filter.setCodes?.length) {
     where.set = { code: { in: filter.setCodes } };
+  }
+
+  const tagClause = (tag: string): Prisma.CardWhereInput[] => [
+    { attacks: { some: { tags: { has: tag } } } },
+    { effects: { some: { tags: { has: tag } } } },
+  ];
+  if (opts.tagMode === "any" && opts.tags?.length) {
+    and.push({ OR: opts.tags.flatMap(tagClause) });
+  } else {
+    for (const tag of opts.tags ?? []) and.push({ OR: tagClause(tag) });
+  }
+
+  if (filter.energyType?.length) {
+    // Dual-type cards match on either of their types.
+    and.push({
+      OR: [
+        { energyType: { in: filter.energyType } },
+        { secondaryEnergyType: { in: filter.energyType } },
+      ],
+    });
   }
 
   const attackClause: Prisma.CardWhereInput | null = filter.attack
@@ -166,6 +196,7 @@ export type SearchCardResult = {
   number: number;
   cardType: string;
   energyType: string | null;
+  secondaryEnergyType: string | null;
   hp: number | null;
   rarity: string;
   isEx: boolean;
@@ -179,24 +210,50 @@ export type SearchResult = {
   total: number;
 };
 
-function collectMatchedTags(
-  filter: FilterJSON,
-  attacks: { tags: string[] }[],
-  effects: { tags: string[] }[],
-): string[] {
-  const wanted = new Set<string>();
-  for (const t of filter.attack?.tags ?? []) wanted.add(t);
-  for (const t of filter.effect?.tags ?? []) wanted.add(t);
-  for (const branch of filter.anyOf ?? []) {
-    for (const t of branch.attack?.tags ?? []) wanted.add(t);
-    for (const t of branch.effect?.tags ?? []) wanted.add(t);
-  }
-  if (wanted.size === 0) return [];
+type Unit = { tags: string[]; damageBase?: number | null };
 
+// Qualifiers that say how often an effect works, not what else it does.
+const NEUTRAL_TAGS = new Set(["once_per_turn"]);
+
+/**
+ * How well a card's attacks and effects cover the wanted tags, best first:
+ *  - matched: distinct wanted tags found anywhere on the card;
+ *  - focus: most wanted tags carried by a single attack or effect;
+ *  - noise: fewest unrelated tags on such a best-matching attack or effect,
+ *    so "attaches Energy" beats "discards Energy, then attaches one";
+ *  - damage: highest damage among the attacks that carry a wanted tag. Damage
+ *    from an unrelated attack never lifts a card.
+ */
+export function tagRelevance(
+  wanted: ReadonlySet<string>,
+  attacks: Unit[],
+  effects: Unit[],
+) {
   const present = new Set<string>();
-  for (const a of attacks) for (const t of a.tags) present.add(t);
-  for (const e of effects) for (const t of e.tags) present.add(t);
-  return [...wanted].filter((t) => present.has(t));
+  let focus = 0;
+  let noise = Infinity;
+  let damage = 0;
+  for (const unit of [...attacks, ...effects]) {
+    const hits = unit.tags.filter((t) => wanted.has(t));
+    if (!hits.length) continue;
+    for (const t of hits) present.add(t);
+    const unitNoise = unit.tags.filter(
+      (t) => !wanted.has(t) && !NEUTRAL_TAGS.has(t),
+    ).length;
+    if (hits.length > focus) {
+      focus = hits.length;
+      noise = unitNoise;
+    } else if (hits.length === focus) {
+      noise = Math.min(noise, unitNoise);
+    }
+    damage = Math.max(damage, unit.damageBase ?? 0);
+  }
+  return {
+    matchedTags: [...wanted].filter((t) => present.has(t)),
+    focus,
+    noise: focus ? noise : 0,
+    damage,
+  };
 }
 
 async function queryCards(
@@ -209,9 +266,14 @@ async function queryCards(
   // prefiltered set in that case so exact matches beyond the first page are
   // not lost; the set is bounded by cards sharing one energy type.
   const needsPostFilter = hasEnergyTypeCounts(filter);
+  const wanted = new Set([...filterTags(filter), ...(opts.tags ?? [])]);
+  // Tag searches rank by relevance (below), so they scan every candidate.
+  // Taking a name-ordered prefix would rank only the cards whose names come
+  // first alphabetically.
+  const fullScan = needsPostFilter || wanted.size > 0;
   const rows = await prisma.card.findMany({
     where: buildCardWhere(filter, opts),
-    take: needsPostFilter ? POST_FILTER_SCAN_CAP : Math.min(limit * 3, 240),
+    take: fullScan ? FULL_SCAN_CAP : Math.min(limit * 3, 240),
     // Deterministic sample: without an orderBy Postgres may return a different
     // subset of the candidate set on each call, making rankings flap. `id` is
     // the unique tie-breaker (name+number can repeat across sets).
@@ -237,11 +299,10 @@ async function queryCards(
 
   return candidates
     .map((c) => {
-      const matchedTags = collectMatchedTags(filter, c.attacks, c.effects);
-      const maxDamage = c.attacks.reduce(
-        (max, a) => Math.max(max, a.damageBase ?? 0),
-        0,
-      );
+      const relevance = tagRelevance(wanted, c.attacks, c.effects);
+      const maxDamage = wanted.size
+        ? relevance.damage
+        : c.attacks.reduce((max, a) => Math.max(max, a.damageBase ?? 0), 0);
       return {
         id: c.id,
         name: c.name,
@@ -250,26 +311,31 @@ async function queryCards(
         number: c.number,
         cardType: c.cardType,
         energyType: c.energyType,
+        secondaryEnergyType: c.secondaryEnergyType,
         hp: c.hp,
         rarity: c.rarity,
         isEx: c.isEx,
         isTradeable: c.isTradeable,
-        matchedTags,
+        matchedTags: relevance.matchedTags,
         _rank: RARITY_RANK[c.rarity] ?? 99,
-        _matched: matchedTags.length,
+        _matched: relevance.matchedTags.length,
+        _focus: relevance.focus,
+        _noise: relevance.noise,
         _damage: maxDamage,
       };
     })
     .sort(
       (a, b) =>
         b._matched - a._matched ||
+        b._focus - a._focus ||
+        a._noise - b._noise ||
         b._damage - a._damage ||
         a._rank - b._rank ||
         a.name.localeCompare(b.name) ||
         a.number - b.number,
     )
     .slice(0, limit)
-    .map(({ _rank, _matched, _damage, ...rest }) => rest);
+    .map(({ _rank, _matched, _focus, _noise, _damage, ...rest }) => rest);
 }
 
 function matchesScalarFilters(
@@ -277,6 +343,7 @@ function matchesScalarFilters(
     cardType: string;
     trainerType: string | null;
     energyType: string | null;
+    secondaryEnergyType: string | null;
     stage: string | null;
     hp: number | null;
     isEx: boolean;
@@ -288,7 +355,9 @@ function matchesScalarFilters(
   if (filter.trainerType && row.trainerType !== filter.trainerType) return false;
   if (
     filter.energyType?.length &&
-    (!row.energyType || !filter.energyType.some((type) => type === row.energyType))
+    !filter.energyType.some(
+      (type) => type === row.energyType || type === row.secondaryEnergyType,
+    )
   ) {
     return false;
   }
@@ -328,6 +397,7 @@ async function ftsFallback(
       cardType: string;
       trainerType: string | null;
       energyType: string | null;
+      secondaryEnergyType: string | null;
       stage: string | null;
       hp: number | null;
       rarity: string;
@@ -343,6 +413,7 @@ async function ftsFallback(
            c."cardType"::text AS "cardType",
            c."trainerType"::text AS "trainerType",
            c."energyType" AS "energyType",
+           c."secondaryEnergyType" AS "secondaryEnergyType",
            c.stage::text AS stage,
            c.hp,
            c.rarity,
@@ -386,18 +457,16 @@ export async function executeSearch(
 
   let cards = await queryCards(filter, opts, limit);
 
+  // Tag searches (picked in the UI or parsed from the query) never fall back
+  // to full-text search: FTS cannot honour the tags and orders by name, so an
+  // empty tag result stays empty instead of listing loosely related cards.
+  if (opts.tags?.length || filterTags(filter).length) {
+    return { cards, usedFallback, total: cards.length };
+  }
+
   if (cards.length === 0 && filter.textFallback?.trim()) {
     cards = await ftsFallback(filter.textFallback.trim(), opts, limit, filter);
     if (cards.length) usedFallback = true;
-  } else if (cards.length === 0) {
-    const bits = [
-      ...(filter.attack?.tags ?? []),
-      ...(filter.effect?.tags ?? []),
-    ].map((t) => t.replaceAll("_", " "));
-    if (bits.length) {
-      cards = await ftsFallback(bits.join(" "), opts, limit, filter);
-      if (cards.length) usedFallback = true;
-    }
   }
 
   return { cards, usedFallback, total: cards.length };

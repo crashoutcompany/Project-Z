@@ -1,4 +1,5 @@
 import { Card, Set } from "@/prisma/generated/client/client";
+import type { TagMode } from "@/lib/search/filter-tags";
 
 export type CardWithSet = Card & { set: Set };
 
@@ -7,6 +8,8 @@ export type SelectionMode = "want" | "give";
 export type CardBrowserMode = "view" | "select" | "build";
 
 export type SearchMode = "name" | "effects";
+
+export type { TagMode };
 
 export type SelectedCards = {
   want: CardWithSet[];
@@ -66,6 +69,26 @@ export type SearchBoxProps = {
   mode: SearchMode;
   onModeChange: (mode: SearchMode) => void;
   placeholder?: string;
-  filterChips?: string[];
   showModes?: boolean;
+};
+
+export type TagFilterProps = {
+  selected: string[];
+  onChange: (tags: string[]) => void;
+  mode: TagMode;
+  onModeChange: (mode: TagMode) => void;
+  disabled?: boolean;
+};
+
+export type ActiveFiltersProps = {
+  /** Tags picked from the tag list. */
+  picked: string[];
+  /** Tags parsed from the typed query (not also picked). */
+  parsed: string[];
+  /** Other parsed constraints, e.g. "Pokémon" or "HP≥100". */
+  notes: string[];
+  onRemovePicked: (tag: string) => void;
+  onRemoveParsed: (tag: string) => void;
+  onClearAll: () => void;
+  disabled?: boolean;
 };

@@ -64,6 +64,7 @@ describe("POST /api/cards/by-refs", () => {
         number: 25,
         cardType: "POKEMON",
         energyType: "lightning",
+        secondaryEnergyType: null,
         hp: 60,
         rarity: "C",
         isEx: false,

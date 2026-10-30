@@ -46,9 +46,11 @@ export function readTestAuthSecret(secret: string | undefined): string | null {
 }
 
 /**
- * RDC-strict / blue gate: require EXPOSE_TESTING_API=1 and never enable on
- * Vercel production. Do not auto-enable from NODE_ENV=development or Vercel
- * preview alone.
+ * RDC-strict / blue gate: require EXPOSE_TESTING_API=1 and a configured
+ * secret. Allowed off Vercel (local / CI / Cloud Agent) and on Vercel preview
+ * deploys; never on Vercel production or any other Vercel environment. Do not
+ * auto-enable from NODE_ENV=development or Vercel preview alone: preview
+ * still needs EXPOSE_TESTING_API=1.
  */
 export function isTestAuthEnabled(
   env: TestAuthEnv = currentTestAuthEnv(),

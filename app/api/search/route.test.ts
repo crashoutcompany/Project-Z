@@ -102,4 +102,99 @@ describe("POST /api/search", () => {
     const res = await POST(request({ query: "fire" }));
     expect(res.status).toBe(500);
   });
+
+  it("runs a tag-only search without parsing a query", async () => {
+    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+
+    const res = await POST(request({ tags: ["gust", "gust", "snipe"] }));
+    expect(res.status).toBe(200);
+    expect(parseQueryToFilter).not.toHaveBeenCalled();
+    expect(validateQuery).not.toHaveBeenCalled();
+    expect(executeSearch).toHaveBeenCalledWith(
+      { surface: "any" },
+      { limit: 60, tradeableOnly: false, tags: ["gust", "snipe"], tagMode: "all" },
+    );
+    await expect(res.json()).resolves.toMatchObject({
+      query: "",
+      tags: ["gust", "snipe"],
+      source: "tags",
+    });
+  });
+
+  it("combines typed text with picked tags", async () => {
+    validateQuery.mockReturnValue({ ok: true, normalized: "fire" });
+    parseQueryToFilter.mockResolvedValue({
+      filter: { surface: "any", energyType: ["fire"] },
+      cached: false,
+      source: "heuristic",
+    });
+    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+
+    await POST(request({ query: "fire", tags: ["self_damage"] }));
+    expect(executeSearch).toHaveBeenCalledWith(
+      { surface: "any", energyType: ["fire"] },
+      {
+        limit: 60,
+        tradeableOnly: false,
+        tags: ["self_damage"],
+        tagMode: "all",
+      },
+    );
+  });
+
+  it("rejects malformed and unknown tags", async () => {
+    const notArray = await POST(request({ query: "fire", tags: "gust" }));
+    expect(notArray.status).toBe(400);
+
+    const unknown = await POST(request({ tags: ["prevent"] }));
+    expect(unknown.status).toBe(400);
+    await expect(unknown.json()).resolves.toMatchObject({
+      error: "Unknown tag: prevent",
+    });
+
+    const emptyTags = await POST(request({ tags: [] }));
+    expect(emptyTags.status).toBe(400);
+    expect(executeSearch).not.toHaveBeenCalled();
+  });
+
+  it("forwards tagMode any and rejects unknown modes", async () => {
+    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+
+    const res = await POST(request({ tags: ["gust", "snipe"], tagMode: "any" }));
+    expect(res.status).toBe(200);
+    expect(executeSearch).toHaveBeenCalledWith(
+      { surface: "any" },
+      { limit: 60, tradeableOnly: false, tags: ["gust", "snipe"], tagMode: "any" },
+    );
+
+    const bad = await POST(request({ tags: ["gust"], tagMode: "some" }));
+    expect(bad.status).toBe(400);
+  });
+
+  it("drops dismissed parsed tags before searching and echoes the filter", async () => {
+    validateQuery.mockReturnValue({ ok: true, normalized: "attach energy coin" });
+    parseQueryToFilter.mockResolvedValue({
+      filter: {
+        surface: "any",
+        attack: { tags: ["energy_attach", "coin_flip"] },
+        effect: { tags: ["energy_attach"] },
+      },
+      cached: false,
+      source: "heuristic",
+    });
+    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+
+    const res = await POST(
+      request({ query: "attach energy coin", excludeTags: ["energy_attach"] }),
+    );
+    const expected = { surface: "any", attack: { tags: ["coin_flip"] } };
+    expect(executeSearch).toHaveBeenCalledWith(expected, {
+      limit: 60,
+      tradeableOnly: false,
+    });
+    await expect(res.json()).resolves.toMatchObject({ filter: expected });
+
+    const unknown = await POST(request({ query: "x", excludeTags: ["nope"] }));
+    expect(unknown.status).toBe(400);
+  });
 });

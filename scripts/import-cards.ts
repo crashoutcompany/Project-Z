@@ -11,6 +11,7 @@ import {
 } from "./lib/image-url";
 import { normalizeCard } from "./lib/normalize";
 import { tagAttack, tagEffect } from "./lib/tagger";
+import { PINNED_COMMIT_SHA, SOURCE_URL } from "./lib/source-pin";
 
 function loadLocalEnv() {
   for (const file of [".env.local", ".env"] as const) {
@@ -22,8 +23,7 @@ function loadLocalEnv() {
   }
 }
 
-export const PINNED_COMMIT_SHA = "dc4a37d4fb7978265a27836b893d8f8b3aabee56";
-export const SOURCE_URL = `https://raw.githubusercontent.com/marcelpanse/tcg-pocket-collection-tracker/${PINNED_COMMIT_SHA}/frontend/assets/cards.json`;
+export { PINNED_COMMIT_SHA, SOURCE_URL };
 
 enum ImportEnvFlag {
   SKIP_BLOB_UPLOAD = "SKIP_BLOB_UPLOAD",
@@ -103,6 +103,7 @@ interface ImportStats {
   cardsCreated: number;
   cardsUpdated: number;
   cardsUnchanged: number;
+  cardsSkippedExisting: number;
   cardsOnlyInDb: number;
   perSetCounts: Record<string, { source: number; db: number }>;
   attacksCount: number;
@@ -112,10 +113,11 @@ interface ImportStats {
 }
 
 export async function runImport(
-  options: { dryRun?: boolean; skipUpload?: boolean; perSetLimit?: number } = {}
+  options: { dryRun?: boolean; full?: boolean; skipUpload?: boolean; perSetLimit?: number } = {}
 ) {
   loadLocalEnv();
-  const { dryRun = false } = options;
+  // By default only cards missing from the DB are written; `full` upserts every card.
+  const { dryRun = false, full = false } = options;
   const skipUpload =
     options.skipUpload ??
     (dryRun || process.env[ImportEnvFlag.SKIP_BLOB_UPLOAD] === SKIP_BLOB_UPLOAD_ENABLED);
@@ -124,6 +126,9 @@ export async function runImport(
     options.perSetLimit ?? (Number.isFinite(envLimit) && envLimit > 0 ? envLimit : undefined);
   console.log(`\n======================================================`);
   console.log(`🚀 Starting Card Import Pipeline ${dryRun ? "(DRY RUN)" : ""}`);
+  console.log(
+    full ? "Mode: full (upsert every card)" : "Mode: new cards only (use --full to upsert every card)"
+  );
   console.log(`Pinned commit: ${PINNED_COMMIT_SHA}`);
   console.log(`======================================================\n`);
 
@@ -141,6 +146,7 @@ export async function runImport(
     cardsCreated: 0,
     cardsUpdated: 0,
     cardsUnchanged: 0,
+    cardsSkippedExisting: 0,
     cardsOnlyInDb: 0,
     perSetCounts: {},
     attacksCount: 0,
@@ -185,6 +191,7 @@ export async function runImport(
       name: true,
       imageUrl: true,
       rarity: true,
+      secondaryEnergyType: true,
       hp: true,
       weakness: true,
       retreatCost: true,
@@ -207,7 +214,13 @@ export async function runImport(
 
   const sourceCardKeySet = new Set<string>();
 
-  const imageTargets = sourceCards.map((card) => parseCardId(card.card_id));
+  // Skipped (already-existing) cards keep their current image, so don't resolve them.
+  const imageTargets = sourceCards
+    .map((card) => parseCardId(card.card_id))
+    .filter(({ setCode, number }) => {
+      const setId = setCodeToDbId.get(setCode);
+      return full || setId === undefined || !existingCardMap.has(`${setId}-${number}`);
+    });
   console.log(
     skipUpload
       ? "Resolving image URLs (uploads skipped)..."
@@ -220,6 +233,12 @@ export async function runImport(
   // 3. Process cards
   console.log("Writing cards to the database...");
   let processed = 0;
+  const logProgress = () => {
+    processed += 1;
+    if (processed % 200 === 0 || processed === sourceCards.length) {
+      console.log(`  Wrote ${processed}/${sourceCards.length} cards`);
+    }
+  };
   for (const sourceCard of sourceCards) {
     const { setCode, number } = parseCardId(sourceCard.card_id);
     const setId = setCodeToDbId.get(setCode);
@@ -229,6 +248,14 @@ export async function runImport(
 
     const key = `${setId}-${number}`;
     sourceCardKeySet.add(key);
+
+    const existing = existingCardMap.get(key);
+    if (existing && !full) {
+      stats.cardsSkippedExisting++;
+      stats.perSetCounts[setCode].db++;
+      logProgress();
+      continue;
+    }
 
     const derivedImageUrl = images.urls.get(cardImageKey(setCode, number));
     if (!derivedImageUrl) {
@@ -257,7 +284,6 @@ export async function runImport(
       }
     }
 
-    const existing = existingCardMap.get(key);
     if (!existing) {
       stats.cardsCreated++;
     } else {
@@ -265,6 +291,7 @@ export async function runImport(
         existing.name === normalized.name &&
         existing.imageUrl === normalized.imageUrl &&
         existing.rarity === normalized.rarity &&
+        existing.secondaryEnergyType === normalized.secondaryEnergyType &&
         existing.hp === normalized.hp &&
         existing.weakness === normalized.weakness &&
         existing.retreatCost === normalized.retreatCost;
@@ -295,6 +322,7 @@ export async function runImport(
             isTradeable: normalized.isTradeable,
             pack: normalized.pack,
             energyType: normalized.energyType,
+            secondaryEnergyType: normalized.secondaryEnergyType,
             hp: normalized.hp,
             stage: normalized.stage,
             isEx: normalized.isEx,
@@ -313,6 +341,7 @@ export async function runImport(
             isTradeable: normalized.isTradeable,
             pack: normalized.pack,
             energyType: normalized.energyType,
+            secondaryEnergyType: normalized.secondaryEnergyType,
             hp: normalized.hp,
             stage: normalized.stage,
             isEx: normalized.isEx,
@@ -358,10 +387,7 @@ export async function runImport(
       });
     }
 
-    processed += 1;
-    if (processed % 200 === 0 || processed === sourceCards.length) {
-      console.log(`  Wrote ${processed}/${sourceCards.length} cards`);
-    }
+    logProgress();
   }
 
   // Count cards only in DB
@@ -379,6 +405,7 @@ export async function runImport(
   console.log(`Cards Created:          ${stats.cardsCreated}`);
   console.log(`Cards Updated:          ${stats.cardsUpdated}`);
   console.log(`Cards Unchanged:        ${stats.cardsUnchanged}`);
+  console.log(`Cards Skipped (exist):  ${stats.cardsSkippedExisting}`);
   console.log(`Cards Only in DB:       ${stats.cardsOnlyInDb}`);
   console.log(`Total Attacks Processed:${stats.attacksCount}`);
   console.log(`Attacks with 0 tags:    ${stats.attacksWithZeroTags}`);
@@ -412,7 +439,8 @@ export async function runImport(
 // CLI entry point
 if (require.main === module || process.argv[1]?.endsWith("import-cards.ts")) {
   const isDryRun = process.argv.includes("--dry-run");
-  runImport({ dryRun: isDryRun })
+  const isFull = process.argv.includes("--full");
+  runImport({ dryRun: isDryRun, full: isFull })
     .then(async () => {
       await prisma.$disconnect();
       process.exit(0);

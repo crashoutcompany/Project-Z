@@ -1,12 +1,27 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
+import { authClient } from "@/lib/auth/client";
 import type { CardDetail } from "@/lib/card-detail";
 import { formatCardRef } from "@/lib/deck-url";
 import { buildDexCardPath, replaceDexSearchParams } from "@/lib/dex-url";
 import { fetchCardDetail } from "@/server/actions";
 import { previewFromCard } from "./card-mappers";
 import type { CardWithSet } from "./types";
+
+/**
+ * The auth proxy answers a signed-out server action POST with a redirect to
+ * the sign-in page, so the action rejects instead of returning `signed_out`.
+ * Ask the auth API (not behind the proxy) whether that is what happened.
+ */
+async function hasSession(): Promise<boolean> {
+  try {
+    const { data, error } = await authClient.getSession();
+    return Boolean(data) || Boolean(error);
+  } catch {
+    return true;
+  }
+}
 
 type UseCardDetailOptions = {
   initialDetail: CardDetail | null;
@@ -25,6 +40,7 @@ export function useCardDetail({ initialDetail, syncDexUrl }: UseCardDetailOption
   const [detail, setDetail] = useState<CardDetail | null>(initialDetail);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [signedOut, setSignedOut] = useState(false);
 
   const openCard = useCallback(
     (card: CardWithSet) => {
@@ -32,6 +48,7 @@ export function useCardDetail({ initialDetail, syncDexUrl }: UseCardDetailOption
       setOpen(true);
       setDetail(previewFromCard(card));
       setError(null);
+      setSignedOut(false);
       setLoading(true);
       if (syncDexUrl) {
         replaceDexSearchParams({
@@ -40,14 +57,18 @@ export function useCardDetail({ initialDetail, syncDexUrl }: UseCardDetailOption
         });
       }
       void fetchCardDetail({ id: card.id })
-        .then((next) => {
+        .then((result) => {
           if (seq !== detailSeq.current) return;
-          setDetail(next ?? previewFromCard(card));
-          if (!next) setError("Card not found");
+          // Signed-out and missing cards keep the preview's art and facts.
+          if (result.status === "ok") setDetail(result.detail);
+          else if (result.status === "signed_out") setSignedOut(true);
+          else setError("Card not found");
         })
-        .catch(() => {
+        .catch(async () => {
+          const signedIn = await hasSession();
           if (seq !== detailSeq.current) return;
-          setError("Couldn't load this card");
+          if (signedIn) setError("Couldn't load this card");
+          else setSignedOut(true);
         })
         .finally(() => {
           if (seq !== detailSeq.current) return;
@@ -68,5 +89,14 @@ export function useCardDetail({ initialDetail, syncDexUrl }: UseCardDetailOption
   const shareUrl =
     syncDexUrl && detail ? buildDexCardPath(detail.setCode, detail.ref) : null;
 
-  return { open, detail, loading, error, shareUrl, openCard, onOpenChange };
+  return {
+    open,
+    detail,
+    loading,
+    error,
+    signedOut,
+    shareUrl,
+    openCard,
+    onOpenChange,
+  };
 }

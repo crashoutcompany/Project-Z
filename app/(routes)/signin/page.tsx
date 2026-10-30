@@ -1,7 +1,12 @@
 import { Suspense } from "react";
 
-import { SignInButtons } from "@/components/auth/sign-in-buttons";
-import { enabledSocialProviders, getSession } from "@/lib/auth";
+import {
+  SignInButtons,
+  SignInButtonsFromQuery,
+} from "@/components/auth/sign-in-buttons";
+import { emailOtpEnabled, enabledSocialProviders, getSession } from "@/lib/auth";
+import { SIGN_IN_PATH } from "@/lib/auth/config";
+import { AUTH_RETURN_QUERY, safeAuthReturnPath } from "@/lib/auth/return-path";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import Link from "next/link";
@@ -13,10 +18,21 @@ export const metadata: Metadata = {
     "Sign in to trade cards and manage your Pocket Trading collection.",
 };
 
-async function RedirectIfAuthenticated() {
-  const session = await getSession(await headers());
+async function RedirectIfAuthenticated({
+  searchParams,
+}: {
+  searchParams: Promise<{ next?: string }>;
+}) {
+  const [session, params] = await Promise.all([
+    headers().then((h) => getSession(h)),
+    searchParams,
+  ]);
 
-  if (session) redirect("/");
+  if (session) {
+    redirect(
+      safeAuthReturnPath(params[AUTH_RETURN_QUERY], SIGN_IN_PATH) ?? "/",
+    );
+  }
   return null;
 }
 
@@ -24,11 +40,15 @@ async function RedirectIfAuthenticated() {
  * Sign-in chrome is static so the route navigates instantly. Session lookup
  * (and the authenticated redirect) streams in behind Suspense.
  */
-export default function Page() {
+export default function Page({
+  searchParams,
+}: {
+  searchParams: Promise<{ next?: string }>;
+}) {
   return (
     <>
       <Suspense fallback={null}>
-        <RedirectIfAuthenticated />
+        <RedirectIfAuthenticated searchParams={searchParams} />
       </Suspense>
       <SignInView />
     </>
@@ -141,7 +161,19 @@ function SignInView() {
 
             <div className="from-border via-border my-8 h-px bg-gradient-to-r to-transparent" />
 
-            <SignInButtons providers={enabledSocialProviders} />
+            <Suspense
+              fallback={
+                <SignInButtons
+                  providers={enabledSocialProviders}
+                  emailOtpEnabled={emailOtpEnabled}
+                />
+              }
+            >
+              <SignInButtonsFromQuery
+                providers={enabledSocialProviders}
+                emailOtpEnabled={emailOtpEnabled}
+              />
+            </Suspense>
           </div>
 
           <p className="text-muted-foreground text-center text-xs leading-5 sm:text-left">

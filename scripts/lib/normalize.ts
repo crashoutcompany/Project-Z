@@ -29,6 +29,7 @@ export interface NormalizedCard {
   isTradeable: boolean;
   pack: string | null;
   energyType: string | null;
+  secondaryEnergyType: string | null;
   hp: number | null;
   stage: Stage | null;
   isEx: boolean;
@@ -142,6 +143,10 @@ export function normalizeCard(
   const hp = typeof card.hp === "number" ? card.hp : null;
   const retreatCost = typeof card.retreat === "number" ? card.retreat : null;
   const energyType = isPokemon && card.energy ? card.energy.toLowerCase().trim() : null;
+  const secondaryEnergyType =
+    isPokemon && energyType && card.secondary_energy
+      ? card.secondary_energy.toLowerCase().trim() || null
+      : null;
 
   const isEx = card.ex === true || card.name.toLowerCase().endsWith(" ex");
   const isBaby = card.baby === true;
@@ -185,6 +190,7 @@ export function normalizeCard(
     isTradeable: normalizedRarity.isTradeable,
     pack,
     energyType,
+    secondaryEnergyType,
     hp,
     stage,
     isEx,
