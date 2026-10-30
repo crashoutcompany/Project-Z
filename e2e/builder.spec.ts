@@ -2,6 +2,7 @@ import { expect, test, type Page } from "@playwright/test";
 
 import { TESTER_AUTH_STATE } from "./auth-state";
 import { catalogCardNames, catalogCards } from "./catalog";
+import { TAG_INFO } from "../lib/search/tags";
 
 test.use({ storageState: TESTER_AUTH_STATE });
 
@@ -98,5 +99,8 @@ test("effects search shows the parsed filter", async ({ page }) => {
   await expect(
     page.getByText("Searching effects for “coin flip”"),
   ).toBeVisible();
-  await expect(page.getByText("coin_flip", { exact: true })).toBeVisible();
+  // Filter chips show the readable tag label, not the raw tag name.
+  await expect(
+    page.getByText(TAG_INFO.coin_flip.label, { exact: true }),
+  ).toBeVisible();
 });
