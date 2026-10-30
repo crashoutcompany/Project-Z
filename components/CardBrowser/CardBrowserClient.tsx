@@ -7,16 +7,19 @@ import { CardGrid } from "./CardGrid";
 import { SearchBox, type SearchMode } from "./SearchBox";
 import { SetTabs } from "./SetTabs";
 import { TagFilter } from "./TagFilter";
+import { ActiveFilters } from "./ActiveFilters";
+import { NoMatches } from "./NoMatches";
 import {
   CardBrowserMode,
   CardWithSet,
   SelectedCards,
   SelectionMode,
+  TagMode,
 } from "./types";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { FilterJSON, SearchCardResult } from "@/lib/search";
-import { tagLabel } from "@/lib/search/tags";
+import { filterTags } from "@/lib/search/filter-tags";
 
 type CardBrowserClientProps = {
   sets: Set[];
@@ -36,7 +39,8 @@ type CardBrowserClientProps = {
   interactive?: boolean;
 };
 
-function filterToChips(filter: FilterJSON): string[] {
+/** Parsed constraints other than tags, shown read-only beside the tag pills. */
+function filterToNotes(filter: FilterJSON): string[] {
   const chips: string[] = [];
   if (filter.cardType) chips.push(filter.cardType);
   if (filter.trainerType) chips.push(filter.trainerType);
@@ -51,10 +55,6 @@ function filterToChips(filter: FilterJSON): string[] {
     chips.push(`${filter.attack.damageMin}+ dmg`);
   }
   if (filter.attack?.damageKind) chips.push(filter.attack.damageKind);
-  const tags = [...(filter.attack?.tags ?? []), ...(filter.effect?.tags ?? [])];
-  for (const [i, tag] of tags.entries()) {
-    if (tags.indexOf(tag) === i) chips.push(tagLabel(tag));
-  }
   if (filter.textFallback) chips.push(`text:${filter.textFallback}`);
   return chips;
 }
@@ -120,7 +120,11 @@ export function CardBrowserClient({
   const [searchQuery, setSearchQuery] = useState("");
   const [searchMode, setSearchMode] = useState<SearchMode>(defaultSearchMode);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [filterChips, setFilterChips] = useState<string[]>([]);
+  const [tagMode, setTagMode] = useState<TagMode>("all");
+  // Tags parsed from the typed query, minus any the user dismissed.
+  const [parsedTags, setParsedTags] = useState<string[]>([]);
+  const [excludedTags, setExcludedTags] = useState<string[]>([]);
+  const [filterNotes, setFilterNotes] = useState<string[]>([]);
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
   const [cursor, setCursor] = useState<number | null>(initialCursor);
   const [resultsEpoch, setResultsEpoch] = useState(0);
@@ -150,6 +154,11 @@ export function CardBrowserClient({
     [],
   );
 
+  const clearParsed = useCallback(() => {
+    setParsedTags([]);
+    setFilterNotes([]);
+  }, []);
+
   const isSearching =
     searchQuery.length > 0 ||
     (searchMode === "effects" && selectedTags.length > 0);
@@ -164,11 +173,11 @@ export function CardBrowserClient({
         });
         if (seq !== requestSeq.current) return;
         replaceResults(result.cards as CardWithSet[], result.nextCursor);
-        setFilterChips([]);
+        clearParsed();
         setEffectsError(null);
       });
     },
-    [tradeableOnly, replaceResults],
+    [tradeableOnly, replaceResults, clearParsed],
   );
 
   const handleSetChange = useCallback(
@@ -198,15 +207,20 @@ export function CardBrowserClient({
           if (seq !== requestSeq.current) return;
           replaceResults(result.cards as CardWithSet[], result.nextCursor);
         }
-        setFilterChips([]);
+        clearParsed();
         setEffectsError(null);
       });
     },
-    [activeSetId, tradeableOnly, replaceResults],
+    [activeSetId, tradeableOnly, replaceResults, clearParsed],
   );
 
   const runEffectsSearch = useCallback(
-    (query: string, tags: string[]) => {
+    (
+      query: string,
+      tags: string[],
+      matchMode: TagMode,
+      exclude: string[] = [],
+    ) => {
       const seq = ++requestSeq.current;
       startTransition(async () => {
         if (!query && tags.length === 0) {
@@ -216,7 +230,7 @@ export function CardBrowserClient({
           });
           if (seq !== requestSeq.current) return;
           replaceResults(result.cards as CardWithSet[], result.nextCursor);
-          setFilterChips([]);
+          clearParsed();
           setEffectsError(null);
           return;
         }
@@ -229,7 +243,8 @@ export function CardBrowserClient({
               query,
               limit: 60,
               tradeableOnly,
-              ...(tags.length ? { tags } : {}),
+              ...(tags.length ? { tags, tagMode: matchMode } : {}),
+              ...(query && exclude.length ? { excludeTags: exclude } : {}),
             }),
           });
           const data = (await res.json()) as {
@@ -242,11 +257,16 @@ export function CardBrowserClient({
           if (!res.ok) {
             setEffectsError(data.error ?? "Search failed");
             replaceResults([], null);
-            setFilterChips([]);
+            clearParsed();
             return;
           }
           setEffectsError(null);
-          setFilterChips(data.filter ? filterToChips(data.filter) : []);
+          setParsedTags(
+            data.filter
+              ? filterTags(data.filter).filter((t) => !tags.includes(t))
+              : [],
+          );
+          setFilterNotes(data.filter ? filterToNotes(data.filter) : []);
           replaceResults(
             (data.cards ?? []).map((c) => searchResultToCardWithSet(c, sets)),
             null,
@@ -255,43 +275,88 @@ export function CardBrowserClient({
           if (seq !== requestSeq.current) return;
           setEffectsError("Search request failed");
           replaceResults([], null);
-          setFilterChips([]);
+          clearParsed();
         }
       });
     },
-    [activeSetId, tradeableOnly, sets, replaceResults],
+    [activeSetId, tradeableOnly, sets, replaceResults, clearParsed],
   );
 
   const handleSearchChange = useCallback(
     (query: string) => {
       setSearchQuery(query);
+      // A new query brings back every tag it parses to.
+      setExcludedTags([]);
       if (searchMode === "name") {
         runNameSearch(query);
       } else {
-        runEffectsSearch(query, selectedTags);
+        runEffectsSearch(query, selectedTags, tagMode);
       }
     },
-    [searchMode, selectedTags, runNameSearch, runEffectsSearch],
+    [searchMode, selectedTags, tagMode, runNameSearch, runEffectsSearch],
   );
 
   const handleTagsChange = useCallback(
     (tags: string[]) => {
       setSelectedTags(tags);
-      runEffectsSearch(searchQuery, tags);
+      runEffectsSearch(searchQuery, tags, tagMode, excludedTags);
     },
-    [searchQuery, runEffectsSearch],
+    [searchQuery, tagMode, excludedTags, runEffectsSearch],
   );
+
+  const handleTagModeChange = useCallback(
+    (next: TagMode) => {
+      setTagMode(next);
+      runEffectsSearch(searchQuery, selectedTags, next, excludedTags);
+    },
+    [searchQuery, selectedTags, excludedTags, runEffectsSearch],
+  );
+
+  const handleRemoveParsedTag = useCallback(
+    (tag: string) => {
+      // Dismissing the query's last constraint leaves nothing to search for,
+      // so drop the query instead of listing every card.
+      if (parsedTags.length === 1 && filterNotes.length === 0) {
+        setSearchQuery("");
+        setExcludedTags([]);
+        runEffectsSearch("", selectedTags, tagMode);
+        return;
+      }
+      const exclude = [...excludedTags, tag];
+      setExcludedTags(exclude);
+      runEffectsSearch(searchQuery, selectedTags, tagMode, exclude);
+    },
+    [
+      parsedTags,
+      filterNotes,
+      excludedTags,
+      searchQuery,
+      selectedTags,
+      tagMode,
+      runEffectsSearch,
+    ],
+  );
+
+  const handleClearFilters = useCallback(() => {
+    setSearchQuery("");
+    setSelectedTags([]);
+    setExcludedTags([]);
+    clearParsed();
+    setEffectsError(null);
+    loadSet(activeSetId);
+  }, [activeSetId, loadSet, clearParsed]);
 
   const handleModeChange = useCallback(
     (next: SearchMode) => {
       setSearchMode(next);
       setSearchQuery("");
       setSelectedTags([]);
-      setFilterChips([]);
+      setExcludedTags([]);
+      clearParsed();
       setEffectsError(null);
       loadSet(activeSetId);
     },
-    [activeSetId, loadSet],
+    [activeSetId, loadSet, clearParsed],
   );
 
   const handleCardClick = useCallback(
@@ -334,15 +399,28 @@ export function CardBrowserClient({
         onChange={handleSearchChange}
         mode={searchMode}
         onModeChange={handleModeChange}
-        filterChips={filterChips}
         showModes={showSearchModes}
       />
 
       {searchMode === "effects" ? (
-        <TagFilter
-          selected={selectedTags}
-          onChange={handleTagsChange}
-        />
+        <div className="space-y-3">
+          <TagFilter
+            selected={selectedTags}
+            onChange={handleTagsChange}
+            mode={tagMode}
+            onModeChange={handleTagModeChange}
+          />
+          <ActiveFilters
+            picked={selectedTags}
+            parsed={parsedTags}
+            notes={filterNotes}
+            onRemovePicked={(tag) =>
+              handleTagsChange(selectedTags.filter((t) => t !== tag))
+            }
+            onRemoveParsed={handleRemoveParsedTag}
+            onClearAll={handleClearFilters}
+          />
+        </div>
       ) : null}
 
       {mode === "select" ? (
@@ -389,12 +467,17 @@ export function CardBrowserClient({
       ) : null}
 
       {isSearching ? (
-        <p className="text-muted-foreground text-sm">
+        <p className="text-muted-foreground text-sm" aria-live="polite">
           {searchMode === "name"
             ? `Searching names for “${searchQuery}”`
             : searchQuery
               ? `Searching effects for “${searchQuery}”`
-              : `Filtering by ${selectedTags.length === 1 ? "tag" : "tags"}`}
+              : selectedTags.length === 1
+                ? "Filtering by 1 tag"
+                : `Filtering by ${selectedTags.length} tags · matching ${tagMode === "all" ? "all of them" : "any of them"}`}
+          {searchMode === "effects" && !isPending
+            ? ` · ${cards.length === 1 ? "1 card" : `${cards.length} cards`}`
+            : null}
         </p>
       ) : null}
 
@@ -402,8 +485,21 @@ export function CardBrowserClient({
         <p className="text-destructive text-sm">{effectsError}</p>
       ) : null}
 
+      {searchMode === "effects" &&
+      isSearching &&
+      !isPending &&
+      !effectsError &&
+      cards.length === 0 ? (
+        <NoMatches
+          tagCount={selectedTags.length}
+          tagMode={tagMode}
+          hasQuery={searchQuery.length > 0}
+          onMatchAny={() => handleTagModeChange("any")}
+          onClearFilters={handleClearFilters}
+        />
+      ) : (
       <CardGrid
-        key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${resultsEpoch}`}
+        key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${tagMode}-${resultsEpoch}`}
         initialCards={cards}
         initialCursor={isSearching && searchMode === "effects" ? null : cursor}
         setId={isSearching ? undefined : activeSetId}
@@ -416,6 +512,7 @@ export function CardBrowserClient({
         cardCounts={cardCounts}
         onCardClick={handleCardClick}
       />
+      )}
     </div>
   );
 }
