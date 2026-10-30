@@ -249,4 +249,41 @@ describe("executeSearch", () => {
     expect(result.cards).toHaveLength(1);
     expect(result.cards[0]?.name).toBe("Fallbackmon");
   });
+
+  it("requires every UI-picked tag on some attack or effect and skips FTS", async () => {
+    findMany.mockResolvedValue([
+      row({
+        id: 1,
+        name: "Gustmon",
+        effects: [{ tags: ["gust"], kind: "ABILITY" }],
+      }),
+    ]);
+
+    const result = await executeSearch(
+      { surface: "any" },
+      { tags: ["gust", "coin_flip"] },
+    );
+
+    const where = findMany.mock.calls[0]?.[0]?.where;
+    expect(where.AND).toEqual([
+      {
+        OR: [
+          { attacks: { some: { tags: { has: "gust" } } } },
+          { effects: { some: { tags: { has: "gust" } } } },
+        ],
+      },
+      {
+        OR: [
+          { attacks: { some: { tags: { has: "coin_flip" } } } },
+          { effects: { some: { tags: { has: "coin_flip" } } } },
+        ],
+      },
+    ]);
+    expect(result.cards[0]?.matchedTags).toEqual(["gust", "coin_flip"]);
+
+    findMany.mockResolvedValue([]);
+    const empty = await executeSearch({ surface: "any" }, { tags: ["gust"] });
+    expect(empty.cards).toEqual([]);
+    expect(queryRaw).not.toHaveBeenCalled();
+  });
 });

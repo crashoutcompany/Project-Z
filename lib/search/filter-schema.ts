@@ -1,5 +1,12 @@
 import { z } from "zod";
-import { ALL_TAGS, ENERGY_TYPES } from "./tags";
+import {
+  ALL_TAGS,
+  ATTACK_TAGS,
+  EFFECT_TAGS,
+  ENERGY_TYPES,
+  TAG_INFO,
+  type Tag,
+} from "./tags";
 
 const TagSchema = z.enum(ALL_TAGS);
 const EnergyTypeSchema = z.enum(ENERGY_TYPES);
@@ -47,6 +54,20 @@ export type AttackFilter = z.infer<typeof AttackFilterSchema>;
 export type EffectFilter = z.infer<typeof EffectFilterSchema>;
 export type FilterJSON = z.infer<typeof FilterJSONSchema>;
 
+function tagGlossary(): string {
+  const attack = new Set<Tag>(ATTACK_TAGS);
+  const effect = new Set<Tag>(EFFECT_TAGS);
+  return ALL_TAGS.map((tag) => {
+    const scope =
+      attack.has(tag) && effect.has(tag)
+        ? "attack, effect"
+        : attack.has(tag)
+          ? "attack only"
+          : "effect only";
+    return `- ${tag}: ${TAG_INFO[tag].label} (${scope})`;
+  }).join("\n");
+}
+
 export const FILTER_JSON_SYSTEM_PROMPT = `You convert Pokémon TCG Pocket natural-language card queries into FilterJSON.
 
 Return ONLY JSON matching this TypeScript type (no markdown):
@@ -78,7 +99,8 @@ Return ONLY JSON matching this TypeScript type (no markdown):
 
 Allowed energyType values: ${ENERGY_TYPES.join(", ")}
 energyType matches a Pokémon's primary or secondary type (dual-type cards)
-Allowed tags: ${ALL_TAGS.join(", ")}
+Allowed tags (name: meaning (where it can appear)):
+${tagGlossary()}
 
 Rules:
 - Prefer structured filters over textFallback.
@@ -87,4 +109,9 @@ Rules:
 - "1 energy attack that does 50+" → attack.energyCost=1, attack.damageMin=50
 - "coin flip" → attack.tags=["coin_flip"]
 - "supporter that draws" → cardType=TRAINER, trainerType=SUPPORTER, effect.tags=["draw"]
+- "gust" / "pull up their bench" → surface="any", attack.tags=["gust"], effect.tags=["gust"] (matches either)
+- "energy acceleration" → energy_attach; "from the energy zone" → energy_zone_attach
+- "discards its own energy" → self_energy_discard; "removes opponent's energy" → energy_removal
+- "snipe the bench" → attack.tags=["snipe"]; "spread damage" → attack.tags=["multi_target"]
+- Only put an "attack only" tag under attack and an "effect only" tag under effect
 - Ignore pack/set unless the user names a known set code`;
