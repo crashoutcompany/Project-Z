@@ -72,7 +72,12 @@ export function sheetHeading(
       : { title: "Card", description: "Card details" };
   }
   return {
-    title: `${detail.name}${detail.isEx ? " ex" : ""}`,
+    // Imported names already end in "ex" ("Mega Venusaur ex"); only add it
+    // when a name lacks it.
+    title:
+      detail.isEx && !/\bex$/i.test(detail.name)
+        ? `${detail.name} ex`
+        : detail.name,
     description: `${detail.setName} · ${detail.ref}`,
   };
 }

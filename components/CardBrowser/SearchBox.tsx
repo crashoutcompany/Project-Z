@@ -131,7 +131,11 @@ export function SearchBox({
             placeholder={resolvedPlaceholder}
             value={localValue}
             onChange={handleChange}
-            className="h-10 border-0 bg-transparent pr-9 pl-8 shadow-none focus-visible:ring-0 dark:bg-transparent"
+            className={cn(
+              "h-10 border-0 bg-transparent pl-8 shadow-none focus-visible:ring-0 dark:bg-transparent",
+              // Room for the clear button only while there is text to clear.
+              localValue ? "pr-9" : "pr-2",
+            )}
             autoCorrect="off"
             autoComplete="off"
           />
