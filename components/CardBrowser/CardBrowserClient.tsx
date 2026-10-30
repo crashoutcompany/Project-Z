@@ -6,6 +6,7 @@ import { fetchCards } from "@/server/actions";
 import { CardGrid } from "./CardGrid";
 import { SearchBox, type SearchMode } from "./SearchBox";
 import { SetTabs } from "./SetTabs";
+import { TagFilter } from "./TagFilter";
 import {
   CardBrowserMode,
   CardWithSet,
@@ -15,6 +16,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { FilterJSON, SearchCardResult } from "@/lib/search";
+import { tagLabel } from "@/lib/search/tags";
 
 type CardBrowserClientProps = {
   sets: Set[];
@@ -49,8 +51,10 @@ function filterToChips(filter: FilterJSON): string[] {
     chips.push(`${filter.attack.damageMin}+ dmg`);
   }
   if (filter.attack?.damageKind) chips.push(filter.attack.damageKind);
-  if (filter.attack?.tags?.length) chips.push(...filter.attack.tags);
-  if (filter.effect?.tags?.length) chips.push(...filter.effect.tags);
+  const tags = [...(filter.attack?.tags ?? []), ...(filter.effect?.tags ?? [])];
+  for (const [i, tag] of tags.entries()) {
+    if (tags.indexOf(tag) === i) chips.push(tagLabel(tag));
+  }
   if (filter.textFallback) chips.push(`text:${filter.textFallback}`);
   return chips;
 }
@@ -115,6 +119,7 @@ export function CardBrowserClient({
   const [activeSetId, setActiveSetId] = useState(initialSetId);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchMode, setSearchMode] = useState<SearchMode>(defaultSearchMode);
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [filterChips, setFilterChips] = useState<string[]>([]);
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
   const [cursor, setCursor] = useState<number | null>(initialCursor);
@@ -145,7 +150,9 @@ export function CardBrowserClient({
     [],
   );
 
-  const isSearching = searchQuery.length > 0;
+  const isSearching =
+    searchQuery.length > 0 ||
+    (searchMode === "effects" && selectedTags.length > 0);
 
   const loadSet = useCallback(
     (setId: number) => {
@@ -199,10 +206,10 @@ export function CardBrowserClient({
   );
 
   const runEffectsSearch = useCallback(
-    (query: string) => {
+    (query: string, tags: string[]) => {
       const seq = ++requestSeq.current;
       startTransition(async () => {
-        if (!query) {
+        if (!query && tags.length === 0) {
           const result = await fetchCards({
             setId: activeSetId,
             tradeableOnly,
@@ -218,7 +225,12 @@ export function CardBrowserClient({
           const res = await fetch("/api/search", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ query, limit: 60, tradeableOnly }),
+            body: JSON.stringify({
+              query,
+              limit: 60,
+              tradeableOnly,
+              ...(tags.length ? { tags } : {}),
+            }),
           });
           const data = (await res.json()) as {
             error?: string;
@@ -256,16 +268,25 @@ export function CardBrowserClient({
       if (searchMode === "name") {
         runNameSearch(query);
       } else {
-        runEffectsSearch(query);
+        runEffectsSearch(query, selectedTags);
       }
     },
-    [searchMode, runNameSearch, runEffectsSearch],
+    [searchMode, selectedTags, runNameSearch, runEffectsSearch],
+  );
+
+  const handleTagsChange = useCallback(
+    (tags: string[]) => {
+      setSelectedTags(tags);
+      runEffectsSearch(searchQuery, tags);
+    },
+    [searchQuery, runEffectsSearch],
   );
 
   const handleModeChange = useCallback(
     (next: SearchMode) => {
       setSearchMode(next);
       setSearchQuery("");
+      setSelectedTags([]);
       setFilterChips([]);
       setEffectsError(null);
       loadSet(activeSetId);
@@ -317,6 +338,13 @@ export function CardBrowserClient({
         showModes={showSearchModes}
       />
 
+      {searchMode === "effects" ? (
+        <TagFilter
+          selected={selectedTags}
+          onChange={handleTagsChange}
+        />
+      ) : null}
+
       {mode === "select" ? (
         <div className="flex items-center gap-2">
           <span className="text-muted-foreground text-sm">Adding to</span>
@@ -364,7 +392,9 @@ export function CardBrowserClient({
         <p className="text-muted-foreground text-sm">
           {searchMode === "name"
             ? `Searching names for “${searchQuery}”`
-            : `Searching effects for “${searchQuery}”`}
+            : searchQuery
+              ? `Searching effects for “${searchQuery}”`
+              : `Filtering by ${selectedTags.length === 1 ? "tag" : "tags"}`}
         </p>
       ) : null}
 
@@ -373,7 +403,7 @@ export function CardBrowserClient({
       ) : null}
 
       <CardGrid
-        key={`${activeSetId}-${searchQuery}-${searchMode}-${resultsEpoch}`}
+        key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${resultsEpoch}`}
         initialCards={cards}
         initialCursor={isSearching && searchMode === "effects" ? null : cursor}
         setId={isSearching ? undefined : activeSetId}

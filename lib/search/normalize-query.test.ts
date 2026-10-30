@@ -21,6 +21,16 @@ describe("hashQuery", () => {
     expect(hashQuery("fire pokemon")).not.toBe(hashQuery("water pokemon"));
     expect(hashQuery("fire pokemon")).toMatch(/^[a-f0-9]{64}$/);
   });
+
+  it("is keyed to the tag vocabulary version", async () => {
+    const { createHash } = await import("node:crypto");
+    const { TAG_VOCAB_VERSION } = await import("./tags");
+    const unversioned = createHash("sha256").update("gust").digest("hex");
+    expect(hashQuery("gust")).not.toBe(unversioned);
+    expect(hashQuery("gust")).toBe(
+      createHash("sha256").update(`tags-v${TAG_VOCAB_VERSION}:gust`).digest("hex"),
+    );
+  });
 });
 
 describe("validateQuery", () => {

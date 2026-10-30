@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { TAG_VOCAB_VERSION } from "./tags";
 
 export function normalizeQuery(raw: string): string {
   return raw
@@ -10,8 +11,14 @@ export function normalizeQuery(raw: string): string {
     .trim();
 }
 
+/**
+ * Cache key for a parsed query. The tag vocabulary version is folded in so a
+ * vocabulary change does not keep serving parses made with the old tags.
+ */
 export function hashQuery(normalized: string): string {
-  return createHash("sha256").update(normalized).digest("hex");
+  return createHash("sha256")
+    .update(`tags-v${TAG_VOCAB_VERSION}:${normalized}`)
+    .digest("hex");
 }
 
 export function validateQuery(

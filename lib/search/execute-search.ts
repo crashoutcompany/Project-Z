@@ -7,6 +7,11 @@ export type SearchOptions = {
   limit?: number;
   /** Restrict results to cards flagged tradeable (used by /trading/create). */
   tradeableOnly?: boolean;
+  /**
+   * Tags picked in the UI filter. A card matches when every tag appears on at
+   * least one of its attacks or effects (tags may sit on different ones).
+   */
+  tags?: string[];
 };
 
 // Upper bound on rows scanned when a filter needs JS post-filtering. Well
@@ -97,6 +102,15 @@ function buildCardWhere(
   if (filter.hpMin !== undefined) where.hp = { gte: filter.hpMin };
   if (filter.setCodes?.length) {
     where.set = { code: { in: filter.setCodes } };
+  }
+
+  for (const tag of opts.tags ?? []) {
+    and.push({
+      OR: [
+        { attacks: { some: { tags: { has: tag } } } },
+        { effects: { some: { tags: { has: tag } } } },
+      ],
+    });
   }
 
   if (filter.energyType?.length) {
@@ -193,8 +207,9 @@ function collectMatchedTags(
   filter: FilterJSON,
   attacks: { tags: string[] }[],
   effects: { tags: string[] }[],
+  extraTags: string[] = [],
 ): string[] {
-  const wanted = new Set<string>();
+  const wanted = new Set<string>(extraTags);
   for (const t of filter.attack?.tags ?? []) wanted.add(t);
   for (const t of filter.effect?.tags ?? []) wanted.add(t);
   for (const branch of filter.anyOf ?? []) {
@@ -247,7 +262,12 @@ async function queryCards(
 
   return candidates
     .map((c) => {
-      const matchedTags = collectMatchedTags(filter, c.attacks, c.effects);
+      const matchedTags = collectMatchedTags(
+        filter,
+        c.attacks,
+        c.effects,
+        opts.tags,
+      );
       const maxDamage = c.attacks.reduce(
         (max, a) => Math.max(max, a.damageBase ?? 0),
         0,
@@ -401,6 +421,12 @@ export async function executeSearch(
   let usedFallback = false;
 
   let cards = await queryCards(filter, opts, limit);
+
+  // Full-text fallback cannot honour explicitly picked tags, so an empty
+  // tag-filtered result stays empty rather than showing unrelated cards.
+  if (opts.tags?.length) {
+    return { cards, usedFallback, total: cards.length };
+  }
 
   if (cards.length === 0 && filter.textFallback?.trim()) {
     cards = await ftsFallback(filter.textFallback.trim(), opts, limit, filter);

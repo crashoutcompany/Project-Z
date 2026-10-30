@@ -65,3 +65,9 @@ export type SearchBoxProps = {
   filterChips?: string[];
   showModes?: boolean;
 };
+
+export type TagFilterProps = {
+  selected: string[];
+  onChange: (tags: string[]) => void;
+  disabled?: boolean;
+};
