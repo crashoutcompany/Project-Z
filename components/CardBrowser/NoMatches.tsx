@@ -6,6 +6,7 @@ import type { TagMode } from "./types";
 
 type NoMatchesProps = {
   tagCount: number;
+  typeCount: number;
   tagMode: TagMode;
   hasQuery: boolean;
   onMatchAny: () => void;
@@ -15,6 +16,7 @@ type NoMatchesProps = {
 /** Empty effects search: says why and offers a way out. */
 export function NoMatches({
   tagCount,
+  typeCount,
   tagMode,
   hasQuery,
   onMatchAny,
@@ -39,7 +41,9 @@ export function NoMatches({
             ? `No card has all ${tagCount} tags. Match any of them instead, or remove a tag.`
             : hasQuery
               ? "Try removing a tag or rewording your search."
-              : "Try a different tag."}
+              : typeCount > 0
+                ? "Try another type or a different tag."
+                : "Try a different tag."}
         </p>
       </div>
       <div className="flex flex-wrap justify-center gap-2">

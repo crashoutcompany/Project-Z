@@ -27,8 +27,9 @@ function row(over: {
     damageKind: string;
     energyCost: number;
     energyTypes: string[];
+    effectText?: string;
   }>;
-  effects?: Array<{ tags: string[]; kind: string }>;
+  effects?: Array<{ tags: string[]; kind: string; effectText?: string }>;
 }) {
   return {
     id: over.id,
@@ -203,7 +204,7 @@ describe("executeSearch", () => {
     expect(result.cards.map((c) => c.name)).toEqual(["Focused", "Spread"]);
   });
 
-  it("scans every tag candidate instead of a name-ordered first page", async () => {
+  it("scans every candidate instead of a name-ordered first page", async () => {
     findMany.mockResolvedValue([]);
     await executeSearch(
       { surface: "any", attack: { tags: ["energy_attach"] } },
@@ -213,7 +214,189 @@ describe("executeSearch", () => {
 
     findMany.mockClear();
     await executeSearch({ surface: "any", cardType: "TRAINER" }, { limit: 10 });
-    expect(findMany.mock.calls[0]?.[0]?.take).toBe(30);
+    expect(findMany.mock.calls[0]?.[0]?.take).toBe(2000);
+  });
+
+  it("reports every match as the total and pages with offset", async () => {
+    findMany.mockResolvedValue(
+      Array.from({ length: 75 }, (_, i) =>
+        row({
+          id: i + 1,
+          name: `Poisoner ${String(i + 1).padStart(2, "0")}`,
+          effects: [{ tags: ["condition_poison"], kind: "ABILITY" }],
+          attacks: [],
+        }),
+      ),
+    );
+
+    const first = await executeSearch(
+      { surface: "any" },
+      { tags: ["condition_poison"], limit: 60 },
+    );
+    expect(first.total).toBe(75);
+    expect(first.cards).toHaveLength(60);
+    expect(first.cards[0]?.name).toBe("Poisoner 01");
+
+    const second = await executeSearch(
+      { surface: "any" },
+      { tags: ["condition_poison"], limit: 60, offset: 60 },
+    );
+    expect(second.total).toBe(75);
+    expect(second.cards.map((c) => c.name)).toEqual(
+      Array.from(
+        { length: 15 },
+        (_, i) => `Poisoner ${String(i + 61).padStart(2, "0")}`,
+      ),
+    );
+  });
+
+  it("ranks true attachers above a stale tag on an Energy discard attack", async () => {
+    const attack = (
+      tags: string[],
+      damageBase: number,
+      effectText: string,
+    ) => ({
+      tags,
+      damageBase,
+      damageKind: "FIXED",
+      energyCost: 2,
+      energyTypes: ["fire"],
+      effectText,
+    });
+    findMany.mockResolvedValue([
+      // Tagged before the tagger learned Energy discards: the stored tag says
+      // "attaches", the text says "discards".
+      row({
+        id: 1,
+        name: "Charizard ex",
+        rarity: "RR",
+        attacks: [
+          attack([], 60, ""),
+          attack(["energy_attach"], 200, "Discard 2 [R] Energy from this Pokémon."),
+        ],
+      }),
+      // Attaches, but its other attack throws Energy away.
+      row({
+        id: 2,
+        name: "Arcanine ex",
+        rarity: "RR",
+        attacks: [
+          attack(
+            ["energy_attach", "energy_zone_attach"],
+            40,
+            "Take a [R] Energy from your Energy Zone and attach it to this Pokémon.",
+          ),
+          attack(
+            ["energy_discard", "self_energy_discard"],
+            150,
+            "Discard 2 [R] Energy from this Pokémon.",
+          ),
+        ],
+      }),
+      row({
+        id: 3,
+        name: "Moltres",
+        rarity: "C",
+        attacks: [
+          attack(
+            ["energy_attach", "energy_zone_attach"],
+            20,
+            "Take a [R] Energy from your Energy Zone and attach it to this Pokémon.",
+          ),
+        ],
+      }),
+      row({
+        id: 4,
+        name: "Alolan Ninetales ex",
+        rarity: "RR",
+        attacks: [
+          attack(
+            ["energy_attach"],
+            80,
+            "During your opponent's next turn, they can't take any Energy from their Energy Zone.",
+          ),
+        ],
+      }),
+    ]);
+
+    const result = await executeSearch(
+      { surface: "any" },
+      { tags: ["energy_attach"] },
+    );
+
+    // Moltres only attaches (the Energy Zone tag is part of attaching, not an
+    // unrelated effect). Arcanine attaches but also discards. Neither the
+    // Ninetales nor the Charizard text attaches anything, so their damage
+    // cannot lift them, and Charizard's discard puts it last. Both still
+    // count as matches for the total.
+    expect(result.cards.map((c) => c.name)).toEqual([
+      "Moltres",
+      "Arcanine ex",
+      "Alolan Ninetales ex",
+      "Charizard ex",
+    ]);
+    expect(result.total).toBe(4);
+    expect(result.cards[3]?.matchedTags).toEqual(["energy_attach"]);
+  });
+
+  it("does not count a condition's umbrella tag as an unrelated effect", async () => {
+    const attack = (tags: string[], damageBase: number) => ({
+      tags,
+      damageBase,
+      damageKind: "FIXED",
+      energyCost: 1,
+      energyTypes: ["grass"],
+    });
+    findMany.mockResolvedValue([
+      row({
+        id: 1,
+        name: "Poison and Draw",
+        attacks: [attack(["condition_poison", "applies_condition", "draw"], 90)],
+      }),
+      row({
+        id: 2,
+        name: "Just Poison",
+        attacks: [attack(["condition_poison", "applies_condition"], 10)],
+      }),
+    ]);
+
+    const result = await executeSearch(
+      { surface: "any" },
+      { tags: ["condition_poison"] },
+    );
+    expect(result.cards.map((c) => c.name)).toEqual([
+      "Just Poison",
+      "Poison and Draw",
+    ]);
+  });
+
+  it("narrows by UI-picked types on either type, on top of tags", async () => {
+    findMany.mockResolvedValue([]);
+    await executeSearch(
+      { surface: "any", energyType: ["fire"] },
+      { tags: ["gust"], types: ["grass", "water"] },
+    );
+    const where = findMany.mock.calls[0]?.[0]?.where;
+    expect(where.AND).toEqual([
+      {
+        OR: [
+          { attacks: { some: { tags: { has: "gust" } } } },
+          { effects: { some: { tags: { has: "gust" } } } },
+        ],
+      },
+      {
+        OR: [
+          { energyType: { in: ["fire"] } },
+          { secondaryEnergyType: { in: ["fire"] } },
+        ],
+      },
+      {
+        OR: [
+          { energyType: { in: ["grass", "water"] } },
+          { secondaryEnergyType: { in: ["grass", "water"] } },
+        ],
+      },
+    ]);
   });
 
   it("does not fall back to FTS when a parsed tag search is empty", async () => {

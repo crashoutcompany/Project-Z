@@ -5,6 +5,7 @@ import { fetchCards } from "@/server/actions";
 import { CardItem } from "./CardItem";
 import { CardGridProps, CardWithSet } from "./types";
 import { Loader2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const ABOVE_FOLD_PRIORITY_COUNT = 6;
@@ -21,6 +22,8 @@ export function CardGrid({
   density = "comfortable",
   cardCounts,
   onCardClick,
+  loadPage,
+  total,
 }: CardGridProps) {
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
   const [cursor, setCursor] = useState<number | null>(initialCursor);
@@ -32,6 +35,12 @@ export function CardGrid({
     if (!cursor || isPending) return;
 
     startTransition(async () => {
+      if (loadPage) {
+        const page = await loadPage(cursor);
+        setCards((prev) => [...prev, ...page.cards]);
+        setCursor(page.nextOffset);
+        return;
+      }
       const result = await fetchCards({
         setId: searchQuery ? undefined : setId,
         search: searchQuery || undefined,
@@ -42,7 +51,7 @@ export function CardGrid({
       setCards((prev) => [...prev, ...(result.cards as CardWithSet[])]);
       setCursor(result.nextCursor);
     });
-  }, [cursor, isPending, setId, searchQuery, tradeableOnly]);
+  }, [cursor, isPending, loadPage, setId, searchQuery, tradeableOnly]);
 
   useEffect(() => {
     if (observerRef.current) {
@@ -114,6 +123,16 @@ export function CardGrid({
             <Loader2 className="h-4 w-4 animate-spin" />
             <span>Loading more cards...</span>
           </div>
+        ) : null}
+        {cursor && !isPending && total !== undefined ? (
+          <Button
+            type="button"
+            variant="outline"
+            onClick={loadMore}
+            className="pointer-coarse:h-11"
+          >
+            Load more · {cards.length} of {total}
+          </Button>
         ) : null}
         {!cursor && cards.length > 0 ? (
           <p className="text-muted-foreground text-sm">

@@ -197,4 +197,44 @@ describe("POST /api/search", () => {
     const unknown = await POST(request({ query: "x", excludeTags: ["nope"] }));
     expect(unknown.status).toBe(400);
   });
+
+  it("runs a type-only search and forwards types with offset", async () => {
+    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 75 });
+
+    const res = await POST(
+      request({ types: ["grass", "psychic", "grass"], offset: 60 }),
+    );
+    expect(res.status).toBe(200);
+    expect(parseQueryToFilter).not.toHaveBeenCalled();
+    expect(executeSearch).toHaveBeenCalledWith(
+      { surface: "any" },
+      {
+        limit: 60,
+        tradeableOnly: false,
+        offset: 60,
+        types: ["grass", "psychic"],
+      },
+    );
+    await expect(res.json()).resolves.toMatchObject({
+      types: ["grass", "psychic"],
+      total: 75,
+      offset: 60,
+    });
+  });
+
+  it("rejects unknown types and clamps a bad offset", async () => {
+    const bad = await POST(request({ types: ["fairy"] }));
+    expect(bad.status).toBe(400);
+    await expect(bad.json()).resolves.toEqual({ error: "Unknown type: fairy" });
+
+    const notArray = await POST(request({ types: "grass" }));
+    expect(notArray.status).toBe(400);
+
+    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+    await POST(request({ tags: ["gust"], offset: -5 }));
+    expect(executeSearch).toHaveBeenLastCalledWith(
+      { surface: "any" },
+      { limit: 60, tradeableOnly: false, tags: ["gust"], tagMode: "all" },
+    );
+  });
 });

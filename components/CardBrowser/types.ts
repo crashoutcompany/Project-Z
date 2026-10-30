@@ -41,6 +41,15 @@ export type CardGridProps = {
   density?: "comfortable" | "compact";
   cardCounts?: Record<number, number>;
   onCardClick?: (card: CardWithSet) => void;
+  /**
+   * Loads the next page of an effects search, where `initialCursor` is the
+   * offset of the next result. Replaces the name/set cursor paging.
+   */
+  loadPage?: (
+    offset: number,
+  ) => Promise<{ cards: CardWithSet[]; nextOffset: number | null }>;
+  /** Every matching card, when the results are a paged search. */
+  total?: number;
 };
 
 export type CardItemProps = {
@@ -76,14 +85,23 @@ export type TagFilterProps = {
   disabled?: boolean;
 };
 
+export type TypeFilterProps = {
+  selected: string[];
+  onChange: (types: string[]) => void;
+  disabled?: boolean;
+};
+
 export type ActiveFiltersProps = {
   /** Tags picked from the tag list. */
   picked: string[];
+  /** Pokémon types picked from the type toggles. */
+  types: string[];
   /** Tags parsed from the typed query (not also picked). */
   parsed: string[];
   /** Other parsed constraints, e.g. "Pokémon" or "HP≥100". */
   notes: string[];
   onRemovePicked: (tag: string) => void;
+  onRemoveType: (type: string) => void;
   onRemoveParsed: (tag: string) => void;
   onClearAll: () => void;
   disabled?: boolean;
