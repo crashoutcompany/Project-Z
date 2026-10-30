@@ -8,6 +8,8 @@ export type { TagMode };
 
 export type SearchOptions = {
   limit?: number;
+  /** Ranked results to skip, for "load more" paging. */
+  offset?: number;
   /** Restrict results to cards flagged tradeable (used by /trading/create). */
   tradeableOnly?: boolean;
   /**
@@ -17,11 +19,15 @@ export type SearchOptions = {
    */
   tags?: string[];
   tagMode?: TagMode;
+  /**
+   * Pokémon types picked in the UI. A card matches when either of its types
+   * is one of them. Applied on top of any type parsed from the query.
+   */
+  types?: string[];
 };
 
-// Upper bound on rows scanned when a filter needs JS post-filtering or
-// tag-relevance ranking. Well above the number of cards that share any single
-// energy type or tag.
+// Upper bound on rows ranked per search, and so on the reported total. Well
+// above the number of cards that share any single energy type or tag.
 const FULL_SCAN_CAP = 2000;
 
 // Keyed by the rarity *codes* the importer stores (scripts/lib/rarity-map.ts),
@@ -120,12 +126,13 @@ function buildCardWhere(
     for (const tag of opts.tags ?? []) and.push({ OR: tagClause(tag) });
   }
 
-  if (filter.energyType?.length) {
-    // Dual-type cards match on either of their types.
+  // Dual-type cards match on either of their types.
+  for (const types of [filter.energyType, opts.types]) {
+    if (!types?.length) continue;
     and.push({
       OR: [
-        { energyType: { in: filter.energyType } },
-        { secondaryEnergyType: { in: filter.energyType } },
+        { energyType: { in: types } },
+        { secondaryEnergyType: { in: types } },
       ],
     });
   }
@@ -205,8 +212,10 @@ export type SearchCardResult = {
 };
 
 export type SearchResult = {
+  /** One page of ranked results (`limit` cards from `offset`). */
   cards: SearchCardResult[];
   usedFallback: boolean;
+  /** Every matching card, not just this page. */
   total: number;
 };
 
@@ -256,24 +265,24 @@ export function tagRelevance(
   };
 }
 
+type Page = { cards: SearchCardResult[]; total: number };
+
 async function queryCards(
   filter: FilterJSON,
   opts: SearchOptions,
   limit: number,
-): Promise<SearchCardResult[]> {
+  offset: number,
+): Promise<Page> {
   // energyTypeCounts can only be enforced in JS, and the DB prefilter for it
-  // (type membership) is much looser than the real predicate. Scan the whole
-  // prefiltered set in that case so exact matches beyond the first page are
-  // not lost; the set is bounded by cards sharing one energy type.
+  // (type membership) is much looser than the real predicate.
   const needsPostFilter = hasEnergyTypeCounts(filter);
   const wanted = new Set([...filterTags(filter), ...(opts.tags ?? [])]);
-  // Tag searches rank by relevance (below), so they scan every candidate.
-  // Taking a name-ordered prefix would rank only the cards whose names come
-  // first alphabetically.
-  const fullScan = needsPostFilter || wanted.size > 0;
+  // Every candidate is scanned: results are ranked in JS (tag relevance,
+  // damage, rarity), so a name-ordered prefix would rank only the cards whose
+  // names come first, and the total and later pages need the whole set.
   const rows = await prisma.card.findMany({
     where: buildCardWhere(filter, opts),
-    take: fullScan ? FULL_SCAN_CAP : Math.min(limit * 3, 240),
+    take: FULL_SCAN_CAP,
     // Deterministic sample: without an orderBy Postgres may return a different
     // subset of the candidate set on each call, making rankings flap. `id` is
     // the unique tie-breaker (name+number can repeat across sets).
@@ -297,7 +306,7 @@ async function queryCards(
     ? rows.filter((c) => cardMatchesClauses(filter, c))
     : rows;
 
-  return candidates
+  const ranked = candidates
     .map((c) => {
       const relevance = tagRelevance(wanted, c.attacks, c.effects);
       const maxDamage = wanted.size
@@ -334,8 +343,9 @@ async function queryCards(
         a.name.localeCompare(b.name) ||
         a.number - b.number,
     )
-    .slice(0, limit)
+    .slice(offset, offset + limit)
     .map(({ _rank, _matched, _focus, _noise, _damage, ...rest }) => rest);
+  return { cards: ranked, total: candidates.length };
 }
 
 function matchesScalarFilters(
@@ -381,8 +391,9 @@ async function ftsFallback(
   text: string,
   opts: SearchOptions,
   limit: number,
+  offset: number,
   filter: FilterJSON,
-): Promise<SearchCardResult[]> {
+): Promise<Page> {
   const tradeableClause = opts.tradeableOnly
     ? Prisma.sql`AND c.is_tradeable = true`
     : Prisma.empty;
@@ -435,17 +446,26 @@ async function ftsFallback(
       OR c.name ILIKE ${"%" + text + "%"}
     )
     ${tradeableClause}
-    ORDER BY c.name ASC, c.number ASC
-    LIMIT ${limit * 3}
+    ORDER BY c.name ASC, c.number ASC, c.card_id ASC
+    LIMIT ${FULL_SCAN_CAP}
   `;
 
-  return rows
-    .filter((r) => matchesScalarFilters(r, filter))
-    .slice(0, limit)
-    .map(({ trainerType: _trainerType, stage: _stage, ...r }) => ({
-      ...r,
-      matchedTags: [],
-    }));
+  const types = opts.types ?? [];
+  const matching = rows.filter(
+    (r) =>
+      matchesScalarFilters(r, filter) &&
+      (!types.length ||
+        types.some((t) => t === r.energyType || t === r.secondaryEnergyType)),
+  );
+  return {
+    total: matching.length,
+    cards: matching
+      .slice(offset, offset + limit)
+      .map(({ trainerType: _trainerType, stage: _stage, ...r }) => ({
+        ...r,
+        matchedTags: [],
+      })),
+  };
 }
 
 export async function executeSearch(
@@ -453,21 +473,27 @@ export async function executeSearch(
   opts: SearchOptions = {},
 ): Promise<SearchResult> {
   const limit = opts.limit ?? 60;
-  let usedFallback = false;
+  const offset = Math.max(0, opts.offset ?? 0);
 
-  let cards = await queryCards(filter, opts, limit);
+  const page = await queryCards(filter, opts, limit, offset);
 
   // Tag searches (picked in the UI or parsed from the query) never fall back
   // to full-text search: FTS cannot honour the tags and orders by name, so an
   // empty tag result stays empty instead of listing loosely related cards.
   if (opts.tags?.length || filterTags(filter).length) {
-    return { cards, usedFallback, total: cards.length };
+    return { ...page, usedFallback: false };
   }
 
-  if (cards.length === 0 && filter.textFallback?.trim()) {
-    cards = await ftsFallback(filter.textFallback.trim(), opts, limit, filter);
-    if (cards.length) usedFallback = true;
+  if (page.total === 0 && filter.textFallback?.trim()) {
+    const fts = await ftsFallback(
+      filter.textFallback.trim(),
+      opts,
+      limit,
+      offset,
+      filter,
+    );
+    if (fts.total) return { ...fts, usedFallback: true };
   }
 
-  return { cards, usedFallback, total: cards.length };
+  return { ...page, usedFallback: false };
 }

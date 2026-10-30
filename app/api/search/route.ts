@@ -6,9 +6,11 @@ import {
 } from "@/lib/search";
 import { clientKeyFromRequest, rateLimit } from "@/lib/rate-limit";
 import { withoutTags } from "@/lib/search/filter-tags";
-import { isTag } from "@/lib/search/tags";
+import { ENERGY_TYPES, isTag } from "@/lib/search/tags";
 
 const MAX_LIMIT = 100;
+// Matches the scan cap in executeSearch: nothing ranks beyond it.
+const MAX_OFFSET = 2000;
 
 // Search is debounced client-side (300ms), so a human typing rarely exceeds a
 // few requests per second. This ceiling exists to stop unique-query flooding
@@ -34,6 +36,23 @@ function readTags(
     return { ok: false, error: `Unknown tag: ${unknown[0]}` };
   }
   return { ok: true, tags: [...new Set(raw as string[])] };
+}
+
+/** Pokémon types picked in the UI, deduplicated. */
+function readTypes(
+  body: Record<string, unknown>,
+): { ok: true; types: string[] } | { ok: false; error: string } {
+  const raw = body.types;
+  if (raw === undefined) return { ok: true, types: [] };
+  if (!Array.isArray(raw) || raw.some((t) => typeof t !== "string")) {
+    return { ok: false, error: "types must be an array of strings" };
+  }
+  const known = new Set<string>(ENERGY_TYPES);
+  const unknown = raw.filter((t) => !known.has(t));
+  if (unknown.length) {
+    return { ok: false, error: `Unknown type: ${unknown[0]}` };
+  }
+  return { ok: true, types: [...new Set(raw as string[])] };
 }
 
 export async function POST(request: Request) {
@@ -82,10 +101,16 @@ export async function POST(request: Request) {
     );
   }
   const tagMode = payload.tagMode === "any" ? "any" : "all";
+  const typesResult = readTypes(payload);
+  if (!typesResult.ok) {
+    return NextResponse.json({ error: typesResult.error }, { status: 400 });
+  }
+  const { types } = typesResult;
 
   const query = typeof payload.query === "string" ? payload.query : null;
-  // A tag-only search (picked in the UI, nothing typed) needs no query.
-  const tagOnly = tags.length > 0 && !query?.trim();
+  // A tag- or type-only search (picked in the UI, nothing typed) needs no
+  // query.
+  const tagOnly = tags.length + types.length > 0 && !query?.trim();
   if (query === null && !tagOnly) {
     return NextResponse.json(
       { error: "Missing string field: query" },
@@ -103,6 +128,10 @@ export async function POST(request: Request) {
       ? payload.limit
       : 60;
   const limit = Math.min(Math.max(1, Math.floor(limitRaw)), MAX_LIMIT);
+  const offset =
+    typeof payload.offset === "number" && Number.isFinite(payload.offset)
+      ? Math.min(Math.max(0, Math.floor(payload.offset)), MAX_OFFSET)
+      : 0;
   const tradeableOnly = readBool(payload, "tradeableOnly");
 
   try {
@@ -113,18 +142,22 @@ export async function POST(request: Request) {
     const result = await executeSearch(filter, {
       limit,
       tradeableOnly,
+      ...(offset ? { offset } : {}),
       ...(tags.length ? { tags, tagMode } : {}),
+      ...(types.length ? { types } : {}),
     });
 
     return NextResponse.json({
       query: validated?.normalized ?? "",
       tags,
       tagMode,
+      types,
       filter,
       cached: parsed.cached,
       source: parsed.source,
       usedFallback: result.usedFallback,
       total: result.total,
+      offset,
       cards: result.cards,
     });
   } catch (err) {
