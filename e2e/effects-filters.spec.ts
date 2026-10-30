@@ -182,3 +182,31 @@ test("the tag popover stays inside a short viewport", async ({ page }) => {
   expect(box!.y + box!.height).toBeLessThanOrEqual(480);
   await expect(done).toBeInViewport();
 });
+
+test("tapping an effects search result opens its card details", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await openEffects(page);
+  await pickTag(page, TAG_INFO.condition_poison.label);
+  await expect(page.getByText(/Filtering by 1 tag · \d+ cards/)).toBeVisible();
+
+  const first = catalogCards(page).first();
+  const name = (await first.locator("img").getAttribute("alt")) ?? "";
+  await first.click();
+
+  const sheet = page.getByTestId("card-detail-sheet");
+  await expect(sheet).toBeVisible();
+  await expect(sheet.getByText(name).first()).toBeVisible();
+  await expect.poll(() => new URL(page.url()).searchParams.get("card")).toMatch(
+    /^[A-Za-z0-9]+-\d+$/,
+  );
+  // Closing keeps the search: the pill and the results are still there.
+  await page.keyboard.press("Escape");
+  await expect(sheet).toBeHidden();
+  await expect(
+    page.getByRole("button", {
+      name: `Remove tag: ${TAG_INFO.condition_poison.label}`,
+    }),
+  ).toBeVisible();
+});
