@@ -48,6 +48,28 @@ export function planRetag(attacks: AttackRow[], effects: EffectRow[]) {
   return { attackUpdates, effectUpdates };
 }
 
+/**
+ * Pure: bucket updates by their new tag list so each bucket is one
+ * `updateMany`. A few hundred distinct tag lists cover thousands of rows.
+ */
+export function groupByTags(updates: RetagUpdate[], chunkSize = 1000) {
+  const buckets = new Map<string, { tags: string[]; ids: number[] }>();
+  for (const u of updates) {
+    const tags = [...u.after].sort();
+    const key = JSON.stringify(tags);
+    const bucket = buckets.get(key) ?? { tags, ids: [] };
+    bucket.ids.push(u.id);
+    buckets.set(key, bucket);
+  }
+  const groups: Array<{ tags: string[]; ids: number[] }> = [];
+  for (const { tags, ids } of buckets.values()) {
+    for (let i = 0; i < ids.length; i += chunkSize) {
+      groups.push({ tags, ids: ids.slice(i, i + chunkSize) });
+    }
+  }
+  return groups;
+}
+
 function databaseHost(): string {
   try {
     return new URL(process.env.DATABASE_URL ?? "").hostname;
@@ -84,15 +106,18 @@ async function main() {
       return;
     }
 
-    const BATCH = 200;
-    const ops = [
-      ...attackUpdates.map((u) => prisma.attack.update({ where: { id: u.id }, data: { tags: u.after } })),
-      ...effectUpdates.map((u) => prisma.cardEffect.update({ where: { id: u.id }, data: { tags: u.after } })),
-    ];
-    for (let i = 0; i < ops.length; i += BATCH) {
-      await prisma.$transaction(ops.slice(i, i + BATCH));
+    // No wrapping transaction: over the Neon adapter a batch of single-row
+    // updates outlives Prisma's 5s interactive-transaction timeout. Each
+    // updateMany is atomic, and a rerun is safe because tags are recomputed
+    // from the stored text and only rows that still differ are written.
+    let updated = 0;
+    for (const { tags, ids } of groupByTags(attackUpdates)) {
+      updated += (await prisma.attack.updateMany({ where: { id: { in: ids } }, data: { tags } })).count;
     }
-    console.log(`Updated ${ops.length} rows.`);
+    for (const { tags, ids } of groupByTags(effectUpdates)) {
+      updated += (await prisma.cardEffect.updateMany({ where: { id: { in: ids } }, data: { tags } })).count;
+    }
+    console.log(`Updated ${updated} rows.`);
   } finally {
     await prisma.$disconnect();
   }

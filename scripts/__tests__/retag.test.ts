@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { planRetag } from "../retag";
+import { groupByTags, planRetag } from "../retag";
 import { DamageKind, EffectKind } from "../../prisma/generated/client/client";
 
 describe("planRetag", () => {
@@ -45,5 +45,24 @@ describe("planRetag", () => {
       { id: 1, before: ["damage_plus", "energy_attach"], after: ["damage_plus"] },
     ]);
     expect(effectUpdates).toEqual([{ id: 10, before: ["prevent"], after: [] }]);
+  });
+});
+
+describe("groupByTags", () => {
+  it("buckets rows by their new tag list, order-insensitive, and chunks large buckets", () => {
+    const groups = groupByTags(
+      [
+        { id: 1, before: [], after: ["heal", "draw"] },
+        { id: 2, before: [], after: ["draw", "heal"] },
+        { id: 3, before: ["prevent"], after: [] },
+        { id: 4, before: [], after: ["heal", "draw"] },
+      ],
+      2,
+    );
+    expect(groups).toEqual([
+      { tags: ["draw", "heal"], ids: [1, 2] },
+      { tags: ["draw", "heal"], ids: [4] },
+      { tags: [], ids: [3] },
+    ]);
   });
 });
