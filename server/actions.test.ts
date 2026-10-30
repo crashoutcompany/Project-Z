@@ -1,15 +1,20 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-const findMany = vi.fn();
+const { findMany, findUnique, findFirst, signOut, getSession, redirect } =
+  vi.hoisted(() => ({
+    findMany: vi.fn(),
+    findUnique: vi.fn(),
+    findFirst: vi.fn(),
+    signOut: vi.fn(),
+    getSession: vi.fn(),
+    redirect: vi.fn(),
+  }));
 
 vi.mock("@/prisma/db", () => ({
   default: {
-    card: { findMany },
+    card: { findMany, findUnique, findFirst },
   },
 }));
-
-const signOut = vi.fn();
-const getSession = vi.fn();
 
 vi.mock("@/lib/auth", () => ({
   auth: { api: { signOut, getSession: vi.fn() } },
@@ -20,13 +25,13 @@ vi.mock("next/headers", () => ({
   headers: vi.fn(async () => new Headers()),
 }));
 
-const redirect = vi.fn();
-
 vi.mock("next/navigation", () => ({
   redirect,
 }));
 
-const { fetchCards, updateAuthStatus } = await import("./actions");
+const { fetchCards, fetchCardDetail, updateAuthStatus } = await import(
+  "./actions"
+);
 
 describe("fetchCards", () => {
   beforeEach(() => {
@@ -105,6 +110,111 @@ describe("fetchCards", () => {
     expect(findMany).toHaveBeenCalledWith(
       expect.objectContaining({ take: 21 }),
     );
+  });
+});
+
+describe("fetchCardDetail", () => {
+  beforeEach(() => {
+    getSession.mockReset();
+    findUnique.mockReset();
+    findFirst.mockReset();
+  });
+
+  it("tells signed-out callers to sign in without querying", async () => {
+    getSession.mockResolvedValue(null);
+    await expect(fetchCardDetail({ id: 1 })).resolves.toEqual({
+      status: "signed_out",
+    });
+    expect(findUnique).not.toHaveBeenCalled();
+  });
+
+  it("loads a card by id for a signed-in user", async () => {
+    getSession.mockResolvedValue({ user: { id: "u1" } });
+    findUnique.mockResolvedValue({
+      id: 1,
+      name: "Pikachu",
+      imageUrl: "/pika.webp",
+      number: 25,
+      cardType: "POKEMON",
+      rarity: "C",
+      isTradeable: true,
+      hp: 60,
+      energyType: "lightning",
+      stage: "BASIC",
+      isEx: false,
+      trainerType: null,
+      weakness: "fighting",
+      retreatCost: 1,
+      set: { code: "A1", setName: "Genetic Apex" },
+      attacks: [],
+      effects: [],
+    });
+
+    const result = await fetchCardDetail({ id: 1 });
+    expect(result).toMatchObject({
+      status: "ok",
+      detail: { name: "Pikachu", ref: "A1-25" },
+    });
+  });
+
+  it("loads a card by ref for a signed-in user", async () => {
+    getSession.mockResolvedValue({ user: { id: "u1" } });
+    findFirst.mockResolvedValue({
+      id: 2,
+      name: "Mew",
+      imageUrl: "/mew.webp",
+      number: 151,
+      cardType: "POKEMON",
+      rarity: "AR",
+      isTradeable: true,
+      hp: 60,
+      energyType: "psychic",
+      stage: "BASIC",
+      isEx: false,
+      trainerType: null,
+      weakness: "darkness",
+      retreatCost: 1,
+      set: { code: "A1a", setName: "Mythical Island" },
+      attacks: [],
+      effects: [],
+    });
+
+    const result = await fetchCardDetail({ ref: "A1a-151" });
+    expect(result).toMatchObject({
+      status: "ok",
+      detail: { name: "Mew", ref: "A1a-151" },
+    });
+    expect(findFirst).toHaveBeenCalled();
+  });
+
+  it("reports not found without querying for malformed input", async () => {
+    getSession.mockResolvedValue({ user: { id: "u1" } });
+    const notFound = { status: "not_found" };
+    await expect(fetchCardDetail({ ref: "A1-25'--" })).resolves.toEqual(notFound);
+    await expect(fetchCardDetail({ ref: "x".repeat(5000) })).resolves.toEqual(
+      notFound,
+    );
+    await expect(fetchCardDetail({ ref: "   " })).resolves.toEqual(notFound);
+    await expect(
+      fetchCardDetail({ id: "1" } as unknown as { id: number }),
+    ).resolves.toEqual(notFound);
+    expect(findFirst).not.toHaveBeenCalled();
+    expect(findUnique).not.toHaveBeenCalled();
+  });
+
+  it("reports not found when the card does not exist", async () => {
+    getSession.mockResolvedValue({ user: { id: "u1" } });
+    findUnique.mockResolvedValue(null);
+    await expect(fetchCardDetail({ id: 999 })).resolves.toEqual({
+      status: "not_found",
+    });
+  });
+
+  it("reports not found when neither id nor ref is provided", async () => {
+    getSession.mockResolvedValue({ user: { id: "u1" } });
+    await expect(fetchCardDetail({})).resolves.toEqual({ status: "not_found" });
+    expect(findUnique).not.toHaveBeenCalled();
+    expect(findFirst).not.toHaveBeenCalled();
   });
 });
 

@@ -4,6 +4,10 @@ import { withAppDefaults } from "./lib/next-config";
 
 const nextConfig: NextConfig = withAppDefaults({
   serverExternalPackages: ["@prisma/client", "prisma"],
+
+  // Headless/local clients often hit 127.0.0.1 while Turbopack binds another hostname.
+  allowedDevOrigins: ["127.0.0.1", "localhost"],
+
   async redirects() {
     return [
       {

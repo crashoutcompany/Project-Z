@@ -9,15 +9,12 @@ import { SetTabs } from "./SetTabs";
 import { TagFilter } from "./TagFilter";
 import { ActiveFilters } from "./ActiveFilters";
 import { NoMatches } from "./NoMatches";
-import {
-  CardBrowserMode,
-  CardWithSet,
-  SelectedCards,
-  SelectionMode,
-  TagMode,
-} from "./types";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import { CardDetailSheet } from "./CardDetailSheet";
+import { SelectionModeToggle } from "./SelectionModeToggle";
+import { useCardDetail } from "./use-card-detail";
+import { useCardSelection } from "./use-card-selection";
+import { CardBrowserMode, CardWithSet, SelectedCards, TagMode } from "./types";
+import type { CardDetail } from "@/lib/card-detail";
 import type { FilterJSON, SearchCardResult } from "@/lib/search";
 import { filterTags } from "@/lib/search/filter-tags";
 
@@ -37,7 +34,11 @@ type CardBrowserClientProps = {
   cardCounts?: Record<number, number>;
   /** When false, catalog cards are not clickable (e.g. shared-deck hydration). */
   interactive?: boolean;
+  initialDetail?: CardDetail | null;
+  syncDexUrl?: boolean;
 };
+
+const EMPTY_SELECTION: SelectedCards = { want: [], give: [] };
 
 /** Parsed constraints other than tags, shown read-only beside the tag pills. */
 function filterToNotes(filter: FilterJSON): string[] {
@@ -110,11 +111,13 @@ export function CardBrowserClient({
   defaultSearchMode = "name",
   showSearchModes = true,
   onSelectionChange,
-  initialSelected = { want: [], give: [] },
+  initialSelected = EMPTY_SELECTION,
   selected,
   onCardClick,
   cardCounts,
   interactive = true,
+  initialDetail = null,
+  syncDexUrl = false,
 }: CardBrowserClientProps) {
   const [activeSetId, setActiveSetId] = useState(initialSetId);
   const [searchQuery, setSearchQuery] = useState("");
@@ -128,22 +131,16 @@ export function CardBrowserClient({
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
   const [cursor, setCursor] = useState<number | null>(initialCursor);
   const [resultsEpoch, setResultsEpoch] = useState(0);
-  const [selectionMode, setSelectionMode] = useState<SelectionMode>("want");
-  const [internalSelected, setInternalSelected] =
-    useState<SelectedCards>(initialSelected);
   const [isPending, startTransition] = useTransition();
   const [effectsError, setEffectsError] = useState<string | null>(null);
   const requestSeq = useRef(0);
 
-  const selectedCards = selected ?? internalSelected;
-
-  const commitSelection = useCallback(
-    (next: SelectedCards) => {
-      if (!selected) setInternalSelected(next);
-      onSelectionChange?.(next);
-    },
-    [selected, onSelectionChange],
-  );
+  const selection = useCardSelection({
+    initialSelected,
+    selected,
+    onSelectionChange,
+  });
+  const detail = useCardDetail({ initialDetail, syncDexUrl });
 
   const replaceResults = useCallback(
     (nextCards: CardWithSet[], nextCursor: number | null) => {
@@ -359,36 +356,15 @@ export function CardBrowserClient({
     [activeSetId, loadSet, clearParsed],
   );
 
+  const { openCard } = detail;
+  const { toggleCard } = selection;
   const handleCardClick = useCallback(
     (card: CardWithSet) => {
-      if (mode === "build") {
-        onCardClick?.(card);
-        return;
-      }
-
-      if (mode !== "select") return;
-
-      const currentList = selectionMode === "want" ? "want" : "give";
-      const otherList = selectionMode === "want" ? "give" : "want";
-      const indexInCurrent = selectedCards[currentList].findIndex(
-        (c) => c.id === card.id,
-      );
-
-      const next: SelectedCards = {
-        want: [...selectedCards.want],
-        give: [...selectedCards.give],
-      };
-
-      if (indexInCurrent !== -1) {
-        next[currentList] = next[currentList].filter((c) => c.id !== card.id);
-      } else {
-        next[otherList] = next[otherList].filter((c) => c.id !== card.id);
-        next[currentList] = [...next[currentList], card];
-      }
-
-      commitSelection(next);
+      if (mode === "view") openCard(card);
+      else if (mode === "build") onCardClick?.(card);
+      else if (mode === "select") toggleCard(card);
     },
-    [mode, selectionMode, selectedCards, onCardClick, commitSelection],
+    [mode, openCard, onCardClick, toggleCard],
   );
 
   return (
@@ -424,37 +400,11 @@ export function CardBrowserClient({
       ) : null}
 
       {mode === "select" ? (
-        <div className="flex items-center gap-2">
-          <span className="text-muted-foreground text-sm">Adding to</span>
-          <div className="bg-muted flex rounded-lg p-0.5">
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              onClick={() => setSelectionMode("want")}
-              className={cn(
-                "rounded-md px-3",
-                selectionMode === "want" &&
-                  "bg-blue-500 text-white hover:bg-blue-600 hover:text-white",
-              )}
-            >
-              Want ({selectedCards.want.length})
-            </Button>
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              onClick={() => setSelectionMode("give")}
-              className={cn(
-                "rounded-md px-3",
-                selectionMode === "give" &&
-                  "bg-green-500 text-white hover:bg-green-600 hover:text-white",
-              )}
-            >
-              Give ({selectedCards.give.length})
-            </Button>
-          </div>
-        </div>
+        <SelectionModeToggle
+          mode={selection.selectionMode}
+          onModeChange={selection.setSelectionMode}
+          selectedCards={selection.selectedCards}
+        />
       ) : null}
 
       {!isSearching ? (
@@ -506,13 +456,27 @@ export function CardBrowserClient({
         searchQuery={searchQuery}
         tradeableOnly={tradeableOnly}
         selectable={interactive && (mode === "select" || mode === "build")}
-        selectedCards={selectedCards}
-        selectionMode={selectionMode}
+        selectedCards={selection.selectedCards}
+        selectionMode={selection.selectionMode}
         density={mode === "build" ? "compact" : "comfortable"}
         cardCounts={cardCounts}
-        onCardClick={handleCardClick}
+        // CardItem is clickable whenever it receives a handler, so withholding
+        // it is what makes the catalog inert while `interactive` is false.
+        onCardClick={interactive ? handleCardClick : undefined}
       />
       )}
+
+      {mode === "view" ? (
+        <CardDetailSheet
+          open={detail.open}
+          onOpenChange={detail.onOpenChange}
+          detail={detail.detail}
+          loading={detail.loading}
+          error={detail.error}
+          signedOut={detail.signedOut}
+          shareUrl={detail.shareUrl}
+        />
+      ) : null}
     </div>
   );
 }
