@@ -1,24 +1,44 @@
 "use client";
 
-import { useId, useState } from "react";
-import { ChevronDown, Tags, X } from "lucide-react";
+import { useState } from "react";
+import { ChevronsUpDown, Tags } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import { ALL_TAGS, TAG_GROUPS, TAG_INFO, type Tag } from "@/lib/search/tags";
-import type { TagFilterProps } from "./types";
+import type { TagFilterProps, TagMode } from "./types";
 
 const TAGS_BY_GROUP = TAG_GROUPS.map((group) => ({
   group,
   tags: ALL_TAGS.filter((tag) => TAG_INFO[tag].group === group),
 })).filter((g) => g.tags.length > 0);
 
-// Shared by every pressable in this filter: 120ms feedback, a press scale and
-// 44px targets on touch screens.
-const pressable =
-  "transition-[background-color,color,box-shadow,transform] duration-120 ease-out active:scale-[0.97] motion-reduce:active:scale-100 pointer-coarse:min-h-11";
+const MODES: { value: TagMode; label: string; hint: string }[] = [
+  { value: "all", label: "All", hint: "Cards must have every selected tag" },
+  { value: "any", label: "Any", hint: "Cards need at least one selected tag" },
+];
 
-export function TagFilter({ selected, onChange, disabled }: TagFilterProps) {
+/** Searchable multi-select of every tag, grouped, plus the AND/OR switch. */
+export function TagFilter({
+  selected,
+  onChange,
+  mode,
+  onModeChange,
+  disabled,
+}: TagFilterProps) {
   const [open, setOpen] = useState(false);
-  const panelId = useId();
   const selectedSet = new Set<string>(selected);
 
   const toggle = (tag: Tag) => {
@@ -30,104 +50,109 @@ export function TagFilter({ selected, onChange, disabled }: TagFilterProps) {
   };
 
   return (
-    <div className="space-y-2" data-testid="tag-filter">
-      <div className="flex flex-wrap items-center gap-1.5">
-        <button
-          type="button"
-          aria-expanded={open}
-          aria-controls={panelId}
-          onClick={() => setOpen((v) => !v)}
-          className={cn(
-            "bg-card/80 text-foreground inline-flex h-8 items-center gap-1.5 rounded-lg px-3 text-sm font-medium ring-1 ring-foreground/10",
-            "hover:bg-muted focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px]",
-            pressable,
-          )}
+    <div className="flex flex-wrap items-center gap-2" data-testid="tag-filter">
+      <Popover open={open} onOpenChange={setOpen}>
+        <PopoverTrigger
+          render={
+            <Button
+              variant="outline"
+              role="combobox"
+              aria-label="Filter by tags"
+              disabled={disabled}
+              className="pointer-coarse:h-11 h-9 gap-2 rounded-lg px-3"
+            />
+          }
         >
-          <Tags className="size-4" aria-hidden />
+          <Tags aria-hidden />
           Tags
           {selected.length > 0 ? (
             <span className="bg-primary text-primary-foreground rounded-full px-1.5 text-xs tabular-nums">
               {selected.length}
             </span>
           ) : null}
-          <ChevronDown
-            className={cn(
-              "text-muted-foreground size-4 transition-transform duration-120 ease-out motion-reduce:transition-none",
-              open && "rotate-180",
-            )}
-            aria-hidden
-          />
-        </button>
-
-        {selected.map((tag) => (
-          <button
-            key={tag}
-            type="button"
-            onClick={() => onChange(selected.filter((t) => t !== tag))}
-            disabled={disabled}
-            aria-label={`Remove tag: ${TAG_INFO[tag as Tag]?.label ?? tag}`}
-            className={cn(
-              "bg-primary text-primary-foreground inline-flex h-8 items-center gap-1 rounded-full pr-2 pl-3 text-xs font-medium",
-              "hover:bg-primary/85 focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] disabled:opacity-50",
-              pressable,
-            )}
-          >
-            {TAG_INFO[tag as Tag]?.label ?? tag}
-            <X className="size-3.5" aria-hidden />
-          </button>
-        ))}
-
-        {selected.length > 1 ? (
-          <button
-            type="button"
-            onClick={() => onChange([])}
-            disabled={disabled}
-            className={cn(
-              "text-muted-foreground hover:text-foreground inline-flex h-8 items-center rounded-md px-2 text-xs underline-offset-4 hover:underline",
-              "focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px]",
-              pressable,
-            )}
-          >
-            Clear all
-          </button>
-        ) : null}
-      </div>
-
-      {open ? (
-        <div
-          id={panelId}
-          className="bg-card/80 catalog-results space-y-3 rounded-xl p-3 shadow-xs ring-1 ring-foreground/10 backdrop-blur-sm"
+          <ChevronsUpDown className="text-muted-foreground" aria-hidden />
+        </PopoverTrigger>
+        <PopoverContent
+          align="start"
+          className="w-[min(22rem,calc(100vw-2rem))] gap-0 p-0"
         >
-          {TAGS_BY_GROUP.map(({ group, tags }) => (
-            <fieldset key={group} className="space-y-1.5">
-              <legend className="text-muted-foreground mb-1.5 text-xs font-medium tracking-wide uppercase">
-                {group}
-              </legend>
-              <div className="flex flex-wrap gap-1.5">
-                {tags.map((tag) => {
-                  const active = selectedSet.has(tag);
-                  return (
-                    <button
+          <Command>
+            <CommandInput placeholder="Search tags…" />
+            <CommandList className="max-h-[min(20rem,50dvh)]">
+              <CommandEmpty>No tags found.</CommandEmpty>
+              {TAGS_BY_GROUP.map(({ group, tags }) => (
+                <CommandGroup key={group} heading={group}>
+                  {tags.map((tag) => (
+                    <CommandItem
                       key={tag}
-                      type="button"
-                      aria-pressed={active}
-                      onClick={() => toggle(tag)}
-                      disabled={disabled}
-                      className={cn(
-                        "inline-flex h-8 items-center rounded-full px-3 text-xs font-medium ring-1",
-                        "focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] disabled:opacity-50",
-                        pressable,
-                        active
-                          ? "bg-primary text-primary-foreground ring-transparent hover:bg-primary/85"
-                          : "bg-background text-foreground ring-foreground/10 hover:bg-muted",
-                      )}
+                      value={tag}
+                      keywords={[TAG_INFO[tag].label, group]}
+                      data-checked={selectedSet.has(tag)}
+                      onSelect={() => toggle(tag)}
+                      className="pointer-coarse:min-h-11 min-h-9"
                     >
                       {TAG_INFO[tag].label}
-                    </button>
-                  );
-                })}
-              </div>
-            </fieldset>
+                    </CommandItem>
+                  ))}
+                </CommandGroup>
+              ))}
+            </CommandList>
+          </Command>
+          <div className="flex items-center justify-between gap-2 border-t p-2">
+            <span className="text-muted-foreground px-1 text-xs tabular-nums">
+              {selected.length} selected
+            </span>
+            <div className="flex gap-1">
+              <Button
+                variant="ghost"
+                size="sm"
+                disabled={selected.length === 0}
+                onClick={() => onChange([])}
+                className="pointer-coarse:h-11"
+              >
+                Clear
+              </Button>
+              <Button
+                size="sm"
+                onClick={() => setOpen(false)}
+                className="pointer-coarse:h-11"
+              >
+                Done
+              </Button>
+            </div>
+          </div>
+        </PopoverContent>
+      </Popover>
+
+      {selected.length > 1 ? (
+        <div
+          role="radiogroup"
+          aria-label="Match selected tags"
+          className="bg-muted flex items-center rounded-lg p-0.5"
+        >
+          <span className="text-muted-foreground px-2 text-xs font-medium">
+            Match
+          </span>
+          {MODES.map(({ value, label, hint }) => (
+            <button
+              key={value}
+              type="button"
+              role="radio"
+              aria-checked={mode === value}
+              title={hint}
+              disabled={disabled}
+              onClick={() => onModeChange(value)}
+              className={cn(
+                "pointer-coarse:h-10 h-8 rounded-md px-3 text-sm font-medium transition-[background-color,color,box-shadow] duration-150 ease-out",
+                "focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] disabled:opacity-50",
+                mode === value
+                  ? "bg-background text-foreground shadow-sm"
+                  : "text-muted-foreground hover:text-foreground",
+              )}
+            >
+              {label}
+              <span className="sr-only"> tags</span>
+            </button>
           ))}
         </div>
       ) : null}

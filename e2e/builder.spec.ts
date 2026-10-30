@@ -99,8 +99,95 @@ test("effects search shows the parsed filter", async ({ page }) => {
   await expect(
     page.getByText("Searching effects for “coin flip”"),
   ).toBeVisible();
-  // Filter chips show the readable tag label, not the raw tag name.
+  // Tags parsed from the query show as removable pills with readable labels.
+  const parsed = page.getByRole("button", {
+    name: `Remove tag from your search: ${TAG_INFO.coin_flip.label}`,
+  });
+  await expect(parsed).toBeVisible();
+  await expect(parsed).toHaveText(TAG_INFO.coin_flip.label);
+
+  // Removing the query's only tag drops the query.
+  await parsed.click();
+  await expect(page.getByPlaceholder(/Search by effect/)).toHaveValue("");
+  await expect(parsed).toBeHidden();
+});
+
+async function pickTags(page: Page, labels: string[]) {
+  await page.getByRole("combobox", { name: "Filter by tags" }).click();
+  const search = page.getByPlaceholder("Search tags…");
+  for (const label of labels) {
+    await search.fill(label);
+    await page.getByRole("option", { name: label }).click();
+  }
+  await page.getByRole("button", { name: "Done" }).click();
+}
+
+test("tag combobox adds removable pills and switches match mode", async ({
+  page,
+}) => {
+  await page.goto("/builder");
+  await catalogCardNames(page);
+
+  const first = TAG_INFO.coin_flip.label;
+  const second = TAG_INFO.draw.label;
+  await pickTags(page, [first, second]);
+
+  const filters = page.getByRole("group", { name: "Active filters" });
   await expect(
-    page.getByText(TAG_INFO.coin_flip.label, { exact: true }),
+    filters.getByRole("button", { name: `Remove tag: ${first}` }),
   ).toBeVisible();
+  await expect(
+    filters.getByRole("button", { name: `Remove tag: ${second}` }),
+  ).toBeVisible();
+
+  const all = page.getByRole("radio", { name: "All tags" });
+  const any = page.getByRole("radio", { name: "Any tags" });
+  await expect(all).toHaveAttribute("aria-checked", "true");
+  await any.click();
+  await expect(any).toHaveAttribute("aria-checked", "true");
+  await expect(page.getByText(/matching any of them/)).toBeVisible();
+
+  await filters.getByRole("button", { name: `Remove tag: ${first}` }).click();
+  await expect(
+    filters.getByRole("button", { name: `Remove tag: ${first}` }),
+  ).toBeHidden();
+  // One tag left: nothing to combine, so the match switch goes away.
+  await expect(any).toBeHidden();
+
+  await filters.getByRole("button", { name: "Clear all" }).click();
+  await expect(filters).toBeHidden();
+});
+
+test("an empty tag search offers to match any tag or clear filters", async ({
+  page,
+}) => {
+  // Stub the search API so the empty state does not depend on catalog data.
+  let lastBody: Record<string, unknown> = {};
+  await page.route("**/api/search", async (route) => {
+    lastBody = route.request().postDataJSON();
+    await route.fulfill({
+      json: {
+        query: "",
+        filter: { surface: "any" },
+        cards: [],
+        usedFallback: false,
+        total: 0,
+      },
+    });
+  });
+
+  await page.goto("/builder");
+  await catalogCardNames(page);
+  await pickTags(page, [
+    TAG_INFO.energy_zone_attach.label,
+    TAG_INFO.snipe.label,
+  ]);
+
+  await expect(page.getByText("No cards match these filters")).toBeVisible();
+  await page.getByRole("button", { name: "Match any tag" }).click();
+  await expect.poll(() => lastBody.tagMode).toBe("any");
+
+  await page.getByRole("button", { name: "Clear filters" }).click();
+  await expect(catalogCards(page).first()).toBeVisible();
+  await expect(page.getByRole("group", { name: "Active filters" })).toBeHidden();
 });

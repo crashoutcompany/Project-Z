@@ -215,6 +215,10 @@ function getConnectionString(
   // neonctl >=8 takes the branch positionally; an unknown --branch flag is ignored
   // and silently yields the default branch.
   const args = ["connection-string", branchName, "--project-id", projectId];
+  // The project has more than one database (the empty `ptcgp` beside `neondb`),
+  // and neonctl refuses to pick. Same defaults as the shared CI workflow.
+  args.push("--database-name", process.env.NEON_DATABASE || "neondb");
+  if (process.env.NEON_ROLE) args.push("--role-name", process.env.NEON_ROLE);
   if (pooled) args.push("--pooled");
 
   const connectionString = neonctl(args);

@@ -15,7 +15,6 @@ export function SearchBox({
   mode,
   onModeChange,
   placeholder,
-  filterChips = [],
   showModes = true,
 }: SearchBoxProps) {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -131,19 +130,6 @@ export function SearchBox({
           ) : null}
         </div>
       </div>
-
-      {mode === "effects" && filterChips.length > 0 ? (
-        <div className="flex flex-wrap gap-1.5">
-          {filterChips.map((chip) => (
-            <span
-              key={chip}
-              className="bg-secondary text-secondary-foreground rounded-full px-2.5 py-0.5 text-xs"
-            >
-              {chip}
-            </span>
-          ))}
-        </div>
-      ) : null}
     </div>
   );
 }
