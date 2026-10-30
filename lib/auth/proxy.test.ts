@@ -115,7 +115,69 @@ describe("createAuthProxy", () => {
       returnHeaders: true,
       method: "GET",
     });
-    expect(response.headers.get("location")).toBe("https://example.com/signin");
+    expect(response.headers.get("location")).toBe(
+      "https://example.com/signin?next=%2Fdex",
+    );
+  });
+
+  it("preserves shared builder query strings on the sign-in redirect", async () => {
+    const getSession = vi.fn().mockResolvedValue({
+      headers: new Headers(),
+      response: null,
+    });
+    const proxy = createAuthProxy({
+      auth: { api: { getSession } },
+      rules: [{ path: "*", access: "session" }],
+      signInPath: "/signin",
+    });
+
+    const response = await proxy(request("/builder?v=1&deck=A1-1,A1-94x2"));
+    const location = new URL(response.headers.get("location") ?? "");
+
+    expect(location.pathname).toBe("/signin");
+    expect(location.searchParams.get("next")).toBe(
+      "/builder?v=1&deck=A1-1,A1-94x2",
+    );
+  });
+
+  it("sends a signed-in visitor with a safe next param through to that path", async () => {
+    const getSession = vi.fn().mockResolvedValue({
+      headers: new Headers(),
+      response: { user: {} },
+    });
+    const proxy = createAuthProxy({
+      auth: { api: { getSession } },
+      publicPaths: ["/signin"],
+      rules: [{ path: "*", access: "session" }],
+      signInPath: "/signin",
+      signedInPath: "/",
+    });
+
+    const response = await proxy(
+      request(`/signin?next=${encodeURIComponent("/builder?v=1&deck=A1-1")}`),
+    );
+
+    expect(response.headers.get("location")).toBe(
+      "https://example.com/builder?v=1&deck=A1-1",
+    );
+  });
+
+  it("ignores an open-redirect next param for signed-in visitors", async () => {
+    const getSession = vi.fn().mockResolvedValue({
+      headers: new Headers(),
+      response: { user: {} },
+    });
+    const proxy = createAuthProxy({
+      auth: { api: { getSession } },
+      publicPaths: ["/signin"],
+      rules: [{ path: "*", access: "session" }],
+      signInPath: "/signin",
+      signedInPath: "/",
+    });
+
+    const response = await proxy(request("/signin?next=https://evil.example"));
+
+    expect(response.headers.get("location")).toBe("https://example.com/");
   });
 
   it("redirects signed-in users away from sign-in", async () => {

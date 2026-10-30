@@ -1,6 +1,12 @@
 import { parseSetCookieHeader, toCookieOptions } from "better-auth/cookies";
 import { NextRequest, NextResponse } from "next/server";
 
+import {
+  AUTH_RETURN_QUERY,
+  safeAuthReturnPath,
+  signInRedirectUrl,
+} from "./return-path";
+
 export type AuthAccessRule = "session" | `role:${string}`;
 
 export type AuthPathRule = {
@@ -149,8 +155,12 @@ export function createAuthProxy({
     );
 
     if (isSignInPath) {
+      const next = safeAuthReturnPath(
+        request.nextUrl.searchParams.get(AUTH_RETURN_QUERY),
+        signInPath,
+      );
       const response = session
-        ? NextResponse.redirect(new URL(signedInPath, request.url))
+        ? NextResponse.redirect(new URL(next ?? signedInPath, request.url))
         : NextResponse.next();
       return applyAuthCookies(response, sessionHeaders);
     }
@@ -161,7 +171,13 @@ export function createAuthProxy({
 
     if (!session) {
       return applyAuthCookies(
-        NextResponse.redirect(new URL(signInPath, request.url)),
+        NextResponse.redirect(
+          signInRedirectUrl(
+            request.url,
+            signInPath,
+            `${request.nextUrl.pathname}${request.nextUrl.search}`,
+          ),
+        ),
         sessionHeaders,
       );
     }
