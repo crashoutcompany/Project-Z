@@ -10,7 +10,7 @@ import {
   resolveCardImageUrls,
 } from "./lib/image-url";
 import { normalizeCard } from "./lib/normalize";
-import { tagAttack, tagEffect } from "./lib/tagger";
+import { tagAttack, tagEffect } from "../lib/search/tagger";
 import { PINNED_COMMIT_SHA, SOURCE_URL } from "./lib/source-pin";
 
 function loadLocalEnv() {

@@ -61,7 +61,7 @@ TRUNCATE "SearchQueryCache";
 
 ## Tag vocabulary
 
-Tags are assigned at import time by `scripts/lib/tagger.ts`. The NL search LLM may only emit that closed list. Adding a tag = update the tagger rule + `lib/search/tags.ts` + re-import + truncate the parse cache.
+Tags are assigned at import time by `lib/search/tagger.ts`. The NL search LLM may only emit that closed list. Adding a tag = update the tagger rule + `lib/search/tags.ts` + re-import + truncate the parse cache.
 
 ## Images
 

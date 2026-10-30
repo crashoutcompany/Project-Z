@@ -1,5 +1,5 @@
 /**
- * Closed tag vocabulary. This is the single definition; scripts/lib/tagger.ts
+ * Closed tag vocabulary. This is the single definition; lib/search/tagger.ts
  * imports from here so the importer and the search layer always agree.
  * See docs/tag-audit.md for how the tags were chosen.
  */

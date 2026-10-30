@@ -3,7 +3,7 @@ import prisma from "@/prisma/db";
 import type { AttackFilter, EffectFilter, FilterJSON } from "./filter-schema";
 import { filterTags, type TagMode } from "./filter-tags";
 import { cardMatchesClauses, hasEnergyTypeCounts } from "./match";
-import { tagAttack, tagEffect } from "@/scripts/lib/tagger";
+import { tagAttack, tagEffect } from "./tagger";
 
 export type { TagMode };
 
