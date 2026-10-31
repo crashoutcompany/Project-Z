@@ -16,6 +16,7 @@ jobs:
   ci:
     uses: crashoutcompany/.github/.github/workflows/ci.yml@020f7e78cd5cd56b0d110210bd2ef1b715c75be3 # v1.4.0
     with:
+      node-version: "26"
       test-script: test:coverage
       has-e2e: true
       use-prisma-neon: true
