@@ -2,7 +2,7 @@ import { DamageKind, EffectKind } from "../../prisma/generated/client/client";
 // Single source of truth for the closed tag vocabulary. The search layer
 // (lib/search/filter-schema.ts) validates LLM/heuristic output against the
 // same lists, so the importer and the query side cannot drift apart.
-import { type AttackTag, type EffectTag } from "../../lib/search/tags";
+import { type AttackTag, type EffectTag } from "./tags";
 
 /**
  * Lowercase, strip accents ("Pokémon" → "pokemon") and fold typographic

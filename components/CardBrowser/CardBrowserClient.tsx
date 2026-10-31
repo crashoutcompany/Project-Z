@@ -7,6 +7,8 @@ import { CardGrid } from "./CardGrid";
 import { SearchBox, type SearchMode } from "./SearchBox";
 import { SetTabs } from "./SetTabs";
 import { TagFilter } from "./TagFilter";
+import { TypeFilter } from "./TypeFilter";
+import { typeLabel } from "./type-info";
 import { ActiveFilters } from "./ActiveFilters";
 import { NoMatches } from "./NoMatches";
 import { CardDetailSheet } from "./CardDetailSheet";
@@ -17,6 +19,51 @@ import { CardBrowserMode, CardWithSet, SelectedCards, TagMode } from "./types";
 import type { CardDetail } from "@/lib/card-detail";
 import type { FilterJSON, SearchCardResult } from "@/lib/search";
 import { filterTags } from "@/lib/search/filter-tags";
+
+const PAGE_SIZE = 60;
+
+type EffectsRequest = {
+  query: string;
+  tags: string[];
+  matchMode: TagMode;
+  types: string[];
+  /** Parsed tags the user dismissed. */
+  exclude: string[];
+};
+
+type EffectsResponse = {
+  error?: string;
+  filter?: FilterJSON;
+  cards?: SearchCardResult[];
+  total?: number;
+  usedFallback?: boolean;
+};
+
+function postEffectsSearch(
+  req: EffectsRequest,
+  tradeableOnly: boolean,
+  offset: number,
+) {
+  return fetch("/api/search", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      query: req.query,
+      limit: PAGE_SIZE,
+      tradeableOnly,
+      ...(offset ? { offset } : {}),
+      ...(req.tags.length ? { tags: req.tags, tagMode: req.matchMode } : {}),
+      ...(req.types.length ? { types: req.types } : {}),
+      ...(req.query && req.exclude.length ? { excludeTags: req.exclude } : {}),
+    }),
+  });
+}
+
+/** Offset of the next page, or null when every match is loaded. */
+function nextOffset(offset: number, received: number, total: number) {
+  const next = offset + received;
+  return received > 0 && next < total ? next : null;
+}
 
 type CardBrowserClientProps = {
   sets: Set[];
@@ -58,6 +105,25 @@ function filterToNotes(filter: FilterJSON): string[] {
   if (filter.attack?.damageKind) chips.push(filter.attack.damageKind);
   if (filter.textFallback) chips.push(`text:${filter.textFallback}`);
   return chips;
+}
+
+/** What an effects search is narrowed by, e.g. "Filtering by 2 tags · Grass". */
+function effectsSummary(
+  query: string,
+  tagCount: number,
+  tagMode: TagMode,
+  types: string[],
+): string {
+  if (query) return `Searching effects for “${query}”`;
+  const parts: string[] = [];
+  if (tagCount === 1) parts.push("1 tag");
+  if (tagCount > 1) {
+    parts.push(
+      `${tagCount} tags · matching ${tagMode === "all" ? "all of them" : "any of them"}`,
+    );
+  }
+  if (types.length) parts.push(types.map(typeLabel).join(" or "));
+  return `Filtering by ${parts.join(" · ")}`;
 }
 
 function searchResultToCardWithSet(
@@ -124,12 +190,19 @@ export function CardBrowserClient({
   const [searchMode, setSearchMode] = useState<SearchMode>(defaultSearchMode);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [tagMode, setTagMode] = useState<TagMode>("all");
+  const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   // Tags parsed from the typed query, minus any the user dismissed.
   const [parsedTags, setParsedTags] = useState<string[]>([]);
   const [excludedTags, setExcludedTags] = useState<string[]>([]);
   const [filterNotes, setFilterNotes] = useState<string[]>([]);
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
   const [cursor, setCursor] = useState<number | null>(initialCursor);
+  // Effects search: every match, and the request that produced the results
+  // (load more repeats it with an offset).
+  const [total, setTotal] = useState(0);
+  const [effectsRequest, setEffectsRequest] = useState<EffectsRequest | null>(
+    null,
+  );
   const [resultsEpoch, setResultsEpoch] = useState(0);
   const [isPending, startTransition] = useTransition();
   const [effectsError, setEffectsError] = useState<string | null>(null);
@@ -158,7 +231,8 @@ export function CardBrowserClient({
 
   const isSearching =
     searchQuery.length > 0 ||
-    (searchMode === "effects" && selectedTags.length > 0);
+    (searchMode === "effects" &&
+      selectedTags.length + selectedTypes.length > 0);
 
   const loadSet = useCallback(
     (setId: number) => {
@@ -212,71 +286,84 @@ export function CardBrowserClient({
   );
 
   const runEffectsSearch = useCallback(
-    (
-      query: string,
-      tags: string[],
-      matchMode: TagMode,
-      exclude: string[] = [],
-    ) => {
+    (req: EffectsRequest) => {
       const seq = ++requestSeq.current;
       startTransition(async () => {
-        if (!query && tags.length === 0) {
+        if (!req.query && req.tags.length + req.types.length === 0) {
           const result = await fetchCards({
             setId: activeSetId,
             tradeableOnly,
           });
           if (seq !== requestSeq.current) return;
           replaceResults(result.cards as CardWithSet[], result.nextCursor);
+          setEffectsRequest(null);
           clearParsed();
           setEffectsError(null);
           return;
         }
 
         try {
-          const res = await fetch("/api/search", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-              query,
-              limit: 60,
-              tradeableOnly,
-              ...(tags.length ? { tags, tagMode: matchMode } : {}),
-              ...(query && exclude.length ? { excludeTags: exclude } : {}),
-            }),
-          });
-          const data = (await res.json()) as {
-            error?: string;
-            filter?: FilterJSON;
-            cards?: SearchCardResult[];
-            usedFallback?: boolean;
-          };
+          const res = await postEffectsSearch(req, tradeableOnly, 0);
+          const data = (await res.json()) as EffectsResponse;
           if (seq !== requestSeq.current) return;
           if (!res.ok) {
             setEffectsError(data.error ?? "Search failed");
             replaceResults([], null);
+            setEffectsRequest(null);
             clearParsed();
             return;
           }
           setEffectsError(null);
           setParsedTags(
             data.filter
-              ? filterTags(data.filter).filter((t) => !tags.includes(t))
+              ? filterTags(data.filter).filter((t) => !req.tags.includes(t))
               : [],
           );
           setFilterNotes(data.filter ? filterToNotes(data.filter) : []);
+          const found = data.cards ?? [];
+          const matches = data.total ?? found.length;
+          setTotal(matches);
+          setEffectsRequest(req);
           replaceResults(
-            (data.cards ?? []).map((c) => searchResultToCardWithSet(c, sets)),
-            null,
+            found.map((c) => searchResultToCardWithSet(c, sets)),
+            nextOffset(0, found.length, matches),
           );
         } catch {
           if (seq !== requestSeq.current) return;
           setEffectsError("Search request failed");
           replaceResults([], null);
+          setEffectsRequest(null);
           clearParsed();
         }
       });
     },
     [activeSetId, tradeableOnly, sets, replaceResults, clearParsed],
+  );
+
+  const loadEffectsPage = useCallback(
+    async (offset: number) => {
+      const done = { cards: [], nextOffset: null };
+      if (!effectsRequest) return done;
+      // A failed page ends paging instead of throwing out of the grid's
+      // transition, which would take the page down to the error boundary.
+      try {
+        const res = await postEffectsSearch(
+          effectsRequest,
+          tradeableOnly,
+          offset,
+        );
+        const data = (await res.json()) as EffectsResponse;
+        if (!res.ok) return done;
+        const found = data.cards ?? [];
+        return {
+          cards: found.map((c) => searchResultToCardWithSet(c, sets)),
+          nextOffset: nextOffset(offset, found.length, data.total ?? 0),
+        };
+      } catch {
+        return done;
+      }
+    },
+    [effectsRequest, tradeableOnly, sets],
   );
 
   const handleSearchChange = useCallback(
@@ -287,26 +374,65 @@ export function CardBrowserClient({
       if (searchMode === "name") {
         runNameSearch(query);
       } else {
-        runEffectsSearch(query, selectedTags, tagMode);
+        runEffectsSearch({
+          query,
+          tags: selectedTags,
+          matchMode: tagMode,
+          types: selectedTypes,
+          exclude: [],
+        });
       }
     },
-    [searchMode, selectedTags, tagMode, runNameSearch, runEffectsSearch],
+    [
+      searchMode,
+      selectedTags,
+      tagMode,
+      selectedTypes,
+      runNameSearch,
+      runEffectsSearch,
+    ],
   );
 
   const handleTagsChange = useCallback(
     (tags: string[]) => {
       setSelectedTags(tags);
-      runEffectsSearch(searchQuery, tags, tagMode, excludedTags);
+      runEffectsSearch({
+        query: searchQuery,
+        tags,
+        matchMode: tagMode,
+        types: selectedTypes,
+        exclude: excludedTags,
+      });
     },
-    [searchQuery, tagMode, excludedTags, runEffectsSearch],
+    [searchQuery, tagMode, selectedTypes, excludedTags, runEffectsSearch],
+  );
+
+  const handleTypesChange = useCallback(
+    (types: string[]) => {
+      setSelectedTypes(types);
+      runEffectsSearch({
+        query: searchQuery,
+        tags: selectedTags,
+        matchMode: tagMode,
+        types,
+        exclude: excludedTags,
+      });
+    },
+    [searchQuery, selectedTags, tagMode, excludedTags, runEffectsSearch],
   );
 
   const handleTagModeChange = useCallback(
     (next: TagMode) => {
       setTagMode(next);
-      runEffectsSearch(searchQuery, selectedTags, next, excludedTags);
+      runEffectsSearch({
+        query: searchQuery,
+        tags: selectedTags,
+        matchMode: next,
+        types: selectedTypes,
+        exclude: excludedTags,
+      });
     },
-    [searchQuery, selectedTags, excludedTags, runEffectsSearch],
+    [searchQuery, selectedTags, selectedTypes, excludedTags, runEffectsSearch],
   );
 
   const handleRemoveParsedTag = useCallback(
@@ -316,12 +442,24 @@ export function CardBrowserClient({
       if (parsedTags.length === 1 && filterNotes.length === 0) {
         setSearchQuery("");
         setExcludedTags([]);
-        runEffectsSearch("", selectedTags, tagMode);
+        runEffectsSearch({
+          query: "",
+          tags: selectedTags,
+          matchMode: tagMode,
+          types: selectedTypes,
+          exclude: [],
+        });
         return;
       }
       const exclude = [...excludedTags, tag];
       setExcludedTags(exclude);
-      runEffectsSearch(searchQuery, selectedTags, tagMode, exclude);
+      runEffectsSearch({
+        query: searchQuery,
+        tags: selectedTags,
+        matchMode: tagMode,
+        types: selectedTypes,
+        exclude,
+      });
     },
     [
       parsedTags,
@@ -330,6 +468,7 @@ export function CardBrowserClient({
       searchQuery,
       selectedTags,
       tagMode,
+      selectedTypes,
       runEffectsSearch,
     ],
   );
@@ -337,6 +476,7 @@ export function CardBrowserClient({
   const handleClearFilters = useCallback(() => {
     setSearchQuery("");
     setSelectedTags([]);
+    setSelectedTypes([]);
     setExcludedTags([]);
     clearParsed();
     setEffectsError(null);
@@ -348,6 +488,7 @@ export function CardBrowserClient({
       setSearchMode(next);
       setSearchQuery("");
       setSelectedTags([]);
+      setSelectedTypes([]);
       setExcludedTags([]);
       clearParsed();
       setEffectsError(null);
@@ -380,18 +521,25 @@ export function CardBrowserClient({
 
       {searchMode === "effects" ? (
         <div className="space-y-3">
-          <TagFilter
-            selected={selectedTags}
-            onChange={handleTagsChange}
-            mode={tagMode}
-            onModeChange={handleTagModeChange}
-          />
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+            <TagFilter
+              selected={selectedTags}
+              onChange={handleTagsChange}
+              mode={tagMode}
+              onModeChange={handleTagModeChange}
+            />
+            <TypeFilter selected={selectedTypes} onChange={handleTypesChange} />
+          </div>
           <ActiveFilters
             picked={selectedTags}
+            types={selectedTypes}
             parsed={parsedTags}
             notes={filterNotes}
             onRemovePicked={(tag) =>
               handleTagsChange(selectedTags.filter((t) => t !== tag))
+            }
+            onRemoveType={(type) =>
+              handleTypesChange(selectedTypes.filter((t) => t !== type))
             }
             onRemoveParsed={handleRemoveParsedTag}
             onClearAll={handleClearFilters}
@@ -420,13 +568,9 @@ export function CardBrowserClient({
         <p className="text-muted-foreground text-sm" aria-live="polite">
           {searchMode === "name"
             ? `Searching names for “${searchQuery}”`
-            : searchQuery
-              ? `Searching effects for “${searchQuery}”`
-              : selectedTags.length === 1
-                ? "Filtering by 1 tag"
-                : `Filtering by ${selectedTags.length} tags · matching ${tagMode === "all" ? "all of them" : "any of them"}`}
-          {searchMode === "effects" && !isPending
-            ? ` · ${cards.length === 1 ? "1 card" : `${cards.length} cards`}`
+            : effectsSummary(searchQuery, selectedTags.length, tagMode, selectedTypes)}
+          {searchMode === "effects" && !isPending && !effectsError
+            ? ` · ${total === 1 ? "1 card" : `${total.toLocaleString("en-US")} cards`}`
             : null}
         </p>
       ) : null}
@@ -442,6 +586,7 @@ export function CardBrowserClient({
       cards.length === 0 ? (
         <NoMatches
           tagCount={selectedTags.length}
+          typeCount={selectedTypes.length}
           tagMode={tagMode}
           hasQuery={searchQuery.length > 0}
           onMatchAny={() => handleTagModeChange("any")}
@@ -449,9 +594,13 @@ export function CardBrowserClient({
         />
       ) : (
       <CardGrid
-        key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${tagMode}-${resultsEpoch}`}
+        key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${tagMode}-${selectedTypes.join(",")}-${resultsEpoch}`}
         initialCards={cards}
-        initialCursor={isSearching && searchMode === "effects" ? null : cursor}
+        initialCursor={cursor}
+        loadPage={
+          isSearching && searchMode === "effects" ? loadEffectsPage : undefined
+        }
+        total={isSearching && searchMode === "effects" ? total : undefined}
         setId={isSearching ? undefined : activeSetId}
         searchQuery={searchQuery}
         tradeableOnly={tradeableOnly}

@@ -3,6 +3,8 @@
 import { Sparkles, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { tagLabel } from "@/lib/search/tags";
+import { TypeIcon } from "./TypeFilter";
+import { isEnergyType, typeLabel } from "./type-info";
 import type { ActiveFiltersProps } from "./types";
 
 // Pills are 36px tall, 44px on touch screens, with 8px between them.
@@ -11,19 +13,22 @@ const pill =
 
 /**
  * Everything currently narrowing an effects search, under the search bar:
- * tags picked from the list, tags parsed from the typed query (both
- * removable) and the query's other parsed constraints (read-only).
+ * tags picked from the list, picked Pokémon types, tags parsed from the typed
+ * query (all removable) and the query's other parsed constraints (read-only).
  */
 export function ActiveFilters({
   picked,
+  types,
   parsed,
   notes,
   onRemovePicked,
+  onRemoveType,
   onRemoveParsed,
   onClearAll,
   disabled,
 }: ActiveFiltersProps) {
-  if (picked.length + parsed.length + notes.length === 0) return null;
+  const removable = picked.length + types.length + parsed.length;
+  if (removable + notes.length === 0) return null;
 
   return (
     <div
@@ -45,6 +50,24 @@ export function ActiveFilters({
         >
           <span>{tagLabel(tag)}</span>
           <X className="size-4 opacity-80" aria-hidden />
+        </button>
+      ))}
+
+      {types.map((type) => (
+        <button
+          key={`type-${type}`}
+          type="button"
+          onClick={() => onRemoveType(type)}
+          disabled={disabled}
+          aria-label={`Remove type: ${typeLabel(type)}`}
+          className={cn(
+            pill,
+            "bg-secondary text-secondary-foreground hover:bg-secondary/70 ring-foreground/10 pl-1.5 ring-1 ring-inset",
+          )}
+        >
+          {isEnergyType(type) ? <TypeIcon type={type} /> : null}
+          <span>{typeLabel(type)}</span>
+          <X className="text-muted-foreground size-4" aria-hidden />
         </button>
       ))}
 
@@ -76,7 +99,7 @@ export function ActiveFilters({
         </span>
       ))}
 
-      {picked.length + parsed.length > 0 ? (
+      {removable > 0 ? (
         <button
           type="button"
           onClick={onClearAll}

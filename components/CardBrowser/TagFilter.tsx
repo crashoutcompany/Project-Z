@@ -72,13 +72,17 @@ export function TagFilter({
           ) : null}
           <ChevronsUpDown className="text-muted-foreground" aria-hidden />
         </PopoverTrigger>
+        {/* Never taller than the room between the trigger and the viewport
+            edge (Base UI's --available-height, collision padding included):
+            the tag list shrinks and scrolls, the footer stays visible. */}
         <PopoverContent
           align="start"
-          className="w-[min(22rem,calc(100vw-2rem))] gap-0 p-0"
+          collisionPadding={8}
+          className="max-h-(--available-height) w-[min(22rem,calc(100vw-2rem))] gap-0 overflow-hidden p-0"
         >
-          <Command>
+          <Command className="min-h-0 flex-1">
             <CommandInput placeholder="Search tags…" />
-            <CommandList className="max-h-[min(20rem,50dvh)]">
+            <CommandList className="max-h-80 min-h-0 flex-1">
               <CommandEmpty>No tags found.</CommandEmpty>
               {TAGS_BY_GROUP.map(({ group, tags }) => (
                 <CommandGroup key={group} heading={group}>
@@ -98,7 +102,7 @@ export function TagFilter({
               ))}
             </CommandList>
           </Command>
-          <div className="flex items-center justify-between gap-2 border-t p-2">
+          <div className="flex shrink-0 items-center justify-between gap-2 border-t p-2">
             <span className="text-muted-foreground px-1 text-xs tabular-nums">
               {selected.length} selected
             </span>

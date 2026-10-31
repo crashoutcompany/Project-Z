@@ -318,7 +318,7 @@ Tags are the vocabulary the LLM is allowed to emit. **The Zod schema's `tags` fi
 
 ### Tagger contract
 
-`scripts/lib/tagger.ts` exports pure functions: `tagAttack(attack) → string[]`, `tagEffect(effect, kind) → string[]`. No I/O. Golden tests live next to it (see Verification).
+`lib/search/tagger.ts` exports pure functions: `tagAttack(attack) → string[]`, `tagEffect(effect, kind) → string[]`. No I/O. Golden tests live next to it (see Verification).
 
 ---
 

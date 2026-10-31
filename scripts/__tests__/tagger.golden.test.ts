@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { tagAttack, tagEffect } from "../lib/tagger";
+import { tagAttack, tagEffect } from "../../lib/search/tagger";
 import { DamageKind, EffectKind } from "../../prisma/generated/client/client";
 import {
   ATTACK_TAGS,

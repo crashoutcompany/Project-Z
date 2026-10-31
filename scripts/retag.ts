@@ -10,7 +10,7 @@
  * so a stray DATABASE_URL cannot be retagged by accident.
  */
 import { DamageKind, EffectKind } from "../prisma/generated/client/client";
-import { tagAttack, tagEffect } from "./lib/tagger";
+import { tagAttack, tagEffect } from "../lib/search/tagger";
 
 export type AttackRow = {
   id: number;

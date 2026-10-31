@@ -7,6 +7,10 @@ import { cn } from "@/lib/utils";
 import { Search, X } from "lucide-react";
 import type { SearchBoxProps, SearchMode } from "./types";
 
+// The long effects hint needs about this much input width (text, icon and
+// clear-button padding) before it clips.
+const LONG_HINT_MIN_WIDTH = 400;
+
 export type { SearchMode, SearchBoxProps };
 
 export function SearchBox({
@@ -23,6 +27,7 @@ export function SearchBox({
   const [localValue, setLocalValue] = useState(value);
   const [seenMode, setSeenMode] = useState(mode);
   const [seenValue, setSeenValue] = useState(value);
+  const [roomy, setRoomy] = useState(false);
 
   useEffect(() => {
     onChangeRef.current = onChange;
@@ -38,6 +43,18 @@ export function SearchBox({
     return () => {
       if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
     };
+  }, []);
+
+  // Pick the placeholder by the input's own width, not the viewport: the
+  // builder's catalog column is narrow even on desktop.
+  useEffect(() => {
+    const input = inputRef.current;
+    if (!input) return;
+    const observer = new ResizeObserver(([entry]) => {
+      setRoomy((entry?.contentRect.width ?? 0) >= LONG_HINT_MIN_WIDTH);
+    });
+    observer.observe(input);
+    return () => observer.disconnect();
   }, []);
 
   const switchMode = (next: SearchMode) => {
@@ -68,7 +85,9 @@ export function SearchBox({
     placeholder ??
     (mode === "name"
       ? "Search by name..."
-      : "Search by effect (e.g. coin flip, bench damage)...");
+      : roomy
+        ? "Search by effect (e.g. coin flip, bench damage)..."
+        : "Search by effect...");
 
   return (
     <div className="w-full space-y-2">
@@ -112,7 +131,11 @@ export function SearchBox({
             placeholder={resolvedPlaceholder}
             value={localValue}
             onChange={handleChange}
-            className="h-10 border-0 bg-transparent pr-9 pl-8 shadow-none focus-visible:ring-0 dark:bg-transparent"
+            className={cn(
+              "h-10 border-0 bg-transparent pl-8 shadow-none focus-visible:ring-0 dark:bg-transparent",
+              // Room for the clear button only while there is text to clear.
+              localValue ? "pr-9" : "pr-2",
+            )}
             autoCorrect="off"
             autoComplete="off"
           />

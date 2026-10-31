@@ -10,7 +10,7 @@
 import fs from "node:fs";
 import { SourcePayloadSchema } from "./lib/source-schema";
 import { normalizeCard } from "./lib/normalize";
-import { tagAttack, tagEffect } from "./lib/tagger";
+import { tagAttack, tagEffect } from "../lib/search/tagger";
 
 const args = process.argv.slice(2);
 const file = args.find((a) => !a.startsWith("--")) ?? "scripts/cache/cards.json";

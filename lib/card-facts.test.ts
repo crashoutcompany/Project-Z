@@ -86,6 +86,20 @@ describe("sheetHeading", () => {
       ),
     ).toEqual({ title: "Mewtwo ex", description: "Genetic Apex · A1-129" });
   });
+
+  it("does not repeat ex when the name already has it", () => {
+    expect(
+      sheetHeading(
+        {
+          name: "Mega Venusaur ex",
+          isEx: true,
+          setName: "Deluxe Pack: Mega",
+          ref: "B4b-3",
+        },
+        false,
+      ).title,
+    ).toBe("Mega Venusaur ex");
+  });
 });
 
 describe("titleCase", () => {
