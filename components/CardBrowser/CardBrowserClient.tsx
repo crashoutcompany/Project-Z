@@ -7,7 +7,8 @@ import { CardGrid } from "./CardGrid";
 import { SearchBox, type SearchMode } from "./SearchBox";
 import { SetTabs } from "./SetTabs";
 import { TagFilter } from "./TagFilter";
-import { TypeFilter, typeLabel } from "./TypeFilter";
+import { TypeFilter } from "./TypeFilter";
+import { typeLabel } from "./type-info";
 import { ActiveFilters } from "./ActiveFilters";
 import { NoMatches } from "./NoMatches";
 import { CardDetailSheet } from "./CardDetailSheet";
@@ -341,15 +342,26 @@ export function CardBrowserClient({
 
   const loadEffectsPage = useCallback(
     async (offset: number) => {
-      if (!effectsRequest) return { cards: [], nextOffset: null };
-      const res = await postEffectsSearch(effectsRequest, tradeableOnly, offset);
-      const data = (await res.json()) as EffectsResponse;
-      if (!res.ok) return { cards: [], nextOffset: null };
-      const found = data.cards ?? [];
-      return {
-        cards: found.map((c) => searchResultToCardWithSet(c, sets)),
-        nextOffset: nextOffset(offset, found.length, data.total ?? 0),
-      };
+      const done = { cards: [], nextOffset: null };
+      if (!effectsRequest) return done;
+      // A failed page ends paging instead of throwing out of the grid's
+      // transition, which would take the page down to the error boundary.
+      try {
+        const res = await postEffectsSearch(
+          effectsRequest,
+          tradeableOnly,
+          offset,
+        );
+        const data = (await res.json()) as EffectsResponse;
+        if (!res.ok) return done;
+        const found = data.cards ?? [];
+        return {
+          cards: found.map((c) => searchResultToCardWithSet(c, sets)),
+          nextOffset: nextOffset(offset, found.length, data.total ?? 0),
+        };
+      } catch {
+        return done;
+      }
     },
     [effectsRequest, tradeableOnly, sets],
   );

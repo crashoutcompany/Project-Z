@@ -3,7 +3,8 @@
 import { Sparkles, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { tagLabel } from "@/lib/search/tags";
-import { TypeIcon, isEnergyType, typeLabel } from "./TypeFilter";
+import { TypeIcon } from "./TypeFilter";
+import { isEnergyType, typeLabel } from "./type-info";
 import type { ActiveFiltersProps } from "./types";
 
 // Pills are 36px tall, 44px on touch screens, with 8px between them.
