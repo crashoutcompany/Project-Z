@@ -33,6 +33,7 @@ jobs:
       neon-role: neondb_owner
       vercel-preview-env: true
       prisma-migrate: true
+      node-version: "26"
     secrets: inherit
 
   sweep:
