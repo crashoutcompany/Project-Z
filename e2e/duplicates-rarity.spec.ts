@@ -113,7 +113,12 @@ test("name search hides duplicate prints until the toggle is on", async ({
   // Pikachu ex has alt-art prints in Genetic Apex and later sets.
   await page.getByPlaceholder("Search by name...").fill("Pikachu ex");
   await expect(page.getByText("Searching names for “Pikachu ex”")).toBeVisible();
-  await expect(catalogCards(page).first()).toBeVisible();
+  // Wait for the name results to replace the set page before counting.
+  const onlyMatches = async () => {
+    const names = await catalogCardNames(page);
+    return names.every((n) => n.toLowerCase().includes("pikachu ex"));
+  };
+  await expect.poll(onlyMatches).toBe(true);
   const deduped = await catalogCards(page).count();
 
   const toggle = page.getByRole("button", { name: "Show duplicates" });
@@ -122,6 +127,8 @@ test("name search hides duplicate prints until the toggle is on", async ({
   await expect
     .poll(() => catalogCards(page).count())
     .toBeGreaterThan(deduped);
+
+  expect(await onlyMatches()).toBe(true);
 
   await toggle.click();
   await expect.poll(() => catalogCards(page).count()).toBe(deduped);
