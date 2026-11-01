@@ -27,6 +27,19 @@ export const RARITY_INFO: Record<string, RarityInfo> = {
   PROMO: { code: "PROMO", name: "Promo", symbol: "P", shinedust: null },
 };
 
+/** Every stored rarity code, most common first. */
+export const RARITY_CODES = Object.keys(RARITY_INFO);
+
+/** Sort position of a rarity code: lower is more common. Unknown codes sort last. */
+export function rarityRank(rarity: string): number {
+  const index = RARITY_CODES.indexOf(rarity);
+  return index === -1 ? RARITY_CODES.length : index;
+}
+
+export function isRarityCode(value: string): boolean {
+  return Object.hasOwn(RARITY_INFO, value);
+}
+
 export function getRarityInfo(rarity: string): RarityInfo {
   return (
     RARITY_INFO[rarity] ?? {

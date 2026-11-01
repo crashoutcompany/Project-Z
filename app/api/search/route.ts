@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { executeSearch, parseQueryToFilter, validateQuery } from "@/lib/search";
+import { isRarityCode } from "@/lib/rarity";
 import { clientKeyFromRequest, rateLimit } from "@/lib/rate-limit";
 import { withoutTags } from "@/lib/search/filter-tags";
 import { ENERGY_TYPES, isTag } from "@/lib/search/tags";
@@ -49,6 +50,22 @@ function readTypes(
     return { ok: false, error: `Unknown type: ${unknown[0]}` };
   }
   return { ok: true, types: [...new Set(raw as string[])] };
+}
+
+/** Rarity codes picked in the UI, deduplicated. */
+function readRarities(
+  body: Record<string, unknown>,
+): { ok: true; rarities: string[] } | { ok: false; error: string } {
+  const raw = body.rarities;
+  if (raw === undefined) return { ok: true, rarities: [] };
+  if (!Array.isArray(raw) || raw.some((r) => typeof r !== "string")) {
+    return { ok: false, error: "rarities must be an array of strings" };
+  }
+  const unknown = raw.filter((r) => !isRarityCode(r));
+  if (unknown.length) {
+    return { ok: false, error: `Unknown rarity: ${unknown[0]}` };
+  }
+  return { ok: true, rarities: [...new Set(raw as string[])] };
 }
 
 export async function POST(request: Request) {
@@ -105,11 +122,18 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: typesResult.error }, { status: 400 });
   }
   const { types } = typesResult;
+  const raritiesResult = readRarities(payload);
+  if (!raritiesResult.ok) {
+    return NextResponse.json({ error: raritiesResult.error }, { status: 400 });
+  }
+  const { rarities } = raritiesResult;
+  const showDuplicates = readBool(payload, "showDuplicates");
 
   const query = typeof payload.query === "string" ? payload.query : null;
-  // A tag- or type-only search (picked in the UI, nothing typed) needs no
-  // query.
-  const tagOnly = tags.length + types.length > 0 && !query?.trim();
+  // A tag-, type- or rarity-only search (picked in the UI, nothing typed)
+  // needs no query.
+  const tagOnly =
+    tags.length + types.length + rarities.length > 0 && !query?.trim();
   if (query === null && !tagOnly) {
     return NextResponse.json(
       { error: "Missing string field: query" },
@@ -144,6 +168,8 @@ export async function POST(request: Request) {
       ...(offset ? { offset } : {}),
       ...(tags.length ? { tags, tagMode } : {}),
       ...(types.length ? { types } : {}),
+      ...(rarities.length ? { rarities } : {}),
+      ...(showDuplicates ? { showDuplicates } : {}),
     });
 
     return NextResponse.json({
@@ -151,6 +177,8 @@ export async function POST(request: Request) {
       tags,
       tagMode,
       types,
+      rarities,
+      showDuplicates,
       filter,
       cached: parsed.cached,
       source: parsed.source,

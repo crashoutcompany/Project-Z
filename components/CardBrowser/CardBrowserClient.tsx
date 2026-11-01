@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef, useState, useTransition } from "react";
+import { useCallback, useMemo, useRef, useState, useTransition } from "react";
 import { Set } from "@/prisma/generated/client/client";
 import { fetchCards } from "@/server/actions";
 import { CardGrid } from "./CardGrid";
@@ -8,6 +8,7 @@ import { SearchBox, type SearchMode } from "./SearchBox";
 import { SetTabs } from "./SetTabs";
 import { TagFilter } from "./TagFilter";
 import { TypeFilter } from "./TypeFilter";
+import { DuplicatesToggle, RarityFilter } from "./RarityFilter";
 import { typeLabel } from "./type-info";
 import { ActiveFilters } from "./ActiveFilters";
 import { NoMatches } from "./NoMatches";
@@ -22,7 +23,21 @@ import { filterTags } from "@/lib/search/filter-tags";
 
 const PAGE_SIZE = 60;
 
-type EffectsRequest = {
+/** Narrows every view (set, name and effects) alike. */
+type ViewOptions = {
+  rarities: string[];
+  /** List every print instead of one per name + attacks. */
+  showDuplicates: boolean;
+};
+
+function viewParams({ rarities, showDuplicates }: ViewOptions) {
+  return {
+    ...(rarities.length ? { rarities } : {}),
+    ...(showDuplicates ? { showDuplicates } : {}),
+  };
+}
+
+type EffectsRequest = ViewOptions & {
   query: string;
   tags: string[];
   matchMode: TagMode;
@@ -55,6 +70,7 @@ function postEffectsSearch(
       ...(req.tags.length ? { tags: req.tags, tagMode: req.matchMode } : {}),
       ...(req.types.length ? { types: req.types } : {}),
       ...(req.query && req.exclude.length ? { excludeTags: req.exclude } : {}),
+      ...viewParams(req),
     }),
   });
 }
@@ -191,6 +207,12 @@ export function CardBrowserClient({
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [tagMode, setTagMode] = useState<TagMode>("all");
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
+  const [selectedRarities, setSelectedRarities] = useState<string[]>([]);
+  const [showDuplicates, setShowDuplicates] = useState(false);
+  const view = useMemo<ViewOptions>(
+    () => ({ rarities: selectedRarities, showDuplicates }),
+    [selectedRarities, showDuplicates],
+  );
   // Tags parsed from the typed query, minus any the user dismissed.
   const [parsedTags, setParsedTags] = useState<string[]>([]);
   const [excludedTags, setExcludedTags] = useState<string[]>([]);
@@ -235,12 +257,13 @@ export function CardBrowserClient({
       selectedTags.length + selectedTypes.length > 0);
 
   const loadSet = useCallback(
-    (setId: number) => {
+    (setId: number, view: ViewOptions) => {
       const seq = ++requestSeq.current;
       startTransition(async () => {
         const result = await fetchCards({
           setId,
           tradeableOnly,
+          ...viewParams(view),
         });
         if (seq !== requestSeq.current) return;
         replaceResults(result.cards as CardWithSet[], result.nextCursor);
@@ -254,19 +277,20 @@ export function CardBrowserClient({
   const handleSetChange = useCallback(
     (setId: number) => {
       setActiveSetId(setId);
-      loadSet(setId);
+      loadSet(setId, { rarities: selectedRarities, showDuplicates });
     },
-    [loadSet],
+    [loadSet, selectedRarities, showDuplicates],
   );
 
   const runNameSearch = useCallback(
-    (query: string) => {
+    (query: string, view: ViewOptions) => {
       const seq = ++requestSeq.current;
       startTransition(async () => {
         if (query) {
           const result = await fetchCards({
             search: query,
             tradeableOnly,
+            ...viewParams(view),
           });
           if (seq !== requestSeq.current) return;
           replaceResults(result.cards as CardWithSet[], result.nextCursor);
@@ -274,6 +298,7 @@ export function CardBrowserClient({
           const result = await fetchCards({
             setId: activeSetId,
             tradeableOnly,
+            ...viewParams(view),
           });
           if (seq !== requestSeq.current) return;
           replaceResults(result.cards as CardWithSet[], result.nextCursor);
@@ -293,6 +318,7 @@ export function CardBrowserClient({
           const result = await fetchCards({
             setId: activeSetId,
             tradeableOnly,
+            ...viewParams(req),
           });
           if (seq !== requestSeq.current) return;
           replaceResults(result.cards as CardWithSet[], result.nextCursor);
@@ -372,7 +398,7 @@ export function CardBrowserClient({
       // A new query brings back every tag it parses to.
       setExcludedTags([]);
       if (searchMode === "name") {
-        runNameSearch(query);
+        runNameSearch(query, view);
       } else {
         runEffectsSearch({
           query,
@@ -380,10 +406,12 @@ export function CardBrowserClient({
           matchMode: tagMode,
           types: selectedTypes,
           exclude: [],
+          ...view,
         });
       }
     },
     [
+      view,
       searchMode,
       selectedTags,
       tagMode,
@@ -402,9 +430,10 @@ export function CardBrowserClient({
         matchMode: tagMode,
         types: selectedTypes,
         exclude: excludedTags,
+        ...view,
       });
     },
-    [searchQuery, tagMode, selectedTypes, excludedTags, runEffectsSearch],
+    [searchQuery, tagMode, selectedTypes, excludedTags, view, runEffectsSearch],
   );
 
   const handleTypesChange = useCallback(
@@ -416,9 +445,10 @@ export function CardBrowserClient({
         matchMode: tagMode,
         types,
         exclude: excludedTags,
+        ...view,
       });
     },
-    [searchQuery, selectedTags, tagMode, excludedTags, runEffectsSearch],
+    [searchQuery, selectedTags, tagMode, excludedTags, view, runEffectsSearch],
   );
 
   const handleTagModeChange = useCallback(
@@ -430,9 +460,17 @@ export function CardBrowserClient({
         matchMode: next,
         types: selectedTypes,
         exclude: excludedTags,
+        ...view,
       });
     },
-    [searchQuery, selectedTags, selectedTypes, excludedTags, runEffectsSearch],
+    [
+      searchQuery,
+      selectedTags,
+      selectedTypes,
+      excludedTags,
+      view,
+      runEffectsSearch,
+    ],
   );
 
   const handleRemoveParsedTag = useCallback(
@@ -448,6 +486,7 @@ export function CardBrowserClient({
           matchMode: tagMode,
           types: selectedTypes,
           exclude: [],
+          ...view,
         });
         return;
       }
@@ -459,6 +498,7 @@ export function CardBrowserClient({
         matchMode: tagMode,
         types: selectedTypes,
         exclude,
+        ...view,
       });
     },
     [
@@ -469,6 +509,7 @@ export function CardBrowserClient({
       selectedTags,
       tagMode,
       selectedTypes,
+      view,
       runEffectsSearch,
     ],
   );
@@ -477,11 +518,57 @@ export function CardBrowserClient({
     setSearchQuery("");
     setSelectedTags([]);
     setSelectedTypes([]);
+    setSelectedRarities([]);
     setExcludedTags([]);
     clearParsed();
     setEffectsError(null);
-    loadSet(activeSetId);
-  }, [activeSetId, loadSet, clearParsed]);
+    loadSet(activeSetId, { rarities: [], showDuplicates });
+  }, [activeSetId, showDuplicates, loadSet, clearParsed]);
+
+  // Rarity and duplicates narrow whatever is on screen: the set, a name
+  // search or an effects search, which reruns from its first page.
+  const rerunWithView = useCallback(
+    (next: ViewOptions) => {
+      if (searchMode === "name") {
+        runNameSearch(searchQuery, next);
+      } else {
+        runEffectsSearch({
+          query: searchQuery,
+          tags: selectedTags,
+          matchMode: tagMode,
+          types: selectedTypes,
+          exclude: excludedTags,
+          ...next,
+        });
+      }
+    },
+    [
+      searchMode,
+      searchQuery,
+      selectedTags,
+      tagMode,
+      selectedTypes,
+      excludedTags,
+      runNameSearch,
+      runEffectsSearch,
+    ],
+  );
+
+  const handleRaritiesChange = useCallback(
+    (rarities: string[]) => {
+      setSelectedRarities(rarities);
+      rerunWithView({ rarities, showDuplicates });
+    },
+    [showDuplicates, rerunWithView],
+  );
+
+  const handleDuplicatesChange = useCallback(
+    (next: boolean) => {
+      setShowDuplicates(next);
+      rerunWithView({ rarities: selectedRarities, showDuplicates: next });
+    },
+    [selectedRarities, rerunWithView],
+  );
 
   const handleModeChange = useCallback(
     (next: SearchMode) => {
@@ -492,9 +579,9 @@ export function CardBrowserClient({
       setExcludedTags([]);
       clearParsed();
       setEffectsError(null);
-      loadSet(activeSetId);
+      loadSet(activeSetId, view);
     },
-    [activeSetId, loadSet, clearParsed],
+    [activeSetId, view, loadSet, clearParsed],
   );
 
   const { openCard } = detail;
@@ -506,6 +593,19 @@ export function CardBrowserClient({
       else if (mode === "select") toggleCard(card);
     },
     [mode, openCard, onCardClick, toggleCard],
+  );
+
+  const viewControls = (
+    <>
+      <RarityFilter
+        selected={selectedRarities}
+        onChange={handleRaritiesChange}
+      />
+      <DuplicatesToggle
+        pressed={showDuplicates}
+        onChange={handleDuplicatesChange}
+      />
+    </>
   );
 
   return (
@@ -529,6 +629,7 @@ export function CardBrowserClient({
               onModeChange={handleTagModeChange}
             />
             <TypeFilter selected={selectedTypes} onChange={handleTypesChange} />
+            {viewControls}
           </div>
           <ActiveFilters
             picked={selectedTags}
@@ -545,7 +646,11 @@ export function CardBrowserClient({
             onClearAll={handleClearFilters}
           />
         </div>
-      ) : null}
+      ) : (
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+          {viewControls}
+        </div>
+      )}
 
       {mode === "select" ? (
         <SelectionModeToggle
@@ -599,7 +704,7 @@ export function CardBrowserClient({
         />
       ) : (
         <CardGrid
-          key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${tagMode}-${selectedTypes.join(",")}-${resultsEpoch}`}
+          key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${tagMode}-${selectedTypes.join(",")}-${selectedRarities.join(",")}-${showDuplicates}-${resultsEpoch}`}
           initialCards={cards}
           initialCursor={cursor}
           loadPage={
@@ -611,6 +716,8 @@ export function CardBrowserClient({
           setId={isSearching ? undefined : activeSetId}
           searchQuery={searchQuery}
           tradeableOnly={tradeableOnly}
+          rarities={selectedRarities}
+          showDuplicates={showDuplicates}
           selectable={interactive && (mode === "select" || mode === "build")}
           selectedCards={selection.selectedCards}
           selectionMode={selection.selectionMode}
