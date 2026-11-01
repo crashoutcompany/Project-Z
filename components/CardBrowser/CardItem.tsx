@@ -6,6 +6,8 @@ import { formatCardRef } from "@/lib/deck-url";
 import { cn } from "@/lib/utils";
 import { CardItemProps } from "./types";
 import { Check } from "lucide-react";
+import { getRarityInfo } from "@/lib/rarity";
+import { RaritySymbol } from "./RarityFilter";
 
 type SelectionState = CardItemProps["selectionState"];
 type ActiveSelection = Exclude<SelectionState, "none">;
@@ -60,6 +62,20 @@ function SelectionCheck({ selection }: { selection: ActiveSelection }) {
   );
 }
 
+/** Sits over the card's own rarity mark, bottom left, so it reads at tile size. */
+function RarityBadge({ rarity }: { rarity: string }) {
+  return (
+    <div
+      data-testid="card-rarity"
+      title={getRarityInfo(rarity).name}
+      className="absolute bottom-1.5 left-1.5 flex h-5 items-center rounded-full bg-black/70 px-1.5 text-[11px] font-semibold text-white"
+    >
+      <RaritySymbol rarity={rarity} className="[&_svg]:size-3" />
+      <span className="sr-only">{getRarityInfo(rarity).name}</span>
+    </div>
+  );
+}
+
 function CountBadge({ count }: { count: number }) {
   return (
     <div className="absolute top-2 left-2 flex h-6 min-w-6 items-center justify-center rounded-full bg-red-600 px-1.5 text-xs font-semibold text-white">
@@ -97,6 +113,7 @@ export const CardItem = memo(function CardItem({
         <SelectionCheck selection={selectionState} />
       ) : null}
       {count > 0 ? <CountBadge count={count} /> : null}
+      <RarityBadge rarity={card.rarity} />
     </>
   );
 

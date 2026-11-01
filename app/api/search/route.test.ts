@@ -276,4 +276,44 @@ describe("POST /api/search", () => {
       { limit: 60, tradeableOnly: false, tags: ["gust"], tagMode: "all" },
     );
   });
+
+  it("runs a rarity-only search and forwards rarities and showDuplicates", async () => {
+    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 3 });
+
+    const res = await POST(
+      request({ rarities: ["SR", "C", "SR"], showDuplicates: true, types: ["grass"] }),
+    );
+    expect(res.status).toBe(200);
+    expect(parseQueryToFilter).not.toHaveBeenCalled();
+    expect(executeSearch).toHaveBeenCalledWith(
+      { surface: "any" },
+      {
+        limit: 60,
+        tradeableOnly: false,
+        types: ["grass"],
+        rarities: ["SR", "C"],
+        showDuplicates: true,
+      },
+    );
+    await expect(res.json()).resolves.toMatchObject({
+      rarities: ["SR", "C"],
+      showDuplicates: true,
+    });
+  });
+
+  it("hides duplicates unless showDuplicates is exactly true", async () => {
+    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+    await POST(request({ tags: ["gust"], showDuplicates: "yes" }));
+    expect(executeSearch.mock.calls[0]?.[1]).not.toHaveProperty("showDuplicates");
+  });
+
+  it("rejects unknown rarities", async () => {
+    const bad = await POST(request({ tags: ["gust"], rarities: ["XYZ"] }));
+    expect(bad.status).toBe(400);
+    await expect(bad.json()).resolves.toEqual({ error: "Unknown rarity: XYZ" });
+
+    const notArray = await POST(request({ tags: ["gust"], rarities: "C" }));
+    expect(notArray.status).toBe(400);
+    expect(executeSearch).not.toHaveBeenCalled();
+  });
 });

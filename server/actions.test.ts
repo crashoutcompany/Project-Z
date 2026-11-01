@@ -45,7 +45,12 @@ describe("fetchCards", () => {
     }));
     findMany.mockResolvedValue(rows);
 
-    const result = await fetchCards({ setId: 1, limit: 3, search: "pika" });
+    const result = await fetchCards({
+      setId: 1,
+      limit: 3,
+      search: "pika",
+      showDuplicates: true,
+    });
     expect(findMany).toHaveBeenCalledWith(
       expect.objectContaining({
         take: 4,
@@ -79,6 +84,7 @@ describe("fetchCards", () => {
       cursor: 9,
       tradeableOnly: true,
       limit: 20,
+      showDuplicates: true,
     });
     expect(findMany).toHaveBeenCalledWith(
       expect.objectContaining({
@@ -105,10 +111,45 @@ describe("fetchCards", () => {
 
   it("defaults the page size to 20", async () => {
     findMany.mockResolvedValue([]);
-    await fetchCards({});
+    await fetchCards({ showDuplicates: true });
     expect(findMany).toHaveBeenCalledWith(
       expect.objectContaining({ take: 21 }),
     );
+  });
+
+  it("hides duplicates by default, keeping the lowest-rarity print", async () => {
+    const print = (id: number, rarity: string) => ({
+      id,
+      name: "Pikachu ex",
+      rarity,
+      attacks: [
+        {
+          position: 0,
+          name: "Circle Circuit",
+          damageRaw: "30x",
+          energyTypes: ["lightning"],
+          effectText: "",
+        },
+      ],
+      effects: [],
+    });
+    findMany
+      .mockResolvedValueOnce([print(1, "UR"), print(2, "RR"), print(3, "SR")])
+      .mockResolvedValueOnce([{ ...print(2, "RR"), set: { id: 1, code: "A1" } }]);
+
+    const result = await fetchCards({ search: "pikachu", rarities: ["RR", "UR", "SR"] });
+    expect(findMany.mock.calls[0][0].where).toMatchObject({
+      name: { contains: "pikachu", mode: "insensitive" },
+      rarity: { in: ["RR", "UR", "SR"] },
+    });
+    expect(findMany.mock.calls[1][0].where).toEqual({ id: { in: [2] } });
+    expect(result.cards.map((c) => c.id)).toEqual([2]);
+    expect(result.nextCursor).toBeNull();
+  });
+
+  it("rejects unknown rarities", async () => {
+    await expect(fetchCards({ rarities: ["XYZ"] })).rejects.toThrow();
+    expect(findMany).not.toHaveBeenCalled();
   });
 });
 

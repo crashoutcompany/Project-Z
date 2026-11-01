@@ -1,5 +1,11 @@
 import { Prisma } from "@/prisma/generated/client/client";
 import prisma from "@/prisma/db";
+import { rarityRank } from "@/lib/rarity";
+import {
+  dedupePrints,
+  PRINT_KEY_ATTACK_SELECT,
+  PRINT_KEY_EFFECT_SELECT,
+} from "./dedupe";
 import type { AttackFilter, EffectFilter, FilterJSON } from "./filter-schema";
 import { filterTags, type TagMode } from "./filter-tags";
 import { cardMatchesClauses, hasEnergyTypeCounts } from "./match";
@@ -25,27 +31,19 @@ export type SearchOptions = {
    * is one of them. Applied on top of any type parsed from the query.
    */
   types?: string[];
+  /** Rarity codes picked in the UI. A card matches when it has one of them. */
+  rarities?: string[];
+  /**
+   * List every print. By default prints of the same card (same name and
+   * attacks) collapse to the lowest-rarity copy, before ranking and paging,
+   * so `total` and offsets count cards rather than prints.
+   */
+  showDuplicates?: boolean;
 };
 
 // Upper bound on rows ranked per search, and so on the reported total. Well
 // above the number of cards that share any single energy type or tag.
 const FULL_SCAN_CAP = 2000;
-
-// Keyed by the rarity *codes* the importer stores (scripts/lib/rarity-map.ts),
-// not the raw ◊/☆ symbols from the source payload. Lower = more common.
-const RARITY_RANK: Record<string, number> = {
-  C: 1, // ◊
-  U: 2, // ◊◊
-  R: 3, // ◊◊◊
-  RR: 4, // ◊◊◊◊
-  AR: 5, // ☆
-  SR: 6, // ☆☆
-  S: 7, // ✵
-  SSR: 8, // ✵✵
-  IM: 9, // ☆☆☆
-  UR: 10, // Crown Rare
-  PROMO: 11,
-};
 
 function attackWhere(filter: AttackFilter): Prisma.AttackWhereInput {
   const where: Prisma.AttackWhereInput = {};
@@ -113,6 +111,7 @@ function buildCardWhere(
   if (filter.stage?.length) where.stage = { in: filter.stage };
   if (filter.isEx !== undefined) where.isEx = filter.isEx;
   if (filter.hpMin !== undefined) where.hp = { gte: filter.hpMin };
+  if (opts.rarities?.length) where.rarity = { in: opts.rarities };
   if (filter.setCodes?.length) {
     where.set = { code: { in: filter.setCodes } };
   }
@@ -367,12 +366,7 @@ export function rankCards<T extends RankableCard>(
       const damage = wanted.size
         ? relevance.damage
         : card.attacks.reduce((max, a) => Math.max(max, a.damageBase ?? 0), 0);
-      return {
-        card,
-        relevance,
-        damage,
-        rarity: RARITY_RANK[card.rarity] ?? 99,
-      };
+      return { card, relevance, damage, rarity: rarityRank(card.rarity) };
     })
     .sort(
       (a, b) =>
@@ -418,21 +412,23 @@ async function queryCards(
       set: { select: { code: true } },
       attacks: {
         select: {
+          ...PRINT_KEY_ATTACK_SELECT,
           tags: true,
           damageBase: true,
           damageKind: true,
           energyCost: true,
-          energyTypes: true,
-          effectText: true,
         },
       },
-      effects: { select: { tags: true, kind: true, effectText: true } },
+      effects: { select: { ...PRINT_KEY_EFFECT_SELECT, tags: true } },
     },
   });
 
-  const candidates = needsPostFilter
+  const matching = needsPostFilter
     ? rows.filter((c) => cardMatchesClauses(filter, c))
     : rows;
+  // Prints of one card rank the same, so collapsing them first keeps the
+  // ranking intact and makes `total` and offsets count cards, not prints.
+  const candidates = opts.showDuplicates ? matching : dedupePrints(matching);
   // Only tag searches need the text read; other rankings ignore tags. With
   // no text there is nothing to contradict the stored tags.
   const withEvidence = wanted.size
@@ -509,6 +505,31 @@ function matchesScalarFilters(
   return true;
 }
 
+/** FTS rows carry no attacks, so their print keys are loaded separately. */
+async function dedupeFtsRows<T extends { id: number; name: string; rarity: string }>(
+  rows: T[],
+): Promise<T[]> {
+  if (rows.length < 2) return rows;
+  const keyed = await prisma.card.findMany({
+    where: { id: { in: rows.map((r) => r.id) } },
+    select: {
+      id: true,
+      attacks: { select: PRINT_KEY_ATTACK_SELECT },
+      effects: { select: PRINT_KEY_EFFECT_SELECT },
+    },
+  });
+  const byId = new Map(keyed.map((k) => [k.id, k]));
+  // A row whose text did not load stays as its own card rather than merging
+  // with every same-named card.
+  const loaded = rows.filter((r) => byId.has(r.id));
+  const kept = new Set(
+    dedupePrints(
+      loaded.map((r) => ({ ...r, ...byId.get(r.id)! })),
+    ).map((c) => c.id),
+  );
+  return rows.filter((r) => !byId.has(r.id) || kept.has(r.id));
+}
+
 async function ftsFallback(
   text: string,
   opts: SearchOptions,
@@ -573,12 +594,17 @@ async function ftsFallback(
   `;
 
   const types = opts.types ?? [];
-  const matching = rows.filter(
+  const rarities = opts.rarities ?? [];
+  const filtered = rows.filter(
     (r) =>
       matchesScalarFilters(r, filter) &&
       (!types.length ||
-        types.some((t) => t === r.energyType || t === r.secondaryEnergyType)),
+        types.some((t) => t === r.energyType || t === r.secondaryEnergyType)) &&
+      (!rarities.length || rarities.includes(r.rarity)),
   );
+  const matching = opts.showDuplicates
+    ? filtered
+    : await dedupeFtsRows(filtered);
   return {
     total: matching.length,
     cards: matching

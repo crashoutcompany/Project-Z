@@ -39,6 +39,10 @@ export type CardGridProps = {
   setId?: number;
   searchQuery: string;
   tradeableOnly: boolean;
+  /** Rarity codes the name/set paging is narrowed to. */
+  rarities?: string[];
+  /** Name/set paging lists every print instead of one per card. */
+  showDuplicates?: boolean;
   selectable: boolean;
   selectedCards: SelectedCards;
   selectionMode: SelectionMode;
@@ -92,6 +96,18 @@ export type TagFilterProps = {
 export type TypeFilterProps = {
   selected: string[];
   onChange: (types: string[]) => void;
+  disabled?: boolean;
+};
+
+export type RarityFilterProps = {
+  selected: string[];
+  onChange: (rarities: string[]) => void;
+  disabled?: boolean;
+};
+
+export type DuplicatesToggleProps = {
+  pressed: boolean;
+  onChange: (pressed: boolean) => void;
   disabled?: boolean;
 };
 
