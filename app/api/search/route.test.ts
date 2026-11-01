@@ -278,10 +278,18 @@ describe("POST /api/search", () => {
   });
 
   it("runs a rarity-only search and forwards rarities and showDuplicates", async () => {
-    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 3 });
+    executeSearch.mockResolvedValue({
+      cards: [],
+      usedFallback: false,
+      total: 3,
+    });
 
     const res = await POST(
-      request({ rarities: ["SR", "C", "SR"], showDuplicates: true, types: ["grass"] }),
+      request({
+        rarities: ["SR", "C", "SR"],
+        showDuplicates: true,
+        types: ["grass"],
+      }),
     );
     expect(res.status).toBe(200);
     expect(parseQueryToFilter).not.toHaveBeenCalled();
@@ -302,9 +310,15 @@ describe("POST /api/search", () => {
   });
 
   it("hides duplicates unless showDuplicates is exactly true", async () => {
-    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+    executeSearch.mockResolvedValue({
+      cards: [],
+      usedFallback: false,
+      total: 0,
+    });
     await POST(request({ tags: ["gust"], showDuplicates: "yes" }));
-    expect(executeSearch.mock.calls[0]?.[1]).not.toHaveProperty("showDuplicates");
+    expect(executeSearch.mock.calls[0]?.[1]).not.toHaveProperty(
+      "showDuplicates",
+    );
   });
 
   it("rejects unknown rarities", async () => {

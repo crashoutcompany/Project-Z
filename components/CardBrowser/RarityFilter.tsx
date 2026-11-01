@@ -67,7 +67,7 @@ export function RarityFilter({
             disabled={disabled}
             onClick={() => toggle(code)}
             className={cn(
-              "pointer-coarse:h-11 inline-flex h-9 min-w-9 items-center justify-center rounded-full px-2.5 text-xs font-semibold outline-none transition-[background-color,box-shadow,opacity,transform] duration-120 ease-out active:scale-[0.94] motion-reduce:active:scale-100",
+              "inline-flex h-9 min-w-9 items-center justify-center rounded-full px-2.5 text-xs font-semibold transition-[background-color,box-shadow,opacity,transform] duration-120 ease-out outline-none active:scale-[0.94] motion-reduce:active:scale-100 pointer-coarse:h-11",
               "focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:opacity-50",
               on
                 ? "bg-primary/10 ring-primary ring-2 ring-inset"
@@ -97,7 +97,7 @@ export function DuplicatesToggle({
       onClick={() => onChange(!pressed)}
       title="Alt arts and reprints of the same card are hidden unless this is on"
       className={cn(
-        "pointer-coarse:h-11 inline-flex h-9 items-center gap-1.5 rounded-full px-3 text-sm font-medium outline-none transition-[background-color,box-shadow,transform] duration-120 ease-out active:scale-[0.97] motion-reduce:active:scale-100",
+        "inline-flex h-9 items-center gap-1.5 rounded-full px-3 text-sm font-medium transition-[background-color,box-shadow,transform] duration-120 ease-out outline-none active:scale-[0.97] motion-reduce:active:scale-100 pointer-coarse:h-11",
         "focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:opacity-50",
         pressed
           ? "bg-primary/10 ring-primary ring-2 ring-inset"

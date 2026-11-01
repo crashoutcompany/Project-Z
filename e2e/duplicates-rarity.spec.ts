@@ -58,9 +58,11 @@ test("effects search sends rarity and duplicate choices with tags, types and pag
   await page.getByRole("button", { name: "Effects", exact: true }).click();
 
   await pickTag(page, TAG_INFO.condition_poison.label);
-  await expect.poll(() => bodies.at(-1)).toMatchObject({
-    tags: ["condition_poison"],
-  });
+  await expect
+    .poll(() => bodies.at(-1))
+    .toMatchObject({
+      tags: ["condition_poison"],
+    });
   expect(bodies.at(-1)).not.toHaveProperty("showDuplicates");
   expect(bodies.at(-1)).not.toHaveProperty("rarities");
 
@@ -72,22 +74,26 @@ test("effects search sends rarity and duplicate choices with tags, types and pag
   await expect(
     rarity.getByRole("button", { name: "Super Rare" }),
   ).toHaveAttribute("aria-pressed", "true");
-  await expect.poll(() => bodies.at(-1)).toMatchObject({
-    tags: ["condition_poison"],
-    types: ["grass"],
-    rarities: ["SR"],
-  });
+  await expect
+    .poll(() => bodies.at(-1))
+    .toMatchObject({
+      tags: ["condition_poison"],
+      types: ["grass"],
+      rarities: ["SR"],
+    });
 
   const toggle = page.getByRole("button", { name: "Show duplicates" });
   await expect(toggle).toHaveAttribute("aria-pressed", "false");
   await toggle.click();
   await expect(toggle).toHaveAttribute("aria-pressed", "true");
-  await expect.poll(() => bodies.at(-1)).toMatchObject({
-    tags: ["condition_poison"],
-    types: ["grass"],
-    rarities: ["SR"],
-    showDuplicates: true,
-  });
+  await expect
+    .poll(() => bodies.at(-1))
+    .toMatchObject({
+      tags: ["condition_poison"],
+      types: ["grass"],
+      rarities: ["SR"],
+      showDuplicates: true,
+    });
   expect(bodies.at(-1)).not.toHaveProperty("offset");
 
   // Load more repeats the same request with an offset.
@@ -112,7 +118,9 @@ test("name search hides duplicate prints until the toggle is on", async ({
 
   // Pikachu ex has alt-art prints in Genetic Apex and later sets.
   await page.getByPlaceholder("Search by name...").fill("Pikachu ex");
-  await expect(page.getByText("Searching names for “Pikachu ex”")).toBeVisible();
+  await expect(
+    page.getByText("Searching names for “Pikachu ex”"),
+  ).toBeVisible();
   // Wait for the name results to replace the set page before counting.
   const onlyMatches = async () => {
     const names = await catalogCardNames(page);
@@ -124,9 +132,7 @@ test("name search hides duplicate prints until the toggle is on", async ({
   const toggle = page.getByRole("button", { name: "Show duplicates" });
   await toggle.click();
   await expect(toggle).toHaveAttribute("aria-pressed", "true");
-  await expect
-    .poll(() => catalogCards(page).count())
-    .toBeGreaterThan(deduped);
+  await expect.poll(() => catalogCards(page).count()).toBeGreaterThan(deduped);
 
   expect(await onlyMatches()).toBe(true);
 

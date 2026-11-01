@@ -135,9 +135,14 @@ describe("fetchCards", () => {
     });
     findMany
       .mockResolvedValueOnce([print(1, "UR"), print(2, "RR"), print(3, "SR")])
-      .mockResolvedValueOnce([{ ...print(2, "RR"), set: { id: 1, code: "A1" } }]);
+      .mockResolvedValueOnce([
+        { ...print(2, "RR"), set: { id: 1, code: "A1" } },
+      ]);
 
-    const result = await fetchCards({ search: "pikachu", rarities: ["RR", "UR", "SR"] });
+    const result = await fetchCards({
+      search: "pikachu",
+      rarities: ["RR", "UR", "SR"],
+    });
     expect(findMany.mock.calls[0][0].where).toMatchObject({
       name: { contains: "pikachu", mode: "insensitive" },
       rarity: { in: ["RR", "UR", "SR"] },

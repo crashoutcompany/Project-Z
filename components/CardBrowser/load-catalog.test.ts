@@ -37,7 +37,14 @@ describe("loadCardCatalog", () => {
 
   it("selects a set by code case-insensitively", async () => {
     cardFindMany.mockResolvedValue([
-      { id: 1, name: "Pikachu", rarity: "C", attacks: [], effects: [], set: sets[1] },
+      {
+        id: 1,
+        name: "Pikachu",
+        rarity: "C",
+        attacks: [],
+        effects: [],
+        set: sets[1],
+      },
     ]);
     const result = await loadCardCatalog({ setCode: "a2" });
     expect(result.initialSetId).toBe(2);

@@ -1,9 +1,5 @@
 import { NextResponse } from "next/server";
-import {
-  executeSearch,
-  parseQueryToFilter,
-  validateQuery,
-} from "@/lib/search";
+import { executeSearch, parseQueryToFilter, validateQuery } from "@/lib/search";
 import { isRarityCode } from "@/lib/rarity";
 import { clientKeyFromRequest, rateLimit } from "@/lib/rate-limit";
 import { withoutTags } from "@/lib/search/filter-tags";

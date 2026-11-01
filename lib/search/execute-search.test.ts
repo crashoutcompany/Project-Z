@@ -690,9 +690,27 @@ describe("executeSearch", () => {
     const prints = () => [
       row({ id: 1, name: "Arbok", rarity: "SR", attacks: poison(70) }),
       row({ id: 2, name: "Arbok", rarity: "R", attacks: poison(70) }),
-      row({ id: 3, name: "Ekans", rarity: "C", attacks: poison(20), energyType: "grass" }),
-      row({ id: 4, name: "Ekans", rarity: "AR", attacks: poison(20), energyType: "grass" }),
-      row({ id: 5, name: "Ekans", rarity: "U", attacks: poison(30), energyType: "grass" }),
+      row({
+        id: 3,
+        name: "Ekans",
+        rarity: "C",
+        attacks: poison(20),
+        energyType: "grass",
+      }),
+      row({
+        id: 4,
+        name: "Ekans",
+        rarity: "AR",
+        attacks: poison(20),
+        energyType: "grass",
+      }),
+      row({
+        id: 5,
+        name: "Ekans",
+        rarity: "U",
+        attacks: poison(30),
+        energyType: "grass",
+      }),
       row({ id: 6, name: "Weezing", rarity: "IM", attacks: poison(50) }),
       row({ id: 7, name: "Weezing", rarity: "RR", attacks: poison(50) }),
     ];
@@ -784,7 +802,9 @@ describe("executeSearch", () => {
     });
 
     it("combines dedupe with the picked types", async () => {
-      findMany.mockResolvedValue(prints().filter((p) => p.energyType === "grass"));
+      findMany.mockResolvedValue(
+        prints().filter((p) => p.energyType === "grass"),
+      );
       const result = await executeSearch(
         { surface: "any" },
         { tags: ["condition_poison"], types: ["grass"], limit: 10 },
@@ -811,7 +831,13 @@ describe("executeSearch", () => {
     const keyed = (id: number, attack: string) => ({
       id,
       attacks: [
-        { position: 0, name: attack, damageRaw: "20", energyTypes: ["grass"], effectText: "" },
+        {
+          position: 0,
+          name: attack,
+          damageRaw: "20",
+          energyTypes: ["grass"],
+          effectText: "",
+        },
       ],
       effects: [],
     });
@@ -844,7 +870,11 @@ describe("executeSearch", () => {
       findMany.mockReset();
       findMany
         .mockResolvedValueOnce([])
-        .mockResolvedValueOnce([keyed(1, "Ram"), keyed(3, "Blot"), keyed(4, "Ram")]);
+        .mockResolvedValueOnce([
+          keyed(1, "Ram"),
+          keyed(3, "Blot"),
+          keyed(4, "Ram"),
+        ]);
       const rare = await executeSearch(
         { surface: "any", textFallback: "sleep" },
         { rarities: ["AR", "U"], limit: 10 },

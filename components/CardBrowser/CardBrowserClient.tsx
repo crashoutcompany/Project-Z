@@ -703,28 +703,30 @@ export function CardBrowserClient({
           onClearFilters={handleClearFilters}
         />
       ) : (
-      <CardGrid
-        key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${tagMode}-${selectedTypes.join(",")}-${selectedRarities.join(",")}-${showDuplicates}-${resultsEpoch}`}
-        initialCards={cards}
-        initialCursor={cursor}
-        loadPage={
-          isSearching && searchMode === "effects" ? loadEffectsPage : undefined
-        }
-        total={isSearching && searchMode === "effects" ? total : undefined}
-        setId={isSearching ? undefined : activeSetId}
-        searchQuery={searchQuery}
-        tradeableOnly={tradeableOnly}
-        rarities={selectedRarities}
-        showDuplicates={showDuplicates}
-        selectable={interactive && (mode === "select" || mode === "build")}
-        selectedCards={selection.selectedCards}
-        selectionMode={selection.selectionMode}
-        density={mode === "build" ? "compact" : "comfortable"}
-        cardCounts={cardCounts}
-        // CardItem is clickable whenever it receives a handler, so withholding
-        // it is what makes the catalog inert while `interactive` is false.
-        onCardClick={interactive ? handleCardClick : undefined}
-      />
+        <CardGrid
+          key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${tagMode}-${selectedTypes.join(",")}-${selectedRarities.join(",")}-${showDuplicates}-${resultsEpoch}`}
+          initialCards={cards}
+          initialCursor={cursor}
+          loadPage={
+            isSearching && searchMode === "effects"
+              ? loadEffectsPage
+              : undefined
+          }
+          total={isSearching && searchMode === "effects" ? total : undefined}
+          setId={isSearching ? undefined : activeSetId}
+          searchQuery={searchQuery}
+          tradeableOnly={tradeableOnly}
+          rarities={selectedRarities}
+          showDuplicates={showDuplicates}
+          selectable={interactive && (mode === "select" || mode === "build")}
+          selectedCards={selection.selectedCards}
+          selectionMode={selection.selectionMode}
+          density={mode === "build" ? "compact" : "comfortable"}
+          cardCounts={cardCounts}
+          // CardItem is clickable whenever it receives a handler, so withholding
+          // it is what makes the catalog inert while `interactive` is false.
+          onCardClick={interactive ? handleCardClick : undefined}
+        />
       )}
 
       {mode === "view" ? (

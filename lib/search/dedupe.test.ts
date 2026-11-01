@@ -17,7 +17,8 @@ function card(
         name: "Circle Circuit",
         damageRaw: "30x",
         energyTypes: ["lightning", "lightning"],
-        effectText: "This attack does 30 damage for each of your Benched Lightning Pokémon.",
+        effectText:
+          "This attack does 30 damage for each of your Benched Lightning Pokémon.",
       },
     ],
     effects: [],
@@ -32,7 +33,8 @@ describe("printKey", () => {
       attacks: [
         {
           ...a.attacks[0]!,
-          effectText: "  this attack does 30 damage for each of your Benched\nLightning Pokémon.",
+          effectText:
+            "  this attack does 30 damage for each of your Benched\nLightning Pokémon.",
         },
       ],
     });
@@ -40,14 +42,24 @@ describe("printKey", () => {
   });
 
   it("ignores attack row order but not attack position", () => {
-    const first = { position: 0, name: "A", damageRaw: "10", energyTypes: [], effectText: "" };
-    const second = { position: 1, name: "B", damageRaw: "20", energyTypes: [], effectText: "" };
+    const first = {
+      position: 0,
+      name: "A",
+      damageRaw: "10",
+      energyTypes: [],
+      effectText: "",
+    };
+    const second = {
+      position: 1,
+      name: "B",
+      damageRaw: "20",
+      energyTypes: [],
+      effectText: "",
+    };
     expect(printKey(card(1, "X", "C", { attacks: [first, second] }))).toBe(
       printKey(card(2, "X", "C", { attacks: [second, first] })),
     );
-    expect(
-      printKey(card(1, "X", "C", { attacks: [first, second] })),
-    ).not.toBe(
+    expect(printKey(card(1, "X", "C", { attacks: [first, second] }))).not.toBe(
       printKey(
         card(2, "X", "C", {
           attacks: [
@@ -73,9 +85,23 @@ describe("dedupePrints", () => {
   });
 
   it("orders diamonds, stars, shinies, crown, then promo", () => {
-    const ladder = ["PROMO", "UR", "IM", "SSR", "S", "SR", "AR", "RR", "R", "U", "C"];
+    const ladder = [
+      "PROMO",
+      "UR",
+      "IM",
+      "SSR",
+      "S",
+      "SR",
+      "AR",
+      "RR",
+      "R",
+      "U",
+      "C",
+    ];
     for (let i = 0; i < ladder.length; i++) {
-      const prints = ladder.slice(0, i + 1).map((r, j) => card(j + 1, "Mew", r));
+      const prints = ladder
+        .slice(0, i + 1)
+        .map((r, j) => card(j + 1, "Mew", r));
       expect(dedupePrints(prints).map((c) => c.rarity)).toEqual([ladder[i]]);
     }
   });
@@ -87,10 +113,26 @@ describe("dedupePrints", () => {
 
   it("keeps same-named cards with different attacks apart", () => {
     const gnaw = card(1, "Pikachu", "C", {
-      attacks: [{ position: 0, name: "Gnaw", damageRaw: "20", energyTypes: ["lightning"], effectText: "" }],
+      attacks: [
+        {
+          position: 0,
+          name: "Gnaw",
+          damageRaw: "20",
+          energyTypes: ["lightning"],
+          effectText: "",
+        },
+      ],
     });
     const jolt = card(2, "Pikachu", "C", {
-      attacks: [{ position: 0, name: "Thunder Jolt", damageRaw: "40", energyTypes: ["lightning"], effectText: "" }],
+      attacks: [
+        {
+          position: 0,
+          name: "Thunder Jolt",
+          damageRaw: "40",
+          energyTypes: ["lightning"],
+          effectText: "",
+        },
+      ],
     });
     const moreDamage = card(3, "Pikachu", "U", {
       attacks: [{ ...gnaw.attacks[0]!, damageRaw: "30" }],
@@ -102,14 +144,21 @@ describe("dedupePrints", () => {
       attacks: [gnaw.attacks[0]!, { ...jolt.attacks[0]!, position: 1 }],
     });
     expect(
-      dedupePrints([gnaw, jolt, moreDamage, otherCost, twoAttacks]).map((c) => c.id),
+      dedupePrints([gnaw, jolt, moreDamage, otherCost, twoAttacks]).map(
+        (c) => c.id,
+      ),
     ).toEqual([1, 2, 3, 4, 5]);
   });
 
   it("keeps a same-named card with a different ability apart", () => {
     const plain = card(1, "Greninja", "R");
     const withAbility = card(2, "Greninja", "R", {
-      effects: [{ kind: "ABILITY", effectText: "Do 20 damage to 1 of your opponent's Pokémon." }],
+      effects: [
+        {
+          kind: "ABILITY",
+          effectText: "Do 20 damage to 1 of your opponent's Pokémon.",
+        },
+      ],
     });
     expect(dedupePrints([plain, withAbility])).toHaveLength(2);
   });
@@ -117,8 +166,14 @@ describe("dedupePrints", () => {
   it("collapses trainer reprints that share their text", () => {
     const text = "Draw 2 cards.";
     const cards = [
-      card(1, "Professor's Research", "PROMO", { attacks: [], effects: [{ kind: "TRAINER", effectText: text }] }),
-      card(2, "Professor's Research", "U", { attacks: [], effects: [{ kind: "TRAINER", effectText: text }] }),
+      card(1, "Professor's Research", "PROMO", {
+        attacks: [],
+        effects: [{ kind: "TRAINER", effectText: text }],
+      }),
+      card(2, "Professor's Research", "U", {
+        attacks: [],
+        effects: [{ kind: "TRAINER", effectText: text }],
+      }),
     ];
     expect(dedupePrints(cards).map((c) => c.id)).toEqual([2]);
   });

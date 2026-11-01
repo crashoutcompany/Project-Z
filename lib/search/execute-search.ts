@@ -506,9 +506,9 @@ function matchesScalarFilters(
 }
 
 /** FTS rows carry no attacks, so their print keys are loaded separately. */
-async function dedupeFtsRows<T extends { id: number; name: string; rarity: string }>(
-  rows: T[],
-): Promise<T[]> {
+async function dedupeFtsRows<
+  T extends { id: number; name: string; rarity: string },
+>(rows: T[]): Promise<T[]> {
   if (rows.length < 2) return rows;
   const keyed = await prisma.card.findMany({
     where: { id: { in: rows.map((r) => r.id) } },
@@ -523,9 +523,9 @@ async function dedupeFtsRows<T extends { id: number; name: string; rarity: strin
   // with every same-named card.
   const loaded = rows.filter((r) => byId.has(r.id));
   const kept = new Set(
-    dedupePrints(
-      loaded.map((r) => ({ ...r, ...byId.get(r.id)! })),
-    ).map((c) => c.id),
+    dedupePrints(loaded.map((r) => ({ ...r, ...byId.get(r.id)! }))).map(
+      (c) => c.id,
+    ),
   );
   return rows.filter((r) => !byId.has(r.id) || kept.has(r.id));
 }
@@ -594,13 +594,13 @@ async function ftsFallback(
   `;
 
   const types = opts.types ?? [];
-  const rarities = opts.rarities ?? [];
+  const rarities = new Set(opts.rarities);
   const filtered = rows.filter(
     (r) =>
       matchesScalarFilters(r, filter) &&
       (!types.length ||
         types.some((t) => t === r.energyType || t === r.secondaryEnergyType)) &&
-      (!rarities.length || rarities.includes(r.rarity)),
+      (!rarities.size || rarities.has(r.rarity)),
   );
   const matching = opts.showDuplicates
     ? filtered
