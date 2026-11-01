@@ -568,7 +568,12 @@ export function CardBrowserClient({
         <p className="text-muted-foreground text-sm" aria-live="polite">
           {searchMode === "name"
             ? `Searching names for “${searchQuery}”`
-            : effectsSummary(searchQuery, selectedTags.length, tagMode, selectedTypes)}
+            : effectsSummary(
+                searchQuery,
+                selectedTags.length,
+                tagMode,
+                selectedTypes,
+              )}
           {searchMode === "effects" && !isPending && !effectsError
             ? ` · ${total === 1 ? "1 card" : `${total.toLocaleString("en-US")} cards`}`
             : null}
@@ -593,26 +598,28 @@ export function CardBrowserClient({
           onClearFilters={handleClearFilters}
         />
       ) : (
-      <CardGrid
-        key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${tagMode}-${selectedTypes.join(",")}-${resultsEpoch}`}
-        initialCards={cards}
-        initialCursor={cursor}
-        loadPage={
-          isSearching && searchMode === "effects" ? loadEffectsPage : undefined
-        }
-        total={isSearching && searchMode === "effects" ? total : undefined}
-        setId={isSearching ? undefined : activeSetId}
-        searchQuery={searchQuery}
-        tradeableOnly={tradeableOnly}
-        selectable={interactive && (mode === "select" || mode === "build")}
-        selectedCards={selection.selectedCards}
-        selectionMode={selection.selectionMode}
-        density={mode === "build" ? "compact" : "comfortable"}
-        cardCounts={cardCounts}
-        // CardItem is clickable whenever it receives a handler, so withholding
-        // it is what makes the catalog inert while `interactive` is false.
-        onCardClick={interactive ? handleCardClick : undefined}
-      />
+        <CardGrid
+          key={`${activeSetId}-${searchQuery}-${searchMode}-${selectedTags.join(",")}-${tagMode}-${selectedTypes.join(",")}-${resultsEpoch}`}
+          initialCards={cards}
+          initialCursor={cursor}
+          loadPage={
+            isSearching && searchMode === "effects"
+              ? loadEffectsPage
+              : undefined
+          }
+          total={isSearching && searchMode === "effects" ? total : undefined}
+          setId={isSearching ? undefined : activeSetId}
+          searchQuery={searchQuery}
+          tradeableOnly={tradeableOnly}
+          selectable={interactive && (mode === "select" || mode === "build")}
+          selectedCards={selection.selectedCards}
+          selectionMode={selection.selectionMode}
+          density={mode === "build" ? "compact" : "comfortable"}
+          cardCounts={cardCounts}
+          // CardItem is clickable whenever it receives a handler, so withholding
+          // it is what makes the catalog inert while `interactive` is false.
+          onCardClick={interactive ? handleCardClick : undefined}
+        />
       )}
 
       {mode === "view" ? (

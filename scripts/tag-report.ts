@@ -13,11 +13,14 @@ import { normalizeCard } from "./lib/normalize";
 import { tagAttack, tagEffect } from "../lib/search/tagger";
 
 const args = process.argv.slice(2);
-const file = args.find((a) => !a.startsWith("--")) ?? "scripts/cache/cards.json";
+const file =
+  args.find((a) => !a.startsWith("--")) ?? "scripts/cache/cards.json";
 const asJson = args.includes("--json");
 const examplesFor = args.find((a) => a.startsWith("--examples="))?.slice(11);
 
-const cards = SourcePayloadSchema.parse(JSON.parse(fs.readFileSync(file, "utf8")));
+const cards = SourcePayloadSchema.parse(
+  JSON.parse(fs.readFileSync(file, "utf8")),
+);
 
 const attackCounts: Record<string, number> = {};
 const effectCounts: Record<string, number> = {};
@@ -26,7 +29,12 @@ const seenAttacks = new Set<string>();
 const seenEffects = new Set<string>();
 
 for (const source of cards) {
-  const card = normalizeCard(source, "", { rarityCode: "C", isTradeable: true }, 0);
+  const card = normalizeCard(
+    source,
+    "",
+    { rarityCode: "C", isTradeable: true },
+    0,
+  );
   for (const atk of card.attacks) {
     const key = `${card.name}|${atk.effectText}`;
     if (seenAttacks.has(key)) continue;
@@ -52,10 +60,16 @@ for (const source of cards) {
 if (examplesFor) {
   console.log(examples.join("\n"));
 } else if (asJson) {
-  console.log(JSON.stringify({ attack: attackCounts, effect: effectCounts }, null, 2));
+  console.log(
+    JSON.stringify({ attack: attackCounts, effect: effectCounts }, null, 2),
+  );
 } else {
-  console.log(`${seenAttacks.size} unique attacks, ${seenEffects.size} unique effects\n`);
-  const tags = [...new Set([...Object.keys(attackCounts), ...Object.keys(effectCounts)])].sort();
+  console.log(
+    `${seenAttacks.size} unique attacks, ${seenEffects.size} unique effects\n`,
+  );
+  const tags = [
+    ...new Set([...Object.keys(attackCounts), ...Object.keys(effectCounts)]),
+  ].sort();
   console.log(`${"tag".padEnd(22)} attacks  effects`);
   for (const t of tags) {
     console.log(

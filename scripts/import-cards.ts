@@ -5,10 +5,7 @@ import { SourcePayloadSchema, type SourceCard } from "./lib/source-schema";
 import { SET_MAP, parseCardId } from "./lib/set-map";
 import { sampleCardsPerSet } from "./lib/sample-cards";
 import { normalizeRarity } from "./lib/rarity-map";
-import {
-  cardImageKey,
-  resolveCardImageUrls,
-} from "./lib/image-url";
+import { cardImageKey, resolveCardImageUrls } from "./lib/image-url";
 import { normalizeCard } from "./lib/normalize";
 import { tagAttack, tagEffect } from "../lib/search/tagger";
 import { PINNED_COMMIT_SHA, SOURCE_URL } from "./lib/source-pin";
@@ -39,7 +36,10 @@ function parseSourcePayload(jsonString: string, label: string): SourceCard[] {
   const parsedJson = JSON.parse(jsonString);
   const validated = SourcePayloadSchema.safeParse(parsedJson);
   if (!validated.success) {
-    console.error(`${label} validation failed:`, validated.error.issues.slice(0, 5));
+    console.error(
+      `${label} validation failed:`,
+      validated.error.issues.slice(0, 5),
+    );
     throw new Error(`${label} failed Zod schema validation.`);
   }
   return validated.data;
@@ -49,7 +49,7 @@ function loadBoundedSourceData(perSetLimit: number): SourceCard[] {
   const seedPath = seedPayloadPath();
   if (!fs.existsSync(seedPath)) {
     throw new Error(
-      `Seed payload missing at ${seedPath}. Use pnpm import:cards for the full catalog.`
+      `Seed payload missing at ${seedPath}. Use pnpm import:cards for the full catalog.`,
     );
   }
   const jsonString = fs.readFileSync(seedPath, "utf8");
@@ -70,7 +70,7 @@ async function loadFullSourceData(): Promise<SourceCard[]> {
     }
   } catch (err) {
     console.warn(
-      `Source fetch failed (${err instanceof Error ? err.message : String(err)}); trying local cache.`
+      `Source fetch failed (${err instanceof Error ? err.message : String(err)}); trying local cache.`,
     );
   }
 
@@ -81,7 +81,7 @@ async function loadFullSourceData(): Promise<SourceCard[]> {
 
   if (!jsonString) {
     throw new Error(
-      `Failed to fetch card payload from ${SOURCE_URL} and no local cache found at ${localCachePath}.`
+      `Failed to fetch card payload from ${SOURCE_URL} and no local cache found at ${localCachePath}.`,
     );
   }
 
@@ -93,7 +93,9 @@ async function loadSourceData(perSetLimit?: number): Promise<SourceCard[]> {
     return loadFullSourceData();
   }
   if (!Number.isInteger(perSetLimit) || perSetLimit < 1) {
-    throw new Error(`perSetLimit must be a positive integer, received ${String(perSetLimit)}`);
+    throw new Error(
+      `perSetLimit must be a positive integer, received ${String(perSetLimit)}`,
+    );
   }
   return loadBoundedSourceData(perSetLimit);
 }
@@ -113,21 +115,30 @@ interface ImportStats {
 }
 
 export async function runImport(
-  options: { dryRun?: boolean; full?: boolean; skipUpload?: boolean; perSetLimit?: number } = {}
+  options: {
+    dryRun?: boolean;
+    full?: boolean;
+    skipUpload?: boolean;
+    perSetLimit?: number;
+  } = {},
 ) {
   loadLocalEnv();
   // By default only cards missing from the DB are written; `full` upserts every card.
   const { dryRun = false, full = false } = options;
   const skipUpload =
     options.skipUpload ??
-    (dryRun || process.env[ImportEnvFlag.SKIP_BLOB_UPLOAD] === SKIP_BLOB_UPLOAD_ENABLED);
+    (dryRun ||
+      process.env[ImportEnvFlag.SKIP_BLOB_UPLOAD] === SKIP_BLOB_UPLOAD_ENABLED);
   const envLimit = Number(process.env.SEED_PER_SET_LIMIT);
   const perSetLimit =
-    options.perSetLimit ?? (Number.isFinite(envLimit) && envLimit > 0 ? envLimit : undefined);
+    options.perSetLimit ??
+    (Number.isFinite(envLimit) && envLimit > 0 ? envLimit : undefined);
   console.log(`\n======================================================`);
   console.log(`🚀 Starting Card Import Pipeline ${dryRun ? "(DRY RUN)" : ""}`);
   console.log(
-    full ? "Mode: full (upsert every card)" : "Mode: new cards only (use --full to upsert every card)"
+    full
+      ? "Mode: full (upsert every card)"
+      : "Mode: new cards only (use --full to upsert every card)",
   );
   console.log(`Pinned commit: ${PINNED_COMMIT_SHA}`);
   console.log(`======================================================\n`);
@@ -135,10 +146,12 @@ export async function runImport(
   const sourceCards = await loadSourceData(perSetLimit);
   if (perSetLimit !== undefined) {
     console.log(
-      `Loaded seed payload (${sourceCards.length} cards, up to ${perSetLimit} per set).\n`
+      `Loaded seed payload (${sourceCards.length} cards, up to ${perSetLimit} per set).\n`,
     );
   } else {
-    console.log(`Loaded and validated ${sourceCards.length} cards from source payload.\n`);
+    console.log(
+      `Loaded and validated ${sourceCards.length} cards from source payload.\n`,
+    );
   }
 
   const stats: ImportStats = {
@@ -198,7 +211,7 @@ export async function runImport(
     },
   });
 
-  const existingCardMap = new Map<string, typeof existingCards[0]>();
+  const existingCardMap = new Map<string, (typeof existingCards)[0]>();
   for (const c of existingCards) {
     existingCardMap.set(`${c.setId}-${c.number}`, c);
   }
@@ -219,12 +232,16 @@ export async function runImport(
     .map((card) => parseCardId(card.card_id))
     .filter(({ setCode, number }) => {
       const setId = setCodeToDbId.get(setCode);
-      return full || setId === undefined || !existingCardMap.has(`${setId}-${number}`);
+      return (
+        full ||
+        setId === undefined ||
+        !existingCardMap.has(`${setId}-${number}`)
+      );
     });
   console.log(
     skipUpload
       ? "Resolving image URLs (uploads skipped)..."
-      : "Copying missing card images to Vercel Blob..."
+      : "Copying missing card images to Vercel Blob...",
   );
   const images = await resolveCardImageUrls(imageTargets, { skipUpload });
   console.log(`  Reused from Blob: ${images.reused}`);
@@ -243,7 +260,9 @@ export async function runImport(
     const { setCode, number } = parseCardId(sourceCard.card_id);
     const setId = setCodeToDbId.get(setCode);
     if (!setId) {
-      throw new Error(`Unmapped set code: ${setCode} for card ${sourceCard.card_id}`);
+      throw new Error(
+        `Unmapped set code: ${setCode} for card ${sourceCard.card_id}`,
+      );
     }
 
     const key = `${setId}-${number}`;
@@ -262,7 +281,12 @@ export async function runImport(
       throw new Error(`No image URL resolved for ${sourceCard.card_id}`);
     }
     const normalizedRarity = normalizeRarity(sourceCard.rarity);
-    const normalized = normalizeCard(sourceCard, derivedImageUrl, normalizedRarity, number);
+    const normalized = normalizeCard(
+      sourceCard,
+      derivedImageUrl,
+      normalizedRarity,
+      number,
+    );
 
     // Compute tags & tag frequencies
     for (const atk of normalized.attacks) {
@@ -417,12 +441,14 @@ export async function runImport(
     const match = counts.source === counts.db;
     if (!match) hasCountMismatch = true;
     console.log(
-      `  ${code.padEnd(5)}: Source=${String(counts.source).padStart(4)} | Processed=${String(counts.db).padStart(4)} ${match ? "✓" : "❌ MISMATCH"}`
+      `  ${code.padEnd(5)}: Source=${String(counts.source).padStart(4)} | Processed=${String(counts.db).padStart(4)} ${match ? "✓" : "❌ MISMATCH"}`,
     );
   }
 
   console.log(`\nTop Tags Distribution:`);
-  const sortedTags = Object.entries(stats.tagFrequency).sort((a, b) => b[1] - a[1]);
+  const sortedTags = Object.entries(stats.tagFrequency).sort(
+    (a, b) => b[1] - a[1],
+  );
   for (const [tag, count] of sortedTags.slice(0, 10)) {
     console.log(`  ${tag.padEnd(22)}: ${count}`);
   }
@@ -431,7 +457,9 @@ export async function runImport(
   if (hasCountMismatch) {
     // Throw rather than process.exit so callers (CLI below, prisma/seed.ts)
     // run their .finally() disconnect and decide the exit code themselves.
-    throw new Error("Set count mismatch detected between source and processed cards.");
+    throw new Error(
+      "Set count mismatch detected between source and processed cards.",
+    );
   }
   console.log(`✅ SUCCESS: Card import completed cleanly without mismatches.`);
 }

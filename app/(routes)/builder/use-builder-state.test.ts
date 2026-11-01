@@ -35,7 +35,9 @@ const card = (
 describe("builder deck helpers", () => {
   it("formats refs and entries", () => {
     expect(refOf({ setCode: "P-A", number: 12 })).toBe("P-A-12");
-    const deck: DeckCard[] = [{ ...card({ id: 1, name: "Pikachu" }), count: 2 }];
+    const deck: DeckCard[] = [
+      { ...card({ id: 1, name: "Pikachu" }), count: 2 },
+    ];
     expect(toEntries(deck)).toEqual([
       { setCode: "A1", number: 1, count: 2, ref: "A1-1" },
     ]);

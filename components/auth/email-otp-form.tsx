@@ -29,7 +29,8 @@ export function EmailOtpForm({ callbackURL }: { callbackURL?: string }) {
 
       if (result.error) {
         setErrorMessage(
-          result.error.message || "Unable to send a code. Try again in a minute.",
+          result.error.message ||
+            "Unable to send a code. Try again in a minute.",
         );
         return;
       }
@@ -55,7 +56,8 @@ export function EmailOtpForm({ callbackURL }: { callbackURL?: string }) {
 
       if (result.error) {
         setErrorMessage(
-          result.error.message || "Unable to sign in. Check the code and try again.",
+          result.error.message ||
+            "Unable to sign in. Check the code and try again.",
         );
         return;
       }
@@ -97,8 +99,11 @@ export function EmailOtpForm({ callbackURL }: { callbackURL?: string }) {
         </form>
       ) : (
         <form className="flex flex-col gap-3" onSubmit={verifyCode}>
-          <p aria-live="polite" className="text-sm text-muted-foreground">
-            If <span className="break-all font-medium text-foreground">{email.trim()}</span>{" "}
+          <p aria-live="polite" className="text-muted-foreground text-sm">
+            If{" "}
+            <span className="text-foreground font-medium break-all">
+              {email.trim()}
+            </span>{" "}
             can use email sign-in, a 6-digit code is on its way.
           </p>
           <Label htmlFor="email-otp-code">Code</Label>
@@ -122,7 +127,7 @@ export function EmailOtpForm({ callbackURL }: { callbackURL?: string }) {
           </Button>
           <button
             type="button"
-            className="self-start text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline focus-visible:underline"
+            className="text-muted-foreground hover:text-foreground self-start text-sm underline-offset-4 hover:underline focus-visible:underline"
             onClick={changeEmail}
           >
             Use a different email

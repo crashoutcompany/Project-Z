@@ -271,7 +271,10 @@ function resolveRedisCredentials(
   env: RateLimitEnv,
 ): { url: string; token: string } | null {
   const pairs = [
-    [readValue(env.UPSTASH_REDIS_REST_URL), readValue(env.UPSTASH_REDIS_REST_TOKEN)],
+    [
+      readValue(env.UPSTASH_REDIS_REST_URL),
+      readValue(env.UPSTASH_REDIS_REST_TOKEN),
+    ],
     [readValue(env.KV_REST_API_URL), readValue(env.KV_REST_API_TOKEN)],
   ] as const;
   for (const [url, token] of pairs) {
@@ -306,7 +309,9 @@ export function resolveRateLimitPrefix(
   if (explicit) return explicit;
   const slug = appSlug.trim();
   if (!slug) {
-    throw new Error("Rate limiting needs AUTH_RATE_LIMIT_PREFIX or an app slug");
+    throw new Error(
+      "Rate limiting needs AUTH_RATE_LIMIT_PREFIX or an app slug",
+    );
   }
   const environment =
     readValue(env.VERCEL_ENV) ?? readValue(env.NODE_ENV) ?? "development";

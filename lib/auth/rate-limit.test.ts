@@ -37,7 +37,9 @@ const redis = vi.hoisted(() => {
     constructor(config: Config) {
       // Upstash throws on a non-URL at construction, e.g. Vercel's "[SENSITIVE]".
       if (!config.url.startsWith("https://"))
-        throw new Error(`Upstash Redis client was passed an invalid URL: ${config.url}`);
+        throw new Error(
+          `Upstash Redis client was passed an invalid URL: ${config.url}`,
+        );
       state.constructed.push(config);
     }
 
@@ -262,7 +264,11 @@ describe("createAuthRateLimitStore", () => {
     await store.consume("1.2.3.4|/sign-in/email-otp", { window: 60, max: 3 });
 
     expect(redis.state.constructed).toEqual([
-      { url: "https://kv.upstash.io", token: "kv-token", retry: { retries: 0 } },
+      {
+        url: "https://kv.upstash.io",
+        token: "kv-token",
+        retry: { retries: 0 },
+      },
     ]);
     expect(redis.state.keys.size).toBe(1);
   });
@@ -298,7 +304,9 @@ describe("createAuthRateLimitStore", () => {
     });
 
     expect(redis.state.constructed).toHaveLength(0);
-    expect(warn).toHaveBeenCalledWith(expect.stringContaining("KV_REST_API_URL"));
+    expect(warn).toHaveBeenCalledWith(
+      expect.stringContaining("KV_REST_API_URL"),
+    );
   });
 
   it("uses <app slug>:<VERCEL_ENV> as the default prefix on Vercel", async () => {
@@ -316,9 +324,9 @@ describe("createAuthRateLimitStore", () => {
   });
 
   it("falls back to NODE_ENV, then development, for the default prefix", () => {
-    expect(resolveRateLimitPrefix({ NODE_ENV: "production" }, "pocket-trading")).toBe(
-      "pocket-trading:production",
-    );
+    expect(
+      resolveRateLimitPrefix({ NODE_ENV: "production" }, "pocket-trading"),
+    ).toBe("pocket-trading:production");
     expect(resolveRateLimitPrefix({}, "pocket-trading")).toBe(
       "pocket-trading:development",
     );
@@ -336,7 +344,11 @@ describe("createAuthRateLimitStore", () => {
   it("separates the same logical key by secret (HMAC keys differ)", async () => {
     const env = { ...UPSTASH_ENV, AUTH_RATE_LIMIT_PREFIX: "shared-app" };
     const logical = "otp-send:bot@example.com|203.0.113.9";
-    const first = createAuthRateLimitStore({ env, appSlug: "x", secret: SECRET });
+    const first = createAuthRateLimitStore({
+      env,
+      appSlug: "x",
+      secret: SECRET,
+    });
     const second = createAuthRateLimitStore({
       env,
       appSlug: "x",
@@ -350,12 +362,12 @@ describe("createAuthRateLimitStore", () => {
     expect(storageKeyFor("shared-app", logical, SECRET)).not.toBe(
       storageKeyFor("shared-app", logical, OTHER_SECRET),
     );
-    expect(redis.state.keys.has(storageKeyFor("shared-app", logical, SECRET))).toBe(
-      true,
-    );
-    expect(redis.state.keys.has(storageKeyFor("shared-app", logical, OTHER_SECRET))).toBe(
-      true,
-    );
+    expect(
+      redis.state.keys.has(storageKeyFor("shared-app", logical, SECRET)),
+    ).toBe(true);
+    expect(
+      redis.state.keys.has(storageKeyFor("shared-app", logical, OTHER_SECRET)),
+    ).toBe(true);
   });
 
   it("stores no raw email or IP in Redis keys", async () => {
@@ -365,9 +377,18 @@ describe("createAuthRateLimitStore", () => {
       secret: SECRET,
     });
 
-    await store.consume(`otp-send:${normalizeEmail("Bot@Example.com")}|203.0.113.9`, OTP_SEND_EMAIL_IP_LOCKOUT);
-    await store.consume(`otp-send-email:${normalizeEmail("Bot@Example.com")}`, OTP_SEND_EMAIL_LOCKOUT);
-    await store.consume("203.0.113.9|/sign-in/email-otp", { window: 60, max: 3 });
+    await store.consume(
+      `otp-send:${normalizeEmail("Bot@Example.com")}|203.0.113.9`,
+      OTP_SEND_EMAIL_IP_LOCKOUT,
+    );
+    await store.consume(
+      `otp-send-email:${normalizeEmail("Bot@Example.com")}`,
+      OTP_SEND_EMAIL_LOCKOUT,
+    );
+    await store.consume("203.0.113.9|/sign-in/email-otp", {
+      window: 60,
+      max: 3,
+    });
 
     const keys = [...redis.state.keys.keys()].join("\n");
     expect(keys).not.toContain("bot@example.com");
@@ -385,7 +406,9 @@ describe("createAuthRateLimitStore", () => {
 
     const results = [];
     for (let i = 0; i < 3; i += 1) {
-      results.push(await store.consume("ip|/get-session", { window: 60, max: 2 }));
+      results.push(
+        await store.consume("ip|/get-session", { window: 60, max: 2 }),
+      );
     }
 
     expect(redis.state.keys.size).toBe(0);
@@ -396,11 +419,17 @@ describe("createAuthRateLimitStore", () => {
     expect(isSharedRateLimitKey("ip|/sign-in/email-otp")).toBe(true);
     expect(isSharedRateLimitKey("ip|/sign-in/social")).toBe(true);
     expect(isSharedRateLimitKey("ip|/sign-up/email")).toBe(true);
-    expect(isSharedRateLimitKey("ip|/email-otp/send-verification-otp")).toBe(true);
+    expect(isSharedRateLimitKey("ip|/email-otp/send-verification-otp")).toBe(
+      true,
+    );
     expect(isSharedRateLimitKey("otp-send:bot@example.com|1.2.3.4")).toBe(true);
     expect(isSharedRateLimitKey("otp-send-email:bot@example.com")).toBe(true);
-    expect(isSharedRateLimitKey("otp-sign-in:bot@example.com|1.2.3.4")).toBe(true);
-    expect(isSharedRateLimitKey("otp-sign-in-email:bot@example.com")).toBe(true);
+    expect(isSharedRateLimitKey("otp-sign-in:bot@example.com|1.2.3.4")).toBe(
+      true,
+    );
+    expect(isSharedRateLimitKey("otp-sign-in-email:bot@example.com")).toBe(
+      true,
+    );
     expect(isSharedRateLimitKey("ip|/get-session")).toBe(false);
     expect(isSharedRateLimitKey("ip|/list-accounts")).toBe(false);
   });
@@ -456,7 +485,10 @@ describe("createAuthRateLimitStore", () => {
       ([message]) => message === "auth_rate_limit_redis_unavailable",
     );
     expect(unavailable).toHaveLength(1);
-    expect(unavailable[0]?.[1]).toEqual({ reason: "error", errorName: "Error" });
+    expect(unavailable[0]?.[1]).toEqual({
+      reason: "error",
+      errorName: "Error",
+    });
   });
 
   it("falls back to memory when Redis does not answer in time", async () => {
@@ -469,10 +501,13 @@ describe("createAuthRateLimitStore", () => {
     });
 
     const started = Date.now();
-    const decision = await store.consume("ip|/email-otp/send-verification-otp", {
-      window: 60,
-      max: 3,
-    });
+    const decision = await store.consume(
+      "ip|/email-otp/send-verification-otp",
+      {
+        window: 60,
+        max: 3,
+      },
+    );
 
     expect(decision).toEqual({ allowed: true, retryAfter: null });
     expect(Date.now() - started).toBeGreaterThanOrEqual(REDIS_TIMEOUT_MS - 50);
@@ -486,15 +521,30 @@ describe("createAuthRateLimitStore", () => {
 describe("createMemoryRateLimitStore", () => {
   it("allows max requests per window, then reports retryAfter", async () => {
     let now = 1_000_000;
-    const store = createMemoryRateLimitStore({ secret: SECRET, now: () => now });
+    const store = createMemoryRateLimitStore({
+      secret: SECRET,
+      now: () => now,
+    });
     const rule = { window: 60, max: 2 };
 
-    expect(await store.consume("k", rule)).toEqual({ allowed: true, retryAfter: null });
-    expect(await store.consume("k", rule)).toEqual({ allowed: true, retryAfter: null });
-    expect(await store.consume("k", rule)).toEqual({ allowed: false, retryAfter: 60 });
+    expect(await store.consume("k", rule)).toEqual({
+      allowed: true,
+      retryAfter: null,
+    });
+    expect(await store.consume("k", rule)).toEqual({
+      allowed: true,
+      retryAfter: null,
+    });
+    expect(await store.consume("k", rule)).toEqual({
+      allowed: false,
+      retryAfter: 60,
+    });
 
     now += 61_000;
-    expect(await store.consume("k", rule)).toEqual({ allowed: true, retryAfter: null });
+    expect(await store.consume("k", rule)).toEqual({
+      allowed: true,
+      retryAfter: null,
+    });
   });
 
   it("requires a secret", () => {
@@ -527,7 +577,10 @@ describe("createOtpEmailLockoutPlugin", () => {
     path: string,
     body: object,
     ip?: string,
-    { origin = ORIGIN, extra = {} }: { origin?: string | null; extra?: Record<string, string> } = {},
+    {
+      origin = ORIGIN,
+      extra = {},
+    }: { origin?: string | null; extra?: Record<string, string> } = {},
   ) {
     const headers: Record<string, string> = {
       "content-type": "application/json",
@@ -552,18 +605,32 @@ describe("createOtpEmailLockoutPlugin", () => {
     const email = "bot@example.com";
 
     for (let i = 0; i < OTP_SEND_EMAIL_IP_LOCKOUT.max; i += 1) {
-      const response = await post(auth, "/email-otp/send-verification-otp", sendBody(email), "198.51.100.1");
+      const response = await post(
+        auth,
+        "/email-otp/send-verification-otp",
+        sendBody(email),
+        "198.51.100.1",
+      );
       expect(response.status).toBe(200);
     }
     await vi.waitFor(() =>
-      expect(sendVerificationOTP).toHaveBeenCalledTimes(OTP_SEND_EMAIL_IP_LOCKOUT.max),
+      expect(sendVerificationOTP).toHaveBeenCalledTimes(
+        OTP_SEND_EMAIL_IP_LOCKOUT.max,
+      ),
     );
 
-    const locked = await post(auth, "/email-otp/send-verification-otp", sendBody(email), "198.51.100.1");
+    const locked = await post(
+      auth,
+      "/email-otp/send-verification-otp",
+      sendBody(email),
+      "198.51.100.1",
+    );
     expect(locked.status).toBe(200);
     expect(await locked.json()).toEqual({ success: true });
     await new Promise((resolve) => setTimeout(resolve, 20));
-    expect(sendVerificationOTP).toHaveBeenCalledTimes(OTP_SEND_EMAIL_IP_LOCKOUT.max);
+    expect(sendVerificationOTP).toHaveBeenCalledTimes(
+      OTP_SEND_EMAIL_IP_LOCKOUT.max,
+    );
   });
 
   it("still sends from another IP while the email+IP pair is locked (looser email-only cap applies)", async () => {
@@ -571,12 +638,24 @@ describe("createOtpEmailLockoutPlugin", () => {
     const email = "bot@example.com";
 
     for (let i = 0; i < OTP_SEND_EMAIL_IP_LOCKOUT.max + 1; i += 1) {
-      await post(auth, "/email-otp/send-verification-otp", sendBody(email), "198.51.100.1");
+      await post(
+        auth,
+        "/email-otp/send-verification-otp",
+        sendBody(email),
+        "198.51.100.1",
+      );
     }
-    await post(auth, "/email-otp/send-verification-otp", sendBody(email), "198.51.100.2");
+    await post(
+      auth,
+      "/email-otp/send-verification-otp",
+      sendBody(email),
+      "198.51.100.2",
+    );
 
     await vi.waitFor(() =>
-      expect(sendVerificationOTP).toHaveBeenCalledTimes(OTP_SEND_EMAIL_IP_LOCKOUT.max + 1),
+      expect(sendVerificationOTP).toHaveBeenCalledTimes(
+        OTP_SEND_EMAIL_IP_LOCKOUT.max + 1,
+      ),
     );
   });
 
@@ -588,11 +667,21 @@ describe("createOtpEmailLockoutPlugin", () => {
     // 5 sends from IP 1 use up the pair; 10 more from IP 1 are denied but
     // still count toward the email-only cap (5 + 10 = 15).
     for (let i = 0; i < perIp + 10; i += 1) {
-      await post(auth, "/email-otp/send-verification-otp", sendBody(email), "198.51.100.1");
+      await post(
+        auth,
+        "/email-otp/send-verification-otp",
+        sendBody(email),
+        "198.51.100.1",
+      );
     }
     // 5 more from IP 2 bring the email-only count to 20. All are sent.
     for (let i = 0; i < OTP_SEND_EMAIL_LOCKOUT.max - perIp - 10; i += 1) {
-      await post(auth, "/email-otp/send-verification-otp", sendBody(email), "198.51.100.2");
+      await post(
+        auth,
+        "/email-otp/send-verification-otp",
+        sendBody(email),
+        "198.51.100.2",
+      );
     }
     // Only the allowed requests send: 5 from IP 1 and 5 from IP 2.
     await new Promise((resolve) => setTimeout(resolve, 20));
@@ -600,7 +689,12 @@ describe("createOtpEmailLockoutPlugin", () => {
 
     // One more from a fresh IP is over the email-only cap (count 21).
     // Had the denied requests not counted, this one would send.
-    const locked = await post(auth, "/email-otp/send-verification-otp", sendBody(email), "198.51.100.3");
+    const locked = await post(
+      auth,
+      "/email-otp/send-verification-otp",
+      sendBody(email),
+      "198.51.100.3",
+    );
     expect(locked.status).toBe(200);
     expect(await locked.json()).toEqual({ success: true });
     await new Promise((resolve) => setTimeout(resolve, 20));
@@ -613,11 +707,21 @@ describe("createOtpEmailLockoutPlugin", () => {
     const ip = "198.51.100.1";
 
     for (let i = 0; i < OTP_SIGN_IN_EMAIL_IP_LOCKOUT.max; i += 1) {
-      const response = await post(auth, "/sign-in/email-otp", signInBody(email), ip);
+      const response = await post(
+        auth,
+        "/sign-in/email-otp",
+        signInBody(email),
+        ip,
+      );
       expect(response.status).not.toBe(429);
     }
 
-    const locked = await post(auth, "/sign-in/email-otp", signInBody(email), ip);
+    const locked = await post(
+      auth,
+      "/sign-in/email-otp",
+      signInBody(email),
+      ip,
+    );
     expect(locked.status).toBe(429);
     expect(await locked.json()).toMatchObject({ code: "TOO_MANY_REQUESTS" });
     const retryAfter = Number(locked.headers.get("retry-after"));
@@ -638,10 +742,16 @@ describe("createOtpEmailLockoutPlugin", () => {
 
     // A cross-site navigation fails formCsrfMiddleware with 403. If the lockout
     // answered 429 without running that check first, this would be 429.
-    const locked = await post(auth, "/sign-in/email-otp", signInBody(email), ip, {
-      origin: null,
-      extra: { "sec-fetch-site": "cross-site", "sec-fetch-mode": "navigate" },
-    });
+    const locked = await post(
+      auth,
+      "/sign-in/email-otp",
+      signInBody(email),
+      ip,
+      {
+        origin: null,
+        extra: { "sec-fetch-site": "cross-site", "sec-fetch-mode": "navigate" },
+      },
+    );
     expect(locked.status).toBe(403);
   });
 
@@ -657,11 +767,21 @@ describe("createOtpEmailLockoutPlugin", () => {
     }
     // 10 more from IP 2 bring the email-only count to 30.
     for (let i = 0; i < OTP_SIGN_IN_EMAIL_LOCKOUT.max - perIp - 10; i += 1) {
-      const response = await post(auth, "/sign-in/email-otp", signInBody(email), "198.51.100.2");
+      const response = await post(
+        auth,
+        "/sign-in/email-otp",
+        signInBody(email),
+        "198.51.100.2",
+      );
       expect(response.status).not.toBe(429);
     }
 
-    const locked = await post(auth, "/sign-in/email-otp", signInBody(email), "198.51.100.3");
+    const locked = await post(
+      auth,
+      "/sign-in/email-otp",
+      signInBody(email),
+      "198.51.100.3",
+    );
     expect(locked.status).toBe(429);
   });
 
@@ -677,7 +797,9 @@ describe("createOtpEmailLockoutPlugin", () => {
     await post(auth, "/email-otp/send-verification-otp", sendBody(email));
 
     await vi.waitFor(() =>
-      expect(sendVerificationOTP).toHaveBeenCalledTimes(OTP_SEND_EMAIL_IP_LOCKOUT.max),
+      expect(sendVerificationOTP).toHaveBeenCalledTimes(
+        OTP_SEND_EMAIL_IP_LOCKOUT.max,
+      ),
     );
   });
 
@@ -691,11 +813,20 @@ describe("createOtpEmailLockoutPlugin", () => {
       await post(auth, "/email-otp/send-verification-otp", sendBody(email), ip);
     }
     await vi.waitFor(() =>
-      expect(sendVerificationOTP).toHaveBeenCalledTimes(OTP_SEND_EMAIL_IP_LOCKOUT.max),
+      expect(sendVerificationOTP).toHaveBeenCalledTimes(
+        OTP_SEND_EMAIL_IP_LOCKOUT.max,
+      ),
     );
 
-    await post(auth, "/email-otp/send-verification-otp", sendBody("BOT@example.com"), ip);
+    await post(
+      auth,
+      "/email-otp/send-verification-otp",
+      sendBody("BOT@example.com"),
+      ip,
+    );
     await new Promise((resolve) => setTimeout(resolve, 20));
-    expect(sendVerificationOTP).toHaveBeenCalledTimes(OTP_SEND_EMAIL_IP_LOCKOUT.max);
+    expect(sendVerificationOTP).toHaveBeenCalledTimes(
+      OTP_SEND_EMAIL_IP_LOCKOUT.max,
+    );
   });
 });

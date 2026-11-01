@@ -46,7 +46,9 @@ export function withoutTags(filter: FilterJSON, tags: string[]): FilterJSON {
       .map((b) => {
         const ba = without(b.attack, drop);
         const be = without(b.effect, drop);
-        return ba || be ? { ...(ba && { attack: ba }), ...(be && { effect: be }) } : null;
+        return ba || be
+          ? { ...(ba && { attack: ba }), ...(be && { effect: be }) }
+          : null;
       })
       .filter((b) => b !== null);
     if (branches.length) next.anyOf = branches;

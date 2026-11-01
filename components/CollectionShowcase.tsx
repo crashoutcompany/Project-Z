@@ -13,7 +13,8 @@ export default function CollectionShowcase() {
       name: "Genetic Apex",
       releaseYear: 2024,
       cardCount: 226,
-      image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_129_EN.webp",
+      image:
+        "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_129_EN.webp",
       color: "from-red-600 to-red-500",
     },
     {
@@ -21,7 +22,8 @@ export default function CollectionShowcase() {
       name: "Mythical Island",
       releaseYear: 2025,
       cardCount: 68,
-      image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1a/A1a_077_EN.webp",
+      image:
+        "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1a/A1a_077_EN.webp",
       color: "from-red-500 to-red-400",
     },
     {
@@ -29,7 +31,8 @@ export default function CollectionShowcase() {
       name: "Triumphant Light",
       releaseYear: 2025,
       cardCount: 75,
-      image: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2a/A2a_071_EN.webp",
+      image:
+        "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A2a/A2a_071_EN.webp",
       color: "from-red-600 to-red-500",
     },
   ];
@@ -68,7 +71,7 @@ export default function CollectionShowcase() {
               href={`/dex?set=${collection.code}`}
               className={cn(
                 buttonVariants({ size: "sm", variant: "secondary" }),
-                "rounded-full"
+                "rounded-full",
               )}
             >
               View in Dex

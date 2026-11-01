@@ -29,9 +29,8 @@ vi.mock("next/navigation", () => ({
   redirect,
 }));
 
-const { fetchCards, fetchCardDetail, updateAuthStatus } = await import(
-  "./actions"
-);
+const { fetchCards, fetchCardDetail, updateAuthStatus } =
+  await import("./actions");
 
 describe("fetchCards", () => {
   beforeEach(() => {
@@ -190,7 +189,9 @@ describe("fetchCardDetail", () => {
   it("reports not found without querying for malformed input", async () => {
     getSession.mockResolvedValue({ user: { id: "u1" } });
     const notFound = { status: "not_found" };
-    await expect(fetchCardDetail({ ref: "A1-25'--" })).resolves.toEqual(notFound);
+    await expect(fetchCardDetail({ ref: "A1-25'--" })).resolves.toEqual(
+      notFound,
+    );
     await expect(fetchCardDetail({ ref: "x".repeat(5000) })).resolves.toEqual(
       notFound,
     );

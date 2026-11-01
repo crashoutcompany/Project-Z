@@ -1,9 +1,5 @@
 import { NextResponse } from "next/server";
-import {
-  executeSearch,
-  parseQueryToFilter,
-  validateQuery,
-} from "@/lib/search";
+import { executeSearch, parseQueryToFilter, validateQuery } from "@/lib/search";
 import { clientKeyFromRequest, rateLimit } from "@/lib/rate-limit";
 import { withoutTags } from "@/lib/search/filter-tags";
 import { ENERGY_TYPES, isTag } from "@/lib/search/tags";
@@ -75,7 +71,10 @@ export async function POST(request: Request) {
   }
 
   if (typeof body !== "object" || body === null) {
-    return NextResponse.json({ error: "Body must be an object" }, { status: 400 });
+    return NextResponse.json(
+      { error: "Body must be an object" },
+      { status: 400 },
+    );
   }
   const payload = body as Record<string, unknown>;
 

@@ -19,10 +19,7 @@ export async function POST(request: Request) {
       ? (body as { refs: unknown[] }).refs
       : null;
 
-  if (
-    !rawRefs ||
-    !rawRefs.every((r): r is string => typeof r === "string")
-  ) {
+  if (!rawRefs || !rawRefs.every((r): r is string => typeof r === "string")) {
     return NextResponse.json(
       { error: "Missing string[] field: refs" },
       { status: 400 },

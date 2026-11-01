@@ -95,7 +95,10 @@ export default function HomePage() {
             <div className="mt-12 flex justify-center">
               <Link
                 href="/dex"
-                className={cn(buttonVariants({ variant: "outline" }), "rounded-full")}
+                className={cn(
+                  buttonVariants({ variant: "outline" }),
+                  "rounded-full",
+                )}
               >
                 View All Cards
                 <ChevronRight className="ml-2 h-4 w-4" />
@@ -208,7 +211,10 @@ export default function HomePage() {
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <Link
                 href="/trading"
-                className={cn(buttonVariants({ size: "lg", variant: "secondary" }), "rounded-full")}
+                className={cn(
+                  buttonVariants({ size: "lg", variant: "secondary" }),
+                  "rounded-full",
+                )}
               >
                 Start Trading Now
               </Link>
@@ -216,7 +222,7 @@ export default function HomePage() {
                 href="/dex"
                 className={cn(
                   buttonVariants({ size: "lg", variant: "outline" }),
-                  "rounded-full border-white bg-transparent text-white hover:bg-white/20"
+                  "rounded-full border-white bg-transparent text-white hover:bg-white/20",
                 )}
               >
                 Browse the Dex

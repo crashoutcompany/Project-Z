@@ -27,9 +27,9 @@ describe("FilterJSONSchema", () => {
       FilterJSONSchema.safeParse({ attack: { tags: ["not_a_real_tag"] } })
         .success,
     ).toBe(false);
-    expect(
-      FilterJSONSchema.safeParse({ energyType: ["fairy"] }).success,
-    ).toBe(false);
+    expect(FilterJSONSchema.safeParse({ energyType: ["fairy"] }).success).toBe(
+      false,
+    );
     expect(
       FilterJSONSchema.safeParse({ textFallback: "x".repeat(101) }).success,
     ).toBe(false);
@@ -48,7 +48,9 @@ describe("FilterJSONSchema", () => {
 describe("tag vocabulary", () => {
   it("lists every tag with its label in the LLM prompt", () => {
     for (const tag of ALL_TAGS) {
-      expect(FILTER_JSON_SYSTEM_PROMPT).toContain(`- ${tag}: ${TAG_INFO[tag].label}`);
+      expect(FILTER_JSON_SYSTEM_PROMPT).toContain(
+        `- ${tag}: ${TAG_INFO[tag].label}`,
+      );
     }
   });
 
@@ -63,7 +65,9 @@ describe("tag vocabulary", () => {
 
   it("rejects the retired prevent and switch tags", () => {
     for (const tag of ["prevent", "switch"]) {
-      expect(FilterJSONSchema.safeParse({ effect: { tags: [tag] } }).success).toBe(false);
+      expect(
+        FilterJSONSchema.safeParse({ effect: { tags: [tag] } }).success,
+      ).toBe(false);
     }
   });
 });

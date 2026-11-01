@@ -4,7 +4,11 @@ import {
   SignInButtons,
   SignInButtonsFromQuery,
 } from "@/components/auth/sign-in-buttons";
-import { emailOtpEnabled, enabledSocialProviders, getSession } from "@/lib/auth";
+import {
+  emailOtpEnabled,
+  enabledSocialProviders,
+  getSession,
+} from "@/lib/auth";
 import { SIGN_IN_PATH } from "@/lib/auth/config";
 import { AUTH_RETURN_QUERY, safeAuthReturnPath } from "@/lib/auth/return-path";
 import type { Metadata } from "next";

@@ -104,7 +104,11 @@ describe("POST /api/search", () => {
   });
 
   it("runs a tag-only search without parsing a query", async () => {
-    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+    executeSearch.mockResolvedValue({
+      cards: [],
+      usedFallback: false,
+      total: 0,
+    });
 
     const res = await POST(request({ tags: ["gust", "gust", "snipe"] }));
     expect(res.status).toBe(200);
@@ -112,7 +116,12 @@ describe("POST /api/search", () => {
     expect(validateQuery).not.toHaveBeenCalled();
     expect(executeSearch).toHaveBeenCalledWith(
       { surface: "any" },
-      { limit: 60, tradeableOnly: false, tags: ["gust", "snipe"], tagMode: "all" },
+      {
+        limit: 60,
+        tradeableOnly: false,
+        tags: ["gust", "snipe"],
+        tagMode: "all",
+      },
     );
     await expect(res.json()).resolves.toMatchObject({
       query: "",
@@ -128,7 +137,11 @@ describe("POST /api/search", () => {
       cached: false,
       source: "heuristic",
     });
-    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+    executeSearch.mockResolvedValue({
+      cards: [],
+      usedFallback: false,
+      total: 0,
+    });
 
     await POST(request({ query: "fire", tags: ["self_damage"] }));
     expect(executeSearch).toHaveBeenCalledWith(
@@ -158,13 +171,24 @@ describe("POST /api/search", () => {
   });
 
   it("forwards tagMode any and rejects unknown modes", async () => {
-    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+    executeSearch.mockResolvedValue({
+      cards: [],
+      usedFallback: false,
+      total: 0,
+    });
 
-    const res = await POST(request({ tags: ["gust", "snipe"], tagMode: "any" }));
+    const res = await POST(
+      request({ tags: ["gust", "snipe"], tagMode: "any" }),
+    );
     expect(res.status).toBe(200);
     expect(executeSearch).toHaveBeenCalledWith(
       { surface: "any" },
-      { limit: 60, tradeableOnly: false, tags: ["gust", "snipe"], tagMode: "any" },
+      {
+        limit: 60,
+        tradeableOnly: false,
+        tags: ["gust", "snipe"],
+        tagMode: "any",
+      },
     );
 
     const bad = await POST(request({ tags: ["gust"], tagMode: "some" }));
@@ -172,7 +196,10 @@ describe("POST /api/search", () => {
   });
 
   it("drops dismissed parsed tags before searching and echoes the filter", async () => {
-    validateQuery.mockReturnValue({ ok: true, normalized: "attach energy coin" });
+    validateQuery.mockReturnValue({
+      ok: true,
+      normalized: "attach energy coin",
+    });
     parseQueryToFilter.mockResolvedValue({
       filter: {
         surface: "any",
@@ -182,7 +209,11 @@ describe("POST /api/search", () => {
       cached: false,
       source: "heuristic",
     });
-    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+    executeSearch.mockResolvedValue({
+      cards: [],
+      usedFallback: false,
+      total: 0,
+    });
 
     const res = await POST(
       request({ query: "attach energy coin", excludeTags: ["energy_attach"] }),
@@ -199,7 +230,11 @@ describe("POST /api/search", () => {
   });
 
   it("runs a type-only search and forwards types with offset", async () => {
-    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 75 });
+    executeSearch.mockResolvedValue({
+      cards: [],
+      usedFallback: false,
+      total: 75,
+    });
 
     const res = await POST(
       request({ types: ["grass", "psychic", "grass"], offset: 60 }),
@@ -230,7 +265,11 @@ describe("POST /api/search", () => {
     const notArray = await POST(request({ types: "grass" }));
     expect(notArray.status).toBe(400);
 
-    executeSearch.mockResolvedValue({ cards: [], usedFallback: false, total: 0 });
+    executeSearch.mockResolvedValue({
+      cards: [],
+      usedFallback: false,
+      total: 0,
+    });
     await POST(request({ tags: ["gust"], offset: -5 }));
     expect(executeSearch).toHaveBeenLastCalledWith(
       { surface: "any" },

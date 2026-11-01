@@ -367,7 +367,12 @@ export function rankCards<T extends RankableCard>(
       const damage = wanted.size
         ? relevance.damage
         : card.attacks.reduce((max, a) => Math.max(max, a.damageBase ?? 0), 0);
-      return { card, relevance, damage, rarity: RARITY_RANK[card.rarity] ?? 99 };
+      return {
+        card,
+        relevance,
+        damage,
+        rarity: RARITY_RANK[card.rarity] ?? 99,
+      };
     })
     .sort(
       (a, b) =>
@@ -478,7 +483,8 @@ function matchesScalarFilters(
   filter: FilterJSON,
 ): boolean {
   if (filter.cardType && row.cardType !== filter.cardType) return false;
-  if (filter.trainerType && row.trainerType !== filter.trainerType) return false;
+  if (filter.trainerType && row.trainerType !== filter.trainerType)
+    return false;
   if (
     filter.energyType?.length &&
     !filter.energyType.some(

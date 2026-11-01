@@ -4,7 +4,6 @@ import { SourcePayloadSchema } from "../lib/source-schema";
 import { sampleCardsPerSet, SEED_CARDS_PER_SET } from "../lib/sample-cards";
 import { SOURCE_URL } from "../lib/source-pin";
 
-
 async function main() {
   const res = await fetch(SOURCE_URL);
   if (!res.ok) {

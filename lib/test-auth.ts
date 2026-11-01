@@ -13,8 +13,7 @@ export type TestAuthEnv = E2EEnvironment & {
 };
 
 export type TestAuthDecision =
-  | { allow: true }
-  | { allow: false; status: 401 | 404 };
+  { allow: true } | { allow: false; status: 401 | 404 };
 
 function currentTestAuthEnv(): TestAuthEnv {
   return {
@@ -68,7 +67,9 @@ export function isValidTestAuthSecret(
   env: TestAuthEnv = currentTestAuthEnv(),
 ): boolean {
   const expected = readConfiguredTestAuthSecret(env.TEST_AUTH_SECRET);
-  return Boolean(expected) && constantTimeEqual(providedSecret ?? "", expected!);
+  return (
+    Boolean(expected) && constantTimeEqual(providedSecret ?? "", expected!)
+  );
 }
 
 export function evaluateTestAuthRequest(

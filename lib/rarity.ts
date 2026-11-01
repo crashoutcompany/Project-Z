@@ -16,7 +16,12 @@ export const RARITY_INFO: Record<string, RarityInfo> = {
   AR: { code: "AR", name: "Art Rare", symbol: "☆", shinedust: 4_000 },
   SR: { code: "SR", name: "Super Rare", symbol: "☆☆", shinedust: 25_000 },
   S: { code: "S", name: "Shiny", symbol: "✵", shinedust: 10_000 },
-  SSR: { code: "SSR", name: "Super Shiny Rare", symbol: "✵✵", shinedust: 30_000 },
+  SSR: {
+    code: "SSR",
+    name: "Super Shiny Rare",
+    symbol: "✵✵",
+    shinedust: 30_000,
+  },
   IM: { code: "IM", name: "Immersive Rare", symbol: "☆☆☆", shinedust: null },
   UR: { code: "UR", name: "Crown Rare", symbol: "Crown", shinedust: null },
   PROMO: { code: "PROMO", name: "Promo", symbol: "P", shinedust: null },

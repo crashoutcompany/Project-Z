@@ -8,11 +8,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import LazyImage from "@/components/LazyImage";
 import { Check, Copy, Trash2, X } from "lucide-react";
-import {
-  type DeckCard,
-  refOf,
-  useBuilderDeck,
-} from "./use-builder-state";
+import { type DeckCard, refOf, useBuilderDeck } from "./use-builder-state";
 
 const DECK_SIZE = 20;
 
@@ -93,12 +89,18 @@ function DeckTray({
   const slots = flattenDeck(visibleDeck);
   const emptyCount = Math.max(0, DECK_SIZE - slots.length);
   const progress = Math.min(validation.totalCards / DECK_SIZE, 1);
-  const pokemonCount = grouped.pokemon.reduce((sum, card) => sum + card.count, 0);
-  const trainerCount = grouped.trainers.reduce((sum, card) => sum + card.count, 0);
+  const pokemonCount = grouped.pokemon.reduce(
+    (sum, card) => sum + card.count,
+    0,
+  );
+  const trainerCount = grouped.trainers.reduce(
+    (sum, card) => sum + card.count,
+    0,
+  );
 
   return (
     <aside className="lg:sticky lg:top-20 lg:self-start">
-      <section className="bg-card/90 space-y-4 rounded-2xl p-4 shadow-xs ring-1 ring-foreground/10 backdrop-blur-sm">
+      <section className="bg-card/90 ring-foreground/10 space-y-4 rounded-2xl p-4 shadow-xs ring-1 backdrop-blur-sm">
         <div className="flex flex-wrap items-start justify-between gap-2">
           <div>
             <h2 className="text-lg font-semibold tracking-tight">Your deck</h2>
@@ -139,10 +141,7 @@ function DeckTray({
           </div>
         </div>
 
-        <div
-          className="bg-muted h-1 overflow-hidden rounded-full"
-          aria-hidden
-        >
+        <div className="bg-muted h-1 overflow-hidden rounded-full" aria-hidden>
           <div
             className={cn(
               "h-full origin-left rounded-full transition-transform duration-200 ease-in-out motion-reduce:transition-none",
@@ -172,7 +171,7 @@ function DeckTray({
               onClick={() => onRemove(card)}
               title={`Remove one ${card.name}`}
               aria-label={`Remove one ${card.name}`}
-              className="catalog-slot relative overflow-hidden rounded-md ring-1 ring-foreground/10 transition-transform duration-150 ease-out active:scale-[0.97] motion-reduce:active:scale-100"
+              className="catalog-slot ring-foreground/10 relative overflow-hidden rounded-md ring-1 transition-transform duration-150 ease-out active:scale-[0.97] motion-reduce:active:scale-100"
             >
               <LazyImage
                 title={card.name}
@@ -183,7 +182,7 @@ function DeckTray({
                 className="h-auto w-full select-none"
                 draggable={false}
               />
-              <span className="bg-background/90 absolute top-0.5 right-0.5 flex h-4 w-4 items-center justify-center rounded-full ring-1 ring-foreground/10">
+              <span className="bg-background/90 ring-foreground/10 absolute top-0.5 right-0.5 flex h-4 w-4 items-center justify-center rounded-full ring-1">
                 <X className="h-2.5 w-2.5" />
               </span>
             </button>
@@ -191,7 +190,7 @@ function DeckTray({
           {Array.from({ length: emptyCount }, (_, i) => (
             <div
               key={`empty-${i}`}
-              className="aspect-[5/7] rounded-md border border-dashed border-foreground/15 bg-muted/40"
+              className="border-foreground/15 bg-muted/40 aspect-[5/7] rounded-md border border-dashed"
             />
           ))}
         </div>

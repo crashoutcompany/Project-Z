@@ -34,7 +34,10 @@ type UseCardDetailOptions = {
  * catalog row, then swaps in the full detail; a newer click supersedes an
  * older in-flight load.
  */
-export function useCardDetail({ initialDetail, syncDexUrl }: UseCardDetailOptions) {
+export function useCardDetail({
+  initialDetail,
+  syncDexUrl,
+}: UseCardDetailOptions) {
   const detailSeq = useRef(0);
   const [open, setOpen] = useState(Boolean(initialDetail));
   const [detail, setDetail] = useState<CardDetail | null>(initialDetail);

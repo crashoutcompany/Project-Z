@@ -115,12 +115,7 @@ export function logOtpFailure(
 /** Comma-separated, trimmed, lowercased, empties dropped, deduped. */
 export function parseOtpAllowlist(raw: string | undefined): string[] {
   return [
-    ...new Set(
-      (raw ?? "")
-        .split(",")
-        .map(normalizeOtpEmail)
-        .filter(Boolean),
-    ),
+    ...new Set((raw ?? "").split(",").map(normalizeOtpEmail).filter(Boolean)),
   ];
 }
 
@@ -210,7 +205,8 @@ function emailOtpAllowlistGuard(
         {
           matcher: (context) => context.path === SEND_PATH,
           handler: createAuthMiddleware(async (ctx) => {
-            const body = ctx.body as { email?: unknown; type?: unknown } | undefined;
+            const body = ctx.body as
+              { email?: unknown; type?: unknown } | undefined;
             const email =
               typeof body?.email === "string"
                 ? normalizeOtpEmail(body.email)
@@ -231,10 +227,11 @@ function emailOtpAllowlistGuard(
           matcher: (context) => GUARDED_OTP_PATHS.has(context.path ?? ""),
           handler: createAuthMiddleware(async (ctx) => {
             const body = ctx.body as Record<string, unknown> | undefined;
-            const field = NEW_EMAIL_PATHS.has(ctx.path ?? "") ? "newEmail" : "email";
+            const field = NEW_EMAIL_PATHS.has(ctx.path ?? "")
+              ? "newEmail"
+              : "email";
             const raw = body?.[field];
-            const email =
-              typeof raw === "string" ? normalizeOtpEmail(raw) : "";
+            const email = typeof raw === "string" ? normalizeOtpEmail(raw) : "";
             if (!isOtpEmailAllowed(email, allowlist)) {
               logOtpFailure("otp_unlisted", { email, logSecret });
               throw invalidOtpError();
@@ -253,8 +250,10 @@ function emailOtpAllowlistGuard(
           handler: createAuthMiddleware(async (ctx) => {
             const returned = ctx.context.returned;
             if (!isAPIError(returned) || returned.statusCode >= 500) return;
-            const code = (returned.body as { code?: unknown } | undefined)?.code;
-            const rawEmail = (ctx.body as { email?: unknown } | undefined)?.email;
+            const code = (returned.body as { code?: unknown } | undefined)
+              ?.code;
+            const rawEmail = (ctx.body as { email?: unknown } | undefined)
+              ?.email;
             logOtpFailure(
               code === "OTP_EXPIRED"
                 ? "otp_expired"
@@ -308,10 +307,7 @@ export function createEmailOtpPlugins(
       // Defense in depth: the allowlist hook already answers these requests
       // before a code is stored. This check keeps the plugin safe on its own.
       async sendVerificationOTP({ email, otp, type }) {
-        if (
-          type !== "sign-in" ||
-          !isOtpEmailAllowed(email, config.allowlist)
-        ) {
+        if (type !== "sign-in" || !isOtpEmailAllowed(email, config.allowlist)) {
           return;
         }
         try {

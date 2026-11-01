@@ -25,7 +25,8 @@ export function normalizeEffectText(text: string): string {
 // ---------------------------------------------------------------------------
 
 /** Takes Energy from the Energy Zone and attaches it ("Stoke", Blastoise). */
-const ZONE_ATTACH = /\b(take|produce)\b[^.]*energy from your energy zone[^.]*\battach/;
+const ZONE_ATTACH =
+  /\b(take|produce)\b[^.]*energy from your energy zone[^.]*\battach/;
 /** Attaches Energy from the discard pile (Flame Patch, Dragonair). */
 const DISCARD_ATTACH = /\battach\b[^.]*\benergy from your discard pile/;
 
@@ -39,7 +40,8 @@ const ENERGY_REMOVAL = [
   /\bdiscard\b[^.]*\benergy attached to all (of your opponent's )?pokemon\b/,
 ];
 
-const SNIPE = /damage to \d of your opponent's (benched )?pokemon(?![^.]*chosen at random)/;
+const SNIPE =
+  /damage to \d of your opponent's (benched )?pokemon(?![^.]*chosen at random)/;
 
 const DAMAGE_REDUCTION = [
   /\btakes? -\d+ damage/,
@@ -52,7 +54,8 @@ const SELF_SWITCH =
   /\bswitch (this pokemon|it|your active[^.]*?) with (1 of )?your (benched|active)/;
 
 const DAMAGE_BOOST = /\bdo \+\d+ damage/;
-const BENCH_SEARCH = /from your deck onto your bench|deck[^.]*put them onto your bench/;
+const BENCH_SEARCH =
+  /from your deck onto your bench|deck[^.]*put them onto your bench/;
 
 const HAND_DISRUPTION = [
   /\bdiscard\b[^.]*from your opponent's hand/,
@@ -73,7 +76,8 @@ const RETREAT_MODIFIER =
 const CURE_CONDITION =
   /recovers? from all (special conditions|of them)|remove a random special condition|can't be affected by any special conditions/;
 const EX_COUNTER = /opponent's (active )?pokemon (is a pokemon )?ex\b/;
-const KO_TRIGGER = /knocked out (by|during)|been knocked out|this pokemon is knocked out/;
+const KO_TRIGGER =
+  /knocked out (by|during)|been knocked out|this pokemon is knocked out/;
 const SUPPORTER_LOCK = /can't (use|play) any (supporter|trainer) cards/;
 const DISCARD_RECOVERY = /from your discard pile[^.]*into your hand/;
 
@@ -140,7 +144,11 @@ export function tagAttack(attack: {
   const tags: Set<AttackTag> = new Set(sharedTags(t));
 
   // bench_damage: damage that lands on the opponent's Bench
-  if (/benched/.test(t) && /damage/.test(t) && /opponent's benched|benched[^.]*opponent's/.test(t)) {
+  if (
+    /benched/.test(t) &&
+    /damage/.test(t) &&
+    /opponent's benched|benched[^.]*opponent's/.test(t)
+  ) {
     tags.add("bench_damage");
   }
   if (SNIPE.test(t)) tags.add("snipe");
@@ -174,7 +182,8 @@ export function tagAttack(attack: {
   if (/during your next turn, this pokemon can't (attack|use)/.test(t)) {
     tags.add("attack_lock_self");
   }
-  if (/(defending|that) pokemon can't retreat/.test(t)) tags.add("cant_retreat");
+  if (/(defending|that) pokemon can't retreat/.test(t))
+    tags.add("cant_retreat");
 
   if (/\bability\b/.test(t)) tags.add("ability_interaction");
   if (attack.energyCost === 0) tags.add("free_attack");
@@ -193,7 +202,11 @@ export function tagEffect(effectText: string, kind?: EffectKind): EffectTag[] {
   // Only damage aimed at the opponent's Pokémon (Spiritomb, Pyukumuku), not
   // any text that mentions both "damage" and "Bench" (Lyra, Cyrus), and not
   // "+30 damage to your opponent's Pokémon" boosts (Lorelei).
-  if (/(?<![+\d])\d+ damage to (each of |\d of )?your opponent's (benched )?pokemon\b/.test(t)) {
+  if (
+    /(?<![+\d])\d+ damage to (each of |\d of )?your opponent's (benched )?pokemon\b/.test(
+      t,
+    )
+  ) {
     tags.add("bench_damage");
   }
   if (/do \d+ damage to this pokemon/.test(t)) tags.add("self_damage");

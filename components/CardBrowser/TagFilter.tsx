@@ -59,7 +59,7 @@ export function TagFilter({
               role="combobox"
               aria-label="Filter by tags"
               disabled={disabled}
-              className="pointer-coarse:h-11 h-9 gap-2 rounded-lg px-3"
+              className="h-9 gap-2 rounded-lg px-3 pointer-coarse:h-11"
             />
           }
         >
@@ -93,7 +93,7 @@ export function TagFilter({
                       keywords={[TAG_INFO[tag].label, group]}
                       data-checked={selectedSet.has(tag)}
                       onSelect={() => toggle(tag)}
-                      className="pointer-coarse:min-h-11 min-h-9"
+                      className="min-h-9 pointer-coarse:min-h-11"
                     >
                       {TAG_INFO[tag].label}
                     </CommandItem>
@@ -147,7 +147,7 @@ export function TagFilter({
               disabled={disabled}
               onClick={() => onModeChange(value)}
               className={cn(
-                "pointer-coarse:h-10 h-8 rounded-md px-3 text-sm font-medium transition-[background-color,color,box-shadow] duration-150 ease-out",
+                "h-8 rounded-md px-3 text-sm font-medium transition-[background-color,color,box-shadow] duration-150 ease-out pointer-coarse:h-10",
                 "focus-visible:ring-ring/50 outline-none focus-visible:ring-[3px] disabled:opacity-50",
                 mode === value
                   ? "bg-background text-foreground shadow-sm"

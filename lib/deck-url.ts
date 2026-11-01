@@ -59,7 +59,10 @@ export function encodeDeck(
 
 export function decodeDeckParam(deckParam: string): DeckEntry[] {
   if (!deckParam.trim()) return [];
-  const parts = deckParam.split(",").map((p) => p.trim()).filter(Boolean);
+  const parts = deckParam
+    .split(",")
+    .map((p) => p.trim())
+    .filter(Boolean);
   const entries: DeckEntry[] = [];
 
   for (const part of parts) {
@@ -75,7 +78,12 @@ export function decodeDeckParam(deckParam: string): DeckEntry[] {
     }
     assertValidCount(count, part);
     const { setCode, number } = parseCardRef(ref);
-    entries.push({ setCode, number, count, ref: formatCardRef(setCode, number) });
+    entries.push({
+      setCode,
+      number,
+      count,
+      ref: formatCardRef(setCode, number),
+    });
   }
 
   return entries;
@@ -121,7 +129,9 @@ export function validateDeck(
   const totalCards = entries.reduce((sum, e) => sum + e.count, 0);
 
   if (totalCards !== 20) {
-    errors.push(`Deck must contain exactly 20 cards (currently ${totalCards}).`);
+    errors.push(
+      `Deck must contain exactly 20 cards (currently ${totalCards}).`,
+    );
   }
 
   const nameCounts = new Map<string, number>();

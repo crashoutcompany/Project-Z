@@ -1,9 +1,5 @@
 import { describe, expect, it } from "vitest";
-import {
-  formatShinedust,
-  getRarityInfo,
-  getShinedustCost,
-} from "./rarity";
+import { formatShinedust, getRarityInfo, getShinedustCost } from "./rarity";
 
 describe("rarity display", () => {
   it("maps stored codes to names and symbols", () => {
