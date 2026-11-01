@@ -56,12 +56,12 @@ describe("image-url derivation", () => {
   it("pads numbers and derives small Limitless URL", () => {
     const url = deriveImageUrl("A1", 1);
     expect(url).toBe(
-      "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_001_EN_SM.webp"
+      "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_001_EN_SM.webp",
     );
 
     const urlPromo = deriveImageUrl("P-A", 12);
     expect(urlPromo).toBe(
-      "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/P-A/P-A_012_EN_SM.webp"
+      "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/P-A/P-A_012_EN_SM.webp",
     );
   });
 
@@ -73,7 +73,7 @@ describe("image-url derivation", () => {
   it("throws when uploads are requested without a Blob token", async () => {
     vi.stubEnv("BLOB_READ_WRITE_TOKEN", undefined);
     await expect(
-      resolveCardImageUrls([{ setCode: "A1", number: 1 }])
+      resolveCardImageUrls([{ setCode: "A1", number: 1 }]),
     ).rejects.toThrow(/BLOB_READ_WRITE_TOKEN is not set/);
   });
 
@@ -81,7 +81,7 @@ describe("image-url derivation", () => {
     vi.stubEnv("BLOB_READ_WRITE_TOKEN", undefined);
     const { urls, uploaded, reused } = await resolveCardImageUrls(
       [{ setCode: "A1", number: 1 }],
-      { skipUpload: true }
+      { skipUpload: true },
     );
     expect(uploaded).toBe(0);
     expect(reused).toBe(0);
@@ -89,23 +89,39 @@ describe("image-url derivation", () => {
   });
 
   it("derives full-size URL by removing _SM suffix", () => {
-    const sm = "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_001_EN_SM.webp";
+    const sm =
+      "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_001_EN_SM.webp";
     expect(fullSizeUrl(sm)).toBe(
-      "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_001_EN.webp"
+      "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_001_EN.webp",
     );
   });
 });
 
 describe("rarity normalization and tradeability", () => {
   it("maps diamond rarities correctly", () => {
-    expect(normalizeRarity("◊")).toEqual({ rarityCode: "C", isTradeable: true });
-    expect(normalizeRarity("◊◊◊◊")).toEqual({ rarityCode: "RR", isTradeable: true });
+    expect(normalizeRarity("◊")).toEqual({
+      rarityCode: "C",
+      isTradeable: true,
+    });
+    expect(normalizeRarity("◊◊◊◊")).toEqual({
+      rarityCode: "RR",
+      isTradeable: true,
+    });
   });
 
   it("marks immersive, crown rare, and promo as non-tradeable", () => {
-    expect(normalizeRarity("☆☆☆")).toEqual({ rarityCode: "IM", isTradeable: false });
-    expect(normalizeRarity("Crown Rare")).toEqual({ rarityCode: "UR", isTradeable: false });
-    expect(normalizeRarity("P")).toEqual({ rarityCode: "PROMO", isTradeable: false });
+    expect(normalizeRarity("☆☆☆")).toEqual({
+      rarityCode: "IM",
+      isTradeable: false,
+    });
+    expect(normalizeRarity("Crown Rare")).toEqual({
+      rarityCode: "UR",
+      isTradeable: false,
+    });
+    expect(normalizeRarity("P")).toEqual({
+      rarityCode: "PROMO",
+      isTradeable: false,
+    });
   });
 });
 
@@ -124,13 +140,16 @@ describe("source payload", () => {
       energy: "water",
     };
     expect(
-      SourceCardSchema.parse({ ...base, secondary_energy: "darkness" }).secondary_energy
+      SourceCardSchema.parse({ ...base, secondary_energy: "darkness" })
+        .secondary_energy,
     ).toBe("darkness");
     expect(SourceCardSchema.parse(base).secondary_energy).toBeUndefined();
   });
 
   it("derives the source URL from the pinned commit", () => {
     expect(PINNED_COMMIT_SHA).toMatch(/^[0-9a-f]{40}$/);
-    expect(SOURCE_URL).toContain(`/${PINNED_COMMIT_SHA}/frontend/assets/cards.json`);
+    expect(SOURCE_URL).toContain(
+      `/${PINNED_COMMIT_SHA}/frontend/assets/cards.json`,
+    );
   });
 });

@@ -15,10 +15,13 @@ export const RARITY_MAP: Record<string, RarityInfo> = {
   "✵": { code: "S", name: "Shiny", isTradeable: true },
   "✵✵": { code: "SSR", name: "Super Shiny Rare", isTradeable: true },
   "Crown Rare": { code: "UR", name: "Ultra Rare / Crown", isTradeable: false },
-  "P": { code: "PROMO", name: "Promo", isTradeable: false },
+  P: { code: "PROMO", name: "Promo", isTradeable: false },
 };
 
-export function normalizeRarity(rawRarity: string): { rarityCode: string; isTradeable: boolean } {
+export function normalizeRarity(rawRarity: string): {
+  rarityCode: string;
+  isTradeable: boolean;
+} {
   const trimmed = rawRarity.trim();
   const info = RARITY_MAP[trimmed];
   if (!info) {

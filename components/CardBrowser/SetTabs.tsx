@@ -11,7 +11,7 @@ export function SetTabs({
   disabled,
 }: SetTabsProps) {
   return (
-    <div className="w-full overflow-x-auto pb-1 [scrollbar-width:thin]">
+    <div className="w-full [scrollbar-width:thin] overflow-x-auto pb-1">
       <Tabs
         value={String(activeSetId)}
         onValueChange={(value) => onSetChange(Number(value))}

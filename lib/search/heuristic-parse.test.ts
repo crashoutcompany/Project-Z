@@ -9,9 +9,9 @@ describe("heuristicParse — energy cost", () => {
   it("reads explicit cost phrasing", () => {
     expect(parse("costs 2 energy").attack?.energyCost).toBe(2);
     expect(parse("attack with 1 energy").attack?.energyCost).toBe(1);
-    expect(parse("1 energy attack that does 50 damage").attack?.energyCost).toBe(
-      1,
-    );
+    expect(
+      parse("1 energy attack that does 50 damage").attack?.energyCost,
+    ).toBe(1);
   });
 
   it("does not treat discard/attach effect text as a cost", () => {
@@ -150,20 +150,29 @@ describe("heuristicParse — tag coverage", () => {
   it("only puts tags on surfaces the tagger can produce them for", () => {
     for (const tag of ALL_TAGS) {
       const f = parse(QUERY_FOR_TAG[tag]);
-      for (const t of f.attack?.tags ?? []) expect(attackScope.has(t), t).toBe(true);
-      for (const t of f.effect?.tags ?? []) expect(effectScope.has(t), t).toBe(true);
+      for (const t of f.attack?.tags ?? [])
+        expect(attackScope.has(t), t).toBe(true);
+      for (const t of f.effect?.tags ?? [])
+        expect(effectScope.has(t), t).toBe(true);
     }
   });
 });
 
 describe("heuristicParse — tag disambiguation", () => {
   it("splits gust from self switching", () => {
-    expect(parse("pull up opponent's benched pokemon").effect?.tags).toEqual(["gust"]);
-    expect(parse("switch with the bench").effect?.tags).toEqual(["self_switch"]);
+    expect(parse("pull up opponent's benched pokemon").effect?.tags).toEqual([
+      "gust",
+    ]);
+    expect(parse("switch with the bench").effect?.tags).toEqual([
+      "self_switch",
+    ]);
   });
 
   it("keeps bench search and gust out of bench_damage", () => {
-    const tags = (q: string) => [...(parse(q).attack?.tags ?? []), ...(parse(q).effect?.tags ?? [])];
+    const tags = (q: string) => [
+      ...(parse(q).attack?.tags ?? []),
+      ...(parse(q).effect?.tags ?? []),
+    ];
     expect(tags("put pokemon onto your bench")).not.toContain("bench_damage");
     expect(tags("gust the bench")).not.toContain("bench_damage");
   });

@@ -30,8 +30,12 @@ const PROXY_PORT = Number(process.env.PROXY_PORT ?? 443);
 const PROXY_HOST = process.env.PROXY_HOST ?? "0.0.0.0";
 const PG_HOST = process.env.PG_HOST ?? "127.0.0.1";
 const PG_PORT = Number(process.env.PG_PORT ?? 5432);
-const TLS_CERT = process.env.TLS_CERT ?? new URL("./certs/server.crt", import.meta.url).pathname;
-const TLS_KEY = process.env.TLS_KEY ?? new URL("./certs/server.key", import.meta.url).pathname;
+const TLS_CERT =
+  process.env.TLS_CERT ??
+  new URL("./certs/server.crt", import.meta.url).pathname;
+const TLS_KEY =
+  process.env.TLS_KEY ??
+  new URL("./certs/server.key", import.meta.url).pathname;
 
 // Return every value as raw text; the Neon driver / Prisma adapter parse types
 // themselves (the driver sends the "Neon-Raw-Text-Output: true" header).
@@ -183,8 +187,12 @@ server.on("upgrade", (req, socket, head) => {
 
     const closeBoth = () => {
       open = false;
-      try { tcp.destroy(); } catch {}
-      try { ws.close(); } catch {}
+      try {
+        tcp.destroy();
+      } catch {}
+      try {
+        ws.close();
+      } catch {}
     };
     ws.on("close", closeBoth);
     ws.on("error", closeBoth);

@@ -25,9 +25,7 @@ export async function loadCardCatalog({
 
   const requestedCode = setCode?.trim();
   const requestedSet = requestedCode
-    ? sets.find(
-        (set) => set.code.toLowerCase() === requestedCode.toLowerCase(),
-      )
+    ? sets.find((set) => set.code.toLowerCase() === requestedCode.toLowerCase())
     : undefined;
   const initialSetId = requestedSet?.id ?? sets[0].id;
   const initialCards = await prisma.card.findMany({

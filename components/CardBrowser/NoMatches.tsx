@@ -48,14 +48,17 @@ export function NoMatches({
       </div>
       <div className="flex flex-wrap justify-center gap-2">
         {canWiden ? (
-          <Button onClick={onMatchAny} className="pointer-coarse:h-11 h-10 px-4">
+          <Button
+            onClick={onMatchAny}
+            className="h-10 px-4 pointer-coarse:h-11"
+          >
             Match any tag
           </Button>
         ) : null}
         <Button
           variant="outline"
           onClick={onClearFilters}
-          className="pointer-coarse:h-11 h-10 px-4"
+          className="h-10 px-4 pointer-coarse:h-11"
         >
           Clear filters
         </Button>

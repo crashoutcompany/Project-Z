@@ -62,7 +62,7 @@ export function TypeFilter({ selected, onChange, disabled }: TypeFilterProps) {
             disabled={disabled}
             onClick={() => toggle(type)}
             className={cn(
-              "pointer-coarse:size-11 inline-flex size-9 items-center justify-center rounded-full outline-none transition-[background-color,box-shadow,opacity,transform] duration-120 ease-out active:scale-[0.94] motion-reduce:active:scale-100",
+              "inline-flex size-9 items-center justify-center rounded-full transition-[background-color,box-shadow,opacity,transform] duration-120 ease-out outline-none active:scale-[0.94] motion-reduce:active:scale-100 pointer-coarse:size-11",
               "focus-visible:ring-ring/50 focus-visible:ring-[3px] disabled:opacity-50",
               on
                 ? "bg-primary/10 ring-primary ring-2 ring-inset"

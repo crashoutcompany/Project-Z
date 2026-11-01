@@ -152,7 +152,9 @@ describe("executeSearch", () => {
         id: 3,
         name: "Zapdos",
         rarity: "C",
-        effects: [{ tags: ["energy_attach", "once_per_turn"], kind: "ABILITY" }],
+        effects: [
+          { tags: ["energy_attach", "once_per_turn"], kind: "ABILITY" },
+        ],
       }),
       row({
         id: 4,
@@ -193,7 +195,11 @@ describe("executeSearch", () => {
       energyTypes: ["fire"],
     });
     findMany.mockResolvedValue([
-      row({ id: 1, name: "Spread", attacks: [attack(["coin_flip"]), attack(["draw"])] }),
+      row({
+        id: 1,
+        name: "Spread",
+        attacks: [attack(["coin_flip"]), attack(["draw"])],
+      }),
       row({ id: 2, name: "Focused", attacks: [attack(["coin_flip", "draw"])] }),
     ]);
 
@@ -272,7 +278,11 @@ describe("executeSearch", () => {
         rarity: "RR",
         attacks: [
           attack([], 60, ""),
-          attack(["energy_attach"], 200, "Discard 2 [R] Energy from this Pokémon."),
+          attack(
+            ["energy_attach"],
+            200,
+            "Discard 2 [R] Energy from this Pokémon.",
+          ),
         ],
       }),
       // Attaches, but its other attack throws Energy away.
@@ -351,7 +361,9 @@ describe("executeSearch", () => {
       row({
         id: 1,
         name: "Poison and Draw",
-        attacks: [attack(["condition_poison", "applies_condition", "draw"], 90)],
+        attacks: [
+          attack(["condition_poison", "applies_condition", "draw"], 90),
+        ],
       }),
       row({
         id: 2,
@@ -511,7 +523,11 @@ describe("executeSearch", () => {
 
   it("applies UI-picked types to FTS fallback rows and pages them", async () => {
     findMany.mockResolvedValue([]);
-    const ftsRow = (id: number, energyType: string, secondary: string | null) => ({
+    const ftsRow = (
+      id: number,
+      energyType: string,
+      secondary: string | null,
+    ) => ({
       id,
       name: `Mon ${id}`,
       imageUrl: `/img/${id}.webp`,

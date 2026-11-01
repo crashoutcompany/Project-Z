@@ -25,9 +25,7 @@ const POSTHOG_REWRITES = [
   },
 ];
 
-type RewriteList = Awaited<
-  ReturnType<NonNullable<NextConfig["rewrites"]>>
->;
+type RewriteList = Awaited<ReturnType<NonNullable<NextConfig["rewrites"]>>>;
 
 type AppDefaultsOptions = {
   posthogIngest?: boolean;

@@ -123,7 +123,9 @@ describe("createAuth", () => {
       previewOrigin: "https://*-preview.vercel.app",
     });
 
-    expect(withOtp.options.disabledPaths).toEqual([...EMAIL_OTP_DISABLED_PATHS]);
+    expect(withOtp.options.disabledPaths).toEqual([
+      ...EMAIL_OTP_DISABLED_PATHS,
+    ]);
     expect(withOtp.options.disabledPaths).toEqual(
       expect.arrayContaining([
         "/email-otp/reset-password",
@@ -205,10 +207,12 @@ describe("createAuth rate limiting", () => {
     });
 
     expect(auth.options.rateLimit?.enabled).toBe(false);
-    expect(buildOtpAuth({ NODE_ENV: "production" }).options.rateLimit?.enabled).toBe(
-      true,
+    expect(
+      buildOtpAuth({ NODE_ENV: "production" }).options.rateLimit?.enabled,
+    ).toBe(true);
+    expect(typeof auth.options.rateLimit?.customStorage?.consume).toBe(
+      "function",
     );
-    expect(typeof auth.options.rateLimit?.customStorage?.consume).toBe("function");
     expect(typeof withoutOtp.options.rateLimit?.customStorage?.consume).toBe(
       "function",
     );

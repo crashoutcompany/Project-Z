@@ -1,5 +1,9 @@
 import { SET_MAP } from "./lib/set-map";
-import { blobPathname, deriveImageUrl, listExistingCardImages } from "./lib/image-url";
+import {
+  blobPathname,
+  deriveImageUrl,
+  listExistingCardImages,
+} from "./lib/image-url";
 
 function loadLocalEnv() {
   for (const file of [".env.local", ".env"] as const) {
@@ -19,7 +23,9 @@ async function main() {
     const res = await fetch(url, { method: "HEAD" });
     console.log(`  ${setCode.padEnd(5)}: ${res.status} (${url})`);
     if (res.status !== 200) {
-      throw new Error(`Failed to fetch source image for ${setCode}: ${res.status}`);
+      throw new Error(
+        `Failed to fetch source image for ${setCode}: ${res.status}`,
+      );
     }
   }
   console.log("\n✅ All source sample image URLs returned 200 OK!");
@@ -34,7 +40,9 @@ async function main() {
   for (const setCode of Object.keys(SET_MAP)) {
     const pathname = blobPathname(setCode, 1);
     const url = existing.get(pathname);
-    console.log(`  ${setCode.padEnd(5)}: ${url ? "present" : "MISSING"} (${pathname})`);
+    console.log(
+      `  ${setCode.padEnd(5)}: ${url ? "present" : "MISSING"} (${pathname})`,
+    );
   }
 }
 

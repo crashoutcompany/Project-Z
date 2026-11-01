@@ -1,9 +1,5 @@
 import { describe, expect, it } from "vitest";
-import {
-  hashQuery,
-  normalizeQuery,
-  validateQuery,
-} from "./normalize-query";
+import { hashQuery, normalizeQuery, validateQuery } from "./normalize-query";
 
 describe("normalizeQuery", () => {
   it("lowercases, strips punctuation, and collapses whitespace", () => {
@@ -28,7 +24,9 @@ describe("hashQuery", () => {
     const unversioned = createHash("sha256").update("gust").digest("hex");
     expect(hashQuery("gust")).not.toBe(unversioned);
     expect(hashQuery("gust")).toBe(
-      createHash("sha256").update(`tags-v${TAG_VOCAB_VERSION}:gust`).digest("hex"),
+      createHash("sha256")
+        .update(`tags-v${TAG_VOCAB_VERSION}:gust`)
+        .digest("hex"),
     );
   });
 });

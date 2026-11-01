@@ -31,7 +31,10 @@ export function SelectionModeToggle({
             variant="ghost"
             size="sm"
             onClick={() => onModeChange(option)}
-            className={cn("rounded-md px-3", mode === option && ACTIVE_CLASSES[option])}
+            className={cn(
+              "rounded-md px-3",
+              mode === option && ACTIVE_CLASSES[option],
+            )}
           >
             {LABELS[option]} ({selectedCards[option].length})
           </Button>

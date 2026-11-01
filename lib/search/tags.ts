@@ -121,13 +121,19 @@ export const TAG_INFO: Record<Tag, { label: string; group: TagGroup }> = {
   free_attack: { label: "Free attack (no Energy)", group: "Damage" },
 
   energy_attach: { label: "Attaches extra Energy", group: "Energy" },
-  energy_zone_attach: { label: "Attaches from the Energy Zone", group: "Energy" },
+  energy_zone_attach: {
+    label: "Attaches from the Energy Zone",
+    group: "Energy",
+  },
   energy_move: { label: "Moves Energy", group: "Energy" },
   energy_discard: { label: "Discards Energy", group: "Energy" },
   self_energy_discard: { label: "Discards its own Energy", group: "Energy" },
   energy_removal: { label: "Discards opponent's Energy", group: "Energy" },
 
-  applies_condition: { label: "Inflicts a Special Condition", group: "Conditions" },
+  applies_condition: {
+    label: "Inflicts a Special Condition",
+    group: "Conditions",
+  },
   condition_poison: { label: "Poisons", group: "Conditions" },
   condition_burn: { label: "Burns", group: "Conditions" },
   condition_sleep: { label: "Puts to Sleep", group: "Conditions" },
@@ -145,8 +151,14 @@ export const TAG_INFO: Record<Tag, { label: string; group: TagGroup }> = {
   heal: { label: "Heals", group: "Defense" },
 
   hand_disruption: { label: "Disrupts opponent's hand", group: "Disruption" },
-  supporter_lock: { label: "Blocks opponent's Supporters", group: "Disruption" },
-  ability_interaction: { label: "Interacts with Abilities", group: "Disruption" },
+  supporter_lock: {
+    label: "Blocks opponent's Supporters",
+    group: "Disruption",
+  },
+  ability_interaction: {
+    label: "Interacts with Abilities",
+    group: "Disruption",
+  },
 
   draw: { label: "Draws cards", group: "Cards" },
   search_deck: { label: "Searches the deck", group: "Cards" },

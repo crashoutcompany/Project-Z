@@ -108,7 +108,9 @@ test("type filter is multi-select, shows removable pills and combines with tags"
     "aria-pressed",
     "true",
   );
-  await expect(page.getByText(/Filtering by Grass or Psychic · \d/)).toBeVisible();
+  await expect(
+    page.getByText(/Filtering by Grass or Psychic · \d/),
+  ).toBeVisible();
   await expect.poll(() => bodies.at(-1)?.types).toEqual(["grass", "psychic"]);
 
   await pickTag(page, TAG_INFO.heal.label);
@@ -158,7 +160,10 @@ test("at 390px the effects controls fit and the hint does not clip", async ({
   });
   expect(fits).toBe(true);
 
-  await page.getByRole("group", { name: "Filter by type" }).getByRole("button", { name: "Water" }).click();
+  await page
+    .getByRole("group", { name: "Filter by type" })
+    .getByRole("button", { name: "Water" })
+    .click();
   await expect(
     page.getByRole("button", { name: "Remove type: Water" }),
   ).toBeVisible();
@@ -198,9 +203,9 @@ test("tapping an effects search result opens its card details", async ({
   const sheet = page.getByTestId("card-detail-sheet");
   await expect(sheet).toBeVisible();
   await expect(sheet.getByText(name).first()).toBeVisible();
-  await expect.poll(() => new URL(page.url()).searchParams.get("card")).toMatch(
-    /^[A-Za-z0-9]+-\d+$/,
-  );
+  await expect
+    .poll(() => new URL(page.url()).searchParams.get("card"))
+    .toMatch(/^[A-Za-z0-9]+-\d+$/);
   // Closing keeps the search: the pill and the results are still there.
   await page.keyboard.press("Escape");
   await expect(sheet).toBeHidden();

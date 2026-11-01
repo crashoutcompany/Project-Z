@@ -1,0 +1,12 @@
+# Generated or vendored: formatting them only churns the next regeneration.
+pnpm-lock.yaml
+.cursor/dev/pnpm-lock.yaml
+prisma/generated/
+prisma/migrations/
+.agents/
+skills-lock.json
+scripts/seed/cards-sample.json
+scripts/cache/
+
+# Its Next.js block is rewritten by `next dev`.
+AGENTS.md

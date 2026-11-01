@@ -14,7 +14,9 @@ describe("toggleCardSelection", () => {
 
   it("removes a card that is already in the active list", () => {
     const start = { want: [card(1), card(2)], give: [] };
-    expect(toggleCardSelection(start, "want", card(1)).want.map((c) => c.id)).toEqual([2]);
+    expect(
+      toggleCardSelection(start, "want", card(1)).want.map((c) => c.id),
+    ).toEqual([2]);
   });
 
   it("moves a card from the other list instead of duplicating it", () => {

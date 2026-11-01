@@ -500,7 +500,10 @@ describe("email OTP failure logging", () => {
   it("logOtpFailure writes a reason and hash, never the address", () => {
     const warn = vi.spyOn(console, "warn").mockImplementation(() => undefined);
 
-    logOtpFailure("otp_unlisted", { email: "bot@example.com", logSecret: SECRET });
+    logOtpFailure("otp_unlisted", {
+      email: "bot@example.com",
+      logSecret: SECRET,
+    });
 
     expect(warn).toHaveBeenCalledWith("otp_sign_in_failed", {
       reason: "otp_unlisted",

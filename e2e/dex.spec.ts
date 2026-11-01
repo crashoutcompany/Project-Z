@@ -96,8 +96,8 @@ test.describe("on a 390px phone", () => {
     const box = await sheet.boundingBox();
     expect(box).toMatchObject({ x: 0, width: 390 });
     await expect(page.getByTestId("card-detail-close")).toBeInViewport();
-    expect(
-      await sheet.evaluate((el) => el.scrollWidth <= el.clientWidth),
-    ).toBe(true);
+    expect(await sheet.evaluate((el) => el.scrollWidth <= el.clientWidth)).toBe(
+      true,
+    );
   });
 });

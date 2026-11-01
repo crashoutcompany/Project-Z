@@ -189,5 +189,7 @@ test("an empty tag search offers to match any tag or clear filters", async ({
 
   await page.getByRole("button", { name: "Clear filters" }).click();
   await expect(catalogCards(page).first()).toBeVisible();
-  await expect(page.getByRole("group", { name: "Active filters" })).toBeHidden();
+  await expect(
+    page.getByRole("group", { name: "Active filters" }),
+  ).toBeHidden();
 });

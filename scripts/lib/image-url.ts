@@ -11,19 +11,25 @@ async function sleep(ms: number) {
   await new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function withBlobRetry<T>(label: string, fn: () => Promise<T>): Promise<T> {
+async function withBlobRetry<T>(
+  label: string,
+  fn: () => Promise<T>,
+): Promise<T> {
   let attempt = 0;
   while (true) {
     try {
       return await fn();
     } catch (err) {
-      if (!(err instanceof BlobServiceRateLimited) || attempt >= MAX_BLOB_RETRIES) {
+      if (
+        !(err instanceof BlobServiceRateLimited) ||
+        attempt >= MAX_BLOB_RETRIES
+      ) {
         throw err;
       }
       attempt += 1;
       const waitSec = Math.max(err.retryAfter || 60, 1);
       console.warn(
-        `  Blob rate limited during ${label}; retry ${attempt}/${MAX_BLOB_RETRIES} in ${waitSec}s`
+        `  Blob rate limited during ${label}; retry ${attempt}/${MAX_BLOB_RETRIES} in ${waitSec}s`,
       );
       await sleep(waitSec * 1000);
     }
@@ -57,7 +63,7 @@ function requireBlobToken(): string {
   const token = process.env.BLOB_READ_WRITE_TOKEN;
   if (!token) {
     throw new Error(
-      "BLOB_READ_WRITE_TOKEN is not set. Add it to .env.local (and the Vercel project) before importing card images."
+      "BLOB_READ_WRITE_TOKEN is not set. Add it to .env.local (and the Vercel project) before importing card images.",
     );
   }
   return token;
@@ -75,7 +81,7 @@ export async function listExistingCardImages(): Promise<Map<string, string>> {
         cursor,
         limit: 1000,
         token,
-      })
+      }),
     );
     for (const blob of result.blobs) {
       urls.set(blob.pathname, blob.url);
@@ -88,7 +94,7 @@ export async function listExistingCardImages(): Promise<Map<string, string>> {
 
 export async function uploadCardImage(
   setCode: string,
-  number: number
+  number: number,
 ): Promise<string> {
   const token = requireBlobToken();
   const pathname = blobPathname(setCode, number);
@@ -106,7 +112,7 @@ export async function uploadCardImage(
       contentType: "image/webp",
       cacheControlMaxAge: YEAR_IN_SECONDS,
       token,
-    })
+    }),
   );
   return blob.url;
 }
@@ -120,7 +126,7 @@ export interface ResolveCardImagesResult {
 async function mapPool<T, R>(
   items: T[],
   concurrency: number,
-  fn: (item: T) => Promise<R>
+  fn: (item: T) => Promise<R>,
 ): Promise<R[]> {
   const results: R[] = new Array(items.length);
   let next = 0;
@@ -145,7 +151,7 @@ async function mapPool<T, R>(
  */
 export async function resolveCardImageUrls(
   cards: { setCode: string; number: number }[],
-  options: { skipUpload?: boolean } = {}
+  options: { skipUpload?: boolean } = {},
 ): Promise<ResolveCardImagesResult> {
   const urls = new Map<string, string>();
   let uploaded = 0;
@@ -153,7 +159,10 @@ export async function resolveCardImageUrls(
 
   if (options.skipUpload && !process.env.BLOB_READ_WRITE_TOKEN) {
     for (const card of cards) {
-      urls.set(cardImageKey(card.setCode, card.number), deriveImageUrl(card.setCode, card.number));
+      urls.set(
+        cardImageKey(card.setCode, card.number),
+        deriveImageUrl(card.setCode, card.number),
+      );
     }
     return { urls, uploaded, reused };
   }
@@ -175,12 +184,17 @@ export async function resolveCardImageUrls(
 
   if (options.skipUpload) {
     for (const card of missing) {
-      urls.set(cardImageKey(card.setCode, card.number), deriveImageUrl(card.setCode, card.number));
+      urls.set(
+        cardImageKey(card.setCode, card.number),
+        deriveImageUrl(card.setCode, card.number),
+      );
     }
     return { urls, uploaded, reused };
   }
 
-  console.log(`  Uploading ${missing.length} missing images (concurrency ${UPLOAD_CONCURRENCY})...`);
+  console.log(
+    `  Uploading ${missing.length} missing images (concurrency ${UPLOAD_CONCURRENCY})...`,
+  );
   await mapPool(missing, UPLOAD_CONCURRENCY, async (card) => {
     const url = await uploadCardImage(card.setCode, card.number);
     urls.set(cardImageKey(card.setCode, card.number), url);
