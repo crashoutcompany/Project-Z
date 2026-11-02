@@ -100,11 +100,13 @@ test("effects search sends rarity and duplicate choices with tags, types and pag
   await expect(catalogCards(page)).toHaveCount(60);
   await page.getByText(/Load more|Loading more/).scrollIntoViewIfNeeded();
   await expect(catalogCards(page)).toHaveCount(70);
-  expect(bodies.at(-1)).toMatchObject({
-    offset: 60,
-    rarities: ["SR"],
-    showDuplicates: true,
-  });
+  await expect
+    .poll(() => bodies.at(-1))
+    .toMatchObject({
+      offset: 60,
+      rarities: ["SR"],
+      showDuplicates: true,
+    });
 
   await toggle.click();
   await expect.poll(() => bodies.at(-1)).not.toHaveProperty("showDuplicates");
@@ -127,7 +129,9 @@ test("name search hides duplicate prints until the toggle is on", async ({
     return names.every((n) => n.toLowerCase().includes("pikachu ex"));
   };
   await expect.poll(onlyMatches).toBe(true);
+  await expect(page.getByText(/Loading more/)).not.toBeVisible();
   const deduped = await catalogCards(page).count();
+  expect(deduped).toBeGreaterThan(0);
 
   const toggle = page.getByRole("button", { name: "Show duplicates" });
   await toggle.click();

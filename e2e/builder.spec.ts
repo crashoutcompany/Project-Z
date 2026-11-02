@@ -75,12 +75,20 @@ test.describe("a complete deck", () => {
     await expect(copy).toBeDisabled();
 
     // Two copies per card until 20; duplicate names are rejected by the rules.
+    // Wait for the deck count to update after each click to avoid race conditions.
     const cards = catalogCards(page);
     const total = await cards.count();
-    for (let i = 0; i < total; i++) {
-      if (await deckCount(page, 20).isVisible()) break;
+    let currentCount = 0;
+    for (let i = 0; i < total && currentCount < 20; i++) {
       await cards.nth(i).click();
-      await cards.nth(i).click();
+      currentCount++;
+      await expect(deckCount(page, currentCount)).toBeVisible();
+
+      if (currentCount < 20) {
+        await cards.nth(i).click();
+        currentCount++;
+        await expect(deckCount(page, currentCount)).toBeVisible();
+      }
     }
     await expect(deckCount(page, 20)).toBeVisible();
 
