@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 
 import {
   AUTH_RETURN_QUERY,
+  authCallbackFromSearch,
+  authCallbackFromWindow,
   safeAuthReturnPath,
   signInRedirectUrl,
 } from "./return-path";
@@ -37,6 +39,52 @@ describe("safeAuthReturnPath", () => {
       "/builder?v=1",
     );
     expect(safeAuthReturnPath("/builder\r\n", SIGN_IN)).toBeNull();
+  });
+});
+
+describe("authCallbackFromSearch", () => {
+  it("reads a gated next path from the sign-in query string", () => {
+    expect(
+      authCallbackFromSearch(
+        `?${AUTH_RETURN_QUERY}=${encodeURIComponent("/builder?v=1&deck=A1-1,A1-94x2")}`,
+        SIGN_IN,
+      ),
+    ).toBe("/builder?v=1&deck=A1-1,A1-94x2");
+    expect(
+      authCallbackFromSearch(
+        new URLSearchParams({ [AUTH_RETURN_QUERY]: "/dex?set=A1" }),
+        SIGN_IN,
+      ),
+    ).toBe("/dex?set=A1");
+  });
+
+  it("falls back to / when next is missing or unsafe", () => {
+    expect(authCallbackFromSearch("", SIGN_IN)).toBe("/");
+    expect(authCallbackFromSearch(null, SIGN_IN)).toBe("/");
+    expect(
+      authCallbackFromSearch(
+        `?${AUTH_RETURN_QUERY}=https://evil.example`,
+        SIGN_IN,
+      ),
+    ).toBe("/");
+  });
+});
+
+describe("authCallbackFromWindow", () => {
+  it("prefers an explicit destination over the URL", () => {
+    expect(authCallbackFromWindow(SIGN_IN, "/dex", "?next=/builder")).toBe(
+      "/dex",
+    );
+  });
+
+  it("reads next from the provided search string when no explicit value is set", () => {
+    expect(
+      authCallbackFromWindow(
+        SIGN_IN,
+        undefined,
+        `?${AUTH_RETURN_QUERY}=${encodeURIComponent("/builder?v=1&deck=A1-1,A1-94x2")}`,
+      ),
+    ).toBe("/builder?v=1&deck=A1-1,A1-94x2");
   });
 });
 

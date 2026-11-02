@@ -40,6 +40,41 @@ export function safeAuthReturnPath(
   return `${parsed.pathname}${parsed.search}`;
 }
 
+/**
+ * Post-sign-in destination from a `?next=` query. Read at click/submit time
+ * from the live URL so OAuth/OTP still return to the gated page (shared
+ * builder/dex links) without subscribing to `useSearchParams`.
+ */
+export function authCallbackFromSearch(
+  search: string | Pick<URLSearchParams, "get"> | null | undefined,
+  signInPath: string,
+): string {
+  let raw: string | null = null;
+  if (typeof search === "string") {
+    const qs = search.startsWith("?") ? search.slice(1) : search;
+    raw = new URLSearchParams(qs).get(AUTH_RETURN_QUERY);
+  } else if (search) {
+    raw = search.get(AUTH_RETURN_QUERY);
+  }
+  return safeAuthReturnPath(raw, signInPath) ?? "/";
+}
+
+/**
+ * Resolve the post-sign-in destination at click/submit time.
+ * `explicit` wins (tests / callers that already parsed `next`); otherwise
+ * read `?next=` from the current URL.
+ */
+export function authCallbackFromWindow(
+  signInPath: string,
+  explicit?: string,
+  search?: string,
+): string {
+  if (explicit !== undefined) return explicit;
+  const query =
+    search ?? (typeof window === "undefined" ? "" : window.location.search);
+  return authCallbackFromSearch(query, signInPath);
+}
+
 /** Guest redirect to sign-in, preserving a safe return path when one exists. */
 export function signInRedirectUrl(
   requestUrl: string,
