@@ -44,16 +44,24 @@ function row(over: {
     isEx: false,
     isTradeable: over.isTradeable ?? true,
     set: { code: "A1" },
-    attacks: over.attacks ?? [
-      {
-        tags: ["coin_flip"],
-        damageBase: 30,
-        damageKind: "FIXED",
-        energyCost: 1,
-        energyTypes: ["fire"],
-      },
-    ],
-    effects: over.effects ?? [],
+    attacks: (
+      over.attacks ?? [
+        {
+          tags: ["coin_flip"],
+          damageBase: 30,
+          damageKind: "FIXED",
+          energyCost: 1,
+          energyTypes: ["fire"],
+        },
+      ]
+    ).map((a, position) => ({
+      position,
+      name: `Attack ${position + 1}`,
+      damageRaw: a.damageBase == null ? "" : String(a.damageBase),
+      effectText: "",
+      ...a,
+    })),
+    effects: (over.effects ?? []).map((e) => ({ effectText: "", ...e })),
   };
 }
 
@@ -152,7 +160,9 @@ describe("executeSearch", () => {
         id: 3,
         name: "Zapdos",
         rarity: "C",
-        effects: [{ tags: ["energy_attach", "once_per_turn"], kind: "ABILITY" }],
+        effects: [
+          { tags: ["energy_attach", "once_per_turn"], kind: "ABILITY" },
+        ],
       }),
       row({
         id: 4,
@@ -193,7 +203,11 @@ describe("executeSearch", () => {
       energyTypes: ["fire"],
     });
     findMany.mockResolvedValue([
-      row({ id: 1, name: "Spread", attacks: [attack(["coin_flip"]), attack(["draw"])] }),
+      row({
+        id: 1,
+        name: "Spread",
+        attacks: [attack(["coin_flip"]), attack(["draw"])],
+      }),
       row({ id: 2, name: "Focused", attacks: [attack(["coin_flip", "draw"])] }),
     ]);
 
@@ -272,7 +286,11 @@ describe("executeSearch", () => {
         rarity: "RR",
         attacks: [
           attack([], 60, ""),
-          attack(["energy_attach"], 200, "Discard 2 [R] Energy from this Pokémon."),
+          attack(
+            ["energy_attach"],
+            200,
+            "Discard 2 [R] Energy from this Pokémon.",
+          ),
         ],
       }),
       // Attaches, but its other attack throws Energy away.
@@ -351,7 +369,9 @@ describe("executeSearch", () => {
       row({
         id: 1,
         name: "Poison and Draw",
-        attacks: [attack(["condition_poison", "applies_condition", "draw"], 90)],
+        attacks: [
+          attack(["condition_poison", "applies_condition", "draw"], 90),
+        ],
       }),
       row({
         id: 2,
@@ -496,8 +516,8 @@ describe("executeSearch", () => {
       isTradeable: true,
     });
     queryRaw.mockResolvedValue([
-      ftsRow(1, "Dual", "darkness"),
-      ftsRow(2, "Single", null),
+      ftsRow(1, "Greninja Dual", "darkness"),
+      ftsRow(2, "Greninja Single", null),
     ]);
 
     const result = await executeSearch({
@@ -506,12 +526,83 @@ describe("executeSearch", () => {
       textFallback: "greninja",
     });
     expect(result.usedFallback).toBe(true);
-    expect(result.cards.map((c) => c.name)).toEqual(["Dual"]);
+    expect(result.cards.map((c) => c.name)).toEqual(["Greninja Dual"]);
+  });
+
+  it("binds Pokémon filters to name matches, not cards that mention the name", async () => {
+    findMany.mockResolvedValue([]);
+    queryRaw.mockResolvedValue([]);
+    await executeSearch({
+      surface: "any",
+      cardType: "POKEMON",
+      isEx: true,
+      textFallback: "pikachu",
+    });
+
+    const where = findMany.mock.calls[0]?.[0]?.where;
+    expect(where.cardType).toBeUndefined();
+    expect(where.isEx).toBeUndefined();
+    const contains = { contains: "pikachu", mode: "insensitive" };
+    expect(where.AND).toEqual([
+      {
+        OR: [
+          {
+            AND: [{ name: contains }, { cardType: "POKEMON" }, { isEx: true }],
+          },
+          { attacks: { some: { effectText: contains } } },
+          { effects: { some: { effectText: contains } } },
+        ],
+      },
+    ]);
+  });
+
+  it("keeps Pokémon filters on every card when there is no text search", async () => {
+    findMany.mockResolvedValue([]);
+    await executeSearch({ surface: "any", cardType: "POKEMON", isEx: true });
+
+    const where = findMany.mock.calls[0]?.[0]?.where;
+    expect(where.AND).toEqual([{ cardType: "POKEMON" }, { isEx: true }]);
+  });
+
+  it("keeps FTS rows that mention the name but fail the Pokémon filters", async () => {
+    findMany.mockResolvedValue([]);
+    const ftsRow = (id: number, name: string, cardType: string) => ({
+      id,
+      name,
+      imageUrl: `/img/${id}.webp`,
+      setCode: "A1",
+      number: id,
+      cardType,
+      trainerType: cardType === "TRAINER" ? "TOOL" : null,
+      energyType: cardType === "TRAINER" ? null : "lightning",
+      secondaryEnergyType: null,
+      stage: cardType === "TRAINER" ? null : "BASIC",
+      hp: cardType === "TRAINER" ? null : 60,
+      rarity: "C",
+      isEx: false,
+      isTradeable: true,
+    });
+    queryRaw.mockResolvedValue([
+      ftsRow(1, "Light Ball", "TRAINER"),
+      ftsRow(2, "Pikachu", "POKEMON"),
+    ]);
+
+    const result = await executeSearch({
+      surface: "any",
+      cardType: "POKEMON",
+      isEx: true,
+      textFallback: "pikachu",
+    });
+    expect(result.cards.map((c) => c.name)).toEqual(["Light Ball"]);
   });
 
   it("applies UI-picked types to FTS fallback rows and pages them", async () => {
     findMany.mockResolvedValue([]);
-    const ftsRow = (id: number, energyType: string, secondary: string | null) => ({
+    const ftsRow = (
+      id: number,
+      energyType: string,
+      secondary: string | null,
+    ) => ({
       id,
       name: `Mon ${id}`,
       imageUrl: `/img/${id}.webp`,
@@ -649,5 +740,221 @@ describe("executeSearch", () => {
       },
     ]);
     expect(result.cards.map((c) => c.name)).toEqual(["Both", "One"]);
+  });
+
+  describe("duplicate prints", () => {
+    const poison = (damageBase: number) => [
+      {
+        tags: ["condition_poison"],
+        damageBase,
+        damageKind: "FIXED",
+        energyCost: 1,
+        energyTypes: ["grass"],
+      },
+    ];
+    // Two prints each of three cards, plus a same-named card with a
+    // different attack. Rows come name-ordered, as the query asks for.
+    const prints = () => [
+      row({ id: 1, name: "Arbok", rarity: "SR", attacks: poison(70) }),
+      row({ id: 2, name: "Arbok", rarity: "R", attacks: poison(70) }),
+      row({
+        id: 3,
+        name: "Ekans",
+        rarity: "C",
+        attacks: poison(20),
+        energyType: "grass",
+      }),
+      row({
+        id: 4,
+        name: "Ekans",
+        rarity: "AR",
+        attacks: poison(20),
+        energyType: "grass",
+      }),
+      row({
+        id: 5,
+        name: "Ekans",
+        rarity: "U",
+        attacks: poison(30),
+        energyType: "grass",
+      }),
+      row({ id: 6, name: "Weezing", rarity: "IM", attacks: poison(50) }),
+      row({ id: 7, name: "Weezing", rarity: "RR", attacks: poison(50) }),
+    ];
+
+    it("shows the lowest-rarity print by default and counts cards, not prints", async () => {
+      findMany.mockResolvedValue(prints());
+      const result = await executeSearch(
+        { surface: "any" },
+        { tags: ["condition_poison"], limit: 10 },
+      );
+      expect(result.total).toBe(4);
+      // Ranked by damage, as before; the kept print carries the card's rank.
+      expect(result.cards.map((c) => c.id)).toEqual([2, 7, 5, 3]);
+    });
+
+    it("lists every print with showDuplicates", async () => {
+      findMany.mockResolvedValue(prints());
+      const result = await executeSearch(
+        { surface: "any" },
+        { tags: ["condition_poison"], limit: 10, showDuplicates: true },
+      );
+      expect(result.total).toBe(7);
+      // Prints of one card rank by rarity, most common first.
+      expect(result.cards.map((c) => c.id)).toEqual([2, 1, 7, 6, 5, 3, 4]);
+    });
+
+    it("pages the deduped ranking without skipping or repeating", async () => {
+      findMany.mockResolvedValue(prints());
+      const ids: number[] = [];
+      for (const offset of [0, 1, 2, 3]) {
+        const page = await executeSearch(
+          { surface: "any" },
+          { tags: ["condition_poison"], limit: 1, offset },
+        );
+        expect(page.total).toBe(4);
+        ids.push(...page.cards.map((c) => c.id));
+      }
+      expect(ids).toEqual([2, 7, 5, 3]);
+    });
+
+    it("filters by rarity in the query and dedupes within the picked rarities", async () => {
+      findMany.mockResolvedValue(
+        prints().filter((p) => ["SR", "AR", "IM"].includes(p.rarity)),
+      );
+      const result = await executeSearch(
+        { surface: "any" },
+        { tags: ["condition_poison"], rarities: ["SR", "AR", "IM"], limit: 10 },
+      );
+      expect(findMany.mock.calls[0]?.[0]?.where).toMatchObject({
+        rarity: { in: ["SR", "AR", "IM"] },
+      });
+      expect(result.cards.map((c) => c.id)).toEqual([1, 6, 4]);
+    });
+
+    it("combines rarity, types, tags and text in one where clause", async () => {
+      findMany.mockResolvedValue([]);
+      await executeSearch(
+        { surface: "any", textFallback: "ekans" },
+        {
+          tags: ["condition_poison"],
+          types: ["grass"],
+          rarities: ["C"],
+          limit: 10,
+        },
+      );
+      const where = findMany.mock.calls[0]?.[0]?.where;
+      expect(where.rarity).toEqual({ in: ["C"] });
+      expect(where.AND).toEqual(
+        expect.arrayContaining([
+          {
+            OR: [
+              { attacks: { some: { tags: { has: "condition_poison" } } } },
+              { effects: { some: { tags: { has: "condition_poison" } } } },
+            ],
+          },
+          {
+            OR: [
+              { energyType: { in: ["grass"] } },
+              { secondaryEnergyType: { in: ["grass"] } },
+            ],
+          },
+          expect.objectContaining({
+            OR: expect.arrayContaining([
+              { name: { contains: "ekans", mode: "insensitive" } },
+            ]),
+          }),
+        ]),
+      );
+    });
+
+    it("combines dedupe with the picked types", async () => {
+      findMany.mockResolvedValue(
+        prints().filter((p) => p.energyType === "grass"),
+      );
+      const result = await executeSearch(
+        { surface: "any" },
+        { tags: ["condition_poison"], types: ["grass"], limit: 10 },
+      );
+      expect(result.cards.map((c) => c.id)).toEqual([5, 3]);
+    });
+
+    const ftsRow = (id: number, name: string, rarity: string) => ({
+      id,
+      name,
+      imageUrl: `/img/${id}.webp`,
+      setCode: "A1",
+      number: id,
+      cardType: "POKEMON",
+      trainerType: null,
+      energyType: "grass",
+      secondaryEnergyType: null,
+      stage: "BASIC",
+      hp: 70,
+      rarity,
+      isEx: false,
+      isTradeable: true,
+    });
+    const keyed = (id: number, attack: string) => ({
+      id,
+      attacks: [
+        {
+          position: 0,
+          name: attack,
+          damageRaw: "20",
+          energyTypes: ["grass"],
+          effectText: "",
+        },
+      ],
+      effects: [],
+    });
+
+    it("dedupes and rarity-filters FTS fallback rows", async () => {
+      queryRaw.mockResolvedValue([
+        ftsRow(1, "Oddish", "AR"),
+        ftsRow(2, "Oddish", "C"),
+        ftsRow(3, "Oddish", "U"),
+        ftsRow(4, "Gloom", "U"),
+      ]);
+      // Structured search finds nothing; then the FTS rows' attacks load.
+      findMany
+        .mockResolvedValueOnce([])
+        .mockResolvedValueOnce([
+          keyed(1, "Ram"),
+          keyed(2, "Ram"),
+          keyed(3, "Blot"),
+          keyed(4, "Ram"),
+        ]);
+
+      const result = await executeSearch(
+        { surface: "any", textFallback: "sleep" },
+        { limit: 10 },
+      );
+      expect(result.usedFallback).toBe(true);
+      expect(result.cards.map((c) => c.id)).toEqual([2, 3, 4]);
+      expect(result.total).toBe(3);
+
+      findMany.mockReset();
+      findMany
+        .mockResolvedValueOnce([])
+        .mockResolvedValueOnce([
+          keyed(1, "Ram"),
+          keyed(3, "Blot"),
+          keyed(4, "Ram"),
+        ]);
+      const rare = await executeSearch(
+        { surface: "any", textFallback: "sleep" },
+        { rarities: ["AR", "U"], limit: 10 },
+      );
+      expect(rare.cards.map((c) => c.id)).toEqual([1, 3, 4]);
+
+      findMany.mockReset();
+      findMany.mockResolvedValue([]);
+      const all = await executeSearch(
+        { surface: "any", textFallback: "sleep" },
+        { showDuplicates: true, limit: 10 },
+      );
+      expect(all.cards.map((c) => c.id)).toEqual([1, 2, 3, 4]);
+    });
   });
 });

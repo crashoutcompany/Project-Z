@@ -45,10 +45,10 @@ export function ProviderIcon({
 
 export function AuthDivider({ label = "or" }: { label?: string }) {
   return (
-    <div className="flex items-center gap-3 text-xs uppercase tracking-[0.14em] text-muted-foreground">
-      <span className="h-px flex-1 bg-border" />
+    <div className="text-muted-foreground flex items-center gap-3 text-xs tracking-[0.14em] uppercase">
+      <span className="bg-border h-px flex-1" />
       <span>{label}</span>
-      <span className="h-px flex-1 bg-border" />
+      <span className="bg-border h-px flex-1" />
     </div>
   );
 }

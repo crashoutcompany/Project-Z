@@ -34,7 +34,8 @@ describe("planRetag", () => {
         },
         {
           id: 11,
-          effectText: "Once during your turn, you may heal 20 damage from each of your Pokémon.",
+          effectText:
+            "Once during your turn, you may heal 20 damage from each of your Pokémon.",
           kind: EffectKind.ABILITY,
           tags: ["heal", "once_per_turn"],
         },
@@ -42,7 +43,11 @@ describe("planRetag", () => {
     );
 
     expect(attackUpdates).toEqual([
-      { id: 1, before: ["damage_plus", "energy_attach"], after: ["damage_plus"] },
+      {
+        id: 1,
+        before: ["damage_plus", "energy_attach"],
+        after: ["damage_plus"],
+      },
     ]);
     expect(effectUpdates).toEqual([{ id: 10, before: ["prevent"], after: [] }]);
   });

@@ -77,9 +77,7 @@ describe("createAuthProxy", () => {
       signInPath: "/signin",
     });
 
-    const response = await proxy(
-      request("/", "better-auth.session_token=old"),
-    );
+    const response = await proxy(request("/", "better-auth.session_token=old"));
 
     expect(getSession).toHaveBeenNthCalledWith(1, {
       headers: expect.any(Headers),

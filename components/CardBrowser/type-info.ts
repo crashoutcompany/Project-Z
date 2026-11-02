@@ -26,7 +26,11 @@ export const TYPE_INFO: Record<
     icon: Zap,
     className: "bg-yellow-400 text-yellow-950",
   },
-  psychic: { label: "Psychic", icon: Eye, className: "bg-purple-600 text-white" },
+  psychic: {
+    label: "Psychic",
+    icon: Eye,
+    className: "bg-purple-600 text-white",
+  },
   fighting: {
     label: "Fighting",
     icon: BicepsFlexed,
@@ -37,7 +41,11 @@ export const TYPE_INFO: Record<
     icon: Moon,
     className: "bg-slate-800 text-white dark:ring-1 dark:ring-white/25",
   },
-  metal: { label: "Metal", icon: Anvil, className: "bg-zinc-400 text-zinc-950" },
+  metal: {
+    label: "Metal",
+    icon: Anvil,
+    className: "bg-zinc-400 text-zinc-950",
+  },
   dragon: {
     label: "Dragon",
     icon: Sparkle,

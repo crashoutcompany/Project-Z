@@ -7,7 +7,8 @@ import {
   isValidCardDetailRef,
   type CardDetail,
 } from "@/lib/card-detail";
-import prisma from "@/prisma/db";
+import { loadCatalogPage } from "@/lib/catalog-page";
+import { RARITY_CODES } from "@/lib/rarity";
 import { Card } from "@/prisma/generated/client/client";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
@@ -36,6 +37,8 @@ export type FetchCardsParams = {
   cursor?: number;
   limit?: number;
   tradeableOnly?: boolean;
+  rarities?: string[];
+  showDuplicates?: boolean;
 };
 
 const FETCH_CARDS_MAX_LIMIT = 60;
@@ -46,6 +49,11 @@ const fetchCardsSchema = z.object({
   cursor: z.number().int().positive().optional(),
   limit: z.number().int().min(1).max(FETCH_CARDS_MAX_LIMIT).default(20),
   tradeableOnly: z.boolean().default(false),
+  rarities: z
+    .array(z.enum(RARITY_CODES as [string, ...string[]]))
+    .max(RARITY_CODES.length)
+    .optional(),
+  showDuplicates: z.boolean().default(false),
 });
 
 export type FetchCardsResult = {
@@ -54,7 +62,8 @@ export type FetchCardsResult = {
 };
 
 /**
- * Fetches cards with cursor-based pagination, set filtering, and search.
+ * Fetches cards with cursor-based pagination, set, name and rarity filters.
+ * Prints of the same card collapse to one unless `showDuplicates` is set.
  *
  * @param {FetchCardsParams} params - The parameters for fetching cards.
  * @returns {Promise<FetchCardsResult>} The cards and next cursor for pagination.
@@ -64,38 +73,7 @@ export const fetchCards = async (
 ): Promise<FetchCardsResult> => {
   // Server actions are public POST endpoints, so never trust the client's
   // shape or page size.
-  const { setId, search, cursor, limit, tradeableOnly } =
-    fetchCardsSchema.parse(params);
-
-  const cards = await prisma.card.findMany({
-    take: limit + 1, // Fetch one extra to determine if there are more
-    ...(cursor && {
-      skip: 1, // Skip the cursor itself
-      cursor: { id: cursor },
-    }),
-    where: {
-      ...(setId && { setId }),
-      ...(search && {
-        name: {
-          contains: search,
-          mode: "insensitive",
-        },
-      }),
-      ...(tradeableOnly && { isTradeable: true }),
-    },
-    orderBy: { id: "asc" },
-    include: {
-      set: true,
-    },
-  });
-
-  let nextCursor: number | null = null;
-  if (cards.length > limit) {
-    cards.pop();
-    nextCursor = cards.at(-1)?.id ?? null;
-  }
-
-  return { cards, nextCursor };
+  return loadCatalogPage(fetchCardsSchema.parse(params));
 };
 
 export type FetchCardDetailInput = {

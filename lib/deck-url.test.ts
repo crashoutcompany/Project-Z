@@ -57,15 +57,15 @@ describe("deck-url codec", () => {
   });
 
   it("rejects unsupported deck URL versions", () => {
-    expect(() =>
-      decodeBuilderSearchParams({ v: "2", deck: "A1-1" }),
-    ).toThrow(/Unsupported deck URL version/);
-    expect(() =>
-      decodeBuilderSearchParams({ v: "0", deck: "A1-1" }),
-    ).toThrow(/Unsupported deck URL version/);
-    expect(() =>
-      decodeBuilderSearchParams({ v: "foo", deck: "A1-1" }),
-    ).toThrow(/Unsupported deck URL version/);
+    expect(() => decodeBuilderSearchParams({ v: "2", deck: "A1-1" })).toThrow(
+      /Unsupported deck URL version/,
+    );
+    expect(() => decodeBuilderSearchParams({ v: "0", deck: "A1-1" })).toThrow(
+      /Unsupported deck URL version/,
+    );
+    expect(() => decodeBuilderSearchParams({ v: "foo", deck: "A1-1" })).toThrow(
+      /Unsupported deck URL version/,
+    );
   });
 
   it("validates 20 cards and max 2 per name", () => {

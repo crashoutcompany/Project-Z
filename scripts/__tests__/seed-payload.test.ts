@@ -9,7 +9,7 @@ describe("seed cards-sample payload", () => {
   it("parses and keeps at most SEED_CARDS_PER_SET cards per mapped set", () => {
     const seedPath = path.resolve(__dirname, "../seed/cards-sample.json");
     const cards = SourcePayloadSchema.parse(
-      JSON.parse(fs.readFileSync(seedPath, "utf8"))
+      JSON.parse(fs.readFileSync(seedPath, "utf8")),
     );
     expect(cards.length).toBeGreaterThan(0);
 
@@ -29,7 +29,7 @@ describe("seed cards-sample payload", () => {
   it("includes the newest sets and a dual-type card", () => {
     const seedPath = path.resolve(__dirname, "../seed/cards-sample.json");
     const cards = SourcePayloadSchema.parse(
-      JSON.parse(fs.readFileSync(seedPath, "utf8"))
+      JSON.parse(fs.readFileSync(seedPath, "utf8")),
     );
     const sets = new Set(cards.map((c) => parseCardId(c.card_id).setCode));
     for (const code of ["B4b", "C1", "P-C"]) expect(sets.has(code)).toBe(true);

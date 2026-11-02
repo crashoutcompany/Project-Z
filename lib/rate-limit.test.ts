@@ -48,8 +48,8 @@ describe("clientKeyFromRequest", () => {
         }),
       ),
     ).toBe("198.51.100.4");
-    expect(clientKeyFromRequest(new Request("http://localhost/api/search"))).toBe(
-      "anonymous",
-    );
+    expect(
+      clientKeyFromRequest(new Request("http://localhost/api/search")),
+    ).toBe("anonymous");
   });
 });

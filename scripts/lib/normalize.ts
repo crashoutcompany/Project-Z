@@ -1,4 +1,10 @@
-import { CardType, Stage, TrainerType, DamageKind, EffectKind } from "../../prisma/generated/client/client";
+import {
+  CardType,
+  Stage,
+  TrainerType,
+  DamageKind,
+  EffectKind,
+} from "../../prisma/generated/client/client";
 import type { SourceCard, SourceAttack } from "./source-schema";
 
 const DAMAGE_RE = /^\d+[+x\-]?$/i;
@@ -78,7 +84,10 @@ export function parseDamage(rawDamage: string): {
   };
 }
 
-export function normalizeAttack(sourceAttack: SourceAttack, position: number): NormalizedAttack {
+export function normalizeAttack(
+  sourceAttack: SourceAttack,
+  position: number,
+): NormalizedAttack {
   let attackName = sourceAttack.name.trim();
   let rawDamage = (sourceAttack.damage || "").trim();
 
@@ -91,12 +100,16 @@ export function normalizeAttack(sourceAttack: SourceAttack, position: number): N
   const { damageRaw, damageBase, damageKind } = parseDamage(rawDamage);
 
   // Fix 2: "No Cost" sentinel (30 attacks in source)
-  const cost = (sourceAttack.cost || []).filter((c) => c !== "No Cost" && c.trim() !== "");
+  const cost = (sourceAttack.cost || []).filter(
+    (c) => c !== "No Cost" && c.trim() !== "",
+  );
   const energyCost = cost.length;
   const energyTypes = cost.map((c) => c.toLowerCase().trim());
 
   const effectText =
-    sourceAttack.effect && sourceAttack.effect !== "No effect" ? sourceAttack.effect.trim() : "";
+    sourceAttack.effect && sourceAttack.effect !== "No effect"
+      ? sourceAttack.effect.trim()
+      : "";
 
   return {
     position,
@@ -114,7 +127,7 @@ export function normalizeCard(
   card: SourceCard,
   derivedImageUrl: string,
   normalizedRarity: { rarityCode: string; isTradeable: boolean },
-  cardNumber: number
+  cardNumber: number,
 ): NormalizedCard {
   const isPokemon = card.card_type.toLowerCase().includes("pok");
   const cardType = isPokemon ? CardType.POKEMON : CardType.TRAINER;
@@ -125,8 +138,10 @@ export function normalizeCard(
   const evolutionType = (card.evolution_type || "").toLowerCase().trim();
   if (isPokemon) {
     if (evolutionType === "basic") stage = Stage.BASIC;
-    else if (evolutionType === "stage1" || evolutionType === "stage 1") stage = Stage.STAGE1;
-    else if (evolutionType === "stage2" || evolutionType === "stage 2") stage = Stage.STAGE2;
+    else if (evolutionType === "stage1" || evolutionType === "stage 1")
+      stage = Stage.STAGE1;
+    else if (evolutionType === "stage2" || evolutionType === "stage 2")
+      stage = Stage.STAGE2;
   } else {
     if (evolutionType === "supporter") trainerType = TrainerType.SUPPORTER;
     else if (evolutionType === "item") trainerType = TrainerType.ITEM;
@@ -136,13 +151,18 @@ export function normalizeCard(
 
   // Nullable fields cleanup
   let weakness: string | null = null;
-  if (card.weakness && card.weakness !== "N/A" && card.weakness.toLowerCase() !== "none") {
+  if (
+    card.weakness &&
+    card.weakness !== "N/A" &&
+    card.weakness.toLowerCase() !== "none"
+  ) {
     weakness = card.weakness.toLowerCase().trim();
   }
 
   const hp = typeof card.hp === "number" ? card.hp : null;
   const retreatCost = typeof card.retreat === "number" ? card.retreat : null;
-  const energyType = isPokemon && card.energy ? card.energy.toLowerCase().trim() : null;
+  const energyType =
+    isPokemon && card.energy ? card.energy.toLowerCase().trim() : null;
   const secondaryEnergyType =
     isPokemon && energyType && card.secondary_energy
       ? card.secondary_energy.toLowerCase().trim() || null
@@ -154,7 +174,7 @@ export function normalizeCard(
 
   // Normalized attacks
   const attacks: NormalizedAttack[] = (card.attacks || []).map((atk, index) =>
-    normalizeAttack(atk, index)
+    normalizeAttack(atk, index),
   );
 
   // Normalized effects (Pokémon ability or Trainer effect)

@@ -28,7 +28,10 @@ export function heuristicParse(normalized: string): FilterJSON {
   // normalizeQuery turns apostrophes into spaces: "can't" → "can t".
   const cant = String.raw`(can t|cant|cannot|can not)`;
 
-  const cure = /\bcure|\bremove[sd]? (a |all )?(special )?conditions?|recover[s]? from|immune to (special )?conditions/.test(q);
+  const cure =
+    /\bcure|\bremove[sd]? (a |all )?(special )?conditions?|recover[s]? from|immune to (special )?conditions/.test(
+      q,
+    );
   if (cure) {
     addTag("cure_condition");
   } else {
@@ -43,42 +46,79 @@ export function heuristicParse(normalized: string): FilterJSON {
   }
 
   // Bench-related phrasing, most specific first; plain "bench" means damage.
-  const benchSearch = /\bbench search|onto (the |your )?bench|from (the |your )?deck (on)?to (the |your )?bench|\bfill(s)? (the |your )?bench/.test(q);
-  const snipe = /\bsnip(e|es|ing|er)\b|\btarget(s|ed)? (a |any |one |1 )?(benched|bench)|\bchoose (a |the )?target/.test(q);
+  const benchSearch =
+    /\bbench search|onto (the |your )?bench|from (the |your )?deck (on)?to (the |your )?bench|\bfill(s)? (the |your )?bench/.test(
+      q,
+    );
+  const snipe =
+    /\bsnip(e|es|ing|er)\b|\btarget(s|ed)? (a |any |one |1 )?(benched|bench)|\bchoose (a |the )?target/.test(
+      q,
+    );
   const gust =
-    /\bgust|\bpull(s)? up|\bdrag(s)? (out|up)|\bbring(s)? up|switch(es)? (in|out) (the |your )?(opponent|enemy|their)|force(s)? (a )?switch|opponent s (benched |bench )?pokemon (in)?to (the )?active/.test(q);
+    /\bgust|\bpull(s)? up|\bdrag(s)? (out|up)|\bbring(s)? up|switch(es)? (in|out) (the |your )?(opponent|enemy|their)|force(s)? (a )?switch|opponent s (benched |bench )?pokemon (in)?to (the )?active/.test(
+      q,
+    );
   if (benchSearch) addTag("bench_search");
   if (snipe) addTag("snipe");
   if (gust) addTag("gust");
-  if (/\bbench/.test(q) && !benchSearch && !snipe && !gust && !/\bswitch/.test(q)) {
+  if (
+    /\bbench/.test(q) &&
+    !benchSearch &&
+    !snipe &&
+    !gust &&
+    !/\bswitch/.test(q)
+  ) {
     addTag("bench_damage");
   }
   if (!gust && /\bswitch|\bpivot/.test(q)) addTag("self_switch");
 
   if (/\bcoin/.test(q)) addTag("coin_flip");
-  if (/\bdoes nothing|\b(may|can|might) fail|\bfail(s)? on tails|\bunreliable/.test(q)) {
+  if (
+    /\bdoes nothing|\b(may|can|might) fail|\bfail(s)? on tails|\bunreliable/.test(
+      q,
+    )
+  ) {
     addTag("may_fail");
   }
-  if (/\b(more damage|extra damage|damage plus)\b/.test(q)) addTag("damage_plus");
+  if (/\b(more damage|extra damage|damage plus)\b/.test(q))
+    addTag("damage_plus");
   if (/\bscal(e|ing)|for each\b/.test(q)) addTag("damage_scaling");
-  if (/\b(damage )?boost|\bbuff(s)? (attacks|damage)|\bincrease(s)? (attack )?damage/.test(q)) {
+  if (
+    /\b(damage )?boost|\bbuff(s)? (attacks|damage)|\bincrease(s)? (attack )?damage/.test(
+      q,
+    )
+  ) {
     addTag("damage_boost");
   }
-  if (/\b(free attack|no (energy )?cost|zero cost)\b/.test(q)) addTag("free_attack");
-  if (/\bmulti(ple)? target|\bspread|all (of )?your opponent|each of your opponent/.test(q)) {
+  if (/\b(free attack|no (energy )?cost|zero cost)\b/.test(q))
+    addTag("free_attack");
+  if (
+    /\bmulti(ple)? target|\bspread|all (of )?your opponent|each of your opponent/.test(
+      q,
+    )
+  ) {
     addTag("multi_target");
   }
   if (/\brandom/.test(q)) addTag("random_target");
-  if (/\brecoil|\bself ?damage|damages? (itself|its?self)|hurts? itself|damage to itself/.test(q)) {
+  if (
+    /\brecoil|\bself ?damage|damages? (itself|its?self)|hurts? itself|damage to itself/.test(
+      q,
+    )
+  ) {
     addTag("self_damage");
   }
-  if (new RegExp(`\\b${cant} attack (next|again|during)|\\battack lock`).test(q)) {
+  if (
+    new RegExp(`\\b${cant} attack (next|again|during)|\\battack lock`).test(q)
+  ) {
     addTag("attack_lock_self");
   }
   const exCounter =
-    /\b(against|vs|versus|counter(s)?|beats?|anti|bonus (to|vs|against)|more damage (to|against|vs)) (pokemon )?ex\b|\bex (counter|killer)/.test(q);
+    /\b(against|vs|versus|counter(s)?|beats?|anti|bonus (to|vs|against)|more damage (to|against|vs)) (pokemon )?ex\b|\bex (counter|killer)/.test(
+      q,
+    );
   if (exCounter) addTag("ex_counter");
-  if (/\bknock(ed|s)? ?out|\bko\b|\brevenge|\bavenge/.test(q)) addTag("ko_trigger");
+  if (/\bknock(ed|s)? ?out|\bko\b|\brevenge|\bavenge/.test(q))
+    addTag("ko_trigger");
 
   if (/\bdraw/.test(q)) addTag("draw");
   if (/\bheal/.test(q) && !cure) addTag("heal");
@@ -87,11 +127,16 @@ export function heuristicParse(normalized: string): FilterJSON {
   const energy = /\benergy/.test(q);
   const qNoPile = q.replace(/discard pile|from (the |your )?discard\b/g, "");
   if (/\benergy zone/.test(q)) addTag("energy_zone_attach");
-  else if (energy && /\b(attach|accelerat|ramp)/.test(q)) addTag("energy_attach");
+  else if (energy && /\b(attach|accelerat|ramp)/.test(q))
+    addTag("energy_attach");
   else if (/\b(energy )?(acceleration|ramp)\b/.test(q)) addTag("energy_attach");
-  if (energy && /\b(move[sd]?|transfer[s]?|shift[s]?)\b/.test(q)) addTag("energy_move");
+  if (energy && /\b(move[sd]?|transfer[s]?|shift[s]?)\b/.test(q))
+    addTag("energy_move");
   if (energy && /\b(discard|remove|strip|destroy)/.test(qNoPile)) {
-    if (/\b(opponent|enemy|their|defending)/.test(q) || /\b(energy removal|remove)/.test(q)) {
+    if (
+      /\b(opponent|enemy|their|defending)/.test(q) ||
+      /\b(energy removal|remove)/.test(q)
+    ) {
       addTag("energy_removal");
     } else if (/\b(own|its|itself|this pokemon|self)\b/.test(q)) {
       addTag("self_energy_discard");
@@ -104,10 +149,19 @@ export function heuristicParse(normalized: string): FilterJSON {
   if (/\bsearch|from your deck|look at the top/.test(q) && !benchSearch) {
     addTag("search_deck");
   }
-  if (/\b(from|out of) (the |your )?discard( pile)?|\bdiscard (pile )?recovery|\brecover(s|y)? (cards?|pokemon|items?)|\bretrieve/.test(q) && !/\benergy/.test(q)) {
+  if (
+    /\b(from|out of) (the |your )?discard( pile)?|\bdiscard (pile )?recovery|\brecover(s|y)? (cards?|pokemon|items?)|\bretrieve/.test(
+      q,
+    ) &&
+    !/\benergy/.test(q)
+  ) {
     addTag("discard_recovery");
   }
-  if (/\bhand (disruption|disrupt|control|reset)|\bdisrupt|opponent s hand|their hand/.test(q)) {
+  if (
+    /\bhand (disruption|disrupt|control|reset)|\bdisrupt|opponent s hand|their hand/.test(
+      q,
+    )
+  ) {
     addTag("hand_disruption");
   }
   const supporterLock = new RegExp(
@@ -115,18 +169,39 @@ export function heuristicParse(normalized: string): FilterJSON {
   ).test(q);
   if (supporterLock) addTag("supporter_lock");
 
-  const retreatCost = /\bretreat cost|\bfree retreat|\bno retreat cost|\b(cheaper|reduce[sd]?|lower) retreat/.test(q);
+  const retreatCost =
+    /\bretreat cost|\bfree retreat|\bno retreat cost|\b(cheaper|reduce[sd]?|lower) retreat/.test(
+      q,
+    );
   if (retreatCost) addTag("retreat_modifier");
-  if (!retreatCost && new RegExp(`${cant} retreat|\\btrap(s|ped|ping)?\\b|\\b(stop|prevent|block)s? retreat|\\bno retreat`).test(q)) {
+  if (
+    !retreatCost &&
+    new RegExp(
+      `${cant} retreat|\\btrap(s|ped|ping)?\\b|\\b(stop|prevent|block)s? retreat|\\bno retreat`,
+    ).test(q)
+  ) {
     addTag("cant_retreat");
   }
-  if (/\bprevent|\bprotect|\breduc(e|es|ed|tion)|\bless damage|\bdamage reduction|\bwall\b|\btank/.test(q) && !/retreat/.test(q) && !supporterLock) {
+  if (
+    /\bprevent|\bprotect|\breduc(e|es|ed|tion)|\bless damage|\bdamage reduction|\bwall\b|\btank/.test(
+      q,
+    ) &&
+    !/retreat/.test(q) &&
+    !supporterLock
+  ) {
     addTag("damage_reduction");
   }
-  if (/\bretaliat|\bcounter ?attack|\bpunish|\battacking pokemon|\bthorns|\bdamages? (back|the attacker)|\bwhen (hit|damaged)/.test(q)) {
+  if (
+    /\bretaliat|\bcounter ?attack|\bpunish|\battacking pokemon|\bthorns|\bdamages? (back|the attacker)|\bwhen (hit|damaged)/.test(
+      q,
+    )
+  ) {
     addTag("retaliate");
   }
-  const toolSynergy = /\btools? (synergy|related|attached)|\b(with|has|have|uses?) (a |any )?tools?\b|\bpokemon tools?\b/.test(q);
+  const toolSynergy =
+    /\btools? (synergy|related|attached)|\b(with|has|have|uses?) (a |any )?tools?\b|\bpokemon tools?\b/.test(
+      q,
+    );
   if (toolSynergy) addTag("tool_synergy");
   if (/\bevolv/.test(q)) addTag("evolution");
   let effectKind: "ABILITY" | undefined;
@@ -159,7 +234,10 @@ export function heuristicParse(normalized: string): FilterJSON {
   } else if (/\btrainer\b/.test(normalized)) {
     filter.cardType = "TRAINER";
     filter.surface = "effect";
-  } else if (/\bpokemon|pokémon\b/.test(normalized) && !/\bpokemon tools?\b/.test(normalized)) {
+  } else if (
+    /\bpokemon|pokémon\b/.test(normalized) &&
+    !/\bpokemon tools?\b/.test(normalized)
+  ) {
     filter.cardType = "POKEMON";
   }
 

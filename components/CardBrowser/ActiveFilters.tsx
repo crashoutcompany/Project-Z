@@ -104,7 +104,7 @@ export function ActiveFilters({
           type="button"
           onClick={onClearAll}
           disabled={disabled}
-          className="text-muted-foreground hover:text-foreground focus-visible:ring-ring/50 pointer-coarse:h-11 inline-flex h-9 items-center rounded-md px-2.5 text-sm font-medium underline-offset-4 outline-none hover:underline focus-visible:ring-[3px] disabled:opacity-50"
+          className="text-muted-foreground hover:text-foreground focus-visible:ring-ring/50 inline-flex h-9 items-center rounded-md px-2.5 text-sm font-medium underline-offset-4 outline-none hover:underline focus-visible:ring-[3px] disabled:opacity-50 pointer-coarse:h-11"
         >
           Clear all
         </button>

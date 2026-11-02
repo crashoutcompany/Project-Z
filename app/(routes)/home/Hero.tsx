@@ -73,7 +73,10 @@ export default function HeroSection() {
                 </Link>
                 <Link
                   href="/dex"
-                  className={cn(buttonVariants({ size: "lg", variant: "outline" }), "rounded-full")}
+                  className={cn(
+                    buttonVariants({ size: "lg", variant: "outline" }),
+                    "rounded-full",
+                  )}
                 >
                   Browse the Dex
                 </Link>

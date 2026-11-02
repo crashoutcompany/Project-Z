@@ -1,4 +1,5 @@
 import prisma from "@/prisma/db";
+import { loadCatalogPage } from "@/lib/catalog-page";
 import type { CardWithSet } from "./types";
 
 const INITIAL_LIMIT = 20;
@@ -25,28 +26,16 @@ export async function loadCardCatalog({
 
   const requestedCode = setCode?.trim();
   const requestedSet = requestedCode
-    ? sets.find(
-        (set) => set.code.toLowerCase() === requestedCode.toLowerCase(),
-      )
+    ? sets.find((set) => set.code.toLowerCase() === requestedCode.toLowerCase())
     : undefined;
   const initialSetId = requestedSet?.id ?? sets[0].id;
-  const initialCards = await prisma.card.findMany({
-    take: INITIAL_LIMIT + 1,
-    where: {
+  // The browser opens with duplicates hidden, matching fetchCards' default.
+  const { cards: initialCards, nextCursor: initialCursor } =
+    await loadCatalogPage({
       setId: initialSetId,
-      ...(tradeableOnly && { isTradeable: true }),
-    },
-    orderBy: { id: "asc" },
-    include: {
-      set: true,
-    },
-  });
-
-  let initialCursor: number | null = null;
-  if (initialCards.length > INITIAL_LIMIT) {
-    initialCards.pop();
-    initialCursor = initialCards.at(-1)?.id ?? null;
-  }
+      tradeableOnly,
+      limit: INITIAL_LIMIT,
+    });
 
   return {
     sets,

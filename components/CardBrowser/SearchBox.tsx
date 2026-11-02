@@ -91,7 +91,7 @@ export function SearchBox({
 
   return (
     <div className="w-full space-y-2">
-      <div className="bg-card/80 flex items-center gap-2 rounded-xl p-1 shadow-xs ring-1 ring-foreground/10 backdrop-blur-sm">
+      <div className="bg-card/80 ring-foreground/10 flex items-center gap-2 rounded-xl p-1 shadow-xs ring-1 backdrop-blur-sm">
         {showModes ? (
           <div className="bg-muted flex shrink-0 rounded-lg p-0.5">
             <Button
@@ -102,7 +102,7 @@ export function SearchBox({
               className={cn(
                 "rounded-md px-3 transition-[background-color,color,box-shadow] duration-150 ease-out",
                 mode === "name" &&
-                  "bg-background text-foreground shadow-sm hover:bg-background",
+                  "bg-background text-foreground hover:bg-background shadow-sm",
               )}
             >
               Name
@@ -115,7 +115,7 @@ export function SearchBox({
               className={cn(
                 "rounded-md px-3 transition-[background-color,color,box-shadow] duration-150 ease-out",
                 mode === "effects" &&
-                  "bg-background text-foreground shadow-sm hover:bg-background",
+                  "bg-background text-foreground hover:bg-background shadow-sm",
               )}
             >
               Effects

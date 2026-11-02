@@ -203,7 +203,10 @@ describe("otpExistingAccountGuardPlugin", () => {
     expect(blockedDb.verification).toHaveLength(0);
 
     const unlistedDb = buildDb();
-    const unlisted = await sendCode(buildAuth(unlistedDb), "stranger@example.com");
+    const unlisted = await sendCode(
+      buildAuth(unlistedDb),
+      "stranger@example.com",
+    );
     expect(sendEmail).not.toHaveBeenCalled();
     expect(unlistedDb.verification).toHaveLength(0);
 
@@ -258,7 +261,9 @@ describe("otpExistingAccountGuardPlugin", () => {
   });
 
   it("denies sign-in with the wrong-code response when the account lookup fails twice", async () => {
-    const error = vi.spyOn(console, "error").mockImplementation(() => undefined);
+    const error = vi
+      .spyOn(console, "error")
+      .mockImplementation(() => undefined);
     const db = buildDb({ user: [userRow("otp-user")] });
 
     const response = await signInWithIssuedCode(buildAuth(db, 2));
@@ -278,12 +283,17 @@ describe("otpExistingAccountGuardPlugin", () => {
   });
 
   it("answers a send like an unlisted email and stores no code when the account lookup fails twice", async () => {
-    const error = vi.spyOn(console, "error").mockImplementation(() => undefined);
+    const error = vi
+      .spyOn(console, "error")
+      .mockImplementation(() => undefined);
     const db = buildDb({ user: [userRow("otp-user")] });
 
     const failed = await sendCode(buildAuth(db, 2), EMAIL);
     const unlistedDb = buildDb();
-    const unlisted = await sendCode(buildAuth(unlistedDb), "stranger@example.com");
+    const unlisted = await sendCode(
+      buildAuth(unlistedDb),
+      "stranger@example.com",
+    );
 
     const failedBody = await failed.json();
     expect(failed.status).toBe(200);

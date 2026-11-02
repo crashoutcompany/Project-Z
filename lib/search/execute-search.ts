@@ -1,5 +1,11 @@
 import { Prisma } from "@/prisma/generated/client/client";
 import prisma from "@/prisma/db";
+import { rarityRank } from "@/lib/rarity";
+import {
+  dedupePrints,
+  PRINT_KEY_ATTACK_SELECT,
+  PRINT_KEY_EFFECT_SELECT,
+} from "./dedupe";
 import type { AttackFilter, EffectFilter, FilterJSON } from "./filter-schema";
 import { filterTags, type TagMode } from "./filter-tags";
 import { cardMatchesClauses, hasEnergyTypeCounts } from "./match";
@@ -25,27 +31,19 @@ export type SearchOptions = {
    * is one of them. Applied on top of any type parsed from the query.
    */
   types?: string[];
+  /** Rarity codes picked in the UI. A card matches when it has one of them. */
+  rarities?: string[];
+  /**
+   * List every print. By default prints of the same card (same name and
+   * attacks) collapse to the lowest-rarity copy, before ranking and paging,
+   * so `total` and offsets count cards rather than prints.
+   */
+  showDuplicates?: boolean;
 };
 
 // Upper bound on rows ranked per search, and so on the reported total. Well
 // above the number of cards that share any single energy type or tag.
 const FULL_SCAN_CAP = 2000;
-
-// Keyed by the rarity *codes* the importer stores (scripts/lib/rarity-map.ts),
-// not the raw ◊/☆ symbols from the source payload. Lower = more common.
-const RARITY_RANK: Record<string, number> = {
-  C: 1, // ◊
-  U: 2, // ◊◊
-  R: 3, // ◊◊◊
-  RR: 4, // ◊◊◊◊
-  AR: 5, // ☆
-  SR: 6, // ☆☆
-  S: 7, // ✵
-  SSR: 8, // ✵✵
-  IM: 9, // ☆☆☆
-  UR: 10, // Crown Rare
-  PROMO: 11,
-};
 
 function attackWhere(filter: AttackFilter): Prisma.AttackWhereInput {
   const where: Prisma.AttackWhereInput = {};
@@ -100,6 +98,29 @@ function effectWhere(filter: EffectFilter): Prisma.CardEffectWhereInput {
   return where;
 }
 
+// Dual-type cards match on either of their types.
+function typeWhere(types: string[]): Prisma.CardWhereInput {
+  return {
+    OR: [{ energyType: { in: types } }, { secondaryEnergyType: { in: types } }],
+  };
+}
+
+/**
+ * Filters that describe the Pokémon being searched for: "pikachu ex" parses
+ * to a Pokémon, ex, named Pikachu. With a text search they only bind cards
+ * matched by name, so cards whose text mentions it (Light Ball: "the Pikachu
+ * ex this card is attached to") still match. Mirrored by matchesSubject().
+ */
+function subjectWhere(filter: FilterJSON): Prisma.CardWhereInput[] {
+  const subject: Prisma.CardWhereInput[] = [];
+  if (filter.cardType === "POKEMON") subject.push({ cardType: "POKEMON" });
+  if (filter.stage?.length) subject.push({ stage: { in: filter.stage } });
+  if (filter.isEx !== undefined) subject.push({ isEx: filter.isEx });
+  if (filter.hpMin !== undefined) subject.push({ hp: { gte: filter.hpMin } });
+  if (filter.energyType?.length) subject.push(typeWhere(filter.energyType));
+  return subject;
+}
+
 function buildCardWhere(
   filter: FilterJSON,
   opts: SearchOptions,
@@ -107,12 +128,13 @@ function buildCardWhere(
   const where: Prisma.CardWhereInput = {};
   const and: Prisma.CardWhereInput[] = [];
 
+  const text = filter.textFallback?.trim();
+  const subject = subjectWhere(filter);
+
   if (opts.tradeableOnly) where.isTradeable = true;
-  if (filter.cardType) where.cardType = filter.cardType;
+  if (filter.cardType === "TRAINER") where.cardType = filter.cardType;
   if (filter.trainerType) where.trainerType = filter.trainerType;
-  if (filter.stage?.length) where.stage = { in: filter.stage };
-  if (filter.isEx !== undefined) where.isEx = filter.isEx;
-  if (filter.hpMin !== undefined) where.hp = { gte: filter.hpMin };
+  if (opts.rarities?.length) where.rarity = { in: opts.rarities };
   if (filter.setCodes?.length) {
     where.set = { code: { in: filter.setCodes } };
   }
@@ -127,16 +149,9 @@ function buildCardWhere(
     for (const tag of opts.tags ?? []) and.push({ OR: tagClause(tag) });
   }
 
-  // Dual-type cards match on either of their types.
-  for (const types of [filter.energyType, opts.types]) {
-    if (!types?.length) continue;
-    and.push({
-      OR: [
-        { energyType: { in: types } },
-        { secondaryEnergyType: { in: types } },
-      ],
-    });
-  }
+  // Without a text search, the subject filters apply to every card.
+  if (!text) and.push(...subject);
+  if (opts.types?.length) and.push(typeWhere(opts.types));
 
   const attackClause: Prisma.CardWhereInput | null = filter.attack
     ? { attacks: { some: attackWhere(filter.attack) } }
@@ -173,19 +188,21 @@ function buildCardWhere(
     if (or.length) and.push({ OR: or });
   }
 
-  if (filter.textFallback?.trim()) {
-    const q = filter.textFallback.trim();
+  if (text) {
+    const nameMatch: Prisma.CardWhereInput = {
+      name: { contains: text, mode: "insensitive" },
+    };
     and.push({
       OR: [
-        { name: { contains: q, mode: "insensitive" } },
+        subject.length ? { AND: [nameMatch, ...subject] } : nameMatch,
         {
           attacks: {
-            some: { effectText: { contains: q, mode: "insensitive" } },
+            some: { effectText: { contains: text, mode: "insensitive" } },
           },
         },
         {
           effects: {
-            some: { effectText: { contains: q, mode: "insensitive" } },
+            some: { effectText: { contains: text, mode: "insensitive" } },
           },
         },
       ],
@@ -367,7 +384,7 @@ export function rankCards<T extends RankableCard>(
       const damage = wanted.size
         ? relevance.damage
         : card.attacks.reduce((max, a) => Math.max(max, a.damageBase ?? 0), 0);
-      return { card, relevance, damage, rarity: RARITY_RANK[card.rarity] ?? 99 };
+      return { card, relevance, damage, rarity: rarityRank(card.rarity) };
     })
     .sort(
       (a, b) =>
@@ -413,21 +430,23 @@ async function queryCards(
       set: { select: { code: true } },
       attacks: {
         select: {
+          ...PRINT_KEY_ATTACK_SELECT,
           tags: true,
           damageBase: true,
           damageKind: true,
           energyCost: true,
-          energyTypes: true,
-          effectText: true,
         },
       },
-      effects: { select: { tags: true, kind: true, effectText: true } },
+      effects: { select: { ...PRINT_KEY_EFFECT_SELECT, tags: true } },
     },
   });
 
-  const candidates = needsPostFilter
+  const matching = needsPostFilter
     ? rows.filter((c) => cardMatchesClauses(filter, c))
     : rows;
+  // Prints of one card rank the same, so collapsing them first keeps the
+  // ranking intact and makes `total` and offsets count cards, not prints.
+  const candidates = opts.showDuplicates ? matching : dedupePrints(matching);
   // Only tag searches need the text read; other rankings ignore tags. With
   // no text there is nothing to contradict the stored tags.
   const withEvidence = wanted.size
@@ -464,21 +483,21 @@ async function queryCards(
   return { cards: page, total: candidates.length };
 }
 
-function matchesScalarFilters(
-  row: {
-    cardType: string;
-    trainerType: string | null;
-    energyType: string | null;
-    secondaryEnergyType: string | null;
-    stage: string | null;
-    hp: number | null;
-    isEx: boolean;
-    setCode: string;
-  },
-  filter: FilterJSON,
-): boolean {
-  if (filter.cardType && row.cardType !== filter.cardType) return false;
-  if (filter.trainerType && row.trainerType !== filter.trainerType) return false;
+type ScalarRow = {
+  name: string;
+  cardType: string;
+  trainerType: string | null;
+  energyType: string | null;
+  secondaryEnergyType: string | null;
+  stage: string | null;
+  hp: number | null;
+  isEx: boolean;
+  setCode: string;
+};
+
+/** JS mirror of subjectWhere(). */
+function matchesSubject(row: ScalarRow, filter: FilterJSON): boolean {
+  if (filter.cardType === "POKEMON" && row.cardType !== "POKEMON") return false;
   if (
     filter.energyType?.length &&
     !filter.energyType.some(
@@ -497,10 +516,56 @@ function matchesScalarFilters(
   if (filter.hpMin !== undefined && (row.hp == null || row.hp < filter.hpMin)) {
     return false;
   }
+  return true;
+}
+
+/**
+ * Like buildCardWhere: the subject filters bind only cards whose name holds
+ * the search text, not cards that mention it.
+ */
+function matchesScalarFilters(
+  row: ScalarRow,
+  filter: FilterJSON,
+  text: string,
+): boolean {
+  if (filter.cardType === "TRAINER" && row.cardType !== "TRAINER") return false;
+  if (filter.trainerType && row.trainerType !== filter.trainerType)
+    return false;
+  if (
+    row.name.toLowerCase().includes(text.toLowerCase()) &&
+    !matchesSubject(row, filter)
+  ) {
+    return false;
+  }
   if (filter.setCodes?.length && !filter.setCodes.includes(row.setCode)) {
     return false;
   }
   return true;
+}
+
+/** FTS rows carry no attacks, so their print keys are loaded separately. */
+async function dedupeFtsRows<
+  T extends { id: number; name: string; rarity: string },
+>(rows: T[]): Promise<T[]> {
+  if (rows.length < 2) return rows;
+  const keyed = await prisma.card.findMany({
+    where: { id: { in: rows.map((r) => r.id) } },
+    select: {
+      id: true,
+      attacks: { select: PRINT_KEY_ATTACK_SELECT },
+      effects: { select: PRINT_KEY_EFFECT_SELECT },
+    },
+  });
+  const byId = new Map(keyed.map((k) => [k.id, k]));
+  // A row whose text did not load stays as its own card rather than merging
+  // with every same-named card.
+  const loaded = rows.filter((r) => byId.has(r.id));
+  const kept = new Set(
+    dedupePrints(loaded.map((r) => ({ ...r, ...byId.get(r.id)! }))).map(
+      (c) => c.id,
+    ),
+  );
+  return rows.filter((r) => !byId.has(r.id) || kept.has(r.id));
 }
 
 async function ftsFallback(
@@ -567,12 +632,17 @@ async function ftsFallback(
   `;
 
   const types = opts.types ?? [];
-  const matching = rows.filter(
+  const rarities = new Set(opts.rarities);
+  const filtered = rows.filter(
     (r) =>
-      matchesScalarFilters(r, filter) &&
+      matchesScalarFilters(r, filter, text) &&
       (!types.length ||
-        types.some((t) => t === r.energyType || t === r.secondaryEnergyType)),
+        types.some((t) => t === r.energyType || t === r.secondaryEnergyType)) &&
+      (!rarities.size || rarities.has(r.rarity)),
   );
+  const matching = opts.showDuplicates
+    ? filtered
+    : await dedupeFtsRows(filtered);
   return {
     total: matching.length,
     cards: matching

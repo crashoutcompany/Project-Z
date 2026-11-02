@@ -39,8 +39,9 @@ export function SignInButtons({
   emailOtpEnabled = false,
   callbackURL = "/",
 }: SignInButtonsProps) {
-  const [pendingProvider, setPendingProvider] =
-    useState<SocialProvider | null>(null);
+  const [pendingProvider, setPendingProvider] = useState<SocialProvider | null>(
+    null,
+  );
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   async function signIn(provider: SocialProvider) {
@@ -64,7 +65,7 @@ export function SignInButtons({
 
   if (providers.length === 0 && !emailOtpEnabled) {
     return (
-      <p role="status" className="mt-9 text-sm text-muted-foreground">
+      <p role="status" className="text-muted-foreground mt-9 text-sm">
         No social sign-in providers are currently configured.
       </p>
     );
@@ -77,7 +78,7 @@ export function SignInButtons({
           key={provider}
           type="button"
           variant="outline"
-          className="h-12 w-full gap-3 rounded-full border-border/80 bg-background text-[15px] font-medium shadow-none transition-colors hover:border-foreground/25 hover:bg-muted/60"
+          className="border-border/80 bg-background hover:border-foreground/25 hover:bg-muted/60 h-12 w-full gap-3 rounded-full text-[15px] font-medium shadow-none transition-colors"
           disabled={pendingProvider !== null}
           onClick={() => void signIn(provider)}
         >
@@ -88,7 +89,7 @@ export function SignInButtons({
         </Button>
       ))}
       {errorMessage ? (
-        <p role="alert" className="text-sm text-destructive">
+        <p role="alert" className="text-destructive text-sm">
           {errorMessage}
         </p>
       ) : null}

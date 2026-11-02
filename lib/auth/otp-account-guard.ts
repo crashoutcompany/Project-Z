@@ -5,11 +5,7 @@ import {
   formCsrfMiddleware,
 } from "better-auth/api";
 
-import {
-  logOtpFailure,
-  normalizeOtpEmail,
-  otpEmailLogHash,
-} from "./email-otp";
+import { logOtpFailure, normalizeOtpEmail, otpEmailLogHash } from "./email-otp";
 
 type BeforeHook = NonNullable<
   NonNullable<BetterAuthPlugin["hooks"]>["before"]
@@ -26,8 +22,7 @@ type OtpCandidate = {
 };
 
 type Lookup =
-  | { failed: false; candidate: OtpCandidate | null }
-  | { failed: true };
+  { failed: false; candidate: OtpCandidate | null } | { failed: true };
 
 /**
  * Email-code sign-in is for allowlisted bot accounts. It must not open an
@@ -126,7 +121,10 @@ export function createOtpExistingAccountGuardPlugin(
       const email = normalizeOtpEmail(body.email);
       const lookup = await lookupOtpCandidate(ctx, email, logSecret);
       if (!lookup.failed) {
-        if (!lookup.candidate || !isOtpSignInBlocked(lookup.candidate.accounts)) {
+        if (
+          !lookup.candidate ||
+          !isOtpSignInBlocked(lookup.candidate.accounts)
+        ) {
           return;
         }
         logOtpFailure("otp_account_blocked", {
@@ -155,7 +153,10 @@ export function createOtpExistingAccountGuardPlugin(
             const email = normalizeOtpEmail(raw);
             const lookup = await lookupOtpCandidate(ctx, email, logSecret);
             if (lookup.failed) throw invalidOtpError();
-            if (lookup.candidate && isOtpSignInBlocked(lookup.candidate.accounts)) {
+            if (
+              lookup.candidate &&
+              isOtpSignInBlocked(lookup.candidate.accounts)
+            ) {
               logOtpFailure("otp_account_blocked", {
                 email,
                 userId: lookup.candidate.userId,
@@ -171,4 +172,5 @@ export function createOtpExistingAccountGuardPlugin(
 }
 
 /** Default guard without a log secret. Logs hash with plain SHA-256. */
-export const otpExistingAccountGuardPlugin = createOtpExistingAccountGuardPlugin();
+export const otpExistingAccountGuardPlugin =
+  createOtpExistingAccountGuardPlugin();

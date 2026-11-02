@@ -16,6 +16,8 @@ export function CardGrid({
   setId,
   searchQuery,
   tradeableOnly,
+  rarities,
+  showDuplicates,
   selectable,
   selectedCards,
   selectionMode,
@@ -46,12 +48,23 @@ export function CardGrid({
         search: searchQuery || undefined,
         cursor,
         tradeableOnly,
+        ...(rarities?.length ? { rarities } : {}),
+        ...(showDuplicates ? { showDuplicates } : {}),
       });
 
       setCards((prev) => [...prev, ...(result.cards as CardWithSet[])]);
       setCursor(result.nextCursor);
     });
-  }, [cursor, isPending, loadPage, setId, searchQuery, tradeableOnly]);
+  }, [
+    cursor,
+    isPending,
+    loadPage,
+    setId,
+    searchQuery,
+    tradeableOnly,
+    rarities,
+    showDuplicates,
+  ]);
 
   useEffect(() => {
     if (observerRef.current) {

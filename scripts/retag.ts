@@ -38,12 +38,14 @@ export function planRetag(attacks: AttackRow[], effects: EffectRow[]) {
   const attackUpdates: RetagUpdate[] = [];
   for (const a of attacks) {
     const after = tagAttack(a);
-    if (!sameTags(a.tags, after)) attackUpdates.push({ id: a.id, before: a.tags, after });
+    if (!sameTags(a.tags, after))
+      attackUpdates.push({ id: a.id, before: a.tags, after });
   }
   const effectUpdates: RetagUpdate[] = [];
   for (const e of effects) {
     const after = tagEffect(e.effectText, e.kind);
-    if (!sameTags(e.tags, after)) effectUpdates.push({ id: e.id, before: e.tags, after });
+    if (!sameTags(e.tags, after))
+      effectUpdates.push({ id: e.id, before: e.tags, after });
   }
   return { attackUpdates, effectUpdates };
 }
@@ -80,18 +82,28 @@ function databaseHost(): string {
 
 async function main() {
   const write = process.argv.includes("--write");
-  const confirmedHost = process.argv.find((a) => a.startsWith("--host="))?.slice(7);
+  const confirmedHost = process.argv
+    .find((a) => a.startsWith("--host="))
+    ?.slice(7);
   const { default: prisma } = await import("../prisma/db");
   const host = databaseHost();
   console.log(`Database host: ${host}`);
   if (write && confirmedHost !== host) {
-    throw new Error(`--write needs --host=${host} to confirm the target database.`);
+    throw new Error(
+      `--write needs --host=${host} to confirm the target database.`,
+    );
   }
 
   try {
     const [attacks, effects] = await Promise.all([
       prisma.attack.findMany({
-        select: { id: true, effectText: true, damageKind: true, energyCost: true, tags: true },
+        select: {
+          id: true,
+          effectText: true,
+          damageKind: true,
+          energyCost: true,
+          tags: true,
+        },
       }),
       prisma.cardEffect.findMany({
         select: { id: true, effectText: true, kind: true, tags: true },
@@ -112,10 +124,20 @@ async function main() {
     // from the stored text and only rows that still differ are written.
     let updated = 0;
     for (const { tags, ids } of groupByTags(attackUpdates)) {
-      updated += (await prisma.attack.updateMany({ where: { id: { in: ids } }, data: { tags } })).count;
+      updated += (
+        await prisma.attack.updateMany({
+          where: { id: { in: ids } },
+          data: { tags },
+        })
+      ).count;
     }
     for (const { tags, ids } of groupByTags(effectUpdates)) {
-      updated += (await prisma.cardEffect.updateMany({ where: { id: { in: ids } }, data: { tags } })).count;
+      updated += (
+        await prisma.cardEffect.updateMany({
+          where: { id: { in: ids } },
+          data: { tags },
+        })
+      ).count;
     }
     console.log(`Updated ${updated} rows.`);
   } finally {

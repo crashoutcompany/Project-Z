@@ -146,10 +146,13 @@ function SelectionZone({
         <ScrollArea className="w-full">
           <div className="flex gap-2 pb-2">
             {cards.map((card) => (
-              <div key={card.id} className="catalog-slot group relative shrink-0">
+              <div
+                key={card.id}
+                className="catalog-slot group relative shrink-0"
+              >
                 <LazyImage
                   title={card.name}
-                  className="h-28 w-auto rounded-lg ring-1 ring-foreground/10"
+                  className="ring-foreground/10 h-28 w-auto rounded-lg ring-1"
                   alt={card.name}
                   src={card.imageUrl}
                   width={80}

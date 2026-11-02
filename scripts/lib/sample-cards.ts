@@ -10,10 +10,7 @@ export const SEED_CARDS_PER_SET = 10;
  */
 export function sampleCardsPerSet<
   T extends { card_id: string; secondary_energy?: string | null },
->(
-  cards: T[],
-  perSetLimit: number
-): T[] {
+>(cards: T[], perSetLimit: number): T[] {
   if (perSetLimit <= 0) return cards;
 
   const buckets = new Map<string, T[]>();
@@ -27,7 +24,7 @@ export function sampleCardsPerSet<
   const sampled: T[] = [];
   for (const list of buckets.values()) {
     list.sort(
-      (a, b) => parseCardId(a.card_id).number - parseCardId(b.card_id).number
+      (a, b) => parseCardId(a.card_id).number - parseCardId(b.card_id).number,
     );
     const head = list.slice(0, perSetLimit);
     const dualType = list.slice(perSetLimit).filter((c) => c.secondary_energy);

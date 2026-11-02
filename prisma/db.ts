@@ -16,7 +16,7 @@ if (!process.env.DATABASE_URL) {
 const connectionString = process.env.DATABASE_URL;
 if (!connectionString) {
   throw new Error(
-    "DATABASE_URL environment variable is not defined. Please check your .env or .env.local file."
+    "DATABASE_URL environment variable is not defined. Please check your .env or .env.local file.",
   );
 }
 

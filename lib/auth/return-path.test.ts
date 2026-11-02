@@ -20,7 +20,9 @@ describe("safeAuthReturnPath", () => {
   });
 
   it("rejects open redirects and the sign-in page itself", () => {
-    expect(safeAuthReturnPath("https://evil.example/phish", SIGN_IN)).toBeNull();
+    expect(
+      safeAuthReturnPath("https://evil.example/phish", SIGN_IN),
+    ).toBeNull();
     expect(safeAuthReturnPath("//evil.example", SIGN_IN)).toBeNull();
     expect(safeAuthReturnPath("/\\evil.example", SIGN_IN)).toBeNull();
     expect(safeAuthReturnPath("/signin", SIGN_IN)).toBeNull();

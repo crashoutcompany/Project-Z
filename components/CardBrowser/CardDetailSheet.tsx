@@ -204,7 +204,7 @@ function CardArt({ detail }: { detail: CardDetail | null }) {
           width={320}
           height={448}
           priority
-          className="h-auto w-full rounded-xl shadow-xs ring-1 ring-foreground/10"
+          className="ring-foreground/10 h-auto w-full rounded-xl shadow-xs ring-1"
         />
       ) : (
         <Skeleton className="aspect-[5/7] w-full rounded-xl" />
@@ -321,7 +321,7 @@ function AttackList({ attacks }: { attacks: CardDetail["attacks"] }) {
         {attacks.map((atk) => (
           <li
             key={`${atk.position}-${atk.name}`}
-            className="rounded-xl bg-muted/40 p-3 ring-1 ring-foreground/10"
+            className="bg-muted/40 ring-foreground/10 rounded-xl p-3 ring-1"
           >
             <div className="flex items-start justify-between gap-2">
               <div className="flex items-center gap-2">
@@ -329,7 +329,7 @@ function AttackList({ attacks }: { attacks: CardDetail["attacks"] }) {
                 <span className="font-medium">{atk.name}</span>
               </div>
               {atk.damageRaw ? (
-                <span className="tabular-nums font-semibold">
+                <span className="font-semibold tabular-nums">
                   {atk.damageRaw}
                 </span>
               ) : null}
@@ -360,7 +360,7 @@ function EnergyPips({ types }: { types: string[] }) {
           key={`${type}-${i}`}
           title={titleCase(type)}
           className={cn(
-            "size-3.5 rounded-full ring-1 ring-foreground/15",
+            "ring-foreground/15 size-3.5 rounded-full ring-1",
             ENERGY_COLORS[type] ?? "bg-muted",
           )}
         />
@@ -408,7 +408,7 @@ function SignInPrompt({ returnPath }: { returnPath?: string | null }) {
   return (
     <section
       data-testid="card-detail-sign-in"
-      className="space-y-3 rounded-xl bg-muted/40 p-4 text-center ring-1 ring-foreground/10"
+      className="bg-muted/40 ring-foreground/10 space-y-3 rounded-xl p-4 text-center ring-1"
     >
       <p className="text-muted-foreground text-sm text-pretty">
         Your session has ended. Sign in to read this card&apos;s attacks and

@@ -5,7 +5,12 @@ import {
   normalizeAttack,
   normalizeCard,
 } from "../lib/normalize";
-import { DamageKind, CardType, Stage, TrainerType } from "../../prisma/generated/client/client";
+import {
+  DamageKind,
+  CardType,
+  Stage,
+  TrainerType,
+} from "../../prisma/generated/client/client";
 import type { SourceCard, SourceAttack } from "../lib/source-schema";
 
 describe("normalize - damage parsing", () => {
@@ -102,7 +107,7 @@ describe("normalize - trainer text cleanup", () => {
 
     const cleaned = cleanTrainerEffect(raw);
     expect(cleaned).toBe(
-      "Play this card as if it were a 40-HP Basic [C] Pokémon. At any time during your turn, you may discard this card from play. This card can't retreat."
+      "Play this card as if it were a 40-HP Basic [C] Pokémon. At any time during your turn, you may discard this card from play. This card can't retreat.",
     );
     expect(cleaned.includes("Illustrated by")).toBe(false);
   });
@@ -139,7 +144,7 @@ describe("normalize - full card", () => {
       source,
       "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_001_EN_SM.webp",
       { rarityCode: "C", isTradeable: true },
-      1
+      1,
     );
 
     expect(card.number).toBe(1);
@@ -169,7 +174,8 @@ describe("normalize - full card", () => {
       attacks: [],
       ability: {
         name: "",
-        effect: "Play this card as if it were a 40-HP Basic [C] Pokémon.At any time during your turn, you may discard this card from play.\n\n Illustrated by Toyste Beach",
+        effect:
+          "Play this card as if it were a 40-HP Basic [C] Pokémon.At any time during your turn, you may discard this card from play.\n\n Illustrated by Toyste Beach",
       },
       weakness: "N/A",
       retreat: null,
@@ -182,7 +188,7 @@ describe("normalize - full card", () => {
       source,
       "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/pocket/A1/A1_216_EN_SM.webp",
       { rarityCode: "C", isTradeable: true },
-      216
+      216,
     );
 
     expect(card.cardType).toBe(CardType.TRAINER);
@@ -193,7 +199,7 @@ describe("normalize - full card", () => {
     expect(card.effects.length).toBe(1);
     expect(card.effects[0].kind).toBe("TRAINER");
     expect(card.effects[0].effectText).toBe(
-      "Play this card as if it were a 40-HP Basic [C] Pokémon. At any time during your turn, you may discard this card from play."
+      "Play this card as if it were a 40-HP Basic [C] Pokémon. At any time during your turn, you may discard this card from play.",
     );
   });
 
@@ -217,7 +223,12 @@ describe("normalize - full card", () => {
     };
     const rarity = { rarityCode: "RR", isTradeable: true };
 
-    const dual = normalizeCard(base, "https://example.test/C1_042_EN_SM.webp", rarity, 42);
+    const dual = normalizeCard(
+      base,
+      "https://example.test/C1_042_EN_SM.webp",
+      rarity,
+      42,
+    );
     expect(dual.energyType).toBe("water");
     expect(dual.secondaryEnergyType).toBe("darkness");
 
@@ -225,7 +236,7 @@ describe("normalize - full card", () => {
       { ...base, secondary_energy: undefined },
       "https://example.test/C1_042_EN_SM.webp",
       rarity,
-      42
+      42,
     );
     expect(single.secondaryEnergyType).toBe(null);
 
@@ -233,7 +244,7 @@ describe("normalize - full card", () => {
       { ...base, secondary_energy: "  " },
       "https://example.test/C1_042_EN_SM.webp",
       rarity,
-      42
+      42,
     );
     expect(blank.secondaryEnergyType).toBe(null);
   });
@@ -257,7 +268,7 @@ describe("normalize - full card", () => {
       trainer,
       "https://example.test/C1_200_EN_SM.webp",
       { rarityCode: "C", isTradeable: true },
-      200
+      200,
     );
     expect(card.secondaryEnergyType).toBe(null);
   });
