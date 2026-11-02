@@ -98,6 +98,29 @@ function effectWhere(filter: EffectFilter): Prisma.CardEffectWhereInput {
   return where;
 }
 
+// Dual-type cards match on either of their types.
+function typeWhere(types: string[]): Prisma.CardWhereInput {
+  return {
+    OR: [{ energyType: { in: types } }, { secondaryEnergyType: { in: types } }],
+  };
+}
+
+/**
+ * Filters that describe the Pokémon being searched for: "pikachu ex" parses
+ * to a Pokémon, ex, named Pikachu. With a text search they only bind cards
+ * matched by name, so cards whose text mentions it (Light Ball: "the Pikachu
+ * ex this card is attached to") still match. Mirrored by matchesSubject().
+ */
+function subjectWhere(filter: FilterJSON): Prisma.CardWhereInput[] {
+  const subject: Prisma.CardWhereInput[] = [];
+  if (filter.cardType === "POKEMON") subject.push({ cardType: "POKEMON" });
+  if (filter.stage?.length) subject.push({ stage: { in: filter.stage } });
+  if (filter.isEx !== undefined) subject.push({ isEx: filter.isEx });
+  if (filter.hpMin !== undefined) subject.push({ hp: { gte: filter.hpMin } });
+  if (filter.energyType?.length) subject.push(typeWhere(filter.energyType));
+  return subject;
+}
+
 function buildCardWhere(
   filter: FilterJSON,
   opts: SearchOptions,
@@ -105,12 +128,12 @@ function buildCardWhere(
   const where: Prisma.CardWhereInput = {};
   const and: Prisma.CardWhereInput[] = [];
 
+  const text = filter.textFallback?.trim();
+  const subject = subjectWhere(filter);
+
   if (opts.tradeableOnly) where.isTradeable = true;
-  if (filter.cardType) where.cardType = filter.cardType;
+  if (filter.cardType === "TRAINER") where.cardType = filter.cardType;
   if (filter.trainerType) where.trainerType = filter.trainerType;
-  if (filter.stage?.length) where.stage = { in: filter.stage };
-  if (filter.isEx !== undefined) where.isEx = filter.isEx;
-  if (filter.hpMin !== undefined) where.hp = { gte: filter.hpMin };
   if (opts.rarities?.length) where.rarity = { in: opts.rarities };
   if (filter.setCodes?.length) {
     where.set = { code: { in: filter.setCodes } };
@@ -126,16 +149,9 @@ function buildCardWhere(
     for (const tag of opts.tags ?? []) and.push({ OR: tagClause(tag) });
   }
 
-  // Dual-type cards match on either of their types.
-  for (const types of [filter.energyType, opts.types]) {
-    if (!types?.length) continue;
-    and.push({
-      OR: [
-        { energyType: { in: types } },
-        { secondaryEnergyType: { in: types } },
-      ],
-    });
-  }
+  // Without a text search, the subject filters apply to every card.
+  if (!text) and.push(...subject);
+  if (opts.types?.length) and.push(typeWhere(opts.types));
 
   const attackClause: Prisma.CardWhereInput | null = filter.attack
     ? { attacks: { some: attackWhere(filter.attack) } }
@@ -172,19 +188,21 @@ function buildCardWhere(
     if (or.length) and.push({ OR: or });
   }
 
-  if (filter.textFallback?.trim()) {
-    const q = filter.textFallback.trim();
+  if (text) {
+    const nameMatch: Prisma.CardWhereInput = {
+      name: { contains: text, mode: "insensitive" },
+    };
     and.push({
       OR: [
-        { name: { contains: q, mode: "insensitive" } },
+        subject.length ? { AND: [nameMatch, ...subject] } : nameMatch,
         {
           attacks: {
-            some: { effectText: { contains: q, mode: "insensitive" } },
+            some: { effectText: { contains: text, mode: "insensitive" } },
           },
         },
         {
           effects: {
-            some: { effectText: { contains: q, mode: "insensitive" } },
+            some: { effectText: { contains: text, mode: "insensitive" } },
           },
         },
       ],
@@ -465,22 +483,21 @@ async function queryCards(
   return { cards: page, total: candidates.length };
 }
 
-function matchesScalarFilters(
-  row: {
-    cardType: string;
-    trainerType: string | null;
-    energyType: string | null;
-    secondaryEnergyType: string | null;
-    stage: string | null;
-    hp: number | null;
-    isEx: boolean;
-    setCode: string;
-  },
-  filter: FilterJSON,
-): boolean {
-  if (filter.cardType && row.cardType !== filter.cardType) return false;
-  if (filter.trainerType && row.trainerType !== filter.trainerType)
-    return false;
+type ScalarRow = {
+  name: string;
+  cardType: string;
+  trainerType: string | null;
+  energyType: string | null;
+  secondaryEnergyType: string | null;
+  stage: string | null;
+  hp: number | null;
+  isEx: boolean;
+  setCode: string;
+};
+
+/** JS mirror of subjectWhere(). */
+function matchesSubject(row: ScalarRow, filter: FilterJSON): boolean {
+  if (filter.cardType === "POKEMON" && row.cardType !== "POKEMON") return false;
   if (
     filter.energyType?.length &&
     !filter.energyType.some(
@@ -497,6 +514,27 @@ function matchesScalarFilters(
   }
   if (filter.isEx !== undefined && row.isEx !== filter.isEx) return false;
   if (filter.hpMin !== undefined && (row.hp == null || row.hp < filter.hpMin)) {
+    return false;
+  }
+  return true;
+}
+
+/**
+ * Like buildCardWhere: the subject filters bind only cards whose name holds
+ * the search text, not cards that mention it.
+ */
+function matchesScalarFilters(
+  row: ScalarRow,
+  filter: FilterJSON,
+  text: string,
+): boolean {
+  if (filter.cardType === "TRAINER" && row.cardType !== "TRAINER") return false;
+  if (filter.trainerType && row.trainerType !== filter.trainerType)
+    return false;
+  if (
+    row.name.toLowerCase().includes(text.toLowerCase()) &&
+    !matchesSubject(row, filter)
+  ) {
     return false;
   }
   if (filter.setCodes?.length && !filter.setCodes.includes(row.setCode)) {
@@ -597,7 +635,7 @@ async function ftsFallback(
   const rarities = new Set(opts.rarities);
   const filtered = rows.filter(
     (r) =>
-      matchesScalarFilters(r, filter) &&
+      matchesScalarFilters(r, filter, text) &&
       (!types.length ||
         types.some((t) => t === r.energyType || t === r.secondaryEnergyType)) &&
       (!rarities.size || rarities.has(r.rarity)),
