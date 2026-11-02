@@ -76,7 +76,7 @@
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "prisma": "^7.10.1",
-    "react-doctor": "^0.9.17",
+    "react-doctor": "^0.9.18",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "^5.0.1"
