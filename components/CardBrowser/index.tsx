@@ -17,6 +17,7 @@ export async function CardBrowser({
   onCardClick,
   cardCounts,
   syncDexUrl = false,
+  showCollection = false,
 }: CardBrowserProps) {
   const parsedCard = parseDexCardParam(initialCardRef);
   const setCode = parsedCard?.setCode ?? initialSetCode;
@@ -53,6 +54,7 @@ export async function CardBrowser({
       cardCounts={cardCounts}
       initialDetail={initialDetail}
       syncDexUrl={syncDexUrl}
+      showCollection={showCollection}
     />
   );
 }

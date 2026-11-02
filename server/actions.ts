@@ -9,7 +9,8 @@ import {
 } from "@/lib/card-detail";
 import { loadCatalogPage } from "@/lib/catalog-page";
 import { RARITY_CODES } from "@/lib/rarity";
-import { Card } from "@/prisma/generated/client/client";
+import { Card, Set } from "@/prisma/generated/client/client";
+import prisma from "@/prisma/db";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { z } from "zod";
@@ -121,4 +122,30 @@ export const fetchCardDetail = async (
     }
   }
   return detail ? { status: "ok", detail } : { status: "not_found" };
+};
+
+export type SetWithCards = Set & {
+  cards: Array<{ id: number; rarity: string; name: string; number: number }>;
+};
+
+/**
+ * Fetches all sets with their cards for the collection page.
+ * Only includes id, rarity, name, and number for each card (enough for completion stats).
+ */
+export const fetchSetsWithCards = async (): Promise<SetWithCards[]> => {
+  const sets = await prisma.set.findMany({
+    orderBy: { id: "asc" },
+    include: {
+      cards: {
+        select: {
+          id: true,
+          rarity: true,
+          name: true,
+          number: true,
+        },
+        orderBy: { number: "asc" },
+      },
+    },
+  });
+  return sets;
 };

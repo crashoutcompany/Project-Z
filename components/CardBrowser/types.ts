@@ -31,6 +31,8 @@ export type CardBrowserProps = {
   cardCounts?: Record<number, number>;
   /** When set (Dex), tapping a card writes `?set=&card=` for sharing. */
   syncDexUrl?: boolean;
+  /** Show collection badges on each card for adding/removing from collection. */
+  showCollection?: boolean;
 };
 
 export type CardGridProps = {
@@ -58,6 +60,8 @@ export type CardGridProps = {
   ) => Promise<{ cards: CardWithSet[]; nextOffset: number | null }>;
   /** Every matching card, when the results are a paged search. */
   total?: number;
+  /** Show collection badges on each card for adding/removing from collection. */
+  showCollection?: boolean;
 };
 
 export type CardItemProps = {
@@ -67,6 +71,8 @@ export type CardItemProps = {
   count?: number;
   priority?: boolean;
   onClick?: () => void;
+  /** Show collection badge for adding/removing from collection. */
+  showCollection?: boolean;
 };
 
 export type SetTabsProps = {

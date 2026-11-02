@@ -8,6 +8,7 @@ import { CardItemProps } from "./types";
 import { Check } from "lucide-react";
 import { getRarityInfo } from "@/lib/rarity";
 import { RaritySymbol } from "./RarityFilter";
+import { CollectionBadge } from "./CollectionToggle";
 
 type SelectionState = CardItemProps["selectionState"];
 type ActiveSelection = Exclude<SelectionState, "none">;
@@ -91,6 +92,7 @@ export const CardItem = memo(function CardItem({
   count = 0,
   priority = false,
   onClick,
+  showCollection = false,
 }: CardItemProps) {
   const interactive = Boolean(onClick);
   const className = cardClassName({ interactive, selectionState, count });
@@ -114,6 +116,7 @@ export const CardItem = memo(function CardItem({
       ) : null}
       {count > 0 ? <CountBadge count={count} /> : null}
       <RarityBadge rarity={card.rarity} />
+      {showCollection ? <CollectionBadge cardId={card.id} /> : null}
     </>
   );
 

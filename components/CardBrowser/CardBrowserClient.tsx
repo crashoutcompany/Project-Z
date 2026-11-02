@@ -99,6 +99,8 @@ type CardBrowserClientProps = {
   interactive?: boolean;
   initialDetail?: CardDetail | null;
   syncDexUrl?: boolean;
+  /** Show collection badges on each card for adding/removing from collection. */
+  showCollection?: boolean;
 };
 
 const EMPTY_SELECTION: SelectedCards = { want: [], give: [] };
@@ -200,6 +202,7 @@ export function CardBrowserClient({
   interactive = true,
   initialDetail = null,
   syncDexUrl = false,
+  showCollection = false,
 }: CardBrowserClientProps) {
   const [activeSetId, setActiveSetId] = useState(initialSetId);
   const [searchQuery, setSearchQuery] = useState("");
@@ -723,9 +726,8 @@ export function CardBrowserClient({
           selectionMode={selection.selectionMode}
           density={mode === "build" ? "compact" : "comfortable"}
           cardCounts={cardCounts}
-          // CardItem is clickable whenever it receives a handler, so withholding
-          // it is what makes the catalog inert while `interactive` is false.
           onCardClick={interactive ? handleCardClick : undefined}
+          showCollection={showCollection}
         />
       )}
 
