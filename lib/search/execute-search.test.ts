@@ -516,8 +516,8 @@ describe("executeSearch", () => {
       isTradeable: true,
     });
     queryRaw.mockResolvedValue([
-      ftsRow(1, "Dual", "darkness"),
-      ftsRow(2, "Single", null),
+      ftsRow(1, "Greninja Dual", "darkness"),
+      ftsRow(2, "Greninja Single", null),
     ]);
 
     const result = await executeSearch({
@@ -526,7 +526,74 @@ describe("executeSearch", () => {
       textFallback: "greninja",
     });
     expect(result.usedFallback).toBe(true);
-    expect(result.cards.map((c) => c.name)).toEqual(["Dual"]);
+    expect(result.cards.map((c) => c.name)).toEqual(["Greninja Dual"]);
+  });
+
+  it("binds Pokémon filters to name matches, not cards that mention the name", async () => {
+    findMany.mockResolvedValue([]);
+    queryRaw.mockResolvedValue([]);
+    await executeSearch({
+      surface: "any",
+      cardType: "POKEMON",
+      isEx: true,
+      textFallback: "pikachu",
+    });
+
+    const where = findMany.mock.calls[0]?.[0]?.where;
+    expect(where.cardType).toBeUndefined();
+    expect(where.isEx).toBeUndefined();
+    const contains = { contains: "pikachu", mode: "insensitive" };
+    expect(where.AND).toEqual([
+      {
+        OR: [
+          {
+            AND: [{ name: contains }, { cardType: "POKEMON" }, { isEx: true }],
+          },
+          { attacks: { some: { effectText: contains } } },
+          { effects: { some: { effectText: contains } } },
+        ],
+      },
+    ]);
+  });
+
+  it("keeps Pokémon filters on every card when there is no text search", async () => {
+    findMany.mockResolvedValue([]);
+    await executeSearch({ surface: "any", cardType: "POKEMON", isEx: true });
+
+    const where = findMany.mock.calls[0]?.[0]?.where;
+    expect(where.AND).toEqual([{ cardType: "POKEMON" }, { isEx: true }]);
+  });
+
+  it("keeps FTS rows that mention the name but fail the Pokémon filters", async () => {
+    findMany.mockResolvedValue([]);
+    const ftsRow = (id: number, name: string, cardType: string) => ({
+      id,
+      name,
+      imageUrl: `/img/${id}.webp`,
+      setCode: "A1",
+      number: id,
+      cardType,
+      trainerType: cardType === "TRAINER" ? "TOOL" : null,
+      energyType: cardType === "TRAINER" ? null : "lightning",
+      secondaryEnergyType: null,
+      stage: cardType === "TRAINER" ? null : "BASIC",
+      hp: cardType === "TRAINER" ? null : 60,
+      rarity: "C",
+      isEx: false,
+      isTradeable: true,
+    });
+    queryRaw.mockResolvedValue([
+      ftsRow(1, "Light Ball", "TRAINER"),
+      ftsRow(2, "Pikachu", "POKEMON"),
+    ]);
+
+    const result = await executeSearch({
+      surface: "any",
+      cardType: "POKEMON",
+      isEx: true,
+      textFallback: "pikachu",
+    });
+    expect(result.cards.map((c) => c.name)).toEqual(["Light Ball"]);
   });
 
   it("applies UI-picked types to FTS fallback rows and pages them", async () => {
