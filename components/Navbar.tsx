@@ -86,6 +86,7 @@ export const Navbar = async () => {
                 >
                   Builder
                 </Link>
+                <AuthButton hasSession={Boolean(session)} />
               </nav>
             </SheetContent>
           </Sheet>

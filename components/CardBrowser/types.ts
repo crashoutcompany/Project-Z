@@ -33,31 +33,20 @@ export type CardBrowserProps = {
   syncDexUrl?: boolean;
 };
 
+export type CardPage = { cards: CardWithSet[]; nextOffset: number | null };
+
 export type CardGridProps = {
   initialCards: CardWithSet[];
+  /** Where the next page starts (a card id or a result offset), or null. */
   initialCursor: number | null;
-  setId?: number;
-  searchQuery: string;
-  tradeableOnly: boolean;
-  /** Rarity codes the name/set paging is narrowed to. */
-  rarities?: string[];
-  /** Name/set paging lists every print instead of one per card. */
-  showDuplicates?: boolean;
+  /** Loads the page starting at `cursor` for the request on screen. */
+  loadPage: (cursor: number) => Promise<CardPage>;
+  /** Every matching card, for the load-more label. */
+  total?: number;
   selectable: boolean;
   selectedCards: SelectedCards;
-  selectionMode: SelectionMode;
-  density?: "comfortable" | "compact";
   cardCounts?: Record<number, number>;
   onCardClick?: (card: CardWithSet) => void;
-  /**
-   * Loads the next page of an effects search, where `initialCursor` is the
-   * offset of the next result. Replaces the name/set cursor paging.
-   */
-  loadPage?: (
-    offset: number,
-  ) => Promise<{ cards: CardWithSet[]; nextOffset: number | null }>;
-  /** Every matching card, when the results are a paged search. */
-  total?: number;
 };
 
 export type CardItemProps = {
@@ -69,11 +58,13 @@ export type CardItemProps = {
   onClick?: () => void;
 };
 
-export type SetTabsProps = {
-  sets: Set[];
-  activeSetId: number;
-  onSetChange: (setId: number) => void;
+export type SetFilterProps = {
+  sets: Pick<Set, "id" | "code" | "setName">[];
+  /** Picked set ids; empty = every set. */
+  selected: number[];
+  onChange: (setIds: number[]) => void;
   disabled?: boolean;
+  className?: string;
 };
 
 export type SearchBoxProps = {
@@ -97,6 +88,8 @@ export type TypeFilterProps = {
   selected: string[];
   onChange: (types: string[]) => void;
   disabled?: boolean;
+  /** `bar`: a row of icons. `grid`: icons with names, for the filter sheet. */
+  layout?: "bar" | "grid";
 };
 
 export type RarityFilterProps = {
@@ -116,12 +109,18 @@ export type ActiveFiltersProps = {
   picked: string[];
   /** Pokémon types picked from the type toggles. */
   types: string[];
+  /** Rarity codes picked from the rarity toggles. */
+  rarities: string[];
+  /** Picked sets. */
+  sets: { id: number; label: string }[];
   /** Tags parsed from the typed query (not also picked). */
   parsed: string[];
   /** Other parsed constraints, e.g. "Pokémon" or "HP≥100". */
   notes: string[];
   onRemovePicked: (tag: string) => void;
   onRemoveType: (type: string) => void;
+  onRemoveRarity: (rarity: string) => void;
+  onRemoveSet: (setId: number) => void;
   onRemoveParsed: (tag: string) => void;
   onClearAll: () => void;
   disabled?: boolean;

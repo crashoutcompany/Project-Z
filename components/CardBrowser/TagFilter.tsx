@@ -59,7 +59,7 @@ export function TagFilter({
               role="combobox"
               aria-label="Filter by tags"
               disabled={disabled}
-              className="h-9 gap-2 rounded-lg px-3 pointer-coarse:h-11"
+              className="h-10 gap-2 rounded-lg px-3 pointer-coarse:h-11"
             />
           }
         >

@@ -4,6 +4,10 @@ import type { CardWithSet } from "./types";
 
 const INITIAL_LIMIT = 20;
 
+/**
+ * Sets plus the browser's first page. It opens on every set, or on the one a
+ * `?set=` link names.
+ */
 export async function loadCardCatalog({
   tradeableOnly = false,
   setCode,
@@ -18,9 +22,10 @@ export async function loadCardCatalog({
   if (sets.length === 0) {
     return {
       sets,
-      initialSetId: 0,
+      initialSetIds: [] as number[],
       initialCards: [] as CardWithSet[],
       initialCursor: null as number | null,
+      initialTotal: 0,
     };
   }
 
@@ -28,19 +33,19 @@ export async function loadCardCatalog({
   const requestedSet = requestedCode
     ? sets.find((set) => set.code.toLowerCase() === requestedCode.toLowerCase())
     : undefined;
-  const initialSetId = requestedSet?.id ?? sets[0].id;
+  const initialSetIds = requestedSet ? [requestedSet.id] : [];
   // The browser opens with duplicates hidden, matching fetchCards' default.
-  const { cards: initialCards, nextCursor: initialCursor } =
-    await loadCatalogPage({
-      setId: initialSetId,
-      tradeableOnly,
-      limit: INITIAL_LIMIT,
-    });
+  const page = await loadCatalogPage({
+    setIds: initialSetIds,
+    tradeableOnly,
+    limit: INITIAL_LIMIT,
+  });
 
   return {
     sets,
-    initialSetId,
-    initialCards: initialCards as CardWithSet[],
-    initialCursor,
+    initialSetIds,
+    initialCards: page.cards as CardWithSet[],
+    initialCursor: page.nextCursor,
+    initialTotal: page.total ?? page.cards.length,
   };
 }

@@ -321,6 +321,35 @@ describe("POST /api/search", () => {
     );
   });
 
+  it("forwards picked sets, deduplicated", async () => {
+    executeSearch.mockResolvedValue({
+      cards: [],
+      usedFallback: false,
+      total: 0,
+    });
+    const res = await POST(request({ tags: ["gust"], setIds: [3, 1, 3] }));
+    expect(res.status).toBe(200);
+    expect(executeSearch).toHaveBeenCalledWith(
+      { surface: "any" },
+      {
+        limit: 60,
+        tradeableOnly: false,
+        tags: ["gust"],
+        tagMode: "all",
+        setIds: [3, 1],
+      },
+    );
+    await expect(res.json()).resolves.toMatchObject({ setIds: [3, 1] });
+  });
+
+  it("rejects malformed set ids", async () => {
+    for (const setIds of ["1", [0], [1.5], ["1"]]) {
+      const res = await POST(request({ tags: ["gust"], setIds }));
+      expect(res.status).toBe(400);
+    }
+    expect(executeSearch).not.toHaveBeenCalled();
+  });
+
   it("rejects unknown rarities", async () => {
     const bad = await POST(request({ tags: ["gust"], rarities: ["XYZ"] }));
     expect(bad.status).toBe(400);

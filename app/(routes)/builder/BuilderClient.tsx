@@ -14,14 +14,16 @@ const DECK_SIZE = 20;
 
 export function BuilderClient({
   sets,
-  initialSetId,
+  initialSetIds,
   initialCards,
   initialCursor,
+  initialTotal,
 }: {
   sets: Set[];
-  initialSetId: number;
+  initialSetIds: number[];
   initialCards: CardWithSet[];
   initialCursor: number | null;
+  initialTotal: number;
 }) {
   const deck = useBuilderDeck();
   const cardCounts = Object.fromEntries(
@@ -40,9 +42,10 @@ export function BuilderClient({
     <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem] xl:grid-cols-[minmax(0,1fr)_22rem]">
       <CardBrowserClient
         sets={sets}
-        initialSetId={initialSetId}
+        initialSetIds={initialSetIds}
         initialCards={initialCards}
         initialCursor={initialCursor}
+        initialTotal={initialTotal}
         mode="build"
         tradeableOnly={false}
         defaultSearchMode="effects"
@@ -98,8 +101,10 @@ function DeckTray({
     0,
   );
 
+  // Sticks level with the catalog's search bar (the toolbar sticks at 4rem
+  // with 0.75rem of padding) and starts level with it too.
   return (
-    <aside className="lg:sticky lg:top-20 lg:self-start">
+    <aside className="lg:sticky lg:top-19 lg:mt-3 lg:self-start">
       <section className="bg-card/90 ring-foreground/10 space-y-4 rounded-2xl p-4 shadow-xs ring-1 backdrop-blur-sm">
         <div className="flex flex-wrap items-start justify-between gap-2">
           <div>

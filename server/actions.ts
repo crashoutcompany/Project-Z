@@ -9,6 +9,7 @@ import {
 } from "@/lib/card-detail";
 import { loadCatalogPage } from "@/lib/catalog-page";
 import { RARITY_CODES } from "@/lib/rarity";
+import { ENERGY_TYPES } from "@/lib/search/tags";
 import { Card } from "@/prisma/generated/client/client";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
@@ -32,19 +33,21 @@ export const updateAuthStatus = async () => {
 };
 
 export type FetchCardsParams = {
-  setId?: number;
+  /** Sets to list; empty or missing = every set. */
+  setIds?: number[];
   search?: string;
   cursor?: number;
   limit?: number;
   tradeableOnly?: boolean;
   rarities?: string[];
+  types?: string[];
   showDuplicates?: boolean;
 };
 
 const FETCH_CARDS_MAX_LIMIT = 60;
 
 const fetchCardsSchema = z.object({
-  setId: z.number().int().positive().optional(),
+  setIds: z.array(z.number().int().positive()).max(200).optional(),
   search: z.string().trim().max(100).optional(),
   cursor: z.number().int().positive().optional(),
   limit: z.number().int().min(1).max(FETCH_CARDS_MAX_LIMIT).default(20),
@@ -53,16 +56,20 @@ const fetchCardsSchema = z.object({
     .array(z.enum(RARITY_CODES as [string, ...string[]]))
     .max(RARITY_CODES.length)
     .optional(),
+  types: z.array(z.enum(ENERGY_TYPES)).max(ENERGY_TYPES.length).optional(),
   showDuplicates: z.boolean().default(false),
 });
 
 export type FetchCardsResult = {
   cards: Card[];
   nextCursor: number | null;
+  /** Every matching card; only on the first page (no cursor). */
+  total: number | null;
 };
 
 /**
- * Fetches cards with cursor-based pagination, set, name and rarity filters.
+ * Fetches cards with cursor-based pagination, set, name, type and rarity
+ * filters.
  * Prints of the same card collapse to one unless `showDuplicates` is set.
  *
  * @param {FetchCardsParams} params - The parameters for fetching cards.
