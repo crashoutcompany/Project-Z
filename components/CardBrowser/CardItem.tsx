@@ -70,7 +70,7 @@ function RarityBadge({ rarity }: { rarity: string }) {
       title={getRarityInfo(rarity).name}
       className="absolute bottom-1.5 left-1.5 flex h-5 items-center rounded-full bg-black/70 px-1.5 text-[11px] font-semibold text-white"
     >
-      <RaritySymbol rarity={rarity} className="[&_svg]:size-3" />
+      <RaritySymbol rarity={rarity} className="h-3" />
       <span className="sr-only">{getRarityInfo(rarity).name}</span>
     </div>
   );
@@ -104,7 +104,7 @@ export const CardItem = memo(function CardItem({
         src={card.imageUrl}
         width={200}
         height={280}
-        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 200px"
         priority={priority}
         loading={priority ? "eager" : "lazy"}
         draggable={false}

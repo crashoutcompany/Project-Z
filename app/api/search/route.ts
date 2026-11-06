@@ -8,6 +8,7 @@ import { ENERGY_TYPES, isTag } from "@/lib/search/tags";
 const MAX_LIMIT = 100;
 // Matches the scan cap in executeSearch: nothing ranks beyond it.
 const MAX_OFFSET = 2000;
+const MAX_SET_IDS = 200;
 
 // Search is debounced client-side (300ms), so a human typing rarely exceeds a
 // few requests per second. This ceiling exists to stop unique-query flooding
@@ -66,6 +67,22 @@ function readRarities(
     return { ok: false, error: `Unknown rarity: ${unknown[0]}` };
   }
   return { ok: true, rarities: [...new Set(raw as string[])] };
+}
+
+/** Set ids picked in the UI, deduplicated. */
+function readSetIds(
+  body: Record<string, unknown>,
+): { ok: true; setIds: number[] } | { ok: false; error: string } {
+  const raw = body.setIds;
+  if (raw === undefined) return { ok: true, setIds: [] };
+  if (
+    !Array.isArray(raw) ||
+    raw.length > MAX_SET_IDS ||
+    raw.some((id) => !Number.isSafeInteger(id) || (id as number) <= 0)
+  ) {
+    return { ok: false, error: "setIds must be an array of set ids" };
+  }
+  return { ok: true, setIds: [...new Set(raw as number[])] };
 }
 
 export async function POST(request: Request) {
@@ -127,13 +144,19 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: raritiesResult.error }, { status: 400 });
   }
   const { rarities } = raritiesResult;
+  const setIdsResult = readSetIds(payload);
+  if (!setIdsResult.ok) {
+    return NextResponse.json({ error: setIdsResult.error }, { status: 400 });
+  }
+  const { setIds } = setIdsResult;
   const showDuplicates = readBool(payload, "showDuplicates");
 
   const query = typeof payload.query === "string" ? payload.query : null;
-  // A tag-, type- or rarity-only search (picked in the UI, nothing typed)
+  // A tag-, type-, rarity- or set-only search (picked in the UI, nothing typed)
   // needs no query.
   const tagOnly =
-    tags.length + types.length + rarities.length > 0 && !query?.trim();
+    tags.length + types.length + rarities.length + setIds.length > 0 &&
+    !query?.trim();
   if (query === null && !tagOnly) {
     return NextResponse.json(
       { error: "Missing string field: query" },
@@ -169,6 +192,7 @@ export async function POST(request: Request) {
       ...(tags.length ? { tags, tagMode } : {}),
       ...(types.length ? { types } : {}),
       ...(rarities.length ? { rarities } : {}),
+      ...(setIds.length ? { setIds } : {}),
       ...(showDuplicates ? { showDuplicates } : {}),
     });
 
@@ -178,6 +202,7 @@ export async function POST(request: Request) {
       tagMode,
       types,
       rarities,
+      setIds,
       showDuplicates,
       filter,
       cached: parsed.cached,

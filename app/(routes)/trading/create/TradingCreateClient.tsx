@@ -13,16 +13,18 @@ import { cn } from "@/lib/utils";
 
 type TradingCreateClientProps = {
   sets: Set[];
-  initialSetId: number;
+  initialSetIds: number[];
   initialCards: CardWithSet[];
   initialCursor: number | null;
+  initialTotal: number;
 };
 
 export function TradingCreateClient({
   sets,
-  initialSetId,
+  initialSetIds,
   initialCards,
   initialCursor,
+  initialTotal,
 }: TradingCreateClientProps) {
   const [selectedCards, setSelectedCards] = useState<SelectedCards>({
     want: [],
@@ -99,9 +101,10 @@ export function TradingCreateClient({
 
       <CardBrowserClient
         sets={sets}
-        initialSetId={initialSetId}
+        initialSetIds={initialSetIds}
         initialCards={initialCards}
         initialCursor={initialCursor}
+        initialTotal={initialTotal}
         mode="select"
         tradeableOnly
         showSearchModes={false}

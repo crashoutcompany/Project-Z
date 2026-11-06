@@ -1,5 +1,13 @@
 import { describe, expect, it } from "vitest";
-import { formatShinedust, getRarityInfo, getShinedustCost } from "./rarity";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
+import {
+  formatShinedust,
+  getRarityInfo,
+  getShinedustCost,
+  RARITY_CODES,
+  RARITY_ICON_SRC,
+} from "./rarity";
 
 describe("rarity display", () => {
   it("maps stored codes to names and symbols", () => {
@@ -12,6 +20,24 @@ describe("rarity display", () => {
 
   it("falls back for unknown codes", () => {
     expect(getRarityInfo("XYZ").name).toBe("XYZ");
+    expect(getRarityInfo("XYZ").mark).toBeNull();
+  });
+
+  it("draws each rarity with the official Pocket mark", () => {
+    expect(getRarityInfo("C").mark).toEqual({ icon: "diamond", count: 1 });
+    expect(getRarityInfo("RR").mark).toEqual({ icon: "diamond", count: 4 });
+    expect(getRarityInfo("SR").mark).toEqual({ icon: "star", count: 2 });
+    expect(getRarityInfo("IM").mark).toEqual({ icon: "star", count: 3 });
+    expect(getRarityInfo("SSR").mark).toEqual({ icon: "shiny", count: 2 });
+    expect(getRarityInfo("UR").mark).toEqual({ icon: "crown", count: 1 });
+    expect(getRarityInfo("PROMO").mark).toBeNull();
+    // Every mark except promos is drawn, and every icon ships in public/.
+    for (const code of RARITY_CODES.filter((c) => c !== "PROMO")) {
+      expect(getRarityInfo(code).mark).not.toBeNull();
+    }
+    for (const src of Object.values(RARITY_ICON_SRC)) {
+      expect(existsSync(join(process.cwd(), "public", src))).toBe(true);
+    }
   });
 });
 

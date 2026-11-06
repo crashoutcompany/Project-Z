@@ -7,24 +7,34 @@ import {
 } from "@/lib/search/dedupe";
 
 export type CatalogPageParams = {
-  setId?: number;
+  /** Set ids; a card matches when it is in one of them. Empty = every set. */
+  setIds?: number[];
   search?: string;
   cursor?: number;
   limit: number;
   tradeableOnly?: boolean;
   /** Rarity codes; a card matches when it has one of them. */
   rarities?: string[];
+  /** Pokémon types; a card matches when either of its types is one of them. */
+  types?: string[];
   /** List every print instead of one card per name + attacks. */
   showDuplicates?: boolean;
 };
 
 function catalogWhere(params: CatalogPageParams): Prisma.CardWhereInput {
-  const { setId, search, tradeableOnly, rarities } = params;
+  const { setIds, search, tradeableOnly, rarities, types } = params;
   return {
-    ...(setId && { setId }),
+    ...(setIds?.length && { setId: { in: setIds } }),
     ...(search && { name: { contains: search, mode: "insensitive" } }),
     ...(tradeableOnly && { isTradeable: true }),
     ...(rarities?.length && { rarity: { in: rarities } }),
+    // Dual-type cards match on either of their types.
+    ...(types?.length && {
+      OR: [
+        { energyType: { in: types } },
+        { secondaryEnergyType: { in: types } },
+      ],
+    }),
   };
 }
 
@@ -41,17 +51,20 @@ export async function loadCatalogPage(params: CatalogPageParams) {
   const where = catalogWhere(params);
 
   if (params.showDuplicates) {
-    const cards = await prisma.card.findMany({
-      take: limit + 1, // Fetch one extra to determine if there are more
-      ...(cursor && {
-        skip: 1, // Skip the cursor itself
-        cursor: { id: cursor },
+    const [cards, total] = await Promise.all([
+      prisma.card.findMany({
+        take: limit + 1, // Fetch one extra to determine if there are more
+        ...(cursor && {
+          skip: 1, // Skip the cursor itself
+          cursor: { id: cursor },
+        }),
+        where,
+        orderBy: { id: "asc" },
+        include: { set: true },
       }),
-      where,
-      orderBy: { id: "asc" },
-      include: { set: true },
-    });
-    return toPage(cards, limit);
+      cursor ? null : prisma.card.count({ where }),
+    ]);
+    return { ...toPage(cards, limit), total };
   }
 
   const prints = await prisma.card.findMany({
@@ -65,8 +78,8 @@ export async function loadCatalogPage(params: CatalogPageParams) {
       effects: { select: PRINT_KEY_EFFECT_SELECT },
     },
   });
-  const pageIds = dedupePrints(prints)
-    .map((p) => p.id)
+  const keptIds = dedupePrints(prints).map((p) => p.id);
+  const pageIds = keptIds
     .filter((id) => !cursor || id > cursor)
     .slice(0, limit + 1);
   const cards = pageIds.length
@@ -76,7 +89,7 @@ export async function loadCatalogPage(params: CatalogPageParams) {
         include: { set: true },
       })
     : [];
-  return toPage(cards, limit);
+  return { ...toPage(cards, limit), total: cursor ? null : keptIds.length };
 }
 
 function toPage<T extends { id: number }>(cards: T[], limit: number) {

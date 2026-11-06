@@ -1,7 +1,7 @@
 import { expect, test, type Page } from "@playwright/test";
 
 import { TESTER_AUTH_STATE } from "./auth-state";
-import { catalogCardNames, catalogCards } from "./catalog";
+import { catalogCardNames, catalogCards, openFilters } from "./catalog";
 import { TAG_INFO } from "../lib/search/tags";
 
 test.use({ storageState: TESTER_AUTH_STATE });
@@ -12,11 +12,18 @@ async function openEffects(page: Page) {
   await page.getByRole("button", { name: "Effects", exact: true }).click();
 }
 
+/** Picks a tag from the filter bar, or from the filter sheet on phones. */
 async function pickTag(page: Page, label: string) {
-  await page.getByRole("combobox", { name: "Filter by tags" }).click();
+  const filters = await openFilters(page);
+  await filters.getByRole("combobox", { name: "Filter by tags" }).click();
   await page.getByPlaceholder("Search tags…").fill(label);
   await page.getByRole("option", { name: label, exact: true }).click();
   await page.getByRole("button", { name: "Done" }).click();
+  await expect(page.getByPlaceholder("Search tags…")).toBeHidden();
+  if ((await filters.getAttribute("data-testid")) === "filter-sheet") {
+    await page.keyboard.press("Escape");
+    await expect(filters).toBeHidden();
+  }
 }
 
 function fakeCard(i: number) {
@@ -161,10 +168,13 @@ test("at 390px the effects controls fit and the hint does not clip", async ({
   });
   expect(fits).toBe(true);
 
-  await page
+  const filters = await openFilters(page);
+  await filters
     .getByRole("group", { name: "Filter by type" })
     .getByRole("button", { name: "Water" })
     .click();
+  await page.keyboard.press("Escape");
+  await expect(filters).toBeHidden();
   await expect(
     page.getByRole("button", { name: "Remove type: Water" }),
   ).toBeVisible();

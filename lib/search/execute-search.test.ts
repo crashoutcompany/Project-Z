@@ -832,6 +832,17 @@ describe("executeSearch", () => {
       expect(result.cards.map((c) => c.id)).toEqual([1, 6, 4]);
     });
 
+    it("narrows to the picked sets", async () => {
+      findMany.mockResolvedValue([]);
+      await executeSearch(
+        { surface: "any" },
+        { tags: ["condition_poison"], setIds: [2, 5], limit: 10 },
+      );
+      expect(findMany.mock.calls[0]?.[0]?.where).toMatchObject({
+        setId: { in: [2, 5] },
+      });
+    });
+
     it("combines rarity, types, tags and text in one where clause", async () => {
       findMany.mockResolvedValue([]);
       await executeSearch(

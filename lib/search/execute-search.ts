@@ -33,6 +33,8 @@ export type SearchOptions = {
   types?: string[];
   /** Rarity codes picked in the UI. A card matches when it has one of them. */
   rarities?: string[];
+  /** Set ids picked in the UI. A card matches when it is in one of them. */
+  setIds?: number[];
   /**
    * List every print. By default prints of the same card (same name and
    * attacks) collapse to the lowest-rarity copy, before ranking and paging,
@@ -135,6 +137,7 @@ function buildCardWhere(
   if (filter.cardType === "TRAINER") where.cardType = filter.cardType;
   if (filter.trainerType) where.trainerType = filter.trainerType;
   if (opts.rarities?.length) where.rarity = { in: opts.rarities };
+  if (opts.setIds?.length) where.setId = { in: opts.setIds };
   if (filter.setCodes?.length) {
     where.set = { code: { in: filter.setCodes } };
   }

@@ -1,18 +1,26 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-const { findMany, findUnique, findFirst, signOut, getSession, redirect } =
-  vi.hoisted(() => ({
-    findMany: vi.fn(),
-    findUnique: vi.fn(),
-    findFirst: vi.fn(),
-    signOut: vi.fn(),
-    getSession: vi.fn(),
-    redirect: vi.fn(),
-  }));
+const {
+  findMany,
+  count,
+  findUnique,
+  findFirst,
+  signOut,
+  getSession,
+  redirect,
+} = vi.hoisted(() => ({
+  findMany: vi.fn(),
+  count: vi.fn(async () => 0),
+  findUnique: vi.fn(),
+  findFirst: vi.fn(),
+  signOut: vi.fn(),
+  getSession: vi.fn(),
+  redirect: vi.fn(),
+}));
 
 vi.mock("@/prisma/db", () => ({
   default: {
-    card: { findMany, findUnique, findFirst },
+    card: { findMany, count, findUnique, findFirst },
   },
 }));
 
@@ -46,7 +54,7 @@ describe("fetchCards", () => {
     findMany.mockResolvedValue(rows);
 
     const result = await fetchCards({
-      setId: 1,
+      setIds: [1],
       limit: 3,
       search: "pika",
       showDuplicates: true,
@@ -55,7 +63,7 @@ describe("fetchCards", () => {
       expect.objectContaining({
         take: 4,
         where: expect.objectContaining({
-          setId: 1,
+          setId: { in: [1] },
           name: { contains: "pika", mode: "insensitive" },
         }),
       }),
@@ -104,7 +112,7 @@ describe("fetchCards", () => {
 
   it("rejects malformed params from the client", async () => {
     await expect(
-      fetchCards({ setId: "1" } as unknown as { setId: number }),
+      fetchCards({ setIds: "1" } as unknown as { setIds: number[] }),
     ).rejects.toThrow();
     expect(findMany).not.toHaveBeenCalled();
   });
@@ -154,6 +162,29 @@ describe("fetchCards", () => {
 
   it("rejects unknown rarities", async () => {
     await expect(fetchCards({ rarities: ["XYZ"] })).rejects.toThrow();
+    expect(findMany).not.toHaveBeenCalled();
+  });
+
+  it("filters by type and reports the total on the first page", async () => {
+    findMany.mockResolvedValue([]);
+    count.mockResolvedValueOnce(42);
+    const result = await fetchCards({
+      types: ["grass", "fire"],
+      setIds: [1, 2],
+      showDuplicates: true,
+    });
+    expect(findMany.mock.calls[0][0].where).toMatchObject({
+      setId: { in: [1, 2] },
+      OR: [
+        { energyType: { in: ["grass", "fire"] } },
+        { secondaryEnergyType: { in: ["grass", "fire"] } },
+      ],
+    });
+    expect(result.total).toBe(42);
+  });
+
+  it("rejects unknown types", async () => {
+    await expect(fetchCards({ types: ["fairy"] })).rejects.toThrow();
     expect(findMany).not.toHaveBeenCalled();
   });
 });

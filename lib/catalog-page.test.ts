@@ -5,6 +5,8 @@ type Row = {
   name: string;
   rarity: string;
   setId: number;
+  energyType: string;
+  secondaryEnergyType: string | null;
   attacks: Array<{
     position: number;
     name: string;
@@ -21,9 +23,13 @@ let table: Row[] = [];
 type Args = {
   where: {
     id?: { in: number[] };
-    setId?: number;
+    setId?: { in: number[] };
     rarity?: { in: string[] };
     name?: { contains: string };
+    OR?: Array<{
+      energyType?: { in: string[] };
+      secondaryEnergyType?: { in: string[] };
+    }>;
   };
   take?: number;
   skip?: number;
@@ -34,7 +40,17 @@ type Args = {
 const findMany = vi.fn(async ({ where, take, skip, cursor }: Args) => {
   let rows = table
     .filter((r) => !where.id || where.id.in.includes(r.id))
-    .filter((r) => !where.setId || r.setId === where.setId)
+    .filter((r) => !where.setId || where.setId.in.includes(r.setId))
+    .filter(
+      (r) =>
+        !where.OR ||
+        where.OR.some(
+          (clause) =>
+            clause.energyType?.in.includes(r.energyType) ||
+            (r.secondaryEnergyType !== null &&
+              clause.secondaryEnergyType?.in.includes(r.secondaryEnergyType)),
+        ),
+    )
     .filter((r) => !where.rarity || where.rarity.in.includes(r.rarity))
     .filter(
       (r) =>
@@ -46,7 +62,11 @@ const findMany = vi.fn(async ({ where, take, skip, cursor }: Args) => {
   return take ? rows.slice(0, take) : rows;
 });
 
-vi.mock("@/prisma/db", () => ({ default: { card: { findMany } } }));
+const count = vi.fn(async ({ where }: Pick<Args, "where">) => {
+  return (await findMany({ where })).length;
+});
+
+vi.mock("@/prisma/db", () => ({ default: { card: { findMany, count } } }));
 
 const { loadCatalogPage } = await import("./catalog-page");
 
@@ -62,6 +82,8 @@ function card(
     name,
     rarity,
     setId,
+    energyType: "lightning",
+    secondaryEnergyType: null,
     attacks: [
       {
         position: 0,
@@ -151,15 +173,50 @@ describe("loadCatalogPage", () => {
 
     const inSet = await loadCatalogPage({
       limit: 20,
-      setId: 1,
+      setIds: [1],
       search: "pikachu ex",
     });
     expect(inSet.cards.map((c) => c.id)).toEqual([3]);
+
+    const inEither = await loadCatalogPage({
+      limit: 20,
+      setIds: [1, 2],
+      search: "pikachu ex",
+      showDuplicates: true,
+    });
+    expect(inEither.cards.map((c) => c.id)).toEqual([1, 3, 6, 9]);
+  });
+
+  it("filters by either of a card's types", async () => {
+    table.push(
+      { ...card(10, "Oddish", "C"), energyType: "grass" },
+      {
+        ...card(11, "Dual", "C", "Zap"),
+        energyType: "fire",
+        secondaryEnergyType: "grass",
+      },
+    );
+    const page = await loadCatalogPage({ limit: 20, types: ["grass"] });
+    expect(page.cards.map((c) => c.id)).toEqual([10, 11]);
+    expect(page.total).toBe(2);
+  });
+
+  it("reports the total on the first page only", async () => {
+    const first = await loadCatalogPage({ limit: 2 });
+    expect(first.total).toBe(5);
+    const next = await loadCatalogPage({
+      limit: 2,
+      cursor: first.nextCursor ?? undefined,
+    });
+    expect(next.total).toBeNull();
+
+    const prints = await loadCatalogPage({ limit: 2, showDuplicates: true });
+    expect(prints.total).toBe(8);
   });
 
   it("skips the second query when nothing matches", async () => {
     const page = await loadCatalogPage({ limit: 20, search: "mewtwo" });
-    expect(page).toEqual({ cards: [], nextCursor: null });
+    expect(page).toEqual({ cards: [], nextCursor: null, total: 0 });
     expect(findMany).toHaveBeenCalledTimes(1);
   });
 });

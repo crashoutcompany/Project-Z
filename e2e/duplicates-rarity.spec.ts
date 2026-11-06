@@ -1,7 +1,7 @@
 import { expect, test, type Page } from "@playwright/test";
 
 import { TESTER_AUTH_STATE } from "./auth-state";
-import { catalogCardNames, catalogCards } from "./catalog";
+import { catalogCardNames, catalogCards, pickRarities } from "./catalog";
 import { TAG_INFO } from "../lib/search/tags";
 
 test.use({ storageState: TESTER_AUTH_STATE });
@@ -18,6 +18,23 @@ test("tiles show their rarity", async ({ page }) => {
   await catalogCardNames(page);
   const first = catalogCards(page).first();
   await expect(first.getByTestId("card-rarity")).toBeVisible();
+});
+
+test("the rarity filter shows the official Pocket marks", async ({ page }) => {
+  await page.goto("/dex");
+  await catalogCardNames(page);
+  await page.getByRole("button", { name: "Filter by rarity" }).click();
+  const group = page.getByRole("group", { name: "Filter by rarity" });
+  await expect(
+    group
+      .getByRole("button", { name: "Double Rare" })
+      .locator('img[src="/images/rarity/diamond.png"]'),
+  ).toHaveCount(4);
+  await expect(
+    group
+      .getByRole("button", { name: "Crown Rare" })
+      .locator('img[src="/images/rarity/crown.png"]'),
+  ).toHaveCount(1);
 });
 
 test("effects search sends rarity and duplicate choices with tags, types and paging", async ({
@@ -69,11 +86,10 @@ test("effects search sends rarity and duplicate choices with tags, types and pag
   const types = page.getByRole("group", { name: "Filter by type" });
   await types.getByRole("button", { name: "Grass" }).click();
 
-  const rarity = page.getByRole("group", { name: "Filter by rarity" });
-  await rarity.getByRole("button", { name: "Super Rare" }).click();
+  await pickRarities(page, ["Super Rare"]);
   await expect(
-    rarity.getByRole("button", { name: "Super Rare" }),
-  ).toHaveAttribute("aria-pressed", "true");
+    page.getByRole("button", { name: "Remove rarity: Super Rare" }),
+  ).toBeVisible();
   await expect
     .poll(() => bodies.at(-1))
     .toMatchObject({
@@ -147,8 +163,7 @@ test("name search hides duplicate prints until the toggle is on", async ({
 test("the rarity filter narrows the set view", async ({ page }) => {
   await page.goto("/dex");
   await catalogCardNames(page);
-  const rarity = page.getByRole("group", { name: "Filter by rarity" });
-  await rarity.getByRole("button", { name: "Common", exact: true }).click();
+  await pickRarities(page, ["Common"]);
   await expect
     .poll(async () => {
       const titles = await catalogCards(page)
