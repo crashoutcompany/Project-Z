@@ -69,7 +69,8 @@ test("a tag search shows every match and loads past the first page", async ({
   await page.getByText(/Load more|Loading more/).scrollIntoViewIfNeeded();
   await expect(catalogCards(page)).toHaveCount(75);
   await expect(page.getByText("All 75 cards loaded")).toBeVisible();
-  expect(offsets).toEqual([0, 60]);
+  // Wait for both requests to be captured before asserting.
+  await expect.poll(() => offsets).toEqual([0, 60]);
 });
 
 test("type filter is multi-select, shows removable pills and combines with tags", async ({
