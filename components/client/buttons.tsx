@@ -17,9 +17,9 @@ export const AuthButton = ({
   const [isPending, startTransition] = useTransition();
   const session = useSession();
   // The layout's server-rendered answer goes stale: a session that expires
-  // or ends in another tab would still offer "Sign Out". Once the client has
-  // checked, its live answer wins.
-  const signedIn = session.isPending ? hasSession : Boolean(session.data);
+  // or ends in another tab would still offer "Sign Out". So does the client's
+  // cached one after a server-side sign out. Offer it only while both agree.
+  const signedIn = hasSession && (session.isPending || Boolean(session.data));
 
   return (
     <form

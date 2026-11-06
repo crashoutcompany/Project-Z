@@ -37,7 +37,7 @@ export type FilterBarProps = {
   onClearAll: () => void;
   /** Result count, e.g. "1,204 cards"; null while loading. */
   resultLabel: string | null;
-  /** Summary shown beside the Filters button on narrow screens. */
+  /** The status line, under the bar (beside the Filters button on phones). */
   summary: ReactNode;
 };
 
@@ -105,23 +105,29 @@ export function FilterBar(props: FilterBarProps) {
           pressed={showDuplicates}
           onChange={onDuplicatesChange}
         />
-        {mode === "effects" ? (
+        {/* Name keeps an invisible, inert Tags in its slot so the bar wraps the
+            same on both tabs and the results never jump. */}
+        <div
+          className={mode === "effects" ? "contents" : "invisible"}
+          aria-hidden={mode === "effects" ? undefined : true}
+          inert={mode !== "effects"}
+        >
           <TagFilter
-            selected={tags}
+            selected={mode === "effects" ? tags : []}
             onChange={onTagsChange}
             mode={tagMode}
             onModeChange={onTagModeChange}
           />
-        ) : null}
+        </div>
       </div>
 
-      <div className="flex items-center gap-3 @xl/browser:hidden">
+      <div className="flex items-center gap-3">
         <Sheet>
           <SheetTrigger
             render={
               <Button
                 variant="outline"
-                className="h-11 shrink-0 gap-2 rounded-lg px-4"
+                className="h-11 shrink-0 gap-2 rounded-lg px-4 @xl/browser:hidden"
               />
             }
           >
@@ -193,7 +199,7 @@ export function FilterBar(props: FilterBarProps) {
                 Clear all
               </Button>
               <SheetClose render={<Button className="h-11 flex-1" />}>
-                {resultLabel ? `Show ${resultLabel}` : "Done"}
+                {resultLabel ? `Show ${resultLabel}` : "Show results"}
               </SheetClose>
             </SheetFooter>
           </SheetContent>

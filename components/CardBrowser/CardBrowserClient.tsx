@@ -532,7 +532,6 @@ export function CardBrowserClient({
           resultLabel={resultLabel}
           summary={summary}
         />
-        <div className="hidden @xl/browser:block">{summary}</div>
         <ActiveFilters
           picked={view.mode === "effects" ? effects.tags : []}
           types={filters.types}

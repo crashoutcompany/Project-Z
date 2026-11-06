@@ -8,14 +8,15 @@ export function catalogCards(page: Page) {
 /** Waits for the first catalog page to render and returns its card names. */
 export async function catalogCardNames(page: Page) {
   await expect(catalogCards(page).first()).toBeVisible();
-  return catalogCards(page)
-    .locator("img")
-    .evaluateAll((imgs) => imgs.map((img) => img.getAttribute("alt") ?? ""));
+  // The first image is the card art; the rest are its rarity mark.
+  return catalogCards(page).evaluateAll((cards) =>
+    cards.map((card) => card.querySelector("img")?.getAttribute("alt") ?? ""),
+  );
 }
 
 /** The results line above the grid, e.g. "All sets · 1,204 cards". */
 export function resultSummary(page: Page) {
-  return page.getByTestId("result-summary").filter({ visible: true });
+  return page.getByTestId("result-summary");
 }
 
 /**

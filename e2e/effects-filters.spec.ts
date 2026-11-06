@@ -208,7 +208,7 @@ test("tapping an effects search result opens its card details", async ({
   await expect(page.getByText(/Filtering by 1 tag · \d+ cards/)).toBeVisible();
 
   const first = catalogCards(page).first();
-  const name = (await first.locator("img").getAttribute("alt")) ?? "";
+  const name = (await first.locator("img").first().getAttribute("alt")) ?? "";
   await first.click();
 
   const sheet = page.getByTestId("card-detail-sheet");
