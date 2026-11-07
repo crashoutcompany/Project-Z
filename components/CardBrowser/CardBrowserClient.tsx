@@ -584,19 +584,30 @@ export function CardBrowserClient({
           onClearFilters={handleClearAll}
         />
       ) : (
-        <CardGrid
-          key={results.epoch}
-          initialCards={results.cards}
-          initialCursor={results.cursor}
-          loadPage={loadPage}
-          total={usesEffectsApi(resultView) ? results.total : undefined}
-          selectable={interactive && (mode === "select" || mode === "build")}
-          selectedCards={selection.selectedCards}
-          cardCounts={cardCounts}
-          // CardItem is clickable whenever it receives a handler, so withholding
-          // it is what makes the catalog inert while `interactive` is false.
-          onCardClick={interactive ? handleCardClick : undefined}
-        />
+        <div
+          data-testid="catalog-results-wrapper"
+          data-pending={isPending || undefined}
+          aria-busy={isPending}
+          className={cn(
+            "transition-[filter,opacity] duration-200 ease-out motion-reduce:transition-none",
+            // Delay only the fade-in, so a fast query doesn't flash grey.
+            isPending && "pointer-events-none opacity-60 grayscale delay-150",
+          )}
+        >
+          <CardGrid
+            key={results.epoch}
+            initialCards={results.cards}
+            initialCursor={results.cursor}
+            loadPage={loadPage}
+            total={usesEffectsApi(resultView) ? results.total : undefined}
+            selectable={interactive && (mode === "select" || mode === "build")}
+            selectedCards={selection.selectedCards}
+            cardCounts={cardCounts}
+            // CardItem is clickable whenever it receives a handler, so withholding
+            // it is what makes the catalog inert while `interactive` is false.
+            onCardClick={interactive ? handleCardClick : undefined}
+          />
+        </div>
       )}
 
       {mode === "view" ? (
