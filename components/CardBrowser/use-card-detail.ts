@@ -25,7 +25,7 @@ async function hasSession(): Promise<boolean> {
 
 type UseCardDetailOptions = {
   initialDetail: CardDetail | null;
-  /** When set (Dex), opening and closing the sheet mirrors `?set=&card=`. */
+  /** When set (Dex), opening and closing the sheet mirrors `?card=`. */
   syncDexUrl: boolean;
 };
 
@@ -53,9 +53,10 @@ export function useCardDetail({
       setError(null);
       setSignedOut(false);
       setLoading(true);
+      // Only the card: `?set=` narrows the browser on reload, and opening a
+      // card should not change what the browser lists.
       if (syncDexUrl) {
         replaceDexSearchParams({
-          set: card.set.code,
           card: formatCardRef(card.set.code, card.number),
         });
       }

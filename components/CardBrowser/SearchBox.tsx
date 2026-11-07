@@ -62,7 +62,7 @@ export function SearchBox({
       clearTimeout(debounceTimerRef.current);
       debounceTimerRef.current = null;
     }
-    if (next !== mode) setLocalValue("");
+    // Each tab keeps its own query: the parent hands back the new tab's.
     onModeChange(next);
   };
 
@@ -90,7 +90,7 @@ export function SearchBox({
         : "Search by effect...");
 
   return (
-    <div className="w-full space-y-2">
+    <div className="w-full">
       <div className="bg-card/80 ring-foreground/10 flex items-center gap-2 rounded-xl p-1 shadow-xs ring-1 backdrop-blur-sm">
         {showModes ? (
           <div className="bg-muted flex shrink-0 rounded-lg p-0.5">
@@ -99,8 +99,9 @@ export function SearchBox({
               variant="ghost"
               size="sm"
               onClick={() => switchMode("name")}
+              aria-pressed={mode === "name"}
               className={cn(
-                "rounded-md px-3 transition-[background-color,color,box-shadow] duration-150 ease-out",
+                "h-9 rounded-md px-3 transition-[background-color,color,box-shadow] duration-150 ease-out pointer-coarse:h-11",
                 mode === "name" &&
                   "bg-background text-foreground hover:bg-background shadow-sm",
               )}
@@ -112,8 +113,9 @@ export function SearchBox({
               variant="ghost"
               size="sm"
               onClick={() => switchMode("effects")}
+              aria-pressed={mode === "effects"}
               className={cn(
-                "rounded-md px-3 transition-[background-color,color,box-shadow] duration-150 ease-out",
+                "h-9 rounded-md px-3 transition-[background-color,color,box-shadow] duration-150 ease-out pointer-coarse:h-11",
                 mode === "effects" &&
                   "bg-background text-foreground hover:bg-background shadow-sm",
               )}
@@ -132,7 +134,7 @@ export function SearchBox({
             value={localValue}
             onChange={handleChange}
             className={cn(
-              "h-10 border-0 bg-transparent pl-8 shadow-none focus-visible:ring-0 dark:bg-transparent",
+              "h-10 border-0 bg-transparent pl-8 shadow-none focus-visible:ring-0 dark:bg-transparent pointer-coarse:h-11",
               // Room for the clear button only while there is text to clear.
               localValue ? "pr-9" : "pr-2",
             )}
@@ -145,7 +147,7 @@ export function SearchBox({
               variant="ghost"
               size="sm"
               onClick={handleClear}
-              className="absolute top-1/2 right-1 h-7 w-7 -translate-y-1/2 p-0"
+              className="absolute top-1/2 right-1 h-8 w-8 -translate-y-1/2 p-0 pointer-coarse:h-10 pointer-coarse:w-10"
             >
               <X className="h-4 w-4" />
               <span className="sr-only">Clear search</span>

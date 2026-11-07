@@ -75,12 +75,20 @@ test.describe("a complete deck", () => {
     await expect(copy).toBeDisabled();
 
     // Two copies per card until 20; duplicate names are rejected by the rules.
+    // Wait for the deck count to update after each click to avoid race conditions.
     const cards = catalogCards(page);
     const total = await cards.count();
-    for (let i = 0; i < total; i++) {
-      if (await deckCount(page, 20).isVisible()) break;
+    let currentCount = 0;
+    for (let i = 0; i < total && currentCount < 20; i++) {
       await cards.nth(i).click();
-      await cards.nth(i).click();
+      currentCount++;
+      await expect(deckCount(page, currentCount)).toBeVisible();
+
+      if (currentCount < 20) {
+        await cards.nth(i).click();
+        currentCount++;
+        await expect(deckCount(page, currentCount)).toBeVisible();
+      }
     }
     await expect(deckCount(page, 20)).toBeVisible();
 
@@ -192,4 +200,19 @@ test("an empty tag search offers to match any tag or clear filters", async ({
   await expect(
     page.getByRole("group", { name: "Active filters" }),
   ).toBeHidden();
+});
+
+test("switching tabs does not move the results", async ({ page }) => {
+  await page.goto("/builder");
+  await catalogCardNames(page);
+  const toolbar = page.getByTestId("search-toolbar");
+  const effectsHeight = (await toolbar.boundingBox())?.height;
+
+  await page.getByRole("button", { name: "Name", exact: true }).click();
+  await expect(page.getByPlaceholder("Search by name...")).toBeVisible();
+  // The Tags slot stays reserved but cannot be reached on Name.
+  await expect(
+    page.getByRole("combobox", { name: "Filter by tags" }),
+  ).toHaveCount(0);
+  expect((await toolbar.boundingBox())?.height).toBe(effectsHeight);
 });

@@ -25,8 +25,11 @@ export async function CardBrowser({
   const detailPromise = parsedCard
     ? getCardDetailByRef(parsedCard.ref)
     : Promise.resolve(null);
-  const [{ sets, initialSetId, initialCards, initialCursor }, initialDetail] =
-    await Promise.all([catalogPromise, detailPromise]);
+  const [catalog, initialDetail] = await Promise.all([
+    catalogPromise,
+    detailPromise,
+  ]);
+  const { sets, initialSetIds } = catalog;
 
   if (sets.length === 0) {
     return (
@@ -38,11 +41,8 @@ export async function CardBrowser({
 
   return (
     <CardBrowserClient
-      key={initialDetail?.ref ?? `set-${initialSetId}`}
-      sets={sets}
-      initialSetId={initialSetId}
-      initialCards={initialCards}
-      initialCursor={initialCursor}
+      key={initialDetail?.ref ?? `sets-${initialSetIds.join(",")}`}
+      {...catalog}
       mode={mode}
       tradeableOnly={tradeableOnly}
       defaultSearchMode={defaultSearchMode}

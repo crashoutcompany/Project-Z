@@ -28,9 +28,10 @@ describe("loadCardCatalog", () => {
     setFindMany.mockResolvedValue([]);
     await expect(loadCardCatalog()).resolves.toEqual({
       sets: [],
-      initialSetId: 0,
+      initialSetIds: [],
       initialCards: [],
       initialCursor: null,
+      initialTotal: 0,
     });
     expect(cardFindMany).not.toHaveBeenCalled();
   });
@@ -47,15 +48,16 @@ describe("loadCardCatalog", () => {
       },
     ]);
     const result = await loadCardCatalog({ setCode: "a2" });
-    expect(result.initialSetId).toBe(2);
+    expect(result.initialSetIds).toEqual([2]);
+    expect(result.initialTotal).toBe(1);
     expect(cardFindMany).toHaveBeenCalledWith(
       expect.objectContaining({
-        where: expect.objectContaining({ setId: 2 }),
+        where: expect.objectContaining({ setId: { in: [2] } }),
       }),
     );
   });
 
-  it("falls back to the first set and pages with a cursor", async () => {
+  it("opens on every set and pages with a cursor", async () => {
     const cards = Array.from({ length: 21 }, (_, i) => ({
       id: i + 1,
       name: `Card ${i + 1}`,
@@ -67,12 +69,13 @@ describe("loadCardCatalog", () => {
     cardFindMany.mockResolvedValue(cards);
 
     const result = await loadCardCatalog({ tradeableOnly: true });
-    expect(result.initialSetId).toBe(1);
+    expect(result.initialSetIds).toEqual([]);
     expect(result.initialCards).toHaveLength(20);
     expect(result.initialCursor).toBe(20);
+    expect(result.initialTotal).toBe(21);
     expect(cardFindMany).toHaveBeenCalledWith(
       expect.objectContaining({
-        where: expect.objectContaining({ isTradeable: true, setId: 1 }),
+        where: { isTradeable: true },
       }),
     );
   });

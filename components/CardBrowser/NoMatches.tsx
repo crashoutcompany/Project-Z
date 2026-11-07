@@ -6,17 +6,18 @@ import type { TagMode } from "./types";
 
 type NoMatchesProps = {
   tagCount: number;
-  typeCount: number;
+  /** Picked sets, types and rarities. */
+  filterCount: number;
   tagMode: TagMode;
   hasQuery: boolean;
   onMatchAny: () => void;
   onClearFilters: () => void;
 };
 
-/** Empty effects search: says why and offers a way out. */
+/** No results on either tab: says why and offers a way out. */
 export function NoMatches({
   tagCount,
-  typeCount,
+  filterCount,
   tagMode,
   hasQuery,
   onMatchAny,
@@ -40,10 +41,8 @@ export function NoMatches({
           {canWiden
             ? `No card has all ${tagCount} tags. Match any of them instead, or remove a tag.`
             : hasQuery
-              ? "Try removing a tag or rewording your search."
-              : typeCount > 0
-                ? "Try another type or a different tag."
-                : "Try a different tag."}
+              ? "Try removing a filter or rewording your search."
+              : "Try removing a filter."}
         </p>
       </div>
       <div className="flex flex-wrap justify-center gap-2">
@@ -55,13 +54,15 @@ export function NoMatches({
             Match any tag
           </Button>
         ) : null}
-        <Button
-          variant="outline"
-          onClick={onClearFilters}
-          className="h-10 px-4 pointer-coarse:h-11"
-        >
-          Clear filters
-        </Button>
+        {hasQuery || tagCount + filterCount > 0 ? (
+          <Button
+            variant="outline"
+            onClick={onClearFilters}
+            className="h-10 px-4 pointer-coarse:h-11"
+          >
+            Clear filters
+          </Button>
+        ) : null}
       </div>
     </div>
   );

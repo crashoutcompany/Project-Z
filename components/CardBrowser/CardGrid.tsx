@@ -1,31 +1,26 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState, useTransition } from "react";
-import { fetchCards } from "@/server/actions";
 import { CardItem } from "./CardItem";
 import { CardGridProps, CardWithSet } from "./types";
 import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 
 const ABOVE_FOLD_PRIORITY_COUNT = 6;
 
+/**
+ * The catalog's cards with infinite scroll. Which request a page repeats is up
+ * to `loadPage`; the parent remounts the grid (via `key`) for new results.
+ */
 export function CardGrid({
   initialCards,
   initialCursor,
-  setId,
-  searchQuery,
-  tradeableOnly,
-  rarities,
-  showDuplicates,
-  selectable,
-  selectedCards,
-  selectionMode,
-  density = "comfortable",
-  cardCounts,
-  onCardClick,
   loadPage,
   total,
+  selectable,
+  selectedCards,
+  cardCounts,
+  onCardClick,
   showCollection = false,
 }: CardGridProps) {
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
@@ -38,34 +33,11 @@ export function CardGrid({
     if (!cursor || isPending) return;
 
     startTransition(async () => {
-      if (loadPage) {
-        const page = await loadPage(cursor);
-        setCards((prev) => [...prev, ...page.cards]);
-        setCursor(page.nextOffset);
-        return;
-      }
-      const result = await fetchCards({
-        setId: searchQuery ? undefined : setId,
-        search: searchQuery || undefined,
-        cursor,
-        tradeableOnly,
-        ...(rarities?.length ? { rarities } : {}),
-        ...(showDuplicates ? { showDuplicates } : {}),
-      });
-
-      setCards((prev) => [...prev, ...(result.cards as CardWithSet[])]);
-      setCursor(result.nextCursor);
+      const page = await loadPage(cursor);
+      setCards((prev) => [...prev, ...page.cards]);
+      setCursor(page.nextOffset);
     });
-  }, [
-    cursor,
-    isPending,
-    loadPage,
-    setId,
-    searchQuery,
-    tradeableOnly,
-    rarities,
-    showDuplicates,
-  ]);
+  }, [cursor, isPending, loadPage]);
 
   useEffect(() => {
     if (observerRef.current) {
@@ -96,28 +68,12 @@ export function CardGrid({
     return "none";
   };
 
-  if (cards.length === 0 && !isPending) {
-    return (
-      <div className="flex flex-col items-center justify-center rounded-2xl border border-dashed py-16 text-center">
-        <p className="text-muted-foreground">
-          {searchQuery
-            ? `No cards found for "${searchQuery}"`
-            : "No cards found in this set"}
-        </p>
-      </div>
-    );
-  }
-
   return (
     <div className="space-y-4">
-      <div
-        className={cn(
-          "catalog-results grid gap-3",
-          density === "compact"
-            ? "grid-cols-2 sm:grid-cols-3 xl:grid-cols-4"
-            : "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6",
-        )}
-      >
+      {/* Columns follow the browser's own width (the @container/browser in
+          CardBrowserClient), so /dex and the builder's narrower catalog
+          column line up the same way: up to 6 across on wide screens. */}
+      <div className="catalog-results grid grid-cols-2 gap-3 @lg/browser:grid-cols-3 @2xl/browser:grid-cols-4 @3xl/browser:grid-cols-5 @5xl/browser:grid-cols-6">
         {cards.map((card, index) => (
           <CardItem
             key={card.id}
