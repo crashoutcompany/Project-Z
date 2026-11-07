@@ -43,7 +43,8 @@ const GATED_PAGES: InstantPage[] = [
   },
   {
     path: "/me",
-    heading: "Me Page",
+    heading: "My Collection",
+    deferred: "Overall Progress",
   },
 ];
 
