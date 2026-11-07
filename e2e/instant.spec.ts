@@ -19,6 +19,11 @@ const PUBLIC_PAGES: InstantPage[] = [
     path: "/signin",
     heading: "Sign in to your account",
   },
+  {
+    path: "/trading/t/not-a-real-listing",
+    heading: "Trade listing",
+    deferred: "This listing is no longer valid.",
+  },
 ];
 
 const GATED_PAGES: InstantPage[] = [
@@ -40,6 +45,11 @@ const GATED_PAGES: InstantPage[] = [
     path: "/trading/create",
     heading: "Create a Trade",
     deferred: "No card sets found.",
+  },
+  {
+    path: "/trading/create/confirm",
+    heading: "Confirm trade",
+    deferred: "A listing needs both sides.",
   },
   {
     path: "/me",

@@ -4,7 +4,7 @@ import { createAuthProxy } from "@/lib/auth/proxy";
 
 export default createAuthProxy({
   auth,
-  publicPaths: ["/", SIGN_IN_PATH],
+  publicPaths: ["/", SIGN_IN_PATH, "/trading/t/*"],
   rules: [{ path: "*", access: "session" }],
   signInPath: SIGN_IN_PATH,
 });
