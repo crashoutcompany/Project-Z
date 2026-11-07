@@ -70,7 +70,10 @@ export const CollectionToggle = memo(function CollectionToggle({
       >
         <Minus className="size-4" />
       </Button>
-      <span className="min-w-[2.5rem] text-center font-medium tabular-nums">
+      <span
+        data-testid="collection-quantity"
+        className="min-w-[2.5rem] text-center font-medium tabular-nums"
+      >
         {quantity}
       </span>
       <Button

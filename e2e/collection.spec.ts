@@ -1,112 +1,119 @@
-import { expect, test } from "@playwright/test";
+import { expect, test, type Page } from "@playwright/test";
 
 import { TESTER_AUTH_STATE } from "./auth-state";
-import { catalogCards } from "./catalog";
+import { catalogCards, catalogTiles } from "./catalog";
+
+const STORAGE_KEY = "pz-collection";
 
 test.use({ storageState: TESTER_AUTH_STATE });
 
-test.describe("collection tracking", () => {
-  test.beforeEach(async ({ page }) => {
-    // Clear localStorage before each test
-    await page.goto("/dex");
-    await page.evaluate(() => localStorage.clear());
-    await page.reload();
-  });
+test.beforeEach(async ({ page }) => {
+  await page.goto("/dex");
+  await page.evaluate(() => localStorage.clear());
+  await page.reload();
+  await expect(catalogCards(page).first()).toBeVisible();
+});
 
-  test("can mark a card as owned from the dex and see it on /me", async ({
-    page,
-  }) => {
-    // Wait for cards to load
-    await expect(catalogCards(page).first()).toBeVisible();
+function addBadge(page: Page) {
+  return catalogTiles(page)
+    .first()
+    .getByRole("button", { name: "Add to collection" });
+}
 
-    // Find and click the collection badge on the first card
-    const firstCard = catalogCards(page).first();
-    const collectionBadge = firstCard.locator(
-      'button[aria-label="Add to collection"]',
-    );
-    await expect(collectionBadge).toBeVisible();
-    await collectionBadge.click();
+function ownedBadge(page: Page) {
+  return catalogTiles(page)
+    .first()
+    .getByRole("button", { name: /^Owned: \d+/ });
+}
 
-    // Verify the badge changed to show owned state
-    const ownedBadge = firstCard.locator(
-      'button[aria-label*="Owned"][aria-label*="Click to remove"]',
-    );
-    await expect(ownedBadge).toBeVisible();
+async function collectedCount(page: Page) {
+  const text = await page.getByTestId("collection-overall").textContent();
+  return Number(text?.match(/([\d,]+) of/)?.[1].replace(/,/g, ""));
+}
 
-    // Navigate to /me and verify the card shows in the collection
-    await page.goto("/me");
-    await expect(page.getByText("Overall Progress")).toBeVisible();
+test("marking a card owned on the dex updates completion on /me", async ({
+  page,
+}) => {
+  await page.goto("/me");
+  await expect(page.getByTestId("collection-overall")).toContainText("0 of");
 
-    // Check that at least one card is now owned
-    await expect(page.getByText(/1\/\d+/)).toBeVisible();
-  });
+  await page.goto("/dex");
+  await addBadge(page).click();
+  await expect(ownedBadge(page)).toBeVisible();
+  // Tapping the badge marks the card; it does not open the detail sheet.
+  await expect(page.getByTestId("card-detail-sheet")).toHaveCount(0);
 
-  test("toggling collection persists across page reloads", async ({ page }) => {
-    await expect(catalogCards(page).first()).toBeVisible();
+  await page.goto("/me");
+  await expect.poll(() => collectedCount(page)).toBe(1);
+});
 
-    // Add card to collection
-    const firstCard = catalogCards(page).first();
-    const collectionBadge = firstCard.locator(
-      'button[aria-label="Add to collection"]',
-    );
-    await collectionBadge.click();
+test("the collection persists across reloads and can be cleared per card", async ({
+  page,
+}) => {
+  await addBadge(page).click();
+  await expect(ownedBadge(page)).toBeVisible();
 
-    // Verify owned
-    await expect(
-      firstCard.locator('button[aria-label*="Owned"]'),
-    ).toBeVisible();
+  await page.reload();
+  await expect(ownedBadge(page)).toBeVisible();
 
-    // Reload page
-    await page.reload();
-    await expect(catalogCards(page).first()).toBeVisible();
+  await ownedBadge(page).click();
+  await expect(addBadge(page)).toBeVisible();
+  expect(
+    await page.evaluate((key) => localStorage.getItem(key), STORAGE_KEY),
+  ).toBe("{}");
+});
 
-    // Verify still owned after reload
-    await expect(
-      firstCard.locator('button[aria-label*="Owned"]'),
-    ).toBeVisible();
-  });
+test("the detail sheet stepper sets the owned quantity", async ({ page }) => {
+  await catalogCards(page).first().click();
+  const sheet = page.getByTestId("card-detail-sheet");
+  await expect(sheet).toBeVisible();
+  await expect(
+    sheet.getByRole("heading", { name: "Collection", exact: true }),
+  ).toBeVisible();
 
-  test("can remove card from collection", async ({ page }) => {
-    await expect(catalogCards(page).first()).toBeVisible();
+  const increase = sheet.getByRole("button", { name: "Increase quantity" });
+  await increase.click();
+  await increase.click();
+  await expect(sheet.getByTestId("collection-quantity")).toHaveText("2");
 
-    // Add card to collection
-    const firstCard = catalogCards(page).first();
-    await firstCard.locator('button[aria-label="Add to collection"]').click();
+  await page.keyboard.press("Escape");
+  await expect(ownedBadge(page)).toHaveAccessibleName(/^Owned: 2/);
+});
 
-    // Verify owned
-    const ownedBadge = firstCard.locator('button[aria-label*="Owned"]');
-    await expect(ownedBadge).toBeVisible();
+test("corrupted or unknown stored data falls back safely", async ({ page }) => {
+  await page.evaluate(
+    (key) => localStorage.setItem(key, "{not json"),
+    STORAGE_KEY,
+  );
+  await page.goto("/me");
+  await expect(page.getByTestId("collection-overall")).toContainText("0 of");
 
-    // Click to remove
-    await ownedBadge.click();
+  // Ids not in the catalog and out-of-range quantities are ignored.
+  await page.evaluate(
+    (key) =>
+      localStorage.setItem(
+        key,
+        JSON.stringify({ 999999999: 1, "-1": 3, abc: 2 }),
+      ),
+    STORAGE_KEY,
+  );
+  await page.reload();
+  await expect(page.getByTestId("collection-overall")).toContainText("0 of");
+});
 
-    // Verify no longer owned
-    await expect(
-      firstCard.locator('button[aria-label="Add to collection"]'),
-    ).toBeVisible();
-  });
+test("/me lists missing cards and filters them by rarity", async ({ page }) => {
+  await page.goto("/me");
+  const firstSet = page.getByTestId("collection-set").first();
+  await expect(firstSet).toBeVisible();
 
-  test("card detail sheet shows collection controls", async ({ page }) => {
-    await expect(catalogCards(page).first()).toBeVisible();
+  await firstSet.getByRole("button", { name: /^Missing/ }).click();
+  const missing = firstSet.getByTestId("missing-card");
+  await expect(missing.first()).toBeVisible();
+  const all = await missing.count();
 
-    // Click card to open detail sheet
-    await catalogCards(page).first().click();
-    const sheet = page.getByTestId("card-detail-sheet");
-    await expect(sheet).toBeVisible();
-
-    // Verify collection section exists
-    await expect(sheet.getByText("Collection")).toBeVisible();
-    await expect(sheet.getByText("owned")).toBeVisible();
-  });
-
-  test("/me shows completion stats per set", async ({ page }) => {
-    await page.goto("/me");
-
-    // Verify the page structure
-    await expect(page.getByText("My Collection")).toBeVisible();
-    await expect(page.getByText("Overall Progress")).toBeVisible();
-
-    // Verify at least one set card is shown (sets exist in the database)
-    await expect(page.locator("[class*=rounded-2xl]").first()).toBeVisible();
-  });
+  const rarityButtons = firstSet.getByTestId("missing-rarity-filter");
+  if ((await rarityButtons.count()) > 0) {
+    await rarityButtons.first().click();
+    await expect.poll(() => missing.count()).toBeLessThan(all);
+  }
 });

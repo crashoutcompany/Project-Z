@@ -1,11 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useSyncExternalStore } from "react";
+import { useCallback, useSyncExternalStore } from "react";
 import {
   Collection,
   COLLECTION_STORAGE_KEY,
   EMPTY_COLLECTION,
-  getCollection,
+  parseCollection,
   setCardQuantity,
   toggleCardOwned,
   adjustCardQuantity,
@@ -14,19 +14,49 @@ import {
 type Listener = () => void;
 const listeners = new Set<Listener>();
 
-function subscribe(listener: Listener): () => void {
-  listeners.add(listener);
-  return () => listeners.delete(listener);
-}
-
 function emitChange(): void {
   for (const listener of listeners) {
     listener();
   }
 }
 
+function onStorage(e: StorageEvent) {
+  if (e.key === COLLECTION_STORAGE_KEY || e.key === null) emitChange();
+}
+
+// One window listener for every subscriber, so a grid of badges adds one
+// `storage` handler instead of one per card.
+function subscribe(listener: Listener): () => void {
+  if (listeners.size === 0) window.addEventListener("storage", onStorage);
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+    if (listeners.size === 0) {
+      window.removeEventListener("storage", onStorage);
+    }
+  };
+}
+
+// useSyncExternalStore needs the same object back until the store changes,
+// otherwise it re-renders forever; key the parsed value on the raw string.
+let cachedRaw: string | null = null;
+let cachedSnapshot: Collection = EMPTY_COLLECTION;
+
+function readRaw(): string | null {
+  try {
+    return localStorage.getItem(COLLECTION_STORAGE_KEY);
+  } catch {
+    return null;
+  }
+}
+
 function getSnapshot(): Collection {
-  return getCollection();
+  const raw = readRaw();
+  if (raw !== cachedRaw) {
+    cachedRaw = raw;
+    cachedSnapshot = parseCollection(raw);
+  }
+  return cachedSnapshot;
 }
 
 function getServerSnapshot(): Collection {
@@ -34,8 +64,8 @@ function getServerSnapshot(): Collection {
 }
 
 /**
- * React hook that provides reactive access to the card collection.
- * Handles SSR hydration and cross-tab synchronization.
+ * Reactive access to the browser-only card collection. The server and the
+ * hydration pass see an empty collection; stored data appears after hydration.
  */
 export function useCollection() {
   const collection = useSyncExternalStore(
@@ -43,16 +73,6 @@ export function useCollection() {
     getSnapshot,
     getServerSnapshot,
   );
-
-  useEffect(() => {
-    function handleStorage(e: StorageEvent) {
-      if (e.key === COLLECTION_STORAGE_KEY) {
-        emitChange();
-      }
-    }
-    window.addEventListener("storage", handleStorage);
-    return () => window.removeEventListener("storage", handleStorage);
-  }, []);
 
   const toggle = useCallback((cardId: number) => {
     toggleCardOwned(cardId);
@@ -70,16 +90,12 @@ export function useCollection() {
   }, []);
 
   const getQuantity = useCallback(
-    (cardId: number): number => {
-      return collection[cardId] ?? 0;
-    },
+    (cardId: number): number => collection[cardId] ?? 0,
     [collection],
   );
 
   const isOwned = useCallback(
-    (cardId: number): boolean => {
-      return (collection[cardId] ?? 0) > 0;
-    },
+    (cardId: number): boolean => (collection[cardId] ?? 0) > 0,
     [collection],
   );
 
@@ -91,17 +107,4 @@ export function useCollection() {
     getQuantity,
     isOwned,
   };
-}
-
-/**
- * Returns the quantity for a specific card, reactive to changes.
- * Lighter-weight than full useCollection when you only need one card.
- */
-export function useCardQuantity(cardId: number): number {
-  const collection = useSyncExternalStore(
-    subscribe,
-    getSnapshot,
-    getServerSnapshot,
-  );
-  return collection[cardId] ?? 0;
 }

@@ -116,18 +116,14 @@ export const CardItem = memo(function CardItem({
       ) : null}
       {count > 0 ? <CountBadge count={count} /> : null}
       <RarityBadge rarity={card.rarity} />
-      {showCollection ? <CollectionBadge cardId={card.id} /> : null}
     </>
   );
 
-  if (!interactive) {
-    return <div className={className}>{media}</div>;
-  }
-
-  return (
+  const tile = interactive ? (
     <button
       type="button"
       onClick={onClick}
+      data-catalog-card=""
       data-card-ref={formatCardRef(card.set.code, card.number)}
       aria-label={selectable ? card.name : `View ${card.name} details`}
       aria-haspopup={selectable ? undefined : "dialog"}
@@ -135,5 +131,20 @@ export const CardItem = memo(function CardItem({
     >
       {media}
     </button>
+  ) : (
+    <div data-catalog-card="" className={className}>
+      {media}
+    </div>
+  );
+
+  if (!showCollection) return tile;
+
+  // The badge is its own button, so it sits beside the card button: a button
+  // nested in a button is invalid HTML and breaks hydration.
+  return (
+    <div className="relative">
+      {tile}
+      <CollectionBadge cardId={card.id} />
+    </div>
   );
 });

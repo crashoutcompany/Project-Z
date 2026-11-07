@@ -19,7 +19,6 @@ type CollectionStatsProps = {
 export function CollectionStats({ sets }: CollectionStatsProps) {
   const { collection } = useCollection();
   const [showMissing, setShowMissing] = useState<number | null>(null);
-  const [rarityFilter, setRarityFilter] = useState<string | null>(null);
 
   const stats = useMemo(() => {
     return sets.map((set) => ({
@@ -51,8 +50,6 @@ export function CollectionStats({ sets }: CollectionStatsProps) {
             onToggle={() =>
               setShowMissing(showMissing === set.id ? null : set.id)
             }
-            rarityFilter={rarityFilter}
-            onRarityFilter={setRarityFilter}
             collection={collection}
           />
         ))}
@@ -85,7 +82,10 @@ function OverallProgress({
         <span className="text-2xl font-bold tabular-nums">{percent}%</span>
       </div>
       <Progress value={percent} className="mt-3 h-3" />
-      <p className="text-muted-foreground mt-2 text-sm">
+      <p
+        data-testid="collection-overall"
+        className="text-muted-foreground mt-2 text-sm"
+      >
         {owned.toLocaleString()} of {total.toLocaleString()} cards collected
       </p>
     </div>
@@ -97,18 +97,15 @@ function SetCard({
   completion,
   isExpanded,
   onToggle,
-  rarityFilter,
-  onRarityFilter,
   collection,
 }: {
   set: SetWithCards;
   completion: CompletionStats;
   isExpanded: boolean;
   onToggle: () => void;
-  rarityFilter: string | null;
-  onRarityFilter: (rarity: string | null) => void;
   collection: Record<number, number>;
 }) {
+  const [rarityFilter, onRarityFilter] = useState<string | null>(null);
   const missingCards = useMemo(() => {
     return set.cards.filter((card) => !collection[card.id]);
   }, [set.cards, collection]);
@@ -124,7 +121,10 @@ function SetCard({
   }, [missingCards]);
 
   return (
-    <div className="bg-card ring-foreground/10 rounded-2xl shadow-xs ring-1">
+    <div
+      data-testid="collection-set"
+      className="bg-card ring-foreground/10 rounded-2xl shadow-xs ring-1"
+    >
       <div className="p-4">
         <div className="flex items-center justify-between gap-4">
           <div className="min-w-0 flex-1">
@@ -146,6 +146,7 @@ function SetCard({
               href={`/dex?set=${set.code.toLowerCase()}`}
               className="text-muted-foreground hover:text-foreground"
               title="View in Dex"
+              aria-label={`View ${set.setName} in the Dex`}
             >
               <ExternalLink className="size-4" />
             </Link>
@@ -189,6 +190,7 @@ function SetCard({
                 <Button
                   key={rarity}
                   type="button"
+                  data-testid="missing-rarity-filter"
                   variant={rarityFilter === rarity ? "secondary" : "outline"}
                   size="sm"
                   onClick={() => onRarityFilter(rarity)}
@@ -212,6 +214,7 @@ function SetCard({
               {filteredMissing.map((card) => (
                 <li
                   key={card.id}
+                  data-testid="missing-card"
                   className="bg-muted/50 flex items-center gap-2 rounded-lg px-3 py-2 text-sm"
                 >
                   <RaritySymbol
