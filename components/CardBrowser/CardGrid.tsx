@@ -21,6 +21,7 @@ export function CardGrid({
   selectedCards,
   cardCounts,
   onCardClick,
+  showCollection = false,
 }: CardGridProps) {
   const [cards, setCards] = useState<CardWithSet[]>(initialCards);
   const [cursor, setCursor] = useState<number | null>(initialCursor);
@@ -82,6 +83,7 @@ export function CardGrid({
             count={cardCounts?.[card.id]}
             priority={index < ABOVE_FOLD_PRIORITY_COUNT}
             onClick={onCardClick ? () => onCardClick(card) : undefined}
+            showCollection={showCollection}
           />
         ))}
       </div>

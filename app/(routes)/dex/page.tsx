@@ -33,6 +33,7 @@ async function DexCatalog({
       initialSetCode={set}
       initialCardRef={card}
       syncDexUrl
+      showCollection
     />
   );
 }
