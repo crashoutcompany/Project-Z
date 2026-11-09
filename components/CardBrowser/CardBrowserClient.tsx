@@ -694,8 +694,11 @@ export function CardBrowserClient({
                   currentState.query.trim() ||
                   describeSearch(currentState, sets).detail
                 }
+                // Saving is a deliberate run, so it counts as recent at once.
                 onSave={(name) =>
-                  updateHistory((h) => saveSearch(h, name, currentState))
+                  updateHistory((h) =>
+                    addRecent(saveSearch(h, name, currentState), currentState),
+                  )
                 }
               />
             ) : null
