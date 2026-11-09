@@ -634,6 +634,42 @@ describe("executeSearch", () => {
     expect(result.cards.map((c) => c.id)).toEqual([3, 4]);
   });
 
+  it("applies UI-picked setIds to FTS fallback rows", async () => {
+    findMany.mockResolvedValue([]);
+    const ftsRow = (id: number, setId: number, setCode: string) => ({
+      id,
+      setId,
+      name: `Mon ${id}`,
+      imageUrl: `/img/${id}.webp`,
+      setCode,
+      number: id,
+      cardType: "POKEMON",
+      trainerType: null,
+      energyType: "grass",
+      secondaryEnergyType: null,
+      stage: "BASIC",
+      hp: 70,
+      rarity: "C",
+      isEx: false,
+      isTradeable: true,
+    });
+    queryRaw.mockResolvedValue([
+      ftsRow(1, 1, "A1"),
+      ftsRow(2, 2, "A1a"),
+      ftsRow(3, 1, "A1"),
+      ftsRow(4, 3, "A2"),
+    ]);
+
+    const result = await executeSearch(
+      { surface: "any", textFallback: "mon" },
+      { setIds: [1], limit: 10 },
+    );
+    expect(result.usedFallback).toBe(true);
+    expect(result.total).toBe(2);
+    expect(result.cards.map((c) => c.id)).toEqual([1, 3]);
+    expect(result.cards.map((c) => c.setCode)).toEqual(["A1", "A1"]);
+  });
+
   it("uses FTS fallback when the structured query is empty", async () => {
     findMany.mockResolvedValue([]);
     queryRaw.mockResolvedValue([
