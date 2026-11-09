@@ -8,6 +8,7 @@ import { CardItemProps } from "./types";
 import { Check } from "lucide-react";
 import { getRarityInfo } from "@/lib/rarity";
 import { RaritySymbol } from "./RarityFilter";
+import { CollectionBadge } from "./CollectionToggle";
 
 type SelectionState = CardItemProps["selectionState"];
 type ActiveSelection = Exclude<SelectionState, "none">;
@@ -91,6 +92,7 @@ export const CardItem = memo(function CardItem({
   count = 0,
   priority = false,
   onClick,
+  showCollection = false,
 }: CardItemProps) {
   const interactive = Boolean(onClick);
   const className = cardClassName({ interactive, selectionState, count });
@@ -117,14 +119,11 @@ export const CardItem = memo(function CardItem({
     </>
   );
 
-  if (!interactive) {
-    return <div className={className}>{media}</div>;
-  }
-
-  return (
+  const tile = interactive ? (
     <button
       type="button"
       onClick={onClick}
+      data-catalog-card=""
       data-card-ref={formatCardRef(card.set.code, card.number)}
       aria-label={selectable ? card.name : `View ${card.name} details`}
       aria-haspopup={selectable ? undefined : "dialog"}
@@ -132,5 +131,20 @@ export const CardItem = memo(function CardItem({
     >
       {media}
     </button>
+  ) : (
+    <div data-catalog-card="" className={className}>
+      {media}
+    </div>
+  );
+
+  if (!showCollection) return tile;
+
+  // The badge is its own button, so it sits beside the card button: a button
+  // nested in a button is invalid HTML and breaks hydration.
+  return (
+    <div className="relative">
+      {tile}
+      <CollectionBadge cardId={card.id} />
+    </div>
   );
 });
