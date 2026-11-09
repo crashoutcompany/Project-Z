@@ -6,9 +6,14 @@ import { toSearchCardResult } from "@/components/CardBrowser/card-mappers";
 import type { CardWithSet } from "@/components/CardBrowser/types";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 import LazyImage from "@/components/LazyImage";
 import { Check, Copy, Trash2, X } from "lucide-react";
 import { type DeckCard, refOf, useBuilderDeck } from "./use-builder-state";
+import {
+  type DeckOwnershipState,
+  useDeckOwnership,
+} from "./use-deck-ownership";
 
 const DECK_SIZE = 20;
 
@@ -26,6 +31,7 @@ export function BuilderClient({
   initialTotal: number;
 }) {
   const deck = useBuilderDeck();
+  const ownership = useDeckOwnership(deck.visibleDeck);
   const cardCounts = Object.fromEntries(
     deck.visibleDeck.map((card) => [card.id, card.count]),
   );
@@ -60,6 +66,7 @@ export function BuilderClient({
         loadError={deck.loadError}
         validation={deck.validation}
         grouped={deck.grouped}
+        ownership={ownership}
         onRemove={deck.removeOne}
         onClear={deck.clearDeck}
         onCopyLink={deck.copyLink}
@@ -75,6 +82,7 @@ function DeckTray({
   loadError,
   validation,
   grouped,
+  ownership,
   onRemove,
   onClear,
   onCopyLink,
@@ -85,6 +93,7 @@ function DeckTray({
   loadError: string | null;
   validation: { valid: boolean; totalCards: number; errors: string[] };
   grouped: { pokemon: DeckCard[]; trainers: DeckCard[] };
+  ownership: DeckOwnershipState;
   onRemove: (card: DeckCard) => void;
   onClear: () => void;
   onCopyLink: () => void;
@@ -169,29 +178,53 @@ function DeckTray({
         ) : null}
 
         <div className="grid grid-cols-5 gap-1.5">
-          {slots.map((card) => (
-            <button
-              key={card.slotId}
-              type="button"
-              onClick={() => onRemove(card)}
-              title={`Remove one ${card.name}`}
-              aria-label={`Remove one ${card.name}`}
-              className="catalog-slot ring-foreground/10 relative overflow-hidden rounded-md ring-1 transition-transform duration-150 ease-out active:scale-[0.97] motion-reduce:active:scale-100"
-            >
-              <LazyImage
-                title={card.name}
-                alt={card.name}
-                src={card.imageUrl}
-                width={72}
-                height={100}
-                className="h-auto w-full select-none"
-                draggable={false}
-              />
-              <span className="bg-background/90 ring-foreground/10 absolute top-0.5 right-0.5 flex h-4 w-4 items-center justify-center rounded-full ring-1">
-                <X className="h-2.5 w-2.5" />
-              </span>
-            </button>
-          ))}
+          {slots.map((card) => {
+            // Slot marks only once there is a collection to compare against,
+            // so people who don't track one never see a greyed-out deck.
+            const owned =
+              ownership.status === "ready"
+                ? card.copy <=
+                  (ownership.ownership.byCardId[card.id]?.owned ?? 0)
+                : null;
+            return (
+              <button
+                key={card.slotId}
+                type="button"
+                onClick={() => onRemove(card)}
+                title={`Remove one ${card.name}`}
+                aria-label={`Remove one ${card.name}${
+                  owned === null ? "" : owned ? " (owned)" : " (missing)"
+                }`}
+                data-testid="deck-slot"
+                data-owned={owned === null ? undefined : owned}
+                className="catalog-slot ring-foreground/10 relative overflow-hidden rounded-md ring-1 transition-transform duration-150 ease-out active:scale-[0.97] motion-reduce:active:scale-100"
+              >
+                <LazyImage
+                  title={card.name}
+                  alt={card.name}
+                  src={card.imageUrl}
+                  width={72}
+                  height={100}
+                  className={cn(
+                    "h-auto w-full transition-[filter,opacity] duration-200 select-none motion-reduce:transition-none",
+                    owned === false && "opacity-45 grayscale",
+                  )}
+                  draggable={false}
+                />
+                <span className="bg-background/90 ring-foreground/10 absolute top-0.5 right-0.5 flex h-4 w-4 items-center justify-center rounded-full ring-1">
+                  <X className="h-2.5 w-2.5" />
+                </span>
+                {owned ? (
+                  <span
+                    aria-hidden
+                    className="absolute bottom-0.5 left-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-emerald-500 text-white"
+                  >
+                    <Check className="h-2.5 w-2.5" />
+                  </span>
+                ) : null}
+              </button>
+            );
+          })}
           {Array.from({ length: emptyCount }, (_, i) => (
             <div
               key={`empty-${i}`}
@@ -209,18 +242,108 @@ function DeckTray({
             {pokemonCount} Pokémon · {trainerCount} Trainers
           </p>
         )}
+
+        {visibleDeck.length > 0 ? (
+          <MissingCards deck={visibleDeck} ownership={ownership} />
+        ) : null}
       </section>
     </aside>
   );
 }
 
-type DeckSlot = DeckCard & { slotId: string };
+function MissingCards({
+  deck,
+  ownership,
+}: {
+  deck: DeckCard[];
+  ownership: DeckOwnershipState;
+}) {
+  const ready = ownership.status === "ready" ? ownership : null;
+  const missing = ready
+    ? deck.flatMap((card) => {
+        const counts = ready.ownership.byCardId[card.id];
+        return counts && counts.owned < counts.needed
+          ? [{ card, ...counts }]
+          : [];
+      })
+    : [];
+
+  return (
+    <div
+      className="border-foreground/10 space-y-2 border-t pt-3"
+      data-testid="deck-missing-cards"
+    >
+      <div className="flex items-baseline justify-between gap-2">
+        <h3 className="text-sm font-semibold">Missing cards</h3>
+        {ready ? (
+          <span
+            className="text-muted-foreground text-xs tabular-nums"
+            data-testid="deck-owned-total"
+          >
+            {ready.ownership.owned} of {ready.ownership.needed} owned
+          </span>
+        ) : null}
+      </div>
+
+      {ownership.status === "loading" ? (
+        <p className="text-muted-foreground text-xs">
+          Checking your collection…
+        </p>
+      ) : ownership.status === "empty" ? (
+        <p className="text-muted-foreground text-xs">
+          Your collection is empty. Mark cards you own in the{" "}
+          <Link href="/dex" className="text-foreground underline">
+            Dex
+          </Link>{" "}
+          to see what this deck is missing.
+        </p>
+      ) : missing.length === 0 ? (
+        <p className="text-xs text-green-600 dark:text-green-400">
+          You own every card in this deck.
+        </p>
+      ) : (
+        <ul className="space-y-1">
+          {missing.map(({ card, owned, needed }) => (
+            <li
+              key={refOf(card)}
+              data-testid="deck-missing-card"
+              className="bg-muted/50 flex items-center gap-2 rounded-lg px-2 py-1.5 text-sm"
+            >
+              <LazyImage
+                alt=""
+                src={card.imageUrl}
+                width={24}
+                height={33}
+                className="h-auto w-6 shrink-0 rounded-sm select-none"
+                draggable={false}
+              />
+              <span className="min-w-0 flex-1 truncate" title={card.name}>
+                {card.name}
+              </span>
+              <span className="text-muted-foreground shrink-0 text-xs tabular-nums">
+                {owned} of {needed} owned
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
+
+      {ready?.exactOnly ? (
+        <p className="text-muted-foreground text-xs">
+          Couldn&apos;t check alt arts, so only exact prints are counted.
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
+type DeckSlot = DeckCard & { slotId: string; copy: number };
 
 function flattenDeck(deck: DeckCard[]): DeckSlot[] {
   const slots: DeckSlot[] = [];
   for (const card of deck) {
     for (let copy = 1; copy <= card.count; copy++) {
-      slots.push({ ...card, slotId: `${refOf(card)}#${copy}` });
+      slots.push({ ...card, slotId: `${refOf(card)}#${copy}`, copy });
     }
   }
   return slots;

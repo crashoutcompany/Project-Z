@@ -80,3 +80,29 @@ export function dedupePrints<T extends PrintKeyCard>(cards: T[]): T[] {
   const keep = new Set([...best.values()].map((c) => c.id));
   return cards.filter((c) => keep.has(c.id));
 }
+
+/**
+ * For each target card, the IDs of every candidate that is a print of it
+ * (always including the target itself). Candidates should hold every card
+ * sharing a target's name; the deck view uses this so an owned alt art counts
+ * as owning the deck's print.
+ */
+export function printGroups(
+  targets: PrintKeyCard[],
+  candidates: PrintKeyCard[],
+): Record<number, number[]> {
+  const idsByKey = new Map<string, Set<number>>();
+  for (const card of [...targets, ...candidates]) {
+    const key = printKey(card);
+    const ids = idsByKey.get(key) ?? new Set<number>();
+    ids.add(card.id);
+    idsByKey.set(key, ids);
+  }
+  const groups: Record<number, number[]> = {};
+  for (const target of targets) {
+    groups[target.id] = [...idsByKey.get(printKey(target))!].sort(
+      (a, b) => a - b,
+    );
+  }
+  return groups;
+}
