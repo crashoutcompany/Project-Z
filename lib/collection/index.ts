@@ -191,14 +191,17 @@ export function computeCompletion(
 
 /**
  * Formats collection progress for display. Whole-number rounding hides small
- * collections (2 of 2,000 cards reads as 0%), so this keeps one decimal place,
- * floors instead of rounding so only a full collection reads 100%, and shows
- * "<0.1%" rather than "0%" once anything is owned.
+ * collections (2 of 4,547 cards reads as 0%), so values under 1% get two
+ * decimals (each card still moves the number) and the rest get one. It floors
+ * instead of rounding so only a full collection reads 100%, and shows
+ * "<0.01%" rather than "0%" once anything is owned.
  */
 export function formatPercent(owned: number, total: number): string {
   if (total <= 0 || owned <= 0) return "0%";
   if (owned >= total) return "100%";
-  const tenths = Math.floor((owned * 1000) / total);
-  if (tenths === 0) return "<0.1%";
-  return `${tenths / 10}%`;
+  if (owned * 100 < total) {
+    const hundredths = Math.floor((owned * 10000) / total);
+    return hundredths === 0 ? "<0.01%" : `${hundredths / 100}%`;
+  }
+  return `${Math.floor((owned * 1000) / total) / 10}%`;
 }

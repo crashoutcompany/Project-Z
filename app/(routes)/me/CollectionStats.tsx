@@ -210,7 +210,7 @@ function SetCard({
                 : "All cards collected!"}
             </p>
           ) : (
-            <ul className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+            <ul className="grid grid-cols-1 gap-2 sm:grid-cols-3 md:grid-cols-4">
               {filteredMissing.map((card) => (
                 <li
                   key={card.id}
