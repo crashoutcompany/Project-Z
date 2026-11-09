@@ -3,21 +3,25 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useCollection } from "@/lib/collection/use-collection";
-import { computeCompletion, type CompletionStats } from "@/lib/collection";
+import {
+  computeCompletion,
+  formatPercent,
+  type CompletionStats,
+} from "@/lib/collection";
 import { getRarityInfo, RARITY_CODES } from "@/lib/rarity";
 import { RaritySymbol } from "@/components/CardBrowser/RarityFilter";
 import type { SetWithCards } from "@/server/actions";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { cn } from "@/lib/utils";
-import { ChevronDown, ChevronUp, ExternalLink } from "lucide-react";
+import { ChevronDown, ChevronUp, ExternalLink, Plus } from "lucide-react";
 
 type CollectionStatsProps = {
   sets: SetWithCards[];
 };
 
 export function CollectionStats({ sets }: CollectionStatsProps) {
-  const { collection } = useCollection();
+  const { collection, adjust } = useCollection();
   const [showMissing, setShowMissing] = useState<number | null>(null);
 
   const stats = useMemo(() => {
@@ -29,16 +33,10 @@ export function CollectionStats({ sets }: CollectionStatsProps) {
 
   const totalOwned = stats.reduce((sum, s) => sum + s.completion.owned, 0);
   const totalCards = stats.reduce((sum, s) => sum + s.completion.total, 0);
-  const totalPercent =
-    totalCards > 0 ? Math.round((totalOwned / totalCards) * 100) : 0;
 
   return (
     <div className="space-y-6">
-      <OverallProgress
-        owned={totalOwned}
-        total={totalCards}
-        percent={totalPercent}
-      />
+      <OverallProgress owned={totalOwned} total={totalCards} />
 
       <div className="space-y-4">
         {stats.map(({ set, completion }) => (
@@ -51,6 +49,7 @@ export function CollectionStats({ sets }: CollectionStatsProps) {
               setShowMissing(showMissing === set.id ? null : set.id)
             }
             collection={collection}
+            onAdd={(cardId) => adjust(cardId, 1)}
           />
         ))}
       </div>
@@ -66,22 +65,19 @@ export function CollectionStats({ sets }: CollectionStatsProps) {
   );
 }
 
-function OverallProgress({
-  owned,
-  total,
-  percent,
-}: {
-  owned: number;
-  total: number;
-  percent: number;
-}) {
+function OverallProgress({ owned, total }: { owned: number; total: number }) {
   return (
     <div className="bg-card ring-foreground/10 rounded-2xl p-6 shadow-xs ring-1">
       <div className="flex items-baseline justify-between">
         <h2 className="text-lg font-semibold">Overall Progress</h2>
-        <span className="text-2xl font-bold tabular-nums">{percent}%</span>
+        <span
+          data-testid="collection-overall-percent"
+          className="text-2xl font-bold tabular-nums"
+        >
+          {formatPercent(owned, total)}
+        </span>
       </div>
-      <Progress value={percent} className="mt-3 h-3" />
+      <ProgressBar value={owned} max={total} className="mt-3 h-4" />
       <p
         data-testid="collection-overall"
         className="text-muted-foreground mt-2 text-sm"
@@ -98,12 +94,14 @@ function SetCard({
   isExpanded,
   onToggle,
   collection,
+  onAdd,
 }: {
   set: SetWithCards;
   completion: CompletionStats;
   isExpanded: boolean;
   onToggle: () => void;
   collection: Record<number, number>;
+  onAdd: (cardId: number) => void;
 }) {
   const [rarityFilter, onRarityFilter] = useState<string | null>(null);
   const missingCards = useMemo(() => {
@@ -128,14 +126,16 @@ function SetCard({
       <div className="p-4">
         <div className="flex items-center justify-between gap-4">
           <div className="min-w-0 flex-1">
-            <div className="flex items-center gap-2">
-              <h3 className="truncate font-semibold">{set.setName}</h3>
-              <span className="text-muted-foreground text-sm">
-                ({set.code})
-              </span>
-            </div>
-            <div className="mt-1 flex items-center gap-3">
-              <Progress value={completion.percent} className="h-2 flex-1" />
+            <h3 className="leading-tight font-semibold break-words">
+              {set.setName}
+            </h3>
+            <p className="text-muted-foreground text-xs">{set.code}</p>
+            <div className="mt-2 flex items-center gap-3">
+              <ProgressBar
+                value={completion.owned}
+                max={completion.total}
+                className="h-3 flex-1"
+              />
               <span className="text-sm font-medium tabular-nums">
                 {completion.owned}/{completion.total}
               </span>
@@ -221,9 +221,18 @@ function SetCard({
                     rarity={card.rarity}
                     className="shrink-0 [&_svg]:size-3"
                   />
-                  <span className="truncate" title={card.name}>
+                  <span className="min-w-0 flex-1 truncate" title={card.name}>
                     #{card.number} {card.name}
                   </span>
+                  <button
+                    type="button"
+                    data-testid="missing-card-add"
+                    onClick={() => onAdd(card.id)}
+                    aria-label={`Add ${card.name} to collection`}
+                    className="bg-background ring-foreground/10 flex size-7 shrink-0 items-center justify-center rounded-full ring-1 transition-colors hover:bg-emerald-500 hover:text-white"
+                  >
+                    <Plus className="size-4" />
+                  </button>
                 </li>
               ))}
             </ul>
@@ -231,6 +240,26 @@ function SetCard({
         </div>
       ) : null}
     </div>
+  );
+}
+
+/** Accent-colored progress bar; emerald matches the owned state in the Dex. */
+function ProgressBar({
+  value,
+  max,
+  className,
+}: {
+  value: number;
+  max: number;
+  className?: string;
+}) {
+  return (
+    <Progress
+      value={value}
+      max={Math.max(max, 1)}
+      className={className}
+      indicatorClassName="bg-emerald-500 dark:bg-emerald-400"
+    />
   );
 }
 

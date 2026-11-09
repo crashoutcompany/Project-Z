@@ -117,3 +117,27 @@ test("/me lists missing cards and filters them by rarity", async ({ page }) => {
     await expect.poll(() => missing.count()).toBeLessThan(all);
   }
 });
+
+test("the + on a missing card adds it to the collection", async ({ page }) => {
+  await page.goto("/me");
+  const overall = page.getByTestId("collection-overall");
+  await expect(overall).toContainText("0 of");
+  await expect(page.getByTestId("collection-overall-percent")).toHaveText("0%");
+
+  const firstSet = page.getByTestId("collection-set").first();
+  await firstSet.getByRole("button", { name: /^Missing/ }).click();
+  const missing = firstSet.getByTestId("missing-card");
+  const before = await missing.count();
+
+  await missing.first().getByTestId("missing-card-add").click();
+
+  await expect.poll(() => collectedCount(page)).toBe(1);
+  await expect(missing).toHaveCount(before - 1);
+  // One card no longer reads as 0%.
+  await expect(page.getByTestId("collection-overall-percent")).not.toHaveText(
+    "0%",
+  );
+  expect(
+    await page.evaluate((key) => localStorage.getItem(key), STORAGE_KEY),
+  ).toMatch(/^\{"\d+":1\}$/);
+});
