@@ -2,6 +2,11 @@ import { expect, type Page } from "@playwright/test";
 
 /** Cards in the shared CardBrowser grid (dex, builder, trade create). */
 export function catalogCards(page: Page) {
+  return page.locator(".catalog-results [data-catalog-card]");
+}
+
+/** Grid cells: a card plus any controls beside it, e.g. the dex collection badge. */
+export function catalogTiles(page: Page) {
   return page.locator(".catalog-results > *");
 }
 
