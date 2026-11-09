@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Card, Set } from "@/prisma/generated/client/client";
 import type { TagMode } from "@/lib/search/filter-tags";
 
@@ -80,6 +81,11 @@ export type SearchBoxProps = {
   onModeChange: (mode: SearchMode) => void;
   placeholder?: string;
   showModes?: boolean;
+  /**
+   * Shown below the input while it is focused; null for none. Clicking a
+   * `[data-history-item]` inside closes it.
+   */
+  dropdown?: ReactNode;
 };
 
 export type TagFilterProps = {
@@ -130,4 +136,6 @@ export type ActiveFiltersProps = {
   onRemoveParsed: (tag: string) => void;
   onClearAll: () => void;
   disabled?: boolean;
+  /** Shown at the end of the row, outside the scrolling pills (Save search). */
+  action?: ReactNode;
 };

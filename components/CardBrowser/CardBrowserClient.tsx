@@ -18,6 +18,10 @@ import { setFilterLabel } from "./SetFilter";
 import { typeLabel } from "./type-info";
 import { ActiveFilters } from "./ActiveFilters";
 import { NoMatches } from "./NoMatches";
+import { SaveSearchButton } from "./SaveSearchButton";
+import { SearchHistoryPanel } from "./SearchHistoryPanel";
+import { describeSearch } from "./describe-search";
+import { useSearchHistory } from "./use-search-history";
 import { CardDetailSheet } from "./CardDetailSheet";
 import { SelectionModeToggle } from "./SelectionModeToggle";
 import { useCardDetail } from "./use-card-detail";
@@ -32,6 +36,15 @@ import {
 import type { CardDetail } from "@/lib/card-detail";
 import type { FilterJSON, SearchCardResult } from "@/lib/search";
 import { filterTags } from "@/lib/search/filter-tags";
+import {
+  addRecent,
+  clearRecents,
+  deleteSaved,
+  renameSaved,
+  saveSearch,
+  SearchStateSchema,
+  type SearchState,
+} from "@/lib/search-history";
 
 const PAGE_SIZE = 60;
 
@@ -52,6 +65,8 @@ type EffectsState = {
   tagMode: TagMode;
   /** Parsed tags the user dismissed. */
   exclude: string[];
+  /** What `query` parsed to, from a restored search; the API skips parsing. */
+  filter?: FilterJSON;
 };
 
 /** Everything that decides what the browser shows. Each tab keeps its query. */
@@ -80,6 +95,8 @@ type Results = {
   parsedTags: string[];
   /** Other parsed constraints, shown read-only. */
   notes: string[];
+  /** What the effects query parsed to, kept with recent and saved searches. */
+  filter: FilterJSON | null;
   error: string | null;
   /** Bumped per result set so the grid remounts with fresh paging. */
   epoch: number;
@@ -112,7 +129,7 @@ function catalogParams(view: View, tradeableOnly: boolean) {
 }
 
 function postEffectsSearch(view: View, tradeableOnly: boolean, offset: number) {
-  const { query, tags, tagMode, exclude } = view.effects;
+  const { query, tags, tagMode, exclude, filter } = view.effects;
   return fetch("/api/search", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -123,6 +140,7 @@ function postEffectsSearch(view: View, tradeableOnly: boolean, offset: number) {
       ...(offset ? { offset } : {}),
       ...(tags.length ? { tags, tagMode } : {}),
       ...(query && exclude.length ? { excludeTags: exclude } : {}),
+      ...(query && filter ? { filter } : {}),
       ...filterParams(view.filters),
     }),
   });
@@ -166,6 +184,67 @@ const EMPTY_EFFECTS: EffectsState = {
   tagMode: "all",
   exclude: [],
 };
+
+/** The view as a storable search, or null if it can't be stored. */
+function toSearchState(
+  view: View,
+  filter?: FilterJSON | null,
+): SearchState | null {
+  const effects = view.mode === "effects";
+  const query = effects ? view.effects.query : view.nameQuery;
+  const parsed = SearchStateSchema.safeParse({
+    mode: view.mode,
+    query,
+    ...view.filters,
+    tags: effects ? view.effects.tags : [],
+    tagMode: effects ? view.effects.tagMode : "all",
+    exclude: effects && query ? view.effects.exclude : [],
+    ...(effects && query && filter ? { filter } : {}),
+  });
+  return parsed.success ? parsed.data : null;
+}
+
+/** A stored search as a view; sets that no longer exist are dropped. */
+function toView(state: SearchState, sets: Set[]): View {
+  const effects = state.mode === "effects";
+  return {
+    mode: state.mode,
+    nameQuery: effects ? "" : state.query,
+    effects: effects
+      ? {
+          query: state.query,
+          tags: state.tags,
+          tagMode: state.tagMode,
+          exclude: state.exclude,
+          ...(state.filter ? { filter: state.filter } : {}),
+        }
+      : EMPTY_EFFECTS,
+    filters: {
+      setIds: state.setIds.filter((id) => sets.some((s) => s.id === id)),
+      types: state.types,
+      rarities: state.rarities,
+      showDuplicates: state.showDuplicates,
+    },
+  };
+}
+
+/** Whether a state is worth remembering: more than the browser's opening view. */
+function isSearch(state: SearchState, initialSetIds: number[]): boolean {
+  const setsChanged =
+    state.setIds.length > 0 &&
+    (state.setIds.length !== initialSetIds.length ||
+      state.setIds.some((id) => !initialSetIds.includes(id)));
+  return (
+    Boolean(state.query.trim()) ||
+    state.tags.length + state.types.length + state.rarities.length > 0 ||
+    state.showDuplicates ||
+    setsChanged
+  );
+}
+
+// A search counts as recent once its results have stayed up this long, so
+// each debounced keystroke doesn't become its own entry.
+const RECENT_SETTLE_MS = 1500;
 
 /** Parsed constraints other than tags, shown read-only beside the tag pills. */
 function filterToNotes(filter: FilterJSON): string[] {
@@ -321,6 +400,7 @@ export function CardBrowserClient({
     view,
     parsedTags: [],
     notes: [],
+    filter: null,
     error: null,
     epoch: 0,
   });
@@ -348,6 +428,7 @@ export function CardBrowserClient({
             total: 0,
             parsedTags: [],
             notes: [],
+            filter: null,
             error: null,
             ...fields,
             view: next,
@@ -386,6 +467,7 @@ export function CardBrowserClient({
                 )
               : [],
             notes: data.filter ? filterToNotes(data.filter) : [],
+            filter: data.filter ?? null,
           });
         } catch {
           if (seq !== requestSeq.current) return;
@@ -436,14 +518,14 @@ export function CardBrowserClient({
   const handleSearchChange = (query: string) => {
     if (view.mode === "name") update({ ...view, nameQuery: query });
     // A new query brings back every tag it parses to.
-    else setEffects({ query, exclude: [] });
+    else setEffects({ query, exclude: [], filter: undefined });
   };
 
   const handleRemoveParsedTag = (tag: string) => {
     // Dismissing the query's last constraint leaves nothing to search for,
     // so drop the query instead of listing every card.
     if (results.parsedTags.length === 1 && results.notes.length === 0) {
-      setEffects({ query: "", exclude: [] });
+      setEffects({ query: "", exclude: [], filter: undefined });
     } else {
       setEffects({ exclude: [...view.effects.exclude, tag] });
     }
@@ -459,6 +541,39 @@ export function CardBrowserClient({
           : { ...view.effects, tags: [], exclude: [] },
       filters: { setIds: [], types: [], rarities: [], showDuplicates: false },
     });
+
+  const { history, update: updateHistory } = useSearchHistory();
+
+  // Remember a search once its results settle.
+  useEffect(() => {
+    if (isPending || results.error) return;
+    const state = toSearchState(results.view, results.filter);
+    if (!state || !isSearch(state, initialSetIds)) return;
+    const timer = setTimeout(
+      () => updateHistory((h) => addRecent(h, state)),
+      RECENT_SETTLE_MS,
+    );
+    return () => clearTimeout(timer);
+  }, [results, isPending, initialSetIds, updateHistory]);
+
+  // Without mode tabs, a search from the other tab couldn't be shown.
+  const shownHistory = useMemo(
+    () =>
+      showSearchModes
+        ? history
+        : {
+            recents: history.recents.filter((r) => r.state.mode === view.mode),
+            saved: history.saved.filter((s) => s.state.mode === view.mode),
+          },
+    [history, showSearchModes, view.mode],
+  );
+
+  const currentState = toSearchState(
+    view,
+    results.view === view ? results.filter : null,
+  );
+  const canSave =
+    currentState !== null && isSearch(currentState, initialSetIds);
 
   const { openCard } = detail;
   const { toggleCard } = selection;
@@ -513,6 +628,20 @@ export function CardBrowserClient({
           mode={view.mode}
           onModeChange={(next) => update({ ...view, mode: next })}
           showModes={showSearchModes}
+          dropdown={
+            shownHistory.recents.length + shownHistory.saved.length ? (
+              <SearchHistoryPanel
+                history={shownHistory}
+                sets={sets}
+                onRun={(state) => update(toView(state, sets))}
+                onRename={(id, name) =>
+                  updateHistory((h) => renameSaved(h, id, name))
+                }
+                onDelete={(id) => updateHistory((h) => deleteSaved(h, id))}
+                onClearRecents={() => updateHistory(clearRecents)}
+              />
+            ) : null
+          }
         />
         <FilterBar
           mode={view.mode}
@@ -558,6 +687,19 @@ export function CardBrowserClient({
           }
           onRemoveParsed={handleRemoveParsedTag}
           onClearAll={handleClearAll}
+          action={
+            canSave && currentState ? (
+              <SaveSearchButton
+                suggestedName={
+                  currentState.query.trim() ||
+                  describeSearch(currentState, sets).detail
+                }
+                onSave={(name) =>
+                  updateHistory((h) => saveSearch(h, name, currentState))
+                }
+              />
+            ) : null
+          }
         />
       </div>
 
