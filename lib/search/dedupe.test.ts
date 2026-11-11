@@ -1,5 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { dedupePrints, printKey, type PrintKeyCard } from "./dedupe";
+import {
+  dedupePrints,
+  printGroups,
+  printKey,
+  type PrintKeyCard,
+} from "./dedupe";
 
 function card(
   id: number,
@@ -176,5 +181,31 @@ describe("dedupePrints", () => {
       }),
     ];
     expect(dedupePrints(cards).map((c) => c.id)).toEqual([2]);
+  });
+});
+
+describe("printGroups", () => {
+  it("groups alt arts with the deck print by name and attacks", () => {
+    const regular = card(10, "Pikachu ex", "RR");
+    const altArt = card(90, "Pikachu ex", "SAR");
+    const otherAttack = card(30, "Pikachu ex", "RR", {
+      attacks: [
+        {
+          position: 0,
+          name: "Thunderbolt",
+          damageRaw: "150",
+          energyTypes: ["lightning"],
+          effectText: "",
+        },
+      ],
+    });
+    expect(printGroups([regular], [regular, altArt, otherAttack])).toEqual({
+      10: [10, 90],
+    });
+  });
+
+  it("always includes the target itself", () => {
+    const lone = card(5, "Misty", "U", { attacks: [] });
+    expect(printGroups([lone], [])).toEqual({ 5: [5] });
   });
 });
