@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -20,7 +20,9 @@ export function SearchBox({
   onModeChange,
   placeholder,
   showModes = true,
+  dropdown: dropdownContent,
 }: SearchBoxProps) {
+  const wrapperRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const onChangeRef = useRef(onChange);
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -28,6 +30,8 @@ export function SearchBox({
   const [seenMode, setSeenMode] = useState(mode);
   const [seenValue, setSeenValue] = useState(value);
   const [roomy, setRoomy] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownId = useId();
 
   useEffect(() => {
     onChangeRef.current = onChange;
@@ -62,13 +66,25 @@ export function SearchBox({
       clearTimeout(debounceTimerRef.current);
       debounceTimerRef.current = null;
     }
+    setDropdownOpen(false);
     // Each tab keeps its own query: the parent hands back the new tab's.
     onModeChange(next);
+  };
+
+  const closeDropdown = () => {
+    if (debounceTimerRef.current) {
+      clearTimeout(debounceTimerRef.current);
+      debounceTimerRef.current = null;
+    }
+    setLocalValue(value);
+    setDropdownOpen(false);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const next = e.target.value;
     setLocalValue(next);
+    // Typing is a new search: get the history out of the way.
+    setDropdownOpen(false);
     if (debounceTimerRef.current) clearTimeout(debounceTimerRef.current);
     debounceTimerRef.current = setTimeout(() => {
       onChangeRef.current(next);
@@ -89,8 +105,55 @@ export function SearchBox({
         ? "Search by effect (e.g. coin flip, bench damage)..."
         : "Search by effect...");
 
+  const dropdown = dropdownOpen ? dropdownContent : null;
+
+  /** Arrow keys walk the dropdown's entries, starting from the input. */
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === "Escape" && dropdown) {
+      e.preventDefault();
+      setDropdownOpen(false);
+      inputRef.current?.focus();
+      return;
+    }
+    if (e.key !== "ArrowDown" && e.key !== "ArrowUp") return;
+    const items = Array.from(
+      wrapperRef.current?.querySelectorAll<HTMLElement>(
+        "[data-history-item]",
+      ) ?? [],
+    );
+    if (!items.length) return;
+    e.preventDefault();
+    const at = items.indexOf(document.activeElement as HTMLElement);
+    if (e.key === "ArrowUp" && at <= 0) {
+      inputRef.current?.focus();
+      return;
+    }
+    const next =
+      e.key === "ArrowDown" ? Math.min(at + 1, items.length - 1) : at - 1;
+    items[next]?.focus();
+  };
+
   return (
-    <div className="w-full">
+    <div
+      ref={wrapperRef}
+      className="relative w-full"
+      onKeyDown={handleKeyDown}
+      onBlur={(e) => {
+        if (e.relatedTarget) {
+          if (!wrapperRef.current?.contains(e.relatedTarget)) {
+            setDropdownOpen(false);
+          }
+          return;
+        }
+        // No new target: focus left the page, or a focused entry was removed
+        // and the dropdown is about to focus another. Check once it settles.
+        requestAnimationFrame(() => {
+          if (!wrapperRef.current?.contains(document.activeElement)) {
+            setDropdownOpen(false);
+          }
+        });
+      }}
+    >
       <div className="bg-card/80 ring-foreground/10 flex items-center gap-2 rounded-xl p-1 shadow-xs ring-1 backdrop-blur-sm">
         {showModes ? (
           <div className="bg-muted flex shrink-0 rounded-lg p-0.5">
@@ -133,6 +196,10 @@ export function SearchBox({
             placeholder={resolvedPlaceholder}
             value={localValue}
             onChange={handleChange}
+            onFocus={() => setDropdownOpen(true)}
+            onClick={() => setDropdownOpen(true)}
+            aria-expanded={dropdownContent ? Boolean(dropdown) : undefined}
+            aria-controls={dropdown ? dropdownId : undefined}
             className={cn(
               "h-10 border-0 bg-transparent pl-8 shadow-none focus-visible:ring-0 dark:bg-transparent pointer-coarse:h-11",
               // Room for the clear button only while there is text to clear.
@@ -155,6 +222,31 @@ export function SearchBox({
           ) : null}
         </div>
       </div>
+      {dropdown ? (
+        <div
+          id={dropdownId}
+          role="region"
+          aria-label="Recent and saved searches"
+          data-testid="search-history"
+          // Keep focus in the input while clicking entries (Safari doesn't
+          // focus buttons on click), except in the rename field.
+          // Running an entry closes the dropdown.
+          onClick={(e) => {
+            if (
+              e.target instanceof Element &&
+              e.target.closest("[data-history-item]")
+            ) {
+              closeDropdown();
+            }
+          }}
+          onMouseDown={(e) => {
+            if (!(e.target instanceof HTMLInputElement)) e.preventDefault();
+          }}
+          className="bg-popover text-popover-foreground ring-foreground/10 animate-in fade-in-0 slide-in-from-top-1 absolute inset-x-0 top-full z-40 mt-2 max-h-[min(24rem,60vh)] overflow-y-auto rounded-xl shadow-lg ring-1 duration-100 motion-reduce:animate-none"
+        >
+          {dropdown}
+        </div>
+      ) : null}
     </div>
   );
 }

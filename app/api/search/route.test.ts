@@ -359,4 +359,36 @@ describe("POST /api/search", () => {
     expect(notArray.status).toBe(400);
     expect(executeSearch).not.toHaveBeenCalled();
   });
+
+  it("reruns a restored filter without parsing the query", async () => {
+    validateQuery.mockReturnValue({ ok: true, normalized: "coin flip" });
+    executeSearch.mockResolvedValue({
+      cards: [],
+      usedFallback: false,
+      total: 0,
+    });
+    const filter = {
+      surface: "attack",
+      attack: { tags: ["coin_flip", "gust"] },
+    };
+    const res = await POST(
+      request({ query: "coin flip", filter, excludeTags: ["gust"] }),
+    );
+    expect(res.status).toBe(200);
+    expect(parseQueryToFilter).not.toHaveBeenCalled();
+    expect(executeSearch).toHaveBeenCalledWith(
+      { surface: "attack", attack: { tags: ["coin_flip"] } },
+      { limit: 60, tradeableOnly: false },
+    );
+    await expect(res.json()).resolves.toMatchObject({ source: "client" });
+  });
+
+  it("rejects a malformed filter", async () => {
+    validateQuery.mockReturnValue({ ok: true, normalized: "coin flip" });
+    const res = await POST(
+      request({ query: "coin flip", filter: { surface: "everywhere" } }),
+    );
+    expect(res.status).toBe(400);
+    expect(executeSearch).not.toHaveBeenCalled();
+  });
 });
