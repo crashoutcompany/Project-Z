@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { executeSearch, parseQueryToFilter, validateQuery } from "@/lib/search";
 import { isRarityCode } from "@/lib/rarity";
 import { clientKeyFromRequest, rateLimit } from "@/lib/rate-limit";
+import { FilterJSONSchema, type FilterJSON } from "@/lib/search/filter-schema";
 import { withoutTags } from "@/lib/search/filter-tags";
 import { ENERGY_TYPES, isTag } from "@/lib/search/tags";
 
@@ -85,6 +86,20 @@ function readSetIds(
   return { ok: true, setIds: [...new Set(raw as number[])] };
 }
 
+/**
+ * What a restored recent or saved search parsed to, so it reruns without
+ * parsing (and an LLM call) and returns the same cards.
+ */
+function readFilter(
+  body: Record<string, unknown>,
+): { ok: true; filter: FilterJSON | null } | { ok: false; error: string } {
+  if (body.filter === undefined) return { ok: true, filter: null };
+  const parsed = FilterJSONSchema.safeParse(body.filter);
+  return parsed.success
+    ? { ok: true, filter: parsed.data }
+    : { ok: false, error: "filter is not a valid FilterJSON" };
+}
+
 export async function POST(request: Request) {
   const rl = rateLimit(clientKeyFromRequest(request), RATE_LIMIT);
   if (!rl.ok) {
@@ -150,6 +165,10 @@ export async function POST(request: Request) {
   }
   const { setIds } = setIdsResult;
   const showDuplicates = readBool(payload, "showDuplicates");
+  const filterResult = readFilter(payload);
+  if (!filterResult.ok) {
+    return NextResponse.json({ error: filterResult.error }, { status: 400 });
+  }
 
   const query = typeof payload.query === "string" ? payload.query : null;
   // A tag-, type-, rarity- or set-only search (picked in the UI, nothing typed)
@@ -181,9 +200,11 @@ export async function POST(request: Request) {
   const tradeableOnly = readBool(payload, "tradeableOnly");
 
   try {
-    const parsed = validated
-      ? await parseQueryToFilter(validated.normalized)
-      : { filter: { surface: "any" as const }, cached: false, source: "tags" };
+    const parsed = !validated
+      ? { filter: { surface: "any" as const }, cached: false, source: "tags" }
+      : filterResult.filter
+        ? { filter: filterResult.filter, cached: true, source: "client" }
+        : await parseQueryToFilter(validated.normalized);
     const filter = withoutTags(parsed.filter, excludeTags);
     const result = await executeSearch(filter, {
       limit,
