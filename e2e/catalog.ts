@@ -19,6 +19,21 @@ export async function catalogCardNames(page: Page) {
   );
 }
 
+/**
+ * Scrolls to the bottom until the grid holds `count` cards. Infinite scroll
+ * swaps the "Load more" button for a spinner (and drops it once everything is
+ * loaded), so targeting the button races with its own re-render; the bottom of
+ * the page is always there.
+ */
+export async function scrollToLoadCards(page: Page, count: number) {
+  await expect(async () => {
+    await page.evaluate(() =>
+      window.scrollTo(0, document.scrollingElement?.scrollHeight ?? 0),
+    );
+    await expect(catalogCards(page)).toHaveCount(count, { timeout: 1_000 });
+  }).toPass();
+}
+
 /** The results line above the grid, e.g. "All sets · 1,204 cards". */
 export function resultSummary(page: Page) {
   return page.getByTestId("result-summary");

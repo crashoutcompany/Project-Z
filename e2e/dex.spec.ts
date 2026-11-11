@@ -25,6 +25,8 @@ function cardRefs(page: Page) {
 async function pickSecondSet(page: Page) {
   await page.getByRole("combobox", { name: "Filter by set" }).click();
   const options = page.getByRole("option");
+  // The popover mounts after the click; count only once the list is there.
+  await expect(options.first()).toBeVisible();
   const option = options.nth((await options.count()) - 2);
   const code = (await option.locator("span").first().textContent())!.trim();
   const name = (await option.locator("span").last().textContent())!.trim();
@@ -164,10 +166,16 @@ test("the search and filter bar stays on screen while scrolling", async ({
 }) => {
   await catalogCardNames(page);
   const toolbar = page.getByTestId("search-toolbar");
-  await page.mouse.wheel(0, 1500);
-  await expect
-    .poll(() => page.evaluate(() => window.scrollY))
-    .toBeGreaterThan(500);
+  // The first page is short and the grid keeps growing as images lay out and
+  // infinite scroll appends cards, so one wheel gets clamped to whatever
+  // height exists at that moment. Keep scrolling to the bottom, which also
+  // loads more cards, until we are well past the toolbar's resting place.
+  await expect(async () => {
+    await page.evaluate(() =>
+      window.scrollTo(0, document.scrollingElement?.scrollHeight ?? 0),
+    );
+    expect(await page.evaluate(() => window.scrollY)).toBeGreaterThan(500);
+  }).toPass();
   await expect(toolbar).toHaveAttribute("data-stuck", "true");
   const box = await toolbar.boundingBox();
   // Pinned just under the 64px navbar.

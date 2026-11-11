@@ -1,7 +1,12 @@
 import { expect, test, type Page } from "@playwright/test";
 
 import { TESTER_AUTH_STATE } from "./auth-state";
-import { catalogCardNames, catalogCards, openFilters } from "./catalog";
+import {
+  catalogCardNames,
+  catalogCards,
+  openFilters,
+  scrollToLoadCards,
+} from "./catalog";
 import { TAG_INFO } from "../lib/search/tags";
 
 test.use({ storageState: TESTER_AUTH_STATE });
@@ -73,8 +78,7 @@ test("a tag search shows every match and loads past the first page", async ({
   await expect(page.getByText(/Filtering by 1 tag · 75 cards/)).toBeVisible();
   await expect(catalogCards(page)).toHaveCount(60);
 
-  await page.getByText(/Load more|Loading more/).scrollIntoViewIfNeeded();
-  await expect(catalogCards(page)).toHaveCount(75);
+  await scrollToLoadCards(page, 75);
   await expect(page.getByText("All 75 cards loaded")).toBeVisible();
   // Wait for both requests to be captured before asserting.
   await expect.poll(() => offsets).toEqual([0, 60]);
