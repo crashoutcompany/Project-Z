@@ -5,6 +5,7 @@ import {
   parseCollection,
   validateCollection,
   computeCompletion,
+  formatPercent,
 } from "./index";
 
 describe("parseCollection", () => {
@@ -160,5 +161,47 @@ describe("computeCompletion", () => {
     const collection = { 1: 99 };
     const stats = computeCompletion(collection, cards);
     expect(stats.owned).toBe(1);
+  });
+});
+
+describe("formatPercent", () => {
+  it("shows 0% when nothing is owned", () => {
+    expect(formatPercent(0, 286)).toBe("0%");
+  });
+
+  it("shows 0% for an empty catalog", () => {
+    expect(formatPercent(0, 0)).toBe("0%");
+    expect(formatPercent(3, 0)).toBe("0%");
+  });
+
+  it("uses two decimals under 1% so a single card moves the value", () => {
+    expect(formatPercent(1, 4547)).toBe("0.02%");
+    expect(formatPercent(2, 4547)).toBe("0.04%");
+    expect(formatPercent(3, 4547)).toBe("0.06%");
+    expect(formatPercent(1, 286)).toBe("0.34%");
+  });
+
+  it("shows <0.01% instead of 0% for a nonzero value under 0.01%", () => {
+    expect(formatPercent(1, 50000)).toBe("<0.01%");
+  });
+
+  it("uses one decimal from 1% up", () => {
+    expect(formatPercent(5, 286)).toBe("1.7%");
+    expect(formatPercent(2, 200)).toBe("1%");
+    expect(formatPercent(100, 4547)).toBe("2.1%");
+  });
+
+  it("drops a trailing .0 on whole percentages", () => {
+    expect(formatPercent(1, 5)).toBe("20%");
+    expect(formatPercent(3, 5)).toBe("60%");
+  });
+
+  it("floors so an almost-complete collection never reads 100%", () => {
+    expect(formatPercent(1999, 2000)).toBe("99.9%");
+    expect(formatPercent(2999, 3000)).toBe("99.9%");
+  });
+
+  it("shows 100% only when complete", () => {
+    expect(formatPercent(286, 286)).toBe("100%");
   });
 });

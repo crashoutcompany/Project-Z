@@ -1,7 +1,12 @@
 import { expect, test, type Page } from "@playwright/test";
 
 import { TESTER_AUTH_STATE } from "./auth-state";
-import { catalogCardNames, catalogCards, pickRarities } from "./catalog";
+import {
+  catalogCardNames,
+  catalogCards,
+  pickRarities,
+  scrollToLoadCards,
+} from "./catalog";
 import { TAG_INFO } from "../lib/search/tags";
 
 test.use({ storageState: TESTER_AUTH_STATE });
@@ -114,8 +119,7 @@ test("effects search sends rarity and duplicate choices with tags, types and pag
 
   // Load more repeats the same request with an offset.
   await expect(catalogCards(page)).toHaveCount(60);
-  await page.getByText(/Load more|Loading more/).scrollIntoViewIfNeeded();
-  await expect(catalogCards(page)).toHaveCount(70);
+  await scrollToLoadCards(page, 70);
   await expect
     .poll(() => bodies.at(-1))
     .toMatchObject({
