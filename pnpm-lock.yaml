@@ -132,6 +132,9 @@ importers:
       '@vitest/coverage-v8':
         specifier: 5.0.1
         version: 5.0.1(vitest@5.0.1)
+      dotenv:
+        specifier: ^17.4.2
+        version: 17.4.2
       eslint:
         specifier: ^9.39.5
         version: 9.39.5(jiti@2.7.0)
