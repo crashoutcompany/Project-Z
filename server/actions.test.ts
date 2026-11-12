@@ -18,6 +18,8 @@ const {
   redirect: vi.fn(),
 }));
 
+vi.mock("next/cache", () => ({ cacheLife: vi.fn(), cacheTag: vi.fn() }));
+
 vi.mock("@/prisma/db", () => ({
   default: {
     card: { findMany, count, findUnique, findFirst },

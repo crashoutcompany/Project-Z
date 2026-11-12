@@ -3,6 +3,8 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 const setFindMany = vi.fn();
 const cardFindMany = vi.fn();
 
+vi.mock("next/cache", () => ({ cacheLife: vi.fn(), cacheTag: vi.fn() }));
+
 vi.mock("@/prisma/db", () => ({
   default: {
     set: { findMany: setFindMany },

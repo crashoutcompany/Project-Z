@@ -14,21 +14,6 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 /**
- * Creates a promise that resolves after a specified delay.
- *
- * @param ms - The delay in milliseconds
- * @returns A promise that resolves after the specified delay
- */
-export const sleep = (ms: number): Promise<void> => {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-};
-
-export const domain =
-  process.env.NODE_ENV === "production"
-    ? "https://pockettrading.vercel.app"
-    : "http://localhost:3000";
-
-/**
  * Creates a debounced version of a function that delays its execution until after a specified time has elapsed
  * since the last time it was called.
  *

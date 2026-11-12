@@ -23,7 +23,9 @@ export function onRequestError(
   console.log(
     "ERROR OCCURRED",
     error.message,
+    `digest=${error.digest}`,
     request.method,
+    request.path,
     context.routePath,
     context.routeType,
   );

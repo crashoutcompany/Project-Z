@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["scripts/**/*.ts", "prisma/**/*.ts"],
+  "exclude": ["node_modules", "prisma/generated", "**/*.test.ts"]
+}

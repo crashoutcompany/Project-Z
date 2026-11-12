@@ -80,6 +80,23 @@ describe("resolveAuthEnvironment", () => {
 });
 
 describe("createAuth", () => {
+  it("trusts the preview origin wildcard everywhere except production", () => {
+    const origins = (env: Record<string, string>) =>
+      createAuth({
+        appName: "Pocket Trading",
+        database: memoryAdapter({}),
+        env: { BETTER_AUTH_SECRET: SECRET, ...env },
+        productionUrl: ORIGIN,
+        previewOrigin: "https://*-preview.vercel.app",
+      }).options.trustedOrigins;
+
+    expect(origins({ VERCEL_ENV: "production" })).toEqual([ORIGIN]);
+    expect(origins({ VERCEL_ENV: "preview" })).toContain(
+      "https://*-preview.vercel.app",
+    );
+    expect(origins({})).toContain("https://*-preview.vercel.app");
+  });
+
   it("registers the email OTP plugins only when email OTP is configured", () => {
     const build = (env: Record<string, string>) =>
       createAuth({
