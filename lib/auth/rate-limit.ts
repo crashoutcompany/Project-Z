@@ -106,6 +106,8 @@ const LOCKOUT_KEY_PREFIXES = [
   "otp-send-email:",
   "otp-sign-in:",
   "otp-sign-in-email:",
+  // App API limiter (lib/rate-limit.ts).
+  "api-rl:",
 ] as const;
 
 /**

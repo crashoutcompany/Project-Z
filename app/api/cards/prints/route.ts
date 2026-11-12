@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { getSession } from "@/lib/auth";
 import prisma from "@/prisma/db";
 import {
   PRINT_KEY_ATTACK_SELECT,
@@ -22,6 +23,11 @@ const PRINT_SELECT = {
  * The collection itself never leaves the browser; only deck card IDs come in.
  */
 export async function POST(request: Request) {
+  // The proxy skips /api, so the route checks the session itself.
+  if (!(await getSession(request.headers))) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   let body: unknown;
   try {
     body = await request.json();

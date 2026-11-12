@@ -30,6 +30,20 @@ async function llmParse(normalized: string): Promise<FilterJSON> {
   return object;
 }
 
+const CACHE_MAX_AGE_MS = 90 * 24 * 60 * 60 * 1000;
+// Pruning rides on LLM-miss writes (the only path that grows the table), so no
+// cron is needed: roughly one miss in 50 deletes rows unused for 90 days.
+const CACHE_PRUNE_PROBABILITY = 0.02;
+
+async function pruneStaleCache(): Promise<void> {
+  if (Math.random() >= CACHE_PRUNE_PROBABILITY) return;
+  await prisma.searchQueryCache
+    .deleteMany({
+      where: { lastUsedAt: { lt: new Date(Date.now() - CACHE_MAX_AGE_MS) } },
+    })
+    .catch((error) => console.error("[search-cache:prune]", error));
+}
+
 export async function parseQueryToFilter(
   normalized: string,
 ): Promise<ParseResult> {
@@ -90,6 +104,7 @@ export async function parseQueryToFilter(
         },
       })
       .catch((error) => console.error("[search-cache:upsert]", error));
+    await pruneStaleCache();
   }
 
   return { filter, cached: false, source };

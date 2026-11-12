@@ -1,59 +1,47 @@
 /**
- * Minimal in-memory fixed-window rate limiter.
+ * Fixed-window rate limiter for API routes that fan out to paid upstreams
+ * (e.g. the LLM behind /api/search).
  *
- * Scope: best-effort abuse guard for public endpoints that fan out to paid
- * upstreams (e.g. the LLM behind /api/search). State lives in the function
- * instance, so limits are per-instance rather than global. Fluid Compute reuses
- * instances across requests, which makes this meaningfully effective, but it
- * is not a substitute for a shared store if strict global limits are needed.
+ * Backed by the same store as the auth limiter: Upstash Redis when
+ * UPSTASH_REDIS_REST_* (or KV_REST_API_*) is set, so limits are global across
+ * instances, and in-memory otherwise (local, CI), or whenever Redis errors.
  */
-
-type Bucket = { count: number; resetAt: number };
-
-const buckets = new Map<string, Bucket>();
-const MAX_TRACKED_KEYS = 10_000;
+import {
+  createAuthRateLimitStore,
+  rateLimitPrefixFromAppName,
+  type RateLimitStore,
+} from "@/lib/auth/rate-limit";
+import { APP_NAME } from "@/lib/auth/config";
 
 export type RateLimitResult = {
   ok: boolean;
-  remaining: number;
   /** Seconds until the window resets. */
   retryAfterSec: number;
 };
 
-export function rateLimit(
-  key: string,
-  opts: { limit: number; windowMs: number },
-  now = Date.now(),
-): RateLimitResult {
-  let bucket = buckets.get(key);
+let store: RateLimitStore | undefined;
 
-  if (!bucket || bucket.resetAt <= now) {
-    if (!bucket && buckets.size >= MAX_TRACKED_KEYS) pruneExpired(now);
-    bucket = { count: 0, resetAt: now + opts.windowMs };
-    buckets.set(key, bucket);
-  }
-
-  bucket.count += 1;
-  const remaining = Math.max(0, opts.limit - bucket.count);
-  return {
-    ok: bucket.count <= opts.limit,
-    remaining,
-    retryAfterSec: Math.max(1, Math.ceil((bucket.resetAt - now) / 1000)),
-  };
+function getStore(): RateLimitStore {
+  return (store ??= createAuthRateLimitStore({
+    env: process.env,
+    appSlug: rateLimitPrefixFromAppName(APP_NAME),
+    // Only used to hash storage keys, so a missing secret (local, CI) is fine.
+    secret: process.env.BETTER_AUTH_SECRET?.trim() || "local-rate-limit",
+  }));
 }
 
-function pruneExpired(now: number) {
-  for (const [key, bucket] of buckets) {
-    if (bucket.resetAt <= now) buckets.delete(key);
-  }
-  // Still full of live keys: drop the oldest entries rather than grow unbounded.
-  if (buckets.size >= MAX_TRACKED_KEYS) {
-    let toDrop = Math.ceil(MAX_TRACKED_KEYS / 10);
-    for (const key of buckets.keys()) {
-      if (toDrop-- <= 0) break;
-      buckets.delete(key);
-    }
-  }
+export async function rateLimit(
+  key: string,
+  opts: { limit: number; windowMs: number },
+): Promise<RateLimitResult> {
+  const decision = await getStore().consume(`api-rl:${key}`, {
+    max: opts.limit,
+    window: Math.max(1, Math.ceil(opts.windowMs / 1000)),
+  });
+  return {
+    ok: decision.allowed,
+    retryAfterSec: decision.retryAfter ?? 0,
+  };
 }
 
 /** Best-effort client identifier from proxy headers. */

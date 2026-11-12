@@ -1,5 +1,11 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
+const getSession = vi.fn();
+
+vi.mock("@/lib/auth", () => ({
+  getSession: (...args: unknown[]) => getSession(...args),
+}));
+
 const findMany = vi.fn();
 
 vi.mock("@/prisma/db", () => ({
@@ -31,6 +37,15 @@ function card(id: number, name: string, rarity: string) {
 describe("POST /api/cards/prints", () => {
   beforeEach(() => {
     findMany.mockReset();
+    getSession.mockReset();
+    getSession.mockResolvedValue({ user: { id: "u1" } });
+  });
+
+  it("returns 401 without a session and queries nothing", async () => {
+    getSession.mockResolvedValue(null);
+    const res = await POST(request({ ids: [1] }));
+    expect(res.status).toBe(401);
+    expect(findMany).not.toHaveBeenCalled();
   });
 
   it("rejects bad bodies", async () => {

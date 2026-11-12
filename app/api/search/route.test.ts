@@ -1,12 +1,17 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
+const getSession = vi.fn();
+
+vi.mock("@/lib/auth", () => ({
+  getSession: (...args: unknown[]) => getSession(...args),
+}));
+
 const rateLimit = vi.fn();
 const parseQueryToFilter = vi.fn();
 const executeSearch = vi.fn();
 const validateQuery = vi.fn();
 
 vi.mock("@/lib/rate-limit", () => ({
-  clientKeyFromRequest: () => "test-ip",
   rateLimit: (...args: unknown[]) => rateLimit(...args),
 }));
 
@@ -28,15 +33,26 @@ function request(body: unknown, json = true) {
 
 describe("POST /api/search", () => {
   beforeEach(() => {
+    getSession.mockReset();
+    getSession.mockResolvedValue({ user: { id: "u1" } });
     rateLimit.mockReset();
     parseQueryToFilter.mockReset();
     executeSearch.mockReset();
     validateQuery.mockReset();
-    rateLimit.mockReturnValue({ ok: true, remaining: 10, retryAfterSec: 60 });
+    rateLimit.mockResolvedValue({ ok: true, retryAfterSec: 60 });
+  });
+
+  it("returns 401 without a session and does no work", async () => {
+    getSession.mockResolvedValue(null);
+    const res = await POST(request({ query: "fire" }));
+    expect(res.status).toBe(401);
+    expect(rateLimit).not.toHaveBeenCalled();
+    expect(parseQueryToFilter).not.toHaveBeenCalled();
+    expect(executeSearch).not.toHaveBeenCalled();
   });
 
   it("returns 429 when the rate limit is exceeded", async () => {
-    rateLimit.mockReturnValue({ ok: false, remaining: 0, retryAfterSec: 12 });
+    rateLimit.mockResolvedValue({ ok: false, retryAfterSec: 12 });
     const res = await POST(request({ query: "fire" }));
     expect(res.status).toBe(429);
     expect(res.headers.get("Retry-After")).toBe("12");

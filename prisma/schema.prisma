@@ -30,6 +30,8 @@ model Session {
   userAgent String?
   userId    String
   user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
 }
 
 model Account {
@@ -47,6 +49,8 @@ model Account {
   password              String?
   createdAt             DateTime  @default(now())
   updatedAt             DateTime  @updatedAt
+
+  @@index([userId])
 }
 
 model Verification {
@@ -56,6 +60,8 @@ model Verification {
   expiresAt  DateTime
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
+
+  @@index([identifier])
 }
 
 enum CardType {
@@ -201,6 +207,8 @@ model Trade {
   expiresAt DateTime @map("expires_at")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@index([playerId])
 }
 
 // 
