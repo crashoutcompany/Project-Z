@@ -9,6 +9,8 @@ import { headers } from "next/headers";
 import { CatalogShell } from "@/components/catalog/CatalogShell";
 import { CatalogLoading } from "@/components/catalog/CatalogLoading";
 
+const TRADES_PAGE_SIZE = 50;
+
 export default function TradingPage() {
   return (
     <CatalogShell
@@ -27,22 +29,28 @@ async function TradingPageContent() {
   const session = await getSession(await headers());
   if (!session) redirect("/signin");
 
-  // Get provider from the account linked to this user
+  // Nothing writes trades yet, so there is no data to break either way. Match
+  // on the user id (Trade.playerId) and on the legacy "<email>.<PROVIDER>"
+  // identifier, using the oldest linked account so the key is deterministic.
   const account = await prisma.account.findFirst({
     where: { userId: session.user.id },
+    orderBy: { createdAt: "asc" },
     select: { providerId: true },
   });
-
-  const identifier = `${session.user?.email}.${account?.providerId?.toUpperCase() ?? "UNKNOWN"}`;
-  console.log({ identifier });
+  const identifier = `${session.user.email}.${account?.providerId?.toUpperCase() ?? "UNKNOWN"}`;
 
   // Maybe make each one fetch it's own data, so we're not waiting for all of them to load
   const [allTrades, userTrades] = await Promise.all([
     prisma.trade.findMany({
+      where: { isPrivate: false },
+      orderBy: { createdAt: "desc" },
+      take: TRADES_PAGE_SIZE,
       include: { cards: { select: { name: true, imageUrl: true } } },
     }),
     prisma.trade.findMany({
-      where: { identifier },
+      where: { OR: [{ playerId: session.user.id }, { identifier }] },
+      orderBy: { createdAt: "desc" },
+      take: TRADES_PAGE_SIZE,
       include: { cards: { select: { name: true, imageUrl: true } } },
     }),
   ]);

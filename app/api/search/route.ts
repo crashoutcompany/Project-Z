@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { executeSearch, parseQueryToFilter, validateQuery } from "@/lib/search";
 import { isRarityCode } from "@/lib/rarity";
-import { clientKeyFromRequest, rateLimit } from "@/lib/rate-limit";
+import { getSession } from "@/lib/auth";
+import { rateLimit } from "@/lib/rate-limit";
 import { FilterJSONSchema, type FilterJSON } from "@/lib/search/filter-schema";
 import { withoutTags } from "@/lib/search/filter-tags";
 import { ENERGY_TYPES, isTag } from "@/lib/search/tags";
@@ -101,7 +102,13 @@ function readFilter(
 }
 
 export async function POST(request: Request) {
-  const rl = rateLimit(clientKeyFromRequest(request), RATE_LIMIT);
+  // The proxy skips /api, so the route checks the session itself.
+  const session = await getSession(request.headers);
+  if (!session) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
+  const rl = await rateLimit(`search:${session.user.id}`, RATE_LIMIT);
   if (!rl.ok) {
     return NextResponse.json(
       { error: "Too many search requests. Please slow down." },
