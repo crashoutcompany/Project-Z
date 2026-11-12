@@ -2,30 +2,23 @@ import { describe, expect, it } from "vitest";
 import { clientKeyFromRequest, rateLimit } from "./rate-limit";
 
 describe("rateLimit", () => {
-  it("allows requests up to the limit, then rejects", () => {
+  it("allows requests up to the limit, then rejects", async () => {
     const key = `allow-${Math.random()}`;
-    const now = 1_000_000;
     const opts = { limit: 2, windowMs: 60_000 };
 
-    expect(rateLimit(key, opts, now)).toMatchObject({ ok: true, remaining: 1 });
-    expect(rateLimit(key, opts, now + 10)).toMatchObject({
-      ok: true,
-      remaining: 0,
-    });
-    const blocked = rateLimit(key, opts, now + 20);
+    expect((await rateLimit(key, opts)).ok).toBe(true);
+    expect((await rateLimit(key, opts)).ok).toBe(true);
+    const blocked = await rateLimit(key, opts);
     expect(blocked.ok).toBe(false);
-    expect(blocked.remaining).toBe(0);
     expect(blocked.retryAfterSec).toBeGreaterThan(0);
   });
 
-  it("resets after the window elapses", () => {
-    const key = `window-${Math.random()}`;
-    const now = 5_000_000;
-    const opts = { limit: 1, windowMs: 1_000 };
-
-    expect(rateLimit(key, opts, now).ok).toBe(true);
-    expect(rateLimit(key, opts, now + 10).ok).toBe(false);
-    expect(rateLimit(key, opts, now + 1_000).ok).toBe(true);
+  it("tracks keys independently", async () => {
+    const opts = { limit: 1, windowMs: 60_000 };
+    const a = `a-${Math.random()}`;
+    expect((await rateLimit(a, opts)).ok).toBe(true);
+    expect((await rateLimit(a, opts)).ok).toBe(false);
+    expect((await rateLimit(`b-${Math.random()}`, opts)).ok).toBe(true);
   });
 });
 

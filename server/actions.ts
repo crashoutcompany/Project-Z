@@ -79,8 +79,9 @@ export type FetchCardsResult = {
 export const fetchCards = async (
   params: FetchCardsParams,
 ): Promise<FetchCardsResult> => {
-  // Server actions are public POST endpoints, so never trust the client's
-  // shape or page size.
+  // Server actions are public POST endpoints, so require a session and never
+  // trust the client's shape or page size.
+  if (!(await getSession(await headers()))) throw new Error("Unauthorized");
   return loadCatalogPage(fetchCardsSchema.parse(params));
 };
 
@@ -140,6 +141,7 @@ export type SetWithCards = Set & {
  * Only includes id, rarity, name, and number for each card (enough for completion stats).
  */
 export const fetchSetsWithCards = async (): Promise<SetWithCards[]> => {
+  if (!(await getSession(await headers()))) throw new Error("Unauthorized");
   const sets = await prisma.set.findMany({
     orderBy: { id: "asc" },
     include: {

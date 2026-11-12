@@ -43,6 +43,14 @@ const { fetchCards, fetchCardDetail, updateAuthStatus } =
 describe("fetchCards", () => {
   beforeEach(() => {
     findMany.mockReset();
+    getSession.mockReset();
+    getSession.mockResolvedValue({ user: { id: "u1" } });
+  });
+
+  it("rejects without a session", async () => {
+    getSession.mockResolvedValue(null);
+    await expect(fetchCards({})).rejects.toThrow("Unauthorized");
+    expect(findMany).not.toHaveBeenCalled();
   });
 
   it("returns a next cursor when more than `limit` rows exist", async () => {

@@ -1,5 +1,11 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
+const getSession = vi.fn();
+
+vi.mock("@/lib/auth", () => ({
+  getSession: (...args: unknown[]) => getSession(...args),
+}));
+
 const findMany = vi.fn();
 
 vi.mock("@/prisma/db", () => ({
@@ -21,6 +27,15 @@ function request(body: unknown) {
 describe("POST /api/cards/by-refs", () => {
   beforeEach(() => {
     findMany.mockReset();
+    getSession.mockReset();
+    getSession.mockResolvedValue({ user: { id: "u1" } });
+  });
+
+  it("returns 401 without a session and queries nothing", async () => {
+    getSession.mockResolvedValue(null);
+    const res = await POST(request({ refs: ["A1-1"] }));
+    expect(res.status).toBe(401);
+    expect(findMany).not.toHaveBeenCalled();
   });
 
   it("rejects invalid JSON, missing refs, and oversized batches", async () => {
