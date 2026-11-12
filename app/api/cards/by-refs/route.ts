@@ -1,9 +1,15 @@
 import { NextResponse } from "next/server";
+import { getSession } from "@/lib/auth";
 import prisma from "@/prisma/db";
 import { parseCardRef } from "@/lib/deck-url";
 
 /** Resolve deck URL refs (e.g. A1-94, P-A-12) to card payloads for the builder. */
 export async function POST(request: Request) {
+  // The proxy skips /api, so the route checks the session itself.
+  if (!(await getSession(request.headers))) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   let body: unknown;
   try {
     body = await request.json();
