@@ -10,7 +10,7 @@
     "dev": "next dev",
     "postinstall": "prisma generate",
     "build": "next build",
-    "vercel-build": "sh scripts/vercel-build.sh",
+    "vercel-build": "if [ \"$VERCEL_ENV\" = production ] && [ -z \"$GITHUB_ACTIONS\" ]; then DATABASE_URL=\"${DIRECT_URL:?DIRECT_URL is required to migrate the production database}\" prisma migrate deploy; fi && next build",
     "start": "next start",
     "lint": "eslint . && prettier --check .",
     "format": "prettier --write .",
