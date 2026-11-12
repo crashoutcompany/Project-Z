@@ -66,6 +66,8 @@ const count = vi.fn(async ({ where }: Pick<Args, "where">) => {
   return (await findMany({ where })).length;
 });
 
+vi.mock("next/cache", () => ({ cacheLife: vi.fn(), cacheTag: vi.fn() }));
+
 vi.mock("@/prisma/db", () => ({ default: { card: { findMany, count } } }));
 
 const { loadCatalogPage } = await import("./catalog-page");

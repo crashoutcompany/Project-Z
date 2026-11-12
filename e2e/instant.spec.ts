@@ -43,8 +43,8 @@ const GATED_PAGES: InstantPage[] = [
   },
   {
     path: "/me",
+    // The cached catalog read (Z-8) puts the stats in the static shell.
     heading: "My Collection",
-    deferred: "Overall Progress",
   },
 ];
 

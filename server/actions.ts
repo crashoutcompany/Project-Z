@@ -12,6 +12,7 @@ import { RARITY_CODES } from "@/lib/rarity";
 import { ENERGY_TYPES } from "@/lib/search/tags";
 import { Card, Set } from "@/prisma/generated/client/client";
 import prisma from "@/prisma/db";
+import { cacheLife, cacheTag } from "next/cache";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { z } from "zod";
@@ -140,6 +141,9 @@ export type SetWithCards = Set & {
  * Only includes id, rarity, name, and number for each card (enough for completion stats).
  */
 export const fetchSetsWithCards = async (): Promise<SetWithCards[]> => {
+  "use cache";
+  cacheTag("catalog");
+  cacheLife("days");
   const sets = await prisma.set.findMany({
     orderBy: { id: "asc" },
     include: {

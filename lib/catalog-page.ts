@@ -1,3 +1,4 @@
+import { cacheLife, cacheTag } from "next/cache";
 import prisma from "@/prisma/db";
 import type { Prisma } from "@/prisma/generated/client/client";
 import {
@@ -47,6 +48,24 @@ function catalogWhere(params: CatalogPageParams): Prisma.CardWhereInput {
  * the cursor from skipping or repeating cards.
  */
 export async function loadCatalogPage(params: CatalogPageParams) {
+  // Free-text searches are unbounded, so only the fixed filter combinations are
+  // cached; the rest go straight to the database.
+  return params.search ? queryCatalogPage(params) : cachedCatalogPage(params);
+}
+
+/**
+ * Pure catalog read (no session, cookies or headers), so it is safe to cache.
+ * Cards only change on an import, which needs a redeploy (a new build drops
+ * the cache) or `revalidateTag("catalog")`; `days` bounds staleness otherwise.
+ */
+async function cachedCatalogPage(params: CatalogPageParams) {
+  "use cache";
+  cacheTag("catalog");
+  cacheLife("days");
+  return queryCatalogPage(params);
+}
+
+async function queryCatalogPage(params: CatalogPageParams) {
   const { cursor, limit } = params;
   const where = catalogWhere(params);
 
