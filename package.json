@@ -13,7 +13,7 @@
     "start": "next start",
     "lint": "eslint . && prettier --check .",
     "format": "prettier --write .",
-    "typecheck": "next typegen && tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit && tsc -p tsconfig.scripts.json --noEmit",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "build:e2e": "EXPOSE_TESTING_API=1 next build",
