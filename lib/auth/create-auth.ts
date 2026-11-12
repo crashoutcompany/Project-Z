@@ -157,7 +157,12 @@ export function createAuth({
     },
     baseURL: resolveAuthBaseUrl(productionUrl, env),
     trustedOrigins: [
-      ...new Set([productionUrl, previewOrigin, ...extraTrustedOrigins]),
+      ...new Set([
+        productionUrl,
+        // The preview wildcard must not widen trust on the production deploy.
+        ...(env.VERCEL_ENV === "production" ? [] : [previewOrigin]),
+        ...extraTrustedOrigins,
+      ]),
     ],
     database,
     secret,
