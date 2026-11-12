@@ -59,7 +59,8 @@ export async function parseQueryToFilter(
     try {
       filter = await llmParse(normalized);
       source = "llm";
-    } catch {
+    } catch (error) {
+      console.warn("[search-parse:llm] falling back to heuristic", error);
       filter = heuristicParse(normalized);
       source = "heuristic";
     }
