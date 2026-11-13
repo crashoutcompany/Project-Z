@@ -1,6 +1,5 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 
 import { EmailOtpForm } from "@/components/auth/email-otp-form";
@@ -12,7 +11,10 @@ import {
   SIGN_IN_PATH,
   type SocialProvider,
 } from "@/lib/auth/config";
-import { AUTH_RETURN_QUERY, safeAuthReturnPath } from "@/lib/auth/return-path";
+import {
+  AUTH_RETURN_QUERY,
+  authCallbackFromWindow,
+} from "@/lib/auth/return-path";
 
 const PROVIDER_LABELS: Record<SocialProvider, string> = {
   github: "GitHub",
@@ -25,19 +27,10 @@ export type SignInButtonsProps = {
   callbackURL?: string;
 };
 
-/** Reads `?next=` so OAuth/OTP return to the gated page that sent the user here. */
-export function SignInButtonsFromQuery(props: SignInButtonsProps) {
-  const searchParams = useSearchParams();
-  const callbackURL =
-    safeAuthReturnPath(searchParams.get(AUTH_RETURN_QUERY), SIGN_IN_PATH) ??
-    "/";
-  return <SignInButtons {...props} callbackURL={callbackURL} />;
-}
-
 export function SignInButtons({
   providers,
   emailOtpEnabled = false,
-  callbackURL = "/",
+  callbackURL,
 }: SignInButtonsProps) {
   const [pendingProvider, setPendingProvider] = useState<SocialProvider | null>(
     null,
@@ -48,13 +41,14 @@ export function SignInButtons({
     setPendingProvider(provider);
     setErrorMessage(null);
 
+    const next = authCallbackFromWindow(SIGN_IN_PATH, callbackURL);
     const result = await authClient.signIn.social({
       provider,
-      callbackURL,
+      callbackURL: next,
       errorCallbackURL:
-        callbackURL === "/"
+        next === "/"
           ? AUTH_SIGN_IN_PATH
-          : `${AUTH_SIGN_IN_PATH}?${AUTH_RETURN_QUERY}=${encodeURIComponent(callbackURL)}`,
+          : `${AUTH_SIGN_IN_PATH}?${AUTH_RETURN_QUERY}=${encodeURIComponent(next)}`,
     });
 
     if (result.error) {
