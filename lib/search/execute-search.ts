@@ -581,10 +581,17 @@ async function ftsFallback(
   const tradeableClause = opts.tradeableOnly
     ? Prisma.sql`AND c.is_tradeable = true`
     : Prisma.empty;
+  const setIds = opts.setIds ?? [];
+  // Same cap as the structured query: without this, FTS fills FULL_SCAN_CAP
+  // from other sets first and the picked set's matches never appear.
+  const setClause = setIds.length
+    ? Prisma.sql`AND c.set_id IN (${Prisma.join(setIds)})`
+    : Prisma.empty;
 
   const rows = await prisma.$queryRaw<
     Array<{
       id: number;
+      setId: number;
       name: string;
       imageUrl: string;
       setCode: string;
@@ -601,6 +608,7 @@ async function ftsFallback(
     }>
   >`
     SELECT c.card_id AS id,
+           c.set_id AS "setId",
            c.name,
            c."imageUrl" AS "imageUrl",
            s.code AS "setCode",
@@ -630,18 +638,21 @@ async function ftsFallback(
       OR c.name ILIKE ${"%" + text + "%"}
     )
     ${tradeableClause}
+    ${setClause}
     ORDER BY c.name ASC, c.number ASC, c.card_id ASC
     LIMIT ${FULL_SCAN_CAP}
   `;
 
   const types = opts.types ?? [];
   const rarities = new Set(opts.rarities);
+  const wantedSets = new Set(setIds);
   const filtered = rows.filter(
     (r) =>
       matchesScalarFilters(r, filter, text) &&
       (!types.length ||
         types.some((t) => t === r.energyType || t === r.secondaryEnergyType)) &&
-      (!rarities.size || rarities.has(r.rarity)),
+      (!rarities.size || rarities.has(r.rarity)) &&
+      (!wantedSets.size || wantedSets.has(r.setId)),
   );
   const matching = opts.showDuplicates
     ? filtered
@@ -650,10 +661,17 @@ async function ftsFallback(
     total: matching.length,
     cards: matching
       .slice(offset, offset + limit)
-      .map(({ trainerType: _trainerType, stage: _stage, ...r }) => ({
-        ...r,
-        matchedTags: [],
-      })),
+      .map(
+        ({
+          trainerType: _trainerType,
+          stage: _stage,
+          setId: _setId,
+          ...r
+        }) => ({
+          ...r,
+          matchedTags: [],
+        }),
+      ),
   };
 }
 
