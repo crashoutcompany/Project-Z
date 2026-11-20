@@ -1,9 +1,6 @@
 import { Suspense } from "react";
 
-import {
-  SignInButtons,
-  SignInButtonsFromQuery,
-} from "@/components/auth/sign-in-buttons";
+import { SignInButtons } from "@/components/auth/sign-in-buttons";
 import {
   emailOtpEnabled,
   enabledSocialProviders,
@@ -165,19 +162,10 @@ function SignInView() {
 
             <div className="from-border via-border my-8 h-px bg-gradient-to-r to-transparent" />
 
-            <Suspense
-              fallback={
-                <SignInButtons
-                  providers={enabledSocialProviders}
-                  emailOtpEnabled={emailOtpEnabled}
-                />
-              }
-            >
-              <SignInButtonsFromQuery
-                providers={enabledSocialProviders}
-                emailOtpEnabled={emailOtpEnabled}
-              />
-            </Suspense>
+            <SignInButtons
+              providers={enabledSocialProviders}
+              emailOtpEnabled={emailOtpEnabled}
+            />
           </div>
 
           <p className="text-muted-foreground text-center text-xs leading-5 sm:text-left">
