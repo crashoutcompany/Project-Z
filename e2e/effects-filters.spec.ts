@@ -4,6 +4,7 @@ import { TESTER_AUTH_STATE } from "./auth-state";
 import {
   catalogCardNames,
   catalogCards,
+  deferred,
   openFilters,
   scrollToLoadCards,
 } from "./catalog";
@@ -53,10 +54,15 @@ test("a tag search shows every match and loads past the first page", async ({
   page,
 }) => {
   // 75 matches, served 60 at a time, so the count cannot be the page size.
+  // Infinite scroll can ask for page 2 as soon as page 1 renders, so later
+  // pages wait until the first page has been counted.
   const offsets: number[] = [];
+  const nextPages = deferred();
   await page.route("**/api/search", async (route) => {
     const body = route.request().postDataJSON() as { offset?: number };
     const offset = body.offset ?? 0;
+    if (offset > 0) await nextPages.promise;
+    // Recorded once served, so a held page 2 is not counted early.
     offsets.push(offset);
     const end = Math.min(offset + 60, 75);
     await route.fulfill({
@@ -77,7 +83,9 @@ test("a tag search shows every match and loads past the first page", async ({
 
   await expect(page.getByText(/Filtering by 1 tag · 75 cards/)).toBeVisible();
   await expect(catalogCards(page)).toHaveCount(60);
+  expect(offsets).toEqual([0]);
 
+  nextPages.resolve();
   await scrollToLoadCards(page, 75);
   await expect(page.getByText("All 75 cards loaded")).toBeVisible();
   // Wait for both requests to be captured before asserting.

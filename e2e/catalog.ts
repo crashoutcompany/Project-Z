@@ -1,5 +1,17 @@
 import { expect, type Page } from "@playwright/test";
 
+/**
+ * A promise with its resolver, for holding a mocked response until the test
+ * releases it (e.g. page 2 of a search until page 1 has been counted).
+ */
+export function deferred() {
+  let resolve!: () => void;
+  const promise = new Promise<void>((r) => {
+    resolve = r;
+  });
+  return { promise, resolve };
+}
+
 /** Cards in the shared CardBrowser grid (dex, builder, trade create). */
 export function catalogCards(page: Page) {
   return page.locator(".catalog-results [data-catalog-card]");
@@ -54,14 +66,32 @@ export async function openFilters(page: Page) {
   return page.getByTestId("filter-bar");
 }
 
-/** Picks rarities from the bar's popover, then closes it. */
+/**
+ * Picks rarities from the bar's popover, then closes it. The closed phone
+ * filter sheet holds a second "Filter by rarity" group, so every click is
+ * scoped to the open popover rather than the page.
+ */
 export async function pickRarities(page: Page, names: string[]) {
-  await page.getByRole("button", { name: "Filter by rarity" }).click();
-  const group = page.getByRole("group", { name: "Filter by rarity" });
+  const trigger = page.getByRole("button", { name: "Filter by rarity" });
+  const popover = page.locator('[data-slot="popover-content"]');
+  const group = popover.getByTestId("rarity-filter");
+
+  await trigger.click();
+  // A click that lands before hydration does not open the popover; retry once,
+  // unless the trigger already reports it open (a slow open, not a lost click).
+  try {
+    await expect(group).toBeVisible({ timeout: 2_000 });
+  } catch {
+    if ((await trigger.getAttribute("aria-expanded")) !== "true") {
+      await trigger.click();
+    }
+    await expect(group).toBeVisible();
+  }
+
   for (const name of names) {
     await group.getByRole("button", { name, exact: true }).click();
   }
-  await page.getByRole("button", { name: "Done" }).click();
+  await popover.getByRole("button", { name: "Done" }).click();
   await expect(group).toBeHidden();
 }
 
