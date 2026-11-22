@@ -73,7 +73,7 @@
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.3",
     "husky": "^9.1.7",
-    "neonctl": "^8.3.4",
+    "neonctl": "^9.7.2",
     "postcss": "^8.5.33",
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
