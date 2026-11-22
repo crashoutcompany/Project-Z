@@ -5,6 +5,7 @@ import {
   catalogCardNames,
   catalogCards,
   deferred,
+  openRarityPopover,
   pickRarities,
   scrollToLoadCards,
 } from "./catalog";
@@ -29,8 +30,7 @@ test("tiles show their rarity", async ({ page }) => {
 test("the rarity filter shows the official Pocket marks", async ({ page }) => {
   await page.goto("/dex");
   await catalogCardNames(page);
-  await page.getByRole("button", { name: "Filter by rarity" }).click();
-  const group = page.getByRole("group", { name: "Filter by rarity" });
+  const { group } = await openRarityPopover(page);
   await expect(
     group
       .getByRole("button", { name: "Double Rare" })
