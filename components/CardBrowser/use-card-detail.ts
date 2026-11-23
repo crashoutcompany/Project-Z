@@ -1,27 +1,13 @@
 "use client";
 
 import { useCallback, useRef, useState } from "react";
-import { authClient } from "@/lib/auth/client";
+import { hasClientSession } from "@/lib/auth/client";
 import type { CardDetail } from "@/lib/card-detail";
 import { formatCardRef } from "@/lib/deck-url";
 import { buildDexCardPath, replaceDexSearchParams } from "@/lib/dex-url";
 import { fetchCardDetail } from "@/server/actions";
 import { previewFromCard } from "./card-mappers";
 import type { CardWithSet } from "./types";
-
-/**
- * The auth proxy answers a signed-out server action POST with a redirect to
- * the sign-in page, so the action rejects instead of returning `signed_out`.
- * Ask the auth API (not behind the proxy) whether that is what happened.
- */
-async function hasSession(): Promise<boolean> {
-  try {
-    const { data, error } = await authClient.getSession();
-    return Boolean(data) || Boolean(error);
-  } catch {
-    return true;
-  }
-}
 
 type UseCardDetailOptions = {
   initialDetail: CardDetail | null;
@@ -69,7 +55,7 @@ export function useCardDetail({
           else setError("Card not found");
         })
         .catch(async () => {
-          const signedIn = await hasSession();
+          const signedIn = await hasClientSession();
           if (seq !== detailSeq.current) return;
           if (signedIn) setError("Couldn't load this card");
           else setSignedOut(true);

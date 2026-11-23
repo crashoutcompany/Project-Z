@@ -8,9 +8,17 @@ import {
   useState,
   useTransition,
 } from "react";
+import Link from "next/link";
 import { Set } from "@/prisma/generated/client/client";
 import { fetchCards } from "@/server/actions";
+import { hasClientSession } from "@/lib/auth/client";
+import { SIGN_IN_PATH } from "@/lib/auth/config";
+import { AUTH_RETURN_QUERY } from "@/lib/auth/return-path";
 import { cn } from "@/lib/utils";
+import {
+  effectsSearchFailure,
+  resolveCatalogAction,
+} from "./resolve-catalog-action";
 import { CardGrid } from "./CardGrid";
 import { SearchBox, type SearchMode } from "./SearchBox";
 import { FilterBar } from "./FilterBar";
@@ -98,6 +106,8 @@ type Results = {
   /** What the effects query parsed to, kept with recent and saved searches. */
   filter: FilterJSON | null;
   error: string | null;
+  /** Session expired; offer sign-in instead of taking down the catalog. */
+  signedOut: boolean;
   /** Bumped per result set so the grid remounts with fresh paging. */
   epoch: number;
 };
@@ -402,6 +412,7 @@ export function CardBrowserClient({
     notes: [],
     filter: null,
     error: null,
+    signedOut: false,
     epoch: 0,
   });
   const [isPending, startTransition] = useTransition();
@@ -430,19 +441,27 @@ export function CardBrowserClient({
             notes: [],
             filter: null,
             error: null,
+            signedOut: false,
             ...fields,
             view: next,
             epoch: prev.epoch + 1,
           }));
 
         if (!usesEffectsApi(next)) {
-          const page = await fetchCards(catalogParams(next, tradeableOnly));
+          const outcome = await resolveCatalogAction(
+            () => fetchCards(catalogParams(next, tradeableOnly)),
+            hasClientSession,
+          );
           if (seq !== requestSeq.current) return;
-          const cards = page.cards as CardWithSet[];
+          if (!outcome.ok) {
+            show({ error: outcome.error, signedOut: outcome.signedOut });
+            return;
+          }
+          const cards = outcome.value.cards as CardWithSet[];
           show({
             cards,
-            cursor: page.nextCursor,
-            total: page.total ?? cards.length,
+            cursor: outcome.value.nextCursor,
+            total: outcome.value.total ?? cards.length,
           });
           return;
         }
@@ -452,7 +471,8 @@ export function CardBrowserClient({
           const data = (await res.json()) as EffectsResponse;
           if (seq !== requestSeq.current) return;
           if (!res.ok) {
-            show({ error: data.error ?? "Search failed" });
+            const fail = effectsSearchFailure(res.status, data.error);
+            show({ error: fail.error, signedOut: fail.signedOut });
             return;
           }
           const found = data.cards ?? [];
@@ -482,13 +502,25 @@ export function CardBrowserClient({
   const loadPage = useCallback(
     async (cursor: number): Promise<CardPage> => {
       if (!usesEffectsApi(resultView)) {
-        const page = await fetchCards({
-          ...catalogParams(resultView, tradeableOnly),
-          cursor,
-        });
+        const outcome = await resolveCatalogAction(
+          () =>
+            fetchCards({
+              ...catalogParams(resultView, tradeableOnly),
+              cursor,
+            }),
+          hasClientSession,
+        );
+        if (!outcome.ok) {
+          setResults((prev) => ({
+            ...prev,
+            error: outcome.error,
+            signedOut: outcome.signedOut,
+          }));
+          return { cards: [], nextOffset: null };
+        }
         return {
-          cards: page.cards as CardWithSet[],
-          nextOffset: page.nextCursor,
+          cards: outcome.value.cards as CardWithSet[],
+          nextOffset: outcome.value.nextCursor,
         };
       }
       const done = { cards: [], nextOffset: null };
@@ -497,7 +529,17 @@ export function CardBrowserClient({
       try {
         const res = await postEffectsSearch(resultView, tradeableOnly, cursor);
         const data = (await res.json()) as EffectsResponse;
-        if (!res.ok) return done;
+        if (!res.ok) {
+          const fail = effectsSearchFailure(res.status, data.error);
+          if (fail.signedOut) {
+            setResults((prev) => ({
+              ...prev,
+              error: fail.error,
+              signedOut: true,
+            }));
+          }
+          return done;
+        }
         const found = data.cards ?? [];
         return {
           cards: found.map((c) => searchResultToCardWithSet(c, sets)),
@@ -715,7 +757,7 @@ export function CardBrowserClient({
       ) : null}
 
       {results.error ? (
-        <p className="text-destructive text-sm">{results.error}</p>
+        <CatalogError error={results.error} signedOut={results.signedOut} />
       ) : null}
 
       {showResults && results.cards.length === 0 ? (
@@ -771,5 +813,32 @@ export function CardBrowserClient({
         />
       ) : null}
     </div>
+  );
+}
+
+function CatalogError({
+  error,
+  signedOut,
+}: {
+  error: string;
+  signedOut: boolean;
+}) {
+  const href = signedOut
+    ? `${SIGN_IN_PATH}?${AUTH_RETURN_QUERY}=${encodeURIComponent(
+        `${window.location.pathname}${window.location.search}`,
+      )}`
+    : null;
+  return (
+    <p className="text-destructive text-sm" data-testid="catalog-error">
+      {error}
+      {href ? (
+        <>
+          {" "}
+          <Link href={href} className="underline" data-testid="catalog-sign-in">
+            Sign in
+          </Link>
+        </>
+      ) : null}
+    </p>
   );
 }

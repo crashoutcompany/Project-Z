@@ -1,4 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
+import type { FetchCardsResult } from "./actions";
 
 const {
   findMany,
@@ -42,6 +43,12 @@ vi.mock("next/navigation", () => ({
 const { fetchCards, fetchCardDetail, updateAuthStatus } =
   await import("./actions");
 
+function expectOk(result: FetchCardsResult) {
+  expect(result.status).toBe("ok");
+  if (result.status !== "ok") throw new Error("expected ok");
+  return result;
+}
+
 describe("fetchCards", () => {
   beforeEach(() => {
     findMany.mockReset();
@@ -49,9 +56,9 @@ describe("fetchCards", () => {
     getSession.mockResolvedValue({ user: { id: "u1" } });
   });
 
-  it("rejects without a session", async () => {
+  it("returns signed_out without a session instead of throwing", async () => {
     getSession.mockResolvedValue(null);
-    await expect(fetchCards({})).rejects.toThrow("Unauthorized");
+    await expect(fetchCards({})).resolves.toEqual({ status: "signed_out" });
     expect(findMany).not.toHaveBeenCalled();
   });
 
@@ -78,8 +85,9 @@ describe("fetchCards", () => {
         }),
       }),
     );
-    expect(result.cards).toHaveLength(3);
-    expect(result.nextCursor).toBe(3);
+    const page = expectOk(result);
+    expect(page.cards).toHaveLength(3);
+    expect(page.nextCursor).toBe(3);
   });
 
   it("trims the search and drops the name filter when it is blank", async () => {
@@ -111,8 +119,9 @@ describe("fetchCards", () => {
         where: expect.objectContaining({ isTradeable: true }),
       }),
     );
-    expect(result.nextCursor).toBeNull();
-    expect(result.cards).toHaveLength(1);
+    const page = expectOk(result);
+    expect(page.nextCursor).toBeNull();
+    expect(page.cards).toHaveLength(1);
   });
 
   it("rejects page sizes above the cap instead of scanning the table", async () => {
@@ -166,8 +175,9 @@ describe("fetchCards", () => {
       rarity: { in: ["RR", "UR", "SR"] },
     });
     expect(findMany.mock.calls[1][0].where).toEqual({ id: { in: [2] } });
-    expect(result.cards.map((c) => c.id)).toEqual([2]);
-    expect(result.nextCursor).toBeNull();
+    const page = expectOk(result);
+    expect(page.cards.map((c) => c.id)).toEqual([2]);
+    expect(page.nextCursor).toBeNull();
   });
 
   it("rejects unknown rarities", async () => {
@@ -190,7 +200,7 @@ describe("fetchCards", () => {
         { secondaryEnergyType: { in: ["grass", "fire"] } },
       ],
     });
-    expect(result.total).toBe(42);
+    expect(expectOk(result).total).toBe(42);
   });
 
   it("rejects unknown types", async () => {
