@@ -99,18 +99,22 @@ export const CardItem = memo(function CardItem({
 
   const media = (
     <>
-      <LazyImage
-        title={card.name}
-        className="h-auto w-full rounded-xl select-none"
-        alt={card.name}
-        src={card.imageUrl}
-        width={200}
-        height={280}
-        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 200px"
-        priority={priority}
-        loading={priority ? "eager" : "lazy"}
-        draggable={false}
-      />
+      {/* Reserves the card's shape, so a tile keeps its height while the
+          image loads or if it fails. */}
+      <div className="aspect-[200/280] w-full overflow-hidden rounded-xl">
+        <LazyImage
+          title={card.name}
+          className="size-full rounded-xl object-cover select-none"
+          alt={card.name}
+          src={card.imageUrl}
+          width={200}
+          height={280}
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 200px"
+          priority={priority}
+          loading={priority ? "eager" : "lazy"}
+          draggable={false}
+        />
+      </div>
       {selectionState !== "none" ? (
         <SelectionCheck selection={selectionState} />
       ) : null}

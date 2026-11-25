@@ -4,6 +4,8 @@ import { TESTER_AUTH_STATE } from "./auth-state";
 import {
   catalogCardNames,
   catalogCards,
+  deferred,
+  openRarityPopover,
   pickRarities,
   scrollToLoadCards,
 } from "./catalog";
@@ -28,8 +30,7 @@ test("tiles show their rarity", async ({ page }) => {
 test("the rarity filter shows the official Pocket marks", async ({ page }) => {
   await page.goto("/dex");
   await catalogCardNames(page);
-  await page.getByRole("button", { name: "Filter by rarity" }).click();
-  const group = page.getByRole("group", { name: "Filter by rarity" });
+  const { group } = await openRarityPopover(page);
   await expect(
     group
       .getByRole("button", { name: "Double Rare" })
@@ -45,11 +46,16 @@ test("the rarity filter shows the official Pocket marks", async ({ page }) => {
 test("effects search sends rarity and duplicate choices with tags, types and paging", async ({
   page,
 }) => {
+  // Infinite scroll can ask for page 2 as soon as page 1 renders, so later
+  // pages wait until the first page has been counted. Bodies are recorded once
+  // served, so a held page 2 never shows up as the latest request early.
   const bodies: Array<Record<string, unknown>> = [];
+  const nextPages = deferred();
   await page.route("**/api/search", async (route) => {
     const body = route.request().postDataJSON() as Record<string, unknown>;
-    bodies.push(body);
     const offset = (body.offset as number | undefined) ?? 0;
+    if (offset > 0) await nextPages.promise;
+    bodies.push(body);
     const end = Math.min(offset + 60, 70);
     await route.fulfill({
       json: {
@@ -119,6 +125,9 @@ test("effects search sends rarity and duplicate choices with tags, types and pag
 
   // Load more repeats the same request with an offset.
   await expect(catalogCards(page)).toHaveCount(60);
+  expect(bodies.filter((b) => "offset" in b)).toEqual([]);
+
+  nextPages.resolve();
   await scrollToLoadCards(page, 70);
   await expect
     .poll(() => bodies.at(-1))
