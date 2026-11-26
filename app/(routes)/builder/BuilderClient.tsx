@@ -8,7 +8,9 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import LazyImage from "@/components/LazyImage";
-import { Check, Copy, Trash2, X } from "lucide-react";
+import { Check, Copy, Plus, Trash2, X } from "lucide-react";
+import { WantToggle } from "@/components/CardBrowser/CollectionToggle";
+import { useCollection } from "@/lib/collection/use-collection";
 import { type DeckCard, refOf, useBuilderDeck } from "./use-builder-state";
 import {
   type DeckOwnershipState,
@@ -258,6 +260,7 @@ function MissingCards({
   deck: DeckCard[];
   ownership: DeckOwnershipState;
 }) {
+  const { adjust } = useCollection();
   const ready = ownership.status === "ready" ? ownership : null;
   const missing = ready
     ? deck.flatMap((card) => {
@@ -323,10 +326,35 @@ function MissingCards({
               <span className="text-muted-foreground shrink-0 text-xs tabular-nums">
                 {owned} of {needed} owned
               </span>
+              <WantToggle
+                cardId={card.id}
+                name={card.name}
+                copies={needed - owned}
+                className="size-6 [&_svg]:size-3.5"
+              />
+              <button
+                type="button"
+                onClick={() => adjust(card.id, 1)}
+                aria-label={`Add ${card.name} to collection`}
+                title={`Add ${card.name} to collection`}
+                className="bg-background ring-foreground/10 flex size-6 shrink-0 items-center justify-center rounded-full ring-1 transition-colors hover:bg-emerald-500 hover:text-white"
+              >
+                <Plus className="size-3.5" />
+              </button>
             </li>
           ))}
         </ul>
       )}
+
+      {missing.length > 0 ? (
+        <p className="text-muted-foreground text-xs">
+          Bookmark cards to keep them on your{" "}
+          <Link href="/me#want-list" className="text-foreground underline">
+            want list
+          </Link>
+          .
+        </p>
+      ) : null}
 
       {ready?.exactOnly ? (
         <p className="text-muted-foreground text-xs">

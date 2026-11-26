@@ -9,7 +9,7 @@ export default function Page() {
     <CatalogShell
       eyebrow="Collection"
       title="My Collection"
-      description="Track which cards you own and see your completion progress for each set."
+      description="Track which cards you own, keep a want list, and see your completion progress for each set."
     >
       <Suspense fallback={<CatalogLoading embedded />}>
         <CollectionPage />

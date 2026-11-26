@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { cn } from "@/lib/utils";
 import { ChevronDown, ChevronUp, ExternalLink, Plus } from "lucide-react";
+import { WantList } from "./WantList";
 
 type CollectionStatsProps = {
   sets: SetWithCards[];
@@ -37,6 +38,8 @@ export function CollectionStats({ sets }: CollectionStatsProps) {
   return (
     <div className="space-y-6">
       <OverallProgress owned={totalOwned} total={totalCards} />
+
+      <WantList sets={sets} />
 
       <div className="space-y-4">
         {stats.map(({ set, completion }) => (
