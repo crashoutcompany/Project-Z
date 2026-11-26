@@ -6,30 +6,52 @@ import { useCollection } from "@/lib/collection/use-collection";
 import {
   computeCompletion,
   formatPercent,
+  isSetComplete,
+  ownedCardIds,
   type CompletionStats,
 } from "@/lib/collection";
 import { getRarityInfo, RARITY_CODES } from "@/lib/rarity";
 import { RaritySymbol } from "@/components/CardBrowser/RarityFilter";
 import type { SetWithCards } from "@/server/actions";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { cn } from "@/lib/utils";
-import { ChevronDown, ChevronUp, ExternalLink, Plus } from "lucide-react";
+import {
+  Check,
+  ChevronDown,
+  ChevronUp,
+  ExternalLink,
+  Plus,
+} from "lucide-react";
+import { CollectionTransfer } from "./CollectionTransfer";
 
 type CollectionStatsProps = {
   sets: SetWithCards[];
 };
 
 export function CollectionStats({ sets }: CollectionStatsProps) {
-  const { collection, adjust } = useCollection();
+  const { collection, adjust, importCards } = useCollection();
   const [showMissing, setShowMissing] = useState<number | null>(null);
+
+  const allCards = useMemo(() => sets.flatMap((set) => set.cards), [sets]);
+  const knownIds = useMemo(
+    () => new Set(allCards.map((card) => card.id)),
+    [allCards],
+  );
+  // Alt arts can live in another set, so ownership is resolved over the
+  // whole catalog once, then each set counts against it.
+  const ownedIds = useMemo(
+    () => ownedCardIds(collection, allCards),
+    [collection, allCards],
+  );
 
   const stats = useMemo(() => {
     return sets.map((set) => ({
       set,
-      completion: computeCompletion(collection, set.cards),
+      completion: computeCompletion(collection, set.cards, ownedIds),
     }));
-  }, [sets, collection]);
+  }, [sets, collection, ownedIds]);
 
   const totalOwned = stats.reduce((sum, s) => sum + s.completion.owned, 0);
   const totalCards = stats.reduce((sum, s) => sum + s.completion.total, 0);
@@ -37,6 +59,12 @@ export function CollectionStats({ sets }: CollectionStatsProps) {
   return (
     <div className="space-y-6">
       <OverallProgress owned={totalOwned} total={totalCards} />
+
+      <CollectionTransfer
+        collection={collection}
+        knownIds={knownIds}
+        onImport={importCards}
+      />
 
       <div className="space-y-4">
         {stats.map(({ set, completion }) => (
@@ -48,7 +76,7 @@ export function CollectionStats({ sets }: CollectionStatsProps) {
             onToggle={() =>
               setShowMissing(showMissing === set.id ? null : set.id)
             }
-            collection={collection}
+            ownedIds={ownedIds}
             onAdd={(cardId) => adjust(cardId, 1)}
           />
         ))}
@@ -93,20 +121,21 @@ function SetCard({
   completion,
   isExpanded,
   onToggle,
-  collection,
+  ownedIds,
   onAdd,
 }: {
   set: SetWithCards;
   completion: CompletionStats;
   isExpanded: boolean;
   onToggle: () => void;
-  collection: Record<number, number>;
+  ownedIds: Set<number>;
   onAdd: (cardId: number) => void;
 }) {
   const [rarityFilter, onRarityFilter] = useState<string | null>(null);
+  const complete = isSetComplete(completion);
   const missingCards = useMemo(() => {
-    return set.cards.filter((card) => !collection[card.id]);
-  }, [set.cards, collection]);
+    return set.cards.filter((card) => !ownedIds.has(card.id));
+  }, [set.cards, ownedIds]);
 
   const filteredMissing = useMemo(() => {
     if (!rarityFilter) return missingCards;
@@ -121,14 +150,31 @@ function SetCard({
   return (
     <div
       data-testid="collection-set"
-      className="bg-card ring-foreground/10 rounded-2xl shadow-xs ring-1"
+      data-complete={complete || undefined}
+      className={cn(
+        "bg-card rounded-2xl shadow-xs ring-1",
+        complete
+          ? "ring-emerald-500/50 dark:ring-emerald-400/50"
+          : "ring-foreground/10",
+      )}
     >
       <div className="p-4">
         <div className="flex items-center justify-between gap-4">
           <div className="min-w-0 flex-1">
-            <h3 className="leading-tight font-semibold break-words">
-              {set.setName}
-            </h3>
+            <div className="flex flex-wrap items-center gap-2">
+              <h3 className="leading-tight font-semibold break-words">
+                {set.setName}
+              </h3>
+              {complete ? (
+                <Badge
+                  data-testid="set-complete-badge"
+                  className="bg-emerald-500 text-white dark:bg-emerald-400 dark:text-emerald-950"
+                >
+                  <Check data-icon="inline-start" />
+                  Complete
+                </Badge>
+              ) : null}
+            </div>
             <p className="text-muted-foreground text-xs">{set.code}</p>
             <div className="mt-2 flex items-center gap-3">
               <ProgressBar
@@ -136,7 +182,10 @@ function SetCard({
                 max={completion.total}
                 className="h-3 flex-1"
               />
-              <span className="text-sm font-medium tabular-nums">
+              <span
+                data-testid="collection-set-count"
+                className="text-sm font-medium tabular-nums"
+              >
                 {completion.owned}/{completion.total}
               </span>
             </div>
@@ -215,6 +264,7 @@ function SetCard({
                 <li
                   key={card.id}
                   data-testid="missing-card"
+                  data-card-id={card.id}
                   className="bg-muted/50 flex items-center gap-2 rounded-lg px-3 py-2 text-sm"
                 >
                   <RaritySymbol

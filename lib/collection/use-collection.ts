@@ -9,6 +9,9 @@ import {
   setCardQuantity,
   toggleCardOwned,
   adjustCardQuantity,
+  getCollection,
+  mergeCollections,
+  setCollection,
 } from "./index";
 
 type Listener = () => void;
@@ -89,6 +92,12 @@ export function useCollection() {
     emitChange();
   }, []);
 
+  /** Merges imported cards into the stored collection. */
+  const importCards = useCallback((incoming: Collection) => {
+    setCollection(mergeCollections(getCollection(), incoming));
+    emitChange();
+  }, []);
+
   const getQuantity = useCallback(
     (cardId: number): number => collection[cardId] ?? 0,
     [collection],
@@ -104,6 +113,7 @@ export function useCollection() {
     toggle,
     setQuantity,
     adjust,
+    importCards,
     getQuantity,
     isOwned,
   };

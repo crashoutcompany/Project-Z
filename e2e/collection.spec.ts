@@ -141,3 +141,93 @@ test("the + on a missing card adds it to the collection", async ({ page }) => {
     await page.evaluate((key) => localStorage.getItem(key), STORAGE_KEY),
   ).toMatch(/^\{"\d+":1\}$/);
 });
+
+test("a set shows a Complete badge once every card is owned", async ({
+  page,
+}) => {
+  await page.goto("/me");
+  const firstSet = page.getByTestId("collection-set").first();
+  await expect(firstSet.getByTestId("set-complete-badge")).toHaveCount(0);
+
+  await firstSet.getByRole("button", { name: /^Missing/ }).click();
+  const missing = firstSet.getByTestId("missing-card");
+  await expect(missing.first()).toBeVisible();
+  const ids = await missing.evaluateAll((items) =>
+    items.map((item) => item.getAttribute("data-card-id")),
+  );
+  await page.evaluate(
+    ([key, cardIds]) =>
+      localStorage.setItem(
+        key,
+        JSON.stringify(Object.fromEntries(cardIds.map((id) => [id, 1]))),
+      ),
+    [STORAGE_KEY, ids] as const,
+  );
+  await page.reload();
+
+  const completed = page.getByTestId("collection-set").first();
+  await expect(completed.getByTestId("set-complete-badge")).toBeVisible();
+  await expect(completed).toHaveAttribute("data-complete", "true");
+  const count = await completed
+    .getByTestId("collection-set-count")
+    .textContent();
+  const [owned, total] = (count ?? "").split("/");
+  expect(owned).toBe(total);
+});
+
+test("export shows the stored collection as JSON", async ({ page }) => {
+  await addBadge(page).click();
+  await expect(ownedBadge(page)).toBeVisible();
+  const stored = await page.evaluate(
+    (key) => localStorage.getItem(key),
+    STORAGE_KEY,
+  );
+
+  await page.goto("/me");
+  await page
+    .getByTestId("collection-transfer")
+    .getByRole("button", { name: /^Show/ })
+    .click();
+  await expect(page.getByTestId("collection-export")).toHaveValue(stored!);
+});
+
+test("import merges pasted JSON into the collection", async ({ page }) => {
+  await page.goto("/me");
+  const firstSet = page.getByTestId("collection-set").first();
+  await firstSet.getByRole("button", { name: /^Missing/ }).click();
+  const [a, b] = await firstSet
+    .getByTestId("missing-card")
+    .evaluateAll((items) =>
+      items.slice(0, 2).map((item) => item.getAttribute("data-card-id")!),
+    );
+
+  await page.evaluate(
+    ([key, id]) => localStorage.setItem(key, JSON.stringify({ [id]: 2 })),
+    [STORAGE_KEY, a] as const,
+  );
+  await page.reload();
+
+  const transfer = page.getByTestId("collection-transfer");
+  await transfer.getByRole("button", { name: /^Show/ }).click();
+  const input = page.getByTestId("collection-import");
+
+  await input.fill("{not json");
+  await transfer.getByRole("button", { name: "Import and merge" }).click();
+  await expect(page.getByTestId("collection-import-status")).toHaveText(
+    "That isn't valid JSON.",
+  );
+
+  await input.fill(JSON.stringify({ [a]: 1, [b]: 3, 999999999: 1 }));
+  await transfer.getByRole("button", { name: "Import and merge" }).click();
+  await expect(page.getByTestId("collection-import-status")).toContainText(
+    "Merged 2 cards",
+  );
+
+  // The existing card keeps its larger quantity; the new one is added; the
+  // unknown id is dropped.
+  const stored = JSON.parse(
+    (await page.evaluate((key) => localStorage.getItem(key), STORAGE_KEY))!,
+  );
+  expect(stored).toEqual({ [a]: 2, [b]: 3 });
+  await expect.poll(() => collectedCount(page)).toBe(2);
+});

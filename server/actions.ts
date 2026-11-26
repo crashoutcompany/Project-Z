@@ -9,6 +9,11 @@ import {
 } from "@/lib/card-detail";
 import { loadCatalogPage } from "@/lib/catalog-page";
 import { RARITY_CODES } from "@/lib/rarity";
+import {
+  PRINT_KEY_ATTACK_SELECT,
+  PRINT_KEY_EFFECT_SELECT,
+  printKey,
+} from "@/lib/search/dedupe";
 import { ENERGY_TYPES } from "@/lib/search/tags";
 import { Card, Set } from "@/prisma/generated/client/client";
 import prisma from "@/prisma/db";
@@ -133,12 +138,20 @@ export const fetchCardDetail = async (
 };
 
 export type SetWithCards = Set & {
-  cards: Array<{ id: number; rarity: string; name: string; number: number }>;
+  cards: Array<{
+    id: number;
+    rarity: string;
+    name: string;
+    number: number;
+    /** Lowest card ID among every print of this card, across all sets. */
+    printGroup: number;
+  }>;
 };
 
 /**
  * Fetches all sets with their cards for the collection page.
- * Only includes id, rarity, name, and number for each card (enough for completion stats).
+ * Only includes id, rarity, name, number, and print group for each card
+ * (enough for completion stats, where an owned alt art covers the card).
  */
 export const fetchSetsWithCards = async (): Promise<SetWithCards[]> => {
   if (!(await getSession(await headers()))) throw new Error("Unauthorized");
@@ -151,10 +164,35 @@ export const fetchSetsWithCards = async (): Promise<SetWithCards[]> => {
           rarity: true,
           name: true,
           number: true,
+          attacks: { select: PRINT_KEY_ATTACK_SELECT },
+          effects: { select: PRINT_KEY_EFFECT_SELECT },
         },
         orderBy: { number: "asc" },
       },
     },
   });
-  return sets;
+
+  const groupByKey = new Map<string, number>();
+  const keyById = new Map<number, string>();
+  for (const set of sets) {
+    for (const card of set.cards) {
+      const key = printKey(card);
+      keyById.set(card.id, key);
+      const current = groupByKey.get(key);
+      if (current === undefined || card.id < current) {
+        groupByKey.set(key, card.id);
+      }
+    }
+  }
+
+  return sets.map((set) => ({
+    ...set,
+    cards: set.cards.map(({ id, rarity, name, number }) => ({
+      id,
+      rarity,
+      name,
+      number,
+      printGroup: groupByKey.get(keyById.get(id)!)!,
+    })),
+  }));
 };
