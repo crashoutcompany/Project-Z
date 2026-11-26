@@ -5,6 +5,8 @@
  * Zero or missing means not owned. All access goes through getCollection/setCollection.
  */
 
+import { rarityRank } from "@/lib/rarity";
+
 export const COLLECTION_STORAGE_KEY = "pz-collection";
 export const MAX_QUANTITY = 99;
 
@@ -153,6 +155,54 @@ export function validateCollection(
   return result;
 }
 
+/** A card as the completion math sees it. */
+export type CompletionCard = {
+  id: number;
+  rarity: string;
+  /**
+   * Shared by every print of the same card (alt arts, reprints). Cards
+   * without one only match themselves.
+   */
+  printGroup?: number;
+};
+
+/**
+ * IDs of the cards that count as owned: owned directly, or covered by an
+ * owned alt art. An alt art is a print of the same card at a higher rarity
+ * (an owned Art Rare Pikachu ex covers the Double Rare one), so owning the
+ * regular print does not fill the alt art's slot. Promos are reprints, not
+ * alt arts, and never cover another print.
+ */
+export function ownedCardIds(
+  collection: Collection,
+  cards: CompletionCard[],
+): Set<number> {
+  const bestAltRank = new Map<number, number>();
+  for (const card of cards) {
+    if (card.printGroup === undefined || !collection[card.id]) continue;
+    if (card.rarity === "PROMO") continue;
+    const rank = rarityRank(card.rarity);
+    const best = bestAltRank.get(card.printGroup);
+    if (best === undefined || rank > best) {
+      bestAltRank.set(card.printGroup, rank);
+    }
+  }
+
+  const owned = new Set<number>();
+  for (const card of cards) {
+    if (collection[card.id]) {
+      owned.add(card.id);
+      continue;
+    }
+    if (card.printGroup === undefined) continue;
+    const best = bestAltRank.get(card.printGroup);
+    if (best !== undefined && rarityRank(card.rarity) < best) {
+      owned.add(card.id);
+    }
+  }
+  return owned;
+}
+
 /**
  * Computes completion stats for a set of cards.
  */
@@ -163,9 +213,14 @@ export type CompletionStats = {
   byRarity: Record<string, { owned: number; total: number }>;
 };
 
+/**
+ * Pass `ownedIds` (from `ownedCardIds` over the whole catalog) to count alt
+ * arts from other sets; without it only cards in `collection` count.
+ */
 export function computeCompletion(
   collection: Collection,
-  cards: Array<{ id: number; rarity: string }>,
+  cards: CompletionCard[],
+  ownedIds: Set<number> = ownedCardIds(collection, cards),
 ): CompletionStats {
   const byRarity: Record<string, { owned: number; total: number }> = {};
   let owned = 0;
@@ -175,7 +230,7 @@ export function computeCompletion(
       byRarity[card.rarity] = { owned: 0, total: 0 };
     }
     byRarity[card.rarity].total++;
-    if (collection[card.id]) {
+    if (ownedIds.has(card.id)) {
       owned++;
       byRarity[card.rarity].owned++;
     }
@@ -187,6 +242,75 @@ export function computeCompletion(
     percent: cards.length > 0 ? Math.round((owned / cards.length) * 100) : 0,
     byRarity,
   };
+}
+
+/** True when every card in the set counts as owned. */
+export function isSetComplete(stats: CompletionStats): boolean {
+  return stats.total > 0 && stats.owned === stats.total;
+}
+
+/**
+ * The collection as copy/paste text: the same `{ cardId: quantity }` JSON
+ * that localStorage holds, with card IDs in ascending order.
+ */
+export function exportCollection(collection: Collection): string {
+  const sorted: Collection = {};
+  for (const id of Object.keys(collection)
+    .map(Number)
+    .sort((a, b) => a - b)) {
+    sorted[id] = collection[id];
+  }
+  return JSON.stringify(sorted);
+}
+
+export type CollectionImport =
+  | { ok: true; collection: Collection; skipped: number }
+  | { ok: false; error: string };
+
+/**
+ * Parses pasted export text. Unlike `parseCollection`, bad input is an error
+ * the person sees rather than an empty collection. Entries with a bad card ID
+ * or quantity are skipped and counted.
+ */
+export function parseCollectionImport(text: string): CollectionImport {
+  const trimmed = text.trim();
+  if (!trimmed) return { ok: false, error: "Paste an exported collection." };
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(trimmed);
+  } catch {
+    return { ok: false, error: "That isn't valid JSON." };
+  }
+  if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) {
+    return {
+      ok: false,
+      error: 'Expected an object of card IDs to quantities, like {"12": 1}.',
+    };
+  }
+  const entries = Object.entries(parsed);
+  const collection = parseCollection(JSON.stringify(parsed));
+  const kept = Object.keys(collection).length;
+  if (kept === 0) {
+    return { ok: false, error: "No cards found to import." };
+  }
+  return { ok: true, collection, skipped: entries.length - kept };
+}
+
+/**
+ * Merges an import into the existing collection. Each card appears once; when
+ * both hold it, the larger quantity wins, so importing the same backup twice
+ * changes nothing.
+ */
+export function mergeCollections(
+  existing: Collection,
+  incoming: Collection,
+): Collection {
+  const merged: Collection = { ...existing };
+  for (const [key, qty] of Object.entries(incoming)) {
+    const id = Number(key);
+    merged[id] = Math.min(MAX_QUANTITY, Math.max(merged[id] ?? 0, qty));
+  }
+  return merged;
 }
 
 /**

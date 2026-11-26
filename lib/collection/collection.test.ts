@@ -6,6 +6,11 @@ import {
   validateCollection,
   computeCompletion,
   formatPercent,
+  ownedCardIds,
+  isSetComplete,
+  exportCollection,
+  parseCollectionImport,
+  mergeCollections,
 } from "./index";
 
 describe("parseCollection", () => {
@@ -203,5 +208,138 @@ describe("formatPercent", () => {
 
   it("shows 100% only when complete", () => {
     expect(formatPercent(286, 286)).toBe("100%");
+  });
+});
+
+describe("ownedCardIds (alt arts count as owned)", () => {
+  // Pikachu ex: 10 is the Double Rare, 11 the Art Rare alt art, 12 a promo
+  // reprint. Misty (20) has no other prints.
+  const cards = [
+    { id: 10, rarity: "RR", printGroup: 10 },
+    { id: 11, rarity: "AR", printGroup: 10 },
+    { id: 12, rarity: "PROMO", printGroup: 10 },
+    { id: 20, rarity: "U", printGroup: 20 },
+  ];
+
+  it("counts directly owned cards", () => {
+    expect([...ownedCardIds({ 20: 1 }, cards)]).toEqual([20]);
+  });
+
+  it("counts an owned alt art as owning the regular print", () => {
+    expect([...ownedCardIds({ 11: 1 }, cards)].sort()).toEqual([10, 11]);
+  });
+
+  it("does not fill the alt art slot from the regular print", () => {
+    expect([...ownedCardIds({ 10: 1 }, cards)]).toEqual([10]);
+  });
+
+  it("does not treat a promo reprint as an alt art", () => {
+    expect([...ownedCardIds({ 12: 1 }, cards)]).toEqual([12]);
+  });
+
+  it("ignores print groups for cards without one", () => {
+    const loose = [
+      { id: 1, rarity: "C" },
+      { id: 2, rarity: "AR" },
+    ];
+    expect([...ownedCardIds({ 2: 1 }, loose)]).toEqual([2]);
+  });
+
+  it("feeds computeCompletion across sets", () => {
+    const setA = cards.filter((c) => c.id === 10 || c.id === 20);
+    const all = ownedCardIds({ 11: 1, 20: 1 }, cards);
+    const stats = computeCompletion({ 11: 1, 20: 1 }, setA, all);
+    expect(stats.owned).toBe(2);
+    expect(isSetComplete(stats)).toBe(true);
+  });
+});
+
+describe("isSetComplete", () => {
+  it("is false for an empty set", () => {
+    expect(isSetComplete(computeCompletion({}, []))).toBe(false);
+  });
+
+  it("is false until every card is owned", () => {
+    const set = [
+      { id: 1, rarity: "C" },
+      { id: 2, rarity: "C" },
+    ];
+    expect(isSetComplete(computeCompletion({ 1: 1 }, set))).toBe(false);
+    expect(isSetComplete(computeCompletion({ 1: 1, 2: 3 }, set))).toBe(true);
+  });
+});
+
+describe("exportCollection", () => {
+  it("round-trips through parseCollectionImport", () => {
+    const collection = { 42: 2, 3: 1 };
+    const text = exportCollection(collection);
+    expect(text).toBe('{"3":1,"42":2}');
+    expect(parseCollectionImport(text)).toEqual({
+      ok: true,
+      collection,
+      skipped: 0,
+    });
+  });
+
+  it("exports an empty collection as {}", () => {
+    expect(exportCollection({})).toBe("{}");
+  });
+});
+
+describe("parseCollectionImport", () => {
+  it("rejects empty input", () => {
+    expect(parseCollectionImport("  ")).toMatchObject({ ok: false });
+  });
+
+  it("rejects invalid JSON", () => {
+    expect(parseCollectionImport("{nope")).toEqual({
+      ok: false,
+      error: "That isn't valid JSON.",
+    });
+  });
+
+  it("rejects arrays and primitives", () => {
+    expect(parseCollectionImport("[1,2]")).toMatchObject({ ok: false });
+    expect(parseCollectionImport("5")).toMatchObject({ ok: false });
+    expect(parseCollectionImport("null")).toMatchObject({ ok: false });
+  });
+
+  it("rejects an object with no valid entries", () => {
+    expect(parseCollectionImport('{"abc": 1, "2": 0}')).toEqual({
+      ok: false,
+      error: "No cards found to import.",
+    });
+  });
+
+  it("keeps valid entries and counts the skipped ones", () => {
+    expect(parseCollectionImport('{"1": 2, "-3": 1, "4": 1.5}')).toEqual({
+      ok: true,
+      collection: { 1: 2 },
+      skipped: 2,
+    });
+  });
+});
+
+describe("mergeCollections", () => {
+  it("adds new cards and keeps existing ones", () => {
+    expect(mergeCollections({ 1: 1 }, { 2: 3 })).toEqual({ 1: 1, 2: 3 });
+  });
+
+  it("dedupes by card, keeping the larger quantity", () => {
+    expect(mergeCollections({ 1: 4, 2: 1 }, { 1: 2, 2: 3 })).toEqual({
+      1: 4,
+      2: 3,
+    });
+  });
+
+  it("is idempotent for the same import", () => {
+    const once = mergeCollections({ 1: 1 }, { 1: 2, 5: 1 });
+    expect(mergeCollections(once, { 1: 2, 5: 1 })).toEqual(once);
+  });
+
+  it("does not mutate the existing collection", () => {
+    const existing = { 1: 1 };
+    mergeCollections(existing, { 2: 1 });
+    expect(existing).toEqual({ 1: 1 });
   });
 });
