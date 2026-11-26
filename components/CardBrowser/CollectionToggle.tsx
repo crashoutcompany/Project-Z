@@ -3,8 +3,9 @@
 import { memo, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { useCollection } from "@/lib/collection/use-collection";
+import { useWantList } from "@/lib/collection/use-want-list";
 import { MAX_QUANTITY } from "@/lib/collection";
-import { Check, Minus, Plus } from "lucide-react";
+import { Bookmark, Check, Minus, Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 type CollectionToggleProps = {
@@ -139,5 +140,81 @@ export const CollectionBadge = memo(function CollectionBadge({
       <Check className="size-3" />
       {quantity > 1 ? <span>{quantity}</span> : null}
     </button>
+  );
+});
+
+type WantToggleProps = {
+  cardId: number;
+  /** Card name for the accessible label. */
+  name?: string;
+  /** Copies to want when adding (e.g. what a deck still needs). */
+  copies?: number;
+  variant?: "icon" | "full";
+  className?: string;
+};
+
+/**
+ * Adds a card to, or removes it from, the global want list. Sits next to the
+ * collection controls so any card can go on either list from the same place.
+ */
+export const WantToggle = memo(function WantToggle({
+  cardId,
+  name,
+  copies = 1,
+  variant = "icon",
+  className,
+}: WantToggleProps) {
+  const { getWanted, toggle } = useWantList();
+  const wanted = getWanted(cardId);
+  const onList = wanted > 0;
+  const subject = name ? `${name} ` : "";
+  const label = onList
+    ? `Remove ${subject}from want list`
+    : `Add ${subject}to want list`;
+
+  const handleClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    toggle(cardId, copies);
+  };
+
+  if (variant === "icon") {
+    return (
+      <button
+        type="button"
+        onClick={handleClick}
+        aria-label={label}
+        aria-pressed={onList}
+        title={label}
+        data-testid="want-toggle"
+        className={cn(
+          "ring-foreground/10 flex size-7 shrink-0 items-center justify-center rounded-full ring-1 transition-colors",
+          onList
+            ? "bg-amber-500 text-white hover:bg-amber-600"
+            : "bg-background hover:bg-amber-500 hover:text-white",
+          className,
+        )}
+      >
+        <Bookmark className={cn("size-4", onList && "fill-current")} />
+      </button>
+    );
+  }
+
+  return (
+    <Button
+      type="button"
+      variant={onList ? "secondary" : "outline"}
+      size="sm"
+      onClick={handleClick}
+      aria-pressed={onList}
+      data-testid="want-toggle"
+      className={cn("gap-1.5", className)}
+    >
+      <Bookmark
+        className={cn("size-4", onList && "fill-amber-500 text-amber-500")}
+      />
+      {onList
+        ? `On want list${wanted > 1 ? ` (${wanted})` : ""}`
+        : "Add to want list"}
+    </Button>
   );
 });

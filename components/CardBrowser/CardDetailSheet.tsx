@@ -18,7 +18,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Check, Copy, X } from "lucide-react";
 import { useEffect, useId, useRef, useState } from "react";
-import { CollectionToggle } from "./CollectionToggle";
+import { CollectionToggle, WantToggle } from "./CollectionToggle";
 
 const ENERGY_COLORS: Record<string, string> = {
   grass: "bg-green-500",
@@ -200,6 +200,7 @@ function CardCollection({ cardId }: { cardId: number }) {
     <section className="bg-muted/40 ring-foreground/10 space-y-2 rounded-xl p-3 ring-1">
       <h3 className="text-sm font-semibold tracking-tight">Collection</h3>
       <CollectionToggle cardId={cardId} variant="full" />
+      <WantToggle cardId={cardId} variant="full" />
     </section>
   );
 }

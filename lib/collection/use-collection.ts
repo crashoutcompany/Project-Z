@@ -20,6 +20,9 @@ function emitChange(): void {
   }
 }
 
+/** Re-renders collection readers after a write made outside this hook. */
+export const notifyCollectionChange = emitChange;
+
 function onStorage(e: StorageEvent) {
   if (e.key === COLLECTION_STORAGE_KEY || e.key === null) emitChange();
 }
