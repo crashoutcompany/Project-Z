@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { authClient } from "@/lib/auth/client";
+import { SIGN_IN_PATH } from "@/lib/auth/config";
+import { authCallbackFromWindow } from "@/lib/auth/return-path";
 
 export function EmailOtpForm({ callbackURL }: { callbackURL?: string }) {
   const router = useRouter();
@@ -61,7 +63,7 @@ export function EmailOtpForm({ callbackURL }: { callbackURL?: string }) {
         );
         return;
       }
-      router.replace(callbackURL ?? "/");
+      router.replace(authCallbackFromWindow(SIGN_IN_PATH, callbackURL));
       router.refresh();
     } catch {
       setErrorMessage("Unable to sign in. Check the code and try again.");
