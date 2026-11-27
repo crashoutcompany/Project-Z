@@ -61,12 +61,20 @@ const fetchCardsSchema = z.object({
   showDuplicates: z.boolean().default(false),
 });
 
-export type FetchCardsResult = {
+export type FetchCardsOk = {
+  status: "ok";
   cards: Card[];
   nextCursor: number | null;
   /** Every matching card; only on the first page (no cursor). */
   total: number | null;
 };
+
+/**
+ * `signed_out` is a result rather than a thrown error: production strips
+ * server action error messages, and the catalog must not take the page down
+ * to the error boundary when a session expires mid-browse.
+ */
+export type FetchCardsResult = FetchCardsOk | { status: "signed_out" };
 
 /**
  * Fetches cards with cursor-based pagination, set, name, type and rarity
@@ -81,8 +89,9 @@ export const fetchCards = async (
 ): Promise<FetchCardsResult> => {
   // Server actions are public POST endpoints, so require a session and never
   // trust the client's shape or page size.
-  if (!(await getSession(await headers()))) throw new Error("Unauthorized");
-  return loadCatalogPage(fetchCardsSchema.parse(params));
+  if (!(await getSession(await headers()))) return { status: "signed_out" };
+  const page = await loadCatalogPage(fetchCardsSchema.parse(params));
+  return { status: "ok", ...page };
 };
 
 export type FetchCardDetailInput = {
